@@ -1,0 +1,132 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<HTML>
+<HEAD>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <TITLE>M22 graph</TITLE>
+</HEAD>
+<BODY>
+<a href="index.html">Up</a>
+
+<H1>M<sub>22</sub> graph</H1>
+There is a unique strongly regular graph &Gamma; with parameters
+<i>v</i> = 77, <i>k</i> = 16, &lambda; = 0, &mu; = 4.
+The spectrum is 16<sup>1</sup> 2<sup>55</sup> (–6)<sup>21</sup>.
+Construction is folklore. An early reference is Mesner (1964).
+Uniqueness was proved by Brouwer (1983).
+<p>
+<H2>Construction</H2>
+The graph is the block graph of the <a href="S.html">Steiner system</a>
+S(3,6,22), where blocks are called adjacent when they are disjoint.
+It is strongly regular because this design is quasi-symmetric:
+block intersections have size 0 or 2.
+<p>
+<H2>Group</H2>
+Its automorphism group is M<sub>22</sub>.2 of order 887040,
+acting rank 3 with point stabilizer 2<sup>4</sup>:Sym(6).
+<p>
+<H2>Supergraphs</H2>
+The graph is the subgraph of the
+<a href="Higman-Sims.html">Higman-Sims graph</a> induced
+on the set of vertices at distance 2 from a given vertex.
+<p>
+<H2>Subgraphs</H2>
+a) <i>A 21-coclique</i> or <i>Gewirtz graph</i>
+There are 22 cocliques of size 21, forming a single orbit.
+(In the S(3,6,22) description these are the 22 symbols.
+In the Higman-Sims graph these are neighbourhoods
+of the points outside the 77.)
+The stabilizer of one is L<sub>3</sub>(4).2 with
+vertex orbit sizes 21+56. The subgraph induced on the 56
+is the <a href="Sims-Gewirtz.html">Gewirtz graph</a>.
+Two 21-cocliques meet in 5 points, so a 21-coclique and
+a Gewirtz subgraph meet in 0 or 16 points.
+<p>
+Concerning cocliques of other sizes: &Gamma; has maximal
+cocliques of the following sizes:
+<pre>
+size number
+ 7: 330
+10: 216832
+11: 149184
+13: 43120
+14: 330
+16: 1309
+21: 22
+</pre>
+<p>
+b) <i>A vertex</i>.
+There are 77 of these, forming a single orbit.
+The stabilizer of one is 2<sup>4</sup>:S<sub>6</sub>
+with vertex orbit sizes 1+16+60.
+<p>
+c) <i>An Odd graph O<sub>4</sub></i>.
+The <a href="Odd.html">Odd graph</a> O<sub>4</sub> is the graph
+on the disjoint triples in a 7-set.
+There are 352 of these, forming a single orbit.
+The stabilizer of one is A<sub>7</sub> with vertex orbit sizes 35+42.
+The subgraph induced on the 42 is the second subconstituent of the
+<a href="Hoffman-Singleton.html">Hoffman-Singleton graph</a>.
+In the Steiner system S(5,8,24), let <i>a</i> and <i>b</i> be two
+fixed symbols, such that our S(3,6,22) is the derived design at
+{<i>a</i>,<i>b</i>}. Our 352 things are the 352 octads that contain
+precisely one of <i>a</i>,<i>b</i>.
+<p>
+d) <i>A pair of 21-cocliques</i>.
+There are 231 of these, forming a single orbit.
+The stabilizer of one is 2<sup>5</sup>:S<sub>5</sub>
+with vertex orbit sizes 5+32+40.
+The subgraph induced on the 32 is the
+<a href="Folded-6-cube.html">folded 6-cube</a>.
+<p>
+e) <i>Maximal 7-cocliques</i>.
+There are 330 of these, forming a single orbit.
+The stabilizer of one is 2<sup>3</sup>:L<sub>3</sub>(2)&times;2
+with vertex orbit sizes 7+56+14.
+The subgraphs induced on the 7 and the 14 are the maximal 7- and 14-cocliques.
+In the Steiner system S(5,8,24), let <i>a</i> and <i>b</i> be two
+fixed symbols, such that our S(3,6,22) is the derived design at
+{<i>a</i>,<i>b</i>}. Our 330 things are the 330 octads that contain
+neither <i>a</i> nor <i>b</i>, and the orbits of size 7,56,14
+correspond to intersection size 0,2,4.
+<p>
+f) <i>An edge</i>.
+There are 616 of these, forming a single orbit.
+The stabilizer of one is A<sub>6</sub>.2<sup>2</sup>
+with vertex orbit sizes 2+30+45.
+The subgraph induced on the 30 is the point-line incidence graph
+of the generalized quadrangle GQ(2,2).
+The subgraph induced on the 45 is the distance-2 graph of
+the unique distance-regular graph with intersection array
+{4,2,2,2;1,1,1,2}, the generalized octagon GO(2,1), the flag
+graph of GQ(2,2).
+<p>
+g) <i>Incidence graph of complement of biplane on 11 points</i>.
+The unique biplane on 11 points has parameters 2-(11,5,2).
+The complementary design is a 2-(11,6,3), with incidence graph
+that is distance regular with intersection array {6,5,3;1,3,6}.
+There are 672 of these, forming a single orbit.
+The stabilizer of one is L<sub>2</sub>(11):2
+with vertex orbit sizes 22+55.
+<p>
+<H2>Chromatic number</H2>
+The chromatic number is 5.
+(If no 21-coclique is used as a colour then at least 77/16 colours
+are needed. If a 21-coclique is used, then what is left is the
+Gewirtz graph, and that has chromatic number 4.)
+<p>
+<H2>Cycles</H2>
+This graph is Hamiltonian.
+<p>
+<H2>References</H2>
+<p>
+A.E. Brouwer,
+<i>The uniqueness of the strongly regular graph on 77 points</i>,
+J. Graph Th. <b>7</b> (1983) 455-461.
+<p>
+D.M. Mesner,
+<i>Negative Latin square designs</i>,
+<a href="http://www.stat.ncsu.edu/information/library/mimeo.php">Institute
+of Statistics, UNC, NC Mimeo series</a> <b>410</b>, November 1964.
+
+</BODY>
+</HTML>

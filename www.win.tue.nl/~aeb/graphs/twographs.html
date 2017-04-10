@@ -1,0 +1,89 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<HTML>
+<HEAD>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <TITLE>Two-graphs</TITLE>
+</HEAD>
+<BODY>
+<a href="index.html">Up<a>
+
+<H1>Two-graphs</H1>
+Regular two-graphs were introduced by G. Higman in order to study
+permutation representations of doubly transitive groups, and,
+in particular, the action of Co.3 on 276 points.
+The concept of switching class is due to J. J. Seidel, who studied
+equiangular systems of lines in a Euclidean space.
+<p>
+A <i>two-graph</i> is a finite set provided with a collection of triples,
+called <i>coherent</i>, such that each 4-set contains an even number
+of coherent triples. The two-graph is called <i>regular</i> when
+each pair of points is contained in the same number of coherent triples.
+Trivial two-graphs are obtained by taking no triples, or all triples.
+<p>
+Given a graph &Gamma; on a set V of vertices, one obtains a two-graph
+by taking all triples that contain an odd number of edges of &Gamma;.
+Every two-graph arises in this way.
+(One can for example stipulate that a given vertex <i>p</i> must be
+isolated, and then <i>qr</i> must be an edge precisely when <i>pqr</i>
+is a coherent triple.)
+A graph and its complement give rise to two-graphs with complementary
+sets of coherent triples.
+<p>
+Two graphs &Gamma;, &Delta; with the same vertex set V are called
+<i>switching equivalent</i> when V is the disjoint union of subsets A and B,
+and &Gamma; and &Delta; induce the same subgraph on A and on B, but
+vertices a ∈ A and b ∈ B are joined in &Gamma; iff they are not joined
+in &Delta;. Being switching equivalent is an equivalence relation,
+and two graphs are switching equivalent precisely when they give rise
+to the same two-graph.
+<p>
+The <i>Seidel adjacency matrix</i> of a graph &Gamma; is the matrix
+S = J−I−2A that has zero diagonal, −1 for adjacency, and 1 for nonadjacency.
+If &Gamma; and &Delta; are switching equivalent, their Seidel adjacency
+matrices have the same spectrum. This common spectrum is called the
+Seidel spectrum of the two-graph. The Seidel spectrum of the complementary
+two-graph equals minus the Seidel spectrum of a given two-graph.
+<p>
+<H2>Example: the regular two-graph on 16 points</H2>
+There is a unique complementary pair of nontrivial regular
+<a href="twographs.html">two-graphs</a> on 16 points.
+They have Seidel spectrum (−5)<sup>6</sup> 3<sup>10</sup>
+and 5<sup>6</sup> (−3)<sup>10</sup>.
+The switching class of the former contains the strongly regular graphs
+with parameters (16,10,6,6) and (16,6,2,2), that is, the
+<a href="Clebsch.html">Clebsch graph</a>, and the
+<a href="Shrikhande.html">Shrikhande graph</a> and the lattice graph H(2,4).
+It also contains the graph K<sub>1</sub>+T(6), the disjoint union
+of the triangular graph T(6) and an isolated point.
+The switching class of the latter contains the complements of these graphs.
+These six graphs have the following spectra.
+<p>
+<table cellpadding=2>
+<tr><th>graph</th> <th>parameters</th> <th>spectrum</th>
+<th>Seidel spectrum</th></tr>
+<tr><td>Clebsch graph</td> <td>(16,10,6,6)</td>
+ <td>10<sup>1</sup> 2<sup>5</sup> (−2)<sup>10</sup></td>
+ <td>(−5)<sup>6</sup> 3<sup>10</sup></td></tr>
+<tr><td>Shrikhande graph,<br>Hamming graph H(2,4)</td> <td>(16,6,2,2)</td>
+ <td>6<sup>1</sup> 2<sup>6</sup> (−2)<sup>9</sup></td>
+ <td>(−5)<sup>6</sup> 3<sup>10</sup></td></tr>
+<tr><td>K<sub>1</sub>+T(6)</td> <td></td>
+ <td>8<sup>1</sup> 2<sup>5</sup> 0<sup>1</sup> (−2)<sup>9</sup>
+ <td>(−5)<sup>6</sup> 3<sup>10</sup></td></tr>
+<tr><td>complement of Clebsch graph</td> <td>(16,5,0,2)</td>
+ <td>5<sup>1</sup> 1<sup>10</sup> (−3)<sup>5</sup></td>
+ <td>5<sup>6</sup> (−3)<sup>10</sup></td></tr>
+<tr><td>complement of Shrikhande,<br>complement of H(2,4)</td>
+ <td>(16,9,4,6)</td>
+ <td>9<sup>1</sup> 1<sup>9</sup> (−3)<sup>6</sup></td>
+ <td>5<sup>6</sup> (−3)<sup>10</sup></td></tr>
+<tr><td>cone over <a href="GQ22.html">GQ(2,2)</a></td> <td></td>
+ <td>(3 ± 2√6)<sup>1</sup> 1<sup>9</sup> (−3)<sup>5</sup>&nbsp;</td>
+ <td>5<sup>6</sup> (−3)<sup>10</sup></td></tr>
+</table>
+<p>
+The automorphism group of the regular two-graph here is
+2<sup>4</sup>:Sym(6) of order 11520. The automorphism groups
+of the graphs in its switching class are subgroups.
+</BODY>
+</HTML>

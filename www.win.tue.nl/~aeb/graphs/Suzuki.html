@@ -1,0 +1,260 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>Suzuki graph</title>
+</head>
+<body>
+<a href="index.html">Up</a>
+
+<h1>Suzuki graph</h1>
+There is a rank 3 strongly regular graph &Gamma; with parameters
+<i>v</i> = 1782, <i>k</i> = 416, &lambda; = 100, &mu; = 96.
+The spectrum is 416<sup>1</sup> 20<sup>780</sup> (−16)<sup>1001</sup>.
+It is one of the two graphs that are locally the
+<a href="G24.html">G<sub>2</sub>(4) graph</a> (Pasechnik, 1993),
+the other being the triple cover constructed by Soicher (1993),
+a distance-transitive graph with intersection array
+{416, 315, 64, 1; 1, 32, 315, 416}.
+<p>
+<H2>Group</H2>
+The full group of automorphisms is G = Suz.2 (of order
+2<sup>14</sup>.3<sup>7</sup>.5<sup>2</sup>.7.11.13),
+acting rank 3, with point stabilizer G<sub>2</sub>(4).2.
+<p>
+<H2>Construction</H2>
+A geometric construction was given in Brouwer et al. (2009).
+
+<H2>Subgraphs</H2>
+We give the substructures of &Gamma; associated to the 15 maximal subgroups
+of G distinct from Suz, sorted according to increasing orbit size.
+<p>
+a) <i>A vertex</i>.<br>
+There are 1782 of these, forming a single orbit.
+The stabilizer of one is G<sub>2</sub>(4).2 with vertex orbit sizes
+1+416+1365.
+The subgraph induced on the first subconstituent is the
+<a href="G24.html">G<sub>2</sub>(4) graph</a>, which is
+strongly regular with parameters (v,k,&lambda;,&mu;) = (416,100,36,20).
+<p>
+b) <i>A U<sub>4</sub>(3) graph on 162 vertices</i>.<br>
+Each element g of Atlas type 3A of Suz fixes 162 vertices of &Gamma;
+and &Gamma; induces a <a href="U4_3a.html">U<sub>4</sub>(3) graph</a>
+on these 162-sets. These U<sub>4</sub>(3) graphs are strongly regular
+with parameters (v,k,&lambda;,&mu;) = (162,56,10,24).
+There are 22880 of these (one for each subgroup &lt;g&gt; of G),
+forming a single orbit. The stabilizer of one is
+3<sub>2</sub>.U<sub>4</sub>(3).2<sup>2</sup><sub>133</sub>
+with vertex orbit sizes 162+1620.
+<!-- check: no other such subgraphs? it seems i checked already - how? -->
+<br>
+The graph on these 22880 subgraphs, adjacent when disjoint, that is, when
+the corresponding elements g commute, is the unique distance-regular graph
+with intersection array {280,243,144,10; 1,8,90,280}, known as
+the Patterson graph. (And distance 0, 1, 2, 3, 4 in the Patterson graph
+corresponds to intersection size 162, 0, 18, 12, 42 for these 162-sets.)
+<br>
+The 2080 U<sub>4</sub>(3) subgraphs on a vertex p induce the 2080
+Gewirtz subgraphs in the G<sub>2</sub>(4) graph on the neighbours of p.
+<p>
+c) <i>Nice splits 6<sup>297</sup></i>.<br>
+&Gamma; has a unique orbit (of size 32760) of partitions of the vertex set
+into 297 maximal 6-cocliques such that the union of any two parts induces
+a regular subgraph of &Gamma;.
+(There are many other partitions into 297 maximal 6-cocliques.)
+The stabilizer of one such partition is U<sub>5</sub>(2):2.
+Let (just here) C<sub>6</sub>@2 denote the 2-coclique extension
+of the hexagon. Then the union of any two parts of such a partition
+induces either 6K<sub>2</sub> or C<sub>6</sub>@2.
+Each partition carries the structure of a rank 3 strongly regular graph
+with parameters (v,k,&lambda;,&mu;) = (297,40,7,5), the collinearity graph
+of the generalized quadrangle GQ(8,4) that is the dual polar graph
+for U<sub>5</sub>(2), if we call two maximal 6-cocliques adjacent
+when their union induces C<sub>6</sub>@2.
+<br>
+The subgroup U<sub>5</sub>(2):2 of G (of index 32760) is transitive
+on the 1782 vertices, but has two orbits on the edges,
+giving a red subgraph of valency 160
+and a green subgraph of valency 256.
+And three orbits on the nonedges (with valencies 1280, 80, and 5),
+the last of which gives our partition of the vertex set into 6-cocliques.
+The local graph of the red graph is the disjoint union of five
+2-coclique extensions of the <a href="Clebsch.html">Clebsch graph</a>.
+<p>
+d) <i>A 2-coclique extension of the Schläfli graph</i>.<br>
+There are 135135 of these, forming a single orbit. The stabilizer of one is
+2<sup>1+6</sup><sub>−</sub>.U<sub>4</sub>(2).2
+with vertex orbit sizes 54+1728.
+The graph induced on the orbit of size 54 is the
+2-coclique extension of the <a href="Schlaefli.html">Schläfli graph</a>.
+This graph has valency 32. Its local graph is the 2-coclique extension
+of the <a href="Clebsch.html">Clebsch graph</a>.
+The mu-graphs of &Gamma; consist of three copies of this graph on 32 vertices.
+<p>
+e) <i>A 3-edge-coloring</i>.<br>
+The subgroup 3<sup>5</sup>:(M<sub>11</sub>&times;2) of G
+(of index 232960) is transitive on the 1782 vertices, but
+has three orbits on the edges, giving a red subgraph of valency 20,
+the disjoint union of 22
+<a href="Brouwer-Haemers.html">Brouwer-Haemers graphs</a>,
+and a bipartite green subgraph of valency 36,
+and a blue subgraph of valency 360.
+<br>
+The 22 Brouwer-Haemers graphs are permuted by M<sub>11</sub>&times;2
+acting rank 3 with suborbits 1+1+20. The 1+1 induces a U<sub>4</sub>(3)
+graph, as under b). Thus, &Gamma; has partitions into 11 U<sub>4</sub>(3)
+graphs.
+<p>
+f) <i>An edge</i>.<br>
+There are 370656 of these, forming a single orbit.
+The stabilizer of one is J<sub>2</sub>:2 &times; 2 with vertex orbit sizes
+2+100+630+1050.
+<p>
+g) <i>A maximal 6-coclique</i>.<br>
+There are 405405 of these, forming a single orbit. The stabilizer of one is
+2<sup>4+6</sup>:3S<sub>6</sub> with vertex orbit sizes 6+240+1536.
+The vertices in the 240-orbit have 4 neighbours in the 6-coclique,
+those in the 1536-orbit have 1.
+Each maximal 6-coclique lies in 24 splits as under c).
+Each maximal 6-coclique lies in 64 U<sub>4</sub>(3) subgraphs,
+and the maximal 6-cocliques of each U<sub>4</sub>(3) subgraph
+remain maximal in &Gamma;.
+<br>
+Each vertex lies in 1365 maximal 6-cocliques. Each nonedge lies in 5.
+Each non-edge xy lies in 1044 3-cocliques, on which the stabilizer
+has orbits of sizes 20+1024, see below under i). Each triple xyz with
+z in the orbit of size 20 lies in a unique maximal 6-coclique.
+No triple xyz with z in the orbit of size 1024 lies in a maximal 6-coclique.
+<br>
+There are no smaller maximal cocliques. The largest cocliques have size 66.
+<p>
+h) <i>A nonincidence graph of PG(2,4)</i>.<br>
+There are 926640 of these, forming a single orbit.
+The stabilizer of one is
+(A<sub>4</sub> &times; L<sub>3</sub>(4):2<sub>3</sub>):2
+with vertex orbit sizes 42+480+1260.
+The graph induced on the orbit of size 42 is the bipartite
+point-line nonincidence graph of PG(2,4).
+<p>
+i) <i>A non-edge</i>.<br>
+There are 1216215 of these, forming a single orbit.
+The stabilizer of one is
+2<sup>2+8</sup>:(S<sub>5</sub> &times; S<sub>3</sub>)
+with vertex orbit sizes 2+20+96+640+1024.
+The orbit of size 20 is a K<sub>5&times;4</sub> subgraph.
+The orbit of size 96 is the mu-graph of &Gamma;.
+<p>
+j) <i>A 792+990 split</i>.<br>
+The subgroup M<sub>12</sub>.2 &times; 2 of G (of index 2358720)
+has vertex orbit sizes 792+990.
+<p>
+k) <i>A 324+1458 split</i>.<br>
+The subgroup 3<sup>2+4</sup>:2(S<sub>4</sub> &times; D<sub>8</sub>)
+of G (of index 3203200) has vertex orbit sizes 324+1458.
+<p>
+l) <i>A K<sub>6,6</sub></i>.<br>
+There are 10378368 of these, forming a single orbit.
+The stabilizer of one is
+(A<sub>6</sub>:2<sub>2</sub>&times;A<sub>5</sub>).2
+with vertex orbit sizes 12+150+720+900.
+<p>
+m) <i>A 72+270+1440 split</i>.<br>
+The stabilizer of one is ((3<sup>2</sup>:8) &times; A<sub>6</sub>).2
+(of index 17297280) with vertex orbit sizes 72+270+1440
+and valencies 26, 56 and 338, respectively.
+Each 72 has a partition into 12 6-cliques.
+For details, see Cliques, below.
+<p>
+n) <i>A 26K<sub>2</sub></i>.<br>
+The subgroup L<sub>2</sub>(25).2<sub>2</sub> of G
+(of index 57480192) has vertex orbit sizes 52+130+300+650+650.
+The graph induced on the orbit of size 52 is 26K<sub>2</sub>.
+<!-- are there further such subgraphs? -->
+<p>
+o) <i>A sub-Hoffman-Singleton graph</i>.<br>
+The subgroup Sym(7) of G (of index 177914880) has vertex orbit sizes
+42+120+210+210+360+420+420.
+The graph induced on the orbit of size 42 is the 2nd subconstituent
+of the <a href="Hoffman-Singleton.html">Hoffman-Singleton graph</a>,
+distance-regular with intersection array {6,5,1; 1,1,6}.
+<!-- are there further such subgraphs? -->
+
+<H2>Cliques</H2>
+There is a single orbit of maximal cliques. They have size 6.
+The stabilizer is a non-maximal S<sub>6</sub> &times; S<sub>3</sub>
+of order 4320. Each K<sub>6</sub> determines a unique 3K<sub>6</sub>.
+Each 3K<sub>6</sub> determines a unique graph on 36 vertices of valency 20,
+union of two copies of 3K<sub>6</sub>, with a partition in six 6-cocliques.
+Each such graph determines a unique graph on 72 vertices of valency 26,
+union of two of the preceding, with group
+((3<sup>2</sup>:8) &times; A<sub>6</sub>).2, see m) above.
+
+<H2>Maximal cocliques</H2>
+The smallest maximal cocliques have size 6 and form a single orbit,
+see above under g).
+<p>
+The largest cocliques have size 66 and form a single orbit
+(Kuzuta, cf. Brouwer et al., 2009). The stabilizer of one
+is U<sub>3</sub>(4):4 with vertex orbit sizes 1+65+416+1300.
+The 1716 points outside a 66-coclique all have 16 neighbours inside,
+and we find a 3-(66,16,21) design.
+<!-- sizes 6,15-39,41-42,51,66 and possibly others occur -->
+<!-- big cocliques can be found by noting that an outside vertex
+has more than 13 nbrs inside; locally max is 16, next max 13;
+locally five orbits of size 16; look for extensions; this should
+find all cocliques of size at least 53 -->
+
+<H2>Small cocliques</H2>
+&Gamma; has two orbits of 3-cocliques: the stabilizer of a nonedge xy
+has orbits 20+1024 on the vertices adjacent to neither x nor y.
+Call the 3-cocliques in the small orbit <i>special</i>.
+There are 8108100 special 3-cocliques, and the stabilizer of one
+is 2<sup>4+6</sup>.3<sup>1+2</sup>.2<sup>2</sup>
+<!-- of size 110592 -->
+with vertex orbit sizes 3+3+48+48+144+768+768 (the first the 3-coclique
+xyz itself, the others with 0, 3, 1, 2, 0, 1 neighbours in xyz,
+respectively).
+<p>
+If xyz is a special 3-coclique, then 48 vertices are adjacent to all three
+and the subgraph induced on this orbit of size 48 is
+3K<sub>4&times;4</sub>.
+<p>
+There are 3+768 vertices (other than xyz) adjacent to none of xyz.
+If uvw is this orbit of size 3, then uvwxyz is a maximal 6-coclique,
+see above under g). All triples in uvwxyz are special.
+The common neighbours of xyzw together with xyzw themselves
+form a K<sub>5&times;4</sub>, see above under i).
+<p>
+If xyz is a nonspecial 3-coclique, then 21 vertices are adjacent to all three
+and the subgraph induced is 6K<sub>1</sub>+3K<sub>5</sub>.
+The 6K<sub>1</sub> part of this has 6 common neighbours,
+and we find a K<sub>6,6</sub>, see above under l).
+
+<H2>Acknowledgement</H2>
+Some remarks were contributed by Chen Wang. <!-- email, 2014-04-08 -->
+
+<H2>References</H2>
+BCN, Section 13.7.
+<p>
+A. E. Brouwer, A. Jurišić & J. H. Koolen,
+<i>Characterization of the Patterson graph</i>,
+J. Algebra <b>320</b> (2008) 1878-1886.
+<p>
+A. E. Brouwer, N. Horiguchi, M. Kitazume & H. Nakasora,
+<i>A construction of the sporadic Suzuki graph from U<sub>3</sub>(4)</i>,
+J. Comb. Th. (A) <b>116</b> (2009) 1056-1062.
+<p>
+D. Pasechnik,
+<i>Geometric characterization of graphs from the Suzuki chain</i>,
+Europ. J. Combin. <b>14</b> (1993) 491-499.
+<p>
+L. H. Soicher,
+<i>Three new distance-regular graphs</i>,
+Europ. J. Combin. <b>14</b> (1993) 501-505.
+<p>
+M. Suzuki,
+<i>A simple group of order 448,345,497,600</i>,
+pp. 113-119 in: Theory of finite groups, R. Bauer & C.-S. Sah (eds.),
+Benjamin, New York, 1969.
+</body>
+</html>

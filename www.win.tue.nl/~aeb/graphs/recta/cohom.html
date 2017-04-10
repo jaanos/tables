@@ -1,0 +1,410 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Mod p cohomology of root systems</title>
+</head>
+<body>
+<h1>Rectagraphs from root systems</h1>
+One can <a href="weyl02.html">construct (0,2)-graphs</a>
+Γ(<i>u</i>) from root systems with simply laced diagram.
+This may or may not be relevant to computation of mod p cohomology.
+<p>
+The structure here is richer: not only a (0,2)-graph,
+but also a grading.
+<p>
+
+<h1>Cohomology of root systems</h1>
+Let Φ be a root system, let <i>k</i> be any field, and let
+C<sub><i>i</i></sub> = ⋀<sup><i>i</i></sup> Φ<sup>+</sup>
+be the <i>i</i>-th exterior power of the <i>k</i>-vectorspace
+with basis Φ<sup>+</sup>. Consider the cochain complex
+... ← C<sub><i>i</i>+1</sub> ← C<sub><i>i</i></sub> ← ...
+with coboundary operator <i>d</i> defined by
+<blockquote>
+<i>d</i><sub><i>i</i></sub>(<i>a</i><sub>1</sub> ∧ ... ∧
+<i>a</i><sub><i>i</i></sub>) = Σ<sub><i>j</i></sub>
+Σ<sub><i>a</i><sub><i>j</i></sub>=<i>b</i>+<i>c</i></sub>
+(–1)<sup><i>j</i></sup> <i>f</i>(<i>b</i>,<i>c</i>)
+<i>a</i><sub>1</sub> ∧ ... ∧ <i>a</i><sub><i>j</i>–1</sub> ∧
+<i>b</i> ∧ <i>c</i> ∧ <i>a</i><sub><i>j</i>+1</sub> ∧ ... ∧
+<i>a</i><sub><i>i</i></sub>,
+</blockquote>
+where <i>f(b,c)=–f(c,b)</i> and the sum is over unordered pairs
+of positive roots {<i>b</i>,<i>c</i>} with
+<i>b</i>+<i>c</i> = <i>a</i><sub><i>j</i></sub>.
+One checks that indeed
+<i>d</i><sub><i>i</i>+1</sub><i>d</i><sub><i>i</i></sub> = 0
+provided that <i>f(b,c)f(b+c,d) = f(b,c+d)f(c,d)</i>.
+(For a simply laced root system one can find such an <i>f</i>
+that only takes the values 1 or –1, e.g. by borrowing it
+from the corresponding Lie algebra:
+[<i>e<sub>r</sub></i>,<i>e<sub>s</sub></i>] = <i>f(r,s)e<sub>r+s</sub></i>.)
+<p>
+This complex is the direct sum of such complexes where the basis vectors
+are restricted to (the exterior products of the elements of) the vertices
+of Γ(<i>u</i>).
+For each <i>u</i> we can ask for the cohomology of this complex.
+<p>
+In characteristic 0 the only contribution to cohomology is provided
+by the Γ(<i>u</i>) that have a single vertex only.
+In characteristic <i>p</i> there may be further cohomology.
+<p>
+<font size="-2">
+For example, <i>H<sup>p</sup></i> has further mod <i>p</i>
+cohomology in A<sub><i>p</i>+1</sub>. Look at the sum vector
+<i>u</i> = (1,2,3,...,<i>p</i>,1). The corresponding graph
+has 2<sup><i>p</i></sup> vertices
+<!--
+In 1,2,3,4,5,1 look at the root containing a.
+If that is abcde, then left 0,1,2,3,4,1 and by induction size 2^4.
+Otherwise e,de,cde,bcde are forced, and left is 1,1,1,1,1,1
+where e and f occur together, again 2^4.
+-->
+and valency <i>p</i>, that is, is the <i>p</i>-cube.
+The matrix for d<sub><i>p</i></sub> has rank <i>p</i>
+but <i>p</i>-rank <i>p</i>-1,
+<!--
+p parts: abcde,bcde,cde,de,e with f attached to 1: p possibilities
+comparing abcde+bcdef+cde+de+e to abcde+bcde+cde+de+ef one sees
+that the former has a split abcde+bcd|ef+cde+de+e and the latter
+a split abcde+bcd|e+cde+de+ef of opposite sign. So the sum of all p
+of these is mapped to p*(abcde+bcde+cde+de+e+f).
+-->
+so that <i>H<sup>p</sup></i> has larger dimension in characteristic <i>p</i>
+than in characteristic 0.
+</font>
+<p>
+In characteristic 0, the Poincaré polynomial
+P(t) = Σ dim H<sub>i</sub> t<sup>i</sup>
+equals ∏<sub>d</sub> ((t<sup>d</sup>-1)/(t-1))
+where d runs over the degrees:
+that is the sequence 2,3,...,n+1 for A<sub>n</sub>
+and 2,4,6,...,2n-4,2n-2,n for D<sub>n</sub>.
+This explains the p=0 data below.
+<!--
+B_n,C_n: 2,4,6,...,2n
+G2: 2,6
+F4: 2,6,8,12
+E6: 2,5,6,8,9,12
+E7: 2,6,8,10,12,14,18
+E8: 2,8,12,14,18,20,24,30
+gives dims
+G2: 1,2,2,2,2,2,1
+F4: 1,4,9,16,25,36,48,60,71,80,87,92,94,92,...,1
+-->
+<p>
+Data: <a href="#An">A<sub>n</sub></a>,
+<a href="#Bn">B<sub>n</sub></a>,
+<a href="#Cn">C<sub>n</sub></a>,
+<a href="#Dn">D<sub>n</sub></a>,
+<a href="#F4">F<sub>4</sub></a>.
+<a href="#G2">G<sub>2</sub></a>.
+See also <i>On Kostant's theorem for Lie algebra cohomology</i>,
+by the University of Georgia VIGRE algebra group (preprint, 2007).
+<p>
+<h2><a name="An">A<sub>n</sub></a></h2>
+A<sub>0</sub>: <table border="1">
+<tr><td>p</td><td></td><td>H<sup>0</sup></td></tr>
+<tr><td>0</td><td></td><td>1</td></tr>
+</table>
+<p>
+A<sub>1</sub>: <table border="1">
+<tr><td>p</td><td></td><td>H<sup>0</sup></td><td>H<sup>1</sup></td></tr>
+<tr><td>0</td><td></td><td>1</td><td>1</td></tr>
+</table>
+<p>
+A<sub>2</sub>: <table border="1">
+<tr><td>p</td><td></td><td>H<sup>0</sup></td><td>H<sup>1</sup></td>
+<td>H<sup>2</sup></td><td>H<sup>3</sup></td></tr>
+<tr><td>0</td><td></td><td>1</td><td>2</td><td>2</td><td>1</td></tr>
+</table>
+<p>
+A<sub>3</sub>: <table border="1">
+<tr><td>p</td><td></td><td>H<sup>0</sup></td><td>H<sup>1</sup></td>
+<td>H<sup>2</sup></td><td>H<sup>3</sup></td><td>H<sup>4</sup></td>
+<td>H<sup>5</sup></td><td>H<sup>6</sup></td></tr>
+<tr><td>0</td><td></td><td>1</td><td>3</td><td>5</td><td>6</td>
+<td>5</td><td>3</td><td>1</td></tr>
+<tr><td>2</td><td></td><td>1</td><td>3</td><td>6</td><td>8</td>
+<td>6</td><td>3</td><td>1</td></tr>
+</table>
+<p>
+A<sub>4</sub>: <table border="1">
+<tr><td>p</td><td></td><td>H<sup>0</sup></td><td>H<sup>1</sup></td>
+<td>H<sup>2</sup></td><td>H<sup>3</sup></td><td>H<sup>4</sup></td>
+<td>H<sup>5</sup></td><td>H<sup>6</sup></td><td>H<sup>7</sup>
+<td>H<sup>8</sup><td>H<sup>9</sup><td>H<sup>10</sup></tr>
+<tr><td>0</td><td></td><td>1</td><td>4</td><td>9</td><td>15</td>
+<td>20</td><td>22</td><td>20</td><td>15</td><td>9</td><td>4</td>
+<td>1</td></tr>
+<tr><td>2</td><td></td><td>1</td><td>4</td><td>11</td><td>25</td>
+<td>38</td><td>42</td><td>38</td><td>25</td><td>11</td><td>4</td>
+<td>1</td></tr>
+<tr><td>3</td><td></td><td>1</td><td>4</td><td>9</td><td>17</td>
+<td>25</td><td>28</td><td>25</td><td>17</td><td>9</td><td>4</td>
+<td>1</td></tr>
+</table>
+<p>
+A<sub>5</sub>: <table border="1">
+<tr><td>p</td><td></td><td>H<sup>0</sup></td><td>H<sup>1</sup></td>
+<td>H<sup>2</sup></td><td>H<sup>3</sup></td><td>H<sup>4</sup></td>
+<td>H<sup>5</sup></td><td>H<sup>6</sup></td>
+<td>H<sup>7</sup>, H<sup>8</sup></td><td>...</td><td>H<sup>15</sup></tr>
+<tr><td>0</td><td></td><td>1</td><td>5</td><td>14</td><td>29</td>
+<td>49</td><td>71</td><td>90</td><td>101</td><td>...</td><td>1</td></tr>
+<tr><td>2</td><td></td><td>1</td><td>5</td><td>17</td><td>52</td>
+<td>119</td><td>209</td><td>308</td><td>381</td><td>...</td><td>1</td></tr>
+<tr><td>3</td><td></td><td>1</td><td>5</td><td>14</td><td>33</td>
+<td>66</td><td>110</td><td>151</td><td>172</td><td>...</td><td>1</td></tr>
+</table>
+<p>
+A<sub>6</sub>: <table border="1">
+<tr><td>p</td><td></td><td>H<sup>0</sup></td><td>H<sup>1</sup></td>
+<td>H<sup>2</sup></td><td>H<sup>3</sup></td><td>H<sup>4</sup></td>
+<td>H<sup>5</sup></td><td>H<sup>6</sup></td><td>H<sup>7</sup></td>
+<td>H<sup>8</sup></td><td>H<sup>9</sup></td>
+<td>H<sup>10</sup>, H<sup>11</sup></td><td>...</td><td>H<sup>21</sup></tr>
+<tr><td>0</td><td></td><td>1</td><td>6</td><td>20</td><td>49</td>
+<td>98</td><td>169</td><td>259</td><td>359</td><td>455</td><td>531</td>
+<td>573</td><td>...</td><td>1</td></tr>
+<tr><td>2</td><td></td><td>1</td><td>6</td><td>24</td><td>88</td>
+<td>263</td><td>630</td><td>1290</td><td>2293</td><td>3523</td><td>4657</td>
+<td>5313</td><td>...</td><td>1</td></tr>
+<tr><td>3</td><td></td><td>1</td><td>6</td><td>20</td><td>55</td>
+<td>131</td><td>274</td><td>505</td><td>802</td><td>1114</td><td>1396</td>
+<td>1576</td><td>...</td><td>1</td></tr>
+<tr><td>5</td><td></td><td>1</td><td>6</td><td>20</td><td>49</td>
+<td>98</td><td>173</td><td>280</td><td>414</td><td>549</td><td>650</td>
+<td>700</td><td>...</td><td>1</td></tr>
+</table>
+<p>
+A<sub>7</sub>: <table border="1">
+<tr><td>p</td><td></td><td>H<sup>0</sup></td><td>H<sup>1</sup></td>
+<td>H<sup>2</sup></td><td>H<sup>3</sup></td><td>H<sup>4</sup></td>
+<td>H<sup>5</sup></td><td>H<sup>6</sup></td><td>H<sup>7</sup></td>
+<td>H<sup>8</sup></td><td>H<sup>9</sup></td><td>H<sup>10</sup></td>
+<td>H<sup>11</sup></td><td>H<sup>12</sup></td><td>H<sup>13</sup></td>
+<td>H<sup>14</sup></td><td>H<sup>15</sup></td><td>...</td>
+<td>H<sup>28</sup></tr>
+<tr><td>0</td><td></td><td>1</td><td>7</td><td>27</td><td>76</td>
+<td>174</td><td>343</td><td>602</td><td>961</td><td>1415</td><td>1940</td>
+<td>2493</td><td>3017</td><td>3450</td><td>3736</td><td>3836</td>
+<td>3736</td><td>...</td><td>1</td></tr>
+<tr><td>2</td><td></td><td>1</td><td>7</td><td>32</td><td>134</td>
+<td>479</td><td>1433</td><td>3732</td><td>8543</td><td>17384</td><td>31600</td>
+<td>51128</td><td>73885</td><td>96110</td><td>112822</td><td>119116</td>
+<td>112822</td><td>...</td><td>1</td></tr>
+<tr><td>3</td><td></td><td>1</td><td>7</td><td>27</td><td>84</td>
+<td>227</td><td>556</td><td>1249</td><td>2490</td><td>4392</td><td>7045</td>
+<td>10452</td><td>14302</td><td>17856</td><td>20252</td><td>21064</td>
+<td>20252</td><td>...</td><td>1</td></tr>
+<tr><td>5</td><td></td><td>1</td><td>7</td><td>27</td><td>76</td>
+<td>174</td><td>351</td><td>657</td><td>1153</td><td>1869</td><td>2773</td>
+<td>3783</td><td>4790</td><td>5676</td><td>6306</td><td>6538</td>
+<td>6306</td><td>...</td><td>1</td></tr>
+</table>
+<p>
+<h2><a name="Bn">B<sub>n</sub></a></h2>
+B<sub>2</sub>: <table border="1">
+<tr><td>p</td><td></td><td>H<sup>0</sup></td><td>H<sup>1</sup></td>
+<td>H<sup>2</sup></td><td>H<sup>3</sup></td><td>H<sup>4</sup></td></tr>
+<tr><td>0</td><td></td><td>1</td><td>2</td><td>2</td><td>2</td><td>1</td></tr>
+<tr><td>2</td><td></td><td>1</td><td>3</td><td>4</td><td>3</td><td>1</td></tr>
+</table>
+<p>
+B<sub>3</sub>: <table border="1">
+<tr><td>p</td><td></td><td>H<sup>0</sup></td><td>H<sup>1</sup></td>
+<td>H<sup>2</sup></td><td>H<sup>3</sup></td><td>H<sup>4</sup></td>
+<td>H<sup>5</sup></td><td>H<sup>6</sup></td><td>H<sup>7</sup></td>
+<td>H<sup>8</sup></td><td>H<sup>9</sup></tr>
+<tr><td>0</td><td></td><td>1</td><td>3</td><td>5</td><td>7</td><td>8</td>
+<td>8</td><td>7</td><td>5</td><td>3</td><td>1</td></tr>
+<tr><td>2</td><td></td><td>1</td><td>4</td><td>12</td><td>24</td><td>33</td>
+<td>33</td><td>24</td><td>12</td><td>4</td><td>1</td></tr>
+<tr><td>3</td><td></td><td>1</td><td>3</td><td>6</td><td>10</td><td>12</td>
+<td>12</td><td>10</td><td>6</td><td>3</td><td>1</td></tr>
+</table>
+<p>
+B<sub>4</sub>: <table border="1">
+<tr><td>p</td><td></td><td>H<sup>0</sup></td><td>H<sup>1</sup></td>
+<td>H<sup>2</sup></td><td>H<sup>3</sup></td><td>H<sup>4</sup></td>
+<td>H<sup>5</sup></td><td>H<sup>6</sup></td><td>H<sup>7</sup></td>
+<td>H<sup>8</sup></td><td>H<sup>9</sup></td><td>...</td>
+<td>H<sup>16</sup></td></tr>
+<tr><td>0</td><td></td><td>1</td><td>4</td><td>9</td><td>16</td><td>24</td>
+<td>32</td><td>39</td><td>44</td><td>46</td><td>44</td><td>...</td><td>1</td>
+</tr>
+<tr><td>2</td><td></td><td>1</td><td>5</td><td>22</td><td>70</td><td>168</td>
+<td>336</td><td>555</td><td>732</td><td>794</td><td>732</td><td>...</td>
+<td>1</td></tr>
+<tr><td>3</td><td></td><td>1</td><td>4</td><td>10</td><td>23</td><td>44</td>
+<td>74</td><td>114</td><td>147</td><td>158</td><td>147</td><td>...</td>
+<td>1</td></tr>
+<tr><td>5</td><td></td><td>1</td><td>4</td><td>9</td><td>17</td><td>29</td>
+<td>44</td><td>57</td><td>63</td><td>64</td><td>63</td><td>...</td><td>1</td>
+</tr>
+</table>
+<p>
+B<sub>5</sub>: <table border="1">
+<tr><td>p</td><td></td><td>H<sup>0</sup></td><td>H<sup>1</sup></td>
+<td>H<sup>2</sup></td><td>H<sup>3</sup></td><td>H<sup>4</sup></td>
+<td>H<sup>5</sup></td><td>H<sup>6</sup></td><td>H<sup>7</sup></td>
+<td>H<sup>8</sup></td><td>H<sup>9</sup></td><td>H<sup>10</sup></td>
+<td>H<sup>11</sup></td><td>H<sup>12</sup>, H<sup>13</sup></td>
+<td>...</td><td>H<sup>25</sup></td></tr>
+<tr><td>0</td><td></td><td>1</td><td>5</td><td>14</td><td>30</td><td>54</td>
+<td>86</td><td>125</td><td>169</td><td>215</td><td>259</td><td>297</td>
+<td>325</td><td>340</td><td>...</td><td>1</td></tr>
+<tr><td>2</td><td></td><td>1</td><td>6</td><td>30</td><td>129</td><td>430</td>
+<td>1225</td><td>3082</td><td>6624</td><td>12219</td><td>19945</td>
+<td>28994</td><td>37050</td><td>41621</td><td>...</td><td>1</td></tr>
+<tr><td>3</td><td></td><td>1</td><td>5</td><td>15</td><td>40</td><td>94</td>
+<td>208</td><td>430</td><td>790</td><td>1320</td><td>1993</td><td>2639</td>
+<td>3136</td><td>3441</td><td>...</td><td>1</td></tr>
+<tr><td>5</td><td></td><td>1</td><td>5</td><td>14</td><td>31</td><td>61</td>
+<td>113</td><td>197</td><td>312</td><td>443</td><td>574</td><td>694</td>
+<td>798</td><td>869</td><td>...</td><td>1</td></tr>
+<tr><td>7</td><td></td><td>1</td><td>5</td><td>14</td><td>30</td><td>55</td>
+<td>92</td><td>144</td><td>212</td><td>291</td><td>367</td><td>424</td>
+<td>456</td><td>469</td><td>...</td><td>1</td></tr>
+</table>
+<p>
+<h2><a name="Cn">C<sub>n</sub></a></h2>
+C<sub>2</sub> = B<sub>2</sub>.
+<p>
+C<sub>3</sub>: <table border="1">
+<tr><td>p</td><td></td><td>H<sup>0</sup></td><td>H<sup>1</sup></td>
+<td>H<sup>2</sup></td><td>H<sup>3</sup></td><td>H<sup>4</sup></td>
+<td>H<sup>5</sup></td><td>H<sup>6</sup></td><td>H<sup>7</sup></td>
+<td>H<sup>8</sup></td><td>H<sup>9</sup></tr>
+<tr><td>0</td><td></td><td>1</td><td>3</td><td>5</td><td>7</td><td>8</td>
+<td>8</td><td>7</td><td>5</td><td>3</td><td>1</td></tr>
+<tr><td>2</td><td></td><td>1</td><td>5</td><td>13</td><td>24</td><td>33</td>
+<td>33</td><td>24</td><td>13</td><td>5</td><td>1</td></tr>
+<tr><td>3</td><td></td><td>1</td><td>3</td><td>6</td><td>10</td><td>12</td>
+<td>12</td><td>10</td><td>6</td><td>3</td><td>1</td></tr>
+</table>
+<p>
+C<sub>4</sub>: <table border="1">
+<tr><td>p</td><td></td><td>H<sup>0</sup></td><td>H<sup>1</sup></td>
+<td>H<sup>2</sup></td><td>H<sup>3</sup></td><td>H<sup>4</sup></td>
+<td>H<sup>5</sup></td><td>H<sup>6</sup></td><td>H<sup>7</sup></td>
+<td>H<sup>8</sup></td><td>H<sup>9</sup><td>...</td><td>H<sup>16</sup></td></tr>
+<tr><td>0</td><td></td><td>1</td><td>4</td><td>9</td><td>16</td><td>24</td>
+<td>32</td><td>39</td><td>44</td><td>46</td><td>44</td><td>...</td><td>1</td>
+</tr>
+<tr><td>2</td><td></td><td>1</td><td>7</td><td>27</td><td>79</td><td>187</td>
+<td>363</td><td>581</td><td>767</td><td>840</td><td>767</td><td>...</td>
+<td>1</td></tr>
+<tr><td>3</td><td></td><td>1</td><td>4</td><td>10</td><td>22</td><td>43</td>
+<td>79</td><td>124</td><td>151</td><td>156</td><td>151</td><td>...</td>
+<td>1</td></tr>
+<tr><td>5</td><td></td><td>1</td><td>4</td><td>9</td><td>16</td><td>26</td>
+<td>41</td><td>57</td><td>67</td><td>70</td><td>67</td><td>...</td><td>1</td>
+</tr>
+</table>
+<p>
+C<sub>5</sub>: <table border="1">
+<tr><td>p</td><td></td><td>H<sup>0</sup></td><td>H<sup>1</sup></td>
+<td>H<sup>2</sup></td><td>H<sup>3</sup></td><td>H<sup>4</sup></td>
+<td>H<sup>5</sup></td><td>H<sup>6</sup></td><td>H<sup>7</sup></td>
+<td>H<sup>8</sup></td><td>H<sup>9</sup></td><td>H<sup>10</sup></td>
+<td>H<sup>11</sup></td><td>H<sup>12</sup>, H<sup>13</sup></td>
+<td>...</td><td>H<sup>25</sup></td></tr>
+<tr><td>0</td><td></td><td>1</td><td>5</td><td>14</td><td>30</td><td>54</td>
+<td>86</td><td>125</td><td>169</td><td>215</td><td>259</td><td>297</td>
+<td>325</td><td>340</td><td>...</td><td>1</td></tr>
+<tr><td>2</td><td></td><td>1</td><td>9</td><td>45</td><td>174</td>
+<td>562</td><td>1544</td><td>3691</td><td>7728</td><td>14158</td>
+<td>22776</td><td>32374</td><td>40853</td><td>45873</td>
+<td>...</td><td>1</td></tr>
+<tr><td>3</td><td></td><td>1</td><td>5</td><td>15</td><td>39</td><td>93</td>
+<td>218</td><td>466</td><td>847</td><td>1372</td><td>2034</td><td>2708</td>
+<td>3277</td><td>3645</td><td>...</td><td>1</td></tr>
+<tr><td>5</td><td></td><td>1</td><td>5</td><td>14</td><td>30</td><td>59</td>
+<td>114</td><td>203</td><td>319</td><td>448</td><td>581</td><td>704</td>
+<td>790</td><td>828</td><td>...</td><td>1</td></tr>
+<tr><td>7</td><td></td><td>1</td><td>5</td><td>14</td><td>30</td><td>54</td>
+<td>86</td><td>128</td><td>188</td><td>272</td><td>367</td><td>443</td>
+<td>481</td><td>491</td><td>...</td><td>1</td></tr>
+</table>
+<p>
+<h2><a name="Dn">D<sub>n</sub></a></h2>
+D<sub>3</sub> = A<sub>3</sub>.
+<p>
+D<sub>4</sub>: <table border="1">
+<tr><td>p</td><td></td><td>H<sup>0</sup></td><td>H<sup>1</sup></td>
+<td>H<sup>2</sup></td><td>H<sup>3</sup></td><td>H<sup>4</sup></td>
+<td>H<sup>5</sup></td><td>H<sup>6</sup></td><td>H<sup>7</sup></td>
+<td>H<sup>8</sup></td><td>H<sup>9</sup></td><td>H<sup>10</sup></td>
+<td>H<sup>11</sup></td><td>H<sup>12</sup></tr>
+<tr><td>0</td><td></td><td>1</td><td>4</td><td>9</td><td>16</td>
+<td>23</td><td>28</td><td>30</td><td>28</td><td>23</td><td>16</td>
+<td>9</td><td>4</td><td>1</td></tr>
+<tr><td>2</td><td></td><td>1</td><td>4</td><td>15</td><td>37</td>
+<td>67</td><td>103</td><td>122</td><td>103</td><td>67</td><td>37</td>
+<td>15</td><td>4</td><td>1</td></tr>
+<tr><td>3</td><td></td><td>1</td><td>4</td><td>9</td><td>17</td>
+<td>28</td><td>39</td><td>44</td><td>39</td><td>28</td><td>17</td>
+<td>9</td><td>4</td><td>1</td></tr>
+</table><p>
+D<sub>5</sub>: <table border="1">
+<tr><td>p</td><td></td><td>H<sup>0</sup></td><td>H<sup>1</sup></td>
+<td>H<sup>2</sup></td><td>H<sup>3</sup></td><td>H<sup>4</sup></td>
+<td>H<sup>5</sup></td><td>H<sup>6</sup></td><td>H<sup>7</sup></td>
+<td>H<sup>8</sup></td><td>H<sup>9</sup></td><td>H<sup>10</sup></td>
+<td>H<sup>11</sup><td>...</td></td><td>H<sup>20</sup></tr>
+<tr><td>0</td><td></td><td>1</td><td>5</td><td>14</td><td>30</td>
+<td>54</td><td>85</td><td>120</td><td>155</td><td>185</td><td>205</td>
+<td>212</td><td>205</td><td>...</td><td>1</td></tr>
+<tr><td>2</td><td></td><td>1</td><td>5</td><td>22</td><td>79</td>
+<td>216</td><td>516</td><td>1072</td><td>1815</td><td>2586</td><td>3247</td>
+<td>3530</td><td>3247</td><td>...</td><td>1</td></tr>
+<tr><td>3</td><td></td><td>1</td><td>5</td><td>14</td><td>37</td>
+<td>85</td><td>163</td><td>285</td><td>449</td><td>616</td><td>746</td>
+<td>798</td><td>746</td><td>...</td><td>1</td></tr>
+<tr><td>5</td><td></td><td>1</td><td>5</td><td>14</td><td>30</td>
+<td>54</td><td>89</td><td>143</td><td>213</td><td>273</td><td>303</td>
+<td>310</td><td>303</td><td>...</td><td>1</td></tr>
+</table>
+<p>
+<h2><a name="F4">F<sub>4</sub></a></h2>
+F<sub>4</sub>: <table border="1">
+<tr><td>p</td><td></td><td>H<sup>0</sup></td><td>H<sup>1</sup></td>
+<td>H<sup>2</sup></td><td>H<sup>3</sup></td><td>H<sup>4</sup></td>
+<td>H<sup>5</sup></td><td>H<sup>6</sup></td><td>H<sup>7</sup></td>
+<td>H<sup>8</sup></td><td>H<sup>9</sup></td><td>H<sup>10</sup></td>
+<td>H<sup>11</sup></td><td>H<sup>12</sup></td><td>H<sup>13</sup></td>
+<td>...</td></td><td>H<sup>24</sup></tr>
+<tr><td>0</td><td></td><td>1</td><td>4</td><td>9</td><td>16</td>
+<td>25</td><td>36</td><td>48</td><td>60</td><td>71</td><td>80</td>
+<td>87</td><td>92</td><td>94</td><td>92</td><td>...</td><td>1</td></tr>
+<tr><td>2</td><td></td><td>1</td><td>6</td><td>30</td><td>118</td>
+<td>371</td><td>1008</td><td>2381</td><td>4791</td><td>8379</td>
+<td>13074</td><td>18005</td><td>21600</td><td>22860</td><td>21600</td>
+<td>...</td><td>1</td></tr>
+<tr><td>3</td><td></td><td>1</td><td>4</td><td>12</td><td>37</td>
+<td>90</td><td>189</td><td>369</td><td>654</td><td>1051</td><td>1526</td>
+<td>1980</td><td>2311</td><td>2436</td><td>2311</td><td>...</td><td>1</td></tr>
+<tr><td>5</td><td></td><td>1</td><td>4</td><td>9</td><td>17</td>
+<td>31</td><td>53</td><td>82</td><td>127</td><td>197</td><td>277</td>
+<td>340</td><td>368</td><td>372</td><td>368</td><td>...</td><td>1</td></tr>
+<tr><td>7</td><td></td><td>1</td><td>4</td><td>9</td><td>16</td>
+<td>25</td><td>38</td><td>60</td><td>94</td><td>133</td><td>163</td>
+<td>173</td><td>165</td><td>158</td><td>165</td><td>...</td><td>1</td></tr>
+</table>
+<p>
+<h2><a name="G2">G<sub>2</sub></a></h2>
+G<sub>2</sub>: <table border="1">
+<tr><td>p</td><td></td><td>H<sup>0</sup></td><td>H<sup>1</sup></td>
+<td>H<sup>2</sup></td><td>H<sup>3</sup></td><td>H<sup>4</sup></td>
+<td>H<sup>5</sup></td><td>H<sup>6</sup></td></tr>
+<tr><td>0</td><td></td><td>1</td><td>2</td><td>2</td><td>2</td>
+<td>2</td><td>2</td><td>1</td></tr>
+<tr><td>2</td><td></td><td>1</td><td>3</td><td>6</td><td>8</td>
+<td>6</td><td>3</td><td>1</td></tr>
+<tr><td>3</td><td></td><td>1</td><td>3</td><td>6</td><td>8</td>
+<td>6</td><td>3</td><td>1</td></tr>
+</table>
+</body>
+</html>

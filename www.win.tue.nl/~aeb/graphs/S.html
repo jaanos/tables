@@ -1,0 +1,98 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<HTML>
+<HEAD>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <TITLE>Steiner systems</TITLE>
+</HEAD>
+<BODY>
+<a href="index.html">Up</a>
+
+<H1>Steiner systems</H1>
+A <i>Steiner system</i> S(<i>t</i>,<i>k</i>,<i>v</i>)
+is a <i>t</i>-(<i>v</i>,<i>k</i>,1) design, that is,
+a collection of <i>k</i>-subsets (called <i>blocks</i>) of a <i>v</i>-set
+such that each <i>t</i>-tuple of elements of this <i>v</i>-set
+is contained in a unique block.
+<p>
+By taking the <i>derived design</i> (taking all blocks that contain
+a fixed element, and then discarding that element), one finds a
+S(<i>t</i>–1,<i>k</i>–1,<i>v</i>–1) from a S(<i>t</i>,<i>k</i>,<i>v</i>).
+<p>
+No Steiner systems are known with <i>t</i> larger than 5.
+The Witt designs S(5,6,12) and S(5,8,24) belong to the Mathieu groups
+M<sub>12</sub> and M<sub>24</sub>, respectively.
+The blocks of S(5,8,24) are called <i>octads</i>.
+The Steiner systems S(5,8,24), S(4,7,23), S(3,6,22), S(2,5,21)
+and S(5,6,12), S(4,5,11), S(3,4,10), S(2,3,9) are unique.
+A handful of other Steiner 5-designs is known, see below.
+The only known Steiner 4-designs are the derived systems from
+Steiner 5-designs.
+<p>
+The <i>block graph</i> of a Steiner 2-design S(2,<i>m</i>,<i>n</i>)
+is the graph with the blocks as vertices, where two blocks are adjacent
+when they have nonempty intersection.
+Such a graph is strongly regular, with parameters
+<i>v</i> = <i>n</i>(<i>n</i> – 1)/<i>m</i>(<i>m</i> – 1),
+<i>k</i> = <i>m</i>(<i>n</i> – <i>m</i>)/(<i>m</i> – 1),
+&lambda; = (<i>m</i> – 1)<sup>2</sup> + (<i>n</i> – 1)/(<i>m</i>–1) – 2,
+&mu; = <i>m</i><sup>2</sup>.
+<p>
+More generally, the block graph of a quasi-symmetric design
+is strongly regular.
+<p>
+When <i>m</i> = 3, these designs are called
+<a href="STS.html"><i>Steiner triple systems</i></a>.
+
+<H2>Steiner 5-designs</H2>
+Steiner systems S(5,6,<i>v</i>) are known for
+<i>v</i> = 12, 24, 36, 48, 72, 84, 108, 132, 168, 244.
+Also Steiner systems S(5,7,28) are known.
+There is a unique S(5,8,24).
+
+<H2>References</H2>
+A. Betten, R. Laue & A. Wassermann,
+<i>A Steiner 5-design on 36 points</i>,
+Designs, Codes and Cryptography <b>17</b> (1999) 181-186.
+<p>
+A. Betten, R. Laue, S. Molodtsov & A. Wassermann,
+<i>Steiner systems with automorphism groups PSL(2,71), PSL(2,83)
+and PΣL(2,3<sup>5</sup>)</i>,
+J. Geometry <b>67</b> (2000) 35-41.
+<!-- constructs S(5,6,244) -->
+<p>
+R.H.F. Denniston,
+<i>Some new 5-designs</i>,
+Bull. London Math. Soc. <b>8</b> (1976) 263-267.
+<!-- constructs S(5,6,24), S(5,6,48), S(5,6,84), S(5,7,28) -->
+<p>
+<!--
+M.J. Grannell, T.S. Griggs,
+<i>A note on the Steiner systems S(5, 6, 24)</i>,
+Ars Combinatoria <b>9</b> (1980) 51-58.
+-->
+<p>
+M.J. Grannell, T.S. Griggs,
+<i>A Steiner system S(5,6,108)</i>,
+Discr. Math. <b>125</b> (1994) 183-186.
+<!-- S(5,6,108) due to Griggs -->
+<p>
+M.J. Grannell, T.S. Griggs & R.A. Mathon,
+<i>Some Steiner 5-designs with 108 and 132 points</i>,
+J. Comb. Designs <b>1</b> (1993) 213­238.
+<!-- constructs S(5,6,108), S(5,6,132) -->
+<!--
+M.J. Grannell, T.S. Griggs & R.A. Mathon,
+<i>Steiner systems S(5,6,v) with v=72 and 84</i>,
+Math. Comp. <b>67</b> (1998) 357-359.
+-->
+<p>
+W.H. Mills,
+<i>A new 5-design</i>,
+Ars Combinatoria <b>6</b> (1978) 193-195.
+<!-- constructs S(5,6,72) -->
+<p>
+E. Witt,
+<i>Die 5-fach transitiven Gruppen von Mathieu</i>,
+Abh. Math. Sem. Univ. Hamburg <b>12</b> (1938) 256­264.
+</BODY>
+</HTML>

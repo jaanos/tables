@@ -1,0 +1,2558 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<html><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>(0,2)-graphs</title>
+</head><body>
+The tables on this web page, and the files linked to, and the two
+references given at the end, describe the (0,2)-graphs of valency
+at most 8.
+
+<h1>Semibiplanes</h1>
+A <i>semibiplane</i> is a connected bipartite graph such that
+any two vertices have 0 or 2 common neighbours.
+We use <i>v</i> for the number of vertices.
+<p>
+The number of semibiplanes of valency (block size) <i>k</i>
+at most 8 is
+
+<table border="1">
+<tbody><tr><td><i>k</i></td>
+<td>0</td> <td>1</td> <td>2</td> <td>3</td> <td>4</td>
+<td>5</td> <td>6</td> <td>7</td> <td>8</td></tr>
+<tr><td><i>N(k)</i></td> 
+<td>1</td> <td>1</td> <td>1</td> <td>1</td> <td>2</td> <td>4</td>
+<td>13</td> <td>40</td> <td>104</td></tr>
+</tbody></table>
+<p>
+These semibiplanes are given explicitly below.
+<p>
+A semibiplane can be regarded as a connected point-block incidence structure,
+where two points are in 0 or 2 blocks, and two blocks meet in 0 or 2 points.
+A <i>biplane</i> is the particular case where 0 does not occur.
+In other words, a biplane is a square 2-(<i>w</i>, <i>k</i>, 2) design,
+where <i>w</i> is the number of points.
+One has <i>w</i> = <i>k</i>(<i>k</i>-1)/2 + 1, that is,
+<i>v</i> = 2<i>w</i> = <i>k</i><sup>2</sup>-<i>k</i>+2.
+The known cases have <i>k</i> = 1, 2, 3, 4, 5, 6, 9, 11, 13.
+See <a href="http://people.csse.uwa.edu.au/gordon/remote/biplanes/">this
+survey by Gordon Royle</a>, and
+<a href="../Folded-6-cube.html">a description of the three
+2-(16,6,2) biplanes</a>.
+
+<h1>Rectagraphs</h1>
+A <i>rectagraph</i> is a connected graph without triangles
+such that any two vertices have 0 or 2 common neighbours.
+<p>
+Of course all semibiplanes are rectagraphs. The number of nonbipartite
+rectagraphs of valency <i>k</i> at most 8 is
+
+<table border="1">
+<tbody><tr><td><i>k</i></td>
+<td>0</td> <td>1</td> <td>2</td> <td>3</td> <td>4</td>
+<td>5</td> <td>6</td> <td>7</td> <td>8</td></tr>
+<tr><td><i>N(k)</i></td> 
+<td>0</td> <td>0</td> <td>0</td> <td>0</td> <td>0</td> <td>1</td>
+<td>2</td> <td>5</td> <td>20</td></tr>
+</tbody></table>
+<p>
+These 28 nonbipartite rectagraphs are the graphs
+<a href="#N5.2">N5.2</a>,
+<a href="#N6.6">N6.6</a>,
+<a href="#N6.9">N6.9</a>,
+<a href="#N7.44">N7.44</a>,
+<a href="#N7.45">N7.45</a>,
+<a href="#N7.51">N7.51</a>,
+<a href="#N7.52">N7.52</a>,
+<a href="#N7.53">N7.53</a>,
+<a href="#N8.9">N8.9</a>,
+<a href="#N8.37">N8.37</a>,
+<a href="#N8.47">N8.47</a>,
+<a href="#N8.107">N8.107</a>,
+<a href="#N8.108">N8.108</a>,
+<a href="#N8.112">N8.112</a>,
+<a href="#N8.128">N8.128</a>,
+<a href="#N8.131">N8.131</a>,
+<a href="#N8.140">N8.140</a>,
+<a href="#N8.155">N8.155</a>,
+<a href="#N8.158">N8.158</a>,
+<a href="#N8.170">N8.170</a>,
+<a href="#N8.171">N8.171</a>,
+<a href="#N8.178">N8.178</a>,
+<a href="#N8.179">N8.179</a>,
+<a href="#N8.180">N8.180</a>,
+<a href="#N8.188">N8.188</a>,
+<a href="#N8.193">N8.193</a>,
+<a href="#N8.194">N8.194</a>,
+<a href="#N8.195">N8.195</a>
+below.
+
+<h1>(0,2)-graphs</h1>
+A <i>(0,2)-graph</i> is a connected graph such that
+any two vertices have 0 or 2 common neighbours.
+<p>
+The total number of (0,2)-graphs of valency (block size) <i>k</i>
+at most 8 is
+
+<table border="1"><tbody>
+<tr><td><i>k</i></td>
+<td>0</td> <td>1</td> <td>2</td> <td>3</td> <td>4</td>
+<td>5</td> <td>6</td> <td>7</td> <td>8</td></tr>
+<tr><td><i>N(k)</i></td> 
+<td>1</td> <td>1</td> <td>1</td> <td>2</td> <td>3</td> <td>8</td>
+<td>24</td> <td>96</td> <td>302</td></tr>
+</tbody></table>
+<p>
+These (0,2)-graphs are given explicitly below.
+
+<h1>Flag-transitivity</h1>
+Of the 438 (0,2)-graphs of valency at most 8, 150 have a transitive
+group of automorphisms (65 bipartite and 85 nonbipartite), and
+transitivity is indicated in the tables below.
+Among these 150 there are 31 graphs that are flag-transitive,
+(23 bipartite and 8 nonbipartite)
+namely the 9 hypercubes 2<sup>k</sup> with k in 0..8,
+the 5 folded hypercubes 2<sup>k</sup>/<bf>1</bf> with k in 3,5,6,7,8,
+<!--
+the 2 products &Gamma; x &Gamma; where &Gamma; is a flag-transitive
+(0,2)-graph of valency at most 4 that is not a hypercube (i.e.,
+K<sub>4</sub> or 2-(7,4,2))
+-->
+and 17 others, namely
+<a href="#4.1">4.1</a>, <!-- 2-(7,4,2) -->
+<a href="#5.1">5.1</a>, <!-- 2-(11,5,2) -->
+<a href="#5.2">5.2</a>, <!-- bipd(ico) -->
+<a href="#6.1">6.1</a>, <!-- 2-(16,6,2) #1 -->
+<a href="#6.5">6.5</a>, <!-- drg(6,5,4,1; 1,2,5,6) -->
+<a href="#7.10">7.10</a>, <!-- Pi/s -->
+<a href="#7.29">7.29</a>, <!-- U3(3) -->
+<a href="#8.2">8.2</a>, <!-- drg(8,7,6,1; 1,2,7,8), Pi/s -->
+<a href="#8.13">8.13</a>, <!-- bipd(N8.9) -->
+<a href="#8.19">8.19</a>, <!-- 4.L_3(2).2 / D_{16} -->
+<a href="#8.62">8.62</a>, <!-- 2^6.L_3(2).2 -->
+<a href="#8.102">8.102</a>, <!-- 4.1 x 4.1 v=196 -->
+<a href="#N5.1">N5.1</a>, <!-- icosahedron -->
+<a href="#N6.1">N6.1</a>, <!-- K4 x K4 v=16 -->
+<a href="#N6.2">N6.2</a>, <!-- Shrikhande -->
+<a href="#N7.12">N7.12</a>, <!-- drg(7,4,1; 1,2,7) -->
+<a href="#N8.9">N8.9</a>. <!-- 2^4.Sym(5) -->
+<!-- check that these are listed in Barbara Baumeister and Francis Buekenhout,
+On the Classification of Flag-Transitive c.c*- Geometries,
+Geometriae Dedicata 75 (1999) 1-18. -->
+
+<h1>Chromatic number</h1>
+Of course bipartite (0,2)-graphs on more than 1 vertex have chromatic
+number 2. The non-bipartite (0,2)-graphs of valency at most 8 have
+chromatic number 4, with ten exceptions that have chromatic number 5, namely
+<a href="#N7.2">N7.2</a>,
+<a href="#N7.3">N7.3</a>,
+<a href="#N8.1">N8.1</a>,
+<a href="#N8.2">N8.2</a>,
+<a href="#N8.3">N8.3</a>,
+<a href="#N8.5">N8.5</a>,
+<a href="#N8.8">N8.8</a>,
+<a href="#N8.39">N8.39</a>,
+<a href="#N8.44">N8.44</a>.
+<a href="#N8.85">N8.85</a>.
+Thus, no (0,2)-graph of valency at most 8 has chromatic number 3.
+
+<h1>p-Ranks</h1>
+The <i>p</i>-ranks, for various primes <i>p</i>, give numerical invariants
+that sometimes allow to distinguish similar graphs.
+<p>
+Let A be the adjacency matrix. For <i>p</i>=2 we see that any two distinct
+rows are orthogonal. It follows that A has full 2-rank when <i>k</i> is odd,
+and 2-rank at most <i>v</i>/2 when <i>k</i> is even. On the other hand,
+A+I has full 2-rank when <i>k</i> is even and 2-rank at most <i>v</i>/2
+when <i>k</i> is odd. In the tables below we give the interesting 2-rank:
+that of A when <i>k</i> is even, of A+I otherwise. This value is at most
+<i>v</i>/2, and in 312 of the 438 cases we have equality. (There will be
+equality for example when <i>k</i> is odd and the graph is bipartite.)
+<p>
+For example, the three biplanes 2-(16,6,2) are distinguished by their
+2-ranks 6, 7, 8 - for the incidence graphs this means that the 2-ranks
+are 12, 14, 16.
+<p>
+One can use 3-ranks, e.g. to distinguish the pairs 8.3-8.5, 8.4-8.6,
+8.20-8.21:
+
+<table border="1"><tbody>
+<tr><td>&nbsp;</td>
+<td><a href="#8.3">8.3</a></td> <td><a href="#8.5">8.5</a></td>
+<td><a href="#8.4">8.4</a></td> <td><a href="#8.6">8.6</a></td>
+<td><a href="#8.20">8.20</a></td> <td><a href="#8.21">8.21</a></td></tr>
+
+<tr><td>3-rk(A)</td>
+ <td>66</td> <td>66</td> <td>60</td> <td>64</td> <td>80</td> <td>78</td> </tr>
+
+<tr><td>3-rk(A+I)</td>
+ <td>64</td> <td>66</td> <td>62</td> <td>67</td> <td>81</td> <td>79</td> </tr>
+</table>
+
+<h1>Constructions</h1>
+<h2>Bipartite double</h2>
+The <i>bipartite double</i> (bipd) of a graph is the product
+with K<sub>2</sub>, where two vertices in the product are adjacent
+when both coordinates are adjacent.
+The bipartite double of a (0,2)-graph is a bipartite (0,2)-graph
+of the same valency.
+<p>
+The <i>extended bipartite double</i> (ebipd) of a graph is the graph
+obtained from the bipartite double by adding the matching consisting
+of the edges joining two vertices with the same first coordinate.
+If the original graph is a rectagraph of valency <i>k</i>,
+the extended bipartite double is a bipartite (0,2)-graph with
+valency <i>k</i>+1.
+
+<h2>Cartesian products</h2>
+The Cartesian product of (0,2)-graphs is a (0,2)-graph again.
+In particular, the hypercube 2<sup>k</sup> is a (0,2)-graph.
+
+<h2>Folding</h2>
+When being at maximal distance is an equivalence relation,
+the folded graph is the quotient w.r.t. this equivalence relation.
+
+<h2>Quotients of projective planes</h2>
+Given a projective plane &Pi; with involution &sigma;, one obtains
+a semibiplane of which the points and blocks are the &sigma;-orbits
+of size 2 on the points and lines of &Pi; (Hughes).
+If &Pi; has order <i>q</i>, then the incidence graph of the semibiplane
+has <i>k</i> = <i>q</i>, and one has one of
+(i) <i>v</i> = <i>q</i><sup>2</sup> (elation, <i>q</i> even);
+(ii) <i>v</i> = <i>q</i><sup>2</sup>-1 (homology, <i>q</i> odd);
+(iii) <i>v</i> = <i>q</i><sup>2</sup>-sqrt(<i>q</i>)
+(Baer involution, <i>q</i> square).
+This graph is denoted &Pi;/&sigma;.
+
+<h2>Bipartite (0,2)-graphs from root systems</h2>
+One obtains a bipartite (0,2)-graph given a root system
+with singly laced diagram and a target vector.
+Details on a <a href="weyl02.html">separate page</a>.
+
+
+<h1>Bipartite (0,2)-graphs of valency 0-8</h1>
+These are the semibiplanes of block size at most 8.
+<p>
+The <i>subgraphs</i> column gives the type and number of the
+proper (0,2)-subgraphs of largest valency (at least 3), if any.
+<p>
+The 2-rank is that of the adjacency matrix A when <i>k</i> is even,
+and that of A+I when <i>k</i> is odd.
+<p>
+<table cellpadding="5" border="1">
+<tr><td>#</td><td><i>k</i></td><td><i>v</i></td><td><i>d</i></td>
+<td>|<i>G</i>|</td><td>orbits</td><td>graph</td><td>subgraphs</td>
+<td>2-rk</td><td>spectrum</td></tr>
+
+<tr> <td><a name="0.1"></a><a href="0/s0.001">0.1</a></td>
+ <td>0</td> <td>1</td> <td>0</td>
+ <td>1</td> <td>tra</td>
+ <td>2<sup>0</sup></td>
+ <td>&nbsp;</td> <td>0</td> <td><a href="0/s0.001.eig">0</a></td> </tr>
+<tr> <td><a name="1.1"></a><a href="1/s1.001">1.1</a></td>
+ <td>1</td> <td>2</td> <td>1</td>
+ <td>2</td> <td>tra</td>
+ <td>2<sup>1</sup></td>
+ <td>&nbsp;</td> <td>1</td> <td><a href="1/s1.001.eig">1, -1</a></td> </tr>
+<tr> <td><a name="2.1"></a><a href="2/s2.001">2.1</a></td>
+ <td>2</td> <td>4</td> <td>2</td>
+ <td>8</td> <td>tra</td>
+ <td>2<sup>2</sup></td>
+ <td>&nbsp;</td> <td>2</td> <td><a href="2/s2.001.eig">2, 0, 0, -2</a></td> </tr>
+<tr> <td><a name="3.1"></a><a href="3/s3.001">3.1</a></td>
+ <td>3</td> <td>8</td> <td>3</td>
+ <td>48</td> <td>tra</td>
+ <td>2<sup>3</sup></td>
+ <td>&nbsp;</td> <td>4</td> <td><a href="3/s3.001.eig">3, 1, 1, ...</a> (integral)</td> </tr>
+<tr> <td><a name="4.1"></a><a href="4/s4.001">4.1</a></td>
+ <td>4</td> <td>14</td> <td>3</td>
+ <td>336</td> <td>tra</td>
+ <td>2-(7,4,2) biplane</td>
+ <td>&nbsp;</td> <td>6</td> <td><a href="4/s4.001.eig">4, 1.414, 1.414, ...</a></td> </tr>
+<tr> <td><a name="4.2"></a><a href="4/s4.002">4.2</a></td>
+ <td>4</td> <td>16</td> <td>4</td>
+ <td>384</td> <td>tra</td>
+ <td>2<sup>4</sup></td>
+ <td>8 x <a href="#3.1">3.1</a></td> <td>8</td> <td><a href="4/s4.002.eig">4, 2, 2, ...</a> (integral)</td> </tr>
+<tr> <td><a name="5.1"></a><a href="5/s5.001">5.1</a></td>
+ <td>5</td> <td>22</td> <td>3</td>
+ <td>1320</td> <td>tra</td>
+ <td>2-(11,5,2) biplane</td>
+ <td>&nbsp;</td> <td>11</td> <td><a href="5/s5.001.eig">5, 1.732, 1.732, ...</a></td> </tr>
+<tr> <td><a name="5.2"></a><a href="5/s5.002">5.2</a></td>
+ <td>5</td> <td>24</td> <td>4</td>
+ <td>480</td> <td>tra</td>
+ <td>bipd(icosahedron)</td>
+ <td>&nbsp;</td> <td>12</td> <td><a href="5/s5.002.eig">5, 2.236, 2.236, ...</a></td> </tr>
+<tr> <td><a name="5.3"></a><a href="5/s5.003">5.3</a></td>
+ <td>5</td> <td>28</td> <td>4</td>
+ <td>672</td> <td>tra</td>
+ <td><a href="#4.1">4.1</a> x K<sub>2</sub></td>
+ <td>2 x <a href="#4.1">4.1</a></td> <td>14</td> <td><a href="5/s5.003.eig">5, 3, 2.414, ...</a></td> </tr>
+<tr> <td><a name="5.4"></a><a href="5/s5.004">5.4</a></td>
+ <td>5</td> <td>32</td> <td>5</td>
+ <td>3840</td> <td>tra</td>
+ <td>2<sup>5</sup></td>
+ <td>10 x <a href="#4.2">4.2</a></td> <td>16</td> <td><a href="5/s5.004.eig">5, 3, 3, ...</a> (integral)</td> </tr>
+<tr> <td><a name="6.1"></a><a href="6/s6.001">6.1</a></td>
+ <td>6</td> <td>32</td> <td>3</td>
+ <td>1536</td> <td>tra</td>
+ <td>2-(16,6,2) biplane</td>
+ <td>6 x <a href="#4.2">4.2</a></td> <td>14</td> <td><a href="6/s6.001.eig">6, 2, 2, ...</a> (integral)</td> </tr>
+<tr> <td><a name="6.2"></a><a href="6/s6.002">6.2</a></td>
+ <td>6</td> <td>32</td> <td>3</td>
+ <td>768</td> <td>tra</td>
+ <td>2-(16,6,2) biplane</td>
+ <td>2 x <a href="#4.2">4.2</a></td> <td>16</td> <td><a href="6/s6.002.eig">6, 2, 2, ...</a> (integral)</td> </tr>
+<tr> <td><a name="6.3"></a><a href="6/s6.003">6.3</a></td>
+ <td>6</td> <td>32</td> <td>3</td>
+ <td>23040</td> <td>tra</td>
+ <td>folded 2<sup>6</sup><br>2-(16,6,2) biplane</td>
+ <td>30 x <a href="#4.2">4.2</a></td> <td>12</td> <td><a href="6/s6.003.eig">6, 2, 2, ...</a> (integral)</td> </tr>
+<tr> <td><a name="6.4"></a><a href="6/s6.004">6.4</a></td>
+ <td>6</td> <td>36</td> <td>4</td>
+ <td>96</td> <td>12+24</td>
+ <td>&nbsp;</td>
+ <td>&nbsp;</td> <td>16</td> <td><a href="6/s6.004.eig">6, 2.828, 2.828, ...</a></td> </tr>
+<tr> <td><a name="6.5"></a><a href="6/s6.005">6.5</a></td>
+ <td>6</td> <td>36</td> <td>4</td>
+ <td>4320</td> <td>tra</td>
+ <td>drg(6,5,4,1; 1,2,5,6)</td>
+ <td>&nbsp;</td> <td>14</td> <td><a href="6/s6.005.eig">6, 2.449, 2.449, ...</a></td> </tr>
+<tr> <td><a name="6.6"></a><a href="6/s6.006">6.6</a></td>
+ <td>6</td> <td>36</td> <td>4</td>
+ <td>48</td> <td>12+24</td>
+ <td>&nbsp;</td>
+ <td>&nbsp;</td> <td>18</td> <td><a href="6/s6.006.eig">6, 2.828, 2.828, ...</a></td> </tr>
+<tr> <td><a name="6.7"></a><a href="6/s6.007">6.7</a></td>
+ <td>6</td> <td>40</td> <td>4</td>
+ <td>48</td> <td>8+8+24</td>
+ <td>&nbsp;</td>
+ <td>9 x <a href="#3.1">3.1</a></td> <td>20</td> <td><a href="6/s6.007.eig">6, 3.020, 3.020, ...</a></td> </tr>
+<tr> <td><a name="6.8"></a><a href="6/s6.008">6.8</a></td>
+ <td>6</td> <td>40</td> <td>4</td>
+ <td>120</td> <td>tra</td>
+ <td>&nbsp;</td>
+ <td>5 x <a href="#3.1">3.1</a></td> <td>20</td> <td><a href="6/s6.008.eig">6, 3.236, 3.236, ...</a></td> </tr>
+<tr> <td><a name="6.9"></a><a href="6/s6.009">6.9</a></td>
+ <td>6</td> <td>44</td> <td>4</td>
+ <td>2640</td> <td>tra</td>
+ <td><a href="#5.1">5.1</a> x K<sub>2</sub></td>
+ <td>2 x <a href="#5.1">5.1</a></td> <td>22</td> <td><a href="6/s6.009.eig">6, 4, 2.732, ...</a></td> </tr>
+<tr> <td><a name="6.10"></a><a href="6/s6.010">6.10</a></td>
+ <td>6</td> <td>48</td> <td>5</td>
+ <td>256</td> <td>16+32</td>
+ <td>&nbsp;</td>
+ <td>8 x <a href="#4.1">4.1</a></td> <td>24</td> <td><a href="6/s6.010.eig">6, 3.464, 3.464, ...</a></td> </tr>
+<tr> <td><a name="6.11"></a><a href="6/s6.011">6.11</a></td>
+ <td>6</td> <td>48</td> <td>5</td>
+ <td>960</td> <td>tra</td>
+ <td><a href="#5.2">5.2</a> x K<sub>2</sub></td>
+ <td>2 x <a href="#5.2">5.2</a></td> <td>24</td> <td><a href="6/s6.011.eig">6, 4, 3.236, ...</a></td> </tr>
+<tr> <td><a name="6.12"></a><a href="6/s6.012">6.12</a></td>
+ <td>6</td> <td>56</td> <td>5</td>
+ <td>2688</td> <td>tra</td>
+ <td><a href="#5.3">5.3</a> x K<sub>2</sub></td>
+ <td>4 x <a href="#5.3">5.3</a></td> <td>28</td> <td><a href="6/s6.012.eig">6, 4, 4, ...</a></td> </tr>
+<tr> <td><a name="6.13"></a><a href="6/s6.013">6.13</a></td>
+ <td>6</td> <td>64</td> <td>6</td>
+ <td>46080</td> <td>tra</td>
+ <td>2<sup>6</sup></td>
+ <td>12 x <a href="#5.4">5.4</a></td> <td>32</td> <td><a href="6/s6.013.eig">6, 4, 4, ...</a> (integral)</td> </tr>
+<tr> <td><a name="7.1"></a><a href="7/s7.001">7.1</a></td>
+ <td>7</td> <td>48</td> <td>4</td>
+ <td>384</td> <td>tra</td>
+ <td>&nbsp;</td>
+ <td>2 x <a href="#5.2">5.2</a></td> <td>24</td> <td><a href="7/s7.001.eig">7, 3, 3, ...</a></td> </tr>
+<tr> <td><a name="7.2"></a><a href="7/s7.002">7.2</a></td>
+ <td>7</td> <td>48</td> <td>4</td>
+ <td>1920</td> <td>tra</td>
+ <td>ebipd(<a href="#N6.6">N6.6</a>)</td>
+ <td>2 x <a href="#5.2">5.2</a></td> <td>24</td> <td><a href="7/s7.002.eig">7, 3, 3, ...</a></td> </tr>
+<tr> <td><a name="7.3"></a><a href="7/s7.003">7.3</a></td>
+ <td>7</td> <td>48</td> <td>4</td>
+ <td>48</td> <td>tra</td>
+ <td>&nbsp;</td>
+ <td>66 x <a href="#3.1">3.1</a></td> <td>24</td> <td><a href="7/s7.003.eig">7, 3, 2.977, ...</a></td> </tr>
+<tr> <td><a name="7.4"></a><a href="7/s7.004">7.4</a></td>
+ <td>7</td> <td>48</td> <td>4</td>
+ <td>64</td> <td>16+32</td>
+ <td>&nbsp;</td>
+ <td>2 x <a href="#4.2">4.2</a></td> <td>24</td> <td><a href="7/s7.004.eig">7, 3, 3, ...</a></td> </tr>
+<tr> <td><a name="7.5"></a><a href="7/s7.005">7.5</a></td>
+ <td>7</td> <td>48</td> <td>4</td>
+ <td>64</td> <td>16+32</td>
+ <td>&nbsp;</td>
+ <td>2 x <a href="#4.2">4.2</a></td> <td>24</td> <td><a href="7/s7.005.eig">7, 3, 3, ...</a></td> </tr>
+<tr> <td><a name="7.6"></a><a href="7/s7.006">7.6</a></td>
+ <td>7</td> <td>48</td> <td>4</td>
+ <td>48</td> <td>tra</td>
+ <td>&nbsp;</td>
+ <td>96 x <a href="#3.1">3.1</a></td> <td>24</td> <td><a href="7/s7.006.eig">7, 3, 3, ...</a></td> </tr>
+<tr> <td><a name="7.7"></a><a href="7/s7.007">7.7</a></td>
+ <td>7</td> <td>48</td> <td>4</td>
+ <td>96</td> <td>tra</td>
+ <td>&nbsp;</td>
+ <td>60 x <a href="#3.1">3.1</a></td> <td>24</td> <td><a href="7/s7.007.eig">7, 3, 3, ...</a></td> </tr>
+<tr> <td><a name="7.8"></a><a href="7/s7.008">7.8</a></td>
+ <td>7</td> <td>48</td> <td>4</td>
+ <td>72</td> <td>12+36</td>
+ <td>&nbsp;</td>
+ <td>84 x <a href="#3.1">3.1</a></td> <td>24</td> <td><a href="7/s7.008.eig">7, 3, 3, ...</a></td> </tr>
+<tr> <td><a name="7.9"></a><a href="7/s7.009">7.9</a></td>
+ <td>7</td> <td>48</td> <td>4</td>
+ <td>96</td> <td>tra</td>
+ <td>&nbsp;</td>
+ <td>6 x <a href="#4.2">4.2</a></td> <td>24</td> <td><a href="7/s7.009.eig">7, 3, 3, ...</a></td> </tr>
+<tr> <td><a name="7.10"></a><a href="7/s7.010">7.10</a></td>
+ <td>7</td> <td>48</td> <td>4</td>
+ <td>2016</td> <td>tra</td>
+ <td>&Pi;/&sigma;</td>
+ <td>84 x <a href="#3.1">3.1</a></td> <td>24</td> <td><a href="7/s7.010.eig">7, 2.646, 2.646, ...</a></td> </tr>
+<tr> <td><a name="7.11"></a><a href="7/s7.011">7.11</a></td>
+ <td>7</td> <td>56</td> <td>4</td>
+ <td>16</td> <td>2*4+2*8+2*16</td>
+ <td>&nbsp;</td>
+ <td>1 x <a href="#3.1">3.1</a></td> <td>28</td> <td><a href="7/s7.011.eig">7, 3.462, 3.352, ...</a></td> </tr>
+<tr> <td><a name="7.12"></a><a href="7/s7.012">7.12</a></td>
+ <td>7</td> <td>56</td> <td>4</td>
+ <td>8</td> <td>4*4+5*8</td>
+ <td>&nbsp;</td>
+ <td>9 x <a href="#3.1">3.1</a></td> <td>28</td> <td><a href="7/s7.012.eig">7, 3.582, 3.557, ...</a></td> </tr>
+<tr> <td><a name="7.13"></a><a href="7/s7.013">7.13</a></td>
+ <td>7</td> <td>56</td> <td>4</td>
+ <td>16</td> <td>2*4+2*8+2*16</td>
+ <td>&nbsp;</td>
+ <td>9 x <a href="#3.1">3.1</a></td> <td>28</td> <td><a href="7/s7.013.eig">7, 3.606, 3.606, ...</a></td> </tr>
+<tr> <td><a name="7.14"></a><a href="7/s7.014">7.14</a></td>
+ <td>7</td> <td>56</td> <td>4</td>
+ <td>24</td> <td>2+6+4*12</td>
+ <td>&nbsp;</td>
+ <td>9 x <a href="#3.1">3.1</a></td> <td>28</td> <td><a href="7/s7.014.eig">7, 3.462, 3.462, ...</a></td> </tr>
+<tr> <td><a name="7.15"></a><a href="7/s7.015">7.15</a></td>
+ <td>7</td> <td>56</td> <td>4</td>
+ <td>8</td> <td>4*4+5*8</td>
+ <td>&nbsp;</td>
+ <td>5 x <a href="#3.1">3.1</a></td> <td>28</td> <td><a href="7/s7.015.eig">7, 3.534, 3.518, ...</a></td> </tr>
+<tr> <td><a name="7.16"></a><a href="7/s7.016">7.16</a></td>
+ <td>7</td> <td>56</td> <td>4</td>
+ <td>4</td> <td>14*4</td>
+ <td>&nbsp;</td>
+ <td>5 x <a href="#3.1">3.1</a></td> <td>28</td> <td><a href="7/s7.016.eig">7, 3.549, 3.540, ...</a></td> </tr>
+<tr> <td><a name="7.17"></a><a href="7/s7.017">7.17</a></td>
+ <td>7</td> <td>56</td> <td>4</td>
+ <td>16</td> <td>3*8+2*16</td>
+ <td>&nbsp;</td>
+ <td>4 x <a href="#3.1">3.1</a></td> <td>28</td> <td><a href="7/s7.017.eig">7, 3.494, 3.494, ...</a></td> </tr>
+<tr> <td><a name="7.18"></a><a href="7/s7.018">7.18</a></td>
+ <td>7</td> <td>64</td> <td>4</td>
+ <td>48</td> <td>16+48</td>
+ <td>&nbsp;</td>
+ <td>56 x <a href="#3.1">3.1</a></td> <td>32</td> <td><a href="7/s7.018.eig">7, 3.711, 3.711, ...</a></td> </tr>
+<tr> <td><a name="7.19"></a><a href="7/s7.019">7.19</a></td>
+ <td>7</td> <td>64</td> <td>4</td>
+ <td>120</td> <td>24+40</td>
+ <td>&nbsp;</td>
+ <td>35 x <a href="#3.1">3.1</a></td> <td>32</td> <td><a href="7/s7.019.eig">7, 3.692, 3.692, ...</a></td> </tr>
+<tr> <td><a name="7.20"></a><a href="7/s7.020">7.20</a></td>
+ <td>7</td> <td>64</td> <td>4</td>
+ <td>3072</td> <td>tra</td>
+ <td><a href="#6.1">6.1</a> x K<sub>2</sub></td>
+ <td>2 x <a href="#6.1">6.1</a></td> <td>32</td> <td><a href="7/s7.020.eig">7, 5, 3, ...</a> (integral)</td> </tr>
+<tr> <td><a name="7.21"></a><a href="7/s7.021">7.21</a></td>
+ <td>7</td> <td>64</td> <td>4</td>
+ <td>1536</td> <td>tra</td>
+ <td><a href="#6.2">6.2</a> x K<sub>2</sub></td>
+ <td>2 x <a href="#6.2">6.2</a></td> <td>32</td> <td><a href="7/s7.021.eig">7, 5, 3, ...</a> (integral)</td> </tr>
+<tr> <td><a name="7.22"></a><a href="7/s7.022">7.22</a></td>
+ <td>7</td> <td>64</td> <td>4</td>
+ <td>1152</td> <td>tra</td>
+ <td>&nbsp;</td>
+ <td>8 x <a href="#4.2">4.2</a></td> <td>32</td> <td><a href="7/s7.022.eig">7, 3.606, 3.606, ...</a></td> </tr>
+<tr> <td><a name="7.23"></a><a href="7/s7.023">7.23</a></td>
+ <td>7</td> <td>64</td> <td>4</td>
+ <td>46080</td> <td>tra</td>
+ <td><a href="#6.3">6.3</a> x K<sub>2</sub></td>
+ <td>2 x <a href="#6.3">6.3</a></td> <td>32</td> <td><a href="7/s7.023.eig">7, 5, 3, ...</a> (integral)</td> </tr>
+<tr> <td><a name="7.24"></a><a href="7/s7.024">7.24</a></td>
+ <td>7</td> <td>64</td> <td>5</td>
+ <td>12</td> <td>4+5*12</td>
+ <td>&nbsp;</td>
+ <td>2 x <a href="#4.1">4.1</a></td> <td>32</td> <td><a href="7/s7.024.eig">7, 3.739, 3.684, ...</a></td> </tr>
+<tr> <td><a name="7.25"></a><a href="7/s7.025">7.25</a></td>
+ <td>7</td> <td>64</td> <td>5</td>
+ <td>24</td> <td>4+5*12</td>
+ <td>&nbsp;</td>
+ <td>38 x <a href="#3.1">3.1</a></td> <td>32</td> <td><a href="7/s7.025.eig">7, 3.988, 3.988, ...</a></td> </tr>
+<tr> <td><a name="7.26"></a><a href="7/s7.026">7.26</a></td>
+ <td>7</td> <td>64</td> <td>5</td>
+ <td>8</td> <td>8*4+4*8</td>
+ <td>&nbsp;</td>
+ <td>33 x <a href="#3.1">3.1</a></td> <td>32</td> <td><a href="7/s7.026.eig">7, 3.952, 3.904, ...</a></td> </tr>
+<tr> <td><a name="7.27"></a><a href="7/s7.027">7.27</a></td>
+ <td>7</td> <td>64</td> <td>5</td>
+ <td>12</td> <td>2*2+2*6+4*12</td>
+ <td>&nbsp;</td>
+ <td>41 x <a href="#3.1">3.1</a></td> <td>32</td> <td><a href="7/s7.027.eig">7, 3.828, 3.638, ...</a></td> </tr>
+<tr> <td><a name="7.28"></a><a href="7/s7.028">7.28</a></td>
+ <td>7</td> <td>64</td> <td>5</td>
+ <td>336</td> <td>8+56</td>
+ <td>&nbsp;</td>
+ <td>56 x <a href="#3.1">3.1</a></td> <td>32</td> <td><a href="7/s7.028.eig">7, 3.828, 3.828, ...</a></td> </tr>
+<tr> <td><a name="7.29"></a><a href="7/s7.029">7.29</a></td>
+ <td>7</td> <td>72</td> <td>5</td>
+ <td>12096</td> <td>tra</td>
+ <td>U<sub>3</sub>(3).2/L<sub>2</sub>(7)</td>
+ <td>36 x <a href="#4.1">4.1</a></td> <td>36</td> <td><a href="7/s7.029.eig">7, 3.606, 3.606, ...</a></td> </tr>
+<tr> <td><a name="7.30"></a><a href="7/s7.030">7.30</a></td>
+ <td>7</td> <td>72</td> <td>5</td>
+ <td>192</td> <td>24+48</td>
+ <td><a href="#6.4">6.4</a> x K<sub>2</sub></td>
+ <td>2 x <a href="#6.4">6.4</a></td> <td>36</td> <td><a href="7/s7.030.eig">7, 5, 3.828, ...</a></td> </tr>
+<tr> <td><a name="7.31"></a><a href="7/s7.031">7.31</a></td>
+ <td>7</td> <td>72</td> <td>5</td>
+ <td>8640</td> <td>tra</td>
+ <td><a href="#6.5">6.5</a> x K<sub>2</sub></td>
+ <td>2 x <a href="#6.5">6.5</a></td> <td>36</td> <td><a href="7/s7.031.eig">7, 5, 3.449, ...</a></td> </tr>
+<tr> <td><a name="7.32"></a><a href="7/s7.032">7.32</a></td>
+ <td>7</td> <td>72</td> <td>5</td>
+ <td>96</td> <td>24+48</td>
+ <td><a href="#6.6">6.6</a> x K<sub>2</sub></td>
+ <td>2 x <a href="#6.6">6.6</a></td> <td>36</td> <td><a href="7/s7.032.eig">7, 5, 3.828, ...</a></td> </tr>
+<tr> <td><a name="7.33"></a><a href="7/s7.033">7.33</a></td>
+ <td>7</td> <td>80</td> <td>5</td>
+ <td>48</td> <td>8+24+48</td>
+ <td>&nbsp;</td>
+ <td>1 x <a href="#5.2">5.2</a></td> <td>40</td> <td><a href="7/s7.033.eig">7, 4.236, 4.017, ...</a></td> </tr>
+<tr> <td><a name="7.34"></a><a href="7/s7.034">7.34</a></td>
+ <td>7</td> <td>80</td> <td>5</td>
+ <td>96</td> <td>16+16+48</td>
+ <td><a href="#6.7">6.7</a> x K<sub>2</sub></td>
+ <td>2 x <a href="#6.7">6.7</a></td> <td>40</td> <td><a href="7/s7.034.eig">7, 5, 4.020, ...</a></td> </tr>
+<tr> <td><a name="7.35"></a><a href="7/s7.035">7.35</a></td>
+ <td>7</td> <td>80</td> <td>5</td>
+ <td>240</td> <td>tra</td>
+ <td><a href="#6.8">6.8</a> x K<sub>2</sub></td>
+ <td>2 x <a href="#6.8">6.8</a></td> <td>40</td> <td><a href="7/s7.035.eig">7, 5, 4.236, ...</a></td> </tr>
+<tr> <td><a name="7.36"></a><a href="7/s7.036">7.36</a></td>
+ <td>7</td> <td>88</td> <td>5</td>
+ <td>10560</td> <td>tra</td>
+ <td><a href="#6.9">6.9</a> x K<sub>2</sub></td>
+ <td>4 x <a href="#6.9">6.9</a></td> <td>44</td> <td><a href="7/s7.036.eig">7, 5, 5, ...</a></td> </tr>
+<tr> <td><a name="7.37"></a><a href="7/s7.037">7.37</a></td>
+ <td>7</td> <td>96</td> <td>6</td>
+ <td>512</td> <td>32+64</td>
+ <td><a href="#6.10">6.10</a> x K<sub>2</sub></td>
+ <td>2 x <a href="#6.10">6.10</a></td> <td>48</td> <td><a href="7/s7.037.eig">7, 5, 4.464, ...</a></td> </tr>
+<tr> <td><a name="7.38"></a><a href="7/s7.038">7.38</a></td>
+ <td>7</td> <td>96</td> <td>6</td>
+ <td>3840</td> <td>tra</td>
+ <td><a href="#6.11">6.11</a> x K<sub>2</sub></td>
+ <td>4 x <a href="#6.11">6.11</a></td> <td>48</td> <td><a href="7/s7.038.eig">7, 5, 5, ...</a></td> </tr>
+<tr> <td><a name="7.39"></a><a href="7/s7.039">7.39</a></td>
+ <td>7</td> <td>112</td> <td>6</td>
+ <td>16128</td> <td>tra</td>
+ <td><a href="#6.12">6.12</a> x K<sub>2</sub></td>
+ <td>6 x <a href="#6.12">6.12</a></td> <td>56</td> <td><a href="7/s7.039.eig">7, 5, 5, ...</a></td> </tr>
+<tr> <td><a name="7.40"></a><a href="7/s7.040">7.40</a></td>
+ <td>7</td> <td>128</td> <td>7</td>
+ <td>645120</td> <td>tra</td>
+ <td>2<sup>7</sup></td>
+ <td>14 x <a href="#6.13">6.13</a></td> <td>64</td> <td><a href="7/s7.040.eig">7, 5, 5, ...</a> (integral)</td> </tr>
+<tr> <td><a name="8.1"></a><a href="8/s8.001">8.1</a></td>
+ <td>8</td> <td>64</td> <td>4</td>
+ <td>384</td> <td>tra</td>
+ <td>&nbsp;</td>
+ <td>&nbsp;</td> <td>32</td> <td><a href="8/s8.001.eig">8, 3.464, 3.464, ...</a></td> </tr>
+<tr> <td><a name="8.2"></a><a href="8/s8.002">8.2</a></td>
+ <td>8</td> <td>64</td> <td>4</td>
+ <td>10752</td> <td>tra</td>
+ <td>drg(8,7,6,1; 1,2,7,8)<br>&Pi;/&sigma;</td>
+ <td>&nbsp;</td> <td>26</td> <td><a href="8/s8.002.eig">8, 2.828, 2.828, ...</a></td> </tr>
+<tr> <td><a name="8.3"></a><a href="8/s8.003">8.3</a></td>
+ <td>8</td> <td>68</td> <td>4</td>
+ <td>4</td> <td>17*4</td>
+ <td>&nbsp;</td>
+ <td>118 x <a href="#3.1">3.1</a></td> <td>32</td> <td><a href="8/s8.003.eig">8, 3.708, 3.611, ...</a></td> </tr>
+<tr> <td><a name="8.4"></a><a href="8/s8.004">8.4</a></td>
+ <td>8</td> <td>68</td> <td>4</td>
+ <td>20</td> <td>2*4+3*20</td>
+ <td>&nbsp;</td>
+ <td>131 x <a href="#3.1">3.1</a></td> <td>32</td> <td><a href="8/s8.004.eig">8, 3.689, 3.689, ...</a></td> </tr>
+<tr> <td><a name="8.5"></a><a href="8/s8.005">8.5</a></td>
+ <td>8</td> <td>68</td> <td>4</td>
+ <td>4</td> <td>17*4</td>
+ <td>&nbsp;</td>
+ <td>103 x <a href="#3.1">3.1</a></td> <td>32</td> <td><a href="8/s8.005.eig">8, 3.755, 3.618, ...</a></td> </tr>
+<tr> <td><a name="8.6"></a><a href="8/s8.006">8.6</a></td>
+ <td>8</td> <td>68</td> <td>4</td>
+ <td>20</td> <td>2*4+3*20</td>
+ <td>&nbsp;</td>
+ <td>111 x <a href="#3.1">3.1</a></td> <td>32</td> <td><a href="8/s8.006.eig">8, 3.742, 3.742, ...</a></td> </tr>
+<tr> <td><a name="8.7"></a><a href="8/s8.007">8.7</a></td>
+ <td>8</td> <td>72</td> <td>4</td>
+ <td>144</td> <td>tra</td>
+ <td>&nbsp;</td>
+ <td>90 x <a href="#3.1">3.1</a></td> <td>32</td> <td><a href="8/s8.007.eig">8, 4, 4, ...</a></td> </tr>
+<tr> <td><a name="8.8"></a><a href="8/s8.008">8.8</a></td>
+ <td>8</td> <td>74</td> <td>5</td>
+ <td>672</td> <td>2+16+56</td>
+ <td>&nbsp;</td>
+ <td>126 x <a href="#3.1">3.1</a></td> <td>28</td> <td><a href="8/s8.008.eig">8, 3.646, 3.646, ...</a></td> </tr>
+<tr> <td><a name="8.9"></a><a href="8/s8.009">8.9</a></td>
+ <td>8</td> <td>80</td> <td>4</td>
+ <td>4</td> <td>8*2+16*4</td>
+ <td>&nbsp;</td>
+ <td>52 x <a href="#3.1">3.1</a></td> <td>40</td> <td><a href="8/s8.009.eig">8, 4.255, 4.184, ...</a></td> </tr>
+<tr> <td><a name="8.10"></a><a href="8/s8.010">8.10</a></td>
+ <td>8</td> <td>80</td> <td>4</td>
+ <td>20</td> <td>4*20</td>
+ <td>&nbsp;</td>
+ <td>40 x <a href="#3.1">3.1</a></td> <td>40</td> <td><a href="8/s8.010.eig">8, 4.606, 4.218, ...</a></td> </tr>
+<tr> <td><a name="8.11"></a><a href="8/s8.011">8.11</a></td>
+ <td>8</td> <td>80</td> <td>4</td>
+ <td>20</td> <td>4*20</td>
+ <td>&nbsp;</td>
+ <td>65 x <a href="#3.1">3.1</a></td> <td>36</td> <td><a href="8/s8.011.eig">8, 4.512, 4.179, ...</a></td> </tr>
+<tr> <td><a name="8.12"></a><a href="8/s8.012">8.12</a></td>
+ <td>8</td> <td>80</td> <td>4</td>
+ <td>384</td> <td>32+48</td>
+ <td>&nbsp;</td>
+ <td>32 x <a href="#3.1">3.1</a></td> <td>36</td> <td><a href="8/s8.012.eig">8, 4, 4, ...</a></td> </tr>
+<tr> <td><a name="8.13"></a><a href="8/s8.013">8.13</a></td>
+ <td>8</td> <td>80</td> <td>5</td>
+ <td>3840</td> <td>tra</td>
+ <td>&nbsp;</td>
+ <td>80 x <a href="#3.1">3.1</a></td> <td>32</td> <td><a href="8/s8.013.eig">8, 4, 4, ...</a> (integral)</td> </tr>
+<tr> <td><a name="8.14"></a><a href="8/s8.014">8.14</a></td>
+ <td>8</td> <td>80</td> <td>5</td>
+ <td>12</td> <td>2*4+6*12</td>
+ <td>&nbsp;</td>
+ <td>12 x <a href="#3.1">3.1</a></td> <td>40</td> <td><a href="8/s8.014.eig">8, 4.234, 4.149, ...</a></td> </tr>
+<tr> <td><a name="8.15"></a><a href="8/s8.015">8.15</a></td>
+ <td>8</td> <td>80</td> <td>5</td>
+ <td>768</td> <td>16+64</td>
+ <td>&nbsp;</td>
+ <td>16 x <a href="#3.1">3.1</a></td> <td>36</td> <td><a href="8/s8.015.eig">8, 4, 4, ...</a></td> </tr>
+<tr> <td><a name="8.16"></a><a href="8/s8.016">8.16</a></td>
+ <td>8</td> <td>84</td> <td>4</td>
+ <td>16</td> <td>4+6*8+2*16</td>
+ <td>&nbsp;</td>
+ <td>16 x <a href="#3.1">3.1</a></td> <td>40</td> <td><a href="8/s8.016.eig">8, 4.102, 3.907, ...</a></td> </tr>
+<tr> <td><a name="8.17"></a><a href="8/s8.017">8.17</a></td>
+ <td>8</td> <td>84</td> <td>4</td>
+ <td>64</td> <td>4+16+2*32</td>
+ <td>&nbsp;</td>
+ <td>32 x <a href="#3.1">3.1</a></td> <td>40</td> <td><a href="8/s8.017.eig">8, 4.337, 4.337, ...</a></td> </tr>
+<tr> <td><a name="8.18"></a><a href="8/s8.018">8.18</a></td>
+ <td>8</td> <td>84</td> <td>4</td>
+ <td>32</td> <td>4+2*8+2*16+32</td>
+ <td>&nbsp;</td>
+ <td>16 x <a href="#3.1">3.1</a></td> <td>40</td> <td><a href="8/s8.018.eig">8, 4.218, 4.218, ...</a></td> </tr>
+<tr> <td><a name="8.19"></a><a href="8/s8.019">8.19</a></td>
+ <td>8</td> <td>84</td> <td>4</td>
+ <td>1344</td> <td>tra</td>
+ <td>4.L<sub>3</sub>(2).2/D<sub>16</sub></td>
+ <td>&nbsp;</td> <td>40</td> <td><a href="8/s8.019.eig">8, 3.742, 3.742, ...</a></td> </tr>
+<tr> <td><a name="8.20"></a><a href="8/s8.020">8.20</a></td>
+ <td>8</td> <td>84</td> <td>5</td>
+ <td>8</td> <td>7*4+7*8</td>
+ <td>&nbsp;</td>
+ <td>32 x <a href="#3.1">3.1</a></td> <td>40</td> <td><a href="8/s8.020.eig">8, 4.243, 4.243, ...</a></td> </tr>
+<tr> <td><a name="8.21"></a><a href="8/s8.021">8.21</a></td>
+ <td>8</td> <td>84</td> <td>5</td>
+ <td>8</td> <td>7*4+7*8</td>
+ <td>&nbsp;</td>
+ <td>74 x <a href="#3.1">3.1</a></td> <td>40</td> <td><a href="8/s8.021.eig">8, 4.321, 4.228, ...</a></td> </tr>
+<tr> <td><a name="8.22"></a><a href="8/s8.022">8.22</a></td>
+ <td>8</td> <td>84</td> <td>5</td>
+ <td>4</td> <td>14*2+14*4</td>
+ <td>&nbsp;</td>
+ <td>64 x <a href="#3.1">3.1</a></td> <td>40</td> <td><a href="8/s8.022.eig">8, 4.296, 4.286, ...</a></td> </tr>
+<tr> <td><a name="8.23"></a><a href="8/s8.023">8.23</a></td>
+ <td>8</td> <td>84</td> <td>5</td>
+ <td>4</td> <td>14*2+14*4</td>
+ <td>&nbsp;</td>
+ <td>38 x <a href="#3.1">3.1</a></td> <td>40</td> <td><a href="8/s8.023.eig">8, 4.197, 4.129, ...</a></td> </tr>
+<tr> <td><a name="8.24"></a><a href="8/s8.024">8.24</a></td>
+ <td>8</td> <td>84</td> <td>5</td>
+ <td>16</td> <td>4+6*8+2*16</td>
+ <td>&nbsp;</td>
+ <td>40 x <a href="#3.1">3.1</a></td> <td>40</td> <td><a href="8/s8.024.eig">8, 4.256, 4.218, ...</a></td> </tr>
+<tr> <td><a name="8.25"></a><a href="8/s8.025">8.25</a></td>
+ <td>8</td> <td>84</td> <td>5</td>
+ <td>16</td> <td>3*4+3*8+3*16</td>
+ <td>&nbsp;</td>
+ <td>40 x <a href="#3.1">3.1</a></td> <td>40</td> <td><a href="8/s8.025.eig">8, 4.337, 4.313, ...</a></td> </tr>
+<tr> <td><a name="8.26"></a><a href="8/s8.026">8.26</a></td>
+ <td>8</td> <td>84</td> <td>5</td>
+ <td>64</td> <td>4+16+2*32</td>
+ <td>&nbsp;</td>
+ <td>72 x <a href="#3.1">3.1</a></td> <td>40</td> <td><a href="8/s8.026.eig">8, 4.337, 4.337, ...</a></td> </tr>
+<tr> <td><a name="8.27"></a><a href="8/s8.027">8.27</a></td>
+ <td>8</td> <td>84</td> <td>5</td>
+ <td>16</td> <td>3*4+3*8+3*16</td>
+ <td>&nbsp;</td>
+ <td>40 x <a href="#3.1">3.1</a></td> <td>40</td> <td><a href="8/s8.027.eig">8, 4.337, 4.307, ...</a></td> </tr>
+<tr> <td><a name="8.28"></a><a href="8/s8.028">8.28</a></td>
+ <td>8</td> <td>84</td> <td>5</td>
+ <td>64</td> <td>4+16+2*32</td>
+ <td>&nbsp;</td>
+ <td>24 x <a href="#3.1">3.1</a></td> <td>40</td> <td><a href="8/s8.028.eig">8, 4.307, 4.307, ...</a></td> </tr>
+<tr> <td><a name="8.29"></a><a href="8/s8.029">8.29</a></td>
+ <td>8</td> <td>84</td> <td>5</td>
+ <td>96</td> <td>12+24+48</td>
+ <td>&nbsp;</td>
+ <td>48 x <a href="#3.1">3.1</a></td> <td>40</td> <td><a href="8/s8.029.eig">8, 4.218, 4.218, ...</a></td> </tr>
+<tr> <td><a name="8.30"></a><a href="8/s8.030">8.30</a></td>
+ <td>8</td> <td>88</td> <td>4</td>
+ <td>160</td> <td>8+40+40</td>
+ <td>&nbsp;</td>
+ <td>5 x <a href="#4.2">4.2</a></td> <td>40</td> <td><a href="8/s8.030.eig">8, 4.813, 4.813, ...</a></td> </tr>
+<tr> <td><a name="8.31"></a><a href="8/s8.031">8.31</a></td>
+ <td>8</td> <td>88</td> <td>5</td>
+ <td>16</td> <td>3*8+4*16</td>
+ <td>&nbsp;</td>
+ <td>1 x <a href="#4.2">4.2</a></td> <td>40</td> <td><a href="8/s8.031.eig">8, 4.812, 4.798, ...</a></td> </tr>
+<tr> <td><a name="8.32"></a><a href="8/s8.032">8.32</a></td>
+ <td>8</td> <td>88</td> <td>5</td>
+ <td>32</td> <td>3*8+2*32</td>
+ <td>&nbsp;</td>
+ <td>1 x <a href="#4.2">4.2</a></td> <td>40</td> <td><a href="8/s8.032.eig">8, 4.946, 4.606, ...</a></td> </tr>
+<tr> <td><a name="8.33"></a><a href="8/s8.033">8.33</a></td>
+ <td>8</td> <td>96</td> <td>4</td>
+ <td>1152</td> <td>tra</td>
+ <td>&nbsp;</td>
+ <td>4 x <a href="#5.2">5.2</a></td> <td>48</td> <td><a href="8/s8.033.eig">8, 4, 4, ...</a></td> </tr>
+<tr> <td><a name="8.34"></a><a href="8/s8.034">8.34</a></td>
+ <td>8</td> <td>96</td> <td>5</td>
+ <td>5760</td> <td>tra</td>
+ <td>ebipd(<a href="#N7.44">N7.44</a>)</td>
+ <td>6 x <a href="#6.11">6.11</a></td> <td>48</td> <td><a href="8/s8.034.eig">8, 5.236, 5.236, ...</a></td> </tr>
+<tr> <td><a name="8.35"></a><a href="8/s8.035">8.35</a></td>
+ <td>8</td> <td>96</td> <td>5</td>
+ <td>384</td> <td>32+64</td>
+ <td>&nbsp;</td>
+ <td>4 x <a href="#5.2">5.2</a></td> <td>48</td> <td><a href="8/s8.035.eig">8, 5.236, 5.236, ...</a></td> </tr>
+<tr> <td><a name="8.36"></a><a href="8/s8.036">8.36</a></td>
+ <td>8</td> <td>96</td> <td>5</td>
+ <td>24</td> <td>2*12+3*24</td>
+ <td>&nbsp;</td>
+ <td>96 x <a href="#3.1">3.1</a></td> <td>48</td> <td><a href="8/s8.036.eig">8, 4.494, 4.417, ...</a></td> </tr>
+<tr> <td><a name="8.37"></a><a href="8/s8.037">8.37</a></td>
+ <td>8</td> <td>96</td> <td>5</td>
+ <td>768</td> <td>tra</td>
+ <td><a href="#7.1">7.1</a> x K<sub>2</sub></td>
+ <td>2 x <a href="#7.1">7.1</a></td> <td>48</td> <td><a href="8/s8.037.eig">8, 6, 4, ...</a></td> </tr>
+<tr> <td><a name="8.38"></a><a href="8/s8.038">8.38</a></td>
+ <td>8</td> <td>96</td> <td>5</td>
+ <td>3840</td> <td>tra</td>
+ <td><a href="#7.2">7.2</a> x K<sub>2</sub></td>
+ <td>2 x <a href="#7.2">7.2</a></td> <td>48</td> <td><a href="8/s8.038.eig">8, 6, 4, ...</a></td> </tr>
+<tr> <td><a name="8.39"></a><a href="8/s8.039">8.39</a></td>
+ <td>8</td> <td>96</td> <td>5</td>
+ <td>192</td> <td>tra</td>
+ <td><a href="#7.9">7.9</a> x K<sub>2</sub></td>
+ <td>2 x <a href="#7.9">7.9</a></td> <td>48</td> <td><a href="8/s8.039.eig">8, 6, 4, ...</a></td> </tr>
+<tr> <td><a name="8.40"></a><a href="8/s8.040">8.40</a></td>
+ <td>8</td> <td>96</td> <td>5</td>
+ <td>128</td> <td>32+64</td>
+ <td><a href="#7.4">7.4</a> x K<sub>2</sub></td>
+ <td>2 x <a href="#7.4">7.4</a></td> <td>48</td> <td><a href="8/s8.040.eig">8, 6, 4, ...</a></td> </tr>
+<tr> <td><a name="8.41"></a><a href="8/s8.041">8.41</a></td>
+ <td>8</td> <td>96</td> <td>5</td>
+ <td>128</td> <td>32+64</td>
+ <td><a href="#7.5">7.5</a> x K<sub>2</sub></td>
+ <td>2 x <a href="#7.5">7.5</a></td> <td>48</td> <td><a href="8/s8.041.eig">8, 6, 4, ...</a></td> </tr>
+<tr> <td><a name="8.42"></a><a href="8/s8.042">8.42</a></td>
+ <td>8</td> <td>96</td> <td>5</td>
+ <td>96</td> <td>tra</td>
+ <td><a href="#7.6">7.6</a> x K<sub>2</sub></td>
+ <td>2 x <a href="#7.6">7.6</a></td> <td>48</td> <td><a href="8/s8.042.eig">8, 6, 4, ...</a></td> </tr>
+<tr> <td><a name="8.43"></a><a href="8/s8.043">8.43</a></td>
+ <td>8</td> <td>96</td> <td>5</td>
+ <td>144</td> <td>24+72</td>
+ <td><a href="#7.8">7.8</a> x K<sub>2</sub></td>
+ <td>2 x <a href="#7.8">7.8</a></td> <td>48</td> <td><a href="8/s8.043.eig">8, 6, 4, ...</a></td> </tr>
+<tr> <td><a name="8.44"></a><a href="8/s8.044">8.44</a></td>
+ <td>8</td> <td>96</td> <td>5</td>
+ <td>192</td> <td>tra</td>
+ <td><a href="#7.7">7.7</a> x K<sub>2</sub></td>
+ <td>2 x <a href="#7.7">7.7</a></td> <td>48</td> <td><a href="8/s8.044.eig">8, 6, 4, ...</a></td> </tr>
+<tr> <td><a name="8.45"></a><a href="8/s8.045">8.45</a></td>
+ <td>8</td> <td>96</td> <td>5</td>
+ <td>96</td> <td>tra</td>
+ <td><a href="#7.3">7.3</a> x K<sub>2</sub></td>
+ <td>2 x <a href="#7.3">7.3</a></td> <td>48</td> <td><a href="8/s8.045.eig">8, 6, 4, ...</a></td> </tr>
+<tr> <td><a name="8.46"></a><a href="8/s8.046">8.46</a></td>
+ <td>8</td> <td>96</td> <td>5</td>
+ <td>128</td> <td>32+64</td>
+ <td>&nbsp;</td>
+ <td>16 x <a href="#4.1">4.1</a><br>
+6 x <a href="#4.2">4.2</a></td> <td>48</td> <td><a href="8/s8.046.eig">8, 5.236, 5.236, ...</a></td> </tr>
+<tr> <td><a name="8.47"></a><a href="8/s8.047">8.47</a></td>
+ <td>8</td> <td>96</td> <td>5</td>
+ <td>12</td> <td>12*6+2*12</td>
+ <td>&nbsp;</td>
+ <td>102 x <a href="#3.1">3.1</a></td> <td>48</td> <td><a href="8/s8.047.eig">8, 4.449, 4.449, ...</a></td> </tr>
+<tr> <td><a name="8.48"></a><a href="8/s8.048">8.48</a></td>
+ <td>8</td> <td>96</td> <td>5</td>
+ <td>24</td> <td>8*12</td>
+ <td>&nbsp;</td>
+ <td>102 x <a href="#3.1">3.1</a></td> <td>46</td> <td><a href="8/s8.048.eig">8, 4.472, 4.366, ...</a></td> </tr>
+<tr> <td><a name="8.49"></a><a href="8/s8.049">8.49</a></td>
+ <td>8</td> <td>96</td> <td>5</td>
+ <td>48</td> <td>4*24</td>
+ <td>&nbsp;</td>
+ <td>78 x <a href="#3.1">3.1</a></td> <td>46</td> <td><a href="8/s8.049.eig">8, 4.472, 4.268, ...</a></td> </tr>
+<tr> <td><a name="8.50"></a><a href="8/s8.050">8.50</a></td>
+ <td>8</td> <td>96</td> <td>5</td>
+ <td>96</td> <td>48+48</td>
+ <td>&nbsp;</td>
+ <td>126 x <a href="#3.1">3.1</a></td> <td>44</td> <td><a href="8/s8.050.eig">8, 4.429, 4.429, ...</a></td> </tr>
+<tr> <td><a name="8.51"></a><a href="8/s8.051">8.51</a></td>
+ <td>8</td> <td>96</td> <td>5</td>
+ <td>72</td> <td>24+36+36</td>
+ <td>&nbsp;</td>
+ <td>96 x <a href="#3.1">3.1</a></td> <td>48</td> <td><a href="8/s8.051.eig">8, 4.415, 4.415, ...</a></td> </tr>
+<tr> <td><a name="8.52"></a><a href="8/s8.052">8.52</a></td>
+ <td>8</td> <td>96</td> <td>5</td>
+ <td>4032</td> <td>tra</td>
+ <td><a href="#7.10">7.10</a> x K<sub>2</sub></td>
+ <td>2 x <a href="#7.10">7.10</a></td> <td>48</td> <td><a href="8/s8.052.eig">8, 6, 3.646, ...</a></td> </tr>
+<tr> <td><a name="8.53"></a><a href="8/s8.053">8.53</a></td>
+ <td>8</td> <td>100</td> <td>5</td>
+ <td>2</td> <td>28*1+36*2</td>
+ <td>&nbsp;</td>
+ <td>5 x <a href="#4.1">4.1</a></td> <td>48</td> <td><a href="8/s8.053.eig">8, 4.605, 4.584, ...</a></td> </tr>
+<tr> <td><a name="8.54"></a><a href="8/s8.054">8.54</a></td>
+ <td>8</td> <td>100</td> <td>5</td>
+ <td>4</td> <td>25*4</td>
+ <td>&nbsp;</td>
+ <td>2 x <a href="#4.1">4.1</a></td> <td>48</td> <td><a href="8/s8.054.eig">8, 4.643, 4.528, ...</a></td> </tr>
+<tr> <td><a name="8.55"></a><a href="8/s8.055">8.55</a></td>
+ <td>8</td> <td>100</td> <td>5</td>
+ <td>2</td> <td>22*1+39*2</td>
+ <td>&nbsp;</td>
+ <td>4 x <a href="#4.1">4.1</a></td> <td>48</td> <td><a href="8/s8.055.eig">8, 4.497, 4.416, ...</a></td> </tr>
+<tr> <td><a name="8.56"></a><a href="8/s8.056">8.56</a></td>
+ <td>8</td> <td>100</td> <td>5</td>
+ <td>8</td> <td>4*2+5*4+9*8</td>
+ <td>&nbsp;</td>
+ <td>5 x <a href="#4.1">4.1</a></td> <td>48</td> <td><a href="8/s8.056.eig">8, 4.590, 4.590, ...</a></td> </tr>
+<tr> <td><a name="8.57"></a><a href="8/s8.057">8.57</a></td>
+ <td>8</td> <td>100</td> <td>5</td>
+ <td>20</td> <td>5*20</td>
+ <td>&nbsp;</td>
+ <td>145 x <a href="#3.1">3.1</a></td> <td>48</td> <td><a href="8/s8.057.eig">8, 4.449, 4.427, ...</a></td> </tr>
+<tr> <td><a name="8.58"></a><a href="8/s8.058">8.58</a></td>
+ <td>8</td> <td>104</td> <td>5</td>
+ <td>32</td> <td>3*8+3*16+32</td>
+ <td>&nbsp;</td>
+ <td>4 x <a href="#4.1">4.1</a><br>
+1 x <a href="#4.2">4.2</a></td> <td>48</td> <td><a href="8/s8.058.eig">8, 4.962, 4.835, ...</a></td> </tr>
+<tr> <td><a name="8.59"></a><a href="8/s8.059">8.59</a></td>
+ <td>8</td> <td>104</td> <td>5</td>
+ <td>48</td> <td>8+4*24</td>
+ <td>&nbsp;</td>
+ <td>250 x <a href="#3.1">3.1</a></td> <td>48</td> <td><a href="8/s8.059.eig">8, 4.768, 4.768, ...</a></td> </tr>
+<tr> <td><a name="8.60"></a><a href="8/s8.060">8.60</a></td>
+ <td>8</td> <td>104</td> <td>5</td>
+ <td>96</td> <td>4+12+16+24+48</td>
+ <td>&nbsp;</td>
+ <td>12 x <a href="#4.1">4.1</a><br>
+9 x <a href="#4.2">4.2</a></td> <td>48</td> <td><a href="8/s8.060.eig">8, 4.962, 4.962, ...</a></td> </tr>
+<tr> <td><a name="8.61"></a><a href="8/s8.061">8.61</a></td>
+ <td>8</td> <td>104</td> <td>5</td>
+ <td>1536</td> <td>16+24+64</td>
+ <td>&nbsp;</td>
+ <td>48 x <a href="#4.1">4.1</a><br>
+9 x <a href="#4.2">4.2</a></td> <td>44</td> <td><a href="8/s8.061.eig">8, 4.576, 4.576, ...</a></td> </tr>
+<tr> <td><a name="8.62"></a><a href="8/s8.062">8.62</a></td>
+ <td>8</td> <td>112</td> <td>4</td>
+ <td>21504</td> <td>tra</td>
+ <td>&nbsp;</td>
+ <td>64 x <a href="#4.1">4.1</a><br>
+42 x <a href="#4.2">4.2</a></td> <td>50</td> <td><a href="8/s8.062.eig">8, 4, 4, ...</a></td> </tr>
+<tr> <td><a name="8.63"></a><a href="8/s8.063">8.63</a></td>
+ <td>8</td> <td>112</td> <td>5</td>
+ <td>16</td> <td>4*8+5*16</td>
+ <td><a href="#7.12">7.12</a> x K<sub>2</sub></td>
+ <td>2 x <a href="#7.12">7.12</a></td> <td>56</td> <td><a href="8/s8.063.eig">8, 6, 4.582, ...</a></td> </tr>
+<tr> <td><a name="8.64"></a><a href="8/s8.064">8.64</a></td>
+ <td>8</td> <td>112</td> <td>5</td>
+ <td>16</td> <td>4*8+5*16</td>
+ <td><a href="#7.15">7.15</a> x K<sub>2</sub></td>
+ <td>2 x <a href="#7.15">7.15</a></td> <td>56</td> <td><a href="8/s8.064.eig">8, 6, 4.534, ...</a></td> </tr>
+<tr> <td><a name="8.65"></a><a href="8/s8.065">8.65</a></td>
+ <td>8</td> <td>112</td> <td>5</td>
+ <td>48</td> <td>4+12+4*24</td>
+ <td><a href="#7.14">7.14</a> x K<sub>2</sub></td>
+ <td>2 x <a href="#7.14">7.14</a></td> <td>56</td> <td><a href="8/s8.065.eig">8, 6, 4.462, ...</a></td> </tr>
+<tr> <td><a name="8.66"></a><a href="8/s8.066">8.66</a></td>
+ <td>8</td> <td>112</td> <td>5</td>
+ <td>32</td> <td>3*16+2*32</td>
+ <td><a href="#7.17">7.17</a> x K<sub>2</sub></td>
+ <td>2 x <a href="#7.17">7.17</a></td> <td>56</td> <td><a href="8/s8.066.eig">8, 6, 4.494, ...</a></td> </tr>
+<tr> <td><a name="8.67"></a><a href="8/s8.067">8.67</a></td>
+ <td>8</td> <td>112</td> <td>5</td>
+ <td>32</td> <td>2*8+2*16+2*32</td>
+ <td><a href="#7.11">7.11</a> x K<sub>2</sub></td>
+ <td>2 x <a href="#7.11">7.11</a></td> <td>56</td> <td><a href="8/s8.067.eig">8, 6, 4.462, ...</a></td> </tr>
+<tr> <td><a name="8.68"></a><a href="8/s8.068">8.68</a></td>
+ <td>8</td> <td>112</td> <td>5</td>
+ <td>32</td> <td>2*8+2*16+2*32</td>
+ <td><a href="#7.13">7.13</a> x K<sub>2</sub></td>
+ <td>2 x <a href="#7.13">7.13</a></td> <td>56</td> <td><a href="8/s8.068.eig">8, 6, 4.606, ...</a></td> </tr>
+<tr> <td><a name="8.69"></a><a href="8/s8.069">8.69</a></td>
+ <td>8</td> <td>112</td> <td>5</td>
+ <td>8</td> <td>14*8</td>
+ <td><a href="#7.16">7.16</a> x K<sub>2</sub></td>
+ <td>2 x <a href="#7.16">7.16</a></td> <td>56</td> <td><a href="8/s8.069.eig">8, 6, 4.549, ...</a></td> </tr>
+<tr> <td><a name="8.70"></a><a href="8/s8.070">8.70</a></td>
+ <td>8</td> <td>116</td> <td>6</td>
+ <td>672</td> <td>4+28+84</td>
+ <td>&nbsp;</td>
+ <td>84 x <a href="#4.1">4.1</a></td> <td>56</td> <td><a href="8/s8.070.eig">8, 4.690, 4.690, ...</a></td> </tr>
+<tr> <td><a name="8.71"></a><a href="8/s8.071">8.71</a></td>
+ <td>8</td> <td>128</td> <td>4</td>
+ <td>5160960</td> <td>tra</td>
+ <td>folded 2<sup>8</sup></td>
+ <td>56 x <a href="#6.13">6.13</a></td> <td>56</td> <td><a href="8/s8.071.eig">8, 4, 4, ...</a> (integral)</td> </tr>
+<tr> <td><a name="8.72"></a><a href="8/s8.072">8.72</a></td>
+ <td>8</td> <td>128</td> <td>5</td>
+ <td>12288</td> <td>tra</td>
+ <td><a href="#7.20">7.20</a> x K<sub>2</sub></td>
+ <td>4 x <a href="#7.20">7.20</a></td> <td>64</td> <td><a href="8/s8.072.eig">8, 6, 6, ...</a> (integral)</td> </tr>
+<tr> <td><a name="8.73"></a><a href="8/s8.073">8.73</a></td>
+ <td>8</td> <td>128</td> <td>5</td>
+ <td>6144</td> <td>tra</td>
+ <td><a href="#7.21">7.21</a> x K<sub>2</sub></td>
+ <td>4 x <a href="#7.21">7.21</a></td> <td>64</td> <td><a href="8/s8.073.eig">8, 6, 6, ...</a> (integral)</td> </tr>
+<tr> <td><a name="8.74"></a><a href="8/s8.074">8.74</a></td>
+ <td>8</td> <td>128</td> <td>5</td>
+ <td>184320</td> <td>tra</td>
+ <td><a href="#7.23">7.23</a> x K<sub>2</sub></td>
+ <td>4 x <a href="#7.23">7.23</a></td> <td>64</td> <td><a href="8/s8.074.eig">8, 6, 6, ...</a> (integral)</td> </tr>
+<tr> <td><a name="8.75"></a><a href="8/s8.075">8.75</a></td>
+ <td>8</td> <td>128</td> <td>5</td>
+ <td>92160</td> <td>64+64</td>
+ <td>ebipd(<a href="#N7.53">N7.53</a>)</td>
+ <td>2 x <a href="#6.3">6.3</a><br>
+31 x <a href="#6.13">6.13</a></td> <td>64</td> <td><a href="8/s8.075.eig">8, 6, 4, ...</a> (integral)</td> </tr>
+<tr> <td><a name="8.76"></a><a href="8/s8.076">8.76</a></td>
+ <td>8</td> <td>128</td> <td>5</td>
+ <td>96</td> <td>32+96</td>
+ <td><a href="#7.18">7.18</a> x K<sub>2</sub></td>
+ <td>2 x <a href="#7.18">7.18</a></td> <td>64</td> <td><a href="8/s8.076.eig">8, 6, 4.711, ...</a></td> </tr>
+<tr> <td><a name="8.77"></a><a href="8/s8.077">8.77</a></td>
+ <td>8</td> <td>128</td> <td>5</td>
+ <td>2304</td> <td>tra</td>
+ <td><a href="#7.22">7.22</a> x K<sub>2</sub></td>
+ <td>2 x <a href="#7.22">7.22</a></td> <td>64</td> <td><a href="8/s8.077.eig">8, 6, 4.606, ...</a></td> </tr>
+<tr> <td><a name="8.78"></a><a href="8/s8.078">8.78</a></td>
+ <td>8</td> <td>128</td> <td>5</td>
+ <td>240</td> <td>48+80</td>
+ <td><a href="#7.19">7.19</a> x K<sub>2</sub></td>
+ <td>2 x <a href="#7.19">7.19</a></td> <td>64</td> <td><a href="8/s8.078.eig">8, 6, 4.692, ...</a></td> </tr>
+<tr> <td><a name="8.79"></a><a href="8/s8.079">8.79</a></td>
+ <td>8</td> <td>128</td> <td>6</td>
+ <td>16</td> <td>8*8+4*16</td>
+ <td><a href="#7.26">7.26</a> x K<sub>2</sub></td>
+ <td>2 x <a href="#7.26">7.26</a></td> <td>64</td> <td><a href="8/s8.079.eig">8, 6, 4.952, ...</a></td> </tr>
+<tr> <td><a name="8.80"></a><a href="8/s8.080">8.80</a></td>
+ <td>8</td> <td>128</td> <td>6</td>
+ <td>48</td> <td>8+5*24</td>
+ <td><a href="#7.25">7.25</a> x K<sub>2</sub></td>
+ <td>2 x <a href="#7.25">7.25</a></td> <td>64</td> <td><a href="8/s8.080.eig">8, 6, 4.988, ...</a></td> </tr>
+<tr> <td><a name="8.81"></a><a href="8/s8.081">8.81</a></td>
+ <td>8</td> <td>128</td> <td>6</td>
+ <td>24</td> <td>8+5*24</td>
+ <td><a href="#7.24">7.24</a> x K<sub>2</sub></td>
+ <td>2 x <a href="#7.24">7.24</a></td> <td>64</td> <td><a href="8/s8.081.eig">8, 6, 4.739, ...</a></td> </tr>
+<tr> <td><a name="8.82"></a><a href="8/s8.082">8.82</a></td>
+ <td>8</td> <td>128</td> <td>6</td>
+ <td>24</td> <td>2*4+2*12+4*24</td>
+ <td><a href="#7.27">7.27</a> x K<sub>2</sub></td>
+ <td>2 x <a href="#7.27">7.27</a></td> <td>64</td> <td><a href="8/s8.082.eig">8, 6, 4.828, ...</a></td> </tr>
+<tr> <td><a name="8.83"></a><a href="8/s8.083">8.83</a></td>
+ <td>8</td> <td>128</td> <td>6</td>
+ <td>672</td> <td>16+112</td>
+ <td><a href="#7.28">7.28</a> x K<sub>2</sub></td>
+ <td>2 x <a href="#7.28">7.28</a></td> <td>64</td> <td><a href="8/s8.083.eig">8, 6, 4.828, ...</a></td> </tr>
+<tr> <td><a name="8.84"></a><a href="8/s8.084">8.84</a></td>
+ <td>8</td> <td>128</td> <td>6</td>
+ <td>384</td> <td>16+2*24+64</td>
+ <td>&nbsp;</td>
+ <td>64 x <a href="#4.1">4.1</a><br>
+32 x <a href="#4.2">4.2</a></td> <td>62</td> <td><a href="8/s8.084.eig">8, 4.899, 4.899, ...</a></td> </tr>
+<tr> <td><a name="8.85"></a><a href="8/s8.085">8.85</a></td>
+ <td>8</td> <td>128</td> <td>6</td>
+ <td>48</td> <td>2+6+8+16+2*48</td>
+ <td>&nbsp;</td>
+ <td>64 x <a href="#4.1">4.1</a><br>
+8 x <a href="#4.2">4.2</a></td> <td>64</td> <td><a href="8/s8.085.eig">8, 4.788, 4.752, ...</a></td> </tr>
+<tr> <td><a name="8.86"></a><a href="8/s8.086">8.86</a></td>
+ <td>8</td> <td>128</td> <td>6</td>
+ <td>64</td> <td>2*8+16+32+64</td>
+ <td>&nbsp;</td>
+ <td>64 x <a href="#4.1">4.1</a><br>
+16 x <a href="#4.2">4.2</a></td> <td>64</td> <td><a href="8/s8.086.eig">8, 4.899, 4.765, ...</a></td> </tr>
+<tr> <td><a name="8.87"></a><a href="8/s8.087">8.87</a></td>
+ <td>8</td> <td>128</td> <td>6</td>
+ <td>512</td> <td>2*16+32+64</td>
+ <td>&nbsp;</td>
+ <td>64 x <a href="#4.1">4.1</a><br>
+24 x <a href="#4.2">4.2</a></td> <td>62</td> <td><a href="8/s8.087.eig">8, 4.899, 4.899, ...</a></td> </tr>
+<tr> <td><a name="8.88"></a><a href="8/s8.088">8.88</a></td>
+ <td>8</td> <td>128</td> <td>6</td>
+ <td>10752</td> <td>8+56+64</td>
+ <td>&nbsp;</td>
+ <td>64 x <a href="#4.1">4.1</a><br>
+56 x <a href="#4.2">4.2</a></td> <td>58</td> <td><a href="8/s8.088.eig">8, 4.899, 4.899, ...</a></td> </tr>
+<tr> <td><a name="8.89"></a><a href="8/s8.089">8.89</a></td>
+ <td>8</td> <td>132</td> <td>6</td>
+ <td>16</td> <td>9*4+8*8+2*16</td>
+ <td>&nbsp;</td>
+ <td>1 x <a href="#6.7">6.7</a></td> <td>64</td> <td><a href="8/s8.089.eig">8, 5.212, 4.925, ...</a></td> </tr>
+<tr> <td><a name="8.90"></a><a href="8/s8.090">8.90</a></td>
+ <td>8</td> <td>132</td> <td>6</td>
+ <td>72</td> <td>2*12+36+72</td>
+ <td>&nbsp;</td>
+ <td>6 x <a href="#5.2">5.2</a></td> <td>64</td> <td><a href="8/s8.090.eig">8, 4.936, 4.936, ...</a></td> </tr>
+<tr> <td><a name="8.91"></a><a href="8/s8.091">8.91</a></td>
+ <td>8</td> <td>144</td> <td>6</td>
+ <td>384</td> <td>48+96</td>
+ <td><a href="#7.32">7.32</a> x K<sub>2</sub></td>
+ <td>4 x <a href="#7.32">7.32</a></td> <td>72</td> <td><a href="8/s8.091.eig">8, 6, 6, ...</a></td> </tr>
+<tr> <td><a name="8.92"></a><a href="8/s8.092">8.92</a></td>
+ <td>8</td> <td>144</td> <td>6</td>
+ <td>768</td> <td>48+96</td>
+ <td><a href="#7.30">7.30</a> x K<sub>2</sub></td>
+ <td>4 x <a href="#7.30">7.30</a></td> <td>72</td> <td><a href="8/s8.092.eig">8, 6, 6, ...</a></td> </tr>
+<tr> <td><a name="8.93"></a><a href="8/s8.093">8.93</a></td>
+ <td>8</td> <td>144</td> <td>6</td>
+ <td>34560</td> <td>tra</td>
+ <td><a href="#7.31">7.31</a> x K<sub>2</sub></td>
+ <td>4 x <a href="#7.31">7.31</a></td> <td>72</td> <td><a href="8/s8.093.eig">8, 6, 6, ...</a></td> </tr>
+<tr> <td><a name="8.94"></a><a href="8/s8.094">8.94</a></td>
+ <td>8</td> <td>144</td> <td>6</td>
+ <td>24192</td> <td>tra</td>
+ <td><a href="#7.29">7.29</a> x K<sub>2</sub></td>
+ <td>2 x <a href="#7.29">7.29</a></td> <td>72</td> <td><a href="8/s8.094.eig">8, 6, 4.606, ...</a></td> </tr>
+<tr> <td><a name="8.95"></a><a href="8/s8.095">8.95</a></td>
+ <td>8</td> <td>160</td> <td>6</td>
+ <td>384</td> <td>32+32+96</td>
+ <td><a href="#7.34">7.34</a> x K<sub>2</sub></td>
+ <td>4 x <a href="#7.34">7.34</a></td> <td>80</td> <td><a href="8/s8.095.eig">8, 6, 6, ...</a></td> </tr>
+<tr> <td><a name="8.96"></a><a href="8/s8.096">8.96</a></td>
+ <td>8</td> <td>160</td> <td>6</td>
+ <td>960</td> <td>tra</td>
+ <td><a href="#7.35">7.35</a> x K<sub>2</sub></td>
+ <td>4 x <a href="#7.35">7.35</a></td> <td>80</td> <td><a href="8/s8.096.eig">8, 6, 6, ...</a></td> </tr>
+<tr> <td><a name="8.97"></a><a href="8/s8.097">8.97</a></td>
+ <td>8</td> <td>160</td> <td>6</td>
+ <td>96</td> <td>16+48+96</td>
+ <td><a href="#7.33">7.33</a> x K<sub>2</sub></td>
+ <td>2 x <a href="#7.33">7.33</a></td> <td>80</td> <td><a href="8/s8.097.eig">8, 6, 5.236, ...</a></td> </tr>
+<tr> <td><a name="8.98"></a><a href="8/s8.098">8.98</a></td>
+ <td>8</td> <td>164</td> <td>6</td>
+ <td>512</td> <td>4+2*16+2*32+64</td>
+ <td>&nbsp;</td>
+ <td>9 x <a href="#6.10">6.10</a></td> <td>80</td> <td><a href="8/s8.098.eig">8, 5.475, 5.475, ...</a></td> </tr>
+<tr> <td><a name="8.99"></a><a href="8/s8.099">8.99</a></td>
+ <td>8</td> <td>176</td> <td>6</td>
+ <td>63360</td> <td>tra</td>
+ <td><a href="#7.36">7.36</a> x K<sub>2</sub></td>
+ <td>6 x <a href="#7.36">7.36</a></td> <td>88</td> <td><a href="8/s8.099.eig">8, 6, 6, ...</a></td> </tr>
+<tr> <td><a name="8.100"></a><a href="8/s8.100">8.100</a></td>
+ <td>8</td> <td>192</td> <td>7</td>
+ <td>23040</td> <td>tra</td>
+ <td><a href="#7.38">7.38</a> x K<sub>2</sub></td>
+ <td>6 x <a href="#7.38">7.38</a></td> <td>96</td> <td><a href="8/s8.100.eig">8, 6, 6, ...</a></td> </tr>
+<tr> <td><a name="8.101"></a><a href="8/s8.101">8.101</a></td>
+ <td>8</td> <td>192</td> <td>7</td>
+ <td>2048</td> <td>64+128</td>
+ <td><a href="#7.37">7.37</a> x K<sub>2</sub></td>
+ <td>4 x <a href="#7.37">7.37</a></td> <td>96</td> <td><a href="8/s8.101.eig">8, 6, 6, ...</a></td> </tr>
+<tr> <td><a name="8.102"></a><a href="8/s8.102">8.102</a></td>
+ <td>8</td> <td>196</td> <td>6</td>
+ <td>225792</td> <td>tra</td>
+ <td>4.1 x 4.1</td>
+ <td>42 x <a href="#6.12">6.12</a></td> <td>96</td> <td><a href="8/s8.102.eig">8, 5.414, 5.414, ...</a></td> </tr>
+<tr> <td><a name="8.103"></a><a href="8/s8.103">8.103</a></td>
+ <td>8</td> <td>224</td> <td>7</td>
+ <td>129024</td> <td>tra</td>
+ <td><a href="#7.39">7.39</a> x K<sub>2</sub></td>
+ <td>8 x <a href="#7.39">7.39</a></td> <td>112</td> <td><a href="8/s8.103.eig">8, 6, 6, ...</a></td> </tr>
+<tr> <td><a name="8.104"></a><a href="8/s8.104">8.104</a></td>
+ <td>8</td> <td>256</td> <td>8</td>
+ <td>10321920</td> <td>tra</td>
+ <td>2<sup>8</sup></td>
+ <td>16 x <a href="#7.40">7.40</a></td> <td>128</td> <td><a href="8/s8.104.eig">8, 6, 6, ...</a> (integral)</td> </tr>
+</table>
+
+<h1>Nonbipartite (0,2)-graphs of valency 0-8</h1>
+In the table below, the <i>bipd#</i> column gives the serial number
+of the bipartite double of the graph.
+<p>
+<table cellpadding="5" border="1">
+<tr><td>#</td><td>bipd #</td><td><i>k</i></td><td><i>v</i></td>
+<td><i>d</i></td><td>|<i>G</i>|</td><td>orbits</td><td>graph</td>
+<td>subgraphs</td><td>2-rk</td><td>spectrum</td></tr>
+
+<tr> <td><a name="N3.1"></a><a href="3q/n3.001">N3.1</a></td> <td><a href="#3.1">3.1</a></td>
+ <td>3</td> <td>4</td> <td>1</td>
+ <td>24</td> <td>tra</td>
+ <td>K<sub>4</sub></td>
+ <td>&nbsp;</td> <td>1</td> <td><a href="3q/n3.001.eig">3, -1, -1, -1</a></td> </tr>
+<tr> <td><a name="N4.1"></a><a href="4q/n4.001">N4.1</a></td> <td><a href="#4.2">4.2</a></td>
+ <td>4</td> <td>8</td> <td>2</td>
+ <td>48</td> <td>tra</td>
+ <td><a href="#N3.1">N3.1</a> x K<sub>2</sub></td>
+ <td>2 x <a href="#N3.1">N3.1</a></td> <td>4</td> <td><a href="4q/n4.001.eig">4, 2, ..., -2</a> (integral)</td> </tr>
+<tr> <td><a name="N5.1"></a><a href="5q/n5.001">N5.1</a></td> <td><a href="#5.2">5.2</a></td>
+ <td>5</td> <td>12</td> <td>3</td>
+ <td>120</td> <td>tra</td>
+ <td>icosahedron</td>
+ <td>&nbsp;</td> <td>6</td> <td><a href="5q/n5.001.eig">5, 2.236, ..., -2.236</a></td> </tr>
+<tr> <td><a name="N5.2"></a><a href="5q/n5.002">N5.2</a></td> <td><a href="#5.4">5.4</a></td>
+ <td>5</td> <td>16</td> <td>2</td>
+ <td>1920</td> <td>tra</td>
+ <td>folded 2<sup>5</sup></td>
+ <td>20 x <a href="#3.1">3.1</a></td> <td>6</td> <td><a href="5q/n5.002.eig">5, 1, ..., -3</a> (integral)</td> </tr>
+<tr> <td><a name="N5.3"></a><a href="5q/n5.003">N5.3</a></td> <td><a href="#5.4">5.4</a></td>
+ <td>5</td> <td>16</td> <td>3</td>
+ <td>192</td> <td>tra</td>
+ <td><a href="#N4.1">N4.1</a> x K<sub>2</sub></td>
+ <td>4 x <a href="#N4.1">N4.1</a></td> <td>8</td> <td><a href="5q/n5.003.eig">5, 3, ..., -3</a> (integral)</td> </tr>
+<tr> <td><a name="N5.4"></a><a href="5q/n5.004">N5.4</a></td> <td><a href="#5.4">5.4</a></td>
+ <td>5</td> <td>16</td> <td>3</td>
+ <td>96</td> <td>8+8</td>
+ <td>&nbsp;</td>
+ <td>7 x <a href="#3.1">3.1</a><br>
+2 x <a href="#N3.1">N3.1</a></td> <td>8</td> <td><a href="5q/n5.004.eig">5, 3, ..., -3</a> (integral)</td> </tr>
+<tr> <td><a name="N6.1"></a><a href="6q/n6.001">N6.1</a></td> <td><a href="#6.3">6.3</a></td>
+ <td>6</td> <td>16</td> <td>2</td>
+ <td>1152</td> <td>tra</td>
+ <td>K<sub>4</sub> x K<sub>4</sub></td>
+ <td>12 x <a href="#N4.1">N4.1</a></td> <td>6</td> <td><a href="6q/n6.001.eig">6, 2, ..., -2</a> (integral)</td> </tr>
+<tr> <td><a name="N6.2"></a><a href="6q/n6.002">N6.2</a></td> <td><a href="#6.3">6.3</a></td>
+ <td>6</td> <td>16</td> <td>2</td>
+ <td>192</td> <td>tra</td>
+ <td>Shrikhande</td>
+ <td>&nbsp;</td> <td>6</td> <td><a href="6q/n6.002.eig">6, 2, ..., -2</a> (integral)</td> </tr>
+<tr> <td><a name="N6.3"></a><a href="6q/n6.003">N6.3</a></td> <td><a href="#6.8">6.8</a></td>
+ <td>6</td> <td>20</td> <td>3</td>
+ <td>60</td> <td>tra</td>
+ <td>&nbsp;</td>
+ <td>5 x <a href="#N3.1">N3.1</a></td> <td>10</td> <td><a href="6q/n6.003.eig">6, 2.449, ..., -3.236</a></td> </tr>
+<tr> <td><a name="N6.4"></a><a href="6q/n6.004">N6.4</a></td> <td><a href="#6.7">6.7</a></td>
+ <td>6</td> <td>20</td> <td>3</td>
+ <td>24</td> <td>4+4+12</td>
+ <td>&nbsp;</td>
+ <td>1 x <a href="#N3.1">N3.1</a></td> <td>10</td> <td><a href="6q/n6.004.eig">6, 3.020, ..., -3.020</a></td> </tr>
+<tr> <td><a name="N6.5"></a><a href="6q/n6.005">N6.5</a></td> <td><a href="#6.11">6.11</a></td>
+ <td>6</td> <td>24</td> <td>3</td>
+ <td>32</td> <td>8+16</td>
+ <td>&nbsp;</td>
+ <td>4 x <a href="#3.1">3.1</a><br>
+4 x <a href="#N3.1">N3.1</a></td> <td>12</td> <td><a href="6q/n6.005.eig">6, 3.236, ..., -4</a></td> </tr>
+<tr> <td><a name="N6.6"></a><a href="6q/n6.006">N6.6</a></td> <td><a href="#6.11">6.11</a></td>
+ <td>6</td> <td>24</td> <td>3</td>
+ <td>480</td> <td>tra</td>
+ <td>folded <a href="#6.11">6.11</a></td>
+ <td>30 x <a href="#3.1">3.1</a></td> <td>12</td> <td><a href="6q/n6.006.eig">6, 2, ..., -4</a></td> </tr>
+<tr> <td><a name="N6.7"></a><a href="6q/n6.007">N6.7</a></td> <td><a href="#6.11">6.11</a></td>
+ <td>6</td> <td>24</td> <td>4</td>
+ <td>240</td> <td>tra</td>
+ <td><a href="#N5.1">N5.1</a> x K<sub>2</sub></td>
+ <td>2 x <a href="#N5.1">N5.1</a></td> <td>12</td> <td><a href="6q/n6.007.eig">6, 4, ..., -3.236</a></td> </tr>
+<tr> <td><a name="N6.8"></a><a href="6q/n6.008">N6.8</a></td> <td><a href="#6.12">6.12</a></td>
+ <td>6</td> <td>28</td> <td>3</td>
+ <td>48</td> <td>4+12+12</td>
+ <td>&nbsp;</td>
+ <td>2 x <a href="#4.1">4.1</a><br>
+3 x <a href="#N4.1">N4.1</a></td> <td>14</td> <td><a href="6q/n6.008.eig">6, 3.414, ..., -4</a></td> </tr>
+<tr> <td><a name="N6.9"></a><a href="6q/n6.009">N6.9</a></td> <td><a href="#6.13">6.13</a></td>
+ <td>6</td> <td>32</td> <td>3</td>
+ <td>3840</td> <td>tra</td>
+ <td><a href="#N5.2">N5.2</a> x K<sub>2</sub></td>
+ <td>2 x <a href="#N5.2">N5.2</a></td> <td>16</td> <td><a href="6q/n6.009.eig">6, 4, ..., -4</a> (integral)</td> </tr>
+<tr> <td><a name="N6.10"></a><a href="6q/n6.010">N6.10</a></td> <td><a href="#6.13">6.13</a></td>
+ <td>6</td> <td>32</td> <td>4</td>
+ <td>1152</td> <td>tra</td>
+ <td><a href="#N5.3">N5.3</a> x K<sub>2</sub></td>
+ <td>6 x <a href="#N5.3">N5.3</a></td> <td>16</td> <td><a href="6q/n6.010.eig">6, 4, ..., -4</a> (integral)</td> </tr>
+<tr> <td><a name="N6.11"></a><a href="6q/n6.011">N6.11</a></td> <td><a href="#6.13">6.13</a></td>
+ <td>6</td> <td>32</td> <td>4</td>
+ <td>192</td> <td>16+16</td>
+ <td><a href="#N5.4">N5.4</a> x K<sub>2</sub></td>
+ <td>2 x <a href="#N5.4">N5.4</a></td> <td>16</td> <td><a href="6q/n6.011.eig">6, 4, ..., -4</a> (integral)</td> </tr>
+<tr> <td><a name="N7.1"></a><a href="7q/n7.001">N7.1</a></td> <td><a href="#7.1">7.1</a></td>
+ <td>7</td> <td>24</td> <td>2</td>
+ <td>96</td> <td>tra</td>
+ <td>&nbsp;</td>
+ <td>2 x <a href="#N5.1">N5.1</a></td> <td>12</td> <td><a href="7q/n7.001.eig">7, 3, ..., -3</a></td> </tr>
+<tr> <td><a name="N7.2"></a><a href="7q/n7.002">N7.2</a></td> <td><a href="#7.1">7.1</a></td>
+ <td>7</td> <td>24</td> <td>2</td>
+ <td>96</td> <td>tra</td>
+ <td>&nbsp;</td>
+ <td>2 x <a href="#N5.1">N5.1</a></td> <td>10</td> <td><a href="7q/n7.002.eig">7, 3, ..., -3</a></td> </tr>
+<tr> <td><a name="N7.3"></a><a href="7q/n7.003">N7.3</a></td> <td><a href="#7.2">7.2</a></td>
+ <td>7</td> <td>24</td> <td>2</td>
+ <td>480</td> <td>tra</td>
+ <td>folded <a href="#N7.46">N7.46</a></td>
+ <td>2 x <a href="#N5.1">N5.1</a></td> <td>12</td> <td><a href="7q/n7.003.eig">7, 3, ..., -3</a></td> </tr>
+<tr> <td><a name="N7.4"></a><a href="7q/n7.004">N7.4</a></td> <td><a href="#7.2">7.2</a></td>
+ <td>7</td> <td>24</td> <td>2</td>
+ <td>480</td> <td>tra</td>
+ <td>&nbsp;</td>
+ <td>2 x <a href="#N5.1">N5.1</a></td> <td>8</td> <td><a href="7q/n7.004.eig">7, 3, ..., -3</a></td> </tr>
+<tr> <td><a name="N7.5"></a><a href="7q/n7.005">N7.5</a></td> <td><a href="#7.1">7.1</a></td>
+ <td>7</td> <td>24</td> <td>3</td>
+ <td>96</td> <td>tra</td>
+ <td>&nbsp;</td>
+ <td>6 x <a href="#N4.1">N4.1</a></td> <td>12</td> <td><a href="7q/n7.005.eig">7, 3, ..., -3</a></td> </tr>
+<tr> <td><a name="N7.6"></a><a href="7q/n7.006">N7.6</a></td> <td><a href="#7.2">7.2</a></td>
+ <td>7</td> <td>24</td> <td>3</td>
+ <td>48</td> <td>tra</td>
+ <td>&nbsp;</td>
+ <td>3 x <a href="#3.1">3.1</a></td> <td>12</td> <td><a href="7q/n7.006.eig">7, 3, ..., -3</a></td> </tr>
+<tr> <td><a name="N7.7"></a><a href="7q/n7.007">N7.7</a></td> <td><a href="#7.4">7.4</a></td>
+ <td>7</td> <td>24</td> <td>3</td>
+ <td>8</td> <td>4*4+8</td>
+ <td>&nbsp;</td>
+ <td>1 x <a href="#3.1">3.1</a></td> <td>12</td> <td><a href="7q/n7.007.eig">7, 3, ..., -3</a></td> </tr>
+<tr> <td><a name="N7.8"></a><a href="7q/n7.008">N7.8</a></td> <td><a href="#7.5">7.5</a></td>
+ <td>7</td> <td>24</td> <td>3</td>
+ <td>16</td> <td>8+8+8</td>
+ <td>&nbsp;</td>
+ <td>1 x <a href="#3.1">3.1</a></td> <td>12</td> <td><a href="7q/n7.008.eig">7, 3, ..., -3</a></td> </tr>
+<tr> <td><a name="N7.9"></a><a href="7q/n7.009">N7.9</a></td> <td><a href="#7.6">7.6</a></td>
+ <td>7</td> <td>24</td> <td>3</td>
+ <td>4</td> <td>6*4</td>
+ <td>&nbsp;</td>
+ <td>&nbsp;</td> <td>12</td> <td><a href="7q/n7.009.eig">7, 2.909, ..., -3</a></td> </tr>
+<tr> <td><a name="N7.10"></a><a href="7q/n7.010">N7.10</a></td> <td><a href="#7.8">7.8</a></td>
+ <td>7</td> <td>24</td> <td>3</td>
+ <td>12</td> <td>4*6</td>
+ <td>&nbsp;</td>
+ <td>&nbsp;</td> <td>11</td> <td><a href="7q/n7.010.eig">7, 3, ..., -3</a></td> </tr>
+<tr> <td><a name="N7.11"></a><a href="7q/n7.011">N7.11</a></td> <td><a href="#7.9">7.9</a></td>
+ <td>7</td> <td>24</td> <td>3</td>
+ <td>12</td> <td>4*6</td>
+ <td>&nbsp;</td>
+ <td>3 x <a href="#3.1">3.1</a></td> <td>10</td> <td><a href="7q/n7.011.eig">7, 2.798, ..., -3</a></td> </tr>
+<tr> <td><a name="N7.12"></a><a href="7q/n7.012">N7.12</a></td> <td><a href="#7.10">7.10</a></td>
+ <td>7</td> <td>24</td> <td>3</td>
+ <td>336</td> <td>tra</td>
+ <td>drg(7,4,1; 1,2,7)</td>
+ <td>&nbsp;</td> <td>9</td> <td><a href="7q/n7.012.eig">7, 2.646, ..., -2.646</a></td> </tr>
+<tr> <td><a name="N7.13"></a><a href="7q/n7.013">N7.13</a></td> <td><a href="#7.24">7.24</a></td>
+ <td>7</td> <td>32</td> <td>3</td>
+ <td>6</td> <td>2+5*6</td>
+ <td>&nbsp;</td>
+ <td>3 x <a href="#3.1">3.1</a><br>
+3 x <a href="#N3.1">N3.1</a></td> <td>14</td> <td><a href="7q/n7.013.eig">7, 3.661, ..., -3.739</a></td> </tr>
+<tr> <td><a name="N7.14"></a><a href="7q/n7.014">N7.14</a></td> <td><a href="#7.26">7.26</a></td>
+ <td>7</td> <td>32</td> <td>3</td>
+ <td>4</td> <td>8*2+4*4</td>
+ <td>&nbsp;</td>
+ <td>1 x <a href="#3.1">3.1</a><br>
+3 x <a href="#N3.1">N3.1</a></td> <td>15</td> <td><a href="7q/n7.014.eig">7, 3.839, ..., -3.952</a></td> </tr>
+<tr> <td><a name="N7.15"></a><a href="7q/n7.015">N7.15</a></td> <td><a href="#7.27">7.27</a></td>
+ <td>7</td> <td>32</td> <td>3</td>
+ <td>2</td> <td>8*1+12*2</td>
+ <td>&nbsp;</td>
+ <td>3 x <a href="#N3.1">N3.1</a></td> <td>16</td> <td><a href="7q/n7.015.eig">7, 3.638, ..., -3.828</a></td> </tr>
+<tr> <td><a name="N7.16"></a><a href="7q/n7.016">N7.16</a></td> <td><a href="#7.18">7.18</a></td>
+ <td>7</td> <td>32</td> <td>3</td>
+ <td>8</td> <td>4*8</td>
+ <td>&nbsp;</td>
+ <td>&nbsp;</td> <td>16</td> <td><a href="7q/n7.016.eig">7, 3.711, ..., -3.711</a></td> </tr>
+<tr> <td><a name="N7.17"></a><a href="7q/n7.017">N7.17</a></td> <td><a href="#7.18">7.18</a></td>
+ <td>7</td> <td>32</td> <td>3</td>
+ <td>24</td> <td>8+24</td>
+ <td>&nbsp;</td>
+ <td>8 x <a href="#N3.1">N3.1</a></td> <td>14</td> <td><a href="7q/n7.017.eig">7, 3.606, ..., -3.711</a></td> </tr>
+<tr> <td><a name="N7.18"></a><a href="7q/n7.018">N7.18</a></td> <td><a href="#7.20">7.20</a></td>
+ <td>7</td> <td>32</td> <td>3</td>
+ <td>512</td> <td>tra</td>
+ <td>&nbsp;</td>
+ <td>2 x <a href="#N5.2">N5.2</a><br>
+4 x <a href="#N5.3">N5.3</a></td> <td>16</td> <td><a href="7q/n7.018.eig">7, 3, ..., -5</a> (integral)</td> </tr>
+<tr> <td><a name="N7.19"></a><a href="7q/n7.019">N7.19</a></td> <td><a href="#7.20">7.20</a></td>
+ <td>7</td> <td>32</td> <td>3</td>
+ <td>256</td> <td>tra</td>
+ <td>&nbsp;</td>
+ <td>2 x <a href="#N5.3">N5.3</a><br>
+4 x <a href="#N5.4">N5.4</a></td> <td>16</td> <td><a href="7q/n7.019.eig">7, 3, ..., -5</a> (integral)</td> </tr>
+<tr> <td><a name="N7.20"></a><a href="7q/n7.020">N7.20</a></td> <td><a href="#7.21">7.21</a></td>
+ <td>7</td> <td>32</td> <td>3</td>
+ <td>96</td> <td>tra</td>
+ <td>&nbsp;</td>
+ <td>2 x <a href="#4.2">4.2</a><br>
+4 x <a href="#N4.1">N4.1</a></td> <td>16</td> <td><a href="7q/n7.020.eig">7, 3, ..., -5</a> (integral)</td> </tr>
+<tr> <td><a name="N7.21"></a><a href="7q/n7.021">N7.21</a></td> <td><a href="#7.21">7.21</a></td>
+ <td>7</td> <td>32</td> <td>3</td>
+ <td>768</td> <td>tra</td>
+ <td>&nbsp;</td>
+ <td>2 x <a href="#N5.2">N5.2</a></td> <td>14</td> <td><a href="7q/n7.021.eig">7, 3, ..., -5</a> (integral)</td> </tr>
+<tr> <td><a name="N7.22"></a><a href="7q/n7.022">N7.22</a></td> <td><a href="#7.28">7.28</a></td>
+ <td>7</td> <td>32</td> <td>3</td>
+ <td>24</td> <td>4+4+24</td>
+ <td>&nbsp;</td>
+ <td>8 x <a href="#N3.1">N3.1</a></td> <td>16</td> <td><a href="7q/n7.022.eig">7, 3.494, ..., -3.828</a></td> </tr>
+<tr> <td><a name="N7.23"></a><a href="7q/n7.023">N7.23</a></td> <td><a href="#7.28">7.28</a></td>
+ <td>7</td> <td>32</td> <td>3</td>
+ <td>168</td> <td>4+28</td>
+ <td>&nbsp;</td>
+ <td>&nbsp;</td> <td>16</td> <td><a href="7q/n7.023.eig">7, 3.494, ..., -3.828</a></td> </tr>
+<tr> <td><a name="N7.24"></a><a href="7q/n7.024">N7.24</a></td> <td><a href="#7.22">7.22</a></td>
+ <td>7</td> <td>32</td> <td>3</td>
+ <td>48</td> <td>8+24</td>
+ <td>&nbsp;</td>
+ <td>&nbsp;</td> <td>14</td> <td><a href="7q/n7.024.eig">7, 3.606, ..., -3.606</a></td> </tr>
+<tr> <td><a name="N7.25"></a><a href="7q/n7.025">N7.25</a></td> <td><a href="#7.23">7.23</a></td>
+ <td>7</td> <td>32</td> <td>3</td>
+ <td>1536</td> <td>tra</td>
+ <td>&nbsp;</td>
+ <td>2 x <a href="#N5.2">N5.2</a><br>
+12 x <a href="#N5.3">N5.3</a></td> <td>16</td> <td><a href="7q/n7.025.eig">7, 3, ..., -5</a> (integral)</td> </tr>
+<tr> <td><a name="N7.26"></a><a href="7q/n7.026">N7.26</a></td> <td><a href="#7.23">7.23</a></td>
+ <td>7</td> <td>32</td> <td>3</td>
+ <td>256</td> <td>tra</td>
+ <td>&nbsp;</td>
+ <td>2 x <a href="#N5.3">N5.3</a><br>
+4 x <a href="#N5.4">N5.4</a></td> <td>16</td> <td><a href="7q/n7.026.eig">7, 3, ..., -5</a> (integral)</td> </tr>
+<tr> <td><a name="N7.27"></a><a href="7q/n7.027">N7.27</a></td> <td><a href="#7.23">7.23</a></td>
+ <td>7</td> <td>32</td> <td>3</td>
+ <td>2304</td> <td>tra</td>
+ <td><a href="#N6.1">N6.1</a> x K<sub>2</sub></td>
+ <td>2 x <a href="#N6.1">N6.1</a></td> <td>16</td> <td><a href="7q/n7.027.eig">7, 5, ..., -3</a> (integral)</td> </tr>
+<tr> <td><a name="N7.28"></a><a href="7q/n7.028">N7.28</a></td> <td><a href="#7.23">7.23</a></td>
+ <td>7</td> <td>32</td> <td>3</td>
+ <td>384</td> <td>tra</td>
+ <td><a href="#N6.2">N6.2</a> x K<sub>2</sub></td>
+ <td>2 x <a href="#N6.2">N6.2</a></td> <td>16</td> <td><a href="7q/n7.028.eig">7, 5, ..., -3</a> (integral)</td> </tr>
+<tr> <td><a name="N7.29"></a><a href="7q/n7.029">N7.29</a></td> <td><a href="#7.25">7.25</a></td>
+ <td>7</td> <td>32</td> <td>4</td>
+ <td>12</td> <td>2+5*6</td>
+ <td>&nbsp;</td>
+ <td>3 x <a href="#3.1">3.1</a><br>
+2 x <a href="#N3.1">N3.1</a></td> <td>15</td> <td><a href="7q/n7.029.eig">7, 3.988, ..., -3.686</a></td> </tr>
+<tr> <td><a name="N7.30"></a><a href="7q/n7.030">N7.30</a></td> <td><a href="#7.28">7.28</a></td>
+ <td>7</td> <td>32</td> <td>4</td>
+ <td>56</td> <td>4+28</td>
+ <td>&nbsp;</td>
+ <td>&nbsp;</td> <td>16</td> <td><a href="7q/n7.030.eig">7, 3.828, ..., -3.828</a></td> </tr>
+<tr> <td><a name="N7.31"></a><a href="7q/n7.031">N7.31</a></td> <td><a href="#7.30">7.30</a></td>
+ <td>7</td> <td>36</td> <td>3</td>
+ <td>32</td> <td>4+2*8+16</td>
+ <td>&nbsp;</td>
+ <td>25 x <a href="#3.1">3.1</a><br>
+5 x <a href="#N3.1">N3.1</a></td> <td>17</td> <td><a href="7q/n7.031.eig">7, 3.449, ..., -5</a></td> </tr>
+<tr> <td><a name="N7.32"></a><a href="7q/n7.032">N7.32</a></td> <td><a href="#7.32">7.32</a></td>
+ <td>7</td> <td>36</td> <td>3</td>
+ <td>8</td> <td>3*4+3*8</td>
+ <td>&nbsp;</td>
+ <td>25 x <a href="#3.1">3.1</a><br>
+5 x <a href="#N3.1">N3.1</a></td> <td>17</td> <td><a href="7q/n7.032.eig">7, 3.732, ..., -5</a></td> </tr>
+<tr> <td><a name="N7.33"></a><a href="7q/n7.033">N7.33</a></td> <td><a href="#7.34">7.34</a></td>
+ <td>7</td> <td>40</td> <td>4</td>
+ <td>48</td> <td>8+8+24</td>
+ <td><a href="#N6.4">N6.4</a> x K<sub>2</sub></td>
+ <td>2 x <a href="#N6.4">N6.4</a></td> <td>20</td> <td><a href="7q/n7.033.eig">7, 5, ..., -4.020</a></td> </tr>
+<tr> <td><a name="N7.34"></a><a href="7q/n7.034">N7.34</a></td> <td><a href="#7.34">7.34</a></td>
+ <td>7</td> <td>40</td> <td>4</td>
+ <td>16</td> <td>3*8+16</td>
+ <td>&nbsp;</td>
+ <td>1 x <a href="#N4.1">N4.1</a></td> <td>18</td> <td><a href="7q/n7.034.eig">7, 4.020, ..., -5</a></td> </tr>
+<tr> <td><a name="N7.35"></a><a href="7q/n7.035">N7.35</a></td> <td><a href="#7.35">7.35</a></td>
+ <td>7</td> <td>40</td> <td>4</td>
+ <td>8</td> <td>5*8</td>
+ <td>&nbsp;</td>
+ <td>1 x <a href="#N4.1">N4.1</a></td> <td>20</td> <td><a href="7q/n7.035.eig">7, 4.236, ..., -5</a></td> </tr>
+<tr> <td><a name="N7.36"></a><a href="7q/n7.036">N7.36</a></td> <td><a href="#7.35">7.35</a></td>
+ <td>7</td> <td>40</td> <td>4</td>
+ <td>120</td> <td>tra</td>
+ <td><a href="#N6.3">N6.3</a> x K<sub>2</sub></td>
+ <td>2 x <a href="#N6.3">N6.3</a></td> <td>20</td> <td><a href="7q/n7.036.eig">7, 5, ..., -4.236</a></td> </tr>
+<tr> <td><a name="N7.37"></a><a href="7q/n7.037">N7.37</a></td> <td><a href="#7.36">7.36</a></td>
+ <td>7</td> <td>44</td> <td>3</td>
+ <td>80</td> <td>4+20+20</td>
+ <td>&nbsp;</td>
+ <td>2 x <a href="#5.1">5.1</a></td> <td>21</td> <td><a href="7q/n7.037.eig">7, 3.732, ..., -5</a></td> </tr>
+<tr> <td><a name="N7.38"></a><a href="7q/n7.038">N7.38</a></td> <td><a href="#7.37">7.37</a></td>
+ <td>7</td> <td>48</td> <td>4</td>
+ <td>32</td> <td>16+16+16</td>
+ <td>&nbsp;</td>
+ <td>8 x <a href="#4.1">4.1</a></td> <td>24</td> <td><a href="7q/n7.038.eig">7, 4.236, ..., -5</a></td> </tr>
+<tr> <td><a name="N7.39"></a><a href="7q/n7.039">N7.39</a></td> <td><a href="#7.37">7.37</a></td>
+ <td>7</td> <td>48</td> <td>4</td>
+ <td>32</td> <td>4*8+16</td>
+ <td>&nbsp;</td>
+ <td>120 x <a href="#3.1">3.1</a><br>
+4 x <a href="#N3.1">N3.1</a></td> <td>24</td> <td><a href="7q/n7.039.eig">7, 4.464, ..., -5</a></td> </tr>
+<tr> <td><a name="N7.40"></a><a href="7q/n7.040">N7.40</a></td> <td><a href="#7.37">7.37</a></td>
+ <td>7</td> <td>48</td> <td>4</td>
+ <td>128</td> <td>16+32</td>
+ <td>&nbsp;</td>
+ <td>120 x <a href="#3.1">3.1</a><br>
+4 x <a href="#N3.1">N3.1</a></td> <td>22</td> <td><a href="7q/n7.040.eig">7, 4.464, ..., -5</a></td> </tr>
+<tr> <td><a name="N7.41"></a><a href="7q/n7.041">N7.41</a></td> <td><a href="#7.38">7.38</a></td>
+ <td>7</td> <td>48</td> <td>4</td>
+ <td>64</td> <td>16+32</td>
+ <td><a href="#N6.5">N6.5</a> x K<sub>2</sub></td>
+ <td>2 x <a href="#N6.5">N6.5</a></td> <td>24</td> <td><a href="7q/n7.041.eig">7, 5, ..., -5</a></td> </tr>
+<tr> <td><a name="N7.42"></a><a href="7q/n7.042">N7.42</a></td> <td><a href="#7.38">7.38</a></td>
+ <td>7</td> <td>48</td> <td>4</td>
+ <td>96</td> <td>24+24</td>
+ <td>&nbsp;</td>
+ <td>2 x <a href="#5.2">5.2</a></td> <td>22</td> <td><a href="7q/n7.042.eig">7, 4.236, ..., -5</a></td> </tr>
+<tr> <td><a name="N7.43"></a><a href="7q/n7.043">N7.43</a></td> <td><a href="#7.38">7.38</a></td>
+ <td>7</td> <td>48</td> <td>4</td>
+ <td>64</td> <td>16+16+16</td>
+ <td>&nbsp;</td>
+ <td>2 x <a href="#5.2">5.2</a></td> <td>24</td> <td><a href="7q/n7.043.eig">7, 4.236, ..., -5</a></td> </tr>
+<tr> <td><a name="N7.44"></a><a href="7q/n7.044">N7.44</a></td> <td><a href="#7.38">7.38</a></td>
+ <td>7</td> <td>48</td> <td>4</td>
+ <td>960</td> <td>tra</td>
+ <td>&nbsp;</td>
+ <td>2 x <a href="#5.2">5.2</a></td> <td>24</td> <td><a href="7q/n7.044.eig">7, 4.236, ..., -5</a></td> </tr>
+<tr> <td><a name="N7.45"></a><a href="7q/n7.045">N7.45</a></td> <td><a href="#7.38">7.38</a></td>
+ <td>7</td> <td>48</td> <td>4</td>
+ <td>960</td> <td>tra</td>
+ <td><a href="#N6.6">N6.6</a> x K<sub>2</sub></td>
+ <td>2 x <a href="#N6.6">N6.6</a></td> <td>24</td> <td><a href="7q/n7.045.eig">7, 5, ..., -5</a></td> </tr>
+<tr> <td><a name="N7.46"></a><a href="7q/n7.046">N7.46</a></td> <td><a href="#7.38">7.38</a></td>
+ <td>7</td> <td>48</td> <td>5</td>
+ <td>960</td> <td>tra</td>
+ <td><a href="#N6.7">N6.7</a> x K<sub>2</sub></td>
+ <td>4 x <a href="#N6.7">N6.7</a></td> <td>24</td> <td><a href="7q/n7.046.eig">7, 5, ..., -4.236</a></td> </tr>
+<tr> <td><a name="N7.47"></a><a href="7q/n7.047">N7.47</a></td> <td><a href="#7.38">7.38</a></td>
+ <td>7</td> <td>48</td> <td>5</td>
+ <td>480</td> <td>24+24</td>
+ <td>&nbsp;</td>
+ <td>1 x <a href="#5.2">5.2</a><br>
+2 x <a href="#N5.1">N5.1</a></td> <td>24</td> <td><a href="7q/n7.047.eig">7, 5, ..., -5</a></td> </tr>
+<tr> <td><a name="N7.48"></a><a href="7q/n7.048">N7.48</a></td> <td><a href="#7.39">7.39</a></td>
+ <td>7</td> <td>56</td> <td>4</td>
+ <td>96</td> <td>8+24+24</td>
+ <td><a href="#N6.8">N6.8</a> x K<sub>2</sub></td>
+ <td>2 x <a href="#N6.8">N6.8</a></td> <td>28</td> <td><a href="7q/n7.048.eig">7, 5, ..., -5</a></td> </tr>
+<tr> <td><a name="N7.49"></a><a href="7q/n7.049">N7.49</a></td> <td><a href="#7.39">7.39</a></td>
+ <td>7</td> <td>56</td> <td>4</td>
+ <td>8064</td> <td>tra</td>
+ <td><a href="#4.1">4.1</a> x K<sub>4</sub></td>
+ <td>6 x <a href="#5.3">5.3</a><br>
+21 x <a href="#N5.3">N5.3</a></td> <td>26</td> <td><a href="7q/n7.049.eig">7, 4.414, ..., -5</a></td> </tr>
+<tr> <td><a name="N7.50"></a><a href="7q/n7.050">N7.50</a></td> <td><a href="#7.39">7.39</a></td>
+ <td>7</td> <td>56</td> <td>4</td>
+ <td>384</td> <td>8+16+32</td>
+ <td>&nbsp;</td>
+ <td>6 x <a href="#5.3">5.3</a><br>
+1 x <a href="#N5.3">N5.3</a><br>
+4 x <a href="#N5.4">N5.4</a></td> <td>26</td> <td><a href="7q/n7.050.eig">7, 4.414, ..., -5</a></td> </tr>
+<tr> <td><a name="N7.51"></a><a href="7q/n7.051">N7.51</a></td> <td><a href="#7.40">7.40</a></td>
+ <td>7</td> <td>64</td> <td>3</td>
+ <td>322560</td> <td>tra</td>
+ <td>folded 2<sup>7</sup></td>
+ <td>42 x <a href="#5.4">5.4</a></td> <td>28</td> <td><a href="7q/n7.051.eig">7, 3, ..., -5</a> (integral)</td> </tr>
+<tr> <td><a name="N7.52"></a><a href="7q/n7.052">N7.52</a></td> <td><a href="#7.40">7.40</a></td>
+ <td>7</td> <td>64</td> <td>4</td>
+ <td>15360</td> <td>tra</td>
+ <td><a href="#N6.9">N6.9</a> x K<sub>2</sub></td>
+ <td>4 x <a href="#N6.9">N6.9</a></td> <td>32</td> <td><a href="7q/n7.052.eig">7, 5, ..., -5</a> (integral)</td> </tr>
+<tr> <td><a name="N7.53"></a><a href="7q/n7.053">N7.53</a></td> <td><a href="#7.40">7.40</a></td>
+ <td>7</td> <td>64</td> <td>4</td>
+ <td>7680</td> <td>32+32</td>
+ <td>&nbsp;</td>
+ <td>21 x <a href="#5.4">5.4</a><br>
+2 x <a href="#N5.2">N5.2</a></td> <td>32</td> <td><a href="7q/n7.053.eig">7, 5, ..., -5</a> (integral)</td> </tr>
+<tr> <td><a name="N7.54"></a><a href="7q/n7.054">N7.54</a></td> <td><a href="#7.40">7.40</a></td>
+ <td>7</td> <td>64</td> <td>5</td>
+ <td>9216</td> <td>tra</td>
+ <td><a href="#N6.10">N6.10</a> x K<sub>2</sub></td>
+ <td>8 x <a href="#N6.10">N6.10</a></td> <td>32</td> <td><a href="7q/n7.054.eig">7, 5, ..., -5</a> (integral)</td> </tr>
+<tr> <td><a name="N7.55"></a><a href="7q/n7.055">N7.55</a></td> <td><a href="#7.40">7.40</a></td>
+ <td>7</td> <td>64</td> <td>5</td>
+ <td>768</td> <td>32+32</td>
+ <td><a href="#N6.11">N6.11</a> x K<sub>2</sub></td>
+ <td>4 x <a href="#N6.11">N6.11</a></td> <td>32</td> <td><a href="7q/n7.055.eig">7, 5, ..., -5</a> (integral)</td> </tr>
+<tr> <td><a name="N7.56"></a><a href="7q/n7.056">N7.56</a></td> <td><a href="#7.40">7.40</a></td>
+ <td>7</td> <td>64</td> <td>5</td>
+ <td>768</td> <td>16+16+32</td>
+ <td>&nbsp;</td>
+ <td>8 x <a href="#5.4">5.4</a><br>
+4 x <a href="#N5.4">N5.4</a></td> <td>32</td> <td><a href="7q/n7.056.eig">7, 5, ..., -5</a> (integral)</td> </tr>
+<tr> <td><a name="N8.1"></a><a href="8q/n8.001">N8.1</a></td> <td><a href="#8.3">8.3</a></td>
+ <td>8</td> <td>34</td> <td>3</td>
+ <td>2</td> <td>17*2</td>
+ <td>&nbsp;</td>
+ <td>1 x <a href="#3.1">3.1</a></td> <td>16</td> <td><a href="8q/n8.001.eig">8, 3.514, ..., -3.708</a></td> </tr>
+<tr> <td><a name="N8.2"></a><a href="8q/n8.002">N8.2</a></td> <td><a href="#8.3">8.3</a></td>
+ <td>8</td> <td>34</td> <td>3</td>
+ <td>2</td> <td>17*2</td>
+ <td>&nbsp;</td>
+ <td>1 x <a href="#3.1">3.1</a></td> <td>16</td> <td><a href="8q/n8.002.eig">8, 3.611, ..., -3.708</a></td> </tr>
+<tr> <td><a name="N8.3"></a><a href="8q/n8.003">N8.3</a></td> <td><a href="#8.4">8.4</a></td>
+ <td>8</td> <td>34</td> <td>3</td>
+ <td>10</td> <td>2*2+3*10</td>
+ <td>&nbsp;</td>
+ <td>1 x <a href="#N3.1">N3.1</a></td> <td>16</td> <td><a href="8q/n8.003.eig">8, 3.393, ..., -3.689</a></td> </tr>
+<tr> <td><a name="N8.4"></a><a href="8q/n8.004">N8.4</a></td> <td><a href="#8.7">8.7</a></td>
+ <td>8</td> <td>36</td> <td>3</td>
+ <td>72</td> <td>tra</td>
+ <td>&nbsp;</td>
+ <td>36 x <a href="#3.1">3.1</a><br>
+18 x <a href="#N3.1">N3.1</a></td> <td>16</td> <td><a href="8q/n8.004.eig">8, 3.646, ..., -4</a></td> </tr>
+<tr> <td><a name="N8.5"></a><a href="8q/n8.005">N8.5</a></td> <td><a href="#8.7">8.7</a></td>
+ <td>8</td> <td>36</td> <td>3</td>
+ <td>12</td> <td>12+12+12</td>
+ <td>&nbsp;</td>
+ <td>3 x <a href="#3.1">3.1</a></td> <td>16</td> <td><a href="8q/n8.005.eig">8, 4, ..., -4</a></td> </tr>
+<tr> <td><a name="N8.6"></a><a href="8q/n8.006">N8.6</a></td> <td><a href="#8.7">8.7</a></td>
+ <td>8</td> <td>36</td> <td>3</td>
+ <td>12</td> <td>4*6+12</td>
+ <td>&nbsp;</td>
+ <td>3 x <a href="#3.1">3.1</a></td> <td>16</td> <td><a href="8q/n8.006.eig">8, 4, ..., -4</a></td> </tr>
+<tr> <td><a name="N8.7"></a><a href="8q/n8.007">N8.7</a></td> <td><a href="#8.8">8.8</a></td>
+ <td>8</td> <td>37</td> <td>3</td>
+ <td>12</td> <td>2*1+2+3+3*6+12</td>
+ <td>&nbsp;</td>
+ <td>5 x <a href="#3.1">3.1</a></td> <td>14</td> <td><a href="8q/n8.007.eig">8, 3.646, ..., -3.646</a></td> </tr>
+<tr> <td><a name="N8.8"></a><a href="8q/n8.008">N8.8</a></td> <td><a href="#8.8">8.8</a></td>
+ <td>8</td> <td>37</td> <td>3</td>
+ <td>336</td> <td>1+8+28</td>
+ <td>&nbsp;</td>
+ <td>56 x <a href="#3.1">3.1</a><br>
+14 x <a href="#N3.1">N3.1</a></td> <td>14</td> <td><a href="8q/n8.008.eig">8, 3.414, ..., -3.646</a></td> </tr>
+<tr> <td><a name="N8.9"></a><a href="8q/n8.009">N8.9</a></td> <td><a href="#8.13">8.13</a></td>
+ <td>8</td> <td>40</td> <td>3</td>
+ <td>1920</td> <td>tra</td>
+ <td>folded <a href="#8.13">8.13</a></td>
+ <td>40 x <a href="#3.1">3.1</a></td> <td>16</td> <td><a href="8q/n8.009.eig">8, 2, ..., -4</a> (integral)</td> </tr>
+<tr> <td><a name="N8.10"></a><a href="8q/n8.010">N8.10</a></td> <td><a href="#8.13">8.13</a></td>
+ <td>8</td> <td>40</td> <td>3</td>
+ <td>384</td> <td>8+32</td>
+ <td>&nbsp;</td>
+ <td>32 x <a href="#3.1">3.1</a><br>
+16 x <a href="#N3.1">N3.1</a></td> <td>16</td> <td><a href="8q/n8.010.eig">8, 4, ..., -4</a> (integral)</td> </tr>
+<tr> <td><a name="N8.11"></a><a href="8q/n8.011">N8.11</a></td> <td><a href="#8.11">8.11</a></td>
+ <td>8</td> <td>40</td> <td>3</td>
+ <td>10</td> <td>4*10</td>
+ <td>&nbsp;</td>
+ <td>15 x <a href="#3.1">3.1</a><br>
+15 x <a href="#N3.1">N3.1</a></td> <td>18</td> <td><a href="8q/n8.011.eig">8, 4.179, ..., -4.512</a></td> </tr>
+<tr> <td><a name="N8.12"></a><a href="8q/n8.012">N8.12</a></td> <td><a href="#8.12">8.12</a></td>
+ <td>8</td> <td>40</td> <td>3</td>
+ <td>32</td> <td>8+16+16</td>
+ <td>&nbsp;</td>
+ <td>&nbsp;</td> <td>18</td> <td><a href="8q/n8.012.eig">8, 4, ..., -4</a></td> </tr>
+<tr> <td><a name="N8.13"></a><a href="8q/n8.013">N8.13</a></td> <td><a href="#8.12">8.12</a></td>
+ <td>8</td> <td>40</td> <td>3</td>
+ <td>96</td> <td>16+24</td>
+ <td>&nbsp;</td>
+ <td>8 x <a href="#3.1">3.1</a><br>
+16 x <a href="#N3.1">N3.1</a></td> <td>18</td> <td><a href="8q/n8.013.eig">8, 4, ..., -4</a></td> </tr>
+<tr> <td><a name="N8.14"></a><a href="8q/n8.014">N8.14</a></td> <td><a href="#8.15">8.15</a></td>
+ <td>8</td> <td>40</td> <td>3</td>
+ <td>192</td> <td>8+32</td>
+ <td>&nbsp;</td>
+ <td>4 x <a href="#3.1">3.1</a><br>
+8 x <a href="#N3.1">N3.1</a></td> <td>18</td> <td><a href="8q/n8.014.eig">8, 3.464, ..., -4</a></td> </tr>
+<tr> <td><a name="N8.15"></a><a href="8q/n8.015">N8.15</a></td> <td><a href="#8.13">8.13</a></td>
+ <td>8</td> <td>40</td> <td>4</td>
+ <td>192</td> <td>16+24</td>
+ <td>&nbsp;</td>
+ <td>&nbsp;</td> <td>16</td> <td><a href="8q/n8.015.eig">8, 4, ..., -4</a> (integral)</td> </tr>
+<tr> <td><a name="N8.16"></a><a href="8q/n8.016">N8.16</a></td> <td><a href="#8.13">8.13</a></td>
+ <td>8</td> <td>40</td> <td>4</td>
+ <td>32</td> <td>3*8+16</td>
+ <td>&nbsp;</td>
+ <td>12 x <a href="#3.1">3.1</a></td> <td>16</td> <td><a href="8q/n8.016.eig">8, 4, ..., -4</a> (integral)</td> </tr>
+<tr> <td><a name="N8.17"></a><a href="8q/n8.017">N8.17</a></td> <td><a href="#8.15">8.15</a></td>
+ <td>8</td> <td>40</td> <td>4</td>
+ <td>64</td> <td>8+32</td>
+ <td>&nbsp;</td>
+ <td>&nbsp;</td> <td>18</td> <td><a href="8q/n8.017.eig">8, 4, ..., -4</a></td> </tr>
+<tr> <td><a name="N8.18"></a><a href="8q/n8.018">N8.18</a></td> <td><a href="#8.24">8.24</a></td>
+ <td>8</td> <td>42</td> <td>3</td>
+ <td>8</td> <td>2+6*4+2*8</td>
+ <td>&nbsp;</td>
+ <td>16 x <a href="#3.1">3.1</a><br>
+8 x <a href="#N3.1">N3.1</a></td> <td>20</td> <td><a href="8q/n8.018.eig">8, 3.805, ..., -4.256</a></td> </tr>
+<tr> <td><a name="N8.19"></a><a href="8q/n8.019">N8.19</a></td> <td><a href="#8.25">8.25</a></td>
+ <td>8</td> <td>42</td> <td>3</td>
+ <td>8</td> <td>3*2+3*4+3*8</td>
+ <td>&nbsp;</td>
+ <td>6 x <a href="#3.1">3.1</a></td> <td>20</td> <td><a href="8q/n8.019.eig">8, 4.218, ..., -4.337</a></td> </tr>
+<tr> <td><a name="N8.20"></a><a href="8q/n8.020">N8.20</a></td> <td><a href="#8.25">8.25</a></td>
+ <td>8</td> <td>42</td> <td>3</td>
+ <td>8</td> <td>3*2+3*4+3*8</td>
+ <td>&nbsp;</td>
+ <td>16 x <a href="#3.1">3.1</a><br>
+8 x <a href="#N3.1">N3.1</a></td> <td>20</td> <td><a href="8q/n8.020.eig">8, 4.039, ..., -4.337</a></td> </tr>
+<tr> <td><a name="N8.21"></a><a href="8q/n8.021">N8.21</a></td> <td><a href="#8.29">8.29</a></td>
+ <td>8</td> <td>42</td> <td>3</td>
+ <td>48</td> <td>6+12+24</td>
+ <td>&nbsp;</td>
+ <td>12 x <a href="#3.1">3.1</a></td> <td>20</td> <td><a href="8q/n8.021.eig">8, 4.218, ..., -4.218</a></td> </tr>
+<tr> <td><a name="N8.22"></a><a href="8q/n8.022">N8.22</a></td> <td><a href="#8.29">8.29</a></td>
+ <td>8</td> <td>42</td> <td>3</td>
+ <td>16</td> <td>2+2*4+2*8+16</td>
+ <td>&nbsp;</td>
+ <td>20 x <a href="#3.1">3.1</a><br>
+8 x <a href="#N3.1">N3.1</a></td> <td>20</td> <td><a href="8q/n8.022.eig">8, 4.218, ..., -4.218</a></td> </tr>
+<tr> <td><a name="N8.23"></a><a href="8q/n8.023">N8.23</a></td> <td><a href="#8.24">8.24</a></td>
+ <td>8</td> <td>42</td> <td>4</td>
+ <td>8</td> <td>2+6*4+2*8</td>
+ <td>&nbsp;</td>
+ <td>6 x <a href="#3.1">3.1</a></td> <td>20</td> <td><a href="8q/n8.023.eig">8, 4.256, ..., -4.110</a></td> </tr>
+<tr> <td><a name="N8.24"></a><a href="8q/n8.024">N8.24</a></td> <td><a href="#8.25">8.25</a></td>
+ <td>8</td> <td>42</td> <td>4</td>
+ <td>8</td> <td>3*2+3*4+3*8</td>
+ <td>&nbsp;</td>
+ <td>&nbsp;</td> <td>20</td> <td><a href="8q/n8.024.eig">8, 4.313, ..., -4.337</a></td> </tr>
+<tr> <td><a name="N8.25"></a><a href="8q/n8.025">N8.25</a></td> <td><a href="#8.25">8.25</a></td>
+ <td>8</td> <td>42</td> <td>4</td>
+ <td>8</td> <td>3*2+3*4+3*8</td>
+ <td>&nbsp;</td>
+ <td>4 x <a href="#3.1">3.1</a><br>
+4 x <a href="#N3.1">N3.1</a></td> <td>20</td> <td><a href="8q/n8.025.eig">8, 4.313, ..., -4.337</a></td> </tr>
+<tr> <td><a name="N8.26"></a><a href="8q/n8.026">N8.26</a></td> <td><a href="#8.26">8.26</a></td>
+ <td>8</td> <td>42</td> <td>4</td>
+ <td>8</td> <td>3*2+3*4+3*8</td>
+ <td>&nbsp;</td>
+ <td>8 x <a href="#3.1">3.1</a><br>
+4 x <a href="#N3.1">N3.1</a></td> <td>20</td> <td><a href="8q/n8.026.eig">8, 4.337, ..., -4.337</a></td> </tr>
+<tr> <td><a name="N8.27"></a><a href="8q/n8.027">N8.27</a></td> <td><a href="#8.26">8.26</a></td>
+ <td>8</td> <td>42</td> <td>4</td>
+ <td>32</td> <td>2+8+2*16</td>
+ <td>&nbsp;</td>
+ <td>8 x <a href="#3.1">3.1</a></td> <td>20</td> <td><a href="8q/n8.027.eig">8, 4.307, ..., -4.337</a></td> </tr>
+<tr> <td><a name="N8.28"></a><a href="8q/n8.028">N8.28</a></td> <td><a href="#8.26">8.26</a></td>
+ <td>8</td> <td>42</td> <td>4</td>
+ <td>8</td> <td>3*2+3*4+3*8</td>
+ <td>&nbsp;</td>
+ <td>10 x <a href="#3.1">3.1</a></td> <td>20</td> <td><a href="8q/n8.028.eig">8, 4.337, ..., -4.337</a></td> </tr>
+<tr> <td><a name="N8.29"></a><a href="8q/n8.029">N8.29</a></td> <td><a href="#8.26">8.26</a></td>
+ <td>8</td> <td>42</td> <td>4</td>
+ <td>32</td> <td>2+8+2*16</td>
+ <td>&nbsp;</td>
+ <td>32 x <a href="#3.1">3.1</a><br>
+8 x <a href="#N3.1">N3.1</a></td> <td>20</td> <td><a href="8q/n8.029.eig">8, 4.307, ..., -4.337</a></td> </tr>
+<tr> <td><a name="N8.30"></a><a href="8q/n8.030">N8.30</a></td> <td><a href="#8.29">8.29</a></td>
+ <td>8</td> <td>42</td> <td>4</td>
+ <td>16</td> <td>2+2*4+2*8+16</td>
+ <td>&nbsp;</td>
+ <td>4 x <a href="#3.1">3.1</a></td> <td>20</td> <td><a href="8q/n8.030.eig">8, 4.218, ..., -4.218</a></td> </tr>
+<tr> <td><a name="N8.31"></a><a href="8q/n8.031">N8.31</a></td> <td><a href="#8.29">8.29</a></td>
+ <td>8</td> <td>42</td> <td>4</td>
+ <td>48</td> <td>6+12+24</td>
+ <td>&nbsp;</td>
+ <td>&nbsp;</td> <td>20</td> <td><a href="8q/n8.031.eig">8, 4.218, ..., -4.218</a></td> </tr>
+<tr> <td><a name="N8.32"></a><a href="8q/n8.032">N8.32</a></td> <td><a href="#8.31">8.31</a></td>
+ <td>8</td> <td>44</td> <td>3</td>
+ <td>4</td> <td>6*2+8*4</td>
+ <td>&nbsp;</td>
+ <td>1 x <a href="#N4.1">N4.1</a></td> <td>20</td> <td><a href="8q/n8.032.eig">8, 3.948, ..., -4.812</a></td> </tr>
+<tr> <td><a name="N8.33"></a><a href="8q/n8.033">N8.33</a></td> <td><a href="#8.32">8.32</a></td>
+ <td>8</td> <td>44</td> <td>3</td>
+ <td>4</td> <td>6*2+8*4</td>
+ <td>&nbsp;</td>
+ <td>1 x <a href="#N4.1">N4.1</a></td> <td>20</td> <td><a href="8q/n8.033.eig">8, 3.871, ..., -4.946</a></td> </tr>
+<tr> <td><a name="N8.34"></a><a href="8q/n8.034">N8.34</a></td> <td><a href="#8.33">8.33</a></td>
+ <td>8</td> <td>48</td> <td>3</td>
+ <td>48</td> <td>24+24</td>
+ <td>&nbsp;</td>
+ <td>2 x <a href="#N5.1">N5.1</a></td> <td>24</td> <td><a href="8q/n8.034.eig">8, 4, ..., -4</a></td> </tr>
+<tr> <td><a name="N8.35"></a><a href="8q/n8.035">N8.35</a></td> <td><a href="#8.34">8.34</a></td>
+ <td>8</td> <td>48</td> <td>3</td>
+ <td>2880</td> <td>tra</td>
+ <td>folded <a href="#N8.186">N8.186</a></td>
+ <td>6 x <a href="#N6.7">N6.7</a></td> <td>24</td> <td><a href="8q/n8.035.eig">8, 4, ..., -5.236</a></td> </tr>
+<tr> <td><a name="N8.36"></a><a href="8q/n8.036">N8.36</a></td> <td><a href="#8.34">8.34</a></td>
+ <td>8</td> <td>48</td> <td>3</td>
+ <td>480</td> <td>24+24</td>
+ <td>&nbsp;</td>
+ <td>1 x <a href="#N6.6">N6.6</a><br>
+1 x <a href="#N6.7">N6.7</a></td> <td>24</td> <td><a href="8q/n8.036.eig">8, 4, ..., -5.236</a></td> </tr>
+<tr> <td><a name="N8.37"></a><a href="8q/n8.037">N8.37</a></td> <td><a href="#8.34">8.34</a></td>
+ <td>8</td> <td>48</td> <td>3</td>
+ <td>960</td> <td>tra</td>
+ <td>&nbsp;</td>
+ <td>2 x <a href="#N6.6">N6.6</a></td> <td>24</td> <td><a href="8q/n8.037.eig">8, 4, ..., -5.236</a></td> </tr>
+<tr> <td><a name="N8.38"></a><a href="8q/n8.038">N8.38</a></td> <td><a href="#8.37">8.37</a></td>
+ <td>8</td> <td>48</td> <td>3</td>
+ <td>192</td> <td>tra</td>
+ <td><a href="#N7.1">N7.1</a> x K<sub>2</sub></td>
+ <td>2 x <a href="#N7.1">N7.1</a></td> <td>24</td> <td><a href="8q/n8.038.eig">8, 6, ..., -4</a></td> </tr>
+<tr> <td><a name="N8.39"></a><a href="8q/n8.039">N8.39</a></td> <td><a href="#8.37">8.37</a></td>
+ <td>8</td> <td>48</td> <td>3</td>
+ <td>192</td> <td>tra</td>
+ <td><a href="#N7.2">N7.2</a> x K<sub>2</sub></td>
+ <td>2 x <a href="#N7.2">N7.2</a></td> <td>24</td> <td><a href="8q/n8.039.eig">8, 6, ..., -4</a></td> </tr>
+<tr> <td><a name="N8.40"></a><a href="8q/n8.040">N8.40</a></td> <td><a href="#8.37">8.37</a></td>
+ <td>8</td> <td>48</td> <td>3</td>
+ <td>32</td> <td>16+32</td>
+ <td>&nbsp;</td>
+ <td>2 x <a href="#5.2">5.2</a><br>
+2 x <a href="#N5.3">N5.3</a></td> <td>24</td> <td><a href="8q/n8.040.eig">8, 4, ..., -6</a></td> </tr>
+<tr> <td><a name="N8.41"></a><a href="8q/n8.041">N8.41</a></td> <td><a href="#8.37">8.37</a></td>
+ <td>8</td> <td>48</td> <td>3</td>
+ <td>64</td> <td>16+32</td>
+ <td>&nbsp;</td>
+ <td>2 x <a href="#5.2">5.2</a></td> <td>24</td> <td><a href="8q/n8.041.eig">8, 4, ..., -6</a></td> </tr>
+<tr> <td><a name="N8.42"></a><a href="8q/n8.042">N8.42</a></td> <td><a href="#8.37">8.37</a></td>
+ <td>8</td> <td>48</td> <td>3</td>
+ <td>192</td> <td>tra</td>
+ <td>&nbsp;</td>
+ <td>2 x <a href="#5.2">5.2</a></td> <td>24</td> <td><a href="8q/n8.042.eig">8, 4, ..., -6</a></td> </tr>
+<tr> <td><a name="N8.43"></a><a href="8q/n8.043">N8.43</a></td> <td><a href="#8.38">8.38</a></td>
+ <td>8</td> <td>48</td> <td>3</td>
+ <td>960</td> <td>tra</td>
+ <td><a href="#N7.4">N7.4</a> x K<sub>2</sub></td>
+ <td>2 x <a href="#N7.4">N7.4</a></td> <td>24</td> <td><a href="8q/n8.043.eig">8, 6, ..., -4</a></td> </tr>
+<tr> <td><a name="N8.44"></a><a href="8q/n8.044">N8.44</a></td> <td><a href="#8.38">8.38</a></td>
+ <td>8</td> <td>48</td> <td>3</td>
+ <td>960</td> <td>tra</td>
+ <td><a href="#N7.3">N7.3</a> x K<sub>2</sub></td>
+ <td>2 x <a href="#N7.3">N7.3</a></td> <td>24</td> <td><a href="8q/n8.044.eig">8, 6, ..., -4</a></td> </tr>
+<tr> <td><a name="N8.45"></a><a href="8q/n8.045">N8.45</a></td> <td><a href="#8.38">8.38</a></td>
+ <td>8</td> <td>48</td> <td>3</td>
+ <td>96</td> <td>tra</td>
+ <td>&nbsp;</td>
+ <td>2 x <a href="#5.2">5.2</a><br>
+6 x <a href="#N5.3">N5.3</a></td> <td>24</td> <td><a href="8q/n8.045.eig">8, 4, ..., -6</a></td> </tr>
+<tr> <td><a name="N8.46"></a><a href="8q/n8.046">N8.46</a></td> <td><a href="#8.38">8.38</a></td>
+ <td>8</td> <td>48</td> <td>3</td>
+ <td>64</td> <td>16+32</td>
+ <td>&nbsp;</td>
+ <td>2 x <a href="#5.2">5.2</a></td> <td>24</td> <td><a href="8q/n8.046.eig">8, 4, ..., -6</a></td> </tr>
+<tr> <td><a name="N8.47"></a><a href="8q/n8.047">N8.47</a></td> <td><a href="#8.38">8.38</a></td>
+ <td>8</td> <td>48</td> <td>3</td>
+ <td>960</td> <td>tra</td>
+ <td>&nbsp;</td>
+ <td>2 x <a href="#5.2">5.2</a></td> <td>24</td> <td><a href="8q/n8.047.eig">8, 3.236, ..., -6</a></td> </tr>
+<tr> <td><a name="N8.48"></a><a href="8q/n8.048">N8.48</a></td> <td><a href="#8.39">8.39</a></td>
+ <td>8</td> <td>48</td> <td>3</td>
+ <td>32</td> <td>16+32</td>
+ <td>&nbsp;</td>
+ <td>2 x <a href="#N5.3">N5.3</a></td> <td>24</td> <td><a href="8q/n8.048.eig">8, 4, ..., -6</a></td> </tr>
+<tr> <td><a name="N8.49"></a><a href="8q/n8.049">N8.49</a></td> <td><a href="#8.39">8.39</a></td>
+ <td>8</td> <td>48</td> <td>3</td>
+ <td>96</td> <td>tra</td>
+ <td>&nbsp;</td>
+ <td>6 x <a href="#N5.3">N5.3</a></td> <td>24</td> <td><a href="8q/n8.049.eig">8, 4, ..., -6</a></td> </tr>
+<tr> <td><a name="N8.50"></a><a href="8q/n8.050">N8.50</a></td> <td><a href="#8.40">8.40</a></td>
+ <td>8</td> <td>48</td> <td>3</td>
+ <td>16</td> <td>2*4+8+2*16</td>
+ <td>&nbsp;</td>
+ <td>2 x <a href="#4.2">4.2</a><br>
+2 x <a href="#N4.1">N4.1</a></td> <td>24</td> <td><a href="8q/n8.050.eig">8, 4, ..., -6</a></td> </tr>
+<tr> <td><a name="N8.51"></a><a href="8q/n8.051">N8.51</a></td> <td><a href="#8.40">8.40</a></td>
+ <td>8</td> <td>48</td> <td>3</td>
+ <td>32</td> <td>16+32</td>
+ <td>&nbsp;</td>
+ <td>2 x <a href="#N5.3">N5.3</a></td> <td>24</td> <td><a href="8q/n8.051.eig">8, 4, ..., -6</a></td> </tr>
+<tr> <td><a name="N8.52"></a><a href="8q/n8.052">N8.52</a></td> <td><a href="#8.41">8.41</a></td>
+ <td>8</td> <td>48</td> <td>3</td>
+ <td>16</td> <td>2*4+8+2*16</td>
+ <td>&nbsp;</td>
+ <td>3 x <a href="#4.2">4.2</a></td> <td>24</td> <td><a href="8q/n8.052.eig">8, 3.798, ..., -6</a></td> </tr>
+<tr> <td><a name="N8.53"></a><a href="8q/n8.053">N8.53</a></td> <td><a href="#8.41">8.41</a></td>
+ <td>8</td> <td>48</td> <td>3</td>
+ <td>32</td> <td>16+32</td>
+ <td>&nbsp;</td>
+ <td>2 x <a href="#N5.3">N5.3</a></td> <td>24</td> <td><a href="8q/n8.053.eig">8, 4, ..., -6</a></td> </tr>
+<tr> <td><a name="N8.54"></a><a href="8q/n8.054">N8.54</a></td> <td><a href="#8.42">8.42</a></td>
+ <td>8</td> <td>48</td> <td>3</td>
+ <td>48</td> <td>tra</td>
+ <td>&nbsp;</td>
+ <td>18 x <a href="#N4.1">N4.1</a></td> <td>24</td> <td><a href="8q/n8.054.eig">8, 4, ..., -6</a></td> </tr>
+<tr> <td><a name="N8.55"></a><a href="8q/n8.055">N8.55</a></td> <td><a href="#8.42">8.42</a></td>
+ <td>8</td> <td>48</td> <td>3</td>
+ <td>48</td> <td>tra</td>
+ <td>&nbsp;</td>
+ <td>12 x <a href="#N4.1">N4.1</a></td> <td>24</td> <td><a href="8q/n8.055.eig">8, 4, ..., -6</a></td> </tr>
+<tr> <td><a name="N8.56"></a><a href="8q/n8.056">N8.56</a></td> <td><a href="#8.42">8.42</a></td>
+ <td>8</td> <td>48</td> <td>3</td>
+ <td>48</td> <td>tra</td>
+ <td>&nbsp;</td>
+ <td>6 x <a href="#N4.1">N4.1</a></td> <td>24</td> <td><a href="8q/n8.056.eig">8, 4, ..., -6</a></td> </tr>
+<tr> <td><a name="N8.57"></a><a href="8q/n8.057">N8.57</a></td> <td><a href="#8.43">8.43</a></td>
+ <td>8</td> <td>48</td> <td>3</td>
+ <td>24</td> <td>12+12+24</td>
+ <td>&nbsp;</td>
+ <td>12 x <a href="#N4.1">N4.1</a></td> <td>24</td> <td><a href="8q/n8.057.eig">8, 4, ..., -6</a></td> </tr>
+<tr> <td><a name="N8.58"></a><a href="8q/n8.058">N8.58</a></td> <td><a href="#8.44">8.44</a></td>
+ <td>8</td> <td>48</td> <td>3</td>
+ <td>96</td> <td>tra</td>
+ <td>&nbsp;</td>
+ <td>12 x <a href="#N4.1">N4.1</a></td> <td>24</td> <td><a href="8q/n8.058.eig">8, 3.646, ..., -6</a></td> </tr>
+<tr> <td><a name="N8.59"></a><a href="8q/n8.059">N8.59</a></td> <td><a href="#8.45">8.45</a></td>
+ <td>8</td> <td>48</td> <td>3</td>
+ <td>48</td> <td>tra</td>
+ <td>&nbsp;</td>
+ <td>18 x <a href="#N4.1">N4.1</a></td> <td>24</td> <td><a href="8q/n8.059.eig">8, 4, ..., -6</a></td> </tr>
+<tr> <td><a name="N8.60"></a><a href="8q/n8.060">N8.60</a></td> <td><a href="#8.50">8.50</a></td>
+ <td>8</td> <td>48</td> <td>3</td>
+ <td>48</td> <td>24+24</td>
+ <td>&nbsp;</td>
+ <td>60 x <a href="#3.1">3.1</a><br>
+6 x <a href="#N3.1">N3.1</a></td> <td>22</td> <td><a href="8q/n8.060.eig">8, 4.243, ..., -4.429</a></td> </tr>
+<tr> <td><a name="N8.61"></a><a href="8q/n8.061">N8.61</a></td> <td><a href="#8.52">8.52</a></td>
+ <td>8</td> <td>48</td> <td>3</td>
+ <td>96</td> <td>tra</td>
+ <td>&nbsp;</td>
+ <td>12 x <a href="#N4.1">N4.1</a></td> <td>24</td> <td><a href="8q/n8.061.eig">8, 3.646, ..., -6</a></td> </tr>
+<tr> <td><a name="N8.62"></a><a href="8q/n8.062">N8.62</a></td> <td><a href="#8.34">8.34</a></td>
+ <td>8</td> <td>48</td> <td>4</td>
+ <td>2880</td> <td>tra</td>
+ <td><a href="#N5.1">N5.1</a> x K<sub>4</sub></td>
+ <td>6 x <a href="#N6.7">N6.7</a></td> <td>24</td> <td><a href="8q/n8.062.eig">8, 5.236, ..., -3.236</a></td> </tr>
+<tr> <td><a name="N8.63"></a><a href="8q/n8.063">N8.63</a></td> <td><a href="#8.34">8.34</a></td>
+ <td>8</td> <td>48</td> <td>4</td>
+ <td>64</td> <td>16+16+16</td>
+ <td>&nbsp;</td>
+ <td>2 x <a href="#N6.5">N6.5</a></td> <td>24</td> <td><a href="8q/n8.063.eig">8, 5.236, ..., -5.236</a></td> </tr>
+<tr> <td><a name="N8.64"></a><a href="8q/n8.064">N8.64</a></td> <td><a href="#8.36">8.36</a></td>
+ <td>8</td> <td>48</td> <td>4</td>
+ <td>4</td> <td>6*2+9*4</td>
+ <td>&nbsp;</td>
+ <td>10 x <a href="#3.1">3.1</a><br>
+8 x <a href="#N3.1">N3.1</a></td> <td>24</td> <td><a href="8q/n8.064.eig">8, 4.417, ..., -4.494</a></td> </tr>
+<tr> <td><a name="N8.65"></a><a href="8q/n8.065">N8.65</a></td> <td><a href="#8.36">8.36</a></td>
+ <td>8</td> <td>48</td> <td>4</td>
+ <td>12</td> <td>2*6+3*12</td>
+ <td>&nbsp;</td>
+ <td>12 x <a href="#3.1">3.1</a></td> <td>24</td> <td><a href="8q/n8.065.eig">8, 4.494, ..., -4.340</a></td> </tr>
+<tr> <td><a name="N8.66"></a><a href="8q/n8.066">N8.66</a></td> <td><a href="#8.37">8.37</a></td>
+ <td>8</td> <td>48</td> <td>4</td>
+ <td>384</td> <td>tra</td>
+ <td>&nbsp;</td>
+ <td>2 x <a href="#N6.6">N6.6</a></td> <td>24</td> <td><a href="8q/n8.066.eig">8, 4, ..., -6</a></td> </tr>
+<tr> <td><a name="N8.67"></a><a href="8q/n8.067">N8.67</a></td> <td><a href="#8.37">8.37</a></td>
+ <td>8</td> <td>48</td> <td>4</td>
+ <td>128</td> <td>16+32</td>
+ <td>&nbsp;</td>
+ <td>2 x <a href="#N6.5">N6.5</a></td> <td>24</td> <td><a href="8q/n8.067.eig">8, 4, ..., -6</a></td> </tr>
+<tr> <td><a name="N8.68"></a><a href="8q/n8.068">N8.68</a></td> <td><a href="#8.37">8.37</a></td>
+ <td>8</td> <td>48</td> <td>4</td>
+ <td>192</td> <td>tra</td>
+ <td><a href="#N7.5">N7.5</a> x K<sub>2</sub></td>
+ <td>2 x <a href="#N7.5">N7.5</a></td> <td>24</td> <td><a href="8q/n8.068.eig">8, 6, ..., -4</a></td> </tr>
+<tr> <td><a name="N8.69"></a><a href="8q/n8.069">N8.69</a></td> <td><a href="#8.38">8.38</a></td>
+ <td>8</td> <td>48</td> <td>4</td>
+ <td>1920</td> <td>tra</td>
+ <td>&nbsp;</td>
+ <td>2 x <a href="#N6.6">N6.6</a></td> <td>24</td> <td><a href="8q/n8.069.eig">8, 4, ..., -6</a></td> </tr>
+<tr> <td><a name="N8.70"></a><a href="8q/n8.070">N8.70</a></td> <td><a href="#8.38">8.38</a></td>
+ <td>8</td> <td>48</td> <td>4</td>
+ <td>128</td> <td>16+32</td>
+ <td>&nbsp;</td>
+ <td>2 x <a href="#N6.5">N6.5</a></td> <td>24</td> <td><a href="8q/n8.070.eig">8, 4, ..., -6</a></td> </tr>
+<tr> <td><a name="N8.71"></a><a href="8q/n8.071">N8.71</a></td> <td><a href="#8.38">8.38</a></td>
+ <td>8</td> <td>48</td> <td>4</td>
+ <td>96</td> <td>tra</td>
+ <td><a href="#N7.6">N7.6</a> x K<sub>2</sub></td>
+ <td>2 x <a href="#N7.6">N7.6</a></td> <td>24</td> <td><a href="8q/n8.071.eig">8, 6, ..., -4</a></td> </tr>
+<tr> <td><a name="N8.72"></a><a href="8q/n8.072">N8.72</a></td> <td><a href="#8.39">8.39</a></td>
+ <td>8</td> <td>48</td> <td>4</td>
+ <td>24</td> <td>4*12</td>
+ <td><a href="#N7.11">N7.11</a> x K<sub>2</sub></td>
+ <td>2 x <a href="#N7.11">N7.11</a></td> <td>24</td> <td><a href="8q/n8.072.eig">8, 6, ..., -4</a></td> </tr>
+<tr> <td><a name="N8.73"></a><a href="8q/n8.073">N8.73</a></td> <td><a href="#8.40">8.40</a></td>
+ <td>8</td> <td>48</td> <td>4</td>
+ <td>16</td> <td>4*8+16</td>
+ <td><a href="#N7.7">N7.7</a> x K<sub>2</sub></td>
+ <td>2 x <a href="#N7.7">N7.7</a></td> <td>24</td> <td><a href="8q/n8.073.eig">8, 6, ..., -4</a></td> </tr>
+<tr> <td><a name="N8.74"></a><a href="8q/n8.074">N8.74</a></td> <td><a href="#8.41">8.41</a></td>
+ <td>8</td> <td>48</td> <td>4</td>
+ <td>32</td> <td>16+16+16</td>
+ <td><a href="#N7.8">N7.8</a> x K<sub>2</sub></td>
+ <td>2 x <a href="#N7.8">N7.8</a></td> <td>24</td> <td><a href="8q/n8.074.eig">8, 6, ..., -4</a></td> </tr>
+<tr> <td><a name="N8.75"></a><a href="8q/n8.075">N8.75</a></td> <td><a href="#8.42">8.42</a></td>
+ <td>8</td> <td>48</td> <td>4</td>
+ <td>8</td> <td>6*8</td>
+ <td><a href="#N7.9">N7.9</a> x K<sub>2</sub></td>
+ <td>2 x <a href="#N7.9">N7.9</a></td> <td>24</td> <td><a href="8q/n8.075.eig">8, 6, ..., -4</a></td> </tr>
+<tr> <td><a name="N8.76"></a><a href="8q/n8.076">N8.76</a></td> <td><a href="#8.43">8.43</a></td>
+ <td>8</td> <td>48</td> <td>4</td>
+ <td>24</td> <td>4*12</td>
+ <td><a href="#N7.10">N7.10</a> x K<sub>2</sub></td>
+ <td>2 x <a href="#N7.10">N7.10</a></td> <td>24</td> <td><a href="8q/n8.076.eig">8, 6, ..., -4</a></td> </tr>
+<tr> <td><a name="N8.77"></a><a href="8q/n8.077">N8.77</a></td> <td><a href="#8.50">8.50</a></td>
+ <td>8</td> <td>48</td> <td>4</td>
+ <td>16</td> <td>4*8+16</td>
+ <td>&nbsp;</td>
+ <td>13 x <a href="#3.1">3.1</a></td> <td>22</td> <td><a href="8q/n8.077.eig">8, 4.429, ..., -4.243</a></td> </tr>
+<tr> <td><a name="N8.78"></a><a href="8q/n8.078">N8.78</a></td> <td><a href="#8.50">8.50</a></td>
+ <td>8</td> <td>48</td> <td>4</td>
+ <td>24</td> <td>12+12+24</td>
+ <td>&nbsp;</td>
+ <td>21 x <a href="#3.1">3.1</a></td> <td>22</td> <td><a href="8q/n8.078.eig">8, 4.429, ..., -4.429</a></td> </tr>
+<tr> <td><a name="N8.79"></a><a href="8q/n8.079">N8.79</a></td> <td><a href="#8.51">8.51</a></td>
+ <td>8</td> <td>48</td> <td>4</td>
+ <td>12</td> <td>2*6+3*12</td>
+ <td>&nbsp;</td>
+ <td>&nbsp;</td> <td>24</td> <td><a href="8q/n8.079.eig">8, 4.415, ..., -4.415</a></td> </tr>
+<tr> <td><a name="N8.80"></a><a href="8q/n8.080">N8.80</a></td> <td><a href="#8.51">8.51</a></td>
+ <td>8</td> <td>48</td> <td>4</td>
+ <td>12</td> <td>6*6+12</td>
+ <td>&nbsp;</td>
+ <td>6 x <a href="#3.1">3.1</a></td> <td>24</td> <td><a href="8q/n8.080.eig">8, 4.415, ..., -4.415</a></td> </tr>
+<tr> <td><a name="N8.81"></a><a href="8q/n8.081">N8.81</a></td> <td><a href="#8.52">8.52</a></td>
+ <td>8</td> <td>48</td> <td>4</td>
+ <td>672</td> <td>tra</td>
+ <td><a href="#N7.12">N7.12</a> x K<sub>2</sub></td>
+ <td>2 x <a href="#N7.12">N7.12</a></td> <td>24</td> <td><a href="8q/n8.081.eig">8, 6, ..., -3.646</a></td> </tr>
+<tr> <td><a name="N8.82"></a><a href="8q/n8.082">N8.82</a></td> <td><a href="#8.58">8.58</a></td>
+ <td>8</td> <td>52</td> <td>4</td>
+ <td>8</td> <td>3*4+5*8</td>
+ <td>&nbsp;</td>
+ <td>2 x <a href="#4.1">4.1</a><br>
+1 x <a href="#N4.1">N4.1</a></td> <td>24</td> <td><a href="8q/n8.082.eig">8, 4.780, ..., -4.962</a></td> </tr>
+<tr> <td><a name="N8.83"></a><a href="8q/n8.083">N8.83</a></td> <td><a href="#8.58">8.58</a></td>
+ <td>8</td> <td>52</td> <td>4</td>
+ <td>16</td> <td>3*4+3*8+16</td>
+ <td>&nbsp;</td>
+ <td>2 x <a href="#4.1">4.1</a><br>
+1 x <a href="#N4.1">N4.1</a></td> <td>24</td> <td><a href="8q/n8.083.eig">8, 4.835, ..., -4.962</a></td> </tr>
+<tr> <td><a name="N8.84"></a><a href="8q/n8.084">N8.84</a></td> <td><a href="#8.58">8.58</a></td>
+ <td>8</td> <td>52</td> <td>4</td>
+ <td>16</td> <td>3*4+3*8+16</td>
+ <td>&nbsp;</td>
+ <td>2 x <a href="#4.1">4.1</a><br>
+1 x <a href="#N4.1">N4.1</a></td> <td>24</td> <td><a href="8q/n8.084.eig">8, 4.835, ..., -4.962</a></td> </tr>
+<tr> <td><a name="N8.85"></a><a href="8q/n8.085">N8.85</a></td> <td><a href="#8.59">8.59</a></td>
+ <td>8</td> <td>52</td> <td>4</td>
+ <td>12</td> <td>2*2+8*6</td>
+ <td>&nbsp;</td>
+ <td>52 x <a href="#3.1">3.1</a><br>
+2 x <a href="#N3.1">N3.1</a></td> <td>24</td> <td><a href="8q/n8.085.eig">8, 4.768, ..., -4.768</a></td> </tr>
+<tr> <td><a name="N8.86"></a><a href="8q/n8.086">N8.86</a></td> <td><a href="#8.59">8.59</a></td>
+ <td>8</td> <td>52</td> <td>4</td>
+ <td>8</td> <td>5*4+4*8</td>
+ <td>&nbsp;</td>
+ <td>42 x <a href="#3.1">3.1</a><br>
+10 x <a href="#N3.1">N3.1</a></td> <td>24</td> <td><a href="8q/n8.086.eig">8, 4.309, ..., -4.768</a></td> </tr>
+<tr> <td><a name="N8.87"></a><a href="8q/n8.087">N8.87</a></td> <td><a href="#8.60">8.60</a></td>
+ <td>8</td> <td>52</td> <td>4</td>
+ <td>48</td> <td>2+6+8+12+24</td>
+ <td>&nbsp;</td>
+ <td>6 x <a href="#4.1">4.1</a><br>
+1 x <a href="#N4.1">N4.1</a></td> <td>24</td> <td><a href="8q/n8.087.eig">8, 4.783, ..., -4.962</a></td> </tr>
+<tr> <td><a name="N8.88"></a><a href="8q/n8.088">N8.88</a></td> <td><a href="#8.60">8.60</a></td>
+ <td>8</td> <td>52</td> <td>4</td>
+ <td>16</td> <td>2*2+2*4+3*8+16</td>
+ <td>&nbsp;</td>
+ <td>6 x <a href="#4.1">4.1</a><br>
+1 x <a href="#N4.1">N4.1</a></td> <td>24</td> <td><a href="8q/n8.088.eig">8, 4.783, ..., -4.962</a></td> </tr>
+<tr> <td><a name="N8.89"></a><a href="8q/n8.089">N8.89</a></td> <td><a href="#8.61">8.61</a></td>
+ <td>8</td> <td>52</td> <td>4</td>
+ <td>48</td> <td>2+3*6+8+24</td>
+ <td>&nbsp;</td>
+ <td>6 x <a href="#4.1">4.1</a><br>
+1 x <a href="#N4.1">N4.1</a></td> <td>22</td> <td><a href="8q/n8.089.eig">8, 4.576, ..., -4.576</a></td> </tr>
+<tr> <td><a name="N8.90"></a><a href="8q/n8.090">N8.90</a></td> <td><a href="#8.63">8.63</a></td>
+ <td>8</td> <td>56</td> <td>4</td>
+ <td>8</td> <td>4*4+5*8</td>
+ <td>&nbsp;</td>
+ <td>1 x <a href="#N4.1">N4.1</a></td> <td>28</td> <td><a href="8q/n8.090.eig">8, 4.557, ..., -6</a></td> </tr>
+<tr> <td><a name="N8.91"></a><a href="8q/n8.091">N8.91</a></td> <td><a href="#8.63">8.63</a></td>
+ <td>8</td> <td>56</td> <td>4</td>
+ <td>8</td> <td>4*4+5*8</td>
+ <td>&nbsp;</td>
+ <td>1 x <a href="#N4.1">N4.1</a></td> <td>28</td> <td><a href="8q/n8.091.eig">8, 4.462, ..., -6</a></td> </tr>
+<tr> <td><a name="N8.92"></a><a href="8q/n8.092">N8.92</a></td> <td><a href="#8.66">8.66</a></td>
+ <td>8</td> <td>56</td> <td>4</td>
+ <td>16</td> <td>3*8+2*16</td>
+ <td>&nbsp;</td>
+ <td>88 x <a href="#3.1">3.1</a><br>
+6 x <a href="#N3.1">N3.1</a></td> <td>28</td> <td><a href="8q/n8.092.eig">8, 4.482, ..., -6</a></td> </tr>
+<tr> <td><a name="N8.93"></a><a href="8q/n8.093">N8.93</a></td> <td><a href="#8.66">8.66</a></td>
+ <td>8</td> <td>56</td> <td>4</td>
+ <td>8</td> <td>7*8</td>
+ <td>&nbsp;</td>
+ <td>88 x <a href="#3.1">3.1</a><br>
+6 x <a href="#N3.1">N3.1</a></td> <td>28</td> <td><a href="8q/n8.093.eig">8, 4.494, ..., -6</a></td> </tr>
+<tr> <td><a name="N8.94"></a><a href="8q/n8.094">N8.94</a></td> <td><a href="#8.67">8.67</a></td>
+ <td>8</td> <td>56</td> <td>4</td>
+ <td>16</td> <td>2*4+2*8+2*16</td>
+ <td>&nbsp;</td>
+ <td>1 x <a href="#N4.1">N4.1</a></td> <td>28</td> <td><a href="8q/n8.094.eig">8, 4.462, ..., -6</a></td> </tr>
+<tr> <td><a name="N8.95"></a><a href="8q/n8.095">N8.95</a></td> <td><a href="#8.68">8.68</a></td>
+ <td>8</td> <td>56</td> <td>4</td>
+ <td>16</td> <td>2*4+2*8+2*16</td>
+ <td>&nbsp;</td>
+ <td>1 x <a href="#N4.1">N4.1</a></td> <td>28</td> <td><a href="8q/n8.095.eig">8, 4.462, ..., -6</a></td> </tr>
+<tr> <td><a name="N8.96"></a><a href="8q/n8.096">N8.96</a></td> <td><a href="#8.69">8.69</a></td>
+ <td>8</td> <td>56</td> <td>4</td>
+ <td>4</td> <td>14*4</td>
+ <td>&nbsp;</td>
+ <td>1 x <a href="#N4.1">N4.1</a></td> <td>28</td> <td><a href="8q/n8.096.eig">8, 4.356, ..., -6</a></td> </tr>
+<tr> <td><a name="N8.97"></a><a href="8q/n8.097">N8.97</a></td> <td><a href="#8.71">8.71</a></td>
+ <td>8</td> <td>64</td> <td>3</td>
+ <td>46080</td> <td>tra</td>
+ <td><a href="#N5.2">N5.2</a> x K<sub>4</sub></td>
+ <td>6 x <a href="#N6.9">N6.9</a><br>
+20 x <a href="#N6.10">N6.10</a></td> <td>28</td> <td><a href="8q/n8.097.eig">8, 4, ..., -4</a> (integral)</td> </tr>
+<tr> <td><a name="N8.98"></a><a href="8q/n8.098">N8.98</a></td> <td><a href="#8.71">8.71</a></td>
+ <td>8</td> <td>64</td> <td>3</td>
+ <td>4608</td> <td>tra</td>
+ <td>&nbsp;</td>
+ <td>2 x <a href="#N6.10">N6.10</a><br>
+12 x <a href="#N6.11">N6.11</a></td> <td>28</td> <td><a href="8q/n8.098.eig">8, 4, ..., -4</a> (integral)</td> </tr>
+<tr> <td><a name="N8.99"></a><a href="8q/n8.099">N8.99</a></td> <td><a href="#8.72">8.72</a></td>
+ <td>8</td> <td>64</td> <td>3</td>
+ <td>256</td> <td>16+16+32</td>
+ <td>&nbsp;</td>
+ <td>2 x <a href="#6.1">6.1</a><br>
+2 x <a href="#N6.10">N6.10</a><br>
+2 x <a href="#N6.11">N6.11</a></td> <td>32</td> <td><a href="8q/n8.099.eig">8, 4, ..., -6</a> (integral)</td> </tr>
+<tr> <td><a name="N8.100"></a><a href="8q/n8.100">N8.100</a></td> <td><a href="#8.72">8.72</a></td>
+ <td>8</td> <td>64</td> <td>3</td>
+ <td>128</td> <td>16+16+32</td>
+ <td>&nbsp;</td>
+ <td>2 x <a href="#6.1">6.1</a></td> <td>32</td> <td><a href="8q/n8.100.eig">8, 4, ..., -6</a> (integral)</td> </tr>
+<tr> <td><a name="N8.101"></a><a href="8q/n8.101">N8.101</a></td> <td><a href="#8.72">8.72</a></td>
+ <td>8</td> <td>64</td> <td>3</td>
+ <td>256</td> <td>16+16+32</td>
+ <td>&nbsp;</td>
+ <td>2 x <a href="#6.1">6.1</a><br>
+2 x <a href="#N6.9">N6.9</a><br>
+2 x <a href="#N6.11">N6.11</a></td> <td>32</td> <td><a href="8q/n8.101.eig">8, 4, ..., -6</a> (integral)</td> </tr>
+<tr> <td><a name="N8.102"></a><a href="8q/n8.102">N8.102</a></td> <td><a href="#8.73">8.73</a></td>
+ <td>8</td> <td>64</td> <td>3</td>
+ <td>128</td> <td>32+32</td>
+ <td>&nbsp;</td>
+ <td>2 x <a href="#6.2">6.2</a></td> <td>32</td> <td><a href="8q/n8.102.eig">8, 4, ..., -6</a> (integral)</td> </tr>
+<tr> <td><a name="N8.103"></a><a href="8q/n8.103">N8.103</a></td> <td><a href="#8.73">8.73</a></td>
+ <td>8</td> <td>64</td> <td>3</td>
+ <td>64</td> <td>4*16</td>
+ <td>&nbsp;</td>
+ <td>2 x <a href="#6.2">6.2</a><br>
+2 x <a href="#N6.11">N6.11</a></td> <td>32</td> <td><a href="8q/n8.103.eig">8, 4, ..., -6</a> (integral)</td> </tr>
+<tr> <td><a name="N8.104"></a><a href="8q/n8.104">N8.104</a></td> <td><a href="#8.74">8.74</a></td>
+ <td>8</td> <td>64</td> <td>3</td>
+ <td>512</td> <td>32+32</td>
+ <td>&nbsp;</td>
+ <td>2 x <a href="#6.3">6.3</a><br>
+4 x <a href="#N6.11">N6.11</a></td> <td>32</td> <td><a href="8q/n8.104.eig">8, 4, ..., -6</a> (integral)</td> </tr>
+<tr> <td><a name="N8.105"></a><a href="8q/n8.105">N8.105</a></td> <td><a href="#8.74">8.74</a></td>
+ <td>8</td> <td>64</td> <td>3</td>
+ <td>15360</td> <td>tra</td>
+ <td>&nbsp;</td>
+ <td>2 x <a href="#6.3">6.3</a><br>
+20 x <a href="#N6.10">N6.10</a></td> <td>32</td> <td><a href="8q/n8.105.eig">8, 4, ..., -6</a> (integral)</td> </tr>
+<tr> <td><a name="N8.106"></a><a href="8q/n8.106">N8.106</a></td> <td><a href="#8.74">8.74</a></td>
+ <td>8</td> <td>64</td> <td>3</td>
+ <td>768</td> <td>32+32</td>
+ <td>&nbsp;</td>
+ <td>2 x <a href="#6.3">6.3</a><br>
+1 x <a href="#N6.9">N6.9</a><br>
+1 x <a href="#N6.10">N6.10</a><br>
+6 x <a href="#N6.11">N6.11</a></td> <td>32</td> <td><a href="8q/n8.106.eig">8, 4, ..., -6</a> (integral)</td> </tr>
+<tr> <td><a name="N8.107"></a><a href="8q/n8.107">N8.107</a></td> <td><a href="#8.74">8.74</a></td>
+ <td>8</td> <td>64</td> <td>3</td>
+ <td>1536</td> <td>tra</td>
+ <td>&nbsp;</td>
+ <td>2 x <a href="#6.3">6.3</a></td> <td>32</td> <td><a href="8q/n8.107.eig">8, 4, ..., -6</a> (integral)</td> </tr>
+<tr> <td><a name="N8.108"></a><a href="8q/n8.108">N8.108</a></td> <td><a href="#8.74">8.74</a></td>
+ <td>8</td> <td>64</td> <td>3</td>
+ <td>9216</td> <td>tra</td>
+ <td>&nbsp;</td>
+ <td>2 x <a href="#6.3">6.3</a><br>
+12 x <a href="#N6.9">N6.9</a></td> <td>32</td> <td><a href="8q/n8.108.eig">8, 4, ..., -6</a> (integral)</td> </tr>
+<tr> <td><a name="N8.109"></a><a href="8q/n8.109">N8.109</a></td> <td><a href="#8.75">8.75</a></td>
+ <td>8</td> <td>64</td> <td>3</td>
+ <td>7680</td> <td>32+32</td>
+ <td>&nbsp;</td>
+ <td>1 x <a href="#6.3">6.3</a><br>
+1 x <a href="#N6.9">N6.9</a><br>
+20 x <a href="#N6.10">N6.10</a></td> <td>32</td> <td><a href="8q/n8.109.eig">8, 4, ..., -6</a> (integral)</td> </tr>
+<tr> <td><a name="N8.110"></a><a href="8q/n8.110">N8.110</a></td> <td><a href="#8.75">8.75</a></td>
+ <td>8</td> <td>64</td> <td>3</td>
+ <td>384</td> <td>4*16</td>
+ <td>&nbsp;</td>
+ <td>1 x <a href="#6.3">6.3</a><br>
+1 x <a href="#N6.10">N6.10</a><br>
+8 x <a href="#N6.11">N6.11</a></td> <td>32</td> <td><a href="8q/n8.110.eig">8, 4, ..., -6</a> (integral)</td> </tr>
+<tr> <td><a name="N8.111"></a><a href="8q/n8.111">N8.111</a></td> <td><a href="#8.75">8.75</a></td>
+ <td>8</td> <td>64</td> <td>3</td>
+ <td>2304</td> <td>32+32</td>
+ <td>&nbsp;</td>
+ <td>1 x <a href="#6.3">6.3</a><br>
+6 x <a href="#N6.9">N6.9</a><br>
+1 x <a href="#N6.10">N6.10</a><br>
+6 x <a href="#N6.11">N6.11</a></td> <td>32</td> <td><a href="8q/n8.111.eig">8, 4, ..., -6</a> (integral)</td> </tr>
+<tr> <td><a name="N8.112"></a><a href="8q/n8.112">N8.112</a></td> <td><a href="#8.77">8.77</a></td>
+ <td>8</td> <td>64</td> <td>3</td>
+ <td>1152</td> <td>tra</td>
+ <td>&nbsp;</td>
+ <td>8 x <a href="#N5.2">N5.2</a></td> <td>32</td> <td><a href="8q/n8.112.eig">8, 4, ..., -6</a></td> </tr>
+<tr> <td><a name="N8.113"></a><a href="8q/n8.113">N8.113</a></td> <td><a href="#8.72">8.72</a></td>
+ <td>8</td> <td>64</td> <td>4</td>
+ <td>1024</td> <td>tra</td>
+ <td><a href="#N7.18">N7.18</a> x K<sub>2</sub></td>
+ <td>2 x <a href="#N7.18">N7.18</a></td> <td>32</td> <td><a href="8q/n8.113.eig">8, 6, ..., -6</a> (integral)</td> </tr>
+<tr> <td><a name="N8.114"></a><a href="8q/n8.114">N8.114</a></td> <td><a href="#8.72">8.72</a></td>
+ <td>8</td> <td>64</td> <td>4</td>
+ <td>512</td> <td>tra</td>
+ <td><a href="#N7.19">N7.19</a> x K<sub>2</sub></td>
+ <td>2 x <a href="#N7.19">N7.19</a></td> <td>32</td> <td><a href="8q/n8.114.eig">8, 6, ..., -6</a> (integral)</td> </tr>
+<tr> <td><a name="N8.115"></a><a href="8q/n8.115">N8.115</a></td> <td><a href="#8.73">8.73</a></td>
+ <td>8</td> <td>64</td> <td>4</td>
+ <td>1536</td> <td>tra</td>
+ <td><a href="#N7.21">N7.21</a> x K<sub>2</sub></td>
+ <td>2 x <a href="#N7.21">N7.21</a></td> <td>32</td> <td><a href="8q/n8.115.eig">8, 6, ..., -6</a> (integral)</td> </tr>
+<tr> <td><a name="N8.116"></a><a href="8q/n8.116">N8.116</a></td> <td><a href="#8.73">8.73</a></td>
+ <td>8</td> <td>64</td> <td>4</td>
+ <td>192</td> <td>tra</td>
+ <td><a href="#N7.20">N7.20</a> x K<sub>2</sub></td>
+ <td>2 x <a href="#N7.20">N7.20</a></td> <td>32</td> <td><a href="8q/n8.116.eig">8, 6, ..., -6</a> (integral)</td> </tr>
+<tr> <td><a name="N8.117"></a><a href="8q/n8.117">N8.117</a></td> <td><a href="#8.74">8.74</a></td>
+ <td>8</td> <td>64</td> <td>4</td>
+ <td>1536</td> <td>tra</td>
+ <td><a href="#N7.28">N7.28</a> x K<sub>2</sub></td>
+ <td>4 x <a href="#N7.28">N7.28</a></td> <td>32</td> <td><a href="8q/n8.117.eig">8, 6, ..., -4</a> (integral)</td> </tr>
+<tr> <td><a name="N8.118"></a><a href="8q/n8.118">N8.118</a></td> <td><a href="#8.74">8.74</a></td>
+ <td>8</td> <td>64</td> <td>4</td>
+ <td>9216</td> <td>tra</td>
+ <td><a href="#N7.27">N7.27</a> x K<sub>2</sub></td>
+ <td>4 x <a href="#N7.27">N7.27</a></td> <td>32</td> <td><a href="8q/n8.118.eig">8, 6, ..., -4</a> (integral)</td> </tr>
+<tr> <td><a name="N8.119"></a><a href="8q/n8.119">N8.119</a></td> <td><a href="#8.74">8.74</a></td>
+ <td>8</td> <td>64</td> <td>4</td>
+ <td>768</td> <td>32+32</td>
+ <td>&nbsp;</td>
+ <td>1 x <a href="#6.3">6.3</a><br>
+2 x <a href="#N6.2">N6.2</a></td> <td>32</td> <td><a href="8q/n8.119.eig">8, 6, ..., -6</a> (integral)</td> </tr>
+<tr> <td><a name="N8.120"></a><a href="8q/n8.120">N8.120</a></td> <td><a href="#8.74">8.74</a></td>
+ <td>8</td> <td>64</td> <td>4</td>
+ <td>4608</td> <td>32+32</td>
+ <td>&nbsp;</td>
+ <td>1 x <a href="#6.3">6.3</a><br>
+2 x <a href="#N6.1">N6.1</a><br>
+12 x <a href="#N6.11">N6.11</a></td> <td>32</td> <td><a href="8q/n8.120.eig">8, 6, ..., -6</a> (integral)</td> </tr>
+<tr> <td><a name="N8.121"></a><a href="8q/n8.121">N8.121</a></td> <td><a href="#8.74">8.74</a></td>
+ <td>8</td> <td>64</td> <td>4</td>
+ <td>3072</td> <td>tra</td>
+ <td><a href="#N7.25">N7.25</a> x K<sub>2</sub></td>
+ <td>2 x <a href="#N7.25">N7.25</a></td> <td>32</td> <td><a href="8q/n8.121.eig">8, 6, ..., -6</a> (integral)</td> </tr>
+<tr> <td><a name="N8.122"></a><a href="8q/n8.122">N8.122</a></td> <td><a href="#8.74">8.74</a></td>
+ <td>8</td> <td>64</td> <td>4</td>
+ <td>512</td> <td>tra</td>
+ <td><a href="#N7.26">N7.26</a> x K<sub>2</sub></td>
+ <td>2 x <a href="#N7.26">N7.26</a></td> <td>32</td> <td><a href="8q/n8.122.eig">8, 6, ..., -6</a> (integral)</td> </tr>
+<tr> <td><a name="N8.123"></a><a href="8q/n8.123">N8.123</a></td> <td><a href="#8.75">8.75</a></td>
+ <td>8</td> <td>64</td> <td>4</td>
+ <td>2304</td> <td>32+32</td>
+ <td><a href="#N5.4">N5.4</a> x K<sub>4</sub></td>
+ <td>2 x <a href="#N6.1">N6.1</a><br>
+7 x <a href="#N6.10">N6.10</a><br>
+6 x <a href="#N6.11">N6.11</a></td> <td>32</td> <td><a href="8q/n8.123.eig">8, 6, ..., -4</a> (integral)</td> </tr>
+<tr> <td><a name="N8.124"></a><a href="8q/n8.124">N8.124</a></td> <td><a href="#8.76">8.76</a></td>
+ <td>8</td> <td>64</td> <td>4</td>
+ <td>16</td> <td>4*16</td>
+ <td><a href="#N7.16">N7.16</a> x K<sub>2</sub></td>
+ <td>2 x <a href="#N7.16">N7.16</a></td> <td>32</td> <td><a href="8q/n8.124.eig">8, 6, ..., -4.711</a></td> </tr>
+<tr> <td><a name="N8.125"></a><a href="8q/n8.125">N8.125</a></td> <td><a href="#8.76">8.76</a></td>
+ <td>8</td> <td>64</td> <td>4</td>
+ <td>16</td> <td>4*16</td>
+ <td>&nbsp;</td>
+ <td>124 x <a href="#3.1">3.1</a><br>
+8 x <a href="#N3.1">N3.1</a></td> <td>32</td> <td><a href="8q/n8.125.eig">8, 4.711, ..., -6</a></td> </tr>
+<tr> <td><a name="N8.126"></a><a href="8q/n8.126">N8.126</a></td> <td><a href="#8.76">8.76</a></td>
+ <td>8</td> <td>64</td> <td>4</td>
+ <td>48</td> <td>16+48</td>
+ <td><a href="#N7.17">N7.17</a> x K<sub>2</sub></td>
+ <td>2 x <a href="#N7.17">N7.17</a></td> <td>32</td> <td><a href="8q/n8.126.eig">8, 6, ..., -4.711</a></td> </tr>
+<tr> <td><a name="N8.127"></a><a href="8q/n8.127">N8.127</a></td> <td><a href="#8.76">8.76</a></td>
+ <td>8</td> <td>64</td> <td>4</td>
+ <td>16</td> <td>4*16</td>
+ <td>&nbsp;</td>
+ <td>140 x <a href="#3.1">3.1</a><br>
+8 x <a href="#N3.1">N3.1</a></td> <td>32</td> <td><a href="8q/n8.127.eig">8, 4.711, ..., -6</a></td> </tr>
+<tr> <td><a name="N8.128"></a><a href="8q/n8.128">N8.128</a></td> <td><a href="#8.76">8.76</a></td>
+ <td>8</td> <td>64</td> <td>4</td>
+ <td>48</td> <td>16+48</td>
+ <td>&nbsp;</td>
+ <td>224 x <a href="#3.1">3.1</a></td> <td>32</td> <td><a href="8q/n8.128.eig">8, 4.494, ..., -6</a></td> </tr>
+<tr> <td><a name="N8.129"></a><a href="8q/n8.129">N8.129</a></td> <td><a href="#8.77">8.77</a></td>
+ <td>8</td> <td>64</td> <td>4</td>
+ <td>96</td> <td>16+48</td>
+ <td><a href="#N7.24">N7.24</a> x K<sub>2</sub></td>
+ <td>2 x <a href="#N7.24">N7.24</a></td> <td>32</td> <td><a href="8q/n8.129.eig">8, 6, ..., -4.606</a></td> </tr>
+<tr> <td><a name="N8.130"></a><a href="8q/n8.130">N8.130</a></td> <td><a href="#8.77">8.77</a></td>
+ <td>8</td> <td>64</td> <td>4</td>
+ <td>64</td> <td>32+32</td>
+ <td>&nbsp;</td>
+ <td>8 x <a href="#4.2">4.2</a></td> <td>32</td> <td><a href="8q/n8.130.eig">8, 4.606, ..., -6</a></td> </tr>
+<tr> <td><a name="N8.131"></a><a href="8q/n8.131">N8.131</a></td> <td><a href="#8.77">8.77</a></td>
+ <td>8</td> <td>64</td> <td>4</td>
+ <td>96</td> <td>16+48</td>
+ <td>&nbsp;</td>
+ <td>232 x <a href="#3.1">3.1</a></td> <td>32</td> <td><a href="8q/n8.131.eig">8, 4.606, ..., -6</a></td> </tr>
+<tr> <td><a name="N8.132"></a><a href="8q/n8.132">N8.132</a></td> <td><a href="#8.78">8.78</a></td>
+ <td>8</td> <td>64</td> <td>4</td>
+ <td>8</td> <td>8*8</td>
+ <td>&nbsp;</td>
+ <td>3 x <a href="#N4.1">N4.1</a></td> <td>32</td> <td><a href="8q/n8.132.eig">8, 4.692, ..., -6</a></td> </tr>
+<tr> <td><a name="N8.133"></a><a href="8q/n8.133">N8.133</a></td> <td><a href="#8.79">8.79</a></td>
+ <td>8</td> <td>64</td> <td>4</td>
+ <td>8</td> <td>8*4+4*8</td>
+ <td><a href="#N7.14">N7.14</a> x K<sub>2</sub></td>
+ <td>2 x <a href="#N7.14">N7.14</a></td> <td>32</td> <td><a href="8q/n8.133.eig">8, 6, ..., -4.952</a></td> </tr>
+<tr> <td><a name="N8.134"></a><a href="8q/n8.134">N8.134</a></td> <td><a href="#8.79">8.79</a></td>
+ <td>8</td> <td>64</td> <td>4</td>
+ <td>8</td> <td>8*4+4*8</td>
+ <td>&nbsp;</td>
+ <td>1 x <a href="#4.2">4.2</a><br>
+1 x <a href="#N4.1">N4.1</a></td> <td>32</td> <td><a href="8q/n8.134.eig">8, 4.839, ..., -6</a></td> </tr>
+<tr> <td><a name="N8.135"></a><a href="8q/n8.135">N8.135</a></td> <td><a href="#8.80">8.80</a></td>
+ <td>8</td> <td>64</td> <td>4</td>
+ <td>8</td> <td>8*4+4*8</td>
+ <td>&nbsp;</td>
+ <td>1 x <a href="#4.2">4.2</a></td> <td>32</td> <td><a href="8q/n8.135.eig">8, 4.988, ..., -6</a></td> </tr>
+<tr> <td><a name="N8.136"></a><a href="8q/n8.136">N8.136</a></td> <td><a href="#8.81">8.81</a></td>
+ <td>8</td> <td>64</td> <td>4</td>
+ <td>4</td> <td>16*4</td>
+ <td>&nbsp;</td>
+ <td>2 x <a href="#4.1">4.1</a><br>
+1 x <a href="#4.2">4.2</a><br>
+1 x <a href="#N4.1">N4.1</a></td> <td>32</td> <td><a href="8q/n8.136.eig">8, 4.684, ..., -6</a></td> </tr>
+<tr> <td><a name="N8.137"></a><a href="8q/n8.137">N8.137</a></td> <td><a href="#8.81">8.81</a></td>
+ <td>8</td> <td>64</td> <td>4</td>
+ <td>12</td> <td>4+5*12</td>
+ <td><a href="#N7.13">N7.13</a> x K<sub>2</sub></td>
+ <td>2 x <a href="#N7.13">N7.13</a></td> <td>32</td> <td><a href="8q/n8.137.eig">8, 6, ..., -4.739</a></td> </tr>
+<tr> <td><a name="N8.138"></a><a href="8q/n8.138">N8.138</a></td> <td><a href="#8.82">8.82</a></td>
+ <td>8</td> <td>64</td> <td>4</td>
+ <td>4</td> <td>8*2+12*4</td>
+ <td><a href="#N7.15">N7.15</a> x K<sub>2</sub></td>
+ <td>2 x <a href="#N7.15">N7.15</a></td> <td>32</td> <td><a href="8q/n8.138.eig">8, 6, ..., -4.828</a></td> </tr>
+<tr> <td><a name="N8.139"></a><a href="8q/n8.139">N8.139</a></td> <td><a href="#8.83">8.83</a></td>
+ <td>8</td> <td>64</td> <td>4</td>
+ <td>16</td> <td>2*8+3*16</td>
+ <td>&nbsp;</td>
+ <td>124 x <a href="#3.1">3.1</a><br>
+8 x <a href="#N3.1">N3.1</a></td> <td>32</td> <td><a href="8q/n8.139.eig">8, 4.828, ..., -6</a></td> </tr>
+<tr> <td><a name="N8.140"></a><a href="8q/n8.140">N8.140</a></td> <td><a href="#8.83">8.83</a></td>
+ <td>8</td> <td>64</td> <td>4</td>
+ <td>112</td> <td>8+56</td>
+ <td>&nbsp;</td>
+ <td>224 x <a href="#3.1">3.1</a></td> <td>32</td> <td><a href="8q/n8.140.eig">8, 4.828, ..., -6</a></td> </tr>
+<tr> <td><a name="N8.141"></a><a href="8q/n8.141">N8.141</a></td> <td><a href="#8.83">8.83</a></td>
+ <td>8</td> <td>64</td> <td>4</td>
+ <td>336</td> <td>8+56</td>
+ <td><a href="#N7.23">N7.23</a> x K<sub>2</sub></td>
+ <td>2 x <a href="#N7.23">N7.23</a></td> <td>32</td> <td><a href="8q/n8.141.eig">8, 6, ..., -4.828</a></td> </tr>
+<tr> <td><a name="N8.142"></a><a href="8q/n8.142">N8.142</a></td> <td><a href="#8.83">8.83</a></td>
+ <td>8</td> <td>64</td> <td>4</td>
+ <td>48</td> <td>8+8+48</td>
+ <td><a href="#N7.22">N7.22</a> x K<sub>2</sub></td>
+ <td>2 x <a href="#N7.22">N7.22</a></td> <td>32</td> <td><a href="8q/n8.142.eig">8, 6, ..., -4.828</a></td> </tr>
+<tr> <td><a name="N8.143"></a><a href="8q/n8.143">N8.143</a></td> <td><a href="#8.80">8.80</a></td>
+ <td>8</td> <td>64</td> <td>5</td>
+ <td>24</td> <td>4+5*12</td>
+ <td><a href="#N7.29">N7.29</a> x K<sub>2</sub></td>
+ <td>2 x <a href="#N7.29">N7.29</a></td> <td>32</td> <td><a href="8q/n8.143.eig">8, 6, ..., -4.686</a></td> </tr>
+<tr> <td><a name="N8.144"></a><a href="8q/n8.144">N8.144</a></td> <td><a href="#8.83">8.83</a></td>
+ <td>8</td> <td>64</td> <td>5</td>
+ <td>112</td> <td>8+56</td>
+ <td><a href="#N7.30">N7.30</a> x K<sub>2</sub></td>
+ <td>2 x <a href="#N7.30">N7.30</a></td> <td>32</td> <td><a href="8q/n8.144.eig">8, 6, ..., -4.828</a></td> </tr>
+<tr> <td><a name="N8.145"></a><a href="8q/n8.145">N8.145</a></td> <td><a href="#8.91">8.91</a></td>
+ <td>8</td> <td>72</td> <td>4</td>
+ <td>16</td> <td>3*8+3*16</td>
+ <td><a href="#N7.32">N7.32</a> x K<sub>2</sub></td>
+ <td>2 x <a href="#N7.32">N7.32</a></td> <td>36</td> <td><a href="8q/n8.145.eig">8, 6, ..., -6</a></td> </tr>
+<tr> <td><a name="N8.146"></a><a href="8q/n8.146">N8.146</a></td> <td><a href="#8.91">8.91</a></td>
+ <td>8</td> <td>72</td> <td>4</td>
+ <td>32</td> <td>2*4+4*8+2*16</td>
+ <td>&nbsp;</td>
+ <td>2 x <a href="#6.6">6.6</a></td> <td>36</td> <td><a href="8q/n8.146.eig">8, 4.828, ..., -6</a></td> </tr>
+<tr> <td><a name="N8.147"></a><a href="8q/n8.147">N8.147</a></td> <td><a href="#8.91">8.91</a></td>
+ <td>8</td> <td>72</td> <td>4</td>
+ <td>32</td> <td>3*8+3*16</td>
+ <td>&nbsp;</td>
+ <td>2 x <a href="#6.6">6.6</a></td> <td>36</td> <td><a href="8q/n8.147.eig">8, 4.828, ..., -6</a></td> </tr>
+<tr> <td><a name="N8.148"></a><a href="8q/n8.148">N8.148</a></td> <td><a href="#8.91">8.91</a></td>
+ <td>8</td> <td>72</td> <td>4</td>
+ <td>192</td> <td>24+48</td>
+ <td>&nbsp;</td>
+ <td>2 x <a href="#6.6">6.6</a></td> <td>36</td> <td><a href="8q/n8.148.eig">8, 4.828, ..., -6</a></td> </tr>
+<tr> <td><a name="N8.149"></a><a href="8q/n8.149">N8.149</a></td> <td><a href="#8.91">8.91</a></td>
+ <td>8</td> <td>72</td> <td>4</td>
+ <td>192</td> <td>24+48</td>
+ <td>&nbsp;</td>
+ <td>2 x <a href="#6.6">6.6</a></td> <td>36</td> <td><a href="8q/n8.149.eig">8, 4.828, ..., -6</a></td> </tr>
+<tr> <td><a name="N8.150"></a><a href="8q/n8.150">N8.150</a></td> <td><a href="#8.92">8.92</a></td>
+ <td>8</td> <td>72</td> <td>4</td>
+ <td>64</td> <td>8+2*16+32</td>
+ <td><a href="#N7.31">N7.31</a> x K<sub>2</sub></td>
+ <td>2 x <a href="#N7.31">N7.31</a></td> <td>36</td> <td><a href="8q/n8.150.eig">8, 6, ..., -6</a></td> </tr>
+<tr> <td><a name="N8.151"></a><a href="8q/n8.151">N8.151</a></td> <td><a href="#8.92">8.92</a></td>
+ <td>8</td> <td>72</td> <td>4</td>
+ <td>32</td> <td>5*8+2*16</td>
+ <td>&nbsp;</td>
+ <td>2 x <a href="#6.4">6.4</a></td> <td>36</td> <td><a href="8q/n8.151.eig">8, 4.828, ..., -6</a></td> </tr>
+<tr> <td><a name="N8.152"></a><a href="8q/n8.152">N8.152</a></td> <td><a href="#8.92">8.92</a></td>
+ <td>8</td> <td>72</td> <td>4</td>
+ <td>96</td> <td>24+24+24</td>
+ <td>&nbsp;</td>
+ <td>2 x <a href="#6.4">6.4</a></td> <td>36</td> <td><a href="8q/n8.152.eig">8, 4.828, ..., -6</a></td> </tr>
+<tr> <td><a name="N8.153"></a><a href="8q/n8.153">N8.153</a></td> <td><a href="#8.93">8.93</a></td>
+ <td>8</td> <td>72</td> <td>4</td>
+ <td>160</td> <td>4+8+20+40</td>
+ <td>&nbsp;</td>
+ <td>2 x <a href="#6.5">6.5</a></td> <td>36</td> <td><a href="8q/n8.153.eig">8, 4.449, ..., -6</a></td> </tr>
+<tr> <td><a name="N8.154"></a><a href="8q/n8.154">N8.154</a></td> <td><a href="#8.95">8.95</a></td>
+ <td>8</td> <td>80</td> <td>4</td>
+ <td>32</td> <td>6*8+2*16</td>
+ <td>&nbsp;</td>
+ <td>2 x <a href="#6.7">6.7</a></td> <td>40</td> <td><a href="8q/n8.154.eig">8, 5.020, ..., -6</a></td> </tr>
+<tr> <td><a name="N8.155"></a><a href="8q/n8.155">N8.155</a></td> <td><a href="#8.95">8.95</a></td>
+ <td>8</td> <td>80</td> <td>4</td>
+ <td>192</td> <td>16+16+48</td>
+ <td>&nbsp;</td>
+ <td>2 x <a href="#6.7">6.7</a></td> <td>40</td> <td><a href="8q/n8.155.eig">8, 5.020, ..., -6</a></td> </tr>
+<tr> <td><a name="N8.156"></a><a href="8q/n8.156">N8.156</a></td> <td><a href="#8.95">8.95</a></td>
+ <td>8</td> <td>80</td> <td>4</td>
+ <td>64</td> <td>3*16+32</td>
+ <td>&nbsp;</td>
+ <td>2 x <a href="#6.7">6.7</a></td> <td>40</td> <td><a href="8q/n8.156.eig">8, 5.020, ..., -6</a></td> </tr>
+<tr> <td><a name="N8.157"></a><a href="8q/n8.157">N8.157</a></td> <td><a href="#8.96">8.96</a></td>
+ <td>8</td> <td>80</td> <td>4</td>
+ <td>32</td> <td>5*16</td>
+ <td>&nbsp;</td>
+ <td>2 x <a href="#6.8">6.8</a></td> <td>40</td> <td><a href="8q/n8.157.eig">8, 5.236, ..., -6</a></td> </tr>
+<tr> <td><a name="N8.158"></a><a href="8q/n8.158">N8.158</a></td> <td><a href="#8.96">8.96</a></td>
+ <td>8</td> <td>80</td> <td>4</td>
+ <td>480</td> <td>tra</td>
+ <td>&nbsp;</td>
+ <td>2 x <a href="#6.8">6.8</a></td> <td>40</td> <td><a href="8q/n8.158.eig">8, 4.449, ..., -6</a></td> </tr>
+<tr> <td><a name="N8.159"></a><a href="8q/n8.159">N8.159</a></td> <td><a href="#8.97">8.97</a></td>
+ <td>8</td> <td>80</td> <td>4</td>
+ <td>16</td> <td>4*8+3*16</td>
+ <td>&nbsp;</td>
+ <td>1 x <a href="#N6.5">N6.5</a></td> <td>40</td> <td><a href="8q/n8.159.eig">8, 5.236, ..., -6</a></td> </tr>
+<tr> <td><a name="N8.160"></a><a href="8q/n8.160">N8.160</a></td> <td><a href="#8.97">8.97</a></td>
+ <td>8</td> <td>80</td> <td>4</td>
+ <td>16</td> <td>4*8+3*16</td>
+ <td>&nbsp;</td>
+ <td>1 x <a href="#N6.5">N6.5</a></td> <td>40</td> <td><a href="8q/n8.160.eig">8, 5.236, ..., -6</a></td> </tr>
+<tr> <td><a name="N8.161"></a><a href="8q/n8.161">N8.161</a></td> <td><a href="#8.95">8.95</a></td>
+ <td>8</td> <td>80</td> <td>5</td>
+ <td>192</td> <td>16+16+48</td>
+ <td><a href="#N7.33">N7.33</a> x K<sub>2</sub></td>
+ <td>4 x <a href="#N7.33">N7.33</a></td> <td>40</td> <td><a href="8q/n8.161.eig">8, 6, ..., -5.020</a></td> </tr>
+<tr> <td><a name="N8.162"></a><a href="8q/n8.162">N8.162</a></td> <td><a href="#8.95">8.95</a></td>
+ <td>8</td> <td>80</td> <td>5</td>
+ <td>96</td> <td>4*8+2*24</td>
+ <td>&nbsp;</td>
+ <td>1 x <a href="#6.7">6.7</a><br>
+2 x <a href="#N6.4">N6.4</a></td> <td>40</td> <td><a href="8q/n8.162.eig">8, 6, ..., -6</a></td> </tr>
+<tr> <td><a name="N8.163"></a><a href="8q/n8.163">N8.163</a></td> <td><a href="#8.95">8.95</a></td>
+ <td>8</td> <td>80</td> <td>5</td>
+ <td>32</td> <td>3*16+32</td>
+ <td><a href="#N7.34">N7.34</a> x K<sub>2</sub></td>
+ <td>2 x <a href="#N7.34">N7.34</a></td> <td>40</td> <td><a href="8q/n8.163.eig">8, 6, ..., -6</a></td> </tr>
+<tr> <td><a name="N8.164"></a><a href="8q/n8.164">N8.164</a></td> <td><a href="#8.96">8.96</a></td>
+ <td>8</td> <td>80</td> <td>5</td>
+ <td>16</td> <td>5*16</td>
+ <td><a href="#N7.35">N7.35</a> x K<sub>2</sub></td>
+ <td>2 x <a href="#N7.35">N7.35</a></td> <td>40</td> <td><a href="8q/n8.164.eig">8, 6, ..., -6</a></td> </tr>
+<tr> <td><a name="N8.165"></a><a href="8q/n8.165">N8.165</a></td> <td><a href="#8.96">8.96</a></td>
+ <td>8</td> <td>80</td> <td>5</td>
+ <td>480</td> <td>tra</td>
+ <td><a href="#N7.36">N7.36</a> x K<sub>2</sub></td>
+ <td>4 x <a href="#N7.36">N7.36</a></td> <td>40</td> <td><a href="8q/n8.165.eig">8, 6, ..., -5.236</a></td> </tr>
+<tr> <td><a name="N8.166"></a><a href="8q/n8.166">N8.166</a></td> <td><a href="#8.96">8.96</a></td>
+ <td>8</td> <td>80</td> <td>5</td>
+ <td>240</td> <td>40+40</td>
+ <td>&nbsp;</td>
+ <td>1 x <a href="#6.8">6.8</a><br>
+2 x <a href="#N6.3">N6.3</a></td> <td>40</td> <td><a href="8q/n8.166.eig">8, 6, ..., -6</a></td> </tr>
+<tr> <td><a name="N8.167"></a><a href="8q/n8.167">N8.167</a></td> <td><a href="#8.99">8.99</a></td>
+ <td>8</td> <td>88</td> <td>4</td>
+ <td>160</td> <td>8+40+40</td>
+ <td><a href="#N7.37">N7.37</a> x K<sub>2</sub></td>
+ <td>2 x <a href="#N7.37">N7.37</a></td> <td>44</td> <td><a href="8q/n8.167.eig">8, 6, ..., -6</a></td> </tr>
+<tr> <td><a name="N8.168"></a><a href="8q/n8.168">N8.168</a></td> <td><a href="#8.99">8.99</a></td>
+ <td>8</td> <td>88</td> <td>4</td>
+ <td>31680</td> <td>tra</td>
+ <td><a href="#5.1">5.1</a> x K<sub>4</sub></td>
+ <td>6 x <a href="#6.9">6.9</a></td> <td>44</td> <td><a href="8q/n8.168.eig">8, 4.732, ..., -6</a></td> </tr>
+<tr> <td><a name="N8.169"></a><a href="8q/n8.169">N8.169</a></td> <td><a href="#8.99">8.99</a></td>
+ <td>8</td> <td>88</td> <td>4</td>
+ <td>576</td> <td>16+24+48</td>
+ <td>&nbsp;</td>
+ <td>6 x <a href="#6.9">6.9</a></td> <td>44</td> <td><a href="8q/n8.169.eig">8, 4.732, ..., -6</a></td> </tr>
+<tr> <td><a name="N8.170"></a><a href="8q/n8.170">N8.170</a></td> <td><a href="#8.100">8.100</a></td>
+ <td>8</td> <td>96</td> <td>4</td>
+ <td>768</td> <td>32+64</td>
+ <td>&nbsp;</td>
+ <td>6 x <a href="#6.11">6.11</a></td> <td>48</td> <td><a href="8q/n8.170.eig">8, 5.236, ..., -6</a></td> </tr>
+<tr> <td><a name="N8.171"></a><a href="8q/n8.171">N8.171</a></td> <td><a href="#8.100">8.100</a></td>
+ <td>8</td> <td>96</td> <td>4</td>
+ <td>11520</td> <td>tra</td>
+ <td>folded <a href="#8.100">8.100</a></td>
+ <td>6 x <a href="#6.11">6.11</a></td> <td>48</td> <td><a href="8q/n8.171.eig">8, 4, ..., -6</a></td> </tr>
+<tr> <td><a name="N8.172"></a><a href="8q/n8.172">N8.172</a></td> <td><a href="#8.100">8.100</a></td>
+ <td>8</td> <td>96</td> <td>5</td>
+ <td>256</td> <td>32+64</td>
+ <td><a href="#N7.41">N7.41</a> x K<sub>2</sub></td>
+ <td>4 x <a href="#N7.41">N7.41</a></td> <td>48</td> <td><a href="8q/n8.172.eig">8, 6, ..., -6</a></td> </tr>
+<tr> <td><a name="N8.173"></a><a href="8q/n8.173">N8.173</a></td> <td><a href="#8.100">8.100</a></td>
+ <td>8</td> <td>96</td> <td>5</td>
+ <td>128</td> <td>2*16+2*32</td>
+ <td>&nbsp;</td>
+ <td>1 x <a href="#6.11">6.11</a><br>
+2 x <a href="#N6.5">N6.5</a></td> <td>48</td> <td><a href="8q/n8.173.eig">8, 6, ..., -6</a></td> </tr>
+<tr> <td><a name="N8.174"></a><a href="8q/n8.174">N8.174</a></td> <td><a href="#8.100">8.100</a></td>
+ <td>8</td> <td>96</td> <td>5</td>
+ <td>192</td> <td>48+48</td>
+ <td><a href="#N7.42">N7.42</a> x K<sub>2</sub></td>
+ <td>2 x <a href="#N7.42">N7.42</a></td> <td>48</td> <td><a href="8q/n8.174.eig">8, 6, ..., -6</a></td> </tr>
+<tr> <td><a name="N8.175"></a><a href="8q/n8.175">N8.175</a></td> <td><a href="#8.100">8.100</a></td>
+ <td>8</td> <td>96</td> <td>5</td>
+ <td>128</td> <td>32+32+32</td>
+ <td><a href="#N7.43">N7.43</a> x K<sub>2</sub></td>
+ <td>2 x <a href="#N7.43">N7.43</a></td> <td>48</td> <td><a href="8q/n8.175.eig">8, 6, ..., -6</a></td> </tr>
+<tr> <td><a name="N8.176"></a><a href="8q/n8.176">N8.176</a></td> <td><a href="#8.100">8.100</a></td>
+ <td>8</td> <td>96</td> <td>5</td>
+ <td>11520</td> <td>tra</td>
+ <td><a href="#5.2">5.2</a> x K<sub>4</sub></td>
+ <td>6 x <a href="#6.11">6.11</a></td> <td>48</td> <td><a href="8q/n8.176.eig">8, 5.236, ..., -6</a></td> </tr>
+<tr> <td><a name="N8.177"></a><a href="8q/n8.177">N8.177</a></td> <td><a href="#8.100">8.100</a></td>
+ <td>8</td> <td>96</td> <td>5</td>
+ <td>768</td> <td>32+64</td>
+ <td>&nbsp;</td>
+ <td>6 x <a href="#6.11">6.11</a></td> <td>48</td> <td><a href="8q/n8.177.eig">8, 5.236, ..., -6</a></td> </tr>
+<tr> <td><a name="N8.178"></a><a href="8q/n8.178">N8.178</a></td> <td><a href="#8.100">8.100</a></td>
+ <td>8</td> <td>96</td> <td>5</td>
+ <td>3840</td> <td>tra</td>
+ <td><a href="#N7.45">N7.45</a> x K<sub>2</sub></td>
+ <td>4 x <a href="#N7.45">N7.45</a></td> <td>48</td> <td><a href="8q/n8.178.eig">8, 6, ..., -6</a></td> </tr>
+<tr> <td><a name="N8.179"></a><a href="8q/n8.179">N8.179</a></td> <td><a href="#8.100">8.100</a></td>
+ <td>8</td> <td>96</td> <td>5</td>
+ <td>1920</td> <td>48+48</td>
+ <td>&nbsp;</td>
+ <td>1 x <a href="#6.11">6.11</a><br>
+2 x <a href="#N6.6">N6.6</a></td> <td>48</td> <td><a href="8q/n8.179.eig">8, 6, ..., -6</a></td> </tr>
+<tr> <td><a name="N8.180"></a><a href="8q/n8.180">N8.180</a></td> <td><a href="#8.100">8.100</a></td>
+ <td>8</td> <td>96</td> <td>5</td>
+ <td>1920</td> <td>tra</td>
+ <td><a href="#N7.44">N7.44</a> x K<sub>2</sub></td>
+ <td>2 x <a href="#N7.44">N7.44</a></td> <td>48</td> <td><a href="8q/n8.180.eig">8, 6, ..., -6</a></td> </tr>
+<tr> <td><a name="N8.181"></a><a href="8q/n8.181">N8.181</a></td> <td><a href="#8.101">8.101</a></td>
+ <td>8</td> <td>96</td> <td>5</td>
+ <td>128</td> <td>2*8+16+2*32</td>
+ <td>&nbsp;</td>
+ <td>2 x <a href="#6.10">6.10</a><br>
+4 x <a href="#N6.8">N6.8</a></td> <td>48</td> <td><a href="8q/n8.181.eig">8, 5.464, ..., -6</a></td> </tr>
+<tr> <td><a name="N8.182"></a><a href="8q/n8.182">N8.182</a></td> <td><a href="#8.101">8.101</a></td>
+ <td>8</td> <td>96</td> <td>5</td>
+ <td>64</td> <td>4*8+2*16+32</td>
+ <td>&nbsp;</td>
+ <td>2 x <a href="#6.10">6.10</a><br>
+2 x <a href="#N6.8">N6.8</a></td> <td>48</td> <td><a href="8q/n8.182.eig">8, 5.464, ..., -6</a></td> </tr>
+<tr> <td><a name="N8.183"></a><a href="8q/n8.183">N8.183</a></td> <td><a href="#8.101">8.101</a></td>
+ <td>8</td> <td>96</td> <td>5</td>
+ <td>64</td> <td>32+32+32</td>
+ <td><a href="#N7.38">N7.38</a> x K<sub>2</sub></td>
+ <td>2 x <a href="#N7.38">N7.38</a></td> <td>48</td> <td><a href="8q/n8.183.eig">8, 6, ..., -6</a></td> </tr>
+<tr> <td><a name="N8.184"></a><a href="8q/n8.184">N8.184</a></td> <td><a href="#8.101">8.101</a></td>
+ <td>8</td> <td>96</td> <td>5</td>
+ <td>64</td> <td>4*16+32</td>
+ <td><a href="#N7.39">N7.39</a> x K<sub>2</sub></td>
+ <td>2 x <a href="#N7.39">N7.39</a></td> <td>48</td> <td><a href="8q/n8.184.eig">8, 6, ..., -6</a></td> </tr>
+<tr> <td><a name="N8.185"></a><a href="8q/n8.185">N8.185</a></td> <td><a href="#8.101">8.101</a></td>
+ <td>8</td> <td>96</td> <td>5</td>
+ <td>256</td> <td>32+64</td>
+ <td><a href="#N7.40">N7.40</a> x K<sub>2</sub></td>
+ <td>2 x <a href="#N7.40">N7.40</a></td> <td>48</td> <td><a href="8q/n8.185.eig">8, 6, ..., -6</a></td> </tr>
+<tr> <td><a name="N8.186"></a><a href="8q/n8.186">N8.186</a></td> <td><a href="#8.100">8.100</a></td>
+ <td>8</td> <td>96</td> <td>6</td>
+ <td>5760</td> <td>tra</td>
+ <td><a href="#N7.46">N7.46</a> x K<sub>2</sub></td>
+ <td>6 x <a href="#N7.46">N7.46</a></td> <td>48</td> <td><a href="8q/n8.186.eig">8, 6, ..., -5.236</a></td> </tr>
+<tr> <td><a name="N8.187"></a><a href="8q/n8.187">N8.187</a></td> <td><a href="#8.100">8.100</a></td>
+ <td>8</td> <td>96</td> <td>6</td>
+ <td>960</td> <td>48+48</td>
+ <td><a href="#N7.47">N7.47</a> x K<sub>2</sub></td>
+ <td>2 x <a href="#N7.47">N7.47</a></td> <td>48</td> <td><a href="8q/n8.187.eig">8, 6, ..., -6</a></td> </tr>
+<tr> <td><a name="N8.188"></a><a href="8q/n8.188">N8.188</a></td> <td><a href="#8.103">8.103</a></td>
+ <td>8</td> <td>112</td> <td>4</td>
+ <td>2304</td> <td>16+48+48</td>
+ <td>&nbsp;</td>
+ <td>12 x <a href="#6.12">6.12</a><br>
+3 x <a href="#N6.9">N6.9</a></td> <td>56</td> <td><a href="8q/n8.188.eig">8, 5.414, ..., -6</a></td> </tr>
+<tr> <td><a name="N8.189"></a><a href="8q/n8.189">N8.189</a></td> <td><a href="#8.103">8.103</a></td>
+ <td>8</td> <td>112</td> <td>5</td>
+ <td>384</td> <td>16+48+48</td>
+ <td><a href="#N7.48">N7.48</a> x K<sub>2</sub></td>
+ <td>4 x <a href="#N7.48">N7.48</a></td> <td>56</td> <td><a href="8q/n8.189.eig">8, 6, ..., -6</a></td> </tr>
+<tr> <td><a name="N8.190"></a><a href="8q/n8.190">N8.190</a></td> <td><a href="#8.103">8.103</a></td>
+ <td>8</td> <td>112</td> <td>5</td>
+ <td>192</td> <td>2*8+4*24</td>
+ <td>&nbsp;</td>
+ <td>3 x <a href="#6.12">6.12</a><br>
+2 x <a href="#N6.8">N6.8</a><br>
+3 x <a href="#N6.11">N6.11</a></td> <td>56</td> <td><a href="8q/n8.190.eig">8, 6, ..., -6</a></td> </tr>
+<tr> <td><a name="N8.191"></a><a href="8q/n8.191">N8.191</a></td> <td><a href="#8.103">8.103</a></td>
+ <td>8</td> <td>112</td> <td>5</td>
+ <td>16128</td> <td>tra</td>
+ <td><a href="#N7.49">N7.49</a> x K<sub>2</sub></td>
+ <td>2 x <a href="#N7.49">N7.49</a></td> <td>56</td> <td><a href="8q/n8.191.eig">8, 6, ..., -6</a></td> </tr>
+<tr> <td><a name="N8.192"></a><a href="8q/n8.192">N8.192</a></td> <td><a href="#8.103">8.103</a></td>
+ <td>8</td> <td>112</td> <td>5</td>
+ <td>768</td> <td>16+32+64</td>
+ <td><a href="#N7.50">N7.50</a> x K<sub>2</sub></td>
+ <td>2 x <a href="#N7.50">N7.50</a></td> <td>56</td> <td><a href="8q/n8.192.eig">8, 6, ..., -6</a></td> </tr>
+<tr> <td><a name="N8.193"></a><a href="8q/n8.193">N8.193</a></td> <td><a href="#8.104">8.104</a></td>
+ <td>8</td> <td>128</td> <td>4</td>
+ <td>645120</td> <td>tra</td>
+ <td><a href="#N7.51">N7.51</a> x K<sub>2</sub></td>
+ <td>2 x <a href="#N7.51">N7.51</a></td> <td>64</td> <td><a href="8q/n8.193.eig">8, 6, ..., -6</a> (integral)</td> </tr>
+<tr> <td><a name="N8.194"></a><a href="8q/n8.194">N8.194</a></td> <td><a href="#8.104">8.104</a></td>
+ <td>8</td> <td>128</td> <td>5</td>
+ <td>92160</td> <td>tra</td>
+ <td><a href="#N7.52">N7.52</a> x K<sub>2</sub></td>
+ <td>6 x <a href="#N7.52">N7.52</a></td> <td>64</td> <td><a href="8q/n8.194.eig">8, 6, ..., -6</a> (integral)</td> </tr>
+<tr> <td><a name="N8.195"></a><a href="8q/n8.195">N8.195</a></td> <td><a href="#8.104">8.104</a></td>
+ <td>8</td> <td>128</td> <td>5</td>
+ <td>15360</td> <td>64+64</td>
+ <td><a href="#N7.53">N7.53</a> x K<sub>2</sub></td>
+ <td>2 x <a href="#N7.53">N7.53</a></td> <td>64</td> <td><a href="8q/n8.195.eig">8, 6, ..., -6</a> (integral)</td> </tr>
+<tr> <td><a name="N8.196"></a><a href="8q/n8.196">N8.196</a></td> <td><a href="#8.104">8.104</a></td>
+ <td>8</td> <td>128</td> <td>6</td>
+ <td>92160</td> <td>tra</td>
+ <td><a href="#N7.54">N7.54</a> x K<sub>2</sub></td>
+ <td>10 x <a href="#N7.54">N7.54</a></td> <td>64</td> <td><a href="8q/n8.196.eig">8, 6, ..., -6</a> (integral)</td> </tr>
+<tr> <td><a name="N8.197"></a><a href="8q/n8.197">N8.197</a></td> <td><a href="#8.104">8.104</a></td>
+ <td>8</td> <td>128</td> <td>6</td>
+ <td>4608</td> <td>64+64</td>
+ <td><a href="#N7.55">N7.55</a> x K<sub>2</sub></td>
+ <td>6 x <a href="#N7.55">N7.55</a></td> <td>64</td> <td><a href="8q/n8.197.eig">8, 6, ..., -6</a> (integral)</td> </tr>
+<tr> <td><a name="N8.198"></a><a href="8q/n8.198">N8.198</a></td> <td><a href="#8.104">8.104</a></td>
+ <td>8</td> <td>128</td> <td>6</td>
+ <td>1536</td> <td>32+32+64</td>
+ <td><a href="#N7.56">N7.56</a> x K<sub>2</sub></td>
+ <td>2 x <a href="#N7.56">N7.56</a></td> <td>64</td> <td><a href="8q/n8.198.eig">8, 6, ..., -6</a> (integral)</td> </tr>
+</table>
+
+<h1>References</h1>
+A. E. Brouwer, <i>Classification of small (0,2)-graphs</i>,
+J. Combinatorial Theory (A) <b>113</b> (2006) 1636-1645.
+<a href="http://www.win.tue.nl/%7Eaeb/graphs/recta/recta.dvi">DVI</a>
+<p>
+A. E. Brouwer & P. R. J. Östergård,
+<i>Classification of the (0,2)-graphs of valency 8</i>,
+preprint. <a href="http://www.win.tue.nl/%7Eaeb/graphs/recta/recta8b.dvi">DVI</a>
+</p>
+</body></html>

@@ -1,0 +1,237 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>U<sub>4</sub>(3) on 162 points</title>
+</head>
+<body>
+<a href="index.html">Up</a>
+
+<h1>Graph</h1>
+There is a unique strongly regular graph &Gamma; with parameters
+<i>v</i> = 162, <i>k</i> = 56, &lambda; = 10, &mu; = 24.
+The spectrum is 56<sup>1</sup> 2<sup>140</sup> (–16)<sup>21</sup>.
+
+The complementary graph has parameters
+<i>v</i> = 162, <i>k</i> = 105, &lambda; = 72, &mu; = 60 and
+spectrum 105<sup>1</sup> 15<sup>21</sup> (–3)<sup>140</sup>.
+
+Uniqueness is due to Cameron, Goethals & Seidel (1978).
+<p>
+
+<H2>Group</H2>
+The full group of automorphisms of &Gamma; is
+G = U<sub>4</sub>(3).2<sup>2</sup><sub>133</sub>
+(of order 2<sup>9</sup>.3<sup>6</sup>.5.7) acting rank 3,
+with point stabilizer L<sub>3</sub>(4):2<sup>2</sup>.
+<p>
+<H2>Construction</H2>
+&Gamma; can be constructed as 1+56+105 by taking a point &infin;,
+one of the three orbits of hyperovals (of size 56) in PG(2,4), and
+the 105 flags (p,L) of PG(2,4). Here &infin; is adjacent to the 56
+hyperovals; two hyperovals are adjacent when disjoint;
+a hyperoval O is adjacent to a flag (p,L) when p is outside O and
+L meets O; two flags (p,L) and (q,M) are adjacent when p and q
+are distinct, and L and M are distinct, and p is on M or q on L.
+(For example: from the Golay code one gets S(5,8,24). From
+S(5,8,24) one gets S(3,6,22). The derived design is that of the
+21 lines of PG(2,4), the residual that of the 56 hyperovals.)
+<p>
+&Gamma; is the second subconstituent of the McL graph &Lambda; on 275 vertices.
+<p>
+&Gamma; can also be found inside the
+<a href="U4_3.html">O<sup>–</sup><sub>6</sub>(3) graph</a>
+on 112 vertices. That graph contains 648 Gewirtz subgraphs
+forming a single orbit.
+The intersection sizes are 0 or 56 (1x), 16 or 40 (42x),
+20 or 36 (56x), 24 or 32 (105x), 28 (240x), and meeting in
+0, 20, 24, 32, 36 or 56 vertices is an equivalence relation
+with two equivalence classes of size 324.
+Pick one equivalence class. It consists of 162 complementary pairs (`splits').
+These are the vertices of &Gamma;. Call two splits adjacent when their parts
+meet in 20 or 36 vertices, and nonadjacent when they meet in 24 or 32.
+This yields the graph &Gamma;.
+(In fact one sees inside the McL graph &Lambda; that it is possible
+to find 162 representatives of the 162 splits such that any two
+representatives meet in either 20 or 32 vertices.)
+<p>
+<H2>Cover</H2>
+&Gamma; has an antipodal 3-cover constructed by Soicher. It is the unique
+distance-regular graph with intersection array {56,45,16,1; 1,8,45,56},
+and is distance-transitive with group 3.U<sub>4</sub>(3).2<sup>2</sup>
+with point stabilizer L<sub>3</sub>(4).2<sup>2</sup>.
+The suborbit sizes are 1+56+315+112+2.
+The second subconstituent of that graph is itself distance-regular
+(but not distance-transitive) on 315 vertices, with intersection array
+{32,27,8,1; 1,4,27,32}.
+<p>
+<H2>Supergraphs</H2>
+&Gamma; is the second subconstituent of the
+<a href="McL.html">McL graph</a> on 275 vertices.
+<p>
+<H2>Subgraphs</H2>
+We give the substructures of &Gamma; associated to the 13 maximal
+subgroups of G not containing U<sub>4</sub>(3), sorted according to
+increasing orbit size.
+<p>
+a) <i>Splits 81+81</i>.
+&Gamma; has 112 splits into two
+<a href="Brouwer-Haemers.html">VO<sup>–</sup><sub>4</sub>(3)</a>
+subgraphs, forming a single orbit.
+The stabilizer of one is 3<sup>4</sup>:(2 &times; M<sub>10</sub>).
+(How does one find all VO<sup>–</sup><sub>4</sub>(3) subgraphs?
+By searching the 21-dimensional eigenspace for eigenvectors
+that are 1 on the subgraph and –1 on the complement. The result
+is that these 112 are the only splits of &Gamma; into two
+subgraphs of valency 20.)
+<p>
+b) <i>Vertices</i>.
+There are 162 of these, forming a single orbit.
+The stabilizer of one is L<sub>3</sub>(4):2<sup>2</sup>
+with vertex orbit sizes 1+56+105.
+The 56 induce a <a href="Sims-Gewirtz.html">Gewirtz graph</a>.
+The 105 are the flags of PG(2,4). where two flags (p,L) and (q,M)
+are adjacent when p,q are distinct and L,M are distinct,
+and p is on M or q on L. The induced subgraph is strongly regular
+with parameters (105,32,4,12) and group L<sub>3</sub>(4).D<sub>12</sub>
+acting rank 4.
+<p>
+c) <i>Pairs of 21-cocliques</i>.
+There are 162 of these pairs of 21-cocliques, forming a single orbit.
+The stabilizer of one is L<sub>3</sub>(4):2<sup>2</sup>
+with vertex orbit sizes 42+120.
+&Gamma; has 324 21-cocliques forming a single orbit.
+The stabilizer of one is L<sub>3</sub>(4):2 with vertex orbit sizes
+21+120+21, where both 21-sets are 21-cocliques, forming a pair.
+Their union of is distance-regular with parameters
+{16,15,5;1,12,16}, the nonincidence graph of points and lines of PG(2,4).
+The 120 can be identified as one orbit of Fano subplanes of this PG(2,4),
+adjacent when they meet in 1 point (and 1 line).
+<p>
+d) <i>Splits 6<sup>27</sup></i>.
+&Gamma; has one orbit (of size 252) of partitions of the vertex set
+into 27 maximal 6-cocliques. The stabilizer of one is
+U<sub>4</sub>(2):2, transitive on the 162 vertices.
+The union of two maximal 6-cocliques in one such partition induces
+either 6K<sub>2</sub> or the 2-coclique extension of a hexagon.
+If we call them adjacent in the first case, then we find
+the <a href="Schlaefli.html">Schl&auml;fli graph</a> on the
+27 maximal 6-cocliques in one partition.
+There are many other partitions of the vertex set into 27 maximal 6-cocliques,
+but if we call two maximal 6-cocliques compatible when their union
+induces a regular graph, then these are the only partitions into
+27 mutually compatible maximal 6-cocliques.
+<!--
+Each maximal 6-coclique is compatible for valency 0, 1, 4 with
+1, 96, 30 other maximal 6-cocliques.
+-->
+<p>
+e) <i>Splits 54+54+54</i>.
+&Gamma; has 280 splits into three copies of the same graph on 54 vertices,
+forming a single orbit. The stabilizer of one is
+3<sub>+</sub><sup>1+4</sup>.2<sub>–</sub><sup>1+4</sup>.S<sub>3</sub>,
+transitive on the 162 vertices.
+(There are 15120 triangles, forming a single orbit. Each triangle
+determines a unique subgraph 9K<sub>3</sub>, and there are 1680
+such subgraphs, forming a single orbit. Each subgraph 9K<sub>3</sub>
+has a unique partner, disjoint from the first, such that each of its
+vertices has two neighbours in each of the nine K<sub>3</sub>'s of
+the first, and we find 840 54-point subgraphs of valency 20.
+Each of these 54-point subgraphs is disjoint from precisely two others
+and there is an element of order 3 that permutes the three.)
+<p>
+f) <i>U<sub>3</sub>(3) graphs</i>.
+&Gamma; has 540 subgraphs isomorphic to the
+<a href="U3_3.html">U<sub>3</sub>(3) graph</a> on 36 points,
+forming a single orbit.
+The stabilizer of one is (U<sub>3</sub>(3):2) &times; 2.
+*** check: no further such subgraphs? ***
+<p>
+g) <i>Maximal 6-cocliques</i>.
+There are 1134 of these, forming a single orbit.
+The stabilizer of one is
+(2<sup>4</sup>:A<sub>6</sub>).2 = 2<sup>4</sup>.S<sub>6</sub>.
+<!-- there is no subgroup of order 720 -->
+with vertex orbit sizes 6+60+96.
+<p>
+h) <i>2-coclique extension of K<sub>3</sub>&times;K<sub>3</sub></i>.
+There are 2835 subgraphs isomorphic to the 2-coclique extension of
+K<sub>3</sub>&times;K<sub>3</sub>, forming a single orbit.
+The stabilizer of one is
+2.((S<sub>4</sub> &times; S<sub>4</sub>):2 &times; 2)
+with vertex orbit sizes 18+144.
+<p>
+i) <i>Edges</i>.
+There are 4536 of these, forming a single orbit.
+The stabilizer of one is A<sub>6</sub>.2<sup>2</sup> &times; 2
+with vertex orbit sizes 2+10+60+90. The orbit of size 10 is the
+first of the orbits of 10-cocliques.
+<p>
+j) <i>K<sub>6,6</sub>'s of the second kind</i>.
+&Gamma; has two orbits of K<sub>6,6</sub> subgraphs:
+one of size 18144 with stabilizer A<sub>6</sub>.2
+and vertex orbit sizes 12+30+120, and one of size 4536
+with stabilizer A<sub>6</sub>.2<sup>2</sup> &times; 2
+and vertex orbit sizes 12+60+90.
+(The former is found inside 42+120 (see c): the K<sub>6,6</sub>
+is the subgraph of the nonincidence graph of PG(2,4) formed
+by a hyperoval O and the dual hyperoval of lines disjoint from O.)
+<br>
+The two groups found under i) and j) are conjugate in
+U<sub>4</sub>(3).D<sub>8</sub> and intersect U<sub>4</sub>(3)
+in a maximal subgroup.
+<p>
+k) <i>Splits 72+90</i>.
+There are 4536 splits of &Gamma; into two subgraphs of sizes
+72 and 90, with valencies 26 and 32.
+*** check: not more such splits? ***
+They form a single orbit.
+The stabilizer of one is A<sub>6</sub>.2<sup>2</sup> &times; 2
+with vertex orbit sizes 72+90.
+For A<sub>6</sub>, the orbit of size 72 splits into 36+36,
+where each 36 carries a <a href="Sylvester.html">Sylvester graph</a>.
+For A<sub>6</sub>, the orbit of size 90 splits into 45+45,
+where each 45 carries the distance-2 graph of the incidence graph
+of GQ(2,2).
+<p>
+l) <i>Maximal 15-cocliques of the first kind</i>.
+&Gamma; has two orbits of maximal 15-cocliques.
+The first orbit has size 5184 and stabilizer A<sub>7</sub>
+with vertex orbit sizes 15+42+105.
+<!-- locally in the 15 we see a split 56=28+28 -->
+(The second orbit has size 38880 and stabilizer 2 &times; L(3,2)
+with vertex orbit sizes 1+14 on the 15-coclique, and
+1+7+7+14+14+21+42+56 on all 162 points.)
+<p>
+m) <i>Nonedges</i>.
+There are 8505 of these, forming a single orbit.
+The stabilizer of one is (4<sup>2</sup> &times; 2)(2 &times; S<sub>4</sub>)
+with vertex orbit sizes 2+8+24+64+64. The orbit of size 8 induces a
+K<sub>4,4</sub>.
+<p>
+
+<H2>Cocliques</H2>
+The largest cliques have size 3.
+The largest cocliques have size 21.
+Numbers of maximal cocliques of given size (with orbit sizes):
+<pre>
+6: 1134
+9: 498960 = 90720 + 408240
+10: 7987896 = 4536 + 362880 + 1088640 + 3265920 + 3265920
+12: 2063880 = 22680 + 408240 + 544320 + 1088640
+15: 44064 = 5184 + 38880
+21: 324
+</pre>
+<p>
+
+<H2>References</H2>
+<p>
+P.J. Cameron, J.-M. Goethals & J.J. Seidel,
+<i>Strongly regular graphs having strongly regular subconstituents</i>,
+J. Algebra <b>55</b> (1978) 257-280.
+<p>
+L.H. Soicher,
+<i>Three new distance-regular graphs</i>,
+Europ. J. Combin. <b>14</b> (1993) 501-505.
+</body>
+</html>

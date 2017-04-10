@@ -1,0 +1,74 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<HTML>
+<HEAD>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <TITLE>VO</TITLE>
+</HEAD>
+<BODY>
+<a href="index.html">Up</a>
+
+<H1>Affine polar graphs</H1>
+Consider a vector space <i>V</i> of dimension <i>d</i> over the finite
+field with <i>q</i> elements provided with a nondegenerate quadratic form
+<i>Q</i>. Take the vectors in <i>V</i> as vertices of a graph,
+and join the vectors <i>u</i> and <i>v</i> when
+<i>Q</i>(<i>v</i> − <i>u</i>) = 0.
+The resulting graph is denoted by VO<sup>+</sup>(<i>d</i>,<i>q</i>) or
+VO<sup>−</sup>(<i>d</i>,<i>q</i>), or VO(<i>d</i>,<i>q</i>),
+when the form <i>Q</i> is hyperbolic, elliptic or parabolic, respectively.
+(In the first two cases <i>d</i> will be even, in the third case <i>d</i>
+will be odd.)
+<p>
+The graphs VO<sup>+</sup>(2<i>e</i>,<i>q</i>) are strongly regular,
+with parameters
+<i>v</i> = <i>q</i><sup>2e</sup>,
+<i>k</i> = (<i>q</i><sup>e−1</sup> + 1)(<i>q</i><sup>e</sup> − 1),
+&lambda; = <i>q</i>(<i>q</i><sup>e−2</sup> + 1)(<i>q</i><sup>e−1</sup> − 1)
++ <i>q</i> − 2,
+&mu; = <i>q</i><sup>e−1</sup>(<i>q</i><sup>e−1</sup> + 1),
+<i>r</i> = <i>q</i><sup>e</sup> − <i>q</i><sup>e−1</sup> − 1,
+<i>s</i> = − <i>q</i><sup>e−1</sup> − 1.
+<p>
+The graphs VO<sup>−</sup>(2<i>e</i>,<i>q</i>) are strongly regular,
+with parameters
+<i>v</i> = <i>q</i><sup>2e</sup>,
+<i>k</i> = (<i>q</i><sup>e−1</sup> − 1)(<i>q</i><sup>e</sup> + 1),
+&lambda; = <i>q</i>(<i>q</i><sup>e−2</sup> − 1)(<i>q</i><sup>e−1</sup> + 1)
++ <i>q</i> − 2,
+&mu; = <i>q</i><sup>e−1</sup>(<i>q</i><sup>e−1</sup> − 1),
+<i>r</i> = <i>q</i><sup>e−1</sup> − 1,
+<i>s</i> = − <i>q</i><sup>e</sup> + <i>q</i><sup>e−1</sup> − 1.
+<p>
+The graphs VO(2<i>e</i>+1,<i>q</i>) are not strongly regular.
+<p>
+For details about the local structure of these graphs, see
+<br>
+A.E. Brouwer & E.E. Shult, <i>Graphs with odd cocliques</i>,
+Eur. J. Combin. <b>11</b> (1990) 99-104.
+<p>
+For <i>d</i> = 2 we find that VO<sup>−</sup>(2,<i>q</i>) is a coclique, and
+that VO<sup>+</sup>(2,<i>q</i>) is a <i>q</i>&times;<i>q</i> grid graph
+(that is, H(2,<i>q</i>)).
+<p>
+Note that the graphs VO<sup>+</sup>(2<i>e</i>,2) and
+VO<sup>−</sup>(2<i>e</i>,2) have &lambda; = &mu; − 2
+and hence give rise to SBIBDs with parameters
+2-(2<sup>2e</sup>, 2<sup>2e−1</sup> + 2<sup>e−1</sup>−1,
+2<sup>2e−2</sup>+ 2<sup>e−1</sup>) and
+2-(2<sup>2e</sup>, 2<sup>2e−1</sup> − 2<sup>e−1</sup>−1,
+2<sup>2e−2</sup> − 2<sup>e−1</sup>), respectively.
+<p>
+If we take the Hamming scheme H(<i>n</i>,4) and call two vertices adjacent
+if their distance is even we obtain a strongly regular graph
+(as was observed in
+S. Kageyama, G.M. Saha & A.D. Das,
+<i>Reduction of the number of association classes of hypercubic
+association schemes</i>, Ann. Inst. Stat. Math. <b>30</b> (1978) 115-123).
+But this is just VO<sup>+</sup>(2<i>n</i>,2) or VO<sup>−</sup>(2<i>n</i>,2)
+(where the sign is (−1)<sup>n</sup>). Indeed, the weight of a quaternary
+digit is given by the (elliptic) binary quadratic form
+<i>x</i><sub>1</sub><sup>2</sup>
++ x<sub>1</sub>x<sub>2</sub> + x<sub>2</sub><sup>2</sup>.
+
+</BODY>
+</HTML>

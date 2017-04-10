@@ -1,0 +1,704 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Rectagraphs from root systems</title>
+</head>
+<body>
+<h1>Rectagraphs from root systems</h1>
+Lenny Chastkofsky proposes the following construction:
+<p>
+<blockquote>
+Given a root system Φ with collection of positive roots
+Φ<sup>+</sup>, and a target vector <i>u</i> in the span of Φ,
+consider all subsets <i>X</i><sub>1</sub>,...,<i>X</i><sub><i>n</i></sub>
+of Φ<sup>+</sup> with the property that the elements of
+<i>X</i><sub><i>i</i></sub> sum to <i>u</i> (for each <i>i</i>).
+Join <i>X</i><sub><i>i</i></sub> and <i>X</i><sub><i>j</i></sub>
+when their symmetric difference has size 3.
+This gives a bipartite graph Γ.
+</blockquote>
+<p>
+If Φ has simply laced diagram, and Γ is not empty,
+then Γ is a rectagraph (that is, Γ is connected
+and any two vertices have 0 or 2 common neighbours).
+<p>
+<font size="-2">
+<b>Proof of connectedness.</b><br>
+Note that the roots are precisely the vectors of squared norm 2
+in the lattice spanned by Φ and that for two roots r, s
+their sum r+s is a root when (r,s) = –1 while the difference r–s
+is a root when (r,s) = 1.
+<br>
+Let A and B be two vertices of Γ. We want to join them by a path.
+Use induction on the size of the symmetric difference.
+Let v = Σ A\B = Σ B\A.
+Suppose r ∈ A\B and s ∈ B\A with (r,s) = 1.
+Now r–s is a root, and either r–s or s–r is positive. Say t=r–s is positive.
+If t ∉ A, then C = A\{r} ∪ {s,t} is a vertex adjacent to A
+and we are done by induction. If t ∈ B, then D = B\{s,t} ∪ {r}
+is a vertex adjacent to B and we are done by induction.
+<br>
+This means that in the remaining case
+whenever r ∈ A\B and s ∈ B\A with (r,s) = 1
+we have either r–s ∈ A\B or s–r ∈ B\A.
+Since (r–s,s) = –1 or (r,s–r) = –1, and the pair r,s
+can be retrieved from the pair r–s,s or r,s–r,
+there is a contribution of –1 for each contribution of 1
+in the expanded inner product (v,v) = (Σ A\B, Σ B\A),
+so that (v,v) ≤ 0 and hence (v,v) = 0, so that A = B. QED
+</font>
+<p>
+<font size="-2">
+<b>Proof of (0,2) property.</b><br>
+Two sets A and B of sizes m+2 and m have 0 or 2 common neighbours:
+Put Z = A ∩ B.
+If A = Z ∪ {a,b,c,d} and B = Z ∪ {a+b,c+d} then
+the common neighbours are Z ∪ {a+b,c,d} and Z ∪ {a,b,c+d}.
+If A = Z ∪ {a,b,c} and B = Z ∪ {a+b+c} and (a,b)=(b,c)=–1,
+then the common neighbours are
+(i) Z ∪ {a+b,c} if a+b ∉ Z and Z\{a+b} ∪ {a,b,a+b+c} otherwise,
+and (ii) Z ∪ {a,b+c} if b+c ∉ Z and Z\{b+c} ∪ {b,c,a+b+c} otherwise.
+Note that since a+b+c is a root, precisely two of the inner products
+(a,b),(a,c),(b,c) are –1 (and the third is 0).
+<br>
+Two sets A and B of the same size have 0 or 2 common neighbours:
+If their symmetric difference has size 6,
+so that A = Z ∪ {a,b,c+d} and B = Z ∪ {a+b,c,d}, then the common
+neighbours are Z ∪ {a,b,c,d} and Z ∪ {a+b,c+d}.
+If their symmetric difference has size 4 and Z is their intersection,
+so that A = Z ∪ {a+b,c} and B = Z ∪ {a,b+c},
+<!-- this follows: if A = Z ∪ {p,q} and B = Z ∪ {r,s} with p+q = r+s
+then (p,r)+(p,s)+(q,r)+(q,s) = 2; say (p,r) = 1, then wlog p=r+x
+and then s=q+x -->
+then the common neighbours
+are (i) Z ∪ {a,b,c} if b ∉ Z and Z\{b} ∪ {a+b,b+c} otherwise,
+and (ii) Z ∪ {a+b+c} if a+b+c ∉ Z and Z\{a+b+c} ∪ {a,a+b,b+c,c} otherwise.
+QED
+<!-- aeb, 2008-07-27 -->
+</font>
+<p>
+<h2>Choice of target vector - dot action of W</h2>
+The map sending each set of positive roots to its complement
+induces an isomorphism from the graph Γ(<i>u</i>) defined by the
+target vector <i>u</i> to the graph Γ(2ρ–<i>u</i>)
+where 2ρ is the sum of the positive roots.
+<p>
+Let <i>w</i> be an element of the Weyl group <i>W</i>, and let <i>A</i>
+be the set of positive roots mapped to negative ones by <i>w</i>.
+The graph Γ(<i>u</i>) is mapped isomorphically onto the graph
+Γ(<i>w</i>(<i>u</i>–α)), where α = Σ <i>A</i>,
+by the map that sends each set <i>X</i> of positive roots to
+<i>w</i>(<i>X</i>\<i>A</i>) ∪ –<i>w</i>(<i>A</i>\<i>X</i>),
+that is, to the union of <i>w</i>(<i>X</i>) and <i>w</i>(–<i>A</i>)
+with pairs of opposite elements removed.
+<br>
+If we parametrize the graphs Γ(<i>u</i>) using μ = ρ–<i>u</i>
+instead of <i>u</i>, this means that Γ<sub>μ</sub> is mapped
+isomorphically onto Γ<sub><i>w</i>μ</sub>.
+(Indeed, <i>w</i>ρ = ρ + <i>w</i>α, so
+ρ – <i>w</i>(<i>u</i>–α) = <i>w</i>μ.)
+<br>
+It follows that we may choose <i>u</i> = ρ – μ where
+μ is a dominant weight.
+<p>
+<h2>The number of vertices</h2>
+Let ρ be half the sum of the positive roots, and let μ be
+a dominant weight. The number of vertices of the graph Γ
+defined by the target vector <i>u</i> = ρ – μ equals
+the multiplicity of the weight μ in the module V<sub>ρ</sub>.
+<p>
+<font size="-2">
+<b>Proof.</b><br>
+This is Lemma 5.9 in Bertram Kostant,
+<i>Lie algebra cohomology and the generalized Borel-Weil theorem</i>,
+Ann. Math. <b>74</b> (1961) 329-387.
+<br>
+Or, from Weyl's character formula: the formal character of
+V<sub>ρ</sub> equals A<sub>2ρ</sub>/A<sub>ρ</sub> =
+e(–ρ) Π<sub>α </sub>(e(α)+1) where α runs
+over Φ<sup>+</sup>,
+so that the multiplicity of μ equals the number of ways to write
+ρ + μ as sum of positive roots. QED
+</font>
+<p>
+Now Freudenthal's formula gives a straightforward way to compute
+the number of vertices.
+<p>
+<h2>The valency</h2>
+The valency of the graph Γ(<i>u</i>) is (<i>u</i>,2ρ–<i>u</i>)/2.
+When <i>u</i> is written on the basis of fundamental roots, this equals
+Σ <i>u</i><sub><i>i</i></sub> –
+Σ <i>u</i><sub><i>i</i></sub><sup>2</sup> +
+Σ<sub><i>e</i></sub>
+<i>u</i><sub><i>i</i></sub><i>u</i><sub><i>j</i></sub>,
+where the last sum is over all edges <i>e</i> = <i>ij</i>
+in the Coxeter diagram.
+<!-- aeb, 2008-08-01 -->
+<p>
+<font size="-2">
+<b>Proof.</b><br>
+Let A be a vertex, and B = Φ<sup>+</sup>\A its complement.
+Compute (Σ A, Σ B). If <i>a</i> ∈ A and <i>b</i> ∈ B with
+(<i>a</i>,<i>b</i>) ≠ 0, then either (<i>a</i>,<i>b</i>) = –1,
+and then (<i>a</i>+<i>b</i>,<i>b</i>) = (<i>a</i>,<i>a</i>+<i>b</i>) = 1
+so that the contribution of pairs in <i>a</i>,<i>b</i>,<i>a</i>+<i>b</i>
+to (Σ A, Σ B) vanishes, or (<i>a</i>,<i>b</i>) = 1, and, say,
+<i>a</i> = <i>b</i> + <i>c</i> for some <i>c</i> ∈ Φ<sup>+</sup>.
+In the latter case (<i>b</i>,<i>c</i>) = –1, and either <i>c</i> ∈ A,
+again with vanishing contribution from pairs in <i>a</i>,<i>b</i>,<i>c</i>,
+or <i>c</i> ∈ B, in which case <i>a</i>,<i>b</i>,<i>c</i>
+contribute (<i>a</i>,<i>b</i>) + (<i>a</i>,<i>c</i>) = 2.
+So, we only find a nonzero contribution (of 2) for each
+neighbour A\{<i>a</i>} ∪ {<i>b</i>,<i>c</i>} of A
+(or neighbour B\{<i>b</i>,<i>c</i>} ∪ {<i>a</i>} of B). <br>
+On the basis of fundamental roots inner products are given by
+the Cartan matrix, and (<i>u</i>,<i>u</i>)/2 =
+Σ <i>u</i><sub><i>i</i></sub><sup>2</sup> – Σ<sub><i>e</i></sub>
+<i>u</i><sub><i>i</i></sub><i>u</i><sub><i>j</i></sub>,
+and (<i>u</i>,ρ) = Σ <i>u</i><sub><i>i</i></sub>. QED
+</font>
+
+<h2>Valency bound</h2>
+Assume (as we may) that <i>u</i> is chosen such that <i>u</i> = ρ – μ
+where μ is a dominant weight. Then the valency of Γ(<i>u</i>)
+is at least Σ<i>u</i>/2, with equality if and only if <i>u</i> = ρ.
+<!-- aeb, 2008-08-08 -->
+<p>
+<font size="-2">
+<b>Proof.</b><br>
+We have been expressing <i>u</i> in root coordinates
+(on the basis consisting of the fundamental roots),
+but ρ, and the fact that μ is a dominant weight, are better expressed
+in terms of weight coordinates (on the basis consisting of the
+fundamental weights). Conversion is done via the Cartan matrix C.
+In weight coordinates <i>u</i> becomes C<i>u</i>, and ρ = <b>1</b>
+and we find that C<i>u</i> ≤ <b>1</b>.
+Now the valency is Σ<i>u</i> – <i>u</i>'C<i>u</i>/2, and the inequality
+just found implies <i>u</i>'C<i>u</i> ≤ Σ<i>u</i>, so that we find
+that the valency of Γ(<i>u</i>) is at least Σ<i>u</i>/2,
+with equality if and only if <i>u</i> = ρ. QED
+</font>
+
+<h2>Direct products</h2>
+Let us write things like Γ(E<sub>6</sub>,112321) for the graph
+with target vector 112321 on the root system E<sub>6</sub>.
+<p>
+If the Coxeter diagram is disconnected (or the support of <i>u</i> is),
+then the corresponding graph is the direct product of the graphs
+for the components.
+For example, Γ(D<sub>8</sub>,22320111)
+is the direct product
+Γ(D<sub>4</sub>,2232) × Γ(A<sub>3</sub>,111)
+(where that latter factor is just K<sub>2</sub> × K<sub>2</sub>).
+<p>
+If the target vector contains a 1 on a nonterminal position p,
+then the graph is the direct product of the two or three graphs
+that arise by splitting the Coxeter diagram (and target vector)
+into components at p, preserving a copy of p in each component.
+For example, Γ(A<sub>7</sub>,1221221) is the direct product
+Γ(A<sub>4</sub>,1221) × Γ(A<sub>4</sub>,1221).
+And Γ(D<sub>5</sub>,11121) is the direct product
+Γ(A<sub>2</sub>,11) × Γ(A<sub>2</sub>,11)
+× Γ(A<sub>3</sub>,121).
+(And Γ(A<sub>2</sub>,11) is a single edge K<sub>2</sub>,
+and Γ(A<sub>3</sub>,121) is a 4-gon, so this product is
+a 4-cube.)
+<p>
+<font size="-2">
+<b>Proof.</b><br>
+The isomorphism is clear.
+</font>
+<p>
+In particular, Γ(A<sub><i>n</i>+1</sub>,11...1) is the <i>n</i>-cube.
+
+<h2>Example: A<sub>4</sub></h2>
+Take the root system of type A<sub>4</sub>, with the 10 positive roots
+0001,0010,0100,1000,0011,0110,1100,0111,1110,1111.
+Take target vector 1221.
+In order to save space, write the positive roots as
+a,b,c,d,ab,bc,cd,abc,bcd,abcd.
+There are 14 ways to write the target vector as sum of positive roots:
+abcd+bc, abcd+b+c, bcd+abc, bcd+bc+a, bcd+ab+c, bcd+a+b+c, abc+cd+b,
+abc+bc+d, abc+b+c+d, ab+bc+cd, ab+bc+c+d, ab+cd+b+c, bc+cd+a+b, bc+a+b+c+d.
+(With 2,6,5,1 sums of 2,3,4,5 terms, respectively.)
+The graph Γ is the rectagraph on 14 vertices: the nonincidence
+graph of the points and lines of the Fano plane PG(2,2).
+<p>
+For the target vector 2222 we obtain the same graph, this time on
+the 14 sums
+abcd+abc+d, abcd+bcd+a, abcd+ab+cd, abcd+a+bc+d, abcd+ab+c+d,
+abcd+cd+a+b, abcd+a+b+c+d, abc+bcd+a+d, abc+ab+cd+d, abc+cd+a+b+d,
+bcd+ab+cd+a, bcd+ab+a+c+d, ab+bc+cd+a+d, ab+cd+a+b+c+d.
+(With 3,6,4,1 sums of 3,4,5,6 terms, respectively.)
+The combinatorics is rather different, but the graph is the same.
+<p>
+In this example ρ = 2332 and <i>u</i> = 1221, 2222 so that
+μ = ρ - <i>u</i> = 1111, 0110, respectively.
+And both belong to the same <i>W</i>-orbit, since both are roots.
+<p>
+In the first case we have <i>u</i> = 1,2,2,1 with valency 6–10+8 = 4.
+In the second case we have <i>u</i> = 2,2,2,2 with valency 8–16+12 = 4.
+<p>
+<h2>Nonexample: C<sub>3</sub></h2>
+Take the root system of type C<sub>3</sub> with the 9 positive roots
+100, 010, 001, 110, 011, 111, 021, 121, 221 and take target vector 121.
+We find the six vertices 121, 100+021, 010+111, 110+011,
+100+010+011, 010+001+110 and Γ is not a (0,2)-graph.
+(It is K<sub>3,3</sub> minus an edge.)
+<p>
+
+<h2>Small rectagraphs</h2>
+Since we <a href="02graphs.html">elsewhere</a> have a classification of all
+(0,2)-graphs of valency at most 8, it is natural to check which of those
+are found here. First of all, the hypercube of valency k is found
+using the target vector 111...1 of length k+1 (for A<sub>k+1</sub>, say).
+Apart from the hypercubes we have
+<p>
+<table border="1"><tbody>
+<tr align="center"><th>valency</th><th>#vertices</th><th>diagram</th>
+    <th>target vector</th><th>rectagraph</th></tr>
+<tr align="center"><td>4</td><td>14</td><td>A4</td><td>1221</td><td><a href="02graphs.html#4.1">4.1</a></td></tr>
+<tr align="center"><td>5</td><td>24</td><td>A4</td><td>2332</td><td><a href="02graphs.html#5.2">5.2</a></td></tr>
+<tr align="center"><td>5</td><td>28</td><td>A5</td><td>11221</td><td><a href="02graphs.html#5.3">5.3</a></td></tr><!--2-->
+<tr align="center"><td>6</td><td>40</td><td>D4</td><td>2232</td><td><a href="02graphs.html#6.7">6.7</a></td></tr>
+<tr align="center"><td>6</td><td>48</td><td>A5</td><td>12221</td><td><a href="02graphs.html#6.10">6.10</a></td></tr>
+<tr align="center"><td>6</td><td>48</td><td>A7</td><td>1102332</td><td><a href="02graphs.html#6.11">6.11</a></td></tr><!--2-->
+<tr align="center"><td>6</td><td>56</td><td>A6</td><td>111221</td><td><a href="02graphs.html#6.12">6.12</a></td></tr><!--2-->
+<tr align="center"><td>7</td><td>64</td><td>D4</td><td>3353</td><td><a href="02graphs.html#7.22">7.22</a></td></tr>
+<tr align="center"><td>7</td><td>80</td><td>A5</td><td>12332</td><td><a href="02graphs.html#7.33">7.33</a></td></tr>
+<tr align="center"><td>7</td><td>80</td><td>D7</td><td>2232011</td><td><a href="02graphs.html#7.34">7.34</a></td></tr><!--2-->
+<tr align="center"><td>7</td><td>96</td><td>A6</td><td>112221</td><td><a href="02graphs.html#7.37">7.37</a></td></tr><!--2-->
+<tr align="center"><td>7</td><td>96</td><td>D6</td><td>223111</td><td><a href="02graphs.html#7.38">7.38</a></td></tr><!--2-->
+<tr align="center"><td>7</td><td>112</td><td>A7</td><td>1111221</td><td><a href="02graphs.html#7.39">7.39</a></td></tr><!--2-->
+<tr align="center"><td>8</td><td>128</td><td>D7</td><td>3353011</td><td><a href="02graphs.html#8.77">8.77</a></td></tr>
+<tr align="center"><td>8</td><td>132</td><td>D5</td><td>22321</td><td><a href="02graphs.html#8.89">8.89</a></td></tr>
+<tr align="center"><td>8</td><td>132</td><td>A5</td><td>23332</td><td><a href="02graphs.html#8.90">8.90</a></td></tr>
+<tr align="center"><td>8</td><td>160</td><td>D8</td><td>22320111</td><td><a href="02graphs.html#8.95">8.95</a></td></tr>
+<tr align="center"><td>8</td><td>160</td><td>A6</td><td>112332</td><td><a href="02graphs.html#8.97">8.97</a></td></tr><!--2-->
+<tr align="center"><td>8</td><td>164</td><td>A6</td><td>122221</td><td><a href="02graphs.html#8.98">8.98</a></td></tr>
+<tr align="center"><td>8</td><td>192</td><td>D7</td><td>2231111</td><td><a href="02graphs.html#8.100">8.100</a></td></tr><!--2-->
+<tr align="center"><td>8</td><td>192</td><td>A7</td><td>1112221</td><td><a href="02graphs.html#8.101">8.101</a></td></tr><!--2-->
+<tr align="center"><td>8</td><td>196</td><td>A7</td><td>1221221</td><td><a href="02graphs.html#8.102">8.102</a></td></tr>
+<tr align="center"><td>8</td><td>224</td><td>A8</td><td>11111221</td><td><a href="02graphs.html#8.103">8.103</a></td></tr><!--2-->
+</tbody></table>
+<!-- A1..7D4..6E6: max=6, D7E7: max=5 A8D8E8: max=4 A9D9: max 3 -->
+<p>
+(For the numbering of fundamental roots, see the diagrams below.)
+<p>
+The above list is complete: no rectagraphs of valency at most 8
+other than hypercubes and the above ones arise from this construction.
+<p>
+<font size="-2">
+(This can be seen by the valency bound. First suppose that the
+graph is not a direct product, so that <i>u</i> does not have
+interior coefficients 0 or 1. Then the valency bound shows that
+it suffices to look at diagrams of rank at most 8. Do so. Then add
+the direct products of smaller examples.)
+</font>
+<p>
+I do not know whether it is possible to recognize the rectagraphs
+that arise from this construction. But all of these graphs are
+<i>signable</i>.
+
+<h2>Signable (0,2)-graphs</h2>
+A (0,2)-graph is called <i>signable</i> if it is possible to assign
+signs +1/–1 to the edges in such a way that the product of the four
+edges of a quadrangle is always –1.
+Equivalently, a (0,2)-graph is signable if it has a 2-cover
+without quadrangles.
+The edges of the (0,2)-graphs obtained from simply laced root systems
+have signs given by a trivial cohomology coboundary operator d
+(see the <a href="cohom.html">next page</a>), and checking the cases
+found in the proof of the (0,2)-property we find that the graph is signable.
+<p>
+The signable bipartite (0,2)-graphs of valency at most 8 are
+the hypercubes (0.1, 1.1, 2.1, 3.1, 4.2, 5.4, 6.13, 7.40, 8.104)
+and the graphs 4.1, 5.2-3, 6.7-8, 6.10-12,
+7.2, 7.10, 7.18-19, 7.22, 7.24-28, 7.33-35, 7.37-39,
+8.2, 8.6, 8.11, 8.13, 8.30-32, 8.36, 8.38, 8.47-62, 8.71, 8.76-90,
+8.95-98, 8.100-103.
+<p>
+The n-cube, with n at least 2, has a unique 2-cover without
+quadrangles (BCN, p. 267).
+The <a href="../Sims-Gewirtz.html">Gewirtz graph</a> is not signable
+and hence has no 2-cover without quadrangles (BCN, p. 372).
+<p>
+
+<h2>Data</h2>
+Some numerical info. Diagram, target vector, number of vertices v,
+graph valency k (each rectagraph is regular).
+<p>
+<pre>
+A1
+0: v=1, k=0
+
+A2
+11: v=2, k=1
+
+A3
+111: v=4, k=2
+
+A4
+1111: v=8, k=3
+1221: v=14, k=4
+2332: v=24, k=5
+
+A5
+11111: v=16, k=4
+11221: v=28, k=5
+12221: v=48, k=6
+12332: v=80, k=7
+23332: v=132, k=8
+
+A6
+111111: v=32, k=5
+111221: v=56, k=6
+112221: v=96, k=7
+112332: v=160, k=8
+122221: v=164, k=8
+123321: v=266, k=9
+122332: v=272, k=9
+134431: v=424, k=10
+123332: v=436, k=10
+134432: v=688, k=11
+233332: v=712, k=11
+234432: v=1112, k=12
+245542: v=1720, k=13
+356653: v=2640, k=14
+
+A7
+1111111: v=64, k=6
+1111221: v=112, k=7
+1112221: v=192, k=8
+1221221: v=196, k=8
+1112332: v=320, k=9
+1122221: v=328, k=9
+1123321: v=532, k=10
+1122332: v=544, k=10
+1222221: v=560, k=10
+1134431: v=848, k=11
+1123332: v=872, k=11
+1223321: v=904, k=11
+1222332: v=928, k=11
+1134432: v=1376, k=12
+1233321: v=1440, k=12
+1223332: v=1480, k=12
+2332332: v=1536, k=12
+1234431: v=2256, k=13
+1233332: v=2348, k=13
+1344431: v=3504, k=14
+1234432: v=3640, k=14
+1344332: v=3664, k=14
+2333332: v=3824, k=14
+</pre>
+<font size="-2">
+and also v=5584, 5632, 5904, 8576, 9040, 12960, 13712, 20640,
+20676, 30960, 46144.
+</font>
+<pre>
+A8
+11111111: v=128, k=7
+11111221: v=224, k=8
+11023332: v=264, k=9
+11112221: v=384, k=9
+11221221: v=392, k=9
+11112332: v=640, k=10
+11122221: v=656, k=10
+12212221: v=672, k=10
+11123321: v=1064, k=11
+11122332: v=1088, k=11
+11222221: v=1120, k=11
+</pre>
+<font size="-2">
+<!--
+11123332: v=1744, k=12
+11223321: v=1808, k=12
+11222332: v=1856, k=12
+12222221: v=1912, k=12
+11233321: v=2880, k=13
+11223332: v=2960, k=13
+12233221: v=3072, k=13
+12223321: v=3084, k=13
+12222332: v=3168, k=13
+11233332: v=4696, k=14
+12233321: v=4888, k=14
+12223332: v=5048, k=14
+12332332: v=5104, k=14
+12333321: v=7744, k=15
+12233332: v=7968, k=15
+-->
+and also
+v=1696, 1744, 1808, 1856, 1912, 2752,
+2880, 2960, 3072, 3084, 3168, 4512,
+4696, 4888, 5048, 5104, 5248, 7008,
+7280, 7328, 7648, 7744, 7968, 8352,
+11168, 11264, 11918, 12064, 12336,
+12608, 17152, 18136, 18404, 18896,
+19324, 19432, 19616, 20520, 25920,
+27792, 28316, 29528, 29800, 31320,
+31584, 42440, 44416, 44688, 45368,
+47792, 63144, 66804, 67104, 67728,
+68416, 72224, 72656, 93360, 99760,
+100368, 101528, 108032, 108288, 109408,
+149664, 151120, 159456, 161704, 219360,
+221728, 237408, 240320, 241312, 323600,
+351168, 352472, 357600, 512184, 519968,
+740880, 752464, 765120, 1084320, 1102824,
+1583360, 2265200, 3230080.
+</font>
+<pre>
+    O 2
+    |
+O---O---O
+1   3   4
+
+D4
+1111: v=8, k=3
+1121: v=14, k=4
+1232: v=24, k=5
+2232: v=40, k=6
+3353: v=64, k=7
+
+    O 2
+    |
+O---O---O---O
+1   3   4   5
+
+D5
+11111: v=16, k=4
+11211: v=28, k=5
+11221: v=48, k=6
+11332: v=80, k=7
+12332: v=132, k=8
+22431: v=210, k=9
+22332: v=216, k=9
+33531: v=328, k=10
+22432: v=340, k=10
+23542: v=528, k=11
+33542: v=808, k=12
+44752: v=1216, k=13
+33653: v=1224, k=13
+44753: v=1824, k=14
+55974: v=2688, k=15
+
+    O 2
+    |
+O---O---O---O---O
+1   3   4   5   6
+
+D6
+111111: v=32, k=5
+111221: v=56, k=6
+112211: v=96, k=7
+123211: v=160, k=8
+112221: v=164, k=8
+223211: v=264, k=9
+113321: v=266, k=9
+112332: v=272, k=9
+224311: v=420, k=10
+113332: v=436, k=10
+223221: v=448, k=10
+335311: v=656, k=11
+124431: v=688, k=11
+123332: v=712, k=11
+124432: v=1112, k=12
+223332: v=1160, k=12
+235421: v=1712, k=13
+135542: v=1720, k=13
+224431: v=1724, k=13
+224332: v=1804, k=13
+</pre>
+<!--
+224432: v=2768, k=14
+-->
+<font size="-2">
+and also v=2608, 2632, 2768, 2784,
+3904, 3984, 4208, 5934, 6352,
+8744, 8760, 9420, 9520, 9528,
+12792, 13840, 14044, 18496, 20528,
+20800, 29744, 30244, 42688, 42816,
+43616, 61040, 62496, 86400, 88736,
+89040, 125688, 176320, 177192, 247392,
+343680.
+</font>
+<pre>
+    O 2
+    |
+O---O---O---O---O---O
+1   3   4   5   6   7
+
+D7
+1111111: v=64, k=6
+1111221: v=112, k=7
+3353011: v=128, k=8
+1112221: v=192, k=8
+1121221: v=196, k=8
+1112332: v=320, k=9
+2231221: v=336, k=9
+1133211: v=532, k=10
+1232211: v=544, k=10
+1122221: v=560, k=10
+2243111: v=840, k=11
+1233211: v=872, k=11
+2232211: v=896, k=11
+1123321: v=904, k=11
+1122332: v=928, k=11
+3353111: v=1312, k=12
+1244311: v=1376, k=12
+2233211: v=1424, k=12
+1133321: v=1440, k=12
+1123332: v=1480, k=12
+2232221: v=1528, k=12
+1232332: v=1536, k=12
+2243211: v=2224, k=13
+1134431: v=2256, k=13
+1133332: v=2348, k=13
+2233221: v=2416, k=13
+2232332: v=2528, k=13
+</pre>
+<!--
+1233332: v=3824, k=14
+2233332: v=6224, k=15
+-->
+<font size="-2">
+and also v=3424, 3440, 3448, 3640, 3664, 3768, 3824, ..., 194010624.
+</font>
+<pre>
+    O 2
+    |
+O---O---O---O---O---O
+1   3   4   5   6   7
+
+D8
+11111111: v=128, k=7
+11111221: v=224, k=8
+33530111: v=256, k=9
+11112221: v=384, k=9
+11211221: v=392, k=9
+22332011: v=432, k=10
+11112332: v=640, k=10
+11212221: v=672, k=10
+22432011: v=680, k=11
+11222211: v=1120, k=11
+</pre>
+<!--
+11222221: v=1912, k=12
+-->
+<font size="-2">
+and also v=1056, 1064, 1088, 1152, 1616, ...,
+458377052160.
+</font>
+<pre>
+        O 2
+        |
+O---O---O---O---O
+1   3   4   5   6   
+
+E6
+111111: v=32, k=5
+111211: v=56, k=6
+111221: v=96, k=7
+111332: v=160, k=8
+112221: v=164, k=8
+121332: v=264, k=9
+112321: v=266, k=9
+113431: v=424, k=10
+112332: v=436, k=10
+213431: v=688, k=11
+122332: v=712, k=11
+123431: v=1072, k=12
+223421: v=1112, k=12
+223332: v=1160, k=12
+</pre>
+<font size="-2">
+and also v=1644, ..., 13697920.
+</font>
+<pre>
+        O 2
+        |
+O---O---O---O---O---O
+1   3   4   5   6   7   
+
+E7
+1111111: v=64, k=6
+1111221: v=112, k=7
+1112211: v=192, k=8
+1213211: v=320, k=9
+1113321: v=532, k=10
+1112332: v=544, k=10
+1122221: v=560, k=10
+1134311: v=848, k=11
+1113332: v=872, k=11
+1123221: v=904, k=11
+1122332: v=928, k=11
+1123321: v=1440, k=12
+</pre>
+<font size="-2">
+and also v=1376, 1424, 1480, 2144, ...,
+76578485178240.
+</font>
+<pre>
+        O 2
+        |
+O---O---O---O---O---O---O
+1   3   4   5   6   7   8   
+
+E8
+11111111: v=128, k=7
+11111221: v=224, k=8
+11112221: v=384, k=9
+11121221: v=392, k=9
+22332011: v=432, k=10
+11112332: v=640, k=10
+11221221: v=672, k=10
+22342011: v=680, k=11
+</pre>
+<!--
+11122221: v=1120, k=11
+11222221: v=1912, k=12
+-->
+<font size="-2">
+and also v=1056, 1064, 1088, 1120, 1616, ...,
+235377394371444230194469748736.
+</font>
+
+<h2>Cohomology</h2>
+Let <i>k</i> be any field, and let
+C<sub><i>i</i></sub> = ⋀<sup><i>i</i></sup> Φ<sup>+</sup>
+be the <i>i</i>-th exterior power of the <i>k</i>-vectorspace
+with basis Φ<sup>+</sup>. Consider the cochain complex
+... ← C<sub><i>i</i>+1</sub> ← C<sub><i>i</i></sub> ← ...
+with coboundary operator <i>d</i> defined by
+<blockquote>
+<i>d</i><sub><i>i</i></sub>(<i>a</i><sub>1</sub> ∧ ... ∧
+<i>a</i><sub><i>i</i></sub>) = Σ<sub><i>j</i></sub>
+Σ<sub><i>a</i><sub><i>j</i></sub>=<i>b</i>+<i>c</i></sub>
+(–1)<sup><i>j</i></sup> <i>f</i>(<i>b</i>,<i>c</i>)
+<i>a</i><sub>1</sub> ∧ ... ∧ <i>a</i><sub><i>j</i>–1</sub> ∧
+<i>b</i> ∧ <i>c</i> ∧ <i>a</i><sub><i>j</i>+1</sub> ∧ ... ∧
+<i>a</i><sub><i>i</i></sub>,
+</blockquote>
+where <i>f(b,c)=–f(c,b)</i> and the sum is over unordered pairs
+of positive roots {<i>b</i>,<i>c</i>} with
+<i>b</i>+<i>c</i> = <i>a</i><sub><i>j</i></sub>.
+One checks that indeed
+<i>d</i><sub><i>i</i>+1</sub><i>d</i><sub><i>i</i></sub> = 0
+provided that <i>f(b,c)f(b+c,d) = f(b,c+d)f(c,d)</i>.
+(For a simply laced root system one can find such an <i>f</i>
+that only takes the values 1 or –1, e.g. by borrowing it
+from the corresponding Lie algebra:
+[<i>e<sub>r</sub></i>,<i>e<sub>s</sub></i>] = <i>f(r,s)e<sub>r+s</sub></i>.)
+<p>
+This complex is the direct sum of such complexes where the basis vectors
+are restricted to (the exterior products of the elements of) the vertices
+of Γ(<i>u</i>).
+For each <i>u</i> we can ask for the cohomology of this complex.
+Some data are given on the <a href="cohom.html">next page</a>.
+<p>
+<h2>Reference</h2>
+[BCN] Brouwer, Cohen & Neumaier,
+<i>Distance-regular graphs</i>,
+Springer, 1989.
+<p>
+</body>
+</html>

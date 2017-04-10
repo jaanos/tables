@@ -1,0 +1,88 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<HTML>
+<HEAD>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <TITLE>The near octagon on 315 points</TITLE>
+</HEAD>
+<BODY>
+<a href="index.html">Up</a>
+
+<h1>The Cohen-Tits near octagon on 315 points</h1>
+There is a unique distance-regular graph &Gamma; with intersection
+array {10,8,8,2; 1,1,4,5}. It was constructed in Cohen (1981),
+and uniqueness (given the intersection array) was proved in
+Cohen & Tits (1985). See also BCN §13.6.
+It has 315 vertices and spectrum 10<sup>1</sup> 5<sup>36</sup>
+3<sup>90</sup> (−2)<sup>160</sup> (−5)<sup>28</sup>.
+<p>
+<h2>Group</h2>
+The full group of automorphisms of &Gamma; is HJ.2
+acting distance-transitively with point stabilizer
+<!-- ugly attempt at positioning -->
+2<span style="position:relative; top: 0.4em;"><sub>−</sub></span><span
+style="position:relative; left: -0.6em;"><sup>1+4</sup></span>: S<sub>5</sub>.
+This group is transitive on the 315 . 10 . 8 . 8 . 2 geodetics of length 4,
+and the stabilizer of a length 4 geodetic has size 3.
+<p>
+<h2>Near polygon</h2>
+This graph is a near polygon: it has lines (of size 3: all triangles)
+and the property that each point has minimal distance to a unique point
+of each line.
+<p>
+(This already follows from the intersection array
+of the form {s(t+1),st,s(t−t<sub>2</sub>),...,s(t−t<sub>d−1</sub>);
+1,t<sub>2</sub>+1,...,t<sub>d−1</sub>+1,t+1}
+(here d=4, s=2, t=4, t<sub>2</sub>=0, t<sub>3</sub>=3):
+if d(x,y)=i, then the a<sub>i</sub> = (s−1)(t<sub>i</sub>+1)
+neighbors of y at distance i from x are already seen on lines
+containing a point at distance i−1 from x, so all other lines
+on y have y as their unique point closest to x.)
+<p>
+A near polygon of diameter 4 is called a near octagon.
+
+<h2>Sub generalized hexagons</h2>
+The near octagon contains 100 sub generalized hexagons GH(2,2)
+on 63 vertices, that arise as intersections of &Gamma; with
+vertex neighbourhoods in the G<sub>2</sub>(4) graph.
+If d(x,y) = 3, then y is in 4 lines that contain a point at distance 2
+from x. We can pick x and any three of these four lines, and find a
+unique GH(2,2) containing them.
+(In particular, these sub generalized hexagons are not geodetically closed.)
+
+<h2>Sub generalized octagons</h2>
+The near octagon contains 280 sub generalized octagons GO(2,1)
+on 45 vertices, the sets of fixed points of the 3A elements of HJ.
+Any two of these have 5, 15, or 45 vertices in common,
+where intersections of size 5 induce two intersecting lines,
+and intersections of size 15 induce five pairwise disjoint lines.
+The rank 4 graph on these 280 45-sets, adjacent when they meet in 15 points,
+is strongly regular with parameters (280,36,8,4).
+<font size="-1">(Anurag Bishnoi, email 2014-09-11.)</font>
+
+<h2>Distance-2 graph</h2>
+The distance-2 graph &Delta; of &Gamma; (same vertices, adjacent
+when the distance in &Gamma; is 2) has spectrum
+80<sup>1</sup> 20<sup>28</sup> 10<sup>36</sup> (−4)<sup>250</sup>.
+It is the second subconstituent of the strongly regular
+<a href="G24.html">G<sub>2</sub>(4) graph</a> on 416 vertices.
+
+<h2>Cliques and clique cover of &Delta;</h2>
+All maximal cliques of &Delta; have size 5. There are three orbits under G,
+of respective sizes 10080, 50400, 201600.
+There is a clique cover of size 63, so that the complementary graph
+has chromatic number 63.
+
+<h2>References</h2>
+BCN, pp. 408-410.
+<p>
+A. M. Cohen,
+<i>Geometries originating from certain distance-regular graphs</i>,
+pp. 81-87 in: Proc. Finite Geometries and Designs, LMS Lecture Notes,
+Cambridge 1981.
+<p>
+A. M. Cohen & J. Tits,
+<i>On generalized hexagons and a near octagon
+whose lines have three points</i>,
+Europ. J. Combinatorics <b>6</b> (1985) 13-27.
+</BODY>
+</HTML>

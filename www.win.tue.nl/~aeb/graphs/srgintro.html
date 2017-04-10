@@ -1,0 +1,94 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<HTML>
+<HEAD>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <TITLE>SRG introduction</TITLE>
+<!-- aeb, Friday Februari 25, 2000  -->
+</HEAD>
+<BODY>
+<a href="index.html">Up</a>
+
+<H1>Strongly regular graphs</H1>
+A <I>graph</I> is a collection of points, where certain pairs
+of points are joined by an edge. It is a graphical representation
+of a symmetric relation. There are lots of them.
+A <I>strongly regular graph</I> is a very beautiful graph,
+and there are not very many strongly regular graphs on a given
+number of points. The definition is as follows.
+<p>
+A strongly regular graph with parameters
+(<I>v</I>,<I>k</I>,<I>&lambda;</I>,<I>&mu;</I>)
+is a graph with <I>v</I> points (vertices), such that each point
+has precisely <I>k</I> neighbours (i.e., is joined by an edge to
+precisely <I>k</I> other vertices), where the number of common
+neighbours of two vertices equals <I>&lambda;</I> in case they
+were neighbours, and equals <I>&mu;</I> in case they weren't.
+<p>
+In order to have well-defined <I>&lambda;</I> and <I>&mu;</I>,
+we require that there is at least one pair of neighbours
+(that is, <I>k</I> is not zero), and at least one pair of
+non-neighbours (that is, <I>k</I> is less than <I>v−</I>1).
+<p>
+The complement of a strongly regular graph with parameters
+(<i>v</i>, <i>k</i>, &lambda;, &mu;)
+is again strongly regular, with parameters
+(<i>v</i>, <i>v</i> − <i>k</i> − 1,
+<i>v</i> − 2<i>k</i> + &mu; − 2, <i>v</i> − 2<i>k</i> + &lambda;).
+<p>
+Boring examples are obtained by putting a number of complete
+graphs next to each other. The union of <I>m</I> complete
+graphs, on <I>w</I> vertices each, is strongly regular with
+parameters <I>v = mw</I>, <I>k = w−</I>1, <I>&lambda; = w−</I>2,
+<I>&mu; = </I>0. The spectrum of such a graph is
+<I>w−</I>1 (<I>m</I> times), <I>−</I>1 (<I>m(w−</I>1<I>)</I> times).
+<p>
+Equally boring are the complements of these boring graphs,
+the complete multipartite graphs with <I>m</I> parts of size <I>w</I>.
+They have parameters <I>v = mw</I>, <I>k = (m−</I>1<I>)w</I>,
+<I>&lambda; = (m−</I>2<I>)w</I>, <I>&mu; = (m−</I>1<I>)w</I> and spectrum
+<I>(m−</I>1<I>)w</I> (once), 0 (<I>m(w−</I>1<I>)</I> times), <I>−w</I>
+(<I>m−</I>1 times).
+<p>
+Below we are only interested in non-boring graphs, that is,
+we assume that 0<I> &lt; &mu; &lt; k</I>.
+<p>
+There are precisely four non-boring strongly regular graphs
+on at most 12 vertices, and these have parameters (5,2,0,1),
+(9,4,1,2), (10,3,0,1) and (10,6,3,4).
+These are known as the pentagon,
+the 3&times;3 <a href="Hamming.html">grid</a>, the
+<a href="Petersen.html">Petersen graph</a>,
+and the <a href="Johnson.html">triangular graph</a> T(5).
+The first two are isomorphic to their complement, the last two are
+complementary.
+<p>
+<IMAGE SRC="pics/srg5.png">
+<IMAGE SRC="pics/srg9.png">
+<IMAGE SRC="pics/srg10.png">
+<p>
+The parameters of various infinite families of strongly regular graphs
+are given <a href="srghub.html">here</a>.
+<p>
+<!--
+If your browser supports java, you can find
+<a href="srgparam.html">here</a> a page with
+an applet that gives information on parameters and existence
+of non-boring strongly regular graphs.
+-->
+<p>
+References:
+<p>
+X. Hubaut,
+<i>Strongly regular graphs</i>,
+Discrete Math. <b>13</b> (1975) 357-381.
+<p>
+A.E. Brouwer & J.H van Lint,
+<i>Strongly regular graphs and partial geometries</i>,
+pp. 85-122 in: Enumeration and Design (D.M. Jackson & S.A. Vanstone, eds.),
+Academic Press, Toronto etc., 1984.
+<p>
+A.E. Brouwer, A.M. Cohen & A. Neumaier,
+<i>Distance-regular graphs</i>, Springer, Heidelberg, 1989.
+
+</BODY>
+</HTML>

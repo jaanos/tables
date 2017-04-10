@@ -1,0 +1,9 @@
+eigenvalue = -8	mult 1
+eigenvalue = -4	mult 6
+eigenvalue = -3.4641	mult 8
+eigenvalue = -2	mult 16
+eigenvalue = 0	mult 18
+eigenvalue = 2	mult 16
+eigenvalue = 3.4641	mult 8
+eigenvalue = 4	mult 6
+eigenvalue = 8	mult 1

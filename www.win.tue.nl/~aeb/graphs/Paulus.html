@@ -1,0 +1,148 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<HTML>
+<HEAD>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <TITLE>Paulus graphs</TITLE>
+</HEAD>
+<BODY>
+<a href="index.html">Up</a>
+
+<h1>Paulus graphs</h1>
+Paulus (1973) made a complete enumeration of the conference matrices
+of order 25 and the two-graphs of order 26.
+He finds that up to isomorphism there are 15 strongly regular graphs
+with parameters <i>v</i> = 25, <i>k</i> = 12, &lambda; = 5, &mu; = 6
+(and spectrum 12<sup>1</sup> 2<sup>12</sup> (-3)<sup>12</sup>),
+and 10 strongly regular graphs with parameters <i>v</i> = 26,
+<i>k</i> = 10, &lambda = 3, &mu = 4
+(and spectrum 10<sup>1</sup> 2<sup>13</sup> (-3)<sup>12</sup>).
+<p>
+These parameter sets are related: a strongly regular graph
+with parameters (26,10,3,4) is member of the switching class
+of a regular two-graph, and if one isolates a point by switching,
+and deletes it, the result is a strongly regular graph with parameters (25,12,5,6).
+Among these graphs are the Latin square graphs of order 5
+on 25 vertices, and the complements of the block graphs of the two
+<a href="STS.html">Steiner triple systems</a> STS(13) on 26 vertices.
+<p>
+The only one among the graphs on 25 vertices with a transitive group
+is Paley(25). None of the graphs on 26 vertices has a transitive group.
+<p>
+<h2>Regular two-graphs on 26 vertices</h2>
+There are 4 regular two-graphs on 26 vertices.
+Some properties:
+<p>
+<table border="1">
+<tr align="center"><th>name</th> <th>group size</th> <th>children</th></tr>
+<tr align="center"><td>A</td> <td>6</td>
+    <td>1<sup>6</sup>,2<sup>6</sup>,3<sup>3</sup>,4<sup>3</sup>,5<sup>3</sup>,6<sup>3</sup>,7,8</td>
+</tr>
+<tr align="center"><td>B</td> <td>72</td>
+    <td>9<sup>12</sup>,10<sup>12</sup>,11,12</td>
+</tr>
+<tr align="center"><td>C</td> <td>39</td>
+    <td>13<sup>13</sup>,14<sup>13</sup></td>
+</tr>
+<tr align="center"><td>D</td> <td>15600</td>
+    <td>15<sup>26</sup></td>
+</tr>
+</table>
+<p>
+Here the 26 children of a regular two-graph on 26 vertices are the serial numbers of
+the conference graphs on 25 vertices obtained by switching a point isolated.
+<p>
+<h2>Conference graphs on 25 vertices</h2>
+There are 15 conference graphs on 25 vertices.
+Some properties:
+<p>
+<table border="1">
+<tr align="center"><th>name</th> <th>group size</th> <th>two-graph</th> <th>complement</th>
+    <th>max cliques</th> <th>comments</th></tr>
+<tr align="center"><td><a href="paulus/p25_01">P25.01</a></td> <td>1</td> <td>A</td> <td>P25.02</td>
+  <td>3<sup>7</sup>,4<sup>74</sup>,5<sup>3</sup></td> <td>&nbsp;</td> </tr>
+<tr align="center"><td><a href="paulus/p25_02">P25.02</a></td> <td>1</td> <td>A</td> <td>P25.01</td>
+  <td>3<sup>5</sup>,4<sup>74</sup>,5<sup>3</sup></td> <td>&nbsp;</td> </tr>
+<tr align="center"><td><a href="paulus/p25_03">P25.03</a></td> <td>2</td> <td>A</td> <td>P25.04</td>
+  <td>3<sup>8</sup>,4<sup>72</sup>,5<sup>3</sup></td> <td>&nbsp;</td> </tr>
+<tr align="center"><td><a href="paulus/p25_04">P25.04</a></td> <td>2</td> <td>A</td> <td>P25.03</td>
+  <td>3<sup>8</sup>,4<sup>72</sup>,5<sup>3</sup></td> <td>&nbsp;</td> </tr>
+<tr align="center"><td><a href="paulus/p25_05">P25.05</a></td> <td>2</td> <td>A</td> <td>P25.06</td>
+  <td>3<sup>4</sup>,4<sup>74</sup>,5<sup>3</sup></td> <td>&nbsp;</td> </tr>
+<tr align="center"><td><a href="paulus/p25_06">P25.06</a></td> <td>2</td> <td>A</td> <td>P25.05</td>
+  <td>3<sup>8</sup>,4<sup>74</sup>,5<sup>3</sup></td> <td>&nbsp;</td> </tr>
+<tr align="center"><td><a href="paulus/p25_07">P25.07</a></td> <td>6</td> <td>A</td> <td>P25.08</td>
+  <td>3<sup>14</sup>,4<sup>68</sup>,5<sup>3</sup></td> <td>&nbsp;</td> </tr>
+<tr align="center"><td><a href="paulus/p25_08">P25.08</a></td> <td>6</td> <td>A</td> <td>P25.07</td>
+  <td>3<sup>14</sup>,4<sup>68</sup>,5<sup>3</sup></td> <td>&nbsp;</td> </tr>
+<tr align="center"><td><a href="paulus/p25_09">P25.09</a></td> <td>6</td> <td>B</td> <td>P25.10</td>
+  <td>3<sup>54</sup>,4<sup>58</sup>,5<sup>3</sup></td> <td>&nbsp;</td> </tr>
+<tr align="center"><td><a href="paulus/p25_10">P25.10</a></td> <td>6</td> <td>B</td> <td>P25.09</td>
+  <td>3<sup>54</sup>,4<sup>58</sup>,5<sup>3</sup></td> <td>&nbsp;</td> </tr>
+<tr align="center"><td><a href="paulus/p25_11">P25.11</a></td> <td>72</td><td>B</td> <td>P25.12</td>
+  <td>3<sup>36</sup>,4<sup>64</sup>,5<sup>3</sup></td> <td>&nbsp;</td> </tr>
+<tr align="center"><td><a href="paulus/p25_12">P25.12</a></td> <td>72</td><td>B</td> <td>P25.11</td>
+  <td>3<sup>84</sup>,4<sup>4</sup>,5<sup>15</sup></td> <td>LS(5)</td> </tr>
+<tr align="center"><td><a href="paulus/p25_13">P25.13</a></td> <td>3</td> <td>C</td> <td>P25.14</td>
+  <td>3<sup>3</sup>,4<sup>75</sup>,5<sup>3</sup></td> <td>&nbsp;</td> </tr>
+<tr align="center"><td><a href="paulus/p25_14">P25.14</a></td> <td>3</td> <td>C</td> <td>P25.13</td>
+  <td>3<sup>1</sup>,4<sup>75</sup>,5<sup>3</sup></td> <td>&nbsp;</td> </tr>
+<tr align="center"><td><a href="paulus/p25_15">P25.15</a></td> <td>600</td> <td>D</td> <td>P25.15</td>
+  <td>3<sup>100</sup>,5<sup>15</sup></td> <td>Paley(25)</td></tr>
+</table>
+<p>
+There are two main classes of Latin squares of order 5. One gives Paley(25),
+the other is labeled here with LS(5).
+<p>
+<h2>Strongly regular graphs with parameters (26,10,3,4)</h2>
+There are 10 strongly regular graphs with parameters (26,10,3,4).
+Some properties:
+<p>
+<table border="1">
+<tr align="center"><th>name</th> <th>group size</th> <th>two-graph</th>
+  <th>max cliques</th> <th>max cocliques</th> <th>comments</th></tr>
+<tr align="center"><td><a href="paulus/p26_01">P26.01</a></td> <td>1</td> <td>A</td>
+  <td>3<sup>130</sup></td> <td>4<sup>115</sup>,5<sup>76</sup>,6<sup>1</sup></td>
+  <td>&nbsp;</td> </tr>
+<tr align="center"><td><a href="paulus/p26_02">P26.02</a></td> <td>2</td> <td>A</td>
+  <td>3<sup>130</sup></td> <td>4<sup>116</sup>,5<sup>76</sup>,6<sup>1</sup></td>
+  <td>&nbsp;</td> </tr>
+<tr align="center"><td><a href="paulus/p26_03">P26.03</a></td> <td>2</td> <td>A</td>
+  <td>3<sup>122</sup>,4<sup>2</sup></td> <td>4<sup>100</sup>,5<sup>81</sup>,6<sup>1</sup></td>
+  <td>&nbsp;</td> </tr>
+<tr align="center"><td><a href="paulus/p26_04">P26.04</a></td> <td>6</td> <td>A</td>
+  <td>3<sup>122</sup>,4<sup>2</sup></td> <td>4<sup>104</sup>,5<sup>81</sup>,6<sup>1</sup></td>
+  <td>&nbsp;</td> </tr>
+<tr align="center"><td><a href="paulus/p26_05">P26.05</a></td> <td>6</td> <td>A</td>
+  <td>3<sup>98</sup>,4<sup>8</sup></td> <td>4<sup>164</sup>,5<sup>24</sup>,6<sup>13</sup></td>
+  <td>STS(13)</td> </tr>
+<tr align="center"><td><a href="paulus/p26_06">P26.06</a></td> <td>4</td> <td>B</td>
+  <td>3<sup>90</sup>,4<sup>10</sup></td> <td>4<sup>136</sup>,5<sup>70</sup>,6<sup>3</sup></td>
+  <td>&nbsp;</td> </tr>
+<tr align="center"><td><a href="paulus/p26_07">P26.07</a></td> <td>6</td> <td>B</td>
+  <td>3<sup>82</sup>,4<sup>12</sup></td> <td>4<sup>124</sup>,5<sup>75</sup>,6<sup>3</sup></td>
+  <td>&nbsp;</td> </tr>
+<tr align="center"><td><a href="paulus/p26_08">P26.08</a></td> <td>3</td> <td>C</td>
+  <td>3<sup>126</sup>,4<sup>1</sup></td> <td>4<sup>95</sup>,5<sup>81</sup>,6<sup>1</sup></td>
+  <td>&nbsp;</td> </tr>
+<tr align="center"><td><a href="paulus/p26_09">P26.09</a></td> <td>39</td> <td>C</td>
+  <td>3<sup>78</sup>,4<sup>13</sup></td> <td>4<sup>104</sup>,5<sup>39</sup>,6<sup>13</sup></td>
+  <td>STS(13)</td> </tr>
+<tr align="center"><td><a href="paulus/p26_10">P26.10</a></td> <td>120</td> <td>D</td>
+  <td>3<sup>90</sup>,4<sup>10</sup></td> <td>4<sup>210</sup>,5<sup>12</sup>,6<sup>13</sup></td>
+  <td>&nbsp;</td> </tr>
+</table>
+
+<p>
+References:
+<p>
+A. J. L. Paulus,
+<i>Conference matrices and graphs of order 26</i>,
+Technische Hogeschool Eindhoven, report WSK 73/06, Eindhoven,
+1973, 89 pp.
+<p>
+See also <a href="http://www.maths.gla.ac.uk/~es/twograph/reg2graph.26.hex">Ted Spence's page</a>
+and the Notebook on <a href="http://mathworld.wolfram.com/PaulusGraphs.html">Wolfram's page</a>.
+<!-- Wolfram P25 numbering 2,4,1,6,5,12,7,8,10,13,11,14,3,9,15 for my P25.1-15 -->
+<!-- Wolfram P26 numbering 10,9,5,4,3,1,2,6,7,8 for my P26.1-10 -->
+</BODY>
+</HTML>

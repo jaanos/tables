@@ -1,0 +1,182 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>Schläfli graph</title>
+</head>
+<body>
+<a href="index.html">Up</a>
+<p>
+<img src="pics/Schlaefli.jpeg">
+<p>
+Ludwig Schläfli (1814-1895) is the discoverer of the 27 lines
+on a cubic surface.
+<p>
+
+<h1>Schläfli graph</h1>
+The Schläfli graph &Gamma; is the unique strongly regular graph
+with parameters <i>v</i> = 27, <i>k</i> = 16, &lambda; = 10, &mu; = 8.
+<p>
+It the E<sub>6</sub>(1) graph, the local graph of the E<sub>7</sub>(1)
+(Gosset) graph.
+Its local graph is the <a href="Clebsch.html">Clebsch graph</a>.
+It is the complement of the collinearity graph of the unique
+generalized quadrangle GQ(2,4).
+<p>
+This graph is uniquely determined by its parameters (Seidel).
+
+<h2>Group</h2>
+The full group of automorphisms is
+G = W(E<sub>6</sub>) = U(4,2).2 = O<sup>–</sup>(6,2).2 = O(5,3).2
+acting rank 3, with point stabilizer 2<sup>4</sup>:Sym(5).
+
+<h2>The 27 lines on a smooth cubic surface</h2>
+A nonsingular cubic surface contains 27 lines.
+The graph on these 27 lines, adjacent when they meet,
+is the complement of &Gamma;.
+<p>
+For example, the surface
+X<sup>3</sup>+Y<sup>3</sup>+Z<sup>3</sup>+W<sup>3</sup> = 0
+contains the 27 lines like <(1,–a,0,0),(0,0,1,–b)> where
+a<sup>3</sup> = b<sup>3</sup> = 1.
+(The values a, b can each be chosen in 3 ways, and the
+coordinate split XY|ZW can be chosen in 3 ways, 27 choices
+altogether.)
+<p>
+Each of these 27 lines intersects 10 others, and these 10 intersect in pairs,
+so that each of the 27 lines is in 5 coplanar triples
+and there are 45 coplanar triples altogether.
+<p>
+In the example, the lines
+<(1,–a,0,0),(0,0,–b,c)> and <(1,0,–b,0),(0,–a,0,c)> and
+<(1,0,0,–c),(0,a,–b,0)> are coplanar, and meet in the three points
+(1,–a,–b,c), (1,–a,b,–c), (1,a,–b,–c).
+In a field of characteristic 2 these three points coincide
+and we find 45 points and 27 lines. Over GF(4) the surface is a unital,
+and we see that the group is U(4,2).
+
+<h2>Further constructions</h2>
+&Gamma; is the complement of the collinearity graph of
+isotropic points and totally isotropic lines in the
+O<sup>–</sup>(6,2) geometry.
+
+&Gamma; is the graph on the totally isotropic lines in the
+U(4,2) geometry, adjacent when disjoint.
+
+<h2>Subgraphs</h2>
+We give the substructures of &Gamma; associated to the 5 maximal
+subgroups of G distinct from U(4,2), sorted according to increasing
+orbit size.
+<p>
+a) <i>A vertex</i>.<br>
+There are 27 of these, forming a single orbit.
+The stabilizer is 2<sup>4</sup>:Sym(5) with vertex orbit sizes 1+10+16.
+In the representation in O<sup>–</sup>(6,2) these are the isotropic points.
+In the representation in U(4,2) these are the totally isotropic lines.
+<p>
+b) <i>A K<sub>2</sub>&times;K<sub>6</sub> subgraph (a "double six")</i>.<br>
+There are 36 of these, forming a single orbit.
+The stabilizer is Sym(6)&times;2 with vertex orbit sizes 12+15.
+The orbits of size 15 are the subsets that carry a sub-GQ(2,2) of GQ(2,4).
+In the representation in O<sup>–</sup>(6,2) these are the nonisotropic points.
+<p>
+The largest cliques in &Gamma; have size 6, and &Gamma; has
+72 6-cliques, forming a single orbit. The stabilizer
+of one has orbit sizes 1+20+30+20+1 on them.
+These 72 6-cliques form a root system of type E<sub>6</sub>,
+where inner product 2, 1, 0, –1, –2 corresponds to intersection size
+6, 3, 1, 0, 0. The last two orbits (20+1 6-cliques disjoint from a
+given one) are distinguished since the 20 have distance 2 and the
+1 has distance 3 to the given one in the graph on the 6-cliques,
+adjacent when they have 3 points in common.
+<p>
+<img src="pics/e6.png" alt="diagram of the 72 roots of E6">
+<p>
+The antipodal quotient of this graph, that is, the graph
+on the double sixes, is strongly regular with parameters
+(v,k,&lambda;,&mu;) = (36,20,10,12).
+<p>
+The graph &Gamma; has 72+216 maximal cliques, namely the above
+72 6-cliques, and 216 maximal 5-cliques, forming a single orbit.
+These 5-cliques are 5-cocliques in GQ(2,4), the common neighbours
+of two nonadjacent vertices,
+and hence correspond to the edges of &Gamma;. The stabilizer
+of a maximal 5-clique, that is, the stabilizer of an edge,
+is Sym(5)&times;2 with vertex orbit sizes 2+5+10+10.
+In the representation in O<sup>–</sup>(6,2) these are the
+O<sup>–</sup>(4,2) elliptic quadrics.
+<!--
+the edges here are the "cross-edges in the K2xK6"
+and correspond to ovoids in a GQ(2,2)
+-->
+<p>
+c) <i>A nice partition into 3-cocliques</i><br>
+GQ(2,4) contains 200 spreads falling into two orbits with sizes 40+160.
+Dually, GQ(4,2) contains two types of ovoids (Brouwer & Wilbrink).
+The unitary (GQ(4,2)) formulation distinguishes the 40
+plane ovoids (determined by the 40 nonisotropic points)
+and the 160 tripods (with 3x3=9 isotropic points on the three
+hyperbolic lines pq, pr, ps where {p,q,r,s} is a basis
+of nonisotropic points).
+<p>
+Of the nice ("plane") type there are 40, forming a single orbit.
+The stabilizer is 3<sub>+</sub><sup>1+2</sup>:2S<sub>4</sub>.
+In the representation in U(4,2) these are the nonisotropic points.
+<p>
+d) <i>A partition into three GQ(2,1)</i>.<br>
+There are 40 of these, forming a single orbit.
+The stabilizer is 3<sup>3</sup>:(S<sub>4</sub>&times;2)
+with vertex orbit size 27.
+<p>
+GQ(2,4) has 120 sub-GQ(2,1) forming a single orbit.
+Each GQ(2,1) is disjoint from two others (that are disjoint)
+and hence determines a unique partition.
+<p>
+<!--
+In the representation in O(5,3) these are the isotropic points.
+<p>
+-->
+In the representation in O<sup>–</sup>(6,2) these are the
+ways of writing the space as orthogonal direct sum of three
+elliptic lines O<sup>–</sup>(2,2): given any two O<sup>–</sup>(2,2)
+their direct sum is a O<sup>+</sup>(4,2) with a GQ(2,1).
+<p>
+In the representation in U(4,2) these are the orthogonal bases
+consisting of 4 nonisotropic points: any two basis points are
+orthogonal to three isotropic points, and the basis determines
+18 points of weight 2, that is, 18 lines of GQ(2,4).
+The three splits of the basis into pairs determine the three GQ(2,1),
+that are K<sub>3,3</sub> in GQ(4,2).
+<p>
+Given a 3GQ(2,1), the point-line incidence graph where the points
+are the 27 vertices of &Gamma; and the lines are the 27 3-cocliques
+not inside one of the three GQ(2,1), is the <a href="Gray.html">Gray graph</a>.
+<p>
+e) <i>A 3-coclique</i> (line in GQ(2,4)).<br>
+There are 45 of these, forming a single orbit.
+The stabilizer is (2.(A<sub>4</sub> &times; A<sub>4</sub>).2).2
+with vertex orbit sizes 3+24.
+<!-- SL(2,3).2.2.3.2.2 -->
+In the representation in O<sup>–</sup>(6,2) these are the totally
+isotropic lines.
+In the representation in U(4,2) these are the isotropic points.
+<p>
+<h2>Clique and Independence number</h2>
+Maximal cliques in &Gamma; have size 6.
+Maximal cocliques in &Gamma; have size 3.
+As observed above, &Gamma; has chromatic number 9 and there are
+two essentially different ways to color &Gamma; with 9 colors.
+The complementary graph has chromatic number 6.
+<p>
+<h2>References</h2>
+A. E. Brouwer & H. A. Wilbrink,
+<i>Ovoids and fans in the generalized quadrangle GQ(4,2)</i>,
+MC report 1981; Geom. Dedicata <b>36</b> (1990) 121-124.
+<p>
+J. J. Seidel,
+<i>Strongly regular graphs with (–1,1,0) adjacency matrix
+having eigenvalue 3</i>,
+Lin. Alg. Appl. <b>1</b> (1968) 281-298.
+<p>
+</body>
+</html>

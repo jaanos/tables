@@ -1,0 +1,140 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<HTML>
+<HEAD>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <TITLE>Paley</TITLE>
+</HEAD>
+<BODY>
+<a href="index.html">Up</a>
+
+<H1>Paley graphs</H1>
+Paley graphs are named after Raymond E.A.C. Paley (1907-1933).
+Paley was an MIT mathematician. He worked together with Norbert Wiener.
+He died in an avalanche in 1933 while skiing in the Canadian Rockies.
+<p>
+The graphs that bear his name are constructed as follows:
+Given a finite field <i>F</i> with <i>q</i> elements,
+make a graph with vertex set <i>F</i> where two vertices
+are joined when their difference is a square in the field.
+This is an undirected graph when <i>q</i> is congruent 1 (mod 4).
+<p>
+For <i>q</i> = 4<i>t</i> + 1, the parameters are
+<i>v</i> = 4<i>t</i> + 1,
+<i>k</i> = 2<i>t</i>,
+&lambda; = <i>t</i> − 1,
+&mu; = <i>t</i>.
+<p>
+Examples (<i>q</i> = 5 and <i>q</i> = 9):
+<p>
+<img src="pics/srg5.png">
+<img src="pics/srg9.png">
+<p>
+For <i>q</i> = 13 the Paley graph is locally a hexagon, so that
+the graph is a quotient of the hexagonal grid:
+<p>
+<img src="pics/srg13.png">
+<p>
+(More generally, the graph on the elements of GF(q), where q=6t+1,
+where x and y are adjacent when (y−x)<sup>6</sup> = 1,
+is locally a hexagon, unless q is a power of 7.)
+<p>
+Paley graphs are isomorphic to their complements: if <i>a</i> is
+a nonsquare, then the map that sends <i>x</i> to <i>ax</i> is
+an isomorphism from the graph to its complement.
+<p>
+<!--These graphs make good random graphs ...
+It is conjectured that these graphs are Ramsey graphs.-->
+<p>
+<H2>Independence and chromatic number</H2>
+The
+<a href="http://www.research.ibm.com/people/s/shearer/indpal.html">independence numbers</a>
+of the Paley graphs of prime order less than 7000 were computed by Shearer.
+<p>
+In I. Broere, D. Döman, J. N. Ridley,
+<i>The clique numbers and chromatic numbers of certain Paley graphs</i>,
+Quaestiones Math. <b>11</b> (1988) 91-93,
+it is shown that when <i>q</i> is an even power of a prime, the clique and
+chromatic number are both sqrt(<i>q</i>).
+(Indeed, this is trivial: the subfield gives a clique, and its
+translates give a partitions into cliques. No larger cliques exist by the
+Hoffman bound. But the graph is self-complementary.)
+<p>
+A much stronger result is found in
+A. Blokhuis,
+<i>On subsets of GF(q<sup>2</sup>) with square differences</i>,
+Indag. Math. <b>46</b> (1984) 369-372.
+This paper shows that if a subset of GF(<i>q</i>) has size sqrt(<i>q</i>)
+and all differences are squares, or all differences are nonsquares,
+then the subset is the affine image of a subfield.
+In particular, this determines all cliques and all cocliques
+of size sqrt(<i>q</i>) in the Paley graph of order <i>q</i>.
+<p>
+Smaller maximal cliques are constructed in
+R. D. Baker, G. L. Ebert, J. Hemmeter, A. J. Woldar,
+<i>Maximal cliques in the Paley graph of square order</i>
+J. Statist. Plann. Inference <b>56</b> (1996) 33-38.
+<p>
+A small table with independence numbers and chromatic numbers:
+<p>
+<center><table border>
+<tr><td><i>q</i></td><td></td>
+    <td>5</td><td>9</td><td>13</td><td>17</td><td>25</td>
+    <td>29</td><td>37</td><td>41</td><td>49</td><td>53</td><td>61</td>
+    <td>73</td><td>81</td><td>89</td><td>97</td><td>101</td><td>109</td>
+    <td>113</td><td>121</td><td>137</td><td>149</td><td>157</td></tr>
+<tr><td>&alpha;</td><td></td>
+    <td>2</td><td>3</td><td>3</td><td>3</td><td>5</td>
+    <td>4</td><td>4</td><td>5</td><td>7</td><td>5</td><td>5</td>
+    <td>5</td><td>9</td><td>5</td><td>6</td><td>5</td><td>6</td>
+    <td>7</td><td>11</td><td>7</td><td>7</td><td>7</td></tr>
+<tr><td>&chi;</td><td></td>
+    <td>3</td><td>3</td><td>5</td><td>6</td><td>5</td>
+    <td>8</td><td>10</td><td>9</td><td>7</td><td>11</td><td>13</td>
+    <td>15</td><td>9</td><td>18</td><td>17</td><td>21</td><td>19</td>
+    <td>17</td><td>11</td><td>20</td><td>22</td><td>23</td></tr>
+</table></center>
+
+<H2>Dominating sets</H2>
+The size of the smallest dominating set in the Paley graph P(<i>q</i>)
+is less than 1 + log <i>q</i> (found by picking greedily), and at least
+(0.5 − &epsilon;) log <i>q</i> (use the randomness of the Paley graph),
+where the logarithms have base 2.
+For <i>q</i> &lt; 2048 one has:
+<p>
+<center><table border>
+<tr><th>size</th><th><i>q</i></th></tr>
+<tr><td>2</td> <td>5</td></tr>
+<tr><td>3</td> <td>9-25</td></tr>
+<tr><td>4</td> <td>29-81</td></tr>
+<tr><td>5</td> <td>89-373, 401-409, 433, 457, 569, 953</td></tr>
+<tr><td>6</td> <td>389-397, 421, 449, 461-557, 577-941, 961-1213,<br>
+1229, 1249-1289, 1321, 1369, 1409, 1553, 1669</td></tr>
+<tr><td>7</td> <td>1217, 1237, 1297-1301, 1361, 1373-1381,<br>
+1429-1549, 1597-1657, 1681-2029</td></tr>
+</table></center>
+<p>
+Similarly, for Paley tournaments P(<i>q</i>) one has:
+<p>
+<center><table border>
+<tr><th>size</th><th><i>q</i></th></tr>
+<tr><td>2</td> <td>3</td></tr>
+<tr><td>3</td> <td>7-11</td></tr>
+<tr><td>4</td> <td>19-59, 103</td></tr>
+<tr><td>5</td> <td>67-83, 107-311, 343, 379</td></tr>
+<tr><td>6</td> <td>331, 347-367, 383-1151, 1171, 1223, 1331, 1723</td></tr>
+<tr><td>7</td> <td>1163, 1187, 1231-1327, 1367-1699, 1747-2039</td></tr>
+</table></center>
+<p>
+
+
+<H2>Reference</H2>
+<!--
+András Gács & Tamás Szőnyi, <i>Random constructions and density results</i>,
+Designs, Codes and Cryptography <b>47</b> (2008) 267-287.
+
+older, with same bound:
+-->
+Changwoo Lee, <i>The domination number of a tournament</i>,
+Kangweon-Kyungki Math. J. <b>9</b> (2001) 21-28.
+</BODY>
+</HTML>

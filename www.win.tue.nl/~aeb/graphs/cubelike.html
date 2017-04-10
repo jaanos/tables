@@ -1,0 +1,154 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<HTML>
+<HEAD>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <TITLE>Cube-like graphs</TITLE>
+</HEAD>
+<BODY>
+<a href="index.html">Up</a>
+
+<H1>Cubelike graphs</H1>
+A <i>cubelike graph</i> is a Cayley graph where the underlying group G
+is the elementary Abelian group of order 2<sup>m</sup>.
+Thus, the vertex set is G, and two vertices are adjacent
+when their difference is in S, the difference set of the graph.
+<p>
+For example, the <a href="Clebsch.html">Clebsch graph</a> is cubelike.
+<p>
+<H2>Spectrum</H2>
+A cubelike graph has integral spectrum (Lovász).
+<p>
+<H2>Chromatic number</H2>
+A cubelike graph does not have chromatic number 3 (Payan).
+Examples of cubelike graphs with chromatic numbers 2<sup>t</sup> (for any t),
+6 and 7 are known.
+It is unknown whether there exists a cubelike graph with chromatic number 5.
+<p>
+<H2>Cubelike hull</H2>
+Let X be an arbitrary graph, and let X<sub>0</sub> resp. X<sub>1</sub>
+be the graphs that have as vertex set the collection of subsets of the
+vertex set of X of even (odd) size, where two subsets are adjacent
+when their symmetric difference is an edge of X.
+Then X<sub>0</sub> and X<sub>1</sub> are isomorphic.
+<p>
+Put H(X) = X<sub>1</sub> and call it the <i>cubelike hull</i> of X.
+The graph H(X) is cubelike, and contains X as an induced subgraph.
+<p>
+Any homomorphism &phi; : X → C, where C is cubelike,
+extends to a homomorphism &psi; : H(X) → C.
+This gives information on the chromatic number of C.
+<p>
+For example, if C is not bipartite, then it contains an odd cycle X,
+but for a (2d+1)-cycle X the cubelike hull H(X) is the folded (2d+1)-cube
+which has chromatic number 4. This proves Payan's theorem.
+<p>
+The cubelike hull H(X) of the complete graph K<sub>n</sub>
+is the halved n-cube. Thus, if a cubelike graph C contains K<sub>5</sub>,
+then there is a homomorphism from H(K<sub>5</sub>), the Clebsch graph,
+into C, and hence C has chromatic number at least 8.
+<p>
+If X is cubelike, then X → H(X) → X, so that &chi;(H(X)) = &chi;(X).
+<p>
+<h2>Independence number and chromatic number of halved cubes</h2>
+More generally, the chromatic number &chi;(H(K<sub>n</sub>)) satisfies
+&chi;(H(K<sub>n</sub>)) ≥ 2<sup>n–1</sup> / &alpha;(H(K<sub>n</sub>)),
+and &alpha;(H(K<sub>n</sub>)) equals the size of the largest binary code
+of word length n and minimum distance 4. This explains the lower bounds
+in the table below. (For the bounds on codes, see, e.g.,
+<a href="http://www.win.tue.nl/~aeb/codes/binary-1.html">this table</a>.)
+<p>
+<table border="1" cellpadding="3">
+<tr><td>n</td> <td>1</td> <td>2</td> <td>3</td> <td>4</td> <td>5</td> 
+<td>6</td> <td>7</td> <td>8</td> <td>9</td> <td>10</td> 
+<td>11</td> <td>12</td> <td>13</td> <td>14</td> <td>15</td>
+<td>16</td></tr>
+
+<tr><td>&alpha;</td> <td>1</td> <td>1</td> <td>1</td> <td>2</td> <td>2</td>
+<td>4</td> <td>8</td> <td>16</td> <td>20</td> <td>40</td>
+<td>72</td> <td>144</td> <td>256</td> <td>512</td> <td>1024</td>
+<td>2048</td> </tr>
+
+<tr><td>&chi;</td> <td>1</td> <td>2</td> <td>4</td> <td>4</td> <td>8</td>
+<td>8</td> <td>8</td> <td>8</td> <td>13-14</td> <td>13-15</td>
+<td>15-16</td> <td>15-16</td> <td>16</td> <td>16</td> <td>16</td>
+<td>16</td> </tr>
+</table>
+<p>
+Clearly the &chi;(H(K<sub>n</sub>)) are a non-decreasing function of n.
+<p>
+If n is a power of 2, then K<sub>n</sub> is cubelike, so that
+&chi;(H(K<sub>n</sub>)) = &chi;(K<sub>n</sub>) = n for these n.
+<p>
+The upper bounds 14 and 15 for &chi;(H(K<sub>9</sub>)) and
+&chi;(H(K<sub>10</sub>)) are due to Stefan Hougardy and Gordon Royle.
+
+<H2>Projective formulation</H2>
+The difference set S can be viewed as subset of the hyperplane
+PG(m–1,2) at infinity of the affine geometry G. This means that
+we have a (monotone) function "chromatic number" on the subsets
+of a projective space over GF(2).
+This number is 1 for the empty set, and 2 for sets contained in
+the complement of a hyperplane (and only for these), and never 3.
+<blockquote>
+<font size="-1">
+Proof: Suppose &chi;=2 and we have color classes A and B.
+Let X be the hyperplane PG(m–1,2) at infinity.
+Since A+s=B and B+s=A for any s in S, every even sum of elements of S is in X\S.
+Let Y be the subspace of X spanned by S.
+Then X\S contains the hyperplane of Y consisting of even sums of points in S,
+and hence X\S contains a hyperplane of X.
+</font>
+</blockquote>
+The chromatic number of the union of two sets is at most the product
+of the chromatic numbers of both sets.
+<p>
+If S is disjoint from a subspace T of projective dimension t–1,
+then the partition of G determined by T (into t-dimensional flats
+with T at infinity) provides a coloring with 2<sup>m–t</sup> colors.
+<p>
+For m &lt; 5 the chromatic number only takes the values 1, 2, 4, 8, 16.
+In PG(4,2), a nondegenerate quadric S has chromatic number 7.
+For example, consider the quadric
+Q(x) = &Sigma;x<sub>i</sub><sup>2</sup> + &Sigma;x<sub>j</sub>x<sub>k</sub>
+(summed over all i and j &lt; k) with nucleus (radical) {11111}
+(where 11111 stands for (1,1,1,1,1)).
+The isotropic points are the binary vectors of weights 3 and 4.
+A 7-coloring of G is given by the six balls of radius 1 around
+the vectors 11000, 10100, 00011, 01110, 01101, 10011 and the pair
+{00000,11111}. It is easy to check that there is no 6-coloring.
+<p>
+In PG(4,2), S has chromatic number at most 4 if and only if
+S is contained in the complement of a plane [Blokhuis].
+(Indeed, suppose &chi;(S) ≤ 4 while S meets all planes.
+A color with a monochromatic plane in AG(5,2) colors only
+these four points, otherwise S would miss a plane.
+For every color without monochromatic plane all pairs of points
+with that color determine a different direction, so if the
+colorclass has size k, we find (k choose 2) points outside S,
+and k ≤ 7 since S contains more than 3 points.
+So four colors do not suffice to color the 32 points of AG(5,2).)
+<p>
+
+<H2>References</H2>
+<p>
+M.R. Best & A.E. Brouwer,
+<i>The triply shortened binary Hamming code is optimal</i>,
+Discrete Math. <b>17</b> (1977) 235-245.
+<p>
+C. Payan,
+<i>On the Chromatic Number of Cube-like Graphs</i>,
+Discrete Math. <b>103</b> (1992) 271-277.
+<p>
+G. Royle,
+<i>Coloring cubelike graphs</i>,
+<a href="http://people.csse.uwa.edu.au/gordon/talks/cubelikevac.pdf">PDF</a>.
+<p>
+G.M. Ziegler,
+<i>Coloring Hamming graphs, optimal binary codes, and the
+0/1-Borsuk problem in low dimensions</i>,
+Springer LNCS, Computational Discrete Mathematics, 2001, pp. 159-171.
+<p>
+
+
+</BODY>
+</HTML>

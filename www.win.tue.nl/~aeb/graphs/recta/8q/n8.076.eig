@@ -1,0 +1,15 @@
+eigenvalue = -4	mult 2
+eigenvalue = -3.64575	mult 5
+eigenvalue = -2.73205	mult 3
+eigenvalue = -2	mult 6
+eigenvalue = -1.64575	mult 5
+eigenvalue = -0.732051	mult 3
+eigenvalue = 0	mult 4
+eigenvalue = 0.732051	mult 3
+eigenvalue = 1.64575	mult 5
+eigenvalue = 2	mult 1
+eigenvalue = 2.73205	mult 3
+eigenvalue = 3.64575	mult 5
+eigenvalue = 4	mult 1
+eigenvalue = 6	mult 1
+eigenvalue = 8	mult 1

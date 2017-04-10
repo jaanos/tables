@@ -1,0 +1,124 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>Brouwer-Haemers graph</title>
+</head>
+<body>
+<a href="index.html">Up</a>
+
+<h1>Brouwer-Haemers graph</h1>
+There is a unique strongly regular graph &Gamma; with parameters
+<i>v</i> = 81, <i>k</i> = 20, &lambda; = 1, &mu; = 6,
+namely the <a href="VO.html">affine orthogonal graph</a> VO<sup>–</sup>(4,3).
+Construction is folklore. An early reference is Mesner (1964).
+Uniqueness was proved by Brouwer & Haemers (1992).
+The spectrum is 20<sup>1</sup> 2<sup>60</sup> (–7)<sup>20</sup>.
+<p>
+<h2>Group</h2>
+The full group of automorphisms is
+3<sup>4</sup>:((2&times;S<sub>6</sub>).2)
+acting rank 3, with point stabilizer (2&times;S<sub>6</sub>).2.
+<p>
+<h2>Construction</h2>
+(i) This is the graph on the vectors of a 4-dimensional vector space
+over GF(3) provided with a quadratic form of Witt index 1,
+where two vectors are adjacent when the quadratic form
+vanishes on their difference.
+(We have O<sup>–</sup><sub>4</sub>(3) = A<sub>6</sub>, which has
+index 2 in PGO<sup>–</sup><sub>4</sub>(3) = S<sub>6</sub>, which has
+index 2 in GO<sup>–</sup><sub>4</sub>(3) = 2&times;S<sub>6</sub>,
+which again has index 2 in the group preserving the form up to a constant.)
+<p>
+A symmetric representation is found by taking
+<bf>1</bf><sup>perp</sup>/<bf>1</bf> in a 6-dimensional vector space
+over GF(3) provided with "sum of squares", i.e. the weight,
+where two vertices are adjacent when their difference has weight 3.
+<p>
+And instead of taking sum 0 (that is, <bf>1</bf><sup>perp</sup>),
+we can also take sum 1 (or sum 2).
+<p>
+(ii) Equivalently, take the points of AG(4,3), adjacent when the
+joining line hits a fixed elliptic quadric in the hyperplane at infinity.
+<p>
+(iii) This graph also is the Hermitean forms graph on GF(9)<sup>2</sup>.
+<p>
+(iv) This graph also is the coset graph of the truncated ternary Golay code.
+<p>
+(v) This graph also is the graph on GF(81) where two points are adjacent
+when their difference is a fourth power.
+<p>
+<h2>Supergraphs</h2>
+This graph is the second subconstituent of the
+<a href="U4_3.html">GQ(3,9) collinearity graph</a>.
+Consequently, it is also found inside the
+<a href="McL.html">McL graph</a>.
+<p>
+<h2>Cocliques</h2>
+This graph has 324 maximal 6-cocliques,
+68445 maximal 9-cocliques,
+338580 maximal 10-cocliques,
+87480 maximal 11-cocliques,
+21060 maximal 12-cocliques,
+and 324 maximal 15-cocliques.
+No other maximal cocliques occur.
+<p>
+The 324 15-cocliques form a single orbit, with stabilizer Sym(6).
+The stabilizer has three orbits, of sizes 15+60+6, where such
+orbits of size 6 are the maximal 6-cocliques.
+Such cocliques are most easily seen in the representation
+of ternary vectors of length 6 with sum 1, modulo the all-1 vector.
+Each vertex has a unique representative of weight 1, 2, or 3,
+and there are 6+15+60 such vectors.
+<p>
+<h2>Chromatic number</h2>
+This graph has chromatic number 7 [E. van Dam].
+<!-- Willem reports that Edwin found this; I checked and agree -->
+<p>
+<h2>Second subconstituent</h2>
+The second subconstituent &Delta; of &Gamma; has spectrum
+14<sup>1</sup> 2<sup>40</sup> (–4)<sup>10</sup> (–6)<sup>9</sup>.
+The automorphism group of &Delta; is (2<sup>2</sup>&times;S<sub>6</sub>).2,
+twice as large as the point stabilizer of the automorphism group of &Gamma;.
+<p>
+<font size="-2">
+Blokhuis, Brouwer & Haemers show that &Delta; is uniquely determined
+by its spectrum. Sketch of the proof:
+If the adjacency matrix is A, then (A–2I)(A+4I)(A+6I) = 72J
+and it follows that each vertex is in 4 triangles.
+The local graph is 6K<sub>1</sub>+4K<sub>2</sub> (for otherwise
+some point neighbourhood would contain seven isolated points
+and the 4&times;4 matrix of average row sums for the partition
+with sizes 1+7+7+45 would have 2nd largest eigenvalue larger than 2,
+contradiction). The matrix B = 4J–(A+2I)<sup>2</sup>+16I is psd
+so that two nonadjacent vertices have at least 2 and at most 6 common
+neighbours. We find a representation of &Delta; in real 10-space,
+with vectors of squared norm 2, and inner products –&lambda; for
+adjacent vertices, and 4–&mu; for nonadjacent vertices.
+<!--this latter observation also implies that &lambda; is 0 or 1-->
+B satisfies JB=0 and AB=–4B and B<sup>2</sup>=12B so that the rows
+of B are integral vectors with sum 0 and squared norm 24.
+If rows x and y of B are identical, then &mu;(x,y) = 2 and we see
+two 2's and at least 14 –1's in each row, and the row sum is nonzero,
+contradiction. It follows that the representation is injective:
+we have 60 distinct roots. Now examination of the root system shows
+that it must be A<sub>5</sub>+A<sub>5</sub>, and uniqueness follows.
+</font>
+<p>
+<h2>References</h2>
+<p>
+A.E. Brouwer & W.H. Haemers,
+<i>Structure and uniqueness of the (81,20,1,6) strongly regular graph</i>,
+Discrete Math. <b>106/107</b> (1992) 77-82.
+<p>
+D.M. Mesner,
+<i>Negative Latin square designs</i>,
+<a href="http://www.stat.ncsu.edu/information/library/mimeo.php">Institute
+of Statistics, UNC, NC Mimeo series</a> <b>410</b>, November 1964.
+<p>
+A. Blokhuis, A. E. Brouwer & W. H. Haemers,
+<i>The graph with spectrum
+14<sup>1</sup> 2<sup>40</sup> (−4)<sup>10</sup> (−6)<sup>9</sup></i>,
+Designs, Codes & Cryptography <b>65</b> (2012) 71-75.
+</body>
+</html>

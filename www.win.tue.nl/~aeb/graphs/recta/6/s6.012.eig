@@ -1,0 +1,12 @@
+eigenvalue = -6	mult 1
+eigenvalue = -4	mult 2
+eigenvalue = -3.41421	mult 6
+eigenvalue = -2	mult 1
+eigenvalue = -1.41421	mult 12
+eigenvalue = -0.585786	mult 6
+eigenvalue = 0.585786	mult 6
+eigenvalue = 1.41421	mult 12
+eigenvalue = 2	mult 1
+eigenvalue = 3.41421	mult 6
+eigenvalue = 4	mult 2
+eigenvalue = 6	mult 1

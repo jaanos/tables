@@ -1,0 +1,111 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<HTML>
+<HEAD>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <TITLE>Perkel graph</TITLE>
+</HEAD>
+<BODY>
+<a href="index.html">Up</a>
+
+<H1>Perkel graph</H1>
+There is a unique distance-regular graph with intersection array
+{6,5,2;1,1,3}. It has 57 vertices and spectrum
+6 ((3±√5)/2)<sup>18</sup> (−3)<sup>20</sup>.
+It is known as the Perkel graph.
+Uniqueness is due to Coolsaet &amp; Degraer (2005).
+<p>
+<H2>Group</H2>
+The full group of automorphisms is L<sub>2</sub>(19)
+with point stabilizer Alt(5).
+<p>
+<H2>Construction</H2>
+This is the graph with vertex set Z<sub>3</sub> x Z<sub>19</sub>
+where (i,j) is joined to (i+1,k) when (k−j)<sup>3</sup> = 2<sup>6i</sup>.
+<p>
+For further constructions, see [BCN], p. 402.
+
+<p>
+<H2>Subgraphs</H2>
+Maximal cocliques:
+<pre>
+there are 650145 maximal cocliques
+size #
+12: 1140
+13: 83220
+14: 375060
+15: 158460
+16: 29640
+17: 2565
+19: 60
+</pre>
+<!-- on a fixed vertex:
+<pre>
+found 162145 max cocliques
+12: 240
+13: 18980
+14: 92120
+15: 41700
+16: 8320
+17: 765
+19: 20
+</pre>
+-->
+The 60 cocliques of size 19 fall into 20 groups of 3 pairwise disjoint ones
+(forming a 3-coloring). The three cocliques in one 3-coloring meet a
+coclique in a different 3-coloring in 4, 6, 9 points.
+<p>
+The subgraph of the vertices at maximal distance from a given point
+induces a dodecahedron.
+<p>
+Substructures belonging to the maximal subgroups of the automorphism group:
+<p>
+a) <i>A 3-coloring</i> (partition into 3 19-cocliques).
+There are 20 of these, forming a single orbit.
+The stabilizer of one is 19:9, transitive on the vertices.
+<p>
+b) <i>A vertex</i>.
+There are 57 of these, forming a single orbit.
+The stabilizer of one is Alt(5) with vertex orbit sizes 1+6+30+20.
+<p>
+c) <i>A Petersen subgraph</i>
+There are 57 of these, forming a single orbit.
+The stabilizer of one is Alt(5) with vertex orbit sizes 5+10+12+30.
+The orbits of size 5 form the 57 sets of five points, pairwise
+at distance 3.
+<p>
+d) <i>An edge</i>.
+There are 171 of these, forming a single orbit.
+The stabilizer of one is D<sub>20</sub> with vertex orbit sizes
+2+5+10+10+10+20.
+<p>
+e) <i>An antipodal triple</i>.
+An antipodal triple is a triple {x,y,z} with the property
+that for each of the three points of the triple, the other two
+points are antipodes in the dodecahedron (of diameter 5) at
+distance 3 from the given point.
+There are 190 of these, forming a single orbit.
+The stabilizer of one is D<sub>18</sub> with vertex orbit sizes
+3+9+9+9+9+18.
+
+<H2>Chromatic number</H2>
+This graph is 3-chromatic.
+
+<H2>Polygonal graph</H2>
+This graph is a <a href="polygonal.html">5-gonal graph</a>,
+that is, has a system S of pentagons such that each 2-claw
+is contained in a unique pentagon in S.
+
+<H2>References</H2>
+[BCN], Section 13.3.
+<p>
+K. Coolsaet and J. Degraer,
+<i>A computer-assisted proof of the uniqueness of the Perkel graph</i>,
+Designs, Codes and Cryptography <b>34</b> (2005) 155-171.
+<p>
+P. M. Neumann, <i>Primitive permutation groups of degree 3p</i>,
+preprint, 1968.
+<p>
+M. Perkel, <i>Bounding the valency of polygonal graphs with odd girth</i>,
+Canad. J. Math. <b>31</b> (1979) 1307-1321.
+</body>
+</html>

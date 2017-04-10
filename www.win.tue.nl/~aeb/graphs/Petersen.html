@@ -1,0 +1,105 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>Petersen</title>
+</head>
+<body>
+<a href="index.html">Up</a>
+
+<h1>The Petersen graph</h1>
+<img src="pics/Petersen.jpg">
+<p>
+Julius Petersen (1839-1910) was a Danish mathematician.
+Around 1898 he constructed the graph bearing his name
+as the smallest counterexample against the claim that
+a connected bridgeless cubic graph has an edge colouring
+with three colours.
+<p>
+<img src="pics/srg10a.png">
+<p>
+<h2>Construction</h2>
+The Petersen graph is the complement of the
+<a href="Johnson.html">Johnson graph</a> J(5,2).
+Thus, it can be described as the graph with as vertex set
+the pairs from a 5-set, where two pairs are joined when they
+are disjoint. It is the unique strongly regular graph with
+parameters <i>v</i> = 10, <i>k</i> = 3, &lambda; = 0, &mu; = 1,
+and has spectrum 3<sup>1</sup> 1<sup>5</sup> (-2)<sup>4</sup>.
+<p>
+The Petersen graph is one of the Moore graphs (regular graphs of girth 5
+with the largest possible number <i>k</i><sup>2</sup> + 1 of vertices).
+Two other Moore graphs are known, namely the pentagon (<i>k</i> = 2)
+and the <a href="Hoffman-Singleton.html">Hoffman-Singleton graph</a>
+(<i>k</i> = 7). If there are other Moore graphs, they must have
+valency 57 and 3250 vertices, but cannot have a transitive group.
+<!--
+What is definition of Moore graph? See HoSi.
+M. Aschbacher,
+<i>The Non-Existence of Rank Three Permutation Groups of Degree 3250
+and Subdegree 57</i>
+J. Algebra <b>19</b> (1971) 538-540.
+G. Higman, [not vertex tra]
+-->
+<p>
+The Petersen graph is also a <a href="cages/cages.html">cage</a>
+(graph with smallest possible number of vertices given its
+valency and girth).
+<p>
+<h2>Group</h2>
+The full group of automorphisms is G = S<sub>5</sub> acting rank 3,
+with point stabilizer 2&times;S<sub>3</sub>.
+<p>
+<h2>Supergraphs</h2>
+The Petersen graph is contained in the
+<a href="Clebsch.html">complement of the Clebsch graph</a> and the
+<a href="GQ22.html">Sp(4,2) Generalized Quadrangle</a> and the
+<a href="Hoffman-Singleton.html">Hoffman-Singleton graph</a>.
+Its extended bipartite double is contained in the
+<a href="Sims-Gewirtz.html">Gewirtz graph</a>.
+<p>
+<h2>Subgraphs</h2>
+Substructures belonging to the maximal subgroups of the automorphism group:
+<p>
+a) <i>A 4-coclique</i>.
+There are 5 of these, forming a single orbit.
+The stabilizer of one is S<sub>4</sub>, with vertex orbit sizes 4+6.
+The induced subgraph on the 6 is 3K<sub>2</sub>.
+<p>
+b) <i>A split into two pentagons</i>.
+There are 6 of these, forming a single orbit.
+The stabilizer of one is 5:4, with vertex orbit size 10.
+There are 12 pentagons, with stabilizer D<sub>10</sub>.
+<p>
+c) <i>A vertex</i>.
+There are 10 of these, forming a single orbit.
+The stabilizer of one is 2&times;S<sub>3</sub>,
+with vertex orbit sizes 1+3+6.
+<p>
+<h2>Independence and chromatic number</h2>
+The Petersen graph has independence number 4 and chromatic number 3.
+The five independent sets of size 4 are the sets of four pairs on a
+given symbol. The twenty 3-colorings are found by taking two
+independent sets of size four (they have one vertex x in common)
+and the remaining triple (the neighbours of x).
+<p>
+<h2>Circuits and Hamiltonicity</h2>
+The Petersen graph is maximally non-Hamiltonian:
+there is a Hamiltonian path between any two nonadjacent vertices.
+<p>
+There are 12 pentagons, 10 hexagons, 0 heptagons, 15 octagons
+20 nonagons and 0 decagons. The binary code spanned by the cycles
+is a [15,6,5]-code. The 64 code words are the zero word,
+the 12+10+15+20 = 57 cycles, and the 6 unions of two disjoint pentagons.
+<p>
+<h2>References</h2>
+D.A. Holton & J. Sheehan,
+<i>The Petersen graph</i>,
+Australian Mathematical Society Lecture Notes 7,
+Cambridge University Press, 1993.
+<p>
+J. Petersen,
+<i>Sur le théorème de Tait</i>,
+L'Intermédiaire des Mathématiciens <b>5</b> (1898) 225-227.
+</BODY>
+</HTML>

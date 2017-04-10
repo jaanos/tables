@@ -1,0 +1,238 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<HTML>
+<HEAD>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <TITLE>Hoffman-Singleton graph</TITLE>
+</HEAD>
+<BODY>
+<a href="index.html">Up</a>
+
+<H1>Hoffman-Singleton graph</H1>
+There is a unique strongly regular graph &Gamma; with parameters
+<i>v</i> = 50, <i>k</i> = 7, &lambda; = 0, &mu; = 1.
+The spectrum is 7<sup>1</sup> 2<sup>28</sup> (–3)<sup>21</sup>.
+<p>
+It was found by Hoffman & Singleton as example of a Moore graph
+(a regular graph of girth 5 with the largest possible number
+<i>k</i><sup>2</sup> + 1 of vertices). Two other Moore graphs are known,
+namely the pentagon and the <a href="Petersen.html">Petersen graph</a>.
+If there are other Moore graphs, they must have valency 57 and
+3250 vertices.
+<p>
+The Hoffman-Singleton graph is the (7,5)-<a href="cages/cages.html">cage</a>.
+<p>
+It is Hamiltonian.
+<p>
+<H2>Group</H2>
+The full group of automorphisms is G = PSU(3,5).2 acting rank 3,
+with point stabilizer S<sub>7</sub>.
+<p>
+<H2>Construction</H2>
+A simple direct construction is the following:
+Take five pentagons P<sub>h</sub> and five pentagrams Q<sub>i</sub>,
+so that vertex j of P<sub>h</sub> is adjacent to vertices j–1,j+1
+of P<sub>h</sub> and vertex j of Q<sub>i</sub> is adjacent to
+vertices j–2,j+2 of Q<sub>i</sub>. Now join vertex j of P<sub>h</sub>
+to vertex hi+j of Q<sub>i</sub>. (All indices mod 5.)
+<p>
+The second construction uses the fact that it is possible to
+identify the 35 lines of PG(3,2) with the 35 triples from a 7-set
+in such a way that intersecting lines correspond to triples that
+have precisely one element in common. Now take as vertices the
+15 points and 35 lines of PG(3,2), let the points form a coclique,
+let a point be adjacent to a line when they are incident,
+and let two lines be adjacent when the corresponding triples
+are disjoint.
+<p>
+The third construction produces the
+<a href="Higman-Sims.html">Higman-Sims graph</a>, together with
+a split into two copies of &Gamma;. In the
+<a href="S.html">Steiner system</a> S(4,7,23), fix an symbol <i>a</i>.
+Construct the Higman-Sims graph on 1+22+77 points by taking a point <i>x</i>,
+the 22 symbols distinct from <i>a</i> and the 77 blocks containing <i>a</i>,
+where blocks are adjacent when they meet precisely in {<i>a</i>}.
+Now let B be a block of S(4,7,23) not containing <i>a</i>.
+We find a partition (1+7+42)+(15+35) of the 1+22+77 induced by B
+(the 42 blocks are those meeting B in one point, the 35 those
+meeting B in three points), and both 1+7+42 and 15+35 induce a
+Hoffman-Singleton graph.
+<p>
+<H2>Supergraphs</H2>
+As we saw, &Gamma; is subgraph of the
+<a href="Higman-Sims.html">Higman-Sims graph</a> on 100 vertices.
+<p>
+<H2>Subgraphs</H2>
+We give the substructures of &Gamma; associated to the 7 maximal
+subgroups of G distinct from PSU(3,5), sorted according to
+increasing orbit size.
+<p>
+a) <i>A vertex</i>.
+There are 50 of these, forming a single orbit.
+The stabilizer of one (in the full automorphism group)
+is S<sub>7</sub> with vertex orbit sizes 1+7+42.
+The subgraph induced on the second subconstituent is
+the unique distance-regular graph with intersection array
+{6,5,1;1,1,6}.
+<p>
+b) <i>A 15-coclique</i>.
+There are 100 of these, forming a single orbit.
+The stabilizer is A<sub>7</sub> with vertex orbit sizes 15+35.
+The complement of a 15-coclique is the unique distance-regular graph
+with intersection array {4,3,3;1,1,2}, namely the
+<a href="Odd.html">Odd graph</a> O<sub>4</sub>
+of disjoint triples in a 7-set. It has full group S<sub>7</sub>,
+with point stabilizer S<sub>3</sub>&times;S<sub>4</sub>.
+The group is twice that of the Hoffman-Singleton graph since
+this graph can be extended to a Hoffman-Singleton graph in two ways;
+both occur in the Higman-Sims graph.
+<p>
+Two 15-cocliques meet in 0 (7x), 3 (35x), 5 (42x), 8 (15x) or 15 (1x) points.
+Meeting in 0, 5 or 15 is an equivalence relation, and the collection
+of 100 15-cocliques is the union of two collections of size 50.
+Being disjoint induces the structure of a Hoffman-Singleton graph
+on both.
+<p>
+The graph on the 15-cocliques, adjacent when they meet in 8 points,
+is the unique distance-regular graph with intersection array
+{15,14,10,3;1,5,12,15}. It has full group PSU(3,5).2 with
+point stabilizer A<sub>7</sub> and edge stabilizer L<sub>2</sub>(7):2
+(see below).
+<p>
+The graph on the 15-cocliques, adjacent when they meet in 0 or 8
+is the <a href="Higman-Sims.html">Higman-Sims graph</a>.
+<p>
+The two sets of 50 15-cocliques and the 50 vertices play a similar role
+(and there is an outer automorphism that interchanges the three).
+Thus, we can make a graph on 150 vertices, regular of valency 37,
+with a partition 50+50+50 such that the union of any two parts
+is the Higman-Sims graph.
+<p>
+c) <i>Split into two copies of 5C<sub>5</sub></i>.
+There are 126 of these, forming a single orbit.
+(The construction given above gives an explicit split.)
+The stabilizer is 5<sub>+</sub><sup>1+2</sup>:8:2
+with vertex orbit size 50.
+<p>
+d) <i>An edge</i>.
+There are 175 of these, forming a single orbit.
+The stabilizer of one is A<sub>6</sub>.2<sup>2</sup>
+with vertex orbit sizes 2+12+36.
+<p>
+The line graph of the Hoffman-Singleton graph is the unique
+distance-regular graph with intersection array {12,6,5;1,1,4}.
+Its distance-2 graph is strongly regular with parameters
+<i>v</i> = 175, <i>k</i> = 72, &lambda; = 20, &mu; = 36.
+(It is the collinearity graph of a partial geometry pg(5,18,2)
+constructed by Haemers. The collinearity graph of the dual pg(18,5,2)
+has parameters <i>v</i> = 630, <i>k</i> = 85, &lambda; = 20, &mu; = 10,
+and full automorphism group Alt(7), transitive on the points.)
+<p>
+The subgraph induced on the orbit of size 36 is
+the <a href="Sylvester.html">Sylvester graph</a>,
+the unique distance-regular graph with intersection array
+{5,4,2;1,1,4}.
+<p>
+e) <i>A pair of disjoint 15-cocliques</i>.
+There are 350 of these, forming a single orbit.
+The stabilizer of one is M<sub>10</sub>
+with vertex orbit sizes 20+30.
+<p>
+The subgraph induced on the orbit of size 20 is 10K<sub>2</sub>.
+<p>
+The subgraph induced on the orbit of size 30 is
+<a href="cages/cages.html">Tutte's 8-cage</a>, the incidence graph
+of the generalized quadrangle GQ(2,2).
+<p>
+f) <i>A Petersen graph</i>.
+There are 525 of these, forming a single orbit.
+The stabilizer of one is 2S<sub>5</sub>.2
+with vertex orbit sizes 10+40.
+<p>
+The subgraph induced on the orbit of size 40 is the unique
+(6,5)-<a href="cages/cages.html">cage</a>.
+<p>
+Each hexagon of &Gamma; is contained in a unique Petersen graph.
+<p>
+Each Petersen graph is split 5+5 in 6 splits into two 5C<sub>5</sub>.
+Each split into two 5C<sub>5</sub></i> determines 25 Petersen graphs.
+Each pair of splits determines a unique Petersen graph.
+In this way we find the unital in PG(2,5<sup>2</sup>), with
+splits into two 5C<sub>5</sub> as points, and Petersen graphs as lines.
+<p>
+g) <i>A Heawood graph</i>.
+There are 750 of these, forming a single orbit.
+The stabilizer of one is L<sub>2</sub>(7):2
+with vertex orbit sizes 8+14+28.
+The 14 induces the <a href="Heawood.html">Heawood graph</a>.
+<p>
+Heawood subgraphs are equivalent to pairs of 15-cocliques
+meeting in 8 points: each half occurs in a unique 15-coclique
+and these two 15-cocliques meet in 8 points (and conversely,
+two 15-cocliques meeting in 8 points carry a Heawood graph
+on their symmetric difference).
+<p>
+The 28 induces the <a href="Coxeter.html">Coxeter graph</a>.
+<p>
+<H2>Independence and chromatic number</H2>
+The Hoffman-Singleton graph has independence number 15,
+and chromatic number 4. It has edge-chromatic number 7.
+The complement of the Hoffman-Singleton graph has independence number 2,
+and chromatic number 25.
+<p>
+<H2>Paths and cycles</H2>
+Aut(&Gamma;) is transitive on the induced paths of length 0, 1, 2, 3, 4, 5.
+It has three orbits on paths P<sub>7</sub> (of length 6).
+Aut(&Gamma;) is transitive on the induced cycles of length 5, 6, 7.
+It has two orbits on cycles C<sub>8</sub>.
+<p>
+<H2>Locally Hoffman-Singleton graphs</H2>
+No locally Hoffman-Singleton graphs are known.
+Such a graph cannot be distance-transitive (van Bon).
+If a locally Hoffman-Singleton graph is distance-regular, it
+must have intersection array {50,42,9; 1,2,42} or {50,42,1; 1,2,50}
+(Gavrilyuk & Makhnev), and cannot be vertex-transitive
+(Gavrilyuk, Guo & Makhnev).
+Any locally Hoffman-Singleton graph has diameter at most 6.
+(Proof: by Weetman c<sub>i</sub>-graphs have degree at least i–1,
+so that the diameter is at most 8. If it is 8, then &Gamma;
+contains a disconnected induced subgraph with degree at least 3,
+which contradicts interlacing. If it is 7, then &Gamma;
+contains a disconnected induced subgraph of which one component
+is a circuit and the other component has degree at least 3.
+But the subgraphs far from a C<sub>5</sub>, C<sub>6</sub>, P<sub>6</sub>
+do not have degree at least 3.)
+<p>
+<H2>References</H2>
+John van Bon,
+<i>On Locally Hoffman-Singleton Graphs</i>,
+J. Comb. Theory (B) <b>63</B> (1995) 159-161.
+<p>
+A.E. Brouwer & J.H. van Lint,
+<i>Strongly regular graphs and partial geometries</i>,
+in: Enumeration and Design - Proc. Silver Jubilee Conf. on Combinatorics,
+Waterloo, 1982,
+D.M. Jackson & S.A. Vanstone (eds.)
+Academic Press, Toronto (1984) 85-122.
+<p>
+W.H. Haemers,
+<i>A new partial geometry constructed from the Hoffman-Singleton graph</i>,
+Finite Geometries and designs, Proc. Second Isle of Thorns Conference 1980,
+P.J. Cameron, J.W.P. Hirschfeld & D.R. Hughes (eds.),
+London Math. Soc. Lecture Note Ser. <b>49</b>,
+Cambridge University Press, Cambridge (1981) 119-127.
+<p>
+A.J. Hoffman & R.R. Singleton,
+<i>On Moore graphs with diameters 2 and 3</i>,
+IBM J. Res. Develop. <b>4</b> (1960) 497-504.
+<p>
+L.O. James,
+<i>A combinatorial proof that the Moore (7,2) graph is unique</i>,
+Utilitas Math. <b>5</b> (1974) 79-84.
+<p>
+G. Royle,
+<i>Re: What is the Edge Chromatic Number of Hoffman-Singleton?</i>,
+<a href="http://listserv.nodak.edu/cgi-bin/wa.exe?A2=ind0409&L=graphnet&F=&S=&P=4981">GRAPHNET@listserv.nodak.edu posting, 2004-09-29</a>.
+<p>
+[BCN], Section 13.1.
+</BODY>
+</HTML>

@@ -1,0 +1,119 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<HTML>
+<HEAD>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <TITLE>Sylvester graph</TITLE>
+</HEAD>
+<BODY>
+<a href="index.html">Up</a>
+
+<H1>Sylvester graph</H1>
+There is a unique distance-regular graph with intersection array
+{5,4,2;1,1,4}. It has 36 vertices and spectrum
+5<sup>1</sup> 2<sup>16</sup> (–1)<sup>10</sup> (–3)<sup>9</sup>.
+It is known as Sylvester's double six graph.
+<p>
+<H2>Group</H2>
+The full group of automorphisms is Aut S<sub>6</sub> with
+point stabilizer AGL(1,5)&times;2.
+<p>
+<H2>Construction</H2>
+This is the graph on the 36 interior points of PG(2,9) with a conic,
+adjacent when orthogonal. (This shows the full group PGammaO(3,9).)
+<!-- Jason Williford -->
+<p>
+This is also the graph on the 36 words of weight 6 starting with 1 in
+perfect ternary Golay code, where two such words are adjacent
+when their Hamming distance is 9.
+<p>
+This is also the graph induced on the 36 vertices far away from an edge
+in the <a href="Hoffman-Singleton.html">Hoffman-Singleton graph</a>.
+<p>
+This is also the graph on the 36 pairs (ovoid,spread) in
+<a href="GQ22.html">GQ(2,2)</a>,
+where (O,S) is adjacent to (O',S') when the unique point in both O and O'
+lies on the unique line in both S and S'.
+<p>
+The distance-3 graph is the 6&times;6 grid.
+<p>
+<H2>Supergraphs</H2>
+The Sylvester graph is the subgraph of the
+<a href="Hoffman-Singleton.html">Hoffman-Singleton graph</a>
+consisting of the vertices at distance 2 from an edge.
+<p>
+Since the <a href="Higman-Sims.html">Higman-Sims graph</a> can be split
+into two copies of the Hoffman-Singleton graph and the
+<a href="Sims-Gewirtz.html">Gewirtz graph</a> is the graph
+consisting of the vertices at distance 2 from an edge
+in the Higman-Sims graph, it follows that
+the Sylvester graph is also a subgraph of the Gewirtz graph.
+<p>
+The Sylvester graph is also a subgraph of the
+<a href="Cameron.html">Cameron graph</a>
+<p>
+<H2>Subgraphs</H2>
+Maximal cocliques:
+<pre>
+size #
+ 6: 12
+ 9: 1540
+10: 5112
+11: 720
+12: 60
+</pre>
+Of the 1540 maximal 9-cliques, 400 occur in a partition of the pointset
+into four maximal 9-cliques (each in ten such partitions), and there
+are 1000 such partitions. Of those 400, 40 meet the maximal 6-cocliques
+in either 0 or 3 (form a 3&times;3 grid) and 360 have intersections of
+sizes 0 (4&times;) 1 (2&times;) 2 (2&times;) 3 (4&times;).
+<p>
+Substructures belonging to the maximal subgroups of the automorphism group:
+<p>
+a) <i>A partition of the vertex set into four 9-cocliques
+of 3&times;3 type</i>.
+There are 10 of these, forming a single orbit.
+The stabilizer of one is 3<sup>2</sup>:D<sub>8</sub>,
+with vertex orbit size 36.
+(A partition of the 6&times;6 grid into four 3&times;3 grids
+inducing cocliques.)
+In the PG(2,9) model, these are the points of the conic.
+<p>
+b) <i>A maximal 6-coclique</i>.
+There are 12 of these, forming a single orbit.
+The stabilizer of one is S<sub>5</sub>,
+with vertex orbit sizes 6+30.
+(These are the grid lines - cliques in the distance-3 graph.)
+In the PG(2,9) model, these are the icosahedrals.
+<p>
+c) <i>A pair of 12-cocliques</i>.
+There are 30 of these, forming a single orbit.
+The stabilizer of one is S<sub>4</sub> &times; 2
+with vertex orbit sizes 12+24.
+The subgraph induced on the 12 is 6K<sub>2</sub>.
+The subgraph induced on the 24 is cubic of girth 6.
+Given a 12-coclique C, the remaining 24 vertices split into
+12 vertices with two neighbours in C and 12 vertices with
+three neighbours in C, and the latter again form a 12-coclique.
+(These are the pairs of parallel grid lines.)
+In the PG(2,9) model, these are the orthonormal bases.
+The graph induced on them by having nonempty intersection
+is the unique generalized octagon GO(1,2), the incidence graph of GQ(2,2).
+<p>
+d) <i>A vertex</i>.
+There are 36 of these, forming a single orbit.
+The stabilizer of one is 10:4 with vertex orbit sizes 1+5+20+10.
+In the PG(2,9) model, these are the interior points.
+<p>
+e) <i>A pair of edges at distance 3</i>.
+There are 45 of these, forming a single orbit.
+The stabilizer of one has order 2<sup>5</sup>
+with vertex orbit sizes 2+8+8+8+8+2.
+(These are grid squares that induce 2K<sub>2</sub>.)
+In the PG(2,9) model, these are the exterior points.
+The graph induced on them by the orthogonality relation is the
+unique generalized octagon GO(2,1).
+<p>
+<H2>References</H2>
+[BCN], Section 13.1A.
+</BODY>
+</HTML>

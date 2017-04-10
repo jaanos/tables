@@ -1,0 +1,47 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<HTML>
+<HEAD>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <TITLE>Orthogonal Arrays</TITLE>
+</HEAD>
+<BODY>
+<a href="index.html">Up</a>
+
+<H1>Orthogonal Arrays</H1>
+An <i>orthogonal array</i> (of strength <i>t</i>, with index &lambda;)
+OA<sub>&lambda;</sub>(<i>n</i>,<i>m</i>,<i>t</i>) is an
+<i>m</i> by &lambda;<i>n<sup>t</sup></i> array
+with entries from an alphabet of size <i>n</i> with the property
+that for any choice of <i>t</i> rows each of the possible
+<i>n<sup>t</sup></i> combinations of symbols occurs precisely
+&lambda; times.
+<p>
+Here we are interested in the case <i>t</i> = 2, &lambda; = 1,
+so omit these parameters from the notation, writing OA(<i>n</i>,<i>m</i>).
+<p>
+An orthogonal array OA(<i>n</i>,<i>m</i>) is equivalent to a
+<i>transversal design</i> TD[<i>m</i>;<i>n</i>].
+If we pick two rows (that is, two groups of the transversal design)
+then the symbols found there can be regarded as row and column indices,
+and we find a set of <i>m</i> – 2 mutually orthogonal Latin squares.
+In particular, an orthogonal array OA(<i>n</i>,3) with designated pair
+of rows is equivalent to a Latin square (and hence exists for all <i>n</i>).
+<p>
+If <i>n</i> is a prime power, then TD[<i>m</i>;<i>n</i>] exists
+if and only if <i>m</i> is at most <i>n</i> + 1.
+(The design can be obtained from a projective plane of order <i>n</i>
+by removing a point and <i>n</i> – <i>m</i> + 1 lines on that point.)
+<p>
+The <i>block graph</i> of a transversal design TD[<i>m</i>;<i>n</i>]
+is the graph with the transversals (blocks of size <i>m</i>) as vertices,
+where blocks are adjacent when they have nonempty intersection.
+Such a graph is strongly regular, with parameters
+<i>v</i> = <i>n</i><sup>2</sup>,
+<i>k</i> = <i>m</i>(<i>n</i> – 1),
+&lambda; = (<i>m</i> – 1)(<i>m</i> – 2) + <i>n</i> – 2,
+&mu; = <i>m</i>(<i>m</i> – 1).
+<p>
+For <i>m</i> = 2 this is just the <a href="Hamming.html">Hamming graph</a>
+H(2,<i>n</i>), that is, the <i>n</i>&times;<i>n</i> grid.
+</BODY>
+</HTML>

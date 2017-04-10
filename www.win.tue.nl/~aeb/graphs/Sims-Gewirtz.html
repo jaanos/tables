@@ -1,0 +1,217 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<HTML>
+<HEAD>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <TITLE>Sims-Gewirtz graph</TITLE>
+</HEAD>
+<BODY>
+<a href="index.html">Up</a>
+
+<H1>Sims-Gewirtz graph</H1>
+There is a unique strongly regular graph with parameters
+<i>v</i> = 56, <i>k</i> = 10, &lambda; = 0, &mu; = 2.
+The spectrum is 10<sup>1</sup> 2<sup>35</sup> (–4)<sup>20</sup>.
+This graph was found by Sims and studied by Gewirtz,
+who also proved uniqueness. It is commonly called the Gewirtz graph,
+or the Sims-Gewirtz graph.
+<p>
+<H2>Group</H2>
+The full group of automorphisms is G = L<sub>3</sub>(4).2<sup>2</sup>
+(of order 2<sup>8</sup>.3<sup>2</sup>.5.7) acting rank 3, with point
+stabilizer A<sub>6</sub>.2<sup>2</sup>.
+The eight different types of maximal subgroups of G are all
+recognized below as stabilizers of subgraphs.
+<p>
+<H2>Construction</H2>
+The graph is the subgraph of the
+<a href="Higman-Sims.html">Higman-Sims graph</a> induced
+on the set of vertices at distance 2 from two adjacent vertices
+(and this construction shows the full group).
+<p>
+It can also be described as the graph on the 77–21 = 56 blocks
+of the (unique) <a href="S.html">Steiner system</a> S(3,6,22)
+not containing a fixed symbol, adjacent when they are disjoint.
+Or, equivalently, as the graph on the 56 hyperovals from one
+L<sub>3</sub>(4) orbit in PG(2,4), adjacent when they are disjoint.
+Or again, equivalently, as the graph on the 56 <a href="S.html">octads</a>
+that contain two given symbols a,b but not a third symbol c, where
+two octads are adjacent when they meet in just {a,b}.
+<p>
+<H2>Biplane</H2>
+Adding an identity matrix to its adjacency matrix yields a
+biplane 2-(56,11,2).
+<p>
+<H2>Supergraphs</H2>
+This graph is subgraph of the <a href="M22.html">M<sub>22</sub> graph</a>
+on 77 vertices, the <a href="Higman-Sims.html">Higman-Sims graph</a>
+on 100 vertices, the <a href="U4_3.html">U<sub>4</sub>(3) graph</a>
+on 112 vertices, the McL graph on 275 vertices
+and the <a href="G24.html">G<sub>2</sub>(4) graph</a> on 416 vertices.
+<p>
+<H2>Subgraphs</H2>
+a) <i>A vertex</i>.
+There are 56 of these, forming a single orbit.
+The stabilizer of one (in the full automorphism group)
+is A<sub>6</sub>.2<sup>2</sup> with vertex orbit sizes 1+10+45.
+<p>
+b) <i>An edge</i>.
+There are 280 of these, forming a single orbit.
+The stabilizer of one is 3<sup>2</sup>:Q<sub>8</sub>.2&times;2
+with vertex orbit sizes 2+18+36.
+In PG(2,4) these can be identified with the unitals (AG(2,3) subplanes):
+the complement of the union of two disjoint hyperovals is a unital.
+The graph on the 280 edges, where two edges are adjacent when they
+are opposite edges of a quadrangle, is distance-transitive with
+intersection array {9,8,6,3;1,1,3,8} and spectrum
+9<sup>1</sup> 4<sup>64</sup> 1<sup>105</sup> (–3)<sup>90</sup>
+(–5)<sup>20</sup>. Its automorphism group Aut (L<sub>3</sub>(4))
+is three times larger than that of the Gewirtz graph.
+The uniqueness of this graph (given its parameters) was shown by Lambeck.
+<p>
+c) <i>A 16-coclique</i>.
+There are 42 of these, forming a single orbit.
+The stabilizer of one is 2<sup>4</sup>.S<sub>5</sub>
+with vertex orbit sizes 16+40.
+In the Higman-Sims graph these are visible as point neighbourhoods.
+Also in PG(2,4) these 16-cocliques are visible: each point is
+in 16 of our hyperovals, and these hyperovals are mutually nonadjacent.
+Moreover, each hyperoval has six exterior lines forming a dual hyperoval,
+and disjoint hyperovals have disjoint dual hyperovals; it follows that
+the 21 lines of PG(2,4) also give 16-cocliques.
+The graph on the 16-cocliques, adjacent when disjoint, is the point-line
+incidence graph of PG(2,4). Distance 0,1,2,3 in this graph corresponds
+to an intersection of size 16,0,4,6, respectively.
+<p>
+d) <i>6 C<sub>4</sub></i>.
+There are 105 of these, forming a single orbit.
+The stabilizer of one is 2<sup>2+4</sup>.3.2<sup>2</sup>
+with vertex orbit sizes 24+32.
+Each quadrangle determines a unique subgraph 6 C<sub>4</sub>,
+and hence there are 105 such subgraphs. The complement of one is the
+bipartite point-block incidence graph of AG(2,4) from which a
+parallel class of lines has been removed.
+In particular, we find partitions of the Gewirtz graph into
+one subgraph 6 C<sub>4</sub> and two 16-cocliques. This pair
+of 16-cocliques can be viewed as a flag in PG(2,4).
+There are no other regular subgraphs of valency 2 on 24 vertices.
+<p>
+e) <i>10 K<sub>2</sub> and Sylvester</i>.
+There are 112 of these, forming a single orbit.
+The stabilizer of one is M<sub>10</sub> with vertex orbit sizes 20+36.
+<p>
+A hyperoval of a non-chosen orbit meets our hyperovals in 1 or 3 points;
+20 in 3 (each triple occurs once) and 36 in 1.
+This induces a partition of the graph into two subgraphs, one isomorphic
+to 10 K<sub>2</sub>, the other to the
+<a href="Sylvester.html">Sylvester graph</a> (distance-regular
+with intersection array {5,4,2;1,1,4} on 36 vertices).
+<p>
+A different way to see this is to look at the Higman-Sims graph.
+It has splits into two
+<a href="Hoffman-Singleton.html">Hoffman-Singleton graph</a>s.
+Choosing an edge in one of the Hoffman-Singleton graphs we find that
+the subgraph of the Higman-Sims graph far away from that edge is split
+into a Sylvester graph and a 10 K<sub>2</sub>.
+<p>
+A different way to see the presence of subgraphs 10 K<sub>2</sub>
+is by looking at the generalized quadrangle GQ(3,9) on 112
+vertices. It has splits into two Gewirtz graphs, and the ten lines
+on a point on one side meet the other side in 10 K<sub>2</sub>.
+<p>
+f) <i>co-Heawood graph</i>.
+(The <a href="Heawood.html">co-Heawood graph</a> is the point-line
+nonincidence graph of the Fano plane.)
+There are 120 of these, forming a single orbit.
+The stabilizer of one is L<sub>2</sub>(7):2&times;2
+with vertex orbit sizes 7+7+42.
+Their presence can be seen from the M<sub>24</sub> construction:
+if our Gewirtz graph consists of the octads starting 110, then
+fix an octad B starting 001. There are 7, 42, 7 octads in our graph
+that meet B in 4, 2, 0 vertices, respectively, and the 7+7 induces
+a co-Heawood graph. The involution in M<sub>24</sub> that fixes B
+pointwise, and fixes the pair contained in all Gewirtz octads
+fixes the co-Heawood graph pointwise. There is no automorphism
+here interchanging the two 7-cocliques in the co-Heawood graph.
+<p>
+g) <i>Splits into two Coxeter graphs</i>.
+The Gewirtz graph has 240 splits into two Coxeter graphs, forming
+a single orbit.
+The stabilizer of one split is L<sub>2</sub>(7):2 with vertex orbit
+sizes 28+28.
+<p>
+These splits can be seen inside the Higman-Sims graph.
+It has splits into two Hoffman-Singleton graphs. Choosing an edge
+that meets both sides we find that the subgraph of the Higman-Sims graph
+far away from that edge is split into two
+<a href="Coxeter.html">Coxeter graph</a>s.
+<p>
+A different way to see these is to look at the M<sub>24</sub> construction:
+if our Gewirtz graph consists of the octads starting 110, then fix an
+octad B starting 100 or 010. There are 28, 28 octads in our graph that
+meet B in 3, 1 vertices, respectively, and thus each B gives a split.
+<p>
+h) <i>Extended bipartite double of the Petersen graph</i>.
+There are 336 of these, forming a single orbit.
+The stabilizer of one is S<sub>5</sub>&times;2
+with vertex orbit sizes 6+20+30.
+The extended bipartite double of the Petersen graph has 20 vertices
+and spectrum 4<sup>1</sup> 2<sup>5</sup> 1<sup>4</sup>
+(–1)<sup>4</sup> (–2)<sup>5</sup> (–4)<sup>1</sup>.
+Inside the Higman-Sims graph it can be seen by taking a path
+a ~ b ~ c ~ d of length 3, and taking the 20 vertices adjacent to
+one of a, d and none of b, c.
+<p>
+<H2><i>p</i>-rank</H2>
+The adjacency matrix A of the Gewirtz graph has 2-rank 20,
+5-rank 55, and <i>p</i>-rank 56 for all other <i>p</i>.
+The matrix A+I has 3-rank 20, 11-rank 55, and <i>p</i>-rank 56
+for all other <i>p</i>.
+<p>
+<H2>Independence and chromatic number</H2>
+The Gewirtz graph has independence number 16 and chromatic number 4.
+The complement of the Gewirtz graph has independence number 2
+and chromatic number 28.
+<p>
+<H2>Cocliques</H2>
+Maximal cocliques have sizes 7, 9, 10, 11, 12, 13 or 16.
+For the 16-cocliques, see c) above. For the 7-cocliques, see f) above.
+<pre>
+size  #
+7     240
+9     2520
+10    43960
+11    20160
+12    5460
+13    1680
+16    42
+</pre>
+A colouring with 4 colours must use two disjoint 16-cocliques.
+The complement of their union is the union of six quadrangles,
+in particular bipartite. Any 2-colouring of this 6 C<sub>4</sub> either
+determines two maximal 12-cocliques, or a maximal 12-coclique
+and a 16-coclique. See also d) above.
+<p>
+<H2>Cycles</H2>
+This graph is Hamiltonian.
+<p>
+<H2>References</H2>
+<p>
+A. Gewirtz,
+<i>Graphs with maximal even girth</i>,
+Canad. J. Math. <b>21</b> (1969) 915-934.
+<p>
+A. Gewirtz,
+<i>The uniqueness of g(2,2,10,56)</i>,
+Trans. New York Acad. Sci. <b>31</b> (1969) 656-675.
+<p>
+A.E. Brouwer & W.H. Haemers,
+<i>The Gewirtz graph - an exercise in the theory of graph spectra</i>,
+Europ. J. Comb. <b>14</b> (1993) 397-407.
+<p>
+E.W. Lambeck,
+<i>The uniqueness of a distance-regular graph on 280 vertices</i>,
+in:
+<i>Contributions to the theory of distance regular graphs</i>,
+Ph.D. Thesis, Techn. Univ. Eindhoven, Netherlands, 1990.
+</BODY>
+</HTML>

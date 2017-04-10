@@ -1,0 +1,8 @@
+eigenvalue = -7	mult 1
+eigenvalue = -5	mult 7
+eigenvalue = -3	mult 21
+eigenvalue = -1	mult 35
+eigenvalue = 1	mult 35
+eigenvalue = 3	mult 21
+eigenvalue = 5	mult 7
+eigenvalue = 7	mult 1

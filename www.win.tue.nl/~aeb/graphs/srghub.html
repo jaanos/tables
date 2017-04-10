@@ -1,0 +1,178 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>SRG family paramaters</title>
+<!-- aeb, 2011-08-16, for Jon Hall  -->
+</head>
+<body>
+<a href="index.html">Up</a>
+
+<h1>SRG family parameters</H1>
+Below we give the parameters for various infinite families of
+strongly regular graphs with a nice group.
+
+<h2>Lines in PG(d−1,q)</H2>
+Take the lines in PG(d−1,q), adjacent when they meet in a point.
+This is a <a href="Grassmann.html">Grassmann graph</a> of diameter 2.
+(For the parameters, see there.)
+
+<h2>O(2m+1,q) - Points on a quadric in PG(2m,q)</H2>
+Take the points on a nondegenerate quadric in PG(2m,q), adjacent when
+orthogonal. This graph is strongly regular with parameters
+<br><i>v</i> = (<i>q</i><sup>2m</sup>−1)/(<i>q</i>−1),
+<br><i>k</i> = <i>q</i>(<i>q</i><sup>2m−2</sup>−1)/(<i>q</i>−1),
+<br>&lambda; = <i>q</i><sup>2</sup>(<i>q</i><sup>2m−4</sup>−1)/(<i>q</i>−1) +
+<i>q</i>−1,
+<br>&mu; = (<i>q</i><sup>2m−2</sup>−1)/(<i>q</i>−1),
+<p>
+The eigenvalues are
+<br><i>r</i> = <i>q</i><sup>m−1</sup>−1,
+<br><i>s</i> = −<i>q</i><sup>m−1</sup>−1.
+
+<h2>O<sup>ε</sup>(2m,q) - Points on a quadric in PG(2m−1,q)</H2>
+Take the points on a nondegenerate quadric in PG(2m−1,q), hyperbolic
+if ε = 1, elliptic if ε = −1, where the points are adjacent when
+orthogonal. This graph is strongly regular with parameters
+<br><i>v</i> = (<i>q</i><sup>2m−1</sup>−1)/(<i>q</i>−1)
++ ε <i>q</i><sup>m−1</sup>,
+<br><i>k</i> = q(<i>q</i><sup>2m−3</sup>−1)/(<i>q</i>−1)
++ ε <i>q</i><sup>m−1</sup>,
+<br><i>k</i> − &lambda; − 1 = <i>q</i><sup>2m−3</sup>,
+<br>&mu; = <i>k</i>/<i>q</i>,
+<p>
+The eigenvalues are ε<i>q</i><sup>m−1</sup>−1,
+and −ε<i>q</i><sup>m−2</sup>−1.
+
+<h2>Sp(2m,q)</h2>
+Let V be a 2m-dimensional vector space over the field GF(<i>q</i>),
+provided with a nondegenerate symplectic form.
+Take the points of PV, adjacent when orthogonal.
+This graph is strongly regular with parameters
+<br><i>v</i> = (<i>q</i><sup>2m</sup>−1)/(<i>q</i>−1),
+<br><i>k</i> = <i>q</i>(<i>q</i><sup>2m−2</sup>−1)/(<i>q</i>−1),
+<br>&lambda; = <i>q</i><sup>2</sup>(<i>q</i><sup>2m−4</sup>−1)/(<i>q</i>−1)
++<i>q</i>−1,
+<br>&mu; = <i>k</i>/<i>q</i> = &lambda; + 2,
+<p>
+The eigenvalues are
+<br><i>r</i> = <i>q</i><sup>m−1</sup>− 1,
+<br><i>s</i> = −<i>q</i><sup>m−1</sup>− 1.
+
+<h2>U(n,q)</h2>
+Let V be an n-dimensional vector space over the field GF(<i>q</i>),
+where <i>q</i> is a square, provided with a nondegenerate
+Hermitean form.
+Take the isotropic points of PV, adjacent when orthogonal.
+This graph is strongly regular.
+<p>
+If n is odd, say n = 2d+1, then the parameters are
+<br><i>v</i> = (<i>q</i><sup>d</sup>−1)(<i>q</i><sup>d+1/2</sup>+1)/(<i>q</i>−1),
+<br><i>k</i> = <i>q</i>(<i>q</i><sup>d−1</sup>−1)(<i>q</i><sup>d−1/2</sup>+1)/(<i>q</i>−1),
+<br>&lambda; = <i>q</i><sup>2</sup>(<i>q</i><sup>d−2</sup>−1)(<i>q</i><sup>d−3/2</sup>+1)/(<i>q</i>−1)
++ <i>q</i>−1,
+<br>&mu; = <i>k</i>/<i>q</i>,
+<p>
+with eigenvalues
+<br><i>r</i> = <i>q</i><sup>d−1</sup>−1,
+<br><i>s</i> = −<i>q</i><sup>d−1/2</sup>−1.
+<p>
+If n is even, say n = 2d, then the parameters are
+<br><i>v</i> = (<i>q</i><sup>d</sup>−1)(<i>q</i><sup>d−1/2</sup>+1)/(<i>q</i>−1),
+<br><i>k</i> = <i>q</i>(<i>q</i><sup>d−1</sup>−1)(<i>q</i><sup>d−3/2</sup>+1)/(<i>q</i>−1),
+<br>&lambda; = <i>q</i><sup>2</sup>(<i>q</i><sup>d−2</sup>−1)(<i>q</i><sup>d−5/2</sup>+1)/(<i>q</i>−1)
++ <i>q</i>−1,
+<br>&mu; = <i>k</i>/<i>q</i>,
+<p>
+with eigenvalues
+<br><i>r</i> = <i>q</i><sup>d−1</sup>−1,
+<br><i>s</i> = −<i>q</i><sup>d−3/2</sup>−1.
+
+<h2>E<sub>6</sub>(q)</h2>
+For description and parameters of the E<sub>6</sub>(q) graphs, see BCN Table 10.8.
+Here
+<br><i>v</i> = (<i>q</i><sup>12</sup>−1)(<i>q</i><sup>9</sup>−1)/(<i>q</i><sup>4</sup>−1)(<i>q</i>−1),
+<br><i>k</i> = <i>q</i>(<i>q</i><sup>3</sup>+1)(<i>q</i><sup>8</sup>−1)/(<i>q</i>−1),
+<br><i>k</i> − &lambda; − 1 = <i>q</i><sup>7</sup>(<i>q</i><sup>5</sup>−1)/(<i>q</i>−1),
+<br>&mu; = (<i>q</i><sup>3</sup>+1)(<i>q</i><sup>4</sup>−1)/(<i>q</i>−1),
+<p>
+with eigenvalues
+<br><i>r</i> = <i>q</i><sup>8</sup>+<i>q</i><sup>7</sup>+<i>q</i><sup>6</sup>+
+<i>q</i><sup>5</sup>+<i>q</i><sup>4</sup>−1,
+<br><i>s</i> = −<i>q</i><sup>3</sup>−1.
+
+<h2>O<sub>10</sub><sup>+</sup>(q) on one kind of maxes</h2>
+The half dual polar space of type D<sub>5</sub> is strongly regular.
+The parameters are given in BCN 9.4.8 (as part of an infinite family
+with increasing diameter). We have
+<br><i>v</i> = (<i>q</i><sup>4</sup>+1)(<i>q</i><sup>3</sup>+1)(<i>q</i><sup>2</sup>+1)(<i>q</i>+1)
+<br><i>k</i> = <i>q</i>(<i>q</i><sup>2</sup>+1)(<i>q</i><sup>5</sup>−1)/(<i>q</i>−1),
+<br><i>k</i> − &lambda; − 1 = <i>q</i><sup>5</sup>(<i>q</i><sup>3</sup>−1)/(<i>q</i>−1),
+<br>&mu; = (<i>q</i><sup>2</sup>+1)(<i>q</i><sup>3</sup>−1)/(<i>q</i>−1),
+<p>
+with eigenvalues
+<br><i>r</i> = <i>q</i><sup>3</sup>(<i>q</i><sup>3</sup>−1)/(<i>q</i>−1) −1,
+<br><i>s</i> = −<i>q</i><sup>2</sup>−1.
+
+<h2>U<sub>5</sub>(q) on the totally isotropic lines</h2>
+The dual polar graph of type <sup>2</sup>A<sub>4</sub> is strongly regular.
+The parameters are given in BCN 9.4.3 (as part of an infinite family
+with increasing diameter). We have
+<br><i>v</i> = (<i>q</i><sup>5/2</sup>+1)(<i>q</i><sup>3/2</sup>+1),
+<br><i>k</i> = <i>q</i><sup>3/2</sup>(<i>q</i>+1),
+<br><i>k</i> − &lambda; − 1 = <i>q</i><sup>5/2</sup>,
+<br>&mu; = <i>q</i>+1,
+<p>
+with eigenvalues
+<br><i>r</i> = <i>q</i><sup>3/2</sup> − 1,
+<br><i>s</i> = − <i>q</i> − 1.
+
+<h2>O<sub>2m</sub><sup>ε</sup>(2) on the nonisotropic points</h2>
+Nonisotropic points of O<sub>2m</sub><sup>ε</sup>(2), joined when on a tangent.
+<br><i>v</i> = 2<sup>2m−1</sup> − ε2<sup>m−1</sup>,
+<br><i>k</i> = 2<sup>2m−2</sup> − 1,
+<br>&lambda; = 2<sup>2m−3</sup> − 2,
+<br>&mu; = 2<sup>2m−3</sup> + ε2<sup>m−2</sup>,
+<br>with eigenvalues ε2<sup>m−2</sup> − 1 and  −ε2<sup>m−1</sup> − 1.
+
+<h2>O<sub>2m+1</sub>(3) on one type of nonisotropic points</h2>
+One type of nonisotropic points of O<sub>2m+1</sub>(3), joined when orthogonal
+(i.e., connecting line is elliptic). There are two types of points x,
+distinguished by the type ε of x<sup>perp</sup>.
+<br><i>v</i> = 3<sup>m</sup>(3<sup>m</sup>+ε)/2,
+<br><i>k</i> = 3<sup>m−1</sup>(3<sup>m</sup>−ε)/2,
+<br>&lambda; = &mu; = 3<sup>m−1</sup>(3<sup>m−1</sup>−ε)/2,
+<p>
+with eigenvalues
+<br><i>r</i> = 3<sup>m−1</sup>,
+<br><i>s</i> = −3<sup>m−1</sup>.
+
+<h2>O<sub>2m</sub><sup>ε</sup>(3) on one type of nonisotropic points</h2>
+One type of nonisotropic points of O<sub>2m</sub><sup>ε</sup>(3),
+joined when orthogonal (i.e., connecting line is elliptic).
+<br><i>v</i> = 3<sup>m−1</sup>(3<sup>m</sup>−ε)/2,
+<br><i>k</i> = 3<sup>m−1</sup>(3<sup>m−1</sup>−ε)/2,
+<br>&lambda; = 3<sup>m−2</sup>(3<sup>m−1</sup>+ε)/2,
+<br>&mu; = 3<sup>m−1</sup>(3<sup>m−2</sup>−ε)/2,
+<p>
+with eigenvalues ε3<sup>m−1</sup> and −ε3<sup>m−2</sup>.
+
+<h2>U(n,q) on nonisotropic points</h2>
+Let V be an n-dimensional vector space over the field GF(<i>q</i><sup>2</sup>),
+provided with a nondegenerate Hermitean form.
+Take the nonisotropic points of PV, adjacent when joined by a tangent.
+This graph is strongly regular. Let ε = (−1)<sup>n</sup>.
+Then the parameters are
+<br><i>v</i> = <i>q</i><sup>n−1</sup>(<i>q</i><sup>n</sup> − ε)/(<i>q</i> + 1),
+<br><i>k</i> = (<i>q</i><sup>n−1</sup> + ε)(<i>q</i><sup>n−2</sup> − ε),
+<br>&lambda; = <i>q</i><sup>2n−5</sup>(<i>q</i>+1) −
+ε<i>q</i><sup>n−2</sup>(<i>q</i>−1) − 2,
+<br>&mu; = <i>q</i><sup>n−3</sup>(<i>q</i> + 1)(<i>q</i><sup>n−2</sup> − ε),
+<p>
+with eigenvalues
+ε<i>q</i><sup>n−2</sup> − 1,
+−ε(<i>q</i><sup>2</sup>−<i>q</i>−1)<i>q</i><sup>n−3</sup> − 1.
+
+
+</body>
+</html>

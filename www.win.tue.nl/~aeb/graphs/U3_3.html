@@ -1,0 +1,170 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<HTML>
+<HEAD>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <TITLE>U3(3) graph</TITLE>
+</HEAD>
+<BODY>
+<a href="index.html">Up</a>
+
+<H1>U3(3) graph</H1>
+There is a unique rank 3 strongly regular graph &Gamma; with parameters
+<i>v</i> = 36, <i>k</i> = 14, &lambda; = 4, &mu; = 6.
+The spectrum is 14<sup>1</sup> 2<sup>21</sup> (–4)<sup>14</sup>.
+This graph is not determined by srg parameters only
+(there are precisely 180 different graphs with these parameters).
+However, the graph is determined by srg parameters plus 2-rank.
+<p>
+<H2>Group</H2>
+The full group of automorphisms is G = U<sub>3</sub>(3).2, acting rank 3,
+with point stabilizer L<sub>2</sub>(7).2.
+<p>
+<H2>Constructions</H2>
+(For somewhat more detailed info, see the
+<a href="HallJanko.html">Hall-Janko graph</a>
+of which this graph is the first subconstituent.)
+<p>
+<H3>Subhexagons of GH(2,2)</H3>
+The G<sub>2</sub>(2) generalized hexagon with parameters GH(2,2)
+has 36 sub-GH(2,1)'s. Join two of these when they have 4 lines in common.
+<p>
+<H3>Spreads of bases</H3>
+In the projective plane PG(2,9) provided with a nondegenerate
+hermitean form, one has a unital with 28 points, and 63 nonisotropic
+points. The plane has 63.6.1/6 = 63 orthogonal bases.
+<p>
+The set of 63 nonisotropic points of PG(2,9) has precisely 36
+partitions into 21 bases, twelve on any given basis.
+Each partition meets 1, 14, 21 partitions in 21, 3, 9 bases, respectively.
+<p>
+Our graph is the graph on these 36 partitions where two are adjacent
+when they meet in 3 bases.
+<p>
+<H3>1+14+21</H3>
+Take a vertex <i>x</i>, let its 14 neighbours be the seven points
+and seven lines of the Fano plane, where a point is adjacent to a line
+when they are not incident, and let the 21 nonneighbours of <i>x</i>
+be the 21 flags of the Fano plane, where two flags are adjacent
+when they have no element in common, but the point of one is on the
+line of the other (that is, the subgraph on these 21 is the distance-2
+graph of the flag graph of the Fano plane), and finally the flag (p,L)
+is adjacent to the three points on L and the three lines on p.
+This is our graph.
+<p>
+<H2>Supergraphs</H2>
+This graph is the first subconstituent of the
+<a href="HallJanko.html">Hall-Janko graph</a>.
+<p>
+<H2>Semibiplane</H2>
+The graph &Gamma; is locally bipartite.
+Construct a graph on 72 vertices (x,M) where x is a vertex of &Gamma;
+and M one bipartite half of the neighbours of x.
+Call (x,M) and (y,N) adjacent when x is in N and y in M.
+The resulting graph is a bipartite (0,2)-graph (that is, the incidence graph
+of a semibiplane) of diameter 5 and valency 7.
+Each vertex has distance 5 to a unique other point.
+Interchanging antipodes is not an automorphism,
+but identifying antipodes yields the graph &Gamma; again.
+This graph has automorphism group U<sub>3</sub>(3).2
+with point stabilizer L<sub>2</sub>(7). The orbit sizes are
+1+7+21+7+7+21+7+1, with diagram
+<pre>
+1 -- 7 -- 21 -- 21 -- 7 -- 1
+           |     |
+           7 --  7
+</pre>
+<p>
+<H2>Subgraphs</H2>
+We give the substructures of &Gamma; associated to the 4 maximal
+subgroups of G distinct from U<sub>3</sub>(3), sorted according to
+increasing orbit size.
+<p>
+a) <i>A partition into 12 parallel triangles</i>
+<br>
+Let us call two disjoint or equal triangles S, T in &Gamma; "parallel"
+if each vertex of S has the same number of neighbours in T
+and each vertex of T has the same number of neighbours in S.
+Then each triangle in &Gamma; determines a unique partition
+of the vertex set of &Gamma; into 12 mutually parallel triangles.
+There are 28 of these partitions, forming a single orbit.
+In the representation in PG(2,9) with hermitean form, these are the
+isotropic points.
+<p>
+b) <i>A vertex</i>.
+<br>
+There are 36 of these, forming a single orbit.
+The stabilizer of one (in the full automorphism group) is
+L<sub>2</sub>(7):2 with vertex orbit sizes 1+14+21.
+The subgraph induced on the first subconstituent is
+the <a href="Heawood.html">co-Heawood graph</a>
+(the bipartite point-line nonincidence graph of the Fano plane).
+The subgraph induced on the second subconstituent is the distance-2
+subgraph of the thin generalized hexagon GH(2,1), the flag graph
+of the Fano plane.
+<p>
+c) <i>A 12-point subgraph isomorphic to the 2-coclique extension of
+2&times;3</i>.
+<br>
+There are 63 of these, forming a single orbit. The stabilizer of one is
+4.S<sub>4</sub>:2 = 2<sub>+</sub><sup>1+4</sup>.S<sub>3</sub>
+with vertex orbit sizes 12+24.
+In the representation inside the generalized hexagon, these are the points
+of the generalized hexagon.
+In the representation in PG(2,9) with hermitean form, these are the
+nonisotropic points.
+<p>
+d) <i>K<sub>4,4</sub></i>.
+<br>
+There are 63 of these, forming a single orbit. The stabilizer of one is
+4<sup>2</sup>:D<sub>12</sub> with vertex orbit sizes 8+12+16.
+In the representation inside the generalized hexagon, these are the lines
+of the generalized hexagon.
+In the representation in PG(2,9) with hermitean form, these are the
+orthogonal bases.
+<p>
+<H2>2-Ranks</H2>
+The adjacency matrices of &Gamma; and its complement both have 2-rank 8.
+Peeters showed that both &Gamma; and its complement are uniquely determined
+by their strongly regular graph parameters and 2-rank.
+<p>
+<H2>Local characterization</H2>
+&Gamma; is locally the <a href="Heawood.html">co-Heawood graph</a>
+(the bipartite point-line nonincidence graph of the Fano plane).
+Up to isomorphism, there are three graphs with this local structure:
+&Gamma; on 36 points, a triple cover on 108 points, and one further
+graph on 48 points (Brouwer, Fon-der-Flaass & Shpectorov).
+<p>
+<H2>Cliques, cocliques and chromatic number</H2>
+The maximal cliques have size 3 (since the local graph is bipartite)
+and form a single orbit under G. Above we saw that there are partitions
+into 12 triangles, so that the complementary graph has chromatic number 12.
+The maximal cocliques fall into two orbits: there are 72 7-cocliques
+(namely the parts of the bipartitions of the 36 local graphs)
+and 126 maximal 4-cocliques (namely the parts of the bipartitions
+of the 63 K<sub>4,4</sub>'s). The chromatic number is 6.
+<!-- Less is impossible since 5*7 < 36.
+Two cocliques cover a local graph, remain 4 cocliques to cover
+the far away 21 (and the 1 can be thrown in anywhere).
+This 21 has 28 maximal cocliques: 14 maximal 3-cocliques
+(La,Lb,Lc for L={a,b,c} and dual) and 14 maximal 6-cocliques
+(La,Lb,Mc,Md,Ne,Nf for L={a,b,g}, M={c,d,g}, N={e,f,g} and dual).
+Let us call that last 6-coclique [g]. If L={a,b,c}, then
+[L],[a],[b],[c] form a cover, a 4-coloring.-->
+
+<p>
+<H2>References</H2>
+A. E. Brouwer, D. G. Fon-der-Flaass & S. V. Shpectorov,
+<i>Locally co-Heawood graphs</i>,
+pp 59-68 in: Finite geometry and combinatorics - Proc. Deinze 1992,
+F. De Clerck et al. (eds.), LMS Lect. Note Ser. 191, Cambridge UP, 1993. 
+<p>
+B. D. McKay & E. Spence,
+<i>Classification of regular two-graphs on 36 and 38 vertices</i>,
+Australasian J. Combinatorics <b>24</b> (2001) 293-300.
+<p>
+René Peeters,
+<i>Uniqueness of strongly regular graphs having minimal p-rank</i>,
+Lin. Alg. Appl. <b>226-228</b> (1995) 9-31.
+<p>
+</BODY>
+</HTML>

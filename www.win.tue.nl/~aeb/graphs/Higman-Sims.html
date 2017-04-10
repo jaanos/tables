@@ -1,0 +1,264 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<HTML>
+<HEAD>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <TITLE>Higman-Sims graph</TITLE>
+</HEAD>
+<BODY>
+<a href="index.html">Up</a>
+
+<H1>Higman-Sims graph</H1>
+There is a unique strongly regular graph &Gamma; with parameters
+<i>v</i> = 100, <i>k</i> = 22, &lambda; = 0, &mu; = 6.
+The spectrum is 22<sup>1</sup> 2<sup>77</sup> (−8)<sup>22</sup>.
+The graph was found by Higman & Sims (1969). Uniqueness was proved
+by Gewirtz (1969). Earlier, this graph had been constructed, and
+uniqueness was shown, by Dale M. Mesner (1964).
+<p>
+<H2>Group</H2>
+The full group of automorphisms is G = HS.2, acting rank 3,
+with point stabilizer M<sub>22</sub>.2.
+<p>
+<H2>Construction</H2>
+<H3>1+22+77</H3>
+The easiest construction is 1+22+77: take a vertex <i>x</i>,
+let its 22 neighbours be the symbols and its 77 nonneighbours
+be the blocks of the <a href="S.html">Steiner system</a> S(3,6,22),
+where symbols form a coclique, symbols and blocks are adjacent
+when incident, and blocks are adjacent when disjoint.
+<p>
+<H3>50+50</H3>
+In the description of the
+<a href="Hoffman-Singleton.html">Hoffman-Singleton graph</a>
+we saw that the Higman-Sims graph is the graph on the 15-cocliques,
+adjacent when they meet in 0 or 8 points. We also saw that vertices
+and two sets of 50 15-cocliques play the same role, so one also
+obtains the Higman-Sims graph by taking the vertices and one collection
+of 50 15-cocliques in the Hoffman-Singleton graph, with the obvious
+adjacencies.
+<p>
+<H3>30+70</H3>
+Similar to the 15+35 construction of the Hoffman-Singleton graph
+is the 30+70 construction of the Higman-Sims graph. In the former
+the starting point was that the lines of PG(3,2) can be labeled
+with the triples in a 7-set such that lines meet when the corresponding
+triples have 1 element in common. This time we label the lines of
+PG(3,2) with the 4+4 splits of an 8-set, where intersecting lines
+correspond to splits with common refinement 2+2+2+2. Clearly, both
+descriptions of the lines of PG(3,2) are isomorphic.
+Take as vertices of the Higman-Sims graph the 15 points and 15 planes
+of PG(3,2) together with the 70 4-subsets of an 8-set.
+Join two 4-sets when they have 1 element in common. A 4-set determines
+a 4+4 split and hence a line in PG(3,2), and is adjacent to the points
+and planes incident with that line. A plane is adjacent to the nonincident
+points. This yields the Higman-Sims graph.
+<p>
+<H2>Higman's geometry</H2>
+In S(5,8,24), fix two symbols, and look at the two sets
+of 176 blocks that contain precisely one of them.
+Higman made a geometry, calling the blocks in one family "points"
+and those in the other family "quadrics", where a point is incident
+with a quadric when the blocks meet in 0 or 4 symbols.
+This yields a square 2-(176,50,14) design with group HS acting
+doubly transitively on points and quadrics. It is self-dual,
+with HS.2 interchanging points and quadrics.
+Up to conjugacy there are two polarities, one with 80 and
+one with 176 absolute points. Using one of the latter type
+we can write the incidence matrix as a symmetric matrix A+I,
+and A is the adjacency matrix of a strongly regular graph
+with parameters v=176, k=49, &lambda;=12, &mu;=14, and group
+S<sub>8</sub> with vertex orbit sizes 8+168.
+For the relation with &Gamma;, see below.
+<p>
+<H2>Subgraphs</H2>
+We give the substructures of &Gamma; associated to the 11 maximal
+subgroups of G distinct from HS, sorted according to increasing orbit size.
+<p>
+a) <i>A vertex</i>.
+<br>
+There are 100 of these, forming a single orbit.
+The stabilizer of one (in the full automorphism group)
+is M<sub>22</sub>.2 with vertex orbit sizes 1+22+77.
+The subgraph induced on the second subconstituent is
+the <a href="M22.html">M22 graph</a>, the unique
+strongly regular graph with v=77, k=16, &lambda;=0.
+<p>
+b) <i>A split into two Hoffman-Singleton graphs</i>.
+<br>
+There are 352 of these, forming a single orbit.
+The stabilizer is U<sub>3</sub>(5).2 with vertex orbit size 100.
+(That such splits exist is shown in the description of the
+<a href="Hoffman-Singleton.html">Hoffman-Singleton graph</a>,
+where the Higman-Sims graph is constructed on the 100
+15-cocliques of the Hoffman-Singleton graph.)
+<p>
+Under HS these 352 fall into two families of size 176,
+and HS acts doubly transtively on both. This is the Higman geometry
+of 176 points and 176 quadrics.
+<p>
+The 704 Hoffman-Singleton subgraphs of &Gamma; meet in
+0,50 (1x), 15,35 (50x), 20,30 (175x), or 25,25 (126x) points.
+The point-quadric incidence in Higman's geometry corresponds
+to the 15,35,15,35 intersection of the corresponding splits.
+<p>
+c) <i>An edge</i>.
+<br>
+There are 1100 of these, forming a single orbit.
+The stabilizer of one is L<sub>3</sub>(4):2<sup>2</sup>
+with vertex orbit sizes 2+42+56.
+The subgraph induced on the 42 is the point-line incidence graph
+of the projective plane PG(2,4).
+The subgraph induced on the 56 is the
+<a href="Sims-Gewirtz.html">Gewirtz graph</a>.
+<p>
+d) <i>A PG(3,2) point-plane nonincidence graph</i>
+<br>
+As we saw, &Gamma; contains the bipartite point-plane nonincidence
+graph of PG(3,2). There are 1100 of these, forming a single orbit.
+The stabilizer of one is S<sub>8</sub>&times;2 with vertex orbit sizes 30+70.
+The subgraph induced on the 30 is our point-plane nonincidence graph
+of PG(3,2). It is distance-regular with intersection array {8,7,4;1,4,8}.
+The subgraph induced on the 70 is the graph on the 4-subsets of an 8-set,
+adjacent when they meet in a single element.
+<p>
+Let us describe this in terms of the <a href="S.html">Steiner system</a>
+S(5,8,24). Pick two symbols <i>a</i>, <i>b</i>, and let S(3,6,22)
+consist of the 77 octads on <i>a</i>,<i>b</i> (with these elements removed).
+Pick an octad B not containing <i>a</i>,<i>b</i>.
+The 77 blocks of S(3,6,22) now split 14+56+7 for having 4,2,0 symbols
+in common with B, and in the 1+22+77 construction of &Gamma;,
+the (1+14)+(8+7) induces the point-plane nonincidence graph of PG(3,2).
+<p>
+If we want to extend this 15+15 to a split into 50+50 defined by
+some octad C containg <i>a</i> but not <i>b</i>, then C must be
+disjoint from B, and we have 8 choices. And if {B,C,D} is a partition
+of the set of 24 symbols, then D defines the complementary split
+(the 35's switch sides).
+<p>
+The objects we found here are known as <i>conics</i> in Higman's geometry.
+They are K<sub>8,8</sub>'s in the point-quadric incidence graph:
+sets of 8 points contained in 8 quadrics. Each pair of points is in
+precisely two conics, and their union is contained in two quadrics.
+Dually, the intersection of two quadrics (of size 14) contains two conics
+that meet in two points. The conic B defines a polarity by sending
+the point C to the quadric D when {B,C,D} is as above.
+<p>
+e) <i>A non-edge</i>.
+<br>
+There are 3850 of these, forming a single orbit.
+The stabilizer of one is 2<sup>5</sup>.S<sub>6</sub>
+with vertex orbit sizes 2+6+32+60.
+The subgraph induced on the 32 is the folded 6-cube.
+The subgraph induced on the 60 is the second subconstituent
+of the <a href="M22.html">M22 graph</a>.
+<p>
+<!--f) *** N(2A^3)
+There are 4125 of these, forming a single orbit.
+The stabilizer of one is 4<sup>3</sup>:(L<sub>3</sub>(2)&times;2)
+with vertex orbit sizes ***-->
+<p>
+g) <i>2-coclique extension of the Petersen graph</i>.
+<br>
+There are 5775 of these, forming a single orbit.
+The stabilizer of one is 2<sub>+</sub><sup>1+6</sup>:S<sub>5</sub>
+with vertex orbit sizes 20+80.
+The subgraph induced on the 20 is the 2-coclique extension of the
+<a href="Petersen.html">Petersen graph</a>. (The one on 80 is messy.)
+<!--There is an outer involution of HS that fixes this subgraph
+pointwise.
+<p>
+&Gamma; contains 1108800 copies of the bipartite double of the
+Petersen graph. Irrelevant.-->
+<p>
+<!--h) ***
+There are 11200 of these, forming a single orbit.
+The stabilizer of one is M<sub>11</sub>
+with vertex orbit sizes ***-->
+<p>
+i)  <i>Pair of splits from the same family</i>.
+<br>
+In terms of Higman's geometry: a pair of points.
+(Note that a pair of points determines a pair of quadrics
+and vice versa.)
+There are 15400 of these, forming a single orbit.
+The stabilizer of one is (2&times;A<sub>6</sub>.2<sup>2</sup>).2
+with vertex orbit sizes ***40+60***
+<p>
+j) <i>Partitions into four 5C<sub>5</sub></i>.
+<br>
+As we saw, for each of the 176 50+50 splits from one family there are
+126 from the other family such that the common refinement is 25+25+25+25.
+Thus, there are 176*126 = 22176 such unordered pairs of splits,
+and these form a single orbit.
+The stabilizer of one is 5<sub>+</sub><sup>1+2</sup>:[2<sup>5</sup>]
+with vertex orbit size 100.
+<p>
+k) <i>Good partitions into ten {4,3,1;1,3,4}</i>.
+<br>
+&Gamma; contains 61600 subgraphs isomorphic to
+K<sub>5,5</sub> minus a matching, the complement of the 2&times;5 grid,
+the unique distance-regular graph with intersection array {4,3,1;1,3,4},
+the bipartite double of the complete graph K<sub>5</sub>.
+For brevity, let us call such a graph a BD(K<sub>5</sub>).
+These subgraphs form a single orbit, with stabilizer
+6.A<sub>5</sub>.2<sup>2</sup> of order 1440 and vertex orbit sizes 10+30+60.
+<!--The 6 acts trivially on this subgraph.-->
+Counting is easy in the 1+22+77 construction: such a subgraph containing
+the 1 is uniquely determined by 4 symbols not in a block (and we find the
+four blocks that contain 3 of the 4 symbols, and the unique block
+disjoint from the previous four blocks).
+<p>
+On the 30 the induced subgraph is the point-plane nonincidence graph
+of PG(3,2). Now this graph has a unique split (up to isomorphism)
+into three BD(K<sub>5</sub>)'s, since the point-plane
+incidence graph has a unique split into three 5K<sub>2</sub>'s.
+(Description: Let PG(3,2) have points and hyperplanes given by the
+nonzero elements of GF(16), where x is incident with y when
+Tr(xy) = 0. Since the only cube of trace 0 is 1, partitioning
+points and planes according to exponent mod 3 works.)
+<p>
+Our object is a partition of &Gamma; into ten BD(K<sub>5</sub>)'s
+where this set of ten carries the structure of a Petersen graph,
+and for each BD(K<sub>5</sub>) the subgraph induced on the union of
+its three neighbours is the point-plane nonincidence graph of PG(3,2).
+There are 36960 *** of these, forming a single orbit.
+The stabilizer of one is 5:4 &times; S<sub>5</sub>
+with vertex orbit size 100.
+<!--
+Each vertex has 4 neighbours in its own BD(K<sub>5</sub>)
+and 2 neighbours in each of the remaining 9.
+-->
+<p>
+This description is a bit involved, but just saying
+"Partition into ten BD(K<sub>5</sub>)'s" is not enough:
+&Gamma; has a very large number of such partitions.
+<p>
+<H2>References</H2>
+<p>
+A.E. Brouwer,
+<i>Polarities of G. Higman's symmetric design and a strongly regular
+graph on 176 vertices</i>,
+Aequationes Math. <b>25</b> (1982) 77-82.
+<p>
+A. Gewirtz,
+<i>Graphs with maximal even girth</i>,
+Canad. J. Math. <b>21</b> (1969) 915-934.
+<p>
+D.G. Higman & C. Sims,
+<i>A simple group of order 44,352,000</i>,
+Math.Z. <b>105</b> (1968) 110-113.
+<p>
+G. Higman,
+<i>On the simple group of D.G. Higman and C.C. Sims</i>,
+Illinois J. Math. <b>13</b> (1969) 74-80.
+<p>
+D.M. Mesner,
+<i>Negative Latin square designs</i>,
+<a href="http://www.stat.ncsu.edu/information/library/mimeo.php">Institute
+of Statistics, UNC, NC Mimeo series</a> <b>410</b>, November 1964.
+<p>
+M.S. Smith,
+<i>On the isomorphism of two simple groups of order 44,352,000</i>,
+J. Algebra <b>41</b> (1976) 172-174.
+</BODY>
+</HTML>

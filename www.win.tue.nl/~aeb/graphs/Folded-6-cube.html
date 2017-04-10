@@ -1,0 +1,94 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<HTML>
+<HEAD>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <TITLE>Folded 6-cube</TITLE>
+</HEAD>
+<BODY>
+<a href="index.html">Up</a>
+
+<H1>Folded 6-cube and graphs with the same parameters</H1>
+There are precisely three distance-regular graphs with intersection array
+{6,5,4;1,2,6}. They have 32 vertices and spectrum 6<sup>1</sup>
+2<sup>15</sup> (−2)<sup>15</sup> (−6)<sup>1</sup>.
+<p>
+Such a graph is the point-block incidence graph of a
+square 2-(16,6,2) design. But Hussain found that there
+are precisely three such designs, all of them self-dual.
+<p>
+Since blocks meet in two points, if we fix a block B
+then for each point <i>x</i> outside, the blocks on <i>x</i> determine
+edges on B, so that <i>x</i> determines a graph on B, regular of
+degree 2, that is, a union of polygons. These graphs are called
+<i>Hussain chains</i>. On 6 points the only possibilities for
+Hussain chains are 3+3 (two triangles), or 6 (a hexagon).
+Each path of length two on B is in a unique Hussain chain,
+so in order to describe the design it suffices to give the
+hexagons - then the paths of length two not covered yet
+are in triangles.
+The three designs all have a transitive group (so that the
+choice of B does not matter), and are characterized by
+having 0, 4 or 6 hexagons on B. Here 0 occurs for the folded 6-cube.
+<p>
+<H2>Group</H2>
+The full group of automorphisms of the folded 6-cube is
+2<sup>5</sup>.S<sub>6</sub> of order 23040,
+acting distance-transitively with point stabilizer S<sub>6</sub>.
+The other two designs have transitive groups of order 1536 and 768,
+respectively.
+<p>
+<H2>Supergraphs</H2>
+The folded 6-cube is found as subgraph of the
+<a href="M22.html">M<sub>22</sub> graph</a>.
+<p>
+<H2>p-rank</H2>
+The 2-ranks of the point-block incidence matrices are 6, 7, 8,
+respectively.
+<p>
+<H2>Construction</H2>
+The folded 6-cube is the result of identifying the antipodes in
+the 6-cube. It is the coset graph of {000000,111111}.
+It is the bipartite double of the 4x4 grid.
+<p>
+The second design can be described in terms of the generalized quadrangle
+GQ(2,2), with as points the pairs from a 6-set, and as lines the partitions
+of the 6-set into three pairs. Fix a line L. It is on four dual hyperbolic
+lines (triples of disjoint lines in a 3x3 grid) {L,M,N}. Each of the four
+pairs {M,N} determines six points of the GQ(2,2), that is, six edges
+(forming a hexagon) of the 6-set. Take these four hexagons to construct
+the second design. This construction shows that the stabilizer of B
+has order 6!/15 = 48.
+<p>
+The third design, described in a similar way:
+Fix a point P and a cyclic order (L,M,N) on the three lines on P.
+We find six hexagons by taking, for each ordered pair (L,M), (M,N), (N,L),
+the two dual hyperlines on the first element that have the second
+element as transversal. This construction shows that the stabilizer of B
+has order 6!/(15.2) = 24.
+<p>
+<H2>Remarks</H2>
+The complementary designs are square 2-(16,10,6) designs.
+Their incidence graphs, the distance-3 graphs of the graphs
+studied above, are the three distance-regular graphs
+with intersection array {10,9,4;1,6,10}.
+The distance-3 graph of the folded 6-cube is found as subgraph of the
+<a href="U4_3.html">O<sup>−</sup><sub>6</sub>(3) graph</a>
+on 112 vertices.
+<p>
+<H2>Biplanes</H2>
+A square 2-(v,k,2) design is called a <i>biplane</i>, and
+k−2 is called the <i>order</i> of the biplane. Only finitely many
+biplanes are known. There are unique biplanes of orders 1, 2, 3,
+three biplanes of order 4, three biplanes of order 7, and five
+biplanes of order 9. A single biplane of order 11 is known.
+<p>
+<H2>References</H2>
+<p>
+Q. M. Hussain,
+<i>On the totality of solutions for the symmetrical incomplete block designs:
+&lambda;=2, k=5 or 6</i>,
+Sankhya <!--a overline--> <b>7</b> (1945) 204-208.
+<p>
+[BCN], Theorem 9.2.7.
+</BODY>
+</HTML>

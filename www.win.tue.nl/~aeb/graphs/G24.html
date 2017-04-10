@@ -1,0 +1,323 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>G2(4) graph</title>
+</head>
+<body>
+<a href="index.html">Up</a>
+
+<h1>G2(4) graph</h1>
+There is a rank 3 strongly regular graph &Gamma; with parameters
+<i>v</i> = 416, <i>k</i> = 100, &lambda; = 36, &mu; = 20.
+The spectrum is 100<sup>1</sup> 20<sup>65</sup> (−4)<sup>350</sup>.
+It is the unique graph that is locally the
+<a href="HallJanko.html">Hall-Janko graph</a> (Pasechnik [2]).
+Its 2nd subconstituent is the distance-2 graph of the
+<a href="HJ315.html">Cohen-Tits near octagon</a>.
+<p>
+<H2>Group</H2>
+The full group of automorphisms is G = G<sub>2</sub>(4).2
+(of order 2<sup>13</sup>.3<sup>3</sup>.5<sup>2</sup>.7.13),
+acting rank 3, with point stabilizer HJ.2.
+<p>
+<H2>Construction</H2>
+Consider the projective plane PG(2,16) provided with a nondegenerate
+Hermitean form. It has 273 points, 65 isotropic and 208 nonisotropic.
+There are 416 = 208.12.1/6 orthogonal bases. These are the vertices of &Gamma;.
+The group U<sub>3</sub>(4):4 of semilinear transformations preserving
+the form acts transitively on the 416 bases, with rank 5.
+The suborbit sizes are 1, 15, 100, 150, 150.
+&Gamma; is the graph obtained by taking the suborbit of size 100
+for adjacency.
+<p>
+These suborbits can be described geometrically as follows:
+Given one basis {a,b,c}, the suborbit of size 15 consists
+of the bases that have an element in common with {a,b,c}.
+The first suborbit of size 150 consists of the bases that are disjoint
+from {a,b,c} but contain a point orthogonal to one of a,b,c.
+Associated with a basis {a,b,c} is the triangle consisting of
+the 15 isotropic points on the three lines ab, ac, and bc.
+The suborbits of sizes 1, 15, 100, 150, 150 correspond to the
+bases with triangles having 15, 5, 3, 2, 5 points in common.
+Thus, &Gamma; can be described as the graph on the 416 triangles,
+adjacent when they have 3 points in common ([1]).
+
+<H2>Supergraphs</H2>
+This graph is the first subconstituent of the
+<a href="Suzuki.html">Suzuki graph</a> on 1782 vertices,
+a rank 3 strongly regular graph with parameters
+(<i>v</i>,<i>k</i>,&lambda;,&mu;) = (1782,416,100,96).
+It is also the first subconstituent of a triple cover of that graph,
+an antipodal distance-transitive graph with intersection array
+{416,315,64,1; 1,32,315,416}, group 3.Suz.2 with point stabilizer
+G<sub>2</sub>(4).2, constructed by Soicher [3].
+Pasechnik [2] showed that these two graphs are the only graphs that are
+locally &Gamma;.
+
+<H2>Subgraphs</H2>
+We give the substructures of &Gamma; associated to the 8 maximal subgroups
+of G distinct from G<sub>2</sub>(4), sorted according to increasing orbit size.
+<p>
+a) <i>A vertex</i>.<br>
+There are 416 of these, forming a single orbit.
+The stabilizer of one is HJ.2 with vertex orbit sizes 1+100+315.
+The subgraph induced on the first subconstituent is the
+<a href="HallJanko.html">Hall-Janko graph</a>, which is
+strongly regular with parameters (v,k,&lambda;,&mu;) = (100,36,14,12).
+<p>
+b) <i>Three copies of the 2-coclique extension of the Clebsch graph</i>.
+Or: a 96+320 split.<br>
+The 65520 nonedges of &Gamma; form a single orbit. The stabilizer of one
+<!-- is "(C2 x (((C2 x Q8) : C2) : A5)) : C2" of order 7680
+with center of order 2 -->
+has vertex orbit sizes 2+10+20+64+160+160.
+<!-- in Suz.2 stab nonedge: order 737280, orbit sizes 2+20+96+640+1024 -->
+These 65520 nonedges fall into 1365 sets of 48, where each set
+induces a subgraph of size 96 that is the disjoint union of three
+copies of the 2-coclique extension of the Clebsch graph (the halved 5-cube),
+and the 48 nonedges are the 2-cocliques.
+<p>
+These 1365 subgraphs of size 96 can be seen as &mu;-graphs in the Suzuki graph:
+The rank 3 Suzuki graph &Sigma; on 1782 = 1 + 416 + 1365 vertices
+is strongly regular with parameters
+<i>v</i> = 1782, <i>k</i> = 416, &lambda; = 100, &mu; = 96.
+We can take &Gamma; to be the first subconstituent of &Sigma;.
+Now the 1365 vertices of the second subconstituent are seen in &Gamma;
+as 1365 subgraphs of size 96, regular of valency 20.
+These 1365 subgraphs form a single orbit. The stabilizer of one is
+2<sup>2+8</sup>:(3 &times; A<sub>5</sub>):2 with vertex orbit sizes 96+320.
+<!-- GH dist 0,1,2,3 corresponds to intersection 96,48,24,21 -->
+<p>
+The 4095 subgraphs isomorphic to the 2-coclique extension of the
+halved 5-cube form a single orbit. They can be seen as &mu;-graphs
+in Soicher's triple cover of the Suzuki graph.
+The stabilizer of one is 2<sup>2+8</sup>:A<sub>5</sub>:2
+with vertex orbit sizes 32+64+320.
+<p>
+The graph induced on the 320 vertices outside a fixed subgraph of size 96
+can be extended by a 16-coclique to construct a srg(336,80,28,16)
+(Jenrich, 2014).
+<p>
+c) <i>Unions of 16 16-cocliques</i>.<br>
+&Gamma; contains a unique orbit of 21840 16-cocliques
+(there are four more orbits of 16-cocliques, see below
+in the Cocliques section) each stabilized by a group
+(A<sub>4</sub> &times; (2<sup>4</sup> : A<sub>5</sub>)) : 2
+of order 23040 with vertex orbit sizes 16+240+160.
+The union of the orbits of sizes 16+240 gives a 256-point subgraph
+of valency 60 stabilized by a subgroup H of shape
+2<sup>4+6</sup>:(A<sub>5</sub> &times; 3):2 of order 368640
+with vertex orbit sizes 256+160. There are 1365 such 256-point subgraphs.
+Such a 256-point subgraph &Delta; contains many 16-cocliques, but there is
+only one orbit of size 16 of H on 16-cocliques in &Delta; (giving a partition
+of the vertex set of &Delta;).
+The graph &Delta; is the strongly regular graph with parameters
+(v,k,&lambda;,&mu;) = (256,60,20,12) described in Jenrich (2014).
+<p>
+The 1365 subgraphs of size 96 found under b) and the 1365 subgraphs
+of size 256 found here form the points and lines of a generalized hexagon
+GH(4,4) (with 5 points/line and 5 lines/point) if we let disjoint subgraphs
+of different types be incident.
+<!-- GH dist 0,1,2,3 corresponds to intersection 256,192,160,156 -->
+<!-- pt-line dist 0,1,2 corr. to intersection 0,48,60 -->
+<p>
+d) <i>Sets of 208 6-cocliques</i>.<br>
+The maximal subgroup U<sub>3</sub>(4):4 was used above to construct
+the graph &Gamma;. It is transitive on the 416 vertices.
+Each of the 208 hyperbolic lines in PG(2,16) gives 6 bases forming
+a 6-coclique in &Gamma;. This yields a family of 208 6-cocliques
+(3 on each vertex) invariant for U<sub>3</sub>(4):4.
+This subgroup has index 2016, and the action of G on the 2016
+families has permutation rank 3 with suborbit sizes 1+975+1040,
+giving rise to a strongly regular graph with parameters (2016,975,462,480).
+The full group of the latter graph is O<sub>7</sub>(4).2.
+<!-- of order 8212119552000 -->
+<p>
+e) <i>A Gewirtz subgraph</i>.<br>
+Each element of Atlas type 3A of G<sub>2</sub>(4) fixes 56 vertices
+of &Gamma;, and &Gamma; induces a
+<a href="Sims-Gewirtz.html">Gewirtz graph</a> on these 56-sets.
+There are 2080 of these, forming a single orbit.
+The stabilizer of one is 3.L<sub>3</sub>(4).2<sup>2</sup>
+with vertex orbit sizes 56+360.
+The action of G on these 2080 has permutation rank 4
+with suborbit sizes 1+126+945+1008.
+A vertex outside a Gewirtz subgraph has 14 neighbours inside, inducing a
+<a href="Heawood.html">co-Heawood subgraph</a>.
+The 280 Gewirtz subgraphs on a vertex p induce the 280 10-cocliques
+in the Hall-Janko subgraph on the neighbours of p. If C is one of
+these 10-cocliques, then each vertex nonadjacent to p has two neighbours in C.
+<p>
+f) <i>An edge</i>.<br>
+There are 20800 of these, forming a single orbit.
+The stabilizer of one is U<sub>3</sub>(3):2 &times; 2 with
+vertex orbit sizes 2+36+126+252.
+<p>
+g) <i>A 6-coclique</i> or <i>a 50-point subgraph P#5</i>.<br>
+&Gamma; has 698880 5-cliques, forming a single orbit.
+The stabilizer of one is Sym(5) &times; Sym(3) with vertex
+orbit sizes 5+6+15+30+60+60+120+120. The orbit of size 6 here
+is the 6-coclique meant - it is not a maximal coclique, but
+its stabilizer is (A<sub>5</sub> &times; A<sub>5</sub>):2
+with vertex orbit sizes 6+50+60+300.
+<p>
+Let P be the Petersen graph on 10 vertices, and let P#5 denote
+the graph obtained from P by replacing each vertex x by the
+five (mutually adjacent) vertices (x,i) (i=1,2,3,4,5),
+and each edge x~y by the twenty edges (x,i)~(y,j) for i notequal j.
+Now P#5 has 50 vertices and is regular of degree 16.
+It has 5 10-cocliques and 10+450=460 5-cliques.
+The group of P#5 is Sym(5) &times; Sym(5).
+<p>
+Each 5-clique L determines 3 others L<sub>i</sub> (i=1,2,3)
+(forming a single orbit in the stabilizer of L)
+such that the union of L and L<sub>i</sub> induces K<sub>2</sub>#4.
+The union of the orbits with sizes 5+15+30 of the stabilizer of L
+has shape P#5. There are 69888 subgraphs P#5 forming a single orbit.
+The stabilizer of one is (A<sub>5</sub> &times; A<sub>5</sub>):2
+with vertex orbit sizes 6+50+60+300.
+<p>
+The 6-coclique consists of the 6 vertices without neighbours in the P#5
+(so that it is contained in 16-cocliques).
+<!--
+The vertices in the 300-orbit have 10 neighbours in P#5,
+Those in the 60-orbit have 20 neighbours in P#5, forming a
+2-clique extension of Petersen.
+Funny that the P#4 of Hall-Janko are not contained in the P#5 here.
+(But they belong to 10 4-cliques that extend to 5-cliques on one point.)
+-->
+<p>
+h) 78+91+91+156.<br>
+L(2,13) is a maximal subgroup of G with vertex orbit sizes 78+91+91+156,
+where the two representations on 91 points are nonisomorphic. The point
+stabilizers are D<sub>14</sub>, A<sub>4</sub>, D<sub>12</sub>, C<sub>7</sub>.
+<!-- collapsed for orbits 78, 91, 156, 91:
+[[ 28, 14, 44, 14 ], [ 12, 24, 36, 28 ],
+ [ 22, 21, 36, 21 ], [ 12, 28, 36, 24 ]]-->
+The four subgraphs have valencies 28, 24, 24, 36.
+
+<H2>Cocliques</H2>
+<!--
+Maximal cocliques on 2 fixed points:
+7: 160
+9: 345600
+10: 76490800
+11: 343195600
+12: 68049520
+13: 3729920
+16: 6976
+
+Maximal cocliques on 1 fixed point: (*315/(N−1))
+7: 8400
+9: 13608000
+10: 2677178000
+11: 10810661400
+12: 1948690800
+13: 97910400
+16: 146496
+-->
+
+Numbers of maximal cocliques of given size:
+<pre>
+7: 499200
+9: 628992000
+10: 111370604800
+11: 408839558400
+12: 67554614400
+13: 3133132800
+16: 3808896
+</pre>
+
+These cocliques fall into 1397 orbits, namely
+1, 2, 291, 867, 199, 32, 5 orbits of maximal cocliques of size
+7, 9, 10, 11, 12, 13, 16, respectively.
+<p>
+The unique orbit of maximal 7-cocliques is that of the parts of the bipartition
+of the coHeawood graphs found as common neighbours of three mutually
+adjacent points (so that there are 416*100*36*2/6 = 499200 of them).
+<p>
+The Hoffman bound for cocliques is 16, so that for each 16-coclique
+each point outside has 4 neighbours inside.
+<p>
+The 16-cocliques in the 5 orbits have stabilizers of order
+384, 384, 600, 1536, 23040, respectively. Let C be a 16-coclique
+of the last type, and S its stabilizer. Then S has vertex orbit sizes
+16+240+160. The 16+240 induces a strongly regular subgraph of size 256
+that is the union of 16 16-cocliques, and its stabilizer has order 368640.
+This is the subgraph studied above under c).
+
+<H2>Cliques</H2>
+Maximal cliques have size 5 (since they have size 4 in the local graph).
+The smallest clique cover has size 84. <!-- For example, there is a cover
+using 80 5-cliques and 4 4-cliques, and one using 81 5-cliques and
+2 4-cliques and 1 3-clique, and one using 82 5-cliques and 2 3-cliques. -->
+
+<H2>Borsuk</H2>
+Borsuk asked whether any bounded subset in ℝ<sup><i>n</i></sup> can be
+partitioned into <i>n</i>+1 parts, each of smaller diameter.
+Kahn & Kalai showed that this is false for <i>n</i> = 1325 and <i>n</i> > 2014.
+Various other people brought the smallest counterexample dimension down.
+Bondarenko (2013) observed that the Euclidean representation of the graph
+&Gamma; in its &theta;-eigenspace for &theta;=20 yields 416 unit vectors
+in ℝ<sup>65</sup> with mutual inner products 1/5 (for adjacent vertices)
+and −1/15 (for nonadjacent vertices).
+The diameter of this set is the distance between the images of two nonadjacent
+vertices, so that a partition into parts of smaller diameter must be
+a partition into cliques. But &Gamma; has clique number 5, so one needs
+at least (in fact: precisely) 84 parts.
+The argument is general: Given a strongly regular graph &Gamma; with
+<i>v</i> vertices, where the 2nd largest eigenvalue has multiplicity
+<i>f</i>, one finds <i>v</i> unit vectors in ℝ<sup><i>f</i></sup>
+such that this set of vectors cannot be partitioned into fewer parts of
+smaller diameter than the clique covering number of &Gamma;, that is,
+the chromatic number of its complement.
+<p>
+Today the counterexample with smallest dimension is the one found
+by Jenrich (2013): Start with Bondarenko's example.
+If B<sub>i</sub>, i=1,2,3 are the three connected
+components of a subgraph as under b), then the vector that is
+1 on B<sub>1</sub>, −1 on B<sub>2</sub>, and 0 elsewhere, lies in the
+ℝ<sup>65</sup> and is orthogonal to the vectors representing vertices
+outside B<sub>1</sub> ∪ B<sub>2</sub>. This yields 352 unit vectors in
+ℝ<sup>64</sup>, and a partition into parts of smaller diameter needs
+at least 71 parts.
+<br>
+In the representation of &Gamma; with orthogonal bases, the 96 vertices
+of B<sub>1</sub> ∪ B<sub>2</sub> ∪ B<sub>3</sub> can be taken as
+the bases {a,b,c} that contain an element orthogonal to a fixed
+isotropic point p.
+
+<H2>References</H2>
+<!--
+N. Horiguchi, M. Kitazume & H. Nakasora,
+<i>A construction of the sporadic Suzuki graph from U<sub>3</sub>(4)</i>,
+preprint, 2008.
+-->
+[1] D. Crnković & V. Mikulić,
+<i>Block designs and strongly regular graphs constructed from
+the group U(3,4)</i>,
+Glasnik Matematički <b>41</b> (2006) 189-194.
+<p>
+[2] D. Pasechnik,
+<i>Geometric characterization of graphs from the Suzuki chain</i>,
+Europ. J. Combin. <b>14</b> (1993) 491-499.
+<p>
+[3] L. H. Soicher,
+<i>Three new distance-regular graphs</i>,
+Europ. J. Combin. <b>14</b> (1993) 501-505.
+<p>
+[4] A. V. Bondarenko,
+<i>On Borsuk's conjecture for two-distance sets</i>,
+arXiv 1305.2584, May 2013.
+<p>
+[5] T. Jenrich,
+<i>A 64-dimensional counterexample to Borsuk's conjecture</i>,
+arXiv 1308.0206, Aug 2013.
+<p>
+[6] T. Jenrich,
+<i>New strongly regular graphs derived from the G<sub>2</sub>(4) graph</i>,
+arXiv 1409.3520, Sept 2014.
+<p>
+</body>
+</html>

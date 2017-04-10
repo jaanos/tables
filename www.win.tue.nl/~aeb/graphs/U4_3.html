@@ -1,0 +1,262 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<HTML>
+<HEAD>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <TITLE>U<sub>4</sub>(3) on 112 points</TITLE>
+</HEAD>
+<BODY>
+<a href="index.html">Up</a>
+
+<H1>The O<sup>–</sup><sub>6</sub>(3) graph</H1>
+There is a unique strongly regular graph &Gamma; with parameters
+<i>v</i> = 112, <i>k</i> = 30, &lambda; = 2, &mu; = 10.
+The spectrum is 30<sup>1</sup> 2<sup>90</sup> (–10)<sup>21</sup>.
+This graph is the collinearity graph of the unique generalized
+quadrangle GQ(3,9). (Any strongly regular graph with the parameters
+of the collinearity graph of a GQ(<i>q</i>,<i>q</i><sup>2</sup>)
+necessarily is one, by Cameron-Goethals-Seidel (1978).
+And GQ(3,9) is unique by Dixmier-Zara (1976).)
+<p>
+<H2>Group</H2>
+The full group of automorphisms of &Gamma; is
+G = U<sub>4</sub>(3).D<sub>8</sub>
+(of order 2<sup>10</sup>.3<sup>6</sup>.5.7) acting rank 3,
+with point stabilizer
+3<sup>4</sup>:((2&times;A<sub>6</sub>).2<sup>2</sup>).
+This group is PGO*<sup>–</sup><sub>6</sub>(3) where the * denotes
+that the form may be multiplied by a constant.
+[Is there no standard name for this group?]
+<p>
+<H2>Construction</H2>
+&Gamma; is the graph on the 112 isotropic points of
+the O<sup>–</sup><sub>6</sub>(3) geometry,
+adjacent when orthogonal, i.e., joined by a totally isotropic line.
+<p>
+&Gamma; can also be described as the graph on the 112 totally isotropic
+lines of the GQ(9,3) on 280 points defined by U<sub>4</sub>(3),
+adjacent when they meet.
+<p>
+Or again: In the <a href="S.html">Steiner system</a> S(5,8,24),
+take all 112 blocks starting 110... or 101...;
+join two blocks of the same kind when they have only two symbols
+in common, and join two blocks starting differently when they
+have four symbols in common. This yields &Gamma; (and shows that
+it has a split into two <a href="Sims-Gewirtz.html">Gewirtz graph</a>s).
+<p>
+<H2>Supergraphs</H2>
+&Gamma; is the first subconstituent of the
+<a href="McL.html">McL graph</a> on 275 vertices.
+<p>
+<H2>Subgraphs</H2>
+We give the substructures of &Gamma; associated to the 11 maximal
+subgroups of G not containing U<sub>4</sub>(3), sorted according to
+increasing orbit size.
+<p>
+a) <i>Vertices</i>.
+There are 112 of these, forming a single orbit.
+The stabilizer of one (in the full automorphism group)
+is 3<sup>4</sup>:((2 &times; A<sub>6</sub>).2<sup>2</sup>)
+with vertex orbit sizes 1+30+81. The
+<a href="Brouwer-Haemers.html">second subconstituent</a>
+VO<sup>–</sup><sub>4</sub>(3) (on 81 vertices) is again strongly regular,
+with parameters (81,20,1,6).
+It is the graph on the vectors of a 4-dimensional vector space over GF(3),
+where two vectors are adjacent when the quadratic form vanishes on
+their difference.
+<p>
+b) <i>Subquadrangles</i>.
+There are 252 subquadrangles GQ(3,3) (namely, the subgraphs induced
+on the perp of a nonisotropic point), forming a single orbit.
+The stabilizer of one is
+U<sub>4</sub>(2):2&times;2 = PGO<sub>5</sub>(3)&times;2.
+The vertex orbit sizes are 40+72.
+<p>
+c) <i>Lines</i>.
+There are 280 4-cliques (namely, the totally isotropic lines),
+forming a single orbit. The stabilizer of one is
+3<sub>+</sub><sup>1+4</sup>.2<sub>–</sub><sup>1+4</sup>.D<sub>12</sub>.
+The vertex orbit sizes are 4+108.
+<p>
+d) <i>Splits into two Gewirtz graphs</i>.
+&Gamma; has 324 splits into two
+<a href="Sims-Gewirtz.html">Gewirtz graph</a>s, forming a
+single orbit. The stabilizer of one split is
+L<sub>3</sub>(4).2<sup>2</sup>, and the stabilizer of one Gewirtz graph
+is L<sub>3</sub>(4).2, of index 2 in the full automorphism group of the
+Gewirtz graph. (Indeed, in the McLaughlin graph &Lambda; we find
+&Gamma; as the set of neighbours of a vertex x, and the Gewirtz graph
+as the set of common neighbours of two nonadjacent vertices x, y.
+The stabilizer in McL:2 of {x,y} is the full group of the Gewirtz graph,
+and the subgroup obtained by fixing both x and y has index 2 in it.)
+<p>
+There are 648 Gewirtz subgraphs, 324 on each point, 108 on each edge,
+180 on each nonedge, 36 on each path of length 2, 12 on each K<sub>1,3</sub>,
+4 on each quadrangle.
+The intersection sizes are 0 or 56 (1x), 16 or 40 (42x), 20 or 36 (56x),
+24 or 32 (105x), 28 (240x).
+When two Gewirtz subgraphs C, D have nonempty intersection K,
+then C and D are the only Gewirtz subgraphs on K in &Gamma;.
+If the intersection K has size u, then the graph induced on K
+is regular of valency (u–16)/4.
+Fixing C and varying D we find all the 16-cocliques,
+half of the 10 K<sub>2</sub>, all the 6 C<sub>4</sub>,
+and half of the Coxeter graphs in C.
+<p>
+Equivalent to a split of the isotropic points of O<sup>–</sup><sub>6</sub>(3)
+into two Gewirtz graphs is a collection of 315 elliptic lines, precisely
+one in each tangent plane with a single isotropic point. Thus, there are
+324 such collections.
+<p>
+In the U<sub>4</sub>(3) generalized quadrangle, this object is
+equivalent to a collection of 315 K<sub>4,4</sub>'s (induced on
+the union of two orthogonal hyperbolic lines), precisely one
+on each edge. Such objects are visible inside the Patterson graph.
+<p>
+e) <i>Regular spreads</i>.
+A nonisotropic point in the U<sub>4</sub>(3) geometry determines
+a unital on its perp: 28 isotropic points, pairwise not joined
+by a totally isotropic line. In the orthogonal geometry this
+corresponds to a regular spread: a partition of the 112 isotropic points
+into 28 totally isotropic lines, such that any two of these lines
+determine a regulus: 4 lines in an O<sup>+</sup><sub>4</sub>(3).
+There are 540 nonisotropic points in the unitary geometry, forming
+a single orbit. The stabilizer of one is (U<sub>3</sub>(3) &times; 4):2.
+<p>
+There are lots of other spreads: each time we see a regulus,
+we can replace its four lines by the other four in their union
+and obtain a new spread. Or, in unitary terms, we can replace a
+hyperbolic line by its perp and obtain a new ovoid. However, there
+are also spreads without any regulus.
+<pre>
+#reguli  #spreads  comment
+63       540       regular, 1 orbit
+31       34020     obtained from regular by a single switch, 1 orbit
+15       680400    510300 obtained by double switch
+9        30240
+7        952560
+6        1088640
+4        1088640
+3        2721600
+2        3265920
+1        1905120
+0        5961600
+total    17729280
+</pre>
+<p>
+f) <i>Bases</i>.
+If we choose the quadratic form &Sigma; X<sub>i</sub><sup>2</sup>,
+then we see a subgroup 2<sup>5</sup>:S<sub>6</sub>.
+There are 567+567 = 1134 bases, of mutually orthogonal nonisotropic
+points all of the same kind, forming a single orbit under
+PGO*<sup>–</sup><sub>6</sub>(3); for PGO<sup>–</sup><sub>6</sub>(3)
+they split into two orbits (all points with Q(x)=1 and all points
+with Q(x)=2). The point stabilizer is 2<sup>5</sup>:S<sub>6</sub>.
+In terms of the isotropic points these bases determine subgraphs
+(of vectors of "weight" 6) of size 32. (They are the distance-3
+graphs of <a href="Folded-6-cube.html">folded 6-cubes</a>,
+distance-regular with intersection array {10,9,4;1,6,10}.)
+All subgraphs with array {10,9,4;1,6,10} arise in this way.
+These subgraphs are bipartite, and their halves form the 2268
+maximal 16-cocliques.
+<p>
+g) <i>Elliptic lines</i>.
+The orthogonal geometry has 2835 elliptic lines, forming a single orbit.
+The stabilizer of one is 4(S<sub>4</sub>&times;S<sub>4</sub>).2<sup>2</sup>.
+In terms of the isotropic points the elliptic lines are the
+O<sup>+</sup><sub>4</sub>(3) subgeometries.
+<p>
+h) <i>Hyperbolic lines or nonedges</i>.
+The orthogonal geometry has 4536 hyperbolic lines, forming a single orbit.
+In terms of the graph on the isotropic points the hyperbolic lines are
+the nonedges (and give a vertex partition 2+10+40+60).
+A hyperbolic line has two isotropic points, one point with Q(x)=1
+and one point with Q(x)=2. Therefore, fixing a hyperbolic line in
+PGO<sup>–</sup><sub>6</sub>(3) implies fixing a nonisotropic point,
+and the group is not maximal. But in PGO*<sup>–</sup><sub>6</sub>(3)
+the stabilizer (A<sub>6</sub>.2<sup>2</sup> &times; 2).2
+<!--  = (2 &times; 2 &times; S<sub>6</sub>):2 -->is maximal.
+<p>
+i) <i>Odd graphs or maximal 7-cocliques</i>.
+Our graph contains an orbit of 5184
+<a href="Odd.html">Odd graphs</a> O<sub>4</sub>.
+This is most easily seen by viewing the orthogonal geometry
+as elliptic hyperplane in the O<sub>7</sub>(3) geometry.
+That latter geometry can be described using the form
+&Sigma; X<sub>i</sub><sup>2</sup>, and the point (1,1,1,1,1,1,1)
+is elliptic. In its perp we see 112 = 7 + 35 + 70 points
+(7: 1111110; 35: 1110000; 70: 1112220), where the 7-set is a maximal
+coclique and the 35-set induces the Odd graph O<sub>4</sub>,
+the unique distance-regular graph with intersection array {4,3,3;1,1,2}.
+The stabilizer of a 7-coclique (or of an O<sub>4</sub>) is
+S<sub>7</sub>. There are no other maximal 7-cocliques.
+*** Are there any other Odd subgraphs? ***
+<p>
+j) <i>Triples of mutually orthogonal elliptic lines</i>.
+There are 8505 triples of mutually orthogonal elliptic lines,
+forming a single orbit. An elliptic line has two points with
+Q(x)=1 and two with Q(x)=2, and hence a triple of mutually
+orthogonal elliptic lines determines a unique basis consisting
+of points with Q(x)=1, and a unique basis consisting of points
+with Q(x)=2. It follows that the stabilizer of a triple of
+mutually orthogonal elliptic lines is nonmaximal in
+PGO<sup>–</sup><sub>6</sub>(3). However, it is maximal in
+PGO*<sup>–</sup><sub>6</sub>(3), with stabilizer
+4<sup>3</sup>(2&times;S<sub>4</sub>) =
+2<sup>5</sup>.2<sup>3</sup>.S<sub>3</sub>.2.
+<p>
+k) <i>Unitary elliptic quadrics and even cocliques</i>
+The graph on the 280 totally isotropic lines, adjacent when they meet,
+has 9072 10-cocliques with the property that each point outside
+is adjacent to 0 or 2 points inside. These form a single orbit
+(but split into two orbits of size 4536 with stabilizer M<sub>10</sub>
+for U<sub>4</sub>(3)). These 10-cocliques can be seen as elliptic quadrics:
+<p>
+The U<sub>4</sub>(3) geometry is defined by a nondegenerate
+Hermitean form over GF(9).
+When restricted to vectors with coordinates in GF(3), the
+form becomes a quadratic form. This means that this geometry
+contains O<sup>+</sup><sub>4</sub>(3) and O<sup>–</sup><sub>4</sub>(3)
+substructures. The former becomes a pair of orthogonal nondegenerate
+planes, but each such plane has three elliptic points, and a
+pair of orthogonal nondegenerate planes is equivalent to a split
+of a basis into 3+3. Thus, the corresponding subgroup is not maximal.
+The latter becomes a set of ten pairwise disjoint lines such that
+each t.i. line hits 0 or 2 of them.
+
+<!--The map (x,y) -> (x+y,x–y) multiplies the form
+x<sup>2</sup> + y<sup>2</sup> by 2 and preserves orthogonality.
+Consider our geometry as the direct sum of three elliptic lines,
+acted upon by the direct sum of three copies of this map.-->
+<p>
+<H2>Cocliques</H2>
+From the information on the maximal cocliques in the second subconstituent
+we immediately derive the numbers of maximal cocliques of a given size here.
+There are 5184 maximal 7-cocliques (see also under i)),
+766584 maximal 10-cocliques, 3447360 maximal 11-cocliques,
+816480 maximal 12-cocliques, 181440 maximal 13-cocliques,
+and 2268 maximal 16-cocliques (see also under f)).
+<p>
+<H2>Chromatic number</H2>
+This graph has chromatic number 8.
+Indeed, 8 suffices since there is a split into two Gewirtz graphs
+and Gewirtz has chromatic number 4. And 7 does not suffice:
+there is no partition of the point set into seven 16-cocliques.
+<!-- why not? by computer. Is there a nice argument? -->
+<p>
+<H2>References</H2>
+<p>
+P.J. Cameron, J.-M. Goethals & J.J. Seidel,
+<i>Strongly regular graphs having strongly regular subconstituents</i>,
+J. Algebra <b>55</b> (1978) 257-280.
+<p>
+S. Dixmier & F. Zara,
+<i>Etude d'un quadrangle généralisé autour de deux de ses points non liés</i>,
+preprint, 1976.
+<p>
+S. Dixmier & F. Zara,
+<i>Essai d'une méthode d'étude de certains graphes liés aux
+groupes classiques</i>,
+C. R. Acad. Sci. Paris (A) <b>282</b> (1976) 259-262.
+
+</BODY>
+</HTML>

@@ -1,0 +1,126 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<HTML>
+<HEAD>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <TITLE>Cameron graph</TITLE>
+</HEAD>
+<BODY>
+<a href="index.html">Up</a>
+
+<H1>Cameron graph</H1>
+There is a rank 4 strongly regular graph &Gamma; with parameters
+<i>v</i> = 231, <i>k</i> = 30, &lambda; = 9, &mu; = 3.
+The spectrum is 30<sup>1</sup> 9<sup>55</sup> (–3)<sup>175</sup>.
+It is the unique strongly regular graph with these parameters
+that is a gamma-space with lines of size 3.
+<p>
+<H2>Construction</H2>
+The vertices are the (22 choose 2) = 231 pairs from a fixed 22-set S
+provided with a fixed Steiner system S(3,6,22).
+Two pairs are adjacent when they are disjoint and their 4-point union
+is contained in a block.
+<p>
+<H2>Group</H2>
+The automorphism group is M<sub>22</sub>.2 of order 887040,
+acting rank 4 with point stabilizer 2<sup>5</sup>:Sym(5).
+<p>
+<H2>Gamma space</H2>
+This graph is the collinearity graph of a partial linear space
+with lines of size 3, namely the triples of pairs that partition
+a block of the Steiner system. This geometry is a gamma space:
+given a line L, each point outside L is collinear to 0, 1, or 3
+points of L. It has Fano subplanes, 10 on each point and 2 on each line.
+The 15 lines and 10 planes on a fixed point form the edges and vertices
+of the <a href="Petersen.html">Petersen graph</a>.
+We see a <a href="GQ22.html">GQ(2,2)</a> subgeometry on each block.
+<p>
+<H2>Triple cover</H2>
+This graph has a triple cover on 693 vertices with full group
+3.M<sub>22</sub>.2.
+<p>
+<H2>Subgraphs</H2>
+<p>
+a) <i>A symbol</i>.
+&Gamma; has 2765664 21-cocliques falling in 29 orbits of sizes
+22, 352, 2310, 4620, 5280, 12320, 18480, 21120, 24640, 27720,
+36960 (5x), 49280 (2x), 73920, 110880 (2x), 147840 (5x),
+221760 (2x), 443520 (2x).
+Since 21 is the Hoffman bound on the size of a coclique, these cocliques
+are maximal, and each vertex outside one has 3 neighbours inside.
+For two of these 29 orbits the stabilizer of a coclique is transitive
+on its 21 vertices. These are precisely the two orbits of cocliques
+with a stabilizer that is maximal in Aut(&Gamma;).
+These orbits have lengths 22 and 352. A coclique in the former is called
+a <i>symbol</i>, one in the latter a <i>heptad</i> (see c below).
+There are 22 symbols, forming a single orbit.
+The stabilizer of one is L<sub>3</sub>(4).2 with vertex orbit sizes 21+210.
+<p>
+b) <i>A quad</i>.
+&Gamma; has 77 quads, subgeometries GQ(2,2), forming a single orbit.
+The stabilizer of one is 2<sup>4</sup>:S<sub>6</sub>
+with vertex orbit sizes 15+120+96.
+<p>
+c) <i>A heptad</i>.
+There are 352 of these (21-cocliques, see above), forming a single orbit.
+The stabilizer of one is A<sub>7</sub> with vertex orbit sizes
+21+105+105 (the pairs in the heptad, meeting the heptad in 1 symbol,
+and those outside the heptad).
+<p>
+d) <i>A vertex</i>.
+There are 231 of these, forming a single orbit.
+The stabilizer of one is 2<sup>5</sup>:S<sub>5</sub>
+with vertex orbit sizes 1+30+160+40.
+The relation defined by the orbit of size 40 is the
+<a href="Johnson.html">triangular graph</a> T(22).
+<p>
+The local graphs are 2-clique extensions of the line graph
+of the <a href="Petersen.html">Petersen graph</a>.
+<p>
+e) <i>A Fano plane</i>.
+There are 330 of these, maximal 7-cliques on which the lines induce
+a Fano plane, forming a single orbit. The stabilizer of one is
+2<sup>3</sup>.L<sub>3</sub>(2) x 2 with vertex orbit sizes
+7+28+84+112. These are the only maximal cliques.
+<p>
+f) <i>A decad / Sylvester subgraph / GO(2,1)</i>.
+Let our S(3,6,22) be obtained by deriving S(5,8,24) twice, so that
+there are two outside symbols a and b. There are 1288 splits of the
+set of 24 symbols into two dodecads. Of these splits, 616 have
+a and b on the same side, and 672 have them on different sides.
+Let a <i>decad</i> be a set of ten symbols that together with a and b
+form a dodecad.
+<!--
+The graph &Gamma; does not contain any further Sylvester or GO(2,1)
+subgraphs. So, for both Sylvester and GO(2,1) subgraphs we have:
+-->
+There are 616 decads, forming a single orbit.
+The stabilizer of one is A<sub>6</sub>.2<sup>2</sup> (of order 1440)
+with vertex orbit sizes 30+36+45+120.
+On the orbit of size 36 &Gamma; induces a
+<a href="Sylvester.html">Sylvester graph</a>.
+On the orbit of size 45 &Gamma; induces a GO(2,1)
+(generalized octagon of order (2,1), the flag graph of GQ(2,2),
+on 45 = 1+4+8+16+16 vertices).
+<p>
+g) <i>An undecad / L2(11) subgraph</i>.
+Let an <i>undecad</i> be a set of eleven symbols that together with
+a or b form a dodecad.
+There are 672 of these forming a single orbit.
+The stabilizer of one is L<sub>2</sub>(11):2
+with vertex orbit sizes 55+66+110.
+The graph induced on the orbit of size 55 has valency 6 and point
+stabilizer S<sub>4</sub>, see <a href="L211on55.html">L<sub>2</sub>(11)
+on 55</a>.
+
+<p>
+<H2>References</H2>
+<p>
+A. E. Brouwer,
+<i>Uniqueness and nonexistence of some graphs related to M<sub>22</sub></i>,
+Graphs Combin. <b>2</b> (1986) 21-29.
+<p>
+J. I. Hall & S. V. Shpectorov,
+<i>P-geometries of rank 3</i>,
+Geom. Dedic. <b>82</b> (2000) 139-169.
+</BODY>
+</HTML>

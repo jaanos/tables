@@ -1,0 +1,200 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>The McLaughlin graph</title>
+</head>
+<body>
+<a href="index.html">Up</a>
+
+<h1>Graph</h1>
+There is a unique strongly regular graph &Gamma; with parameters
+<i>v</i> = 275, <i>k</i> = 112, &lambda; = 30, &mu; = 56.
+The spectrum is 112<sup>1</sup> 2<sup>252</sup> (–28)<sup>22</sup>.
+
+The complementary graph has parameters
+<i>v</i> = 275, <i>k</i> = 162, &lambda; = 105, &mu; = 81 and
+spectrum 162<sup>1</sup> 27<sup>22</sup> (–3)<sup>252</sup>.
+
+Uniqueness is due to Goethals & Seidel (1975).
+For a detailed discussion see Brouwer & van Lint (1984).
+<p>
+
+<H2>Group</H2>
+The full group of automorphisms of &Gamma; is
+G = McL.2 (of order 2<sup>8</sup>.3<sup>6</sup>.5<sup>3</sup>.7.11)
+acting rank 3, with point stabilizer U<sub>4</sub>(3):2.
+<p>
+
+<H2>Construction</H2>
+A 22+77+176 construction is found by taking
+the Steiner system S(4,7,23) with 1+22 points
+and 253 = 77+176 blocks, where the first 77 are those
+containing the first point.
+Use p,B,C to denote one of the 22, 77, 176 objects,
+and let ~ denote adjacency.
+Make the 22 remaining points a coclique,
+let p ~ B when p is not in B,
+let B ~ B' when B,B' meet in 1 point,
+let p ~ C when p is in C,
+let B ~ C when B,C meet in 3 points,
+let C ~ C' when C,C' meet in 1 point.
+This yields &Gamma;.
+The resulting partition is equitable with parameters
+(0,56,56), (16,16,80), (7,35,70).
+<p>
+The same construction in other words:
+Take the 23 points and 253 blocks of S(4,7,23),
+with points forming a coclique, p ~ B when p is not in B,
+and B ~ B' when B,B' meet in 1 point. This yields a graph
+on 276 vertices that is member of the switching class
+of a regular two-graph. Now switch one point isolated
+(and delete it) to get &Gamma;. See also h) below.
+
+<H2>Subgraphs</H2>
+We give the substructures of &Gamma; associated to the 11 maximal
+subgroups of G not containing McL, sorted according to
+increasing orbit size.
+<p>
+a) <i>Vertices</i>.
+There are 275 of these, forming a single orbit.
+The stabilizer of one (in the full automorphism group)
+is U<sub>4</sub>(3):2 with vertex orbit sizes 1+112+162.
+The graphs induced on the
+<a href="U4_3.html">first</a> and <a href="U4_3a.html">second</a>
+subconstituent are described separately.
+<p>
+b) <i>22-cocliques</i>.
+There are 4050 of these, forming a single orbit.
+The stabilizer of one is M<sub>22</sub>
+with vertex orbit sizes 22+77+176.
+The graph induced on the 77 is the <a href="M22.html">M<sub>22</sub>-graph</a>.
+<p>
+c) <i>Pairs of Hoffman-Singleton graphs</i>.
+&Gamma; has an orbit of splits 50+50+175 where the 50's induce
+the <a href="Hoffman-Singleton.html">Hoffman-Singleton graph</a>
+and the 175 induces the graph on the edges of the Hoffman-Singleton graph,
+adjacent when they are disjoint and lie in the same pentagon.
+This latter graph is strongly regular with parameters
+(v,k,&lambda;,&mu;) = (175,72,20,36).
+If one takes the union of the two 50's and switches on this split
+one obtains the <a href="Higman-Sims.html">Higman-Sims graph</a>.
+The stabilizer of a split 50+50+175 is U<sub>3</sub>(5):2, where
+the outer 2 interchanges the two 50's.
+There are 7128 such splits.
+*** Other HoSi's in &Gamma;? ***
+<p>
+d) <i>5-cliques</i>.
+There are 15400 of these, forming a single orbit.
+The stabilizer of one is 3<sub>+</sub><sup>1+4</sup>:4S<sub>5</sub>
+with vertex orbit sizes 5+270.
+<p>
+e) <i>Edges</i>.
+There are 15400 of these, forming a single orbit.
+The stabilizer of one is 3<sup>4</sup>:(M<sub>10</sub> &times; 2)
+with vertex orbit sizes 2+30+81+162.
+The graph induced on the 81 is the
+<a href="Brouwer-Haemers.html">VO<sup>–</sup><sub>4</sub>(3)</a> graph.
+<p>
+f) <i>Non-edges</i>.
+There are 22275 of these, forming a single orbit.
+The stabilizer of one is L<sub>3</sub>(4):2<sup>2</sup>
+with vertex orbit sizes 2+56+105+112.
+The graph induced on the 56 (the common neighbours) is the
+<a href="Sims-Gewirtz.html">Gewirtz graph</a>.
+<p>
+g) <i>Odd graphs</i>.
+&Gamma; contains an orbit of 22275
+<a href="Odd.html">Odd graphs</a> O<sub>4</sub>.
+The stabilizer of one is 2.S<sub>8</sub>
+with vertex orbit sizes 35+240.
+There are other subgraphs O<sub>4</sub> in &Gamma;
+since the local graph also contains such graphs.
+*** Any further Odd subgraphs? ***
+<p>
+h) <i>Maximal 7-cocliques</i>.
+There are 44550 of these, forming a single orbit.
+The stabilizer of one is 2<sup>4</sup>:A<sub>7</sub>
+with vertex orbit sizes 7+16+112+140.
+The 16 here is a maximal 16-coclique.
+(This is what one gets from the regular two-graph construction
+after switching a block isolated and deleting it.)
+<p>
+
+i) <i>Maximal 11-cocliques of the first kind</i>.
+There are 113400 of these, forming a single orbit.
+&Gamma; has three orbits of maximal 11-cocliques.
+The first has stabilizer 2 &times; M<sub>11</sub>,
+with vertex orbit sizes 11+22+110+132.
+The 11 is a maximal 11-coclique, the 22 a (nice) 11K<sub>2</sub>.
+(There is a unique nice 11K<sub>2</sub> on each 2K<sub>2</sub>,
+but there are many others as well.)
+The other two orbits of maximal 11-cocliques have
+stabilizers of order 12 and 36, not transtive on the coclique.
+<p>
+
+j) <i>Splits 125+150</i>.
+&Gamma; has an orbit of splits 125+150 with stabilizer
+5<sub>+</sub><sup>1+2</sup>:3:8:2
+with vertex orbit sizes 125+150.
+The 125 induces a rank 5 strongly regular graph
+with parameters (v,k,&lambda;,&mu;) = (125,52,15,26).
+<p>
+
+k) <i>3-Cocliques</i>.
+There are 779625 of these, forming a single orbit.
+The stabilizer of one is
+2<sup>2+4</sup>:(S<sub>3</sub>&times;S<sub>3</sub>)
+<!-- 2<sup>4</sup>:3:2:2:3:2:2 -->
+with vertex orbit sizes 3+8+32+64+72+96.
+The orbit of size 8 induces a K<sub>4,4</sub>.
+
+<H2>Cliques</H2>
+The largest cliques have size 5. At first sight it looks like
+&Gamma; might be the collinearity graph of a partial geometry
+with 28 lines of size 5 on each point. However, this possibility
+has been ruled out by Östergård & Soicher (2016).
+
+<H2>Cocliques</H2>
+The largest cocliques have size 22.
+Numbers of maximal cocliques of given size (with orbit sizes):
+<pre>
+7: 44550
+10: 13721400 = 1247400 + 12474000
+11: 199697400 = 113400 + 49896000 + 149688000
+13: 43659000 = 6237000 + 37422000
+16: 757350 = 44550 + 712800
+22: 4050
+</pre>
+<p>
+The largest cocliques in the line graph have size 11
+(and there are 254016000 of these, 181440 on each edge,
+2240 on each pair of disjoint edges).
+
+<H2>Chromatic number</H2>
+The complement of &Gamma; has chromatic number 55.
+That is, &Gamma; has a partition into 55 5-cliques.
+(Nathann Cohen, pers. comm.)
+
+<H2>References</H2>
+
+A. E. Brouwer & J. H. van Lint,<br>
+<i>Strongly regular graphs and partial geometries</i>,<br>
+pp 85-122 in: Enumeration and Design - Proc. Silver Jubilee Conf.
+on Combinatorics, Waterloo, 1982, D.M. Jackson & S.A. Vanstone (eds.),
+Academic Press, Toronto, 1984.
+<p>
+J.-M. Goethals & J. J. Seidel,<br>
+<i>The regular two-graph on 276 vertices</i>,<br>
+Discr. Math. <b>12</b> (1975) 143-158.
+<p>
+W. H. Haemers & V. D. Tonchev,<br>
+<i>Spreads in strongly regular graphs</i>,<br>
+Designs, Codes and Cryptography <b>8</b> (1996) 145-157.
+<p>
+Patric R. J. Östergård & Leonard H. Soicher,<br>
+There is No McLaughlin Geometry,
+<a href="http://arxiv.org/abs/1607.03372"><tt>arXiv:1607.03372</tt></a>,
+Jul 2016.
+</body>
+</html>

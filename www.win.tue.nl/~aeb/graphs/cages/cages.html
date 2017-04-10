@@ -1,0 +1,805 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>Cages</title>
+</head>
+<body>
+<a href="../index.html">Up<a>
+
+<h1>Cages</h1>
+A (<i>k</i>,<i>g</i>)-<i>cage</i> is a regular graph of valency
+<i>k</i> and girth <i>g</i> and minimal number of vertices.
+<p>
+The problem of determining the size v(<i>k</i>,<i>g</i>) of a
+(<i>k</i>,<i>g</i>)-cage was posed in 1959 by Kárteszi who noticed
+that v(3,5) = 10 was realized by the
+<a href="../Petersen.html">Petersen graph</a>.
+Earlier, Tutte (1947) had already studied cubic cages.
+<p>
+Sachs (1963) first showed that v(<i>k</i>,<i>g</i>) is finite, and
+Erdős & Sachs (1963) gave an upper bound.
+<p>
+<h2>Families</h2>
+<p>
+(i)
+The (2,<i>g</i>)-cage is the circuit C<sub><i>g</i></sub>,
+and v(2,<i>g</i>) = <i>g</i>.
+<p>
+(ii)
+The (<i>k</i>,3)-cage is the complete graph K<sub><i>k</i>+1</sub>,
+and v(<i>k</i>,3) = <i>k</i> + 1.
+<p>
+(iii)
+The (<i>k</i>,4)-cage is the complete bipartite graph
+K<sub><i>k</i>,<i>k</i></sub>, and v(<i>k</i>,4) = 2<i>k</i>.
+<p>
+(iv)
+If <i>k</i> = <i>q</i> + 1 for a prime power <i>q</i>, then
+a (<i>k</i>,6)-cage is the incidence graph of a projective plane
+PG(2,<i>q</i>), and v(<i>k</i>,6) = 2(<i>q</i><sup>2</sup> + <i>q</i> + 1).
+These graphs have eigenvalues ±(<i>q</i>+1), ±√<i>q</i>,
+with multiplicities 1, <i>q</i>(<i>q</i>+1), respectively.
+The (3,6)-cage is also known as the <a href="../Heawood.html">Heawood graph</a>.
+<p>
+(v)
+If <i>k</i> = <i>q</i> + 1 for a prime power <i>q</i>, then
+a (<i>k</i>,8)-cage is the incidence graph of a generalized quadrangle
+GQ(<i>q</i>,<i>q</i>),
+and v(<i>k</i>,8) = 2(<i>q</i> + 1)(<i>q</i><sup>2</sup> + 1).
+These graphs have eigenvalues ±(<i>q</i>+1), ±√(2<i>q</i>), 0
+with multiplicities 1, <i>q</i>(<i>q</i>+1)<sup>2</sup>/2,
+<i>q</i>(<i>q</i><sup>2</sup>+1), respectively.
+The (3,8)-cage is also known as Tutte's 8-cage, or the Tutte-Coxeter graph.
+<p>
+(vi)
+If <i>k</i> = <i>q</i> + 1 for a prime power <i>q</i>, then
+a (<i>k</i>,12)-cage is the incidence graph of a generalized hexagon
+GH(<i>q</i>,<i>q</i>), and v(<i>k</i>,12) equals
+2(<i>q</i> + 1)(<i>q</i><sup>4</sup> + <i>q</i><sup>2</sup> + 1).
+(Benson)
+These graphs have eigenvalues ±(<i>q</i>+1), ±√(3<i>q</i>),
+±√<i>q</i>, 0 with multiplicities 1,
+<i>q</i>(<i>q</i>+1)<sup>2</sup>(<i>q</i><sup>2</sup>+<i>q</i>+1)/6,
+<i>q</i>(<i>q</i>+1)<sup>2</sup>(<i>q</i><sup>2</sup>–<i>q</i>+1)/2 and
+2<i>q</i>(<i>q</i><sup>4</sup>+<i>q</i><sup>2</sup>+1)/3, respectively.
+<p>
+<h2>Table</h2>
+Table of all known values of v(<i>k</i>,<i>g</i>)
+(apart from the above infinite families).
+<p>
+<table cellpadding="5" border="1">
+<tr><td><i>k</i>\<i>g</i></td> <td></td>
+<td>3</td> <td>4</td> <td>5</td> <td>6</td> <td>7</td>
+<td>8</td> <td>9</td> <td>10</td> <td>11</td> <td>12</td> </tr>
+<tr></tr>
+
+<tr><td>3</td> <td></td> <td>4</td> <td>6</td> <td>10</td> <td>14</td>
+<td>24</td> <td>30</td> <td>58</td> <td>70</td> <td>112</td> <td>126</td> </tr>
+
+<tr><td>4</td> <td></td> <td>5</td> <td>8</td> <td>19</td> <td>26</td>
+<td>67</td> <td>80</td> <td></td> <td></td> <td></td> <td>728</td></tr>
+
+<tr><td>5</td> <td></td> <td>6</td> <td>10</td> <td>30</td> <td>42</td>
+<td></td> <td>170</td> <td></td> <td></td> <td></td> <td>2730</td></tr>
+
+<tr><td>6</td> <td></td> <td>7</td> <td>12</td> <td>40</td> <td>62</td>
+<td></td> <td>312</td> <td></td> <td></td> <td></td> <td>7812</td></tr>
+
+<tr><td>7</td> <td></td> <td>8</td> <td>14</td> <td>50</td> <td>90</td>
+<td></td> <td></td> <td></td> <td></td> <td></td> <td></td> </tr>
+</table>
+<p>
+<h2>Valency 3</h2>
+<p>
+The unique (3,3)-cage is the complete graph K<sub>4</sub>,
+and v(3,3) = 4.
+<!-- autgp Sym(4) of order 24 --> 
+<p>
+The unique (3,4)-cage is the complete bipartite graph K<sub>3,3</sub>,
+and v(3,4) = 6.
+<p>
+The unique (3,5)-cage is the <a href="../Petersen.html">Petersen graph</a>,
+and v(3,5) = 10.
+<p>
+The unique (3,6)-cage is the <a href="../Heawood.html">Heawood graph</a>.
+the incidence graph of the Fano plane, and v(3,6) = 14.
+<p>
+The unique (3,7)-cage is the McGee graph, and v(3,7) = 24.
+<!--
+A description: Take as vertex set X = Zz sub 8 times "{" -1,0,1 "}";
+join (a,0) to (a, +- 1) and (a+4,0); furthermore, join
+(a, +- 1) to (a +- 1, -+ 1), (a +- 3, -+ 1).
+Aut GAM has order 48, and has two orbits on X: for gam = (a,0) we
+find that GAM sub 4 ( gam ) is an edge, while GAM sub 4 ( gam )
+is a non-edge for gam = (a, +- 1).
+The graphs induced on the two orbits are 4K sub 2 and 2C sub 8.
+[Royle says: group has order 32, orbits 8+16]
+-->
+<p>
+The unique (3,8)-cage is the Tutte-Coxeter graph, also known as
+Tutte's 8-cage, the incidence graph of the
+<a href="../GQ22.html">generalized quadrangle GQ(2,2)</a>, and v(3,8) = 30.
+<p>
+There are 18 (3,9)-cages, and v(3,9) = 58.
+The first such cage was found by Biggs & Hoare (1980),
+the fact that v(3,9) = 58 and the remaining examples
+are due to Brinkmann, McKay & Saager (1995).
+<p>
+There are 3 (3,10)-cages, all bipartite, and v(3,10) = 70.
+This is due to O'Keefe & Wong (1980).
+Two of these three (3,10)-cages are cospectral with characteristic polynomial
+(x<sup>2</sup>-9)(x<sup>2</sup>-6)(x<sup>2</sup>-2)(x<sup>2</sup>-1)<sup>4</sup>(x<sup>4</sup>-6x<sup>2</sup>+2)<sup>5</sup>(x<sup>4</sup>-6x<sup>2</sup>+3)<sup>4</sup>(x<sup>4</sup>-6x<sup>2</sup>+6)<sup>5</sup>.
+The third, historically the first, found by Balaban (1973), has characteristic
+polynomial (x<sup>2</sup>-9)(x<sup>2</sup>-6)<sup>2</sup>(x<sup>2</sup>-5)<sup>4</sup>(x<sup>2</sup>-4)(x<sup>2</sup>-2)<sup>2</sup>(x<sup>2</sup>-1)<sup>8</sup>x<sup>2</sup>(x<sup>4</sup>-6x<sup>2</sup>+3)<sup>8</sup>.
+<!-- Harries graph: group of order 120
+Harries-Wong graph: group of order 24
+Balaban (1973) graph: group of order 80 -->
+<p>
+Brendan McKay and Wendy Myrvold showed that v(3,11) = 112
+(see McKay-Myrvold-Nadon (1998)), and they showed
+in 2003 (unpublished) that the (3,11)-cage is unique.
+<!-- also: NJAS EIS A000066:
+%C A000066 Recently (unpublished) McKay and Myrvold proved that
+the minimal graph on 112 vertices is unique. - May 20 2003 -->
+This unique (3,11)-cage is due to Balaban (1973).
+<p>
+
+<h2>Valency 4</h2>
+<p>
+<!--
+The unique (4,3)-cage is the complete graph K<sub>5</sub>,
+and v(4,3) = 5.
+<p>
+The unique (4,4)-cage is the complete bipartite graph K<sub>4,4</sub>,
+and v(3,4) = 8.
+<p>
+-->
+The unique (4,5)-cage is the Robertson graph, and v(4,5) = 19.
+<!--
+A description: Take as vertex set X = "{"a sub i (i mo Zz sub 12 ),
+b sub i (i mo Zz sub 4 ), c sub i (i mo Zz sub 3 )"}";
+and join a sub i to a sub { i +- 1 }, b sub i, c sub i;
+furthermore, join b sub i to b sub i+2.
+Aut GAM has order 24, and has three orbits on X:
+the two vertices in GAM sub 3 ( gam )
+have distance 1, 2, 3 for gam = b sub i, a sub i, c sub i,
+respectively. (For some remarks on the spectrum, see
+.SC Brown [
+Brown non-existence girth 1967
+].)
+-->
+<p>
+The unique (4,6)-cage is the point-line incidence graph of PG(2,3),
+and v(4,6) = 26.
+<p>
+Geoff Exoo, Brendan McKay and Wendy Myrvold showed
+in 2007 (unpublished) that v(4,7) = 67.
+One example of a (4,7)-cage is known.
+
+<h2>Valency 5</h2>
+<p>
+One has v(5,5) = 30, and there are precisely four (5,5)-cages.
+One of them is known as the Robertson-Wegner graph.
+Its group is A<sub>5</sub>&times;2 with orbits 10+20.
+A description:
+The 30 vertices are the 20 vertices of the dodecahedron and the
+10 4-subsets of the dodecahedron that have all internal distances 3;
+the adjacencies are the obvious ones: the dodecahedron is an induced
+subgraph of valency 3, each 4-subset is adjacent to its 4 elements
+and to the antipodal 4-subset.
+<!--
+.SC (Kárteszi
+.[[
+Kárteszi 1960 piani ciclici
+.]]).
+One of the three known (5,5)-cages GAM
+is known as the Robertson-Wegner graph
+.SC (Wegner
+.[[
+Wegner smallest 1973
+.]]).
+-->
+<!-- Gordon Royle writes:
+There are precisely 4 (5,5)-cages on 30 vertices. Unfortunately
+the descriptions in Wong's survey AND Brouwer, Cohen and Neumaier's book
+are both incorrect.
+<p>
+The first (5,5)-cage (in our listing) is the Robertson-Wegner graph,
+which has an automorphism group of size 120. Brouwer gives a nice new
+description of it in the errata for their book. The Robertson-Wegner graph
+has 2 orbits, of sizes 10 and 20 respectively. In Wong's survey it is
+presented as Figure 5, whereas it is actually isomorphic to the graph
+in Figure 4.
+<p>
+The second (5,5)-cage is a graph induced by 3 pentagons and 3 pentagrams
+in the 5 pentagon + 5 pentagram description of the Hoffman-Singleton graph.
+This graph has an automorphism group of size 20 with four orbits of sizes
+{5,5,10,10}. In Wong's survey it is presented as Figure 4, whereas it is
+actually isomorphic to the graph in Figure 5.
+<p>
+The third (5,5)-cage is a graph constructed by Foster, with an automorphism
+group of size 30 and orbit sizes {15,15}. It is given in Wong's survey
+as Figure 6.
+<p>
+The fourth (5,5)-cage has an automorphism group of order 96 and two orbits
+of length {6,24}. It was first claimed by Yang and Zhang in 1989 that this
+completed the collection of (5,5)-cages, and this has since been reconfirmed
+by Markus Meringer's genreg program. 
+-->
+
+<h2>Valency 6</h2>
+The unique (6,5)-cage is the complement of a Petersen graph
+inside the Hoffman-Singleton graph, and v(6,5) = 40.
+
+<h2>Valency 7</h2>
+The unique (7,5)-cage is the
+<a href="../Hoffman-Singleton.html">Hoffman-Singleton graph</a>,
+and v(7,5) = 50.
+<p>
+The unique (7,6)-cage is the unique 3-fold cover with girth 6
+of the incidence graph of the points and planes of PG(3,2),
+and v(7,6) = 90. Its group is 3.Alt(7).2.
+It is the incidence graph of the elliptic semiplane found by
+Baker (1978). It was rediscovered by O'Keefe & Wong (1981).
+<!--
+.SC Ito
+.[[
+Ito O'Keefe Wong 1981
+.]]
+found that Aut GAM isom 3 cdot Alt (7), forgetting the outer 2.
+-->
+
+<h2>Data</h2>
+We give serial number (and actual graph), valency, girth, number of vertices,
+size of the automorphism group, orbit sizes, distance distribution
+around each vertex and spectrum. If the graph is bipartite this
+is stated and only the positive half of the spectrum is given.
+<p>
+<table cellpadding="5" border="1">
+<tr><td>#</td> <td>k</td> <td>g</td> <td>v</td> <td>|G|</td> <td>orbits</td>
+<td>distance distribution</td> <td>spectrum</td></tr>
+
+<tr><td><a href="cage-k3.g3.dr">1/1</a></td> <td>3</td> <td>3</td>
+<td>4</td> <td>24</td> <td>tra</td>
+<td>1+3</td> <td>–1<sup>3</sup> 3</td> </tr>
+
+<tr><td><a href="cage-k3.g4.dr">1/1</a></td> <td>3</td> <td>4</td>
+<td>6</td> <td>72</td> <td>tra</td>
+<td>1+3+2</td> <td>bipartite, 0<sup>4</sup> 3</td> </tr>
+
+<tr><td><a href="cage-k3.g5.dr">1/1</a></td> <td>3</td> <td>5</td>
+<td>10</td> <td>120</td> <td>tra</td>
+<td>1+3+6</td> <td>–2<sup>4</sup> 1<sup>5</sup> 3</td> </tr>
+
+<tr><td><a href="cage-k3.g6.dr">1/1</a></td> <td>3</td> <td>6</td>
+<td>14</td> <td>336</td>
+<td>tra</td> <td>1+3+6+4</td>
+<td>bipartite, √2<sup>6</sup> 3</td>
+</tr>
+
+<tr><td><a href="cage-k3.g7.dr">1/1</a></td> <td>3</td> <td>7</td>
+<td>24</td> <td>32</td> <td>8+16</td>
+<td>1+3+6+12+2</td>
+<td>–½(1+√17) –2.34292<sup>4</sup> –2 –1<sup>2</sup>
+–0.470683<sup>4</sup> 0<sup>3</sup> ½(–1+√17) 1.81361<sup>4</sup>
+2<sup>3</sup> 3</td></tr>
+
+<tr><td><a href="cage-k3.g8.dr">1/1</a></td> <td>3</td> <td>8</td>
+<td>30</td> <td>1440</td> <td>tra</td>
+<td>1+3+6+12+8</td>
+<td>bipartite, 0<sup>10</sup> 2<sup>9</sup> 3</td></tr>
+
+<tr><td><a href="cage-k3.g9-00.dr">1/18</a></td> <td>3</td> <td>9</td>
+<td>58</td> <td>4</td>
+<td>4*1+5*2+11*4</td>
+<td>1+3+6+12+24+8+4 (2x)<br>
+1+3+6+12+24+9+3 (2x)<br>
+1+3+6+12+24+10+2 (10x)<br>
+1+3+6+12+24+11+1 (22x)<br>
+1+3+6+12+24+12 (22x)</td>
+<td>–2.75468 –2.58854 ...<br>2.38349 2.38868 3</td></tr>
+
+<tr><td><a href="cage-k3.g9-01.dr">2/18</a></td> <td>3</td> <td>9</td>
+<td>58</td> <td>2</td>
+<td>4*1+27*2</td>
+<td>1+3+6+12+24+9+3 (4x)<br>
+1+3+6+12+24+10+2 (14x)<br>
+1+3+6+12+24+11+1 (28x)<br>
+1+3+6+12+24+12 (12x)</td>
+<td>–2.61301 –2.59308 ...<br>
+2.43933 2.44196 3</td></tr>
+
+<tr><td><a href="cage-k3.g9-02.dr">3/18</a></td> <td>3</td> <td>9</td>
+<td>58</td> <td>24</td>
+<td>4+6+2*12+24</td>
+<td>1+3+6+12+24+9+3 (4x)<br>
+1+3+6+12+24+10+2 (12x)<br>
+1+3+6+12+24+11+1 (24x)<br>
+1+3+6+12+24+12 (18x)</td>
+<td>–2.55908<sup>3</sup> –2.55733<sup>2</sup> ...<br>
+2.39242<sup>2</sup> 2.40836<sup>3</sup> 3</td></tr>
+
+<tr><td><a href="cage-k3.g9-03.dr">4/18</a></td> <td>3</td> <td>9</td>
+<td>58</td> <td>4</td>
+<td>3*2+13*4</td>
+<td>1+3+6+12+24+9+3 (2x)<br>
+1+3+6+12+24+10+2 (22x)<br>
+1+3+6+12+24+11+1 (18x)<br>
+1+3+6+12+24+12 (16x)</td>
+<td>–2.75987 –2.62976 ...<br>
+2.38547 2.45953 3</td></tr>
+
+<tr><td><a href="cage-k3.g9-04.dr">5/18</a></td> <td>3</td> <td>9</td>
+<td>58</td> <td>4</td>
+<td>5*2+12*4</td>
+<td>1+3+6+12+24+10+2 (8x)<br>
+1+3+6+12+24+11+1 (34x)<br>
+1+3+6+12+24+12 (16x)</td>
+<td>–2.75991 –2.58967 ...<br>
+2.36044 2.45807 3</td></tr>
+
+<tr><td><a href="cage-k3.g9-05.dr">6/18</a></td> <td>3</td> <td>9</td>
+<td>58</td> <td>2</td>
+<td>2*1+28*2</td>
+<td>1+3+6+12+24+10+2 (11x)<br>
+1+3+6+12+24+11+1 (36x)<br>
+1+3+6+12+24+12 (11x)</td>
+<td>–2.73095 –2.62527 ...<br>
+2.38714 2.45704 3</td></tr>
+
+<tr><td><a href="cage-k3.g9-06.dr">7/18</a></td> <td>3</td> <td>9</td>
+<td>58</td> <td>1</td>
+<td>58*1</td>
+<td>1+3+6+12+24+9+3 (2x)<br>
+1+3+6+12+24+10+2 (19x)<br>
+1+3+6+12+24+11+1 (20x)<br>
+1+3+6+12+24+12 (17x)</td>
+<td>–2.66844 –2.62445 ...<br>
+2.39504 2.45387 3</td></tr>
+
+<tr><td><a href="cage-k3.g9-07.dr">8/18</a></td> <td>3</td> <td>9</td>
+<td>58</td> <td>2</td>
+<td>4*1+27*2</td>
+<td>1+3+6+12+24+10+2 (8x)<br>
+1+3+6+12+24+11+1 (18x)<br>
+1+3+6+12+24+12 (32x)</td>
+<td>–2.63455 –2.60469 ...<br>
+2.40412 2.4409 3</td></tr>
+
+<tr><td><a href="cage-k3.g9-08.dr">9/18</a></td> <td>3</td> <td>9</td>
+<td>58</td> <td>1</td>
+<td>58*1</td>
+<td>1+3+6+12+24+8+4 (1x)<br>
+1+3+6+12+24+9+3 (4x)<br>
+1+3+6+12+24+10+2 (26x)<br>
+1+3+6+12+24+11+1 (22x)<br>
+1+3+6+12+24+12 (5x)</td>
+<td>–2.66108 –2.61225 ...<br>
+2.44088 2.44829 3</td></tr>
+
+<tr><td><a href="cage-k3.g9-09.dr">10/18</a></td> <td>3</td> <td>9</td>
+<td>58</td> <td>2</td>
+<td>2*1+28*2</td>
+<td>1+3+6+12+24+11+1 (14x)<br>
+1+3+6+12+24+12 (44x)</td>
+<td>–2.7354 –2.67555 ...<br>
+2.36072 2.42256 3</td></tr>
+
+<tr><td><a href="cage-k3.g9-10.dr">11/18</a></td> <td>3</td> <td>9</td>
+<td>58</td> <td>1</td>
+<td>58*1</td>
+<td>1+3+6+12+24+11+1 (16x)<br>
+1+3+6+12+24+12 (42x)</td>
+<td>–2.74602 –2.64829 ...<br>
+2.36304 2.42366 3</td></tr>
+
+<tr><td><a href="cage-k3.g9-11.dr">12/18</a></td> <td>3</td> <td>9</td>
+<td>58</td> <td>2</td>
+<td>2*1+28*2</td>
+<td>1+3+6+12+24+9+3 (2x)<br>
+1+3+6+12+24+10+2 (18x)<br>
+1+3+6+12+24+11+1 (20x)<br>
+1+3+6+12+24+12 (18x)</td>
+<td>–2.64207 –2.61726 ...<br>
+2.3938 2.45694 3</td></tr>
+
+<tr><td><a href="cage-k3.g9-12.dr">13/18</a></td> <td>3</td> <td>9</td>
+<td>58</td> <td>1</td>
+<td>58*1</td>
+<td>1+3+6+12+24+8+4 (1x)<br>
+1+3+6+12+24+9+3 (4x)<br>
+1+3+6+12+24+10+2 (21x)<br>
+1+3+6+12+24+11+1 (26x)<br>
+1+3+6+12+24+12 (6x)</td>
+<td>–2.6812 –2.61521 ...<br>
+2.41845 2.44375 3</td></tr>
+
+<tr><td><a href="cage-k3.g9-13.dr">14/18</a></td> <td>3</td> <td>9</td>
+<td>58</td> <td>12</td>
+<td>1+3*3+4*6+2*12</td>
+<td>1+3+6+12+24+10+2 (18x)<br>
+1+3+6+12+24+11+1 (12x)<br>
+1+3+6+12+24+12 (28x)</td>
+<td>–2.59647 –2.58734<sup>2</sup> ...<br>
+2.37007<sup>2</sup> 2.42305<sup>2</sup> 3</td></tr>
+
+<tr><td><a href="cage-k3.g9-14.dr">15/18</a></td> <td>3</td> <td>9</td>
+<td>58</td> <td>8</td>
+<td>2*1+2*2+5*4+4*8</td>
+<td>1+3+6+12+24+8+4 (1x)<br>
+1+3+6+12+24+9+3 (8x)<br>
+1+3+6+12+24+10+2 (2x)<br>
+1+3+6+12+24+11+1 (16x)<br>
+1+3+6+12+24+12 (31x)</td>
+<td>–2.65867 –2.59599 ...<br>
+2.40068<sup>2</sup> 2.41573 3</td></tr>
+
+<tr><td><a href="cage-k3.g9-15.dr">16/18</a></td> <td>3</td> <td>9</td>
+<td>58</td> <td>2</td>
+<td>4*1+27*2</td>
+<td>1+3+6+12+24+11+1 (2x)<br>
+1+3+6+12+24+12 (56x)</td>
+<td>–2.73515 –2.68142 ...<br>
+2.33193 2.39672 3</td></tr>
+
+<tr><td><a href="cage-k3.g9-16.dr">17/18</a></td> <td>3</td> <td>9</td>
+<td>58</td> <td>6</td>
+<td>2*2+4*3+7*6</td>
+<td>1+3+6+12+24+11+1 (8x)<br>
+1+3+6+12+24+12 (50x)</td>
+<td>–2.69512 –2.64036 ...<br>
+2.3511 2.36234 3</td></tr>
+
+<tr><td><a href="cage-k3.g9-17.dr">18/18</a></td> <td>3</td> <td>9</td>
+<td>58</td> <td>6</td>
+<td>1+3*3+8*6</td>
+<td>1+3+6+12+24+10+2 (3x)<br>
+1+3+6+12+24+11+1 (6x)<br>
+1+3+6+12+24+12 (49x)</td>
+<td>–2.60086 –2.5756<sup>2</sup> ...<br>
+2.37225 2.39939<sup>2</sup> 3</td></tr>
+
+<tr><td><a href="cage-k3.g10-00.dr">1/3</a></td> <td>3</td> <td>10</td>
+<td>70</td> <td>120</td>
+<td>5+15+20+30</td>
+<td>1+3+6+12+24+20+4</td>
+<td>bipartite, 0.595188<sup>5</sup> 0.741964<sup>4</sup> 1<sup>4</sup>
+1.12603<sup>5</sup> √2 2.17533<sup>5</sup>
+2.33441<sup>4</sup> 2.37608<sup>5</sup> √6
+3</td></tr>
+
+<tr><td><a href="cage-k3.g10-01.dr">2/3</a></td> <td>3</td> <td>10</td>
+<td>70</td> <td>24</td>
+<td>1+3+4+6+8+2*12+24</td>
+<td>1+3+6+12+24+20+4</td>
+<td>bipartite, 0.595188<sup>5</sup> 0.741964<sup>4</sup> 1<sup>4</sup>
+1.12603<sup>5</sup> √2 2.17533<sup>5</sup>
+2.33441<sup>4</sup> 2.37608<sup>5</sup> √6
+3</td></tr>
+
+<tr><td><a href="cage-k3.g10-02.dr">3/3</a></td> <td>3</td> <td>10</td>
+<td>70</td> <td>80</td>
+<td>10+20+40</td>
+<td>1+3+6+12+24+20+4</td>
+<td>bipartite, 0<sup>2</sup> 0.741964<sup>8</sup> 1<sup>8</sup>
+√2<sup>2</sup> 2 √5<sup>4</sup> 2.33441<sup>8</sup>
+√6<sup>2</sup> 3</td></tr>
+
+<tr><td><a href="cage-k3.g11.dr">1/1</a></td> <td>3</td> <td>11</td>
+<td>112</td> <td>64</td>
+<td>2*8+2*16+2*32</td>
+<td>1+3+6+12+24+48+12+4+2 (16x)<br>
+1+3+6+12+24+48+16+2 (32x)<br>
+1+3+6+12+24+48+18 (64x)</td>
+<td>–2.85577 –2.59305<sup>8</sup> –√6<sup>5</sup>
+–2.19117<sup>4</sup> –1.81361<sup>2</sup> –1.71895<sup>8</sup>
+–√2<sup>12</sup> –0.576713<sup>4</sup> –0.321637
+–0.306112<sup>8</sup> 0<sup>12</sup> 0.470683<sup>2</sup>
+1.22503<sup>8</sup> 1.26438<sup>4</sup> √2<sup>12</sup>
+2.17741 2.34292<sup>2</sup> 2.39309<sup>8</sup>
+√6<sup>5</sup> 2.5035<sup>4</sup> 3</td></tr>
+
+<tr><td><a href="cage-k3.g12.dr">1/1</a></td> <td>3</td> <td>12</td>
+<td>126</td> <td>12096</td>
+<td>63+63</td>
+<td>1+3+6+12+24+48+32</td>
+<td>bipartite, 0<sup>28</sup> √2<sup>27</sup>
+√6<sup>21</sup> 3</td>
+</tr>
+
+<tr><td><a href="cage-k4.g5.dr">1/1</a></td> <td>4</td> <td>5</td>
+<td>19</td> <td>24</td>
+<td>3+4+12</td>
+<td>1+4+12+2</td>
+<td>–½(1+√21) –½(1+√17)<sup>2</sup> –½(1+√13)<sup>2</sup>
+–√3<sup>2</sup> –½(1+√5) ½(–1+√5) 1<sup>2</sup>
+½(–1+√13)<sup>2</sup> ½(–1+√17)<sup>2</sup> √3<sup>2</sup>
+½(–1+√21) 4</td></tr>
+
+<tr><td><a href="cage-k4.g6.dr">1/1</a></td> <td>4</td> <td>6</td>
+<td>26</td> <td>11232</td>
+<td>tra</td>
+<td>1+4+12+9</td>
+<td>bipartite, √3<sup>12</sup> 4</td></tr>
+
+<tr><td><a href="cage-k4.g7-00.dr">1/?</a></td> <td>4</td> <td>7</td>
+<td>67</td> <td>4</td>
+<td>1+11*2+11*4</td>
+<td>1+4+12+36+12+2 (10x)<br>
+1+4+12+36+13+1 (8x)<br>
+1+4+12+36+14 (49x)</td>
+<td>-3.45504 -3.02055 ...<br>
+2.63777 2.68738 4</td></tr>
+
+<tr><td><a href="cage-k4.g8.dr">1/1</a></td> <td>4</td> <td>8</td>
+<td>80</td> <td>51840</td>
+<td>40+40</td>
+<td>1+4+12+36+27</td>
+<td>bipartite, 0<sup>30</sup> √6<sup>24</sup> 4</td></tr>
+
+<tr><td><a href="cage-k4.g12-00.dr">1/?</a></td> <td>4</td> <td>12</td>
+<td>728</td> <td>8491392</td>
+<td>tra</td>
+<td>1+4+12+36+108+324+243</td>
+<td>bipartite, 0<sup>182</sup> √3<sup>168</sup> 3<sup>104</sup> 4</td></tr>
+
+<tr><td><a href="cage-k5.g5-00.dr">1/4</a></td> <td>5</td> <td>5</td>
+<td>30</td> <td>120</td>
+<td>10+20</td>
+<td>1+5+20+4</td>
+<td>–½(1+√21)<sup>8</sup> –√5<sup>3</sup> –1<sup>2</sup>
+1<sup>5</sup> ½(–1+√21)<sup>8</sup> √5<sup>3</sup> 5</td></tr>
+
+<tr><td><a href="cage-k5.g5-01.dr">2/4</a></td> <td>5</td> <td>5</td>
+<td>30</td> <td>20</td>
+<td>2*5+2*10</td>
+<td>1+5+20+4</td>
+<td>–3<sup>4</sup> –2.70636<sup>2</sup> –2.46673<sup>2</sup>
+–2.12233<sup>2</sup> –1.77748<sup>2</sup> –1 0.777484<sup>2</sup>
+1.12233<sup>2</sup> 1.46673<sup>2</sup> 1.70636<sup>2</sup>
+2<sup>8</sup> 5</td></tr>
+
+<tr><td><a href="cage-k5.g5-02.dr">3/4</a></td> <td>5</td> <td>5</td>
+<td>30</td> <td>30</td>
+<td>15+15</td>
+<td>1+5+20+4</td>
+<td>(–1–√5)<sup>2</sup> –2.70636<sup>4</sup> –√5<sup>2</sup>
+–2.12233<sup>4</sup> –1 1.12233<sup>4</sup> (–1+√5)<sup>2</sup>
+1.70636<sup>4</sup> 2<sup>4</sup> √5<sup>2</sup> 5</td></tr>
+
+<tr><td><a href="cage-k5.g5-03.dr">4/4</a></td> <td>5</td> <td>5</td>
+<td>30</td> <td>96</td>
+<td>6+24</td>
+<td>1+5+20+4</td>
+<td>–3<sup>2</sup> (–1–√3)<sup>4</sup> –½(1+√17)<sup>3</sup> –2<sup>3</sup>
+0 (–1+√3)<sup>4</sup> ½(–1+√17)<sup>3</sup> 2<sup>9</sup> 5</td></tr>
+
+<tr><td><a href="cage-k5.g6.dr">1/1</a></td> <td>5</td> <td>6</td>
+<td>42</td> <td>241920</td>
+<td>tra</td>
+<td>1+5+20+16</td>
+<td>bipartite, 2<sup>20</sup> 5</td></tr>
+
+<tr><td><a href="cage-k5.g8.dr">1/1</a></td> <td>5</td> <td>8</td>
+<td>170</td> <td>3916800</td>
+<td>tra</td>
+<td>1+5+20+80+64</td>
+<td>bipartite, 0<sup>68</sup> √8<sup>50</sup> 5</td></tr>
+
+<tr><td><a href="cage-k5.g12-00.dr">1/?</a></td> <td>5</td> <td>12</td>
+<td>2730</td> <td>503193600</td>
+<td>1365+1365</td>
+<td>1+5+20+80+320+1280+1024</td>
+<td>bipartite, 0<sup>728</sup> 2<sup>650</sup> 2√3<sup>350</sup> 5</td></tr>
+
+<tr><td><a href="cage-k6.g5.dr">1/1</a></td> <td>6</td> <td>5</td>
+<td>40</td> <td>480</td>
+<td>tra</td>
+<td>1+6+30+3</td>
+<td>–3<sup>12</sup> –2<sup>5</sup> 1<sup>4</sup> 2<sup>18</sup> 6</td></tr>
+
+<tr><td><a href="cage-k6.g6.dr">1/1</a></td> <td>6</td> <td>6</td>
+<td>62</td> <td>744000</td>
+<td>tra</td>
+<td>1+6+30+25</td>
+<td>bipartite, √5<sup>30</sup> 6</td></tr>
+
+<tr><td><a href="cage-k6.g8.dr">1/1</a></td> <td>6</td> <td>8</td>
+<td>312</td> <td>9360000</td>
+<td>156+156</td>
+<td>1+6+30+150+125</td>
+<td>bipartite, 0<sup>130</sup> √10<sup>90</sup> 6</td></tr>
+
+<tr><td><a href="cage-k6.g12-00.dr">1/?</a></td> <td>6</td> <td>12</td>
+<td>7812</td> <td>5859000000</td>
+<td>3906+3906</td>
+<td>1+6+30+150+750+3750+3125</td>
+<td>bipartite, 0<sup>2170</sup> √5<sup>1890</sup> √15<sup>930</sup> 6</td></tr>
+
+<tr><td><a href="cage-k7.g5.dr">1/1</a></td> <td>7</td> <td>5</td>
+<td>50</td> <td>252000</td>
+<td>tra</td> <td>1+7+42</td>
+<td>–3<sup>21</sup> 2<sup>28</sup> 7</td></tr>
+
+<tr><td><a href="cage-k7.g6.dr">1/1</a></td> <td>7</td> <td>6</td>
+<td>90</td> <td>15120</td>
+<td>tra</td>
+<td>1+7+42+38+2</td>
+<td>bipartite, 2<sup>14</sup> √7<sup>30</sup> 7</td></tr>
+
+</table>
+
+<h2>Spectrum</h2>
+For these cages one notices that the second largest eigenvalue
+is much smaller than the largest, there is a big gap there.
+For example, for k=3, g=9 the first graph has spectrum
+–2.75468 –2.58854 –2.57149 ... 2.34292 2.36066 2.38349 2.38868 3.
+Looking at all 18 graphs with these parameters, the 2nd largest
+eigenvalue is at most 2.45953. This can be explained as follows.
+<p>
+Let g = 2t+1 be odd.
+Let A<sub>i</sub> be the matrix describing distance i.
+Put J = A<sub>0</sub> + A<sub>1</sub> + ... + A<sub>t</sub> + E.
+Then E is the adjacency matrix of a graph of valency e,
+where e is the excess of v over the Moore bound.
+These A<sub>i</sub> can be expressed as polynomial in A
+using A<sup>2</sup> = kI + A<sub>2</sub> and
+AA<sub>i</sub> = (k–1)A<sub>i–1</sub>
++ A<sub>i+1</sub> for i &lt; t.
+Now the definition of E becomes E = J – f(A).
+If &lambda; is an eigenvalue of A different from k,
+then –f(&lambda;) is an eigenvalue of E, so that |f(&lambda;)| ≤ e.
+If the Moore lower bound f(k) = v–e for v is more than v/2,
+then v–e &gt; e and &lambda; is bounded away from k.
+<p>
+For example, in case k=3, g=9, we find
+f(x) = x<sup>4</sup>+x<sup>3</sup>–6x<sup>2</sup>–4x+4,
+with f(3) = 46, and the excess is v–f(k) = 58–46 = 12.
+Now |f(&lambda;)| ≤ e implies –2.913 &lt &lambda; &lt; 2.517,
+showing that &lambda; cannot be very close to 3.
+<!-- pp=Plot[x^4+x^3-6x^2-4x+4,{x,-3,3}, PlotRange->{-8,12},
+Ticks->{Automatic,{-8,-4,4,8,12}}]
+Show[{pp,Graphics[Text["f(x)",{2.2,11.5}]]}] -->
+<p>
+<img src="excessfn.png" alt="graph of x^4+x^3-6x^2-4x+4">
+<p>
+This argument is due to Biggs (1980),
+who used it to give a lower bound for e.
+<p>
+The same inequality |f(&lambda;)| ≤ e can also be given in case of even girth.
+Let g = 2t+2 be even.
+Put J = A<sub>0</sub> + A<sub>1</sub> + ... + A<sub>t</sub> + (1/k)B + E,
+with A<sub>i</sub> as before, and B defined by
+AA<sub>t</sub> = (k–1)A<sub>t–1</sub> + B. Again E = J – f(A).
+Note that E is nonnegative: B<sub>xy</sub> is, for d(x,y)=t+1, the number
+of paths of length t+1 from x to y, so the entries of (1/k)B are at most 1.
+<p>
+For example, in case k=3, g=10, we find f(x) =
+(1/3)x<sup>5</sup>+x<sup>4</sup>–2x<sup>3</sup>–6x<sup>2</sup>+(4/3)x+4,
+with f(3) = 62, and the excess is v–f(k) = 70–62 = 8.
+Now |f(&lambda;)| ≤ e implies –3 ≤ &lambda; &lt; 2.4627.
+In the examples the largest value of &lambda; is √6 = 2.44949.
+<p>
+<img src="excessfn2.png" alt="graph of (1/3)x^5+x^4-2x^3-6x^2+(4/3)x+4">
+
+<h2>References</h2>
+A.T. Balaban,
+<i>Trivalent graphs of girth nine and eleven,
+and relationships among cages</i>,
+Rev. Roum. Math. Pures et Appl. <b>18</b> (1973) 1033-1043.
+<p>
+R.D. Baker,
+<i>An elliptic semiplane</i>,
+J. Combin. Th. (A) <b>25</b> (1978) 193-195.
+<p>
+C.T. Benson,
+<i>Minimal regular graphs of girth eight and twelve</i>,
+Canad. J. Math. <b>18</b> (1966) 1091-1094.
+<p>
+N.L. Biggs,
+<i>Girth, valency, and excess</i>,
+Lin. Alg. Appl. <b>31</b> (1980) 55-59.
+<p>
+N.L. Biggs,
+<i>Constructions for Cubic Graphs of Large Girth</i>,
+Electronic J. of Combinatorics <b>5</b> (1998).
+<p>
+N.L. Biggs & M.J. Hoare,
+<i>A trivalent graph with 58 vertices and girth 9</i>,
+Discrete Math. <b>30</b> (1980) 299-301.
+<p>
+G. Brinkmann, B. D. McKay & C. Saager, 
+<i>The smallest cubic graphs of girth nine</i>,
+Combinatorics, Probability and Computing <b>5</b> (1995) 1-13.
+<p>
+P. Erdős & H. Sachs,
+<i>Reguläre Graphen gegebener Taillenweite mit minimaler Knotenzahl</i>,
+Wiss. Z. Uni. Halle (Math. Nat.) <b>12</b> (1963) 251-257.
+<p>
+Geoffrey Exoo & Robert Jajcay,
+<i>Dynamic cage survey</i>,
+Electr. J. Combin. <bf>15</bf> (2008)
+<a href="http://www.combinatorics.org/Surveys/ds16.pdf">#DS16</a>.
+<p>
+Geoffrey Exoo, Brendan McKay & Wendy Myrvold,
+<i>A (4,7)-Cage</i>, preprint, 2007.
+<p>
+A.J. Hoffman & R.R. Singleton,
+<i>On Moore graphs with diameters 2 and 3</i>,
+IBM J. Res. Develop. <b>4</b> (1960) 497-504.
+<p>
+L.O. James,
+<i>A combinatorial proof that the Moore (7,2) graph is unique</i>,
+Utilitas Math. <b>5</b> (1974) 79-84.
+<p>
+F. Kárteszi,
+<i>Piani finiti ciclici come risoluzioni di un certo problema di minimo</i>,
+Boll. Un. Mat. Ital. (3) <b>15</b> (1960) 522-528.
+<p>
+B. D. McKay, W. Myrvold & J. Nadon,
+<i>Fast Backtracking Principles Applied to Find New Cages</i>,
+pp. 188-191 in: 9th Annual ACM-SIAM Symposium on Discrete Algorithms, Jan 1998.
+<!--
+Brendan McKay, Wendy Myrvold, Jacqueline Nadon
+SODA: ACM-SIAM Symposium on Discrete Algorithms
+(A Conference on Theoretical and Experimental Analysis of Discrete Algorithms)
+-->
+<p>
+W.F. McGee,
+<i>A minimal cubic graph of girth seven</i>,
+Canad. Math. Bull. <b>3</b> (1960) 149-152.
+<p>
+M. Meringer,
+<i>Fast generation of regular graphs and construction of cages</i>
+J. Graph Th. <b>30</b> (1999) 137-146.
+<p>
+M. O'Keefe & P.K. Wong,
+<i>A smallest graph of girth 5 and valency 6</i>,
+J. Combin. Th. (B) <b>26</b> (1979) 145-149.
+<p>
+M. O'Keefe & P.K. Wong,
+<i>A smallest graph of girth 10 and valency 3</i>,
+J. Combin. Th. (B) <b>29</b> (1980) 91-105.
+<p>
+M. O'Keefe & P.K. Wong,
+<i>The smallest graph of girth 6 and valency 7</i>,
+J. Graph Th. <b>5</b> (1981) 79-85.
+<p>
+J. Petersen,
+<i>Sur le théorème de Tait</i>,
+L'Intermédiaire des Mathématiciens <b>5</b> (1898) 225-227.
+<p>
+N. Robertson,
+<i>The smallest graph of girth 5 and valency 4</i>,
+Bull. Amer. Math. Soc. <b>70</b> (1964) 824-825.
+<p>
+G. Royle,
+<a href="http://mapleta.maths.uwa.edu.au/~gordon/remote/cages/">Cubic Cages</a>
+and
+<a href="http://mapleta.maths.uwa.edu.au/~gordon/remote/cages/allcages.html">Cages
+of higher valency</a>.
+<p>
+H. Sachs,
+<i>Regular graphs with given girth and restricted circuits</i>,
+J. London Math. Soc. <b>38</b> (1963) 423-429.
+<p>
+W.T. Tutte,
+<i>A family of cubical graphs</i>,
+Proc. Cambridge Philos. Soc. <b>43</b> (1947) 459-474.
+<p>
+G. Wegner,
+<i>A smallest graph of girth 5 and valency 5</i>,
+J. Combin. Th. (B) <b>14</b> (1973) 203-208.
+<p>
+P.K. Wong,
+<i>On the uniqueness of the smallest graphs of girth 5 and valency 6</i>,
+J. Graph Th. <b>3</b> (1978) 407-409.
+<p>
+P.K. Wong,
+<i>Cages - a survey</i>,
+J. Graph Th. <b>6</b> (1982) 1-22.
+<p>
+[BCN], Section 6.9.
+</BODY>
+</HTML>

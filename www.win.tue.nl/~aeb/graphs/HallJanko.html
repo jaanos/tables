@@ -1,0 +1,401 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<HTML>
+<HEAD>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <TITLE>Hall-Janko graph</TITLE>
+</HEAD>
+<BODY>
+<a href="index.html">Up</a>
+
+<H1>Hall-Janko graph</H1>
+There is a rank 3 strongly regular graph &Gamma; with parameters
+<i>v</i> = 100, <i>k</i> = 36, &lambda; = 14, &mu; = 12.
+The spectrum is 36<sup>1</sup> 6<sup>36</sup> (-4)<sup>63</sup>.
+The graph was constructed by Hall &amp; Wales.
+This graph is not determined by its parameters only - indeed,
+any graph OA(10,4) (that is, two orthogonal Latin squares of order 10)
+will have the same parameters, but cannot be isomorphic.
+This graph is the unique connected graph that is locally the
+<a href="U3_3.html">U<sub>3</sub>(3) graph</a> (Pasechnik).
+<p>
+<H2>Group</H2>
+The full group of automorphisms is G = HJ.2, acting rank 3,
+with point stabilizer U<sub>3</sub>(3).2.
+<p>
+<H2>Construction</H2>
+<H3>1+36+63 first version</H3>
+There is a strongly regular graph with parameters
+<i>v</i> = 36, <i>k</i> = 14, &lambda; = 4, &mu; = 6
+and group of automorphisms U<sub>3</sub>(3).2 with point stabilizer
+L<sub>2</sub>(7).2. See the description of the
+<a href="U3_3.html">U<sub>3</sub>(3) graph</a> for a description
+of this graph as 1+14+21, in terms of the Fano plane.
+<p>
+That graph on 36 vertices has 63 subgraphs on 12 vertices
+isomorphic to the 2-coclique extension of 2&times;3,
+21 on each vertex.
+<p>
+(The 21 on the base vertex x of the 1+14+21 construction are in 1-1
+correspondence with the flags pL in Fano: x, the points p,q,r
+on L, the lines L,M,N on p, and the five flags pL,qL,rL,pM,pN.)
+<p>
+Construct the Hall-Janko graph by taking a base vertex z,
+the 36 vertices of the U<sub>3</sub>(3) graph, all adjacent to z,
+and these 63 12-point subgraphs of the U<sub>3</sub>(3) graph,
+adjacent to their 12 points, where two such subgraphs are adjacent
+when they have 4 points in common.
+<p>
+<H3>1+36+63 second version</H3>
+In the projective plane PG(2,9) provided with a nondegenerate
+hermitean form, one has a unital with 28 points, and 63 nonisotropic
+points. The plane has 63.6.1/6 = 63 orthogonal bases, and
+the 63 points and 63 bases form a generalized hexagon GH(2,2).
+Two points have distance 1 when they are orthogonal, distance 2
+when not orthogonal while the joining line is not a tangent,
+and distance 3 when the joining line is a tangent.
+Two bases have distance 1 when they meet, distance 2
+when one contains a point that is orthogonal to some point of the other,
+and distance three otherwise.
+<p>
+This generalized hexagon is not self-dual: it is disconnected
+(with two components of size 16) far away from a point,
+but is connected far away from a line.
+<p>
+Any apartment (hexagon) in this GH(2,2) determines a unique sub-GH(2,1)
+(with 14 lines and 21 points) and we find 36 sub-GH(2,1)'s in this way.
+These sub-GH(2,1)'s either coincide (14 lines and 21 points in common),
+or meet in a line and the lines meeting it (4 lines and 9 points in common),
+or meet in two intersecting lines (2 lines and 5 points in common),
+and these intersections occur with frequencies 1, 14, 21.
+<p>
+The set of 63 nonisotropic points of PG(2,9) has precisely 36
+partitions into 21 bases, twelve on any given basis.
+These partitions meet in 3, 9, or 21 bases (with frequencies 14, 21, 1).
+Each partition is obtained from a sub-GH(2,1) by taking the 21 lines
+that meet it in a single point.
+<p>
+The graph on these 36 partitions where two are adjacent when they meet
+in 3 bases, or, equivalently, the graph on the 36 sub-GH(2,1)'s where
+two are adjacent when they have 4 lines in common, is strongly regular
+with parameters <i>v</i> = 36, <i>k</i> = 14, &lambda; = 4, &mu; = 6.
+Its group of automorphisms is U<sub>3</sub>(3).2 with point stabilizer
+L<sub>2</sub>(7).2.
+<p>
+Our graph on 100 vertices is constructed as 1+36+63, where the 36 is the
+set of 36 sub-GH(2,1)'s, adjacent when they have 4 lines in common,
+and the 63 is the set of 63 nonisotropic points, adjacent when they are
+not orthogonal and the joining line is not a tangent, and
+a sub-GH(2,1) is adjacent to its points.
+<p>
+<H3>10+90</H3>
+Construct our graph using two ingredients:
+the Foster graph F on 90 vertices, and the Moebius plane S(3,4,10).
+The Foster graph is the unique distance-regular graph with
+intersection array {3,2,2,2,2,1,1,1;1,1,1,1,2,2,2,3},
+has group 3.Alt(6).2<sup>2</sup>, distance distribution
+1+3+6+12+24+24+12+6+2, and is an antipodal 3-cover
+of the unique distance-regular graph with intersection array
+{3,2,2,2;1,1,1,3} on 30 vertices, the incidence graph of GQ(2,2),
+and also the graph on the 30 circles (blocks) of S(3,4,10),
+adjacent when disjoint. Let &pi; be the folding map.
+<p>
+The 100 vertices of &Gamma; are the 90 vertices of F and the 10 points
+of the point set X of S(3,4,10). X is a 10-coclique in &Gamma;,
+two vertices of F are adjacent in &Gamma; when they have distance
+3, 6, 7 or 8 in F, and the point x in X is adjacent to y in F
+when x is in the block &pi;(y).
+<p>
+<img alt="image of HJ graph by Claudio Rocchini" align="left"
+src="http://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Hall_janko_graph.svg/300px-Hall_janko_graph.svg.png">
+<a href="http://en.wikipedia.org/wiki/Image:Hall_janko_graph.svg">Claudio
+Rocchini</a> used the above description to create this image.
+<!-- 2007-09-07 -->
+<!--<a href="http://en.wikipedia.org/wiki/Hall-Janko_graph">-->
+<br clear="all">
+<p>
+<H2>Supergraphs</H2>
+This graph is the first subconstituent of the
+<a href="G24.html">G<sub>2</sub>(4).2</a> graph on 416 vertices,
+which in its turn is the first subconstituent of the Suz graph
+on 1782 vertices.
+<p>
+<H2>Subgraphs</H2>
+We give the substructures of &Gamma; associated to the 9 maximal
+subgroups of G distinct from HJ, sorted according to increasing orbit size.
+<p>
+a) <i>A vertex</i>.<br>
+There are 100 of these, forming a single orbit.
+The stabilizer of one is U<sub>3</sub>(3):2 with vertex orbit sizes
+1+36+63. The subgraph induced on the first subconstituent is
+the <a href="U3_3.html">U3(3) graph</a>, which is
+strongly regular with parameters (v,k,&lambda;,&mu;) = (36,14,4,6).
+<p>
+b) <i>A decad (10-coclique)</i>.<br>
+There are 280 of these, forming a single orbit.
+The stabilizer of one is 3.A<sub>6</sub>.2<sup>2</sup> with
+vertex orbit sizes 10+90. For the structure of the 90, see the 10+90
+construction above.
+These 280 objects carry a 3-class association scheme with
+valencies 36, 108, 135 and the relations of valency 36 and 135
+are strongly regular with parameters (280,36,8,4) and (280,135,70,60).
+Two decads meet in either zero or two points, where the relation
+of valency 135 is that of meeting in two points.
+Note that the graph with parameters (280,36,8,4) is not the collinearity graph
+of GQ(9,3) - in fact it is the collinearity graph of a partial linear space
+with 12 4-lines on each point. 
+<p>
+c) <i>A 2-coclique extension of T(5)</i>.<br>
+The 3150 nonedges of &Gamma; fall into sets of 10,
+where each set induces a subgraph that is the
+2-coclique extension of the triangular graph T(5).
+There are 315 of these sets, forming a single orbit. The stabilizer of one is
+2<sub>&minus;</sub><sup>1+4</sup>.Sym(5) with vertex orbit sizes 20+80.
+<p>
+The stabilizer of a non-edge has vertex orbit sizes 2+6+12+32+48,
+where the 12 form the mu-graph, which is a 2-coclique extension of
+K<sub>2</sub>&times;K<sub>3</sub>.
+<!-- See, e.g., Brouwer & van Eijl -->
+The orbits 2+6+12 induce a 2-coclique extension of T(5).
+<p>
+These 315 objects carry the unique distance-transitive graph with
+intersection array {10,8,8,2; 1,1,4,5}, the
+<a href="HJ315.html">Cohen-Tits near octagon</a>,
+see [BCN], Section 13.6.
+They can be viewed as the involutions in HJ of Atlas type 2A.
+They form the second subconstituent of the
+<a href="G24.html">G<sub>2</sub>(4).2 graph</a>
+on 416 points that is locally &Gamma;. That latter graph is strongly regular
+with parameters (416,100,36,20), and the 315 objects are seen inside &Gamma;
+as the mu-graphs (of size 20).
+<p>
+d) <i>A subgraph K<sub>4,4,4</sub></i>
+(or also: <i>a subgraph 3K<sub>4&times;2</sub></i>).<br>
+The graph &Gamma; contains 525 subgraphs K<sub>4,4,4</sub>
+(12 vertices, valency 8) forming a single orbit.
+And also 525 subgraphs 3K<sub>4&times;2</sub>
+(24 vertices, valency 6) forming a single orbit.
+The stabilizer of one of these is
+(2<sup>2+4</sup>:3&times;S<sub>3</sub>).2
+with vertex orbit sizes 12+24+64.
+<p>
+There are 1575 maximal 4-cocliques, forming a single orbit.
+The stabilizer of one is 2<sup>2+3</sup>:Sym(4) with vertex
+orbit sizes 4+8+24+64. The 4+8 induce K<sub>4,4,4</sub>.
+<p>
+Below under e) we see that given a 4-clique L one finds three other
+4-cliques L<sub>i</sub> such that the union of L and L<sub>i</sub>
+induces K<sub>4&times;2</sub>. But that latter graph has 16 4-cliques,
+so there are 8400.3/16 = 1575 subgraphs K<sub>4&times;2</sub> in &Gamma;,
+forming a single orbit. The stabilizer of one has vertex orbits
+8+12+16+64, where these orbits consist of the vertices with
+6,4,0,3 neighbours inside the given K<sub>4&times;2</sub>.
+The orbits of sizes 8+16 form 3K<sub>4&times;2</sub>.
+<!-- describe the graph on 64 - it has 2^2+4 -->
+<p>
+e) <i>A 40-point subgraph P#4</i>.<br>
+Let P be the Petersen graph on 10 vertices, and let P#4 denote
+the graph obtained from P by replacing each vertex x by the
+four (mutually adjacent) vertices (x,i) (i=1,2,3,4), and each edge
+x~y by the twelve edges (x,i)~(y,j) for i notequal j.
+Now P#4 has 40 vertices and is regular of degree 12.
+It has 4 10-cocliques and 10+210=220 4-cliques.
+The group of P#4 is Sym(5) &times; Sym(4).
+<p>
+There are 8400 4-cliques in &Gamma;, forming a single orbit.
+The stabilizer of a 4-clique in G is Sym(3) &times; Sym(4) with
+vertex orbit sizes 4+12+24+24+36,
+where the orbits of sizes 12, 24, 24, 36 consist of the vertices
+outside the 4-clique with 3, 0, 1, 2 neighbours inside.
+Each 4-clique L determines three others L<sub>i</sub> (i=1,2,3)
+(forming a single orbit in the stabilizer of L) such that the union
+of L and L<sub>i</sub> induces K<sub>2</sub>#4 = K<sub>4&times;2</sub>.
+<!-- There are no edges between L<sub>i</sub> and L<sub>j</sub>. -->
+The union of the first three orbits, of size 4+12+24 = 40, is P#4.
+<p>
+There are 840 subgraphs P#4, forming a single orbit.
+The stabilizer of one is (A<sub>5</sub> &times; A<sub>4</sub>):2
+with vertex orbit sizes 40+60.
+<!-- describe the induced subgraph on 60 -->
+<p>
+f) <i>A nice partition into 10 decads</i>.<br>
+&Gamma; has 1008+12096 partitions into 10 decads,
+falling into two orbits. Let us call those in the orbit of size 1008 nice.
+The stabilizer of one is (A<sub>5</sub> &times; D<sub>10</sub>).2,
+transitive on the 100 vertices, with orbit sizes 10+120+150 on the
+280 decads.
+<p>
+g) <i>An edge</i>.<br>
+There are 1800 of these, forming a single orbit.
+The stabilizer of one is L<sub>3</sub>(2):2 &times; 2 with vertex
+orbit sizes 2+14+42+42<!-- (both in HJ and in HJ.2) -->.
+<p>
+h) <i>A split 100=50+50 of the vertex set</i>.<br>
+The vertex set of &Gamma; has splits into two halves,
+where each half is in three different ways the union of
+five decads. There are 2016 of these splits, forming a single orbit.
+The stabilizer of one is 5<sup>2</sup>:(4&times;S<sub>3</sub>),
+transitive on the 100 vertices.
+<p>
+Above under f) we saw that there are two kinds of partition
+of &Gamma; into 10 decads. There are 12096 ugly ones,
+forming a single orbit. The stabilizer of one is 5<sup>2</sup>:4,
+transitive on the 100 vertices, with orbit sizes 10+10+10+50+50+50+100
+on the 280 decads. The union 10+10+10 of three ugly partitions
+has stabilizer 5<sup>2</sup>:(4&times;S<sub>3</sub>), transitive
+on the 100 vertices, with orbit sizes 30+100+150 on the 280 decads.
+There are 2016 of these sets of 30 decads, forming a single orbit.
+<p>
+Each set of 30 decads consists of six groups of five,
+where three groups of five have the same 50-point union,
+and the other three groups have the complementary union,
+so that the set contains 9 partitions into 10 decads,
+and is the union of three pairwise disjoint such partitions in 2 ways.
+<p>
+i) <i>A 2-clique extension of the Petersen graph</i>.<br>
+There are 10080 of these, forming a single orbit.
+The stabilizer of one is Sym(5) with vertex orbit sizes 20+20+60.
+(The two orbits of size 20 induce nonisomorphic subgraphs, regular of size 7.
+One orbit of size 20 induces a 2-clique extension of the Petersen graph.
+The other induces the graph on the ordered pairs from a 5-set, with
+(i,j) adjacent to (j,i) and (k,i) and (j,k).)
+<!-- These P.K_2 are not subgraphs of P#4. -->
+<p>
+
+<H2>Independence and chromatic number</H2>
+The Hall-Janko graph has independence number 10
+and chromatic number 10.
+The complement of the Hall-Janko graph has independence number 4
+and chromatic number 25.
+<!-- there is a partition invariant for 5^2, see Cayley graph picture -->
+
+<H2>Cocliques</H2>
+Maximal cocliques have sizes 4, 6, 7, 10 and fall into five orbits
+(there are two orbits of maximal 7-cocliques).
+G is transitive on 2-cocliques (nonedges) but has two orbits on
+3-cocliques. Below we give for each coclique C how many triples
+from C belong to these two orbits.
+<pre>
+size  #       A    B
+4     1575    0    4
+6     100800  18   2
+7     25200   32   3
+7     3600    28   7
+10    280     120  0
+</pre>
+The maximal cocliques of size 4 are the 100.63/4 = 1575 sets
+consisting of a vertex and a line in the GH(2,2) far from that vertex.
+The maximal cocliques of size 7 in the 2nd orbit are the
+2.100.36/2 halves of the Heawood graph on the common neighbours
+of two adjacent vertices.
+<p>
+<H2>Cayley graph</H2>
+We saw that HJ.2 has a (nonabelian) subgroup 5<sup>2</sup>:4 of order 100
+that acts regularly on the vertices of &Gamma;.
+Thus, &Gamma; is a Cayley graph. Here a picture.
+<pre>
+.....  X....  ...X.  ...X.  
+..XX.  XX...  X..X.  XXX.X  
+.X*X.  XXX.X  ..X..  ..X..  
+.XX..  X...X  XXX..  X.X..  
+.....  ...X.  ..XXX  ..X.X  
+
+.X...  ..X.X  ...X.  .X.XX  
+X...X  .....  XXX.X  X...X  
+X.XXX  X.*.X  ..X..  X.XX.  
+...XX  .....  X.X..  ...X.  
+....X  X.X..  ..X.X  X....  
+
+XXX..  X.X..  .....  .X...  
+..XXX  ..X.X  ..XX.  X...X  
+..X..  ..X..  .X*X.  X.XXX  
+.X..X  X.XXX  .XX..  ...XX  
+.X...  .X...  .....  ....X  
+
+X.X..  ....X  X....  ..X.X  
+..X.X  .X...  XX...  .....  
+..X..  .XX.X  XXX.X  X.*.X  
+X.XXX  X...X  X...X  .....  
+.X...  XX.X.  ...X.  X.X..  
+</pre>
+(the four 5x5 squares in a row represent the four orbits of 5<sup>2</sup>;
+indicated are the neighbours of the starred vertex; each row of four
+equals the previous row, shifted by one square,
+with squares reflected in the main diagonal and multiplied by -2).
+<p>
+<H2>Related graphs on 100 vertices</H2>
+Given a partition of the vertex set of &Gamma; into ten 10-cocliques,
+we may add edges and turn these into ten 10-cliques. The resulting
+graph is strongly regular with parameters (100,45,20,20)
+(and hence also gives rise to a symmetric 2-(100,45,20) design).
+This conclusion depends only on the parameters, and the two
+distinct partitions into decads yield two nonisomorphic srgs.
+If this partition fits to a 50-50 split, then Seidel switching
+on that split yields a strongly regular graph with parameters
+(100,55,30,30). [Bagchi, Jørgensen & Klin]
+<p>
+<H2>References</H2>
+Marshall Hall, Jr. & David Wales,
+<i>The Simple Group of Order 604,800</i>,
+J. Algebra <b>9</b> (1968) 417-450.
+<p>
+S. Yoshiara,
+<i>On the geometry of the Hall-Janko group on 315 points</i>,
+Geom. Dedic. <b>32</b> (1989) 173-201.
+<p>
+Bhaskar Bagchi,
+<i>A regular two-graph admitting the Hall-Janko-Wales group</i>,
+Combinatorial mathematics and applications (Calcutta, 1988),
+Sankhyā Ser. A <b>54</b> (1992), Special Issue, 35-45.
+<!--
+Earlier preprint:
+
+Bhaskar Bagchi,
+<i>A regular two-graph admitting the Hall-Janko-Wales group</i>,
+preprint 1988/89.
+
+Review:
+   Summary: "We observe that the Hall-Wales graph $G$ of order $100$ and
+   degree $63$ is a pseudonet graph and prove that neither $G$ nor its
+   complement is geometrisable. It turns out, however, that $G$ has
+   exactly $280$ cliques of size $10$ each, and there is a naturally
+   defined regular two-graph $T$ having these cliques for its vertices.
+   The group $J_2·2$ acts as a rank $4$ automorphism group of $T$. Here
+   $J_2$ is the sporadic simple group of order $604\,800$ of the title.
+   Contraction of $T$ at any vertex yields a $(279,128,52,64)$ strongly
+   regular graph admitting $(3{\rm PGL}(2,9))\times 2$ as an automorphism
+   group. The Seidel switching class corresponding to $T$ contains (at
+   least) two nonisomorphic $(280,144,44,80)$ strongly regular graphs
+   admitting $J_2·2$ and $(A_5\times D_{10})·2$, respectively. All three
+   graphs are pseudogeometric but their geometrisability remains open. $T$
+   may also contain a $(280,124,48,60)$ strongly regular graph in its
+   switching class. Existence of this graph remains open, though we show
+   that a fairly obvious kind of switching set fails to exist. Finally, we
+   show that the Hall-Wales graph has as a spanning subgraph a
+   $(100,54,28,30)$ strongly regular graph which in turn yields a
+   symmetric $(100,45,20)$ design. Both the graph and the design have
+   $(A_5\times D_{10})·2$ as an automorphism group."
+-->
+<p>
+A. E. Brouwer, <i>A construction of the HJ graph</i>, preprint, 1989.
+[contains the above construction from S(3,4,10) and the Foster graph]
+<p>
+D. V. Pasechnik,
+<i>Geometric characterization of graphs from the Suzuki chain</i>,
+Europ. J. Combin. <b>14</b> (1993) 491-499.
+<p>
+Hans Cuypers,
+<i>Extended generalized hexagons and the Suzuki chain</i>,
+J. London Math. Soc. (2) <b>54</b> (1996) 1-15.
+<p>
+L. K. Jørgensen & M. Klin,
+<i>Switching of edges in strongly regular graphs.
+I. A family of partial difference sets on 100 vertices</i>,
+Electr. J. Comb. <b>10</b> (2003) R17.
+<!-- [contains mistakes] -->
+<p>
+D. Leemans,
+<i>On a rank four geometry for the Hall-Janko sporadic group</i>,
+JCT (A) <b>101</b> (2003) 160-167.
+<p>
+</BODY>
+</HTML>

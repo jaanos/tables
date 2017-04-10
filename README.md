@@ -6,4 +6,4 @@ Currently, the following pages are mirrored:
 * [Descriptions of various graphs](graphs/), containing also the [tables of feasible parameters for strongly regular graphs](graphs/srg/srgtab.html)
 * [Tables of feasible intersection arrays for distance-regular graphs](drg/drgtables.html)
 
-You can track changes on the [GitHub repository](https://github.com/jaanos/brouwer/) (commits containing changes to the website are attributed to A. E. Brouwer).
+You can track changes on the [GitHub repository](https://github.com/jaanos/brouwer/) (commits containing changes to the website are attributed to A. E. Brouwer), or you can view the pages as a [GitHub Pages site](https://jaanos.github.io/brouwer/).

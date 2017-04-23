@@ -7,3 +7,8 @@ Currently, the following pages are mirrored:
 * [Tables of feasible intersection arrays for distance-regular graphs](drg/drgtables.html)
 
 You can track changes on the [GitHub repository](https://github.com/jaanos/brouwer/) (commits containing changes to the website are attributed to A. E. Brouwer), or you can view the pages as a [GitHub Pages site](https://jaanos.github.io/brouwer/).
+
+## Changelog
+
+<iframe src="http://jaanos.github.io/github-latest-commits-widget/?username=jaanos&repo=brouwer&author=aebr&limit=3"
+  allowtransparency="true" frameborder="0" scrolling="no" width="502px" height="202px"></iframe>

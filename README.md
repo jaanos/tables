@@ -11,4 +11,4 @@ You can track changes on the [GitHub repository](https://github.com/jaanos/brouw
 
 ## Changelog
 
-<iframe src="https://jaanos.github.io/github-latest-commits-widget/?username=jaanos&repo=brouwer&author=aebr&limit=3" allowtransparency="true" frameborder="0" scrolling="no" width="502px" height="202px"></iframe>
+<iframe src="https://jaanos.github.io/github-latest-commits-widget/?username=jaanos&repo=brouwer&limit=10" allowtransparency="true" frameborder="0" scrolling="no" width="502px" height="202px"></iframe>

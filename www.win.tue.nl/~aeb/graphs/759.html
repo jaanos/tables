@@ -1,0 +1,219 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Triples of octads</title>
+<style type="text/css">
+ td {padding: 1px 10px; text-align: center; font-size:small;}
+</style>
+</head>
+<body>
+<h1>Triples of octads</h1>
+Recently Veronica Kelsey and Peter Rowley determined the
+M<sub>24</sub>-orbits on the 72586459 triples of octads.
+<p>
+Result: M<sub>24</sub> has 16 orbits on triples of octads.
+<p>
+<table border="1">
+<tr><th>label</th>
+<td>000;0</td> <td>004;0</td> <td>022;0</td> <td>024;0</td>
+<td>044;0</td> <td>222;0</td> <td>222;1</td> <td>224;0</td>
+</tr>
+<tr><th>size</th>
+<td>3795</td> <td>318780</td> <td>2550240</td> <td>5100480</td>
+<td>318780</td> <td>10200960</td> <td>4080384</td> <td>7650720</td>
+</tr>
+<tr><th>label</th>
+<td>224;1</td> <td>224;2</td> <td>244;1</td> <td>244;2</td>
+<td>444;0</td> <td>444;2</td> <td>444;3</td> <td>444;4</td>
+</tr>
+<tr><th>size</th>
+<td>20401920</td> <td>2550240</td> <td>6800640</td> <td>7650720</td>
+<td>35420</td> <td>2550240</td> <td>2266880</td> <td>106260</td>
+</tr>
+</table>
+<p>
+Here the label ijk;m is for triples {X1,X2,X3} with
+|X1 ∩ X2| = i, |X1 ∩ X3| = j, |X2 ∩ X3| = k, |X1 ∩ X2 ∩ X3| = m.
+In particular, these four intersection sizes suffice
+to characterize the orbit.
+<p>
+Let us interpret this result in combinatorial terms.
+The octads (blocks of the Steiner system S(5,8,24))
+are the vertices of a distance-transitive graph
+with intersection array {30,28,24; 1,3,15} and parameters
+given below. (See also [BCN], p. 366.)
+<p>
+<pre>
+v = 759 = 1 + 30 + 280 + 448    i(30,28,24; 1,3,15)
+        spectrum:  30**1  7**252  −3**483  −15**23
+        Near hexagon
+        Classical, b = −2
+        Equality in absolute bound (i,j)=(3,3)
+
+p(1;j,k):
+ 0:        0   1   0   0
+ 1:        1   1  28   0
+ 2:        0  28  28 224
+ 3:        0   0 224 224
+
+p(2;j,k):
+ 0:        0   0   1   0
+ 1:        0   3   3  24
+ 2:        1   3 140 136
+ 3:        0  24 136 288
+
+p(3;j,k):
+ 0:        0   0   0   1
+ 1:        0   0  15  15
+ 2:        0  15  85 180
+ 3:        1  15 180 252
+
+P:
+    1   30  280  448
+    1    7    4  −12
+    1   −3   −6    8
+    1  −15   70  −56
+</pre>
+<p>
+Graph distances 0, 1, 2, 3 correspond to intersection sizes 8, 0, 4, 2
+and because of the triangle inequality distance triples 113,
+that is, intersection size triples 002, do not occur.
+From the p(i;j,k) we read off the number of point triples with given
+nonzero distances ijk. <!-- (It will be v k_i p(i;j,k) / d where d is the
+number of times (1 or 2 or 6) that the triple is counted.) -->
+<p>
+<table border="1">
+<tr><th>dist</th>
+<td>111</td> <td>112</td> <td>122</td> <td>123</td> <td>133</td>
+<td>222</td> <td>223</td>
+<td>233</td> <td>333</td>
+</tr>
+<tr><th>#</th>
+<td>3795</td> <td>318780</td> <td>318780</td> <td>5100480</td> <td>2550240</td>
+<td>4958800<!--4 orbits--></td> <td>14451360<!--2 orbits--></td>
+<td>30602880<!--3 orbits--></td> <td>14281344<!--2 orbits--></td>
+</tr>
+</table>
+<p>
+Apparently the triples with distances 222, 223, 233, 333 split into
+4, 2, 3, 2 orbits, depending on the triple intersection.
+Let us try to understand the corresponding geometrical situation
+in the near hexagon.
+<p>
+The near hexagon has 759 points, and 3795 lines, 3 points on each line,
+15 lines on each point. Any two points x, y at distance 2 determine
+a quad Q(x,y) (namely, the set of (6 choose 2) = 15 octads containing
+two tetrads of the sextet on the 4-set x∩y) that carries a subgeometry
+that is a generalized quadrangle of order 2, with 15 points and 15 lines.
+The 15 lines and 35 quads on a fixed point x form the points and lines
+of a geometry PG(3,2).
+If Q is a quad, and z a point with d(z,Q)=2, then z has distance 2 to
+five points of Q, and these five points form an ovoid in Q.
+<p>
+Look at distance 222 triples xyz.
+They determine three quads Q(xy), Q(xz) and Q(yz).
+These quads coincide precisely when |x∩y∩z| = 4
+or x+y+z = 0 (with sets viewed as Golay code vectors).
+In the former case we have three points in the same ovoid
+(which happens for (24 choose 4).(5 choose 2) = 106260 triples xyz),
+in the latter case xyz is a hyperbolic line
+(which happens for 759.280.1/6 = 35420 triples xyz)
+and |x∩y∩z| = 0.
+If the quads do not coincide, then either x,y,z have a common
+neighbour w (and the three quads meet pairwise in a line)
+or there is no common neighbour (and the three quads meet pairwise
+in a single point and have empty intersection).
+The former happens for 759.(15.14.12/6).8 = 2550240 triples xyz
+(and |x∩y∩z| = 2: w is disjoint from x, y, z),
+the latter for 759.280.(384/6)/6 = 2266880 triples xyz
+(and |x∩y∩z| = 3).
+Check: 106260+35420+2550240+2266880 = 4958800.
+<p>
+Look at distance 223 triples xyz.
+There are two possibilities. Either Q(xy) and Q(xz) meet in a line L
+(and y and z are adjacent to distinct points y' and z' on L),
+or Q(xy) and Q(xz) meet in x only.
+The former happens for 759.15.(7 choose 2).2.4.4 = 7650720 triples xyz
+(and x∩y∩z = y∩z, so that |x∩y∩z| = 2),
+the latter for 759.35.16.8.4/2 = 6800640 triples xyz (and |x∩y∩z| = 1).
+Check: 7650720+6800640 = 14451360.
+<p>
+Look at distance 233 triples xyz. Let Q be the quad Q(x,y).
+If Q contains a neighbour w of z, then either xyw is a hyperbolic line,
+or x,y,w are three points of an oval.
+The former happens for 759.280.1.24/2 = 2550240 triples xyz
+(and |x∩y∩z| = 2),
+the latter for 759.280.3.24/2 = 7650720 triples xyz
+(and |x∩y∩z| = 0).
+If Q does not contain a neighbour of z, then z determines one of the
+3 ovoids in Q not on x or y. This happens for
+759.280.(384/2)/2 = 20401920 triples xyz
+(and |x∩y∩z| = 1).
+Check: 2550240+7650720+20401920 = 30602880.
+<p>
+Look at distance 333 triples xyz.
+The intersection size |x∩y∩z| cannot be 2 since the Golay code
+does not have weight 20 words.
+If there is a line L such that x, y, z have (distinct) neighbours on L,
+then |x∩y∩z| = 0. There are 3795.14.12.10.2.2.2 = 51004800 such pairs (L,xyz).
+Maybe there are aways 5 choices for L? Ask GAP. Yes.
+So, there are 51004800/5 = 10200960 such triples xyz.
+<p>
+If there is a quad Q such that each of x, y, z has distance 2 to Q
+and these points determine the same ovoid in Q, then |x∩y∩z| = 1
+and there is a unique such Q.
+There are (24 choose 4).4.3.2.16.6.1/6 = 4080384 such triples xyz.
+Check: 10200960+4080384 = 14281344.
+<p>
+Conclusion: the 16 orbits can be distinguished geometrically.
+That these 16 sets of triples really are orbits follows from a
+permutation character computation that shows that there are
+just 16 orbits under M<sub>24</sub>.
+<p>
+<table>
+<tr> <th>label</th> <th>size</th> <th>distances</th> <th>geometry</th></tr>
+<tr> <td>000;0</td> <td>3795</td> <td>111</td> <td>line xyz</td></tr>
+<tr> <td>004;0</td> <td>318780</td> <td>112</td>
+     <td>y,z on distinct lines on x</td></tr>
+<tr> <td>044;0</td> <td>318780</td> <td>122</td>
+     <td>x,y,z in a quad (with given distances)</td></tr>
+<tr> <td>024;0</td> <td>5100480</td> <td>123</td>
+     <td>y~x, y not in Q(xz)</td></tr>
+<tr> <td>022;0</td> <td>2550240</td> <td>133</td>
+     <td>line xyw not in quad Q(wz)</td></tr>
+<tr> <td>444;0</td> <td>35420</td> <td>222</td>
+     <td>hyperbolic line (in quad): x+y+z=0</td></tr>
+<tr> <td>444;2</td> <td>2550240</td> <td>222</td>
+     <td>x,y,z not in a quad, with common neighbour w</td></tr>
+<tr> <td>444;3</td> <td>2266880</td> <td>222</td>
+     <td>Q(xy), Q(xz), Q(yz) pairwise meet in a single point</td></tr>
+<tr> <td>444;4</td> <td>106260</td> <td>222</td>
+     <td>3 points on ovoid (in quad)</td></tr>
+<tr> <td>244;1</td> <td>6800640</td> <td>223</td>
+     <td>Q(xy), Q(xz) meet in x only</td></tr>
+<tr> <td>244;2</td> <td>7650720</td> <td>223</td>
+     <td>Q(xy), Q(xz) meet in a line</td></tr>
+<tr> <td>224;0</td> <td>7650720</td> <td>233</td>
+     <td>x,y,w on an ovoid in Q(xy), and z~w</td></tr>
+<tr> <td>224;1</td> <td>20401920</td> <td>233</td>
+     <td>Q=Q(xy), d(z,Q)=2</td></tr>
+<tr> <td>224;2</td> <td>2550240</td> <td>233</td>
+     <td>x,y,w hyperbolic line in Q(xy), and z~w</td></tr>
+<tr> <td>222;0</td> <td>10200960</td> <td>333</td>
+     <td>for some line L, d(x,L)=d(y,L)=d(z,L)=1</td></tr>
+<tr> <td>222;1</td> <td>4080384</td> <td>333</td>
+     <td>for some quad Q, x,y,z determine the same ovoid in Q</td></tr>
+</table>
+
+<h2>References</h2>
+[BCN]
+A. E. Brouwer, A. M. Cohen & A. Neumaier,
+<i>Distance-regular graphs</i>,
+Springer-Verlag, Berlin, 1989.
+<p>
+[BW]
+A. E. Brouwer & H. A. Wilbrink,
+<i>The structure of near polygons with quads</i>,
+Geom. Dedicata <b>14</b> (1983) 145-176.
+</body>
+</html>

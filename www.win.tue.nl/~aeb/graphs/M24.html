@@ -1,0 +1,131 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>The Octad Graph</title>
+</head>
+<body>
+<a href="index.html">Up</a>
+
+<h1>The Octad Graph</h1>
+There is a unique distance-regular graph &Gamma; with intersection array
+{30,28,24; 1,3,15}. It has <i>v</i> = 759 vertices, valency <i>k</i> = 30,
+and diameter <i>d</i> = 3. The spectrum is
+30<sup>1</sup>  7<sup>252</sup>  (−3)<sup>483</sup>  (−15)<sup>23</sup>.
+It is the collinearity graph of a near hexagon.
+Construction of &Gamma; is folklore. 
+The near hexagon is due Shult & Yanushka (1980).
+Uniqueness of &Gamma; is Theorem 11.4.1 in [BCN], an immediate corollary
+of the uniqueness of the near hexagon (Brouwer (1983)).
+
+<h2>Construction</h2>
+Let C be the extended binary Golay code C.
+If Ω is the 24-set of coordinate positions of C, and
+X the set of supports of the 759 vectors of weight 8 in C,
+then (Ω,X) is the unique <a href="S.html">Steiner system</a> S(5,8,24),
+one of the Witt designs.
+The graph &Gamma; is the block graph of (Ω,X): the vertices are the
+elements of X (called <i>octads</i> since they are certain 8-subsets of Ω),
+and two vertices are adjacent when they are disjoint.
+
+<h2>Group</h2>
+The automorphism group of &Gamma; is M<sub>24</sub> of order 244823040,
+acting distance-transitively with point stabilizer
+2<sup>4</sup>:A<sub>8</sub>.
+Thus, M<sub>24</sub> is transitive on the points, and has 4 orbits
+on pairs of points, corresponding to distance 0, 1, 2, 3.
+See <a href="octadtriples.html">here</a> for the classification of
+the orbits of M<sub>24</sub> on triples of points.
+
+<h2>Near hexagon geometry</h2>
+The graph &Gamma; is the collinearity graph of the point-line geometry
+of which the points are the 759 octads, and the lines the 3795 partitions
+of Ω into three pairwise disjoint octads. Each point is on 15 lines,
+and each line has 3 points.
+<p>
+This point-line geometry is a <i>near polygon</i>: for each point x and each
+line L there is a unique point on L closest (in graph distance) to x.
+More precisely, it is a <i>near hexagon</i>, since &Gamma; has diameter 3.
+Given a set S of points, let C(S) be the geodetic closure of S,
+that is, the smallest subspace containing S that is closed for geodetics.
+If x, y are points with d(x,y) = 2, then C({x,y}) is a subgeometry
+with 15 points and 15 lines called a <i>quad</i>.
+It is a generalized quadrangle of order 2.
+The 15 lines and 35 quads on a fixed point x form the points and lines
+of a geometry PG(3,2).
+If Q is a quad, and z a point with d(z,Q)=2, then z has distance 2
+to five points of Q, and these five points form an ovoid in Q.
+See also [BCN], §11.4A.
+
+<h2>Big ovoids and subgraphs on 506 vertices</h2>
+There is a unique distance-regular graph &Delta; with intersection array
+{15,14,12; 1,1,9}. It has 506 vertices, valency 15 and diameter 3.
+The spectrum is 15<sup>1</sup>  (−8)<sup>22</sup>  4<sup>230</sup>
+(−3)<sup>253</sup>. Uniqueness is due to Brouwer & Lambeck (1987).
+<p>
+Let ω be a fixed element of Ω. There are 253 octads that contain ω,
+and 506 that do not contain ω. The graph &Delta; is the induced subgraph
+in &Gamma; on the set of 506. The set of 253 is a big ovoid O: a set that meets
+every line of the near polygon in precisely one point.
+(Above we saw 5-point ovoids in a quad. These are the intersections
+of a big ovoid and a quad. Also the intersections of four big ovoids.)
+There are no other big ovoids than the 24 obtained in this way.
+<p>
+The 24 big ovoids are permuted by M<sub>24</sub>. The stabilizer of one
+is M<sub>23</sub>, with vertex stabilizer 2<sup>4</sup>:A<sub>7</sub>.
+<p>
+The full automorphism group of &Delta; is M<sub>23</sub>,
+with vertex stabilizer A<sub>8</sub>.
+The graph &Delta; is distance-transitive.
+<p>
+The intersection of &Delta; with a quad is a
+<a href="Petersen.html">Petersen graph</a>.
+For each vertex x of &Delta;, the 15 edges and 35 Petersen graphs
+and 15 symbols (in Ω \ (x ∪ {ω})) form the points and lines and planes
+of a geometry PG(3,2). See also [BCN], §11.4B.
+
+<h2>Subgraphs on 330 vertices</h2>
+There is a unique distance-regular graph E with intersection array
+{7,6,4,4; 1,1,1,6}. It has 330 vertices, valency 7 and diameter 4.
+The spectrum is 7<sup>1</sup>  4<sup>55</sup>  1<sup>154</sup>
+(−3)<sup>99</sup>  (−4)<sup>21</sup>. Uniqueness is due to Brouwer (1986).
+<p>
+Let σ, τ be two fixed elements of Ω.
+There are 77 octads that contain both σ and τ,
+352 that contain precisely one, and 330 that contain neither.
+The graph E is the induced subgraph in &Gamma; on the set of 330.
+The full automorphism group of E is M<sub>22</sub>.2, with point stabilizer
+2<sup>3</sup>:L<sub>3</sub>(2)×2.
+The graph E is distance-transitive. See also [BCN], §11.4C.
+
+<h2>References</h2>
+<p>
+A. E. Brouwer,
+<i>The uniqueness of the near hexagon on 759 points</i>,
+pp 47-60 in: Finite Geometries, T. G. Ostrom Conf. Pullman 1981,
+Lecture Notes in Pure and Applied Math. <b>82</b>, Marcel Dekker,
+New York, 1983. 
+<p>
+A. E. Brouwer,
+<i>Uniqueness and nonexistence of some graphs related to M<sub>22</sub></i>,
+Graphs Combin. <b>2</b> (1986) 21-29.
+<p>
+A. E. Brouwer, A. M. Cohen & A. Neumaier,
+<i>Distance-regular graphs</i>,
+Springer, Heidelberg, 1989.
+<p>
+A. E. Brouwer & E. W. Lambeck,
+<i>An inequality on the parameters of distance regular graphs
+and the uniqueness of a graph associated to M<sub>23</sub></i>,
+Ann. Discrete Math. <b>34</b> (1987) 100-106.
+<p>
+J. H. Conway,
+<i>Three lectures on exceptional groups</i>,
+pp 215-247 in: Finite Simple Groups,
+Academic Press, 1971.
+<p>
+E. E. Shult & A. Yanushka,
+<i>Near n-gons and line systems</i>,
+Geom. Dedicata <b>9</b> (1980) 1-72.
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>M24 on 1288 points</title>
+</head>
+<body>
+<a href="index.html">Up</a>
+
+<h1>The dodecad graph</h1>
+There is a strongly regular graph &Gamma; with parameters
+(<i>v</i>, <i>k</i>, &lambda;, &mu;) = (1288, 792, 476, 504).
+The spectrum is 792<sup>1</sup> 8<sup>1035</sup> (–36)<sup>252</sup>.
+Its complement has parameters
+(<i>v</i>, <i>k</i>, &lambda;, &mu;) = (1288, 495, 206, 180)
+and spectrum 495<sup>1</sup> 35<sup>252</sup> (–9)<sup>1035</sup>.
+Construction is folklore. The graph is for example given in
+Hubaut (1975). Uniqueness is unknown.
+
+<h2>Construction</h2>
+Let C be the extended binary Golay code.
+It has 2576 words of weight 12 (dodecads), so 1288 complementary pairs
+of dodecads. Given one dodecad, there are 1, 495, 1584, 495, 1 dodecads
+at distance 0, 8, 12, 16, 24, respectively.
+Given one complementary pair of dodecads, there are 1, 495, 792
+such pairs at distance 0, 8, 12, respectively.
+The graph &Gamma; is obtained if we call two dodecad pairs adjacent if
+they have distance 12.
+<!-- (Instead of taking dodecad pairs as vertices, one can also take
+the words of weight 12 in the perfect binary Golay code.) -->
+
+<h2>Group</h2>
+The automorphism group of &Gamma; is M<sub>24</sub>
+acting rank 3 with point stabilizer M<sub>12</sub>:2.
+
+<h2>Supergraphs</h2>
+This graph is the local graph of a strongly regular graph &Sigma;
+with parameters
+(<i>v</i>, <i>k</i>, &lambda;, &mu;) = (2048, 1288, 792, 840)
+and spectrum 1288<sup>1</sup> 8<sup>1771</sup> (–56)<sup>276</sup>.
+Its complement has parameters
+(<i>v</i>, <i>k</i>, &lambda;, &mu;) = (2048, 759, 310, 264)
+and spectrum 759<sup>1</sup> 55<sup>276</sup> (–9)<sup>1771</sup>.
+Construction is due to Goethals and Seidel.
+<!-- in the 1969 paper? find it -->
+<!-- The graph is for example given in Hubaut (1975). -->
+Uniqueness is unknown.
+
+<h2>Construction</h2>
+Let C be the extended binary Golay code. It has
+1, 759, 2576, 759, 1 words of weight 0, 8, 12, 16, 24, respectively.
+Take the 2<sup>11</sup> cosets of {<b>0</b>,<b>1</b>} in C,
+and join two cosets when they have distance 12.
+
+<h2>Group</h2>
+The automorphism group of &Sigma; is 2<sup>11</sup>.M<sub>24</sub>
+acting rank 3 with point stabilizer M<sub>24</sub>.
+
+<h2>References</h2>
+<!--
+A. E. Brouwer & C. A. van Eijl,
+<i>On the p-rank of the adjacency matrices of strongly regular graphs</i>,
+J. Alg. Comb. <b>1</b> (1992) 329-346.
+<p>
+A. E. Brouwer & J. H. van Lint,
+Strongly Regular Graphs and Partial Geometries, pp. 85-122 in:
+Enumeration and Design - Proc. Silver Jubilee Conf. on Combinatorics,
+Waterloo 1982, Academic Press, 1984.
+-->
+<p>
+J. M. Goethals & J. J. Seidel,
+<i>Quasi-symmetric block designs</i>,
+pp 111-116 in Combinatorial Structures and their Applications,
+Proc. Conf. Calgary 1969, Gordon and Breach, 1970.
+<p>
+X. L. Hubaut,
+<i>Strongly regular graphs</i>,
+Discr. Math. <b>13</b> (1975) 357-381.
+
+</body>
+</html>

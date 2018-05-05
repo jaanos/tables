@@ -1,0 +1,209 @@
+<!DOCTYPE HTML SYSTEM "html.dtd">
+<html>
+<head>
+	<title>Projective Planes of Order 27</title>
+</head>
+<body background="../../images/pg33.gif">
+<h1>Projective Planes of Order 32</h1>
+<!--
+  <P><IMG SRC="../../images/construction.gif"> <I>Under Construction!!!</I>
+-->
+
+<hr />
+<p>This site is intended to provide a current list of known projective planes of order 32. I have listed the 12 planes of which I am aware (2 self-dual planes plus 5 dual pairs). The translation planes of order 32 have not yet been classified at the time of writing. It is however known that there are exactly nine translation planes of order 32 with nontrivial translation complement. This classification result is attributed to R. Mathon (unpublished; see <em>Handbook of Combinatorial Designs, 2nd ed.</em>, ed C.J. Colbourn and J.H. Dinitz, 2007, p.727) and <a href="http://www.mathematik.uni-kl.de/~dempw/dempw_32.html">independently verified by U. Dempwolff</a>. There are exactly five nonassociative semifields of order 32, as classified by R.J. Walker, &#39;Determination of division algebras with 32 elements&#39;, Proc. Symp. Appl. Math. <strong>15</strong> (1962) 83-85.</p>
+
+<p>I have made extensive use of Brendan McKay&#39;s celebrated software package <a href="http://cs.anu.edu.au:80/people/bdm/nauty/">nauty</a> for computing graph automorphisms; also the computational algebra package <a href="http://mirrors.ccs.neu.edu/GAP/NEU/">GAP</a> (Graphs, Algorithms and Programming) for some of the group computations (e.g. computing conjugacy classes of involutions in groups).</p>
+
+<p>If you are aware of planes which I have overlooked in my list, I would appreciate an email message (<img src="../../images/email.gif" />) from you. For basic definitions and results on the subject of projective planes, please refer to P. Dembowski, <i>Finite Geometries</i>, Springer-Verlag, Berlin, 1968; or D.R. Hughes and F.C. Piper, <i>Projective Planes</i>, Springer-Verlag, New York, 1973.</p>
+
+<p>All planes in this list have subplanes of order 2. (It has been conjectured that all finite projective planes, other than Desarguesian planes of odd order, have subplanes of order 2.) All except the Desarguesian plane have subplanes of order 4; and none contain subplanes of order 3. The number of subplanes of each order is listed below in each case.</p>
+
+<p>None of the planes in this list yield planes by the method of lifting double covers, which has been successful for other small orders; in each case in fact <em>H</em><sup>1</sup>(<em>C</em>,2)=0 where <em>C</em> is the rank 2 cell complex of any of the semibiplanes arising from the known planes. Moreover since 32 is not a square, these planes are not derivable in the usual sense. So if one wants to find planes of order 32 other than those in this list, one needs either some new ideas or rather more computational resources.</p>
+
+<p>Following the table is a <a href="#key">key to the table</a>. I have also tabulated a summary of what&#39;s known for <a href="../planes/">other small orders</a>.</p>
+
+<hr />
+<p></p>
+
+<h2>Table of Known Projective Planes of Order 32</h2>
+
+<p></p>
+
+<table border="" width="843">
+	<tbody>
+		<tr valign="TOP">
+			<th width="32">No.</th>
+			<th width="43">Plane</th>
+			<th width="135">Description</th>
+			<th width="46">2-rank</th>
+			<th width="113">|Autgp|</th>
+			<th width="68">Point orbit lengths</th>
+			<th width="75">Line orbit lengths</th>
+			<th width="85">Subplanes</th>
+			<th align="LEFT" width="188">Fingerprint</th>
+		</tr>
+		<tr>
+			<td align="CENTER" width="32">a <a name="a"></a></td>
+			<td align="CENTER" width="43"><a href="planes/a">a</a></td>
+			<td align="CENTER" width="135">Semifield plane; Dempwolff #1</td>
+			<td align="CENTER" width="46">344</td>
+			<td align="CENTER" width="113"><a href="gens/a">32768</a></td>
+			<td align="CENTER" width="68">1,32,1024</td>
+			<td align="CENTER" width="75">1,32,1024</td>
+			<td align="CENTER" width="85">2<sup>289460224</sup> 4<sup>21504</sup></td>
+			<td align="LEFT" width="188">0<sup>65536</sup>32<sup>1033216</sup>96<sup>15360</sup>928<sup>1024</sup>992<sup>1056</sup>1056<sup>1057</sup></td>
+		</tr>
+		<tr>
+			<td align="CENTER"></td>
+			<td align="CENTER"><a href="planes/aD">aD</a></td>
+			<td align="CENTER">Semifield plane; Dempwolff #2</td>
+			<td align="CENTER">344</td>
+			<td align="CENTER" width="113"><a href="gens/aD">32768</a></td>
+			<td align="CENTER">1,32,1024</td>
+			<td align="CENTER">1,32,1024</td>
+			<td align="CENTER">2<sup>289460224</sup> 4<sup>21504</sup></td>
+			<td align="LEFT">0<sup>65536</sup>32<sup>1033216</sup>96<sup>15360</sup>928<sup>1024</sup>992<sup>1056</sup>1056<sup>1057</sup></td>
+		</tr>
+		<tr>
+			<td align="CENTER" width="32">b <a name="b"></a></td>
+			<td align="CENTER" width="43"><a href="planes/b">b</a></td>
+			<td align="CENTER" width="135">
+			<p>Semifield plane; Dempwolff #3</p>
+			</td>
+			<td align="CENTER" width="46">328</td>
+			<td align="CENTER" width="113"><a href="gens/b">163840</a></td>
+			<td align="CENTER" width="68">1,32,1024</td>
+			<td align="CENTER" width="75">1,32,1024</td>
+			<td align="CENTER" width="85">2<sup>327110656</sup> 4<sup>32768</sup></td>
+			<td align="LEFT" width="188">992<sup>1116192</sup>1056<sup>1057</sup></td>
+		</tr>
+		<tr>
+			<td align="CENTER"></td>
+			<td align="CENTER"><a href="planes/bD">bD</a></td>
+			<td align="CENTER">Semifield plane; Dempwolff #4</td>
+			<td align="CENTER">328</td>
+			<td align="CENTER" width="113"><a href="gens/bD">163840</a></td>
+			<td align="CENTER">1,32,1024</td>
+			<td align="CENTER">1,32,1024</td>
+			<td align="CENTER">2<sup>327110656</sup> 4<sup>32768</sup></td>
+			<td align="LEFT">992<sup>1116192</sup>1056<sup>1057</sup></td>
+		</tr>
+		<tr>
+			<td align="CENTER" width="32">c* <a name="c"></a></td>
+			<td align="CENTER" width="43"><a href="planes/c">c</a></td>
+			<td align="CENTER" width="135">Desarguesian; Dempwolff #5</td>
+			<td align="CENTER" width="46">244</td>
+			<td align="CENTER" width="113"><a href="gens/c">5492021821440</a></td>
+			<td align="CENTER" width="68">1057</td>
+			<td align="CENTER" width="75">1057</td>
+			<td align="CENTER" width="85">2<sup>6538121216</sup></td>
+			<td align="LEFT" width="188">992<sup>1116192</sup>1056<sup>1057</sup></td>
+		</tr>
+		<tr>
+			<td align="CENTER" width="32">d* <a name="d"></a></td>
+			<td align="CENTER" width="43"><a href="planes/d">d</a></td>
+			<td align="CENTER" width="135">
+			<p>Semifield plane; Dempwolff #6</p>
+			</td>
+			<td align="CENTER" width="46">342</td>
+			<td align="CENTER" width="113"><a href="gens/d">163840</a></td>
+			<td align="CENTER" width="68">1, 32, 1024</td>
+			<td align="CENTER" width="75">1, 32, 1024</td>
+			<td align="CENTER" width="85">2<sup>284020736</sup> 4<sup>20480</sup></td>
+			<td align="LEFT" width="188">992<sup>1116192</sup>1056<sup>1057</sup></td>
+		</tr>
+		<tr>
+			<td align="CENTER" width="32">e <a name="e"></a></td>
+			<td align="CENTER" width="43"><a href="planes/e">e</a></td>
+			<td align="CENTER" width="135">
+			<p>Flag transitive; Dempwolff #7</p>
+			</td>
+			<td align="CENTER" width="46">349</td>
+			<td align="CENTER" width="113"><a href="gens/e">163840</a></td>
+			<td align="CENTER" width="68">33, 1024</td>
+			<td align="CENTER" width="75">1, 1056</td>
+			<td align="CENTER" width="85">2<sup>305862656</sup> 4<sup>2112</sup></td>
+			<td align="LEFT" width="188">992<sup>1116192</sup>1056<sup>1057</sup></td>
+		</tr>
+		<tr>
+			<td align="CENTER"></td>
+			<td align="CENTER"><a href="planes/eD">eD</a></td>
+			<td align="CENTER"></td>
+			<td align="CENTER">349</td>
+			<td align="CENTER" width="113"><a href="gens/eD">163840</a></td>
+			<td align="CENTER">1, 1056</td>
+			<td align="CENTER">33, 1024</td>
+			<td align="CENTER">2<sup>305862656</sup> 4<sup>2112</sup></td>
+			<td align="LEFT">992<sup>1116192</sup>1056<sup>1057</sup></td>
+		</tr>
+		<tr>
+			<td align="CENTER" width="32">f<a name="f"></a></td>
+			<td align="CENTER" width="43"><a href="planes/f">f</a></td>
+			<td align="CENTER" width="135">Dempwolff #8</td>
+			<td align="CENTER" width="46">344</td>
+			<td align="CENTER" width="113"><a href="gens/f">158720</a></td>
+			<td align="CENTER" width="68">1, 1, 31, 1024</td>
+			<td align="CENTER" width="75">1, 32, 32, 992</td>
+			<td align="CENTER" width="85">2<sup>250745856</sup> 4<sup>1984</sup></td>
+			<td align="LEFT" width="188">992<sup>1116192</sup>1056<sup>1057</sup></td>
+		</tr>
+		<tr>
+			<td align="CENTER"></td>
+			<td align="CENTER"><a href="planes/fD">fD</a></td>
+			<td align="CENTER"></td>
+			<td align="CENTER">344</td>
+			<td align="CENTER" width="113"><a href="gens/fD">158720</a></td>
+			<td align="CENTER">1, 32, 32, 992</td>
+			<td align="CENTER">1, 1, 31, 1024</td>
+			<td align="CENTER">2<sup>250745856</sup> 4<sup>1984</sup></td>
+			<td align="LEFT">992<sup>1116192</sup>1056<sup>1057</sup></td>
+		</tr>
+		<tr>
+			<td align="CENTER">g <a name="g"></a></td>
+			<td align="CENTER"><a href="planes/g">g</a></td>
+			<td align="CENTER">Dempwolff #9</td>
+			<td align="CENTER">344</td>
+			<td align="CENTER" width="113"><a href="gens/g">158720</a></td>
+			<td align="CENTER">1, 1, 31, 1024</td>
+			<td align="CENTER">1, 32, 32, 992</td>
+			<td align="CENTER">2<sup>259316736</sup> 4<sup>1984</sup></td>
+			<td align="LEFT">992<sup>1116192</sup>1056<sup>1057</sup></td>
+		</tr>
+		<tr>
+			<td align="CENTER"></td>
+			<td align="CENTER"><a href="planes/gD">gD</a></td>
+			<td align="CENTER"></td>
+			<td align="CENTER">344</td>
+			<td align="CENTER" width="113"><a href="gens/gD">158720</a></td>
+			<td align="CENTER">1, 32, 32, 992</td>
+			<td align="CENTER">1, 1, 31, 1024</td>
+			<td align="CENTER">2<sup>259316736</sup> 4<sup>1984</sup></td>
+			<td align="LEFT">992<sup>1116192</sup>1056<sup>1057</sup></td>
+		</tr>
+	</tbody>
+</table>
+
+<p><a name="key"></a></p>
+
+<h2>Key to the table</h2>
+
+<p>Only one line is displayed for both a plane and its dual, an asterisk (*) in the first column indicating that the plane is self-dual. Each line includes the following information and isomorphism invariants for each plane.</p>
+
+<ul>
+	<li><b>Plane</b>&nbsp; &nbsp; provides a text file containing the projective plane. The text file has 1057 rows, each row specifying a line of the plane as a subset of the points 0,1,2,...,1056. For non-self-dual planes, a second file is also given, containing the dual of the first.</li>
+	<li><b>2-rank</b>&nbsp; &nbsp; The rank of the (0,1)-incidence matrix of the projective plane, over a field of characteristic 2.</li>
+	<li><b>|Autgp|</b>&nbsp; &nbsp; The order of the full automorphism group (collineation group) of the projective plane. This table entry is linked to a file providing generators of the automorphism group, listed as permutations of the integer list 0,1,2,...,2113 where 0,1,2,...,1056 are labels for the points and 1057,...,2113 are labels for the lines. Generators for the automorphism group of the dual plane are not provided since these are trivially obtained from the generators given for the original plane.</li>
+	<li><b>Point Orbits</b>&nbsp; &nbsp; The lengths of the full automorphism group on the points. (These are the lengths of the line orbits for the dual plane.)</li>
+	<li><b>Line Orbits</b>&nbsp; &nbsp; The lengths of the full automorphism group on the lines. (These are the lengths of the point orbits for the dual plane.)</li>
+	<li><b>Subplanes</b>&nbsp; &nbsp; The orders of the proper subplanes, and the total number of each.</li>
+	<li><b>Fingerprint</b>&nbsp; &nbsp; The fingerprint of each plane (an isomorphism invariant) is provided. Refer to the accompanying <a href="../planes25/fing25.html#def">definition of the fingerprint</a>.</li>
+</ul>
+
+<p></p>
+
+<hr />
+<p></p>
+
+<address><img src="../../images/email.gif" /> / revised November, 2017</address>
+</body>
+</html>

@@ -1,0 +1,1301 @@
+<!DOCTYPE HTML SYSTEM "html.dtd">
+<html>
+<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>Projective Planes of Order 25</title>
+</head>
+<body background="../../images/pg33.gif">
+<h1>Projective Planes of Order 25</h1>
+
+<p></p>
+
+<hr />
+<p>This site is intended to provide a current list of known projective planes of order 25. I have listed the 193 planes of which I am aware (5 self-dual planes plus 94 dual pairs). The planes are listed in increasing order of 5-rank, the most readily computable isomorphism invariant. For basic definitions and results on the subject of projective planes, please refer to</p>
+
+<ul>
+	<li>P. Dembowski, <i>Finite Geometries</i>, Springer-Verlag, Berlin, 1968; or</li>
+	<li>D.R. Hughes and F.C. Piper, <i>Projective Planes</i>, Springer-Verlag, New York, 1973.</li>
+</ul>
+
+<p>More details on the new planes <a href="#w1">w1</a> and <a href="#w2">w2</a> can be found in</p>
+
+<ul>
+	<li><a href="../wyoming.pdf">On projective planes of order less than 32</a>, in <i> Finite Geometries, Groups, and Computation,</i> ed. A. Hulpke et. al.; de Gruyter, Berlin, 2006, pp.149-162. &nbsp; (172 KB)</li>
+</ul>
+
+<p>I have made extensive use of Brendan McKay&#39;s celebrated software package <a href="http://cs.anu.edu.au:80/people/bdm/nauty/">nauty</a> for computing graph automorphisms; also the computational algebra package <a href="http://mirrors.ccs.neu.edu/GAP/NEU/">GAP</a> (Graphs, Algorithms and Programming) for some of the group computations (e.g. computing conjugacy classes of involutions in groups).</p>
+
+<p>If you are aware of planes which I have overlooked in my list, I would appreciate an email message (<img src="../../images/email.gif" />) from you.</p>
+
+<p>I have also provided</p>
+
+<ul>
+	<li>a <a href="#key">key to the table</a>;</li>
+	<li>a <a href="#image">diagram</a> illustrating connections between the planes listed;</li>
+	<li>a brief description of the <a href="#constructions">constructions</a> used;</li>
+	<li>a note concerning <a href="#subplanes">subplanes</a>;</li>
+	<li>a summary of what&#39;s known for <a href="../planes/">other small orders</a>.</li>
+</ul>
+
+<p></p>
+
+<hr />
+<p></p>
+
+<h2>Table of Known Projective Planes of Order 25</h2>
+
+<table border="" width="974">
+	<tbody>
+		<tr valign="TOP">
+			<th width="28">No.</th>
+			<th width="56">Plane</th>
+			<th width="84">Description</th>
+			<th width="35">5-rank</th>
+			<th width="100">|Autgp|</th>
+			<th width="164">Point orbit lengths</th>
+			<th width="148">Line orbit lengths</th>
+			<th width="188">Derived Planes</th>
+			<th width="140">&nbsp;Subplanes&nbsp;</th>
+			<th width="31">Fingerprint</th>
+		</tr>
+		<tr>
+			<td align="CENTER" width="28">1* <a name="s1"></a></td>
+			<td align="CENTER" width="56"><a href="plane/s1">s1</a></td>
+			<td align="CENTER" width="84">Desarguesian</td>
+			<td align="CENTER" width="35">226</td>
+			<td align="CENTER" width="100"><a href="gens/s1">304668000000</a></td>
+			<td align="CENTER" width="164">651</td>
+			<td align="CENTER" width="148">651</td>
+			<td align="CENTER" width="188"><a href="#s2">s2</a></td>
+			<td align="CENTER" width="140">5<sup>409500</sup></td>
+			<td align="CENTER" width="31"><a href="fing25.html#s1">s1</a></td>
+		</tr>
+		<tr>
+			<td align="CENTER" width="28">2 <a name="b4"></a></td>
+			<td align="CENTER" width="56"><a href="plane/b4">b4</a>, <a href="plane/b4Dual">b4Dual</a></td>
+			<td align="CENTER" width="84">Hering</td>
+			<td align="CENTER" width="35">239</td>
+			<td align="CENTER" width="100"><a href="gens/b4">1800000</a></td>
+			<td align="CENTER" width="164">6,20,625</td>
+			<td align="CENTER" width="148">1,150,500</td>
+			<td align="CENTER" width="188">none ; <a href="#b4a">b4a</a>,<a href="#b4b">b4b</a></td>
+			<td align="CENTER" width="140">2<sup>57300000</sup> 5<sup>19500</sup></td>
+			<td align="CENTER" width="31"><a href="fing25.html#b4">b4</a>, <a href="fing25.html#b4Dual">b4Dual</a></td>
+		</tr>
+		<tr>
+			<td align="CENTER" width="28">3 <a name="s2"></a></td>
+			<td align="CENTER" width="56"><a href="plane/s2">s2</a>, <a href="plane/s2Dual">s2Dual</a></td>
+			<td align="CENTER" width="84">Hall</td>
+			<td align="CENTER" width="35">251</td>
+			<td align="CENTER" width="100"><a href="gens/s2">3600000</a></td>
+			<td align="CENTER" width="164">6,20,625</td>
+			<td align="CENTER" width="148">1,150,500</td>
+			<td align="CENTER" width="188"><a href="#s1">s1</a>,<a href="#s3">s3</a>,<a href="#s4">s4</a> ; <a href="#s2a">s2a</a>,<a href="#s2b">s2b</a></td>
+			<td align="CENTER" width="140">2<sup>42600000</sup> 5<sup>19500</sup></td>
+			<td align="CENTER" width="31"><a href="fing25.html#s2">s2</a>, <a href="fing25.html#s2Dual">s2Dual</a></td>
+		</tr>
+		<tr>
+			<td align="CENTER" width="28">4 <a name="a3"></a></td>
+			<td align="CENTER" width="56"><a href="plane/a3">a3</a>, <a href="plane/a3Dual">a3Dual</a></td>
+			<td align="CENTER" width="84">Walker</td>
+			<td align="CENTER" width="35">253</td>
+			<td align="CENTER" width="100"><a href="gens/a3">1500000</a></td>
+			<td align="CENTER" width="164">1,25,625</td>
+			<td align="CENTER" width="148">1,25,625</td>
+			<td align="CENTER" width="188"><a href="#a7">a7</a> ; <a href="#a3a">a3a</a>,<a href="#a3b">a3b</a></td>
+			<td align="CENTER" width="140">2<sup>63000000</sup> 5<sup>19500</sup></td>
+			<td align="CENTER" width="31"><a href="fing25.html#a3">a3</a>, <a href="fing25.html#a3Dual">a3Dual</a></td>
+		</tr>
+		<tr>
+			<td align="CENTER" width="28">5 <a name="a2"></a></td>
+			<td align="CENTER" width="56"><a href="plane/a2">a2</a>, <a href="plane/a2Dual">a2Dual</a></td>
+			<td align="CENTER" width="84">Dickson nearfield</td>
+			<td align="CENTER" width="35">255</td>
+			<td align="CENTER" width="100"><a href="gens/a2">2880000</a></td>
+			<td align="CENTER" width="164">2,24,625</td>
+			<td align="CENTER" width="148">1,50,600</td>
+			<td align="CENTER" width="188"><a href="#a2">a2</a> ; <a href="#a2a">a2a</a>,<a href="#a2b">a2b</a></td>
+			<td align="CENTER" width="140">2<sup>58080000</sup> 5<sup>19500</sup></td>
+			<td align="CENTER" width="31"><a href="fing25.html#a2">a2</a>, <a href="fing25.html#a2Dual">a2Dual</a></td>
+		</tr>
+		<tr>
+			<td align="CENTER" width="28">6 <a name="a4"></a></td>
+			<td align="CENTER" width="56"><a href="plane/a4">a4</a>, <a href="plane/a4Dual">a4Dual</a></td>
+			<td align="CENTER" width="84">Rao</td>
+			<td align="CENTER" width="35">256</td>
+			<td align="CENTER" width="100"><a href="gens/a4">180000</a></td>
+			<td align="CENTER" width="164">2,6,18,625</td>
+			<td align="CENTER" width="148">1,50,150,450</td>
+			<td align="CENTER" width="188"><a href="#a2">a2</a>,<a href="#a8">a8</a> ; <a href="#a4a">a4a</a>,<a href="#a4b">a4b</a>,<a href="#a4c">a4c</a>,<a href="#a4d">a4d</a></td>
+			<td align="CENTER" width="140">2<sup>59070000</sup> 5<sup>19500</sup></td>
+			<td align="CENTER" width="31"><a href="fing25.html#a4">a4</a>, <a href="fing25.html#a4Dual">a4Dual</a></td>
+		</tr>
+		<tr>
+			<td align="CENTER" width="28">7 <a name="a8"></a></td>
+			<td align="CENTER" width="56"><a href="plane/a8">a8</a>, <a href="plane/a8Dual">a8Dual</a></td>
+			<td align="CENTER" width="84">Czerwinski &amp; Oakden</td>
+			<td align="CENTER" width="35">257</td>
+			<td align="CENTER" width="100"><a href="gens/a8">120000</a></td>
+			<td align="CENTER" width="164">1,1,24,625</td>
+			<td align="CENTER" width="148">1,25,25,600</td>
+			<td align="CENTER" width="188"><a href="#a4">a4</a> ; <a href="#a8a">a8a</a>,<a href="#a8b">a8b</a>,<a href="#a8c">a8c</a>,<a href="#a8d">a8d</a>,<a href="#a8e">a8e</a>,<a href="#a8f">a8f</a></td>
+			<td align="CENTER" width="140">2<sup>56640000</sup> 5<sup>19500</sup></td>
+			<td align="CENTER" width="31"><a href="fing25.html#a8">a8</a>, <a href="fing25.html#a8Dual">a8Dual</a></td>
+		</tr>
+		<tr>
+			<td align="CENTER" width="28">8 <a name="s4"></a></td>
+			<td align="CENTER" width="56"><a href="plane/s4">s4</a>, <a href="plane/s4Dual">s4Dual</a></td>
+			<td align="CENTER" width="84">subregular (exceptional nearfield)</td>
+			<td align="CENTER" width="35">258</td>
+			<td align="CENTER" width="100"><a href="gens/s4">1440000</a></td>
+			<td align="CENTER" width="164">2,24,625</td>
+			<td align="CENTER" width="148">1,50,600</td>
+			<td align="CENTER" width="188"><a href="#s2">s2</a>,<a href="#s5">s5</a> ; <a href="#s4a">s4a</a>,<a href="#s4b">s4b</a></td>
+			<td align="CENTER" width="140">2<sup>55680000</sup> 5<sup>19500</sup></td>
+			<td align="CENTER" width="31"><a href="fing25.html#s4">s4</a>, <a href="fing25.html#s4Dual">s4Dual</a></td>
+		</tr>
+		<tr>
+			<td align="CENTER" width="28">9 <a name="b1"></a></td>
+			<td align="CENTER" width="56"><a href="plane/b1">b1</a>, <a href="plane/b1Dual">b1Dual</a></td>
+			<td align="CENTER" width="84">Foulser</td>
+			<td align="CENTER" width="35">258</td>
+			<td align="CENTER" width="100"><a href="gens/b1">130000</a></td>
+			<td align="CENTER" width="164">26,625</td>
+			<td align="CENTER" width="148">1,650</td>
+			<td align="CENTER" width="188">none ; <a href="#b1a">b1a</a>,<a href="#b1b">b1b</a>,<a href="#b1c">b1c</a></td>
+			<td align="CENTER" width="140">2<sup>55510000</sup> 5<sup>19500</sup></td>
+			<td align="CENTER" width="31"><a href="fing25.html#b1">b1</a>, <a href="fing25.html#b1Dual">b1Dual</a></td>
+		</tr>
+		<tr>
+			<td align="CENTER" width="28">10 <a name="b6"></a></td>
+			<td align="CENTER" width="56"><a href="plane/b6">b6</a>, <a href="plane/b6Dual">b6Dual</a></td>
+			<td align="CENTER" width="84">Czerwinski &amp; Oakden</td>
+			<td align="CENTER" width="35">258</td>
+			<td align="CENTER" width="100"><a href="gens/b6">120000</a></td>
+			<td align="CENTER" width="164">2,12<sup>2</sup>,625</td>
+			<td align="CENTER" width="148">1,50,300<sup>2</sup></td>
+			<td align="CENTER" width="188">none ; <a href="#b6a">b6a</a>,<a href="#b6b">b6b</a>,<a href="#b6c">b6c</a>,<a href="#b6d">b6d</a>,<a href="#b6e">b6e</a></td>
+			<td align="CENTER" width="140">2<sup>52200000</sup> 5<sup>19500</sup></td>
+			<td align="CENTER" width="31"><a href="fing25.html#b6">b6</a>, <a href="fing25.html#b6Dual">b6Dual</a></td>
+		</tr>
+		<tr>
+			<td align="CENTER" width="28">11 <a name="s5"></a></td>
+			<td align="CENTER" width="56"><a href="plane/s5">s5</a>, <a href="plane/s5Dual">s5Dual</a></td>
+			<td align="CENTER" width="84">subregular</td>
+			<td align="CENTER" width="35">259</td>
+			<td align="CENTER" width="100"><a href="gens/s5">720000</a></td>
+			<td align="CENTER" width="164">8,18,625</td>
+			<td align="CENTER" width="148">1,200,450</td>
+			<td align="CENTER" width="188"><a href="#s4">s4</a> ; <a href="#s5a">s5a</a>,<a href="#s5b">s5b</a>,<a href="#s5c">s5c</a></td>
+			<td align="CENTER" width="140">2<sup>55980000</sup> 5<sup>19500</sup></td>
+			<td align="CENTER" width="31"><a href="fing25.html#s5">s5</a>, <a href="fing25.html#s5Dual">s5Dual</a></td>
+		</tr>
+		<tr>
+			<td align="CENTER" width="28">12 <a name="a6"></a></td>
+			<td align="CENTER" width="56"><a href="plane/a6">a6</a>, <a href="plane/a6Dual">a6Dual</a></td>
+			<td align="CENTER" width="84">Czerwinski &amp; Oakden</td>
+			<td align="CENTER" width="35">259</td>
+			<td align="CENTER" width="100"><a href="gens/a6">360000</a></td>
+			<td align="CENTER" width="164">6,8,12,625</td>
+			<td align="CENTER" width="148">1,150,200,300</td>
+			<td align="CENTER" width="188"><a href="#a1">a1</a> ; <a href="#a6a">a6a</a>,<a href="#a6b">a6b</a>,<a href="#a6c">a6c</a></td>
+			<td align="CENTER" width="140">2<sup>52110000</sup> 5<sup>19500</sup></td>
+			<td align="CENTER" width="31"><a href="fing25.html#a6">a6</a>, <a href="fing25.html#a6Dual">a6Dual</a></td>
+		</tr>
+		<tr>
+			<td align="CENTER" width="28">13 <a name="a5"></a></td>
+			<td align="CENTER" width="56"><a href="plane/a5">a5</a>, <a href="plane/a5Dual">a5Dual</a></td>
+			<td align="CENTER" width="84">Rao</td>
+			<td align="CENTER" width="35">259</td>
+			<td align="CENTER" width="100"><a href="gens/a5">60000</a></td>
+			<td align="CENTER" width="164">4<sup>2</sup>,6,12,625</td>
+			<td align="CENTER" width="148">1,100<sup>2</sup>,150,300</td>
+			<td align="CENTER" width="188"><a href="#a1">a1</a> ; <a href="#a5a">a5a</a>,<a href="#a5b">a5b</a>,<a href="#a5c">a5c</a>,<a href="#a5d">a5d</a>,<a href="#a5e">a5e</a>,<a href="#a5f">a5f</a>,<a href="#a5g">a5g</a></td>
+			<td align="CENTER" width="140">2<sup>54180000</sup> 5<sup>19500</sup></td>
+			<td align="CENTER" width="31"><a href="fing25.html#a5">a5</a>, <a href="fing25.html#a5Dual">a5Dual</a></td>
+		</tr>
+		<tr>
+			<td align="CENTER" width="28">14 <a name="s3"></a></td>
+			<td align="CENTER" width="56"><a href="plane/s3">s3</a>, <a href="plane/s3Dual">s3Dual</a></td>
+			<td align="CENTER" width="84">subregular</td>
+			<td align="CENTER" width="35">260</td>
+			<td align="CENTER" width="100"><a href="gens/s3">720000</a></td>
+			<td align="CENTER" width="164">2,24,625</td>
+			<td align="CENTER" width="148">1,50,600</td>
+			<td align="CENTER" width="188"><a href="#s2">s2</a> ; <a href="#s3a">s3a</a>,<a href="#s3b">s3b</a></td>
+			<td align="CENTER" width="140">2<sup>50880000</sup> 5<sup>19500</sup></td>
+			<td align="CENTER" width="31"><a href="fing25.html#s3">s3</a>, <a href="fing25.html#s3Dual">s3Dual</a></td>
+		</tr>
+		<tr>
+			<td align="CENTER" width="28">15 <a name="a7"></a></td>
+			<td align="CENTER" width="56"><a href="plane/a7">a7</a>, <a href="plane/a7Dual">a7Dual</a></td>
+			<td align="CENTER" width="84">Rao</td>
+			<td align="CENTER" width="35">260</td>
+			<td align="CENTER" width="100"><a href="gens/a7">300000</a></td>
+			<td align="CENTER" width="164">6,20,625</td>
+			<td align="CENTER" width="148">1,150,500</td>
+			<td align="CENTER" width="188"><a href="#a3">a3</a> ; <a href="#a7a">a7a</a>,<a href="#a7b">a7b</a>,<a href="#a7c">a7c</a></td>
+			<td align="CENTER" width="140">2<sup>46800000</sup> 5<sup>19500</sup></td>
+			<td align="CENTER" width="31"><a href="fing25.html#a7">a7</a>, <a href="fing25.html#a7Dual">a7Dual</a></td>
+		</tr>
+		<tr>
+			<td align="CENTER" width="28">16 <a name="b5"></a></td>
+			<td align="CENTER" width="56"><a href="plane/b5">b5</a>, <a href="plane/b5Dual">b5Dual</a></td>
+			<td align="CENTER" width="84">Walker</td>
+			<td align="CENTER" width="35">261</td>
+			<td align="CENTER" width="100"><a href="gens/b5">4800000</a></td>
+			<td align="CENTER" width="164">10,16,625</td>
+			<td align="CENTER" width="148">1,250,400</td>
+			<td align="CENTER" width="188">none ; <a href="#b5a">b5a</a>,<a href="#b5b">b5b</a></td>
+			<td align="CENTER" width="140">2<sup>110800000</sup> 5<sup>19500</sup></td>
+			<td align="CENTER" width="31"><a href="fing25.html#b5">b5</a>, <a href="fing25.html#b5Dual">b5Dual</a></td>
+		</tr>
+		<tr>
+			<td align="CENTER" width="28">17 <a name="b7"></a></td>
+			<td align="CENTER" width="56"><a href="plane/b7">b7</a>, <a href="plane/b7Dual">b7Dual</a></td>
+			<td align="CENTER" width="84">Czerwinski &amp; Oakden</td>
+			<td align="CENTER" width="35">261</td>
+			<td align="CENTER" width="100"><a href="gens/b7">240000</a></td>
+			<td align="CENTER" width="164">4,6,16,625</td>
+			<td align="CENTER" width="148">1,100,150,400</td>
+			<td align="CENTER" width="188">none ; <a href="#b7a">b7a</a>,<a href="#b7b">b7b</a>,<a href="#b7c">b7c</a>,<a href="#b7d">b7d</a></td>
+			<td align="CENTER" width="140">2<sup>58860000</sup> 5<sup>19500</sup></td>
+			<td align="CENTER" width="31"><a href="fing25.html#b7">b7</a>, <a href="fing25.html#b7Dual">b7Dual</a></td>
+		</tr>
+		<tr>
+			<td align="CENTER" width="28">18 <a name="a1"></a></td>
+			<td align="CENTER" width="56"><a href="plane/a1">a1</a>, <a href="plane/a1Dual">a1Dual</a></td>
+			<td align="CENTER" width="84">Czerwinski &amp; Oakden</td>
+			<td align="CENTER" width="35">262</td>
+			<td align="CENTER" width="100"><a href="gens/a1">360000</a></td>
+			<td align="CENTER" width="164">6,8,12,625</td>
+			<td align="CENTER" width="148">1,150,200,300</td>
+			<td align="CENTER" width="188"><a href="#a5">a5</a>,<a href="#a6">a6</a> ; <a href="#a1a">a1a</a>,<a href="#a1b">a1b</a>,<a href="#a1c">a1c</a></td>
+			<td align="CENTER" width="140">2<sup>53400000</sup> 5<sup>19500</sup></td>
+			<td align="CENTER" width="31"><a href="fing25.html#a1">a1</a>, <a href="fing25.html#a1Dual">a1Dual</a></td>
+		</tr>
+		<tr>
+			<td align="CENTER" width="28">19 <a name="b2"></a></td>
+			<td align="CENTER" width="56"><a href="plane/b2">b2</a>, <a href="plane/b2Dual">b2Dual</a></td>
+			<td align="CENTER" width="84">Foulser</td>
+			<td align="CENTER" width="35">262</td>
+			<td align="CENTER" width="100"><a href="gens/b2">130000</a></td>
+			<td align="CENTER" width="164">26,625</td>
+			<td align="CENTER" width="148">1,650</td>
+			<td align="CENTER" width="188">none ; <a href="#b2a">b2a</a>,<a href="#b2b">b2b</a>,<a href="#b2c">b2c</a></td>
+			<td align="CENTER" width="140">2<sup>55510000</sup> 5<sup>19500</sup></td>
+			<td align="CENTER" width="31"><a href="fing25.html#b2">b2</a>, <a href="fing25.html#b2Dual">b2Dual</a></td>
+		</tr>
+		<tr>
+			<td align="CENTER" width="28">20 <a name="b8"></a></td>
+			<td align="CENTER" width="56"><a href="plane/b8">b8</a>, <a href="plane/b8Dual">b8Dual</a></td>
+			<td align="CENTER" width="84">Czerwinski &amp; Oakden</td>
+			<td align="CENTER" width="35">262</td>
+			<td align="CENTER" width="100"><a href="gens/b8">80000</a></td>
+			<td align="CENTER" width="164">2,8,16,625</td>
+			<td align="CENTER" width="148">1,50,200,400</td>
+			<td align="CENTER" width="188">none ; <a href="#b8a">b8a</a>,<a href="#b8b">b8b</a>,<a href="#b8c">b8c</a>,<a href="#b8d">b8d</a>,<a href="#b8e">b8e</a>,<a href="#b8f">b8f</a>,<a href="#b8g">b8g</a></td>
+			<td align="CENTER" width="140">2<sup>57120000</sup> 5<sup>19500</sup></td>
+			<td align="CENTER" width="31"><a href="fing25.html#b8">b8</a>, <a href="fing25.html#b8Dual">b8Dual</a></td>
+		</tr>
+		<tr>
+			<td align="CENTER" width="28">21 <a name="a3a"></a></td>
+			<td align="CENTER" width="56"><a href="plane/a3a">a3a</a>, <a href="plane/a3aDual">a3aDual</a></td>
+			<td align="CENTER" width="84"></td>
+			<td align="CENTER" width="35">262</td>
+			<td align="CENTER" width="100"><a href="gens/a3a">50000</a></td>
+			<td align="CENTER" width="164">1,5,20,625</td>
+			<td align="CENTER" width="148">1,25,125,500</td>
+			<td align="CENTER" width="188"><a href="#a3">a3Dual</a> ; <a href="#a7a">a7aDual</a></td>
+			<td align="CENTER" width="140">2<sup>40850000</sup> 5<sup>1375</sup></td>
+			<td align="CENTER" width="31"><a href="fing25.html#a3a">a3a</a>, <a href="fing25.html#a3aDual">a3aDual</a></td>
+		</tr>
+		<tr>
+			<td align="CENTER" width="28">22 <a name="b4a"></a></td>
+			<td align="CENTER" width="56"><a href="plane/b4a">b4a</a>, <a href="plane/b4aDual">b4aDual</a></td>
+			<td align="CENTER" width="84"></td>
+			<td align="CENTER" width="35">262</td>
+			<td align="CENTER" width="100"><a href="gens/b4a">10000</a></td>
+			<td align="CENTER" width="164">1,5,20,125,250<sup>2</sup></td>
+			<td align="CENTER" width="148">1,25<sup>2</sup>,50<sup>2</sup>,500</td>
+			<td align="CENTER" width="188"><a href="#b4">b4Dual</a> ; none</td>
+			<td align="CENTER" width="140">2<sup>40620000</sup> 5<sup>1125</sup></td>
+			<td align="CENTER" width="31"><a href="fing25.html#b4a">b4a</a>, <a href="fing25.html#b4aDual">b4aDual</a></td>
+		</tr>
+		<tr>
+			<td align="CENTER" width="28">23 <a name="b3"></a></td>
+			<td align="CENTER" width="56"><a href="plane/b3">b3</a>, <a href="plane/b3Dual">b3Dual</a></td>
+			<td align="CENTER" width="84">Czerwinski &amp; Oakden</td>
+			<td align="CENTER" width="35">264</td>
+			<td align="CENTER" width="100"><a href="gens/b3">90000</a></td>
+			<td align="CENTER" width="164">2,6,18,625</td>
+			<td align="CENTER" width="148">1,50,150,450</td>
+			<td align="CENTER" width="188">none ; <a href="#b3a">b3a</a>,<a href="#b3b">b3b</a>,<a href="#b3c">b3c</a>,<a href="#b3d">b3d</a>,<a href="#b3e">b3e</a></td>
+			<td align="CENTER" width="140">2<sup>53190000</sup> 5<sup>19500</sup></td>
+			<td align="CENTER" width="31"><a href="fing25.html#b3">b3</a>, <a href="fing25.html#b3Dual">b3Dual</a></td>
+		</tr>
+		<tr>
+			<td align="CENTER" width="28">24 <a name="b4b"></a></td>
+			<td align="CENTER" width="56"><a href="plane/b4b">b4b</a>, <a href="plane/b4bDual">b4bDual</a></td>
+			<td align="CENTER" width="84"></td>
+			<td align="CENTER" width="35">264</td>
+			<td align="CENTER" width="100"><a href="gens/b4b">3000</a></td>
+			<td align="CENTER" width="164">3<sup>2</sup>,20,25,75<sup>4</sup>,150<sup>2</sup></td>
+			<td align="CENTER" width="148">1,15<sup>6</sup>,30<sup>2</sup>,500</td>
+			<td align="CENTER" width="188"><a href="#b4">b4Dual</a> ; none</td>
+			<td align="CENTER" width="140">2<sup>40531500</sup> 5<sup>975</sup></td>
+			<td align="CENTER" width="31"><a href="fing25.html#b4b">b4b</a>, <a href="fing25.html#b4bDual">b4bDual</a></td>
+		</tr>
+		<tr>
+			<td align="CENTER" width="28">25 <a name="a8a"></a></td>
+			<td align="CENTER" width="56"><a href="plane/a8a">a8a</a>, <a href="plane/a8aDual">a8aDual</a></td>
+			<td align="CENTER" width="84"></td>
+			<td align="CENTER" width="35">266</td>
+			<td align="CENTER" width="100"><a href="gens/a8a">12000</a></td>
+			<td align="CENTER" width="164">6,20,25,600</td>
+			<td align="CENTER" width="148">1,30,120,500</td>
+			<td align="CENTER" width="188"><a href="#a8">a8Dual</a> ; none</td>
+			<td align="CENTER" width="140">2<sup>43080000</sup> 5<sup>900</sup></td>
+			<td align="CENTER" width="31"><a href="fing25.html#a8a">a8a</a>, <a href="fing25.html#a8aDual">a8aDual</a></td>
+		</tr>
+		<tr>
+			<td align="CENTER" width="28">26* <a name="h1"></a></td>
+			<td align="CENTER" width="56"><a href="plane/h1">h1</a></td>
+			<td align="CENTER" width="84">(Ordinary) Hughes</td>
+			<td align="CENTER" width="35">268</td>
+			<td align="CENTER" width="100"><a href="gens/h1">744000</a></td>
+			<td align="CENTER" width="164">31,620</td>
+			<td align="CENTER" width="148">31,620</td>
+			<td align="CENTER" width="188"><a href="#h1a">h1a</a></td>
+			<td align="CENTER" width="140">2<sup>38812000</sup> 3<sup>31000</sup> 5<sup>4620</sup></td>
+			<td align="CENTER" width="31"><a href="fing25.html#h1">h1</a></td>
+		</tr>
+		<tr>
+			<td align="CENTER" width="28">27 <a name="a2a"></a></td>
+			<td align="CENTER" width="56"><a href="plane/a2a">a2a</a>, <a href="plane/a2aDual">a2aDual</a></td>
+			<td align="CENTER" width="84"></td>
+			<td align="CENTER" width="35">268</td>
+			<td align="CENTER" width="100"><a href="gens/a2a">48000</a></td>
+			<td align="CENTER" width="164">6,20,25,600</td>
+			<td align="CENTER" width="148">1,30,120,500</td>
+			<td align="CENTER" width="188"><a href="#a2">a2Dual</a> ; none</td>
+			<td align="CENTER" width="140">2<sup>42348000</sup> 5<sup>1500</sup></td>
+			<td align="CENTER" width="31"><a href="fing25.html#a2a">a2a</a>, <a href="fing25.html#a2aDual">a2aDual</a></td>
+		</tr>
+		<tr>
+			<td align="CENTER" width="28">28* <a name="s2a"></a></td>
+			<td align="CENTER" width="56"><a href="plane/s2a">s2a</a></td>
+			<td align="CENTER" width="84"></td>
+			<td align="CENTER" width="35">268</td>
+			<td align="CENTER" width="100"><a href="gens/s2a">20000</a></td>
+			<td align="CENTER" width="164">1,5,20,25,50<sup>2</sup>,500</td>
+			<td align="CENTER" width="148">1,5,20,25,50<sup>2</sup>,500</td>
+			<td align="CENTER" width="188"><a href="#s2">s2Dual</a></td>
+			<td align="CENTER" width="140">2<sup>35110000</sup> 5<sup>2000</sup></td>
+			<td align="CENTER" width="31"><a href="fing25.html#s2a">s2a</a></td>
+		</tr>
+		<tr>
+			<td align="CENTER" width="28">29 <a name="a7a"></a></td>
+			<td align="CENTER" width="56"><a href="plane/a7a">a7a</a>, <a href="plane/a7aDual">a7aDual</a></td>
+			<td align="CENTER" width="84"></td>
+			<td align="CENTER" width="35">269</td>
+			<td align="CENTER" width="100"><a href="gens/a7a">10000</a></td>
+			<td align="CENTER" width="164">1,5,20,25,100,500</td>
+			<td align="CENTER" width="148">1,5,20,25,100,500</td>
+			<td align="CENTER" width="188"><a href="#a7">a7Dual</a> ; <a href="#a3a">a3aDual</a></td>
+			<td align="CENTER" width="140">2<sup>39240000</sup> 5<sup>1375</sup></td>
+			<td align="CENTER" width="31"><a href="fing25.html#a7a">a7a</a>, <a href="fing25.html#a7aDual">a7aDual</a></td>
+		</tr>
+		<tr>
+			<td align="CENTER" width="28">30 <a name="s4a"></a></td>
+			<td align="CENTER" width="56"><a href="plane/s4a">s4a</a>, <a href="plane/s4aDual">s4aDual</a></td>
+			<td align="CENTER" width="84"></td>
+			<td align="CENTER" width="35">271</td>
+			<td align="CENTER" width="100"><a href="gens/s4a">24000</a></td>
+			<td align="CENTER" width="164">6,20,25,600</td>
+			<td align="CENTER" width="148">1,30,120,500</td>
+			<td align="CENTER" width="188"><a href="#s4">s4Dual</a> ; <a href="#s5a">s5aDual</a></td>
+			<td align="CENTER" width="140">2<sup>41076000</sup> 5<sup>1500</sup></td>
+			<td align="CENTER" width="31"><a href="fing25.html#s4a">s4a</a>, <a href="fing25.html#s4aDual">s4aDual</a></td>
+		</tr>
+		<tr>
+			<td align="CENTER" width="28">31* <a name="h2"></a></td>
+			<td align="CENTER" width="56"><a href="plane/h2">h2</a></td>
+			<td align="CENTER" width="84">Exceptional Hughes</td>
+			<td align="CENTER" width="35">272</td>
+			<td align="CENTER" width="100"><a href="gens/h2">1488000</a></td>
+			<td align="CENTER" width="164">31,620</td>
+			<td align="CENTER" width="148">31,620</td>
+			<td align="CENTER" width="188"><a href="#h2a">h2a</a></td>
+			<td align="CENTER" width="140">2<sup>47616000</sup> 5<sup>4620</sup></td>
+			<td align="CENTER" width="31"><a href="fing25.html#h2">h2</a></td>
+		</tr>
+		<tr>
+			<td align="CENTER" width="28">32 <a name="s2b"></a></td>
+			<td align="CENTER" width="56"><a href="plane/s2b">s2b</a>, <a href="plane/s2bDual">s2bDual</a></td>
+			<td align="CENTER" width="84"></td>
+			<td align="CENTER" width="35">272</td>
+			<td align="CENTER" width="100"><a href="gens/s2b">6000</a></td>
+			<td align="CENTER" width="164">3<sup>2</sup>,20,25,150<sup>4</sup></td>
+			<td align="CENTER" width="148">1,15<sup>2</sup>,30<sup>4</sup>,500</td>
+			<td align="CENTER" width="188"><a href="#s2">s2Dual</a> ; <a href="#s3b">s3bDual</a>,<a href="#s4b">s4bDual</a></td>
+			<td align="CENTER" width="140">2<sup>39453000</sup> 5<sup>1950</sup></td>
+			<td align="CENTER" width="31"><a href="fing25.html#s2b">s2b</a>, <a href="fing25.html#s2bDual">s2bDual</a></td>
+		</tr>
+		<tr>
+			<td align="CENTER" width="28">33 <a name="s3a"></a></td>
+			<td align="CENTER" width="56"><a href="plane/s3a">s3a</a>, <a href="plane/s3aDual">s3aDual</a></td>
+			<td align="CENTER" width="84"></td>
+			<td align="CENTER" width="35">273</td>
+			<td align="CENTER" width="100"><a href="gens/s3a">12000</a></td>
+			<td align="CENTER" width="164">3<sup>2</sup>,20,25,300<sup>2</sup></td>
+			<td align="CENTER" width="148">1,15<sup>2</sup>,60<sup>2</sup>,500</td>
+			<td align="CENTER" width="188"><a href="#s3">s3Dual</a> ; none</td>
+			<td align="CENTER" width="140">2<sup>40926000</sup> 5<sup>900</sup></td>
+			<td align="CENTER" width="31"><a href="fing25.html#s3a">s3a</a>, <a href="fing25.html#s3aDual">s3aDual</a></td>
+		</tr>
+		<tr>
+			<td align="CENTER" width="28">34 <a name="b5a"></a></td>
+			<td align="CENTER" width="56"><a href="plane/b5a">b5a</a>, <a href="plane/b5aDual">b5aDual</a></td>
+			<td align="CENTER" width="84"></td>
+			<td align="CENTER" width="35">274</td>
+			<td align="CENTER" width="100"><a href="gens/b5a">16000</a></td>
+			<td align="CENTER" width="164">2,4,20,25,200,400</td>
+			<td align="CENTER" width="148">1,10,20,40,80,500</td>
+			<td align="CENTER" width="188"><a href="#b5">b5Dual</a> ; none</td>
+			<td align="CENTER" width="140">2<sup>51432000</sup> 5<sup>1100</sup></td>
+			<td align="CENTER" width="31"><a href="fing25.html#b5a">b5a</a>, <a href="fing25.html#b5aDual">b5aDual</a></td>
+		</tr>
+		<tr>
+			<td align="CENTER" width="28">35 <a name="a8b"></a></td>
+			<td align="CENTER" width="56"><a href="plane/a8b">a8b</a>, <a href="plane/a8bDual">a8bDual</a></td>
+			<td align="CENTER" width="84"></td>
+			<td align="CENTER" width="35">274</td>
+			<td align="CENTER" width="100"><a href="gens/a8b">6000</a></td>
+			<td align="CENTER" width="164">3<sup>2</sup>,20,25,300<sup>2</sup></td>
+			<td align="CENTER" width="148">1,15<sup>2</sup>,60<sup>2</sup>,500</td>
+			<td align="CENTER" width="188"><a href="#a8">a8Dual</a> ; none</td>
+			<td align="CENTER" width="140">2<sup>40716000</sup> 5<sup>1050</sup></td>
+			<td align="CENTER" width="31"><a href="fing25.html#a8b">a8b</a>, <a href="fing25.html#a8bDual">a8bDual</a></td>
+		</tr>
+		<tr>
+			<td align="CENTER" width="28">36* <a name="h1b"></a></td>
+			<td align="CENTER" width="56"><a href="plane/h1b">h1b</a></td>
+			<td align="CENTER" width="84"></td>
+			<td align="CENTER" width="35">274</td>
+			<td align="CENTER" width="100"><a href="gens/h1b">4000</a></td>
+			<td align="CENTER" width="164">1,5,20,25,50<sup>2</sup>,500</td>
+			<td align="CENTER" width="148">1,5,20,25,50<sup>2</sup>,500</td>
+			<td align="CENTER" width="188"><a href="#h1a">h1aDual</a></td>
+			<td align="CENTER" width="140">2<sup>38446000</sup> 3<sup>4000</sup> 5<sup>1120</sup></td>
+			<td align="CENTER" width="31"><a href="fing25.html#h1b">h1b</a></td>
+		</tr>
+		<tr>
+			<td align="CENTER" width="28">37 <a name="h1a"></a></td>
+			<td align="CENTER" width="56"><a href="plane/h1a">h1a</a>, <a href="plane/h1aDual">h1aDual</a></td>
+			<td align="CENTER" width="84"></td>
+			<td align="CENTER" width="35">275</td>
+			<td align="CENTER" width="100"><a href="gens/h1a">24000</a></td>
+			<td align="CENTER" width="164">1<sup>2</sup>,2<sup>2</sup>,20,25,600</td>
+			<td align="CENTER" width="148">1<sup>2</sup>,24,25,50<sup>2</sup>,500</td>
+			<td align="CENTER" width="188"><a href="#h1">h1</a> ; <a href="#h1b">h1b</a></td>
+			<td align="CENTER" width="140">2<sup>38644000</sup> 3<sup>3000</sup> 5<sup>1020</sup></td>
+			<td align="CENTER" width="31"><a href="fing25.html#h1a">h1a</a>, <a href="fing25.html#h1aDual">h1aDual</a></td>
+		</tr>
+		<tr>
+			<td align="CENTER" width="28">38 <a name="b8a"></a></td>
+			<td align="CENTER" width="56"><a href="plane/b8a">b8a</a>, <a href="plane/b8aDual">b8aDual</a></td>
+			<td align="CENTER" width="84"></td>
+			<td align="CENTER" width="35">275</td>
+			<td align="CENTER" width="100"><a href="gens/b8a">4000</a></td>
+			<td align="CENTER" width="164">1<sup>2</sup>,2<sup>2</sup>,20,25,100<sup>2</sup>,200<sup>2</sup></td>
+			<td align="CENTER" width="148">1,5<sup>2</sup>,10<sup>2</sup>,20<sup>2</sup>,40<sup>2</sup>,500</td>
+			<td align="CENTER" width="188"><a href="#b8">b8Dual</a> ; none</td>
+			<td align="CENTER" width="140">2<sup>40760000</sup> 5<sup>1100</sup></td>
+			<td align="CENTER" width="31"><a href="fing25.html#b8a">b8a</a>, <a href="fing25.html#b8aDual">b8aDual</a></td>
+		</tr>
+		<tr>
+			<td align="CENTER" width="28">39 <a name="a4a"></a></td>
+			<td align="CENTER" width="56"><a href="plane/a4a">a4a</a>, <a href="plane/a4aDual">a4aDual</a></td>
+			<td align="CENTER" width="84"></td>
+			<td align="CENTER" width="35">275</td>
+			<td align="CENTER" width="100"><a href="gens/a4a">3000</a></td>
+			<td align="CENTER" width="164">3<sup>2</sup>,20,25,150<sup>4</sup></td>
+			<td align="CENTER" width="148">1,15<sup>2</sup>,30<sup>4</sup>,500</td>
+			<td align="CENTER" width="188"><a href="#a4">a4Dual</a> ; none</td>
+			<td align="CENTER" width="140">2<sup>41691000</sup> 5<sup>1125</sup></td>
+			<td align="CENTER" width="31"><a href="fing25.html#a4a">a4a</a>, <a href="fing25.html#a4aDual">a4aDual</a></td>
+		</tr>
+		<tr>
+			<td align="CENTER" width="28">40 <a name="b6a"></a></td>
+			<td align="CENTER" width="56"><a href="plane/b6a">b6a</a>, <a href="plane/b6aDual">b6aDual</a></td>
+			<td align="CENTER" width="84"></td>
+			<td align="CENTER" width="35">275</td>
+			<td align="CENTER" width="100"><a href="gens/b6a">2000</a></td>
+			<td align="CENTER" width="164">1<sup>2</sup>,2<sup>2</sup>,20,25,100<sup>6</sup></td>
+			<td align="CENTER" width="148">1,5<sup>2</sup>,10<sup>2</sup>,20<sup>6</sup>,500</td>
+			<td align="CENTER" width="188"><a href="#b6">b6Dual</a> ; none</td>
+			<td align="CENTER" width="140">2<sup>40308000</sup> 5<sup>850</sup></td>
+			<td align="CENTER" width="31"><a href="fing25.html#b6a">b6a</a>, <a href="fing25.html#b6aDual">b6aDual</a></td>
+		</tr>
+		<tr>
+			<td align="CENTER" width="28">41 <a name="b7a"></a></td>
+			<td align="CENTER" width="56"><a href="plane/b7a">b7a</a>, <a href="plane/b7aDual">b7aDual</a></td>
+			<td align="CENTER" width="84"></td>
+			<td align="CENTER" width="35">276</td>
+			<td align="CENTER" width="100"><a href="gens/b7a">4000</a></td>
+			<td align="CENTER" width="164">1<sup>2</sup>,2<sup>2</sup>,20,25,100<sup>2</sup>,200<sup>2</sup></td>
+			<td align="CENTER" width="148">1,5<sup>2</sup>,10<sup>2</sup>,20<sup>2</sup>,40<sup>2</sup>,500</td>
+			<td align="CENTER" width="188"><a href="#b7">b7Dual</a> ; none</td>
+			<td align="CENTER" width="140">2<sup>40084000</sup> 5<sup>900</sup></td>
+			<td align="CENTER" width="31"><a href="fing25.html#b7a">b7a</a>, <a href="fing25.html#b7aDual">b7aDual</a></td>
+		</tr>
+		<tr>
+			<td align="CENTER" width="28">42 <a name="s5a"></a></td>
+			<td align="CENTER" width="56"><a href="plane/s5a">s5a</a>, <a href="plane/s5aDual">s5aDual</a></td>
+			<td align="CENTER" width="84"></td>
+			<td align="CENTER" width="35">276</td>
+			<td align="CENTER" width="100"><a href="gens/s5a">4000</a></td>
+			<td align="CENTER" width="164">1<sup>2</sup>,4,20,25,50<sup>2</sup>,100,200<sup>2</sup></td>
+			<td align="CENTER" width="148">1,5<sup>2</sup>,10<sup>2</sup>,20<sup>2</sup>,40<sup>2</sup>,500</td>
+			<td align="CENTER" width="188"><a href="#s5">s5Dual</a> ; <a href="#s4a">s4aDual</a></td>
+			<td align="CENTER" width="140">2<sup>41151000</sup> 5<sup>1200</sup></td>
+			<td align="CENTER" width="31"><a href="fing25.html#s5a">s5a</a>, <a href="fing25.html#s5aDual">s5aDual</a></td>
+		</tr>
+		<tr>
+			<td align="CENTER" width="28">43 <a name="a2b"></a></td>
+			<td align="CENTER" width="56"><a href="plane/a2b">a2b</a>, <a href="plane/a2bDual">a2bDual</a></td>
+			<td align="CENTER" width="84"></td>
+			<td align="CENTER" width="35">276</td>
+			<td align="CENTER" width="100"><a href="gens/a2b">4000</a></td>
+			<td align="CENTER" width="164">1<sup>2</sup>,4,20,25,50<sup>2</sup>,100,200<sup>2</sup></td>
+			<td align="CENTER" width="148">1,5<sup>2</sup>,10<sup>2</sup>,20<sup>2</sup>,40<sup>2</sup>,500</td>
+			<td align="CENTER" width="188"><a href="#a2">a2Dual</a> ; <a href="#a4c">a4cDual</a></td>
+			<td align="CENTER" width="140">2<sup>43569000</sup> 5<sup>1600</sup></td>
+			<td align="CENTER" width="31"><a href="fing25.html#a2b">a2b</a>, <a href="fing25.html#a2bDual">a2bDual</a></td>
+		</tr>
+		<tr>
+			<td align="CENTER" width="28">44 <a name="a8c"></a></td>
+			<td align="CENTER" width="56"><a href="plane/a8c">a8c</a>, <a href="plane/a8cDual">a8cDual</a></td>
+			<td align="CENTER" width="84"></td>
+			<td align="CENTER" width="35">276</td>
+			<td align="CENTER" width="100"><a href="gens/a8c">4000</a></td>
+			<td align="CENTER" width="164">2<sup>3</sup>,20,25,200<sup>3</sup></td>
+			<td align="CENTER" width="148">1,10<sup>3</sup>,40<sup>3</sup>,500</td>
+			<td align="CENTER" width="188"><a href="#a8">a8Dual</a> ; none</td>
+			<td align="CENTER" width="140">2<sup>40996000</sup> 5<sup>1000</sup></td>
+			<td align="CENTER" width="31"><a href="fing25.html#a8c">a8c</a>, <a href="fing25.html#a8cDual">a8cDual</a></td>
+		</tr>
+		<tr>
+			<td align="CENTER" width="28">45 <a name="b7b"></a></td>
+			<td align="CENTER" width="56"><a href="plane/b7b">b7b</a>, <a href="plane/b7bDual">b7bDual</a></td>
+			<td align="CENTER" width="84"></td>
+			<td align="CENTER" width="35">276</td>
+			<td align="CENTER" width="100"><a href="gens/b7b">2000</a></td>
+			<td align="CENTER" width="164">1<sup>2</sup>,2<sup>2</sup>,20,25,100<sup>6</sup></td>
+			<td align="CENTER" width="148">1,5<sup>2</sup>,10<sup>2</sup>,20<sup>6</sup>,500</td>
+			<td align="CENTER" width="188"><a href="#b7">b7Dual</a> ; none</td>
+			<td align="CENTER" width="140">2<sup>39706000</sup> 5<sup>1050</sup></td>
+			<td align="CENTER" width="31"><a href="fing25.html#b7b">b7b</a>, <a href="fing25.html#b7bDual">b7bDual</a></td>
+		</tr>
+		<tr>
+			<td align="CENTER" width="28">46 <a name="a5a"></a></td>
+			<td align="CENTER" width="56"><a href="plane/a5a">a5a</a>, <a href="plane/a5aDual">a5aDual</a></td>
+			<td align="CENTER" width="84"></td>
+			<td align="CENTER" width="35">276</td>
+			<td align="CENTER" width="100"><a href="gens/a5a">1000</a></td>
+			<td align="CENTER" width="164">1<sup>2</sup>,2<sup>2</sup>,20,25<sup>5</sup>,50<sup>10</sup></td>
+			<td align="CENTER" width="148">1,5<sup>6</sup>,10<sup>12</sup>,500</td>
+			<td align="CENTER" width="188"><a href="#a5">a5Dual</a> ; <a href="#a1a">a1aDual</a></td>
+			<td align="CENTER" width="140">2<sup>39963000</sup> 5<sup>925</sup></td>
+			<td align="CENTER" width="31"><a href="fing25.html#a5a">a5a</a>, <a href="fing25.html#a5aDual">a5aDual</a></td>
+		</tr>
+		<tr>
+			<td align="CENTER" width="28">47 <a name="a1a"></a></td>
+			<td align="CENTER" width="56"><a href="plane/a1a">a1a</a>, <a href="plane/a1aDual">a1aDual</a></td>
+			<td align="CENTER" width="84"></td>
+			<td align="CENTER" width="35">277</td>
+			<td align="CENTER" width="100"><a href="gens/a1a">2000</a></td>
+			<td align="CENTER" width="164">1<sup>2</sup>,2<sup>2</sup>,20,25,100<sup>6</sup></td>
+			<td align="CENTER" width="148">1,5<sup>2</sup>,10<sup>2</sup>,20<sup>6</sup>,500</td>
+			<td align="CENTER" width="188"><a href="#a1">a1Dual</a> ; <a href="#a5a">a5aDual</a>,<a href="#a6a">a6aDual</a></td>
+			<td align="CENTER" width="140">2<sup>41154000</sup> 5<sup>1175</sup></td>
+			<td align="CENTER" width="31"><a href="fing25.html#a1a">a1a</a>, <a href="fing25.html#a1aDual">a1aDual</a></td>
+		</tr>
+		<tr>
+			<td align="CENTER" width="28">48 <a name="a4b"></a></td>
+			<td align="CENTER" width="56"><a href="plane/a4b">a4b</a>, <a href="plane/a4bDual">a4bDual</a></td>
+			<td align="CENTER" width="84"></td>
+			<td align="CENTER" width="35">277</td>
+			<td align="CENTER" width="100"><a href="gens/a4b">1000</a></td>
+			<td align="CENTER" width="164">1<sup>2</sup>,2<sup>2</sup>,20,25<sup>5</sup>,50<sup>10</sup></td>
+			<td align="CENTER" width="148">1,5<sup>6</sup>,10<sup>12</sup>,500</td>
+			<td align="CENTER" width="188"><a href="#a4">a4Dual</a> ; <a href="#a8d">a8dDual</a></td>
+			<td align="CENTER" width="140">2<sup>42115500</sup> 5<sup>1075</sup></td>
+			<td align="CENTER" width="31"><a href="fing25.html#a4b">a4b</a>, <a href="fing25.html#a4bDual">a4bDual</a></td>
+		</tr>
+		<tr>
+			<td align="CENTER" width="28">49 <a name="a4c"></a></td>
+			<td align="CENTER" width="56"><a href="plane/a4c">a4c</a>, <a href="plane/a4cDual">a4cDual</a></td>
+			<td align="CENTER" width="84"></td>
+			<td align="CENTER" width="35">277</td>
+			<td align="CENTER" width="100"><a href="gens/a4c">1000</a></td>
+			<td align="CENTER" width="164">1<sup>2</sup>,2<sup>2</sup>,20,25<sup>5</sup>,50<sup>10</sup></td>
+			<td align="CENTER" width="148">1,5<sup>6</sup>,10<sup>12</sup>,500</td>
+			<td align="CENTER" width="188"><a href="#a4">a4Dual</a> ; <a href="#a2b">a2bDual</a></td>
+			<td align="CENTER" width="140">2<sup>40980000</sup> 5<sup>1000</sup></td>
+			<td align="CENTER" width="31"><a href="fing25.html#a4c">a4c</a>, <a href="fing25.html#a4cDual">a4cDual</a></td>
+		</tr>
+		<tr>
+			<td align="CENTER" width="28">50 <a name="b6b"></a></td>
+			<td align="CENTER" width="56"><a href="plane/b6b">b6b</a>, <a href="plane/b6bDual">b6bDual</a></td>
+			<td align="CENTER" width="84"></td>
+			<td align="CENTER" width="35">277</td>
+			<td align="CENTER" width="100"><a href="gens/b6b">1000</a></td>
+			<td align="CENTER" width="164">1<sup>2</sup>,2<sup>2</sup>,20,25<sup>5</sup>,50<sup>10</sup></td>
+			<td align="CENTER" width="148">1,5<sup>6</sup>,10<sup>12</sup>,500</td>
+			<td align="CENTER" width="188"><a href="#b6">b6Dual</a> ; none</td>
+			<td align="CENTER" width="140">2<sup>40240500</sup> 5<sup>825</sup></td>
+			<td align="CENTER" width="31"><a href="fing25.html#b6b">b6b</a>, <a href="fing25.html#b6bDual">b6bDual</a></td>
+		</tr>
+		<tr>
+			<td align="CENTER" width="28">51 <a name="b8b"></a></td>
+			<td align="CENTER" width="56"><a href="plane/b8b">b8b</a>, <a href="plane/b8bDual">b8bDual</a></td>
+			<td align="CENTER" width="84"></td>
+			<td align="CENTER" width="35">277</td>
+			<td align="CENTER" width="100"><a href="gens/b8b">500</a></td>
+			<td align="CENTER" width="164">1<sup>6</sup>,20,25<sup>25</sup></td>
+			<td align="CENTER" width="148">1,5<sup>30</sup>,500</td>
+			<td align="CENTER" width="188"><a href="#b8">b8Dual</a> ; none</td>
+			<td align="CENTER" width="140">2<sup>40395000</sup> 5<sup>925</sup></td>
+			<td align="CENTER" width="31"><a href="fing25.html#b8b">b8b</a>, <a href="fing25.html#b8bDual">b8bDual</a></td>
+		</tr>
+		<tr>
+			<td align="CENTER" width="28">52 <a name="a4d"></a></td>
+			<td align="CENTER" width="56"><a href="plane/a4d">a4d</a>, <a href="plane/a4dDual">a4dDual</a></td>
+			<td align="CENTER" width="84"></td>
+			<td align="CENTER" width="35">277</td>
+			<td align="CENTER" width="100"><a href="gens/a4d">500</a></td>
+			<td align="CENTER" width="164">1<sup>6</sup>,20,25<sup>25</sup></td>
+			<td align="CENTER" width="148">1,5<sup>30</sup>,500</td>
+			<td align="CENTER" width="188"><a href="#a4">a4Dual</a> ; <a href="#a8e">a8eDual</a>,<a href="#a8f">a8fDual</a></td>
+			<td align="CENTER" width="140">2<sup>42190500</sup> 5<sup>1150</sup></td>
+			<td align="CENTER" width="31"><a href="fing25.html#a4d">a4d</a>, <a href="fing25.html#a4dDual">a4dDual</a></td>
+		</tr>
+		<tr>
+			<td align="CENTER" width="28">53 <a name="b5b"></a></td>
+			<td align="CENTER" width="56"><a href="plane/b5b">b5b</a>, <a href="plane/b5bDual">b5bDual</a></td>
+			<td align="CENTER" width="84"></td>
+			<td align="CENTER" width="35">278</td>
+			<td align="CENTER" width="100"><a href="gens/b5b">10000</a></td>
+			<td align="CENTER" width="164">1,5,20,125,250<sup>2</sup></td>
+			<td align="CENTER" width="148">1,25<sup>2</sup>,50<sup>2</sup>,500</td>
+			<td align="CENTER" width="188"><a href="#b5">b5Dual</a> ; none</td>
+			<td align="CENTER" width="140">2<sup>50682500</sup> 5<sup>1000</sup></td>
+			<td align="CENTER" width="31"><a href="fing25.html#b5b">b5b</a>, <a href="fing25.html#b5bDual">b5bDual</a></td>
+		</tr>
+		<tr>
+			<td align="CENTER" width="28">54 <a name="b7c"></a></td>
+			<td align="CENTER" width="56"><a href="plane/b7c">b7c</a>, <a href="plane/b7cDual">b7cDual</a></td>
+			<td align="CENTER" width="84"></td>
+			<td align="CENTER" width="35">278</td>
+			<td align="CENTER" width="100"><a href="gens/b7c">2000</a></td>
+			<td align="CENTER" width="164">1<sup>2</sup>,4,20,25,50<sup>2</sup>,100<sup>5</sup></td>
+			<td align="CENTER" width="148">1,5<sup>2</sup>,10<sup>2</sup>,20<sup>6</sup>,500</td>
+			<td align="CENTER" width="188"><a href="#b7">b7Dual</a> ; none</td>
+			<td align="CENTER" width="140">2<sup>39690500</sup> 5<sup>1000</sup></td>
+			<td align="CENTER" width="31"><a href="fing25.html#b7c">b7c</a>, <a href="fing25.html#b7cDual">b7cDual</a></td>
+		</tr>
+		<tr>
+			<td align="CENTER" width="28">55 <a name="a3b"></a></td>
+			<td align="CENTER" width="56"><a href="plane/a3b">a3b</a>, <a href="plane/a3bDual">a3bDual</a></td>
+			<td align="CENTER" width="84"></td>
+			<td align="CENTER" width="35">278</td>
+			<td align="CENTER" width="100"><a href="gens/a3b">2000</a></td>
+			<td align="CENTER" width="164">1<sup>2</sup>,4,20,25,50<sup>2</sup>,100<sup>5</sup></td>
+			<td align="CENTER" width="148">1,5<sup>2</sup>,10<sup>2</sup>,20<sup>6</sup>,500</td>
+			<td align="CENTER" width="188"><a href="#a3">a3Dual</a> ; <a href="#a7b">a7bDual</a></td>
+			<td align="CENTER" width="140">2<sup>40428000</sup> 5<sup>1075</sup></td>
+			<td align="CENTER" width="31"><a href="fing25.html#a3b">a3b</a>, <a href="fing25.html#a3bDual">a3bDual</a></td>
+		</tr>
+		<tr>
+			<td align="CENTER" width="28">56 <a name="a6a"></a></td>
+			<td align="CENTER" width="56"><a href="plane/a6a">a6a</a>, <a href="plane/a6aDual">a6aDual</a></td>
+			<td align="CENTER" width="84"></td>
+			<td align="CENTER" width="35">278</td>
+			<td align="CENTER" width="100"><a href="gens/a6a">2000</a></td>
+			<td align="CENTER" width="164">1<sup>2</sup>,4,20,25,50<sup>2</sup>,100<sup>5</sup></td>
+			<td align="CENTER" width="148">1,5<sup>2</sup>,10<sup>2</sup>,20<sup>6</sup>,500</td>
+			<td align="CENTER" width="188"><a href="#a6">a6Dual</a> ; <a href="#a1a">a1aDual</a></td>
+			<td align="CENTER" width="140">2<sup>39882500</sup> 5<sup>1025</sup></td>
+			<td align="CENTER" width="31"><a href="fing25.html#a6a">a6a</a>, <a href="fing25.html#a6aDual">a6aDual</a></td>
+		</tr>
+		<tr>
+			<td align="CENTER" width="28">57 <a name="a6b"></a></td>
+			<td align="CENTER" width="56"><a href="plane/a6b">a6b</a>, <a href="plane/a6bDual">a6bDual</a></td>
+			<td align="CENTER" width="84"></td>
+			<td align="CENTER" width="35">278</td>
+			<td align="CENTER" width="100"><a href="gens/a6b">1500</a></td>
+			<td align="CENTER" width="164">3<sup>2</sup>,20,25,75<sup>8</sup></td>
+			<td align="CENTER" width="148">1,15<sup>10</sup>,500</td>
+			<td align="CENTER" width="188"><a href="#a6">a6Dual</a> ; none</td>
+			<td align="CENTER" width="140">2<sup>39174000</sup> 5<sup>1050</sup></td>
+			<td align="CENTER" width="31"><a href="fing25.html#a6b">a6b</a>, <a href="fing25.html#a6bDual">a6bDual</a></td>
+		</tr>
+		<tr>
+			<td align="CENTER" width="28">58 <a name="a6c"></a></td>
+			<td align="CENTER" width="56"><a href="plane/a6c">a6c</a>, <a href="plane/a6cDual">a6cDual</a></td>
+			<td align="CENTER" width="84"></td>
+			<td align="CENTER" width="35">278</td>
+			<td align="CENTER" width="100"><a href="gens/a6c">1000</a></td>
+			<td align="CENTER" width="164">1<sup>2</sup>,2<sup>2</sup>,20,25<sup>5</sup>,50<sup>10</sup></td>
+			<td align="CENTER" width="148">1,5<sup>6</sup>,10<sup>12</sup>,500</td>
+			<td align="CENTER" width="188"><a href="#a6">a6Dual</a> ; none</td>
+			<td align="CENTER" width="140">2<sup>38948500</sup> 5<sup>1075</sup></td>
+			<td align="CENTER" width="31"><a href="fing25.html#a6c">a6c</a>, <a href="fing25.html#a6cDual">a6cDual</a></td>
+		</tr>
+		<tr>
+			<td align="CENTER" width="28">59 <a name="a5b"></a></td>
+			<td align="CENTER" width="56"><a href="plane/a5b">a5b</a>, <a href="plane/a5bDual">a5bDual</a></td>
+			<td align="CENTER" width="84"></td>
+			<td align="CENTER" width="35">278</td>
+			<td align="CENTER" width="100"><a href="gens/a5b">500</a></td>
+			<td align="CENTER" width="164">1<sup>6</sup>,20,25<sup>25</sup></td>
+			<td align="CENTER" width="148">1,5<sup>30</sup>,500</td>
+			<td align="CENTER" width="188"><a href="#a5">a5Dual</a> ; none</td>
+			<td align="CENTER" width="140">2<sup>39882000</sup> 5<sup>850</sup></td>
+			<td align="CENTER" width="31"><a href="fing25.html#a5b">a5b</a>, <a href="fing25.html#a5bDual">a5bDual</a></td>
+		</tr>
+		<tr>
+			<td align="CENTER" width="28">60 <a name="a5c"></a></td>
+			<td align="CENTER" width="56"><a href="plane/a5c">a5c</a>, <a href="plane/a5cDual">a5cDual</a></td>
+			<td align="CENTER" width="84"></td>
+			<td align="CENTER" width="35">278</td>
+			<td align="CENTER" width="100"><a href="gens/a5c">500</a></td>
+			<td align="CENTER" width="164">1<sup>6</sup>,20,25<sup>25</sup></td>
+			<td align="CENTER" width="148">1,5<sup>30</sup>,500</td>
+			<td align="CENTER" width="188"><a href="#a5">a5Dual</a> ; none</td>
+			<td align="CENTER" width="140">2<sup>39749500</sup> 5<sup>1025</sup></td>
+			<td align="CENTER" width="31"><a href="fing25.html#a5c">a5c</a>, <a href="fing25.html#a5cDual">a5cDual</a></td>
+		</tr>
+		<tr>
+			<td align="CENTER" width="28">61 <a name="a5d"></a></td>
+			<td align="CENTER" width="56"><a href="plane/a5d">a5d</a>, <a href="plane/a5dDual">a5dDual</a></td>
+			<td align="CENTER" width="84"></td>
+			<td align="CENTER" width="35">278</td>
+			<td align="CENTER" width="100"><a href="gens/a5d">500</a></td>
+			<td align="CENTER" width="164">1<sup>6</sup>,20,25<sup>25</sup></td>
+			<td align="CENTER" width="148">1,5<sup>30</sup>,500</td>
+			<td align="CENTER" width="188"><a href="#a5">a5Dual</a> ; none</td>
+			<td align="CENTER" width="140">2<sup>40096000</sup> 5<sup>975</sup></td>
+			<td align="CENTER" width="31"><a href="fing25.html#a5d">a5d</a>, <a href="fing25.html#a5dDual">a5dDual</a></td>
+		</tr>
+		<tr>
+			<td align="CENTER" width="28">62 <a name="a8d"></a></td>
+			<td align="CENTER" width="56"><a href="plane/a8d">a8d</a>, <a href="plane/a8dDual">a8dDual</a></td>
+			<td align="CENTER" width="84"></td>
+			<td align="CENTER" width="35">278</td>
+			<td align="CENTER" width="100"><a href="gens/a8d">500</a></td>
+			<td align="CENTER" width="164">1<sup>6</sup>,20,25<sup>25</sup></td>
+			<td align="CENTER" width="148">1,5<sup>30</sup>,500</td>
+			<td align="CENTER" width="188"><a href="#a8">a8Dual</a> ; <a href="#a4b">a4bDual</a></td>
+			<td align="CENTER" width="140">2<sup>41253000</sup> 5<sup>950</sup></td>
+			<td align="CENTER" width="31"><a href="fing25.html#a8d">a8d</a>, <a href="fing25.html#a8dDual">a8dDual</a></td>
+		</tr>
+		<tr>
+			<td align="CENTER" width="28">63 <a name="a8e"></a></td>
+			<td align="CENTER" width="56"><a href="plane/a8e">a8e</a>, <a href="plane/a8eDual">a8eDual</a></td>
+			<td align="CENTER" width="84"></td>
+			<td align="CENTER" width="35">278</td>
+			<td align="CENTER" width="100"><a href="gens/a8e">500</a></td>
+			<td align="CENTER" width="164">1<sup>6</sup>,20,25<sup>25</sup></td>
+			<td align="CENTER" width="148">1,5<sup>30</sup>,500</td>
+			<td align="CENTER" width="188"><a href="#a8">a8Dual</a> ; <a href="#a4d">a4dDual</a></td>
+			<td align="CENTER" width="140">2<sup>41176500</sup> 5<sup>950</sup></td>
+			<td align="CENTER" width="31"><a href="fing25.html#a8e">a8e</a>, <a href="fing25.html#a8eDual">a8eDual</a></td>
+		</tr>
+		<tr>
+			<td align="CENTER" width="28">64 <a name="a8f"></a></td>
+			<td align="CENTER" width="56"><a href="plane/a8f">a8f</a>, <a href="plane/a8fDual">a8fDual</a></td>
+			<td align="CENTER" width="84"></td>
+			<td align="CENTER" width="35">278</td>
+			<td align="CENTER" width="100"><a href="gens/a8f">500</a></td>
+			<td align="CENTER" width="164">1<sup>6</sup>,20,25<sup>25</sup></td>
+			<td align="CENTER" width="148">1,5<sup>30</sup>,500</td>
+			<td align="CENTER" width="188"><a href="#a8">a8Dual</a> ; <a href="#a4d">a4dDual</a></td>
+			<td align="CENTER" width="140">2<sup>41358500</sup> 5<sup>925</sup></td>
+			<td align="CENTER" width="31"><a href="fing25.html#a8f">a8f</a>, <a href="fing25.html#a8fDual">a8fDual</a></td>
+		</tr>
+		<tr>
+			<td align="CENTER" width="28">65 <a name="h2a"></a></td>
+			<td align="CENTER" width="56"><a href="plane/h2a">h2a</a>, <a href="plane/h2aDual">h2aDual</a></td>
+			<td align="CENTER" width="84"></td>
+			<td align="CENTER" width="35">279</td>
+			<td align="CENTER" width="100"><a href="gens/h2a">48000</a></td>
+			<td align="CENTER" width="164">1<sup>2</sup>,4,20,25,600</td>
+			<td align="CENTER" width="148">1<sup>2</sup>,24,25,100,500</td>
+			<td align="CENTER" width="188"><a href="#h2">h2</a>, <a href="#h2b">h2b</a> ; none</td>
+			<td align="CENTER" width="140">2<sup>41160000</sup> 5<sup>1620</sup></td>
+			<td align="CENTER" width="31"><a href="fing25.html#h2a">h2a</a>, <a href="fing25.html#h2aDual">h2aDual</a></td>
+		</tr>
+		<tr>
+			<td align="CENTER" width="28">66 <a name="w1"></a></td>
+			<td align="CENTER" width="56"><a href="plane/w1">w1</a>, <a href="plane/w1Dual">w1Dual</a></td>
+			<td align="CENTER" width="84">Wyoming</td>
+			<td align="CENTER" width="35">279</td>
+			<td align="CENTER" width="100"><a href="gens/w1">19200</a></td>
+			<td align="CENTER" width="164">1<sup>2</sup>,24,25,600</td>
+			<td align="CENTER" width="148">1<sup>2</sup>,24,25,600</td>
+			<td align="CENTER" width="188"><a href="#w2">w2</a> ; none</td>
+			<td align="CENTER" width="140">2<sup>42390400</sup> 3<sup>2400</sup> 5<sup>1100</sup></td>
+			<td align="CENTER" width="31"><a href="fing25.html#w1">w1</a>, <a href="fing25.html#w1Dual">w1Dual</a></td>
+		</tr>
+		<tr>
+			<td align="CENTER" width="28">67 <a name="b8c"></a></td>
+			<td align="CENTER" width="56"><a href="plane/b8c">b8c</a>, <a href="plane/b8cDual">b8cDual</a></td>
+			<td align="CENTER" width="84"></td>
+			<td align="CENTER" width="35">279</td>
+			<td align="CENTER" width="100"><a href="gens/b8c">2000</a></td>
+			<td align="CENTER" width="164">1<sup>2</sup>,2<sup>2</sup>,20,25,100<sup>6</sup></td>
+			<td align="CENTER" width="148">1,5<sup>2</sup>,10<sup>2</sup>,20<sup>6</sup>,500</td>
+			<td align="CENTER" width="188"><a href="#b8">b8Dual</a> ; none</td>
+			<td align="CENTER" width="140">2<sup>41082000</sup> 5<sup>1100</sup></td>
+			<td align="CENTER" width="31"><a href="fing25.html#b8c">b8c</a>, <a href="fing25.html#b8cDual">b8cDual</a></td>
+		</tr>
+		<tr>
+			<td align="CENTER" width="28">68 <a name="s4b"></a></td>
+			<td align="CENTER" width="56"><a href="plane/s4b">s4b</a>, <a href="plane/s4bDual">s4bDual</a></td>
+			<td align="CENTER" width="84"></td>
+			<td align="CENTER" width="35">279</td>
+			<td align="CENTER" width="100"><a href="gens/s4b">2000</a></td>
+			<td align="CENTER" width="164">1<sup>2</sup>,2<sup>2</sup>,20,25,50<sup>4</sup>,100<sup>4</sup></td>
+			<td align="CENTER" width="148">1,5<sup>2</sup>,10<sup>6</sup>,20<sup>4</sup>,500</td>
+			<td align="CENTER" width="188"><a href="#s4">s4Dual</a> ; <a href="#s2b">s2bDual</a>,<a href="#s5c">s5cDual</a></td>
+			<td align="CENTER" width="140">2<sup>40268000</sup> 5<sup>1300</sup></td>
+			<td align="CENTER" width="31"><a href="fing25.html#s4b">s4b</a>, <a href="fing25.html#s4bDual">s4bDual</a></td>
+		</tr>
+		<tr>
+			<td align="CENTER" width="28">69 <a name="a7b"></a></td>
+			<td align="CENTER" width="56"><a href="plane/a7b">a7b</a>, <a href="plane/a7bDual">a7bDual</a></td>
+			<td align="CENTER" width="84"></td>
+			<td align="CENTER" width="35">279</td>
+			<td align="CENTER" width="100"><a href="gens/a7b">2000</a></td>
+			<td align="CENTER" width="164">1<sup>2</sup>,2<sup>2</sup>,20,25,100<sup>6</sup></td>
+			<td align="CENTER" width="148">1,5<sup>2</sup>,10<sup>2</sup>,20<sup>6</sup>,500</td>
+			<td align="CENTER" width="188"><a href="#a7">a7Dual</a> ; <a href="#a3b">a3bDual</a></td>
+			<td align="CENTER" width="140">2<sup>38834000</sup> 5<sup>1175</sup></td>
+			<td align="CENTER" width="31"><a href="fing25.html#a7b">a7b</a>, <a href="fing25.html#a7bDual">a7bDual</a></td>
+		</tr>
+		<tr>
+			<td align="CENTER" width="28">70 <a name="b3a"></a></td>
+			<td align="CENTER" width="56"><a href="plane/b3a">b3a</a>, <a href="plane/b3aDual">b3aDual</a></td>
+			<td align="CENTER" width="84"></td>
+			<td align="CENTER" width="35">279</td>
+			<td align="CENTER" width="100"><a href="gens/b3a">1500</a></td>
+			<td align="CENTER" width="164">3<sup>2</sup>,20,25,75<sup>8</sup></td>
+			<td align="CENTER" width="148">1,15<sup>10</sup>,500</td>
+			<td align="CENTER" width="188"><a href="#b3">b3Dual</a> ; none</td>
+			<td align="CENTER" width="140">2<sup>39174000</sup> 5<sup>1050</sup></td>
+			<td align="CENTER" width="31"><a href="fing25.html#b3a">b3a</a>, <a href="fing25.html#b3aDual">b3aDual</a></td>
+		</tr>
+		<tr>
+			<td align="CENTER" width="28">71 <a name="a1b"></a></td>
+			<td align="CENTER" width="56"><a href="plane/a1b">a1b</a>, <a href="plane/a1bDual">a1bDual</a></td>
+			<td align="CENTER" width="84"></td>
+			<td align="CENTER" width="35">279</td>
+			<td align="CENTER" width="100"><a href="gens/a1b">1500</a></td>
+			<td align="CENTER" width="164">3<sup>2</sup>,20,25,75<sup>8</sup></td>
+			<td align="CENTER" width="148">1,15<sup>10</sup>,500</td>
+			<td align="CENTER" width="188"><a href="#a1">a1Dual</a> ; <a href="#a5g">a5gDual</a></td>
+			<td align="CENTER" width="140">2<sup>40705500</sup> 5<sup>1275</sup></td>
+			<td align="CENTER" width="31"><a href="fing25.html#a1b">a1b</a>, <a href="fing25.html#a1bDual">a1bDual</a></td>
+		</tr>
+		<tr>
+			<td align="CENTER" width="28">72 <a name="a1c"></a></td>
+			<td align="CENTER" width="56"><a href="plane/a1c">a1c</a>, <a href="plane/a1cDual">a1cDual</a></td>
+			<td align="CENTER" width="84"></td>
+			<td align="CENTER" width="35">279</td>
+			<td align="CENTER" width="100"><a href="gens/a1c">1000</a></td>
+			<td align="CENTER" width="164">1<sup>2</sup>,2<sup>2</sup>,20,25<sup>5</sup>,50<sup>10</sup></td>
+			<td align="CENTER" width="148">1,5<sup>6</sup>,10<sup>12</sup>,500</td>
+			<td align="CENTER" width="188"><a href="#a1">a1Dual</a> ; none</td>
+			<td align="CENTER" width="140">2<sup>39467000</sup> 5<sup>1050</sup></td>
+			<td align="CENTER" width="31"><a href="fing25.html#a1c">a1c</a>, <a href="fing25.html#a1cDual">a1cDual</a></td>
+		</tr>
+		<tr>
+			<td align="CENTER" width="28">73 <a name="b6c"></a></td>
+			<td align="CENTER" width="56"><a href="plane/b6c">b6c</a>, <a href="plane/b6cDual">b6cDual</a></td>
+			<td align="CENTER" width="84"></td>
+			<td align="CENTER" width="35">279</td>
+			<td align="CENTER" width="100"><a href="gens/b6c">1000</a></td>
+			<td align="CENTER" width="164">1<sup>2</sup>,2<sup>2</sup>,20,25<sup>5</sup>,50<sup>10</sup></td>
+			<td align="CENTER" width="148">1,5<sup>6</sup>,10<sup>12</sup>,500</td>
+			<td align="CENTER" width="188"><a href="#b6">b6Dual</a> ; none</td>
+			<td align="CENTER" width="140">2<sup>40192500</sup> 5<sup>775</sup></td>
+			<td align="CENTER" width="31"><a href="fing25.html#b6c">b6c</a>, <a href="fing25.html#b6cDual">b6cDual</a></td>
+		</tr>
+		<tr>
+			<td align="CENTER" width="28">74 <a name="b8d"></a></td>
+			<td align="CENTER" width="56"><a href="plane/b8d">b8d</a>, <a href="plane/b8dDual">b8dDual</a></td>
+			<td align="CENTER" width="84"></td>
+			<td align="CENTER" width="35">279</td>
+			<td align="CENTER" width="100"><a href="gens/b8d">1000</a></td>
+			<td align="CENTER" width="164">1<sup>2</sup>,2<sup>2</sup>,20,25<sup>5</sup>,50<sup>10</sup></td>
+			<td align="CENTER" width="148">1,5<sup>6</sup>,10<sup>12</sup>,500</td>
+			<td align="CENTER" width="188"><a href="#b8">b8Dual</a> ; none</td>
+			<td align="CENTER" width="140">2<sup>40465500</sup> 5<sup>975</sup></td>
+			<td align="CENTER" width="31"><a href="fing25.html#b8d">b8d</a>, <a href="fing25.html#b8dDual">b8dDual</a></td>
+		</tr>
+		<tr>
+			<td align="CENTER" width="28">75 <a name="s3b"></a></td>
+			<td align="CENTER" width="56"><a href="plane/s3b">s3b</a>, <a href="plane/s3bDual">s3bDual</a></td>
+			<td align="CENTER" width="84"></td>
+			<td align="CENTER" width="35">279</td>
+			<td align="CENTER" width="100"><a href="gens/s3b">1000</a></td>
+			<td align="CENTER" width="164">1<sup>2</sup>,2<sup>2</sup>,20,25<sup>5</sup>,50<sup>10</sup></td>
+			<td align="CENTER" width="148">1,5<sup>6</sup>,10<sup>12</sup>,500</td>
+			<td align="CENTER" width="188"><a href="#s3">s3Dual</a> ; <a href="#s2b">s2bDual</a></td>
+			<td align="CENTER" width="140">2<sup>37683500</sup> 5<sup>1200</sup></td>
+			<td align="CENTER" width="31"><a href="fing25.html#s3b">s3b</a>, <a href="fing25.html#s3bDual">s3bDual</a></td>
+		</tr>
+		<tr>
+			<td align="CENTER" width="28">76 <a name="b3b"></a></td>
+			<td align="CENTER" width="56"><a href="plane/b3b">b3b</a>, <a href="plane/b3bDual">b3bDual</a></td>
+			<td align="CENTER" width="84"></td>
+			<td align="CENTER" width="35">279</td>
+			<td align="CENTER" width="100"><a href="gens/b3b">500</a></td>
+			<td align="CENTER" width="164">1<sup>6</sup>,20,25<sup>25</sup></td>
+			<td align="CENTER" width="148">1,5<sup>30</sup>,500</td>
+			<td align="CENTER" width="188"><a href="#b3">b3Dual</a> ; none</td>
+			<td align="CENTER" width="140">2<sup>39136000</sup> 5<sup>925</sup></td>
+			<td align="CENTER" width="31"><a href="fing25.html#b3b">b3b</a>, <a href="fing25.html#b3bDual">b3bDual</a></td>
+		</tr>
+		<tr>
+			<td align="CENTER" width="28">77 <a name="b3c"></a></td>
+			<td align="CENTER" width="56"><a href="plane/b3c">b3c</a>, <a href="plane/b3cDual">b3cDual</a></td>
+			<td align="CENTER" width="84"></td>
+			<td align="CENTER" width="35">279</td>
+			<td align="CENTER" width="100"><a href="gens/b3c">500</a></td>
+			<td align="CENTER" width="164">1<sup>6</sup>,20,25<sup>25</sup></td>
+			<td align="CENTER" width="148">1,5<sup>30</sup>,500</td>
+			<td align="CENTER" width="188"><a href="#b3">b3Dual</a> ; none</td>
+			<td align="CENTER" width="140">2<sup>39433500</sup> 5<sup>900</sup></td>
+			<td align="CENTER" width="31"><a href="fing25.html#b3c">b3c</a>, <a href="fing25.html#b3cDual">b3cDual</a></td>
+		</tr>
+		<tr>
+			<td align="CENTER" width="28">78 <a name="b3d"></a></td>
+			<td align="CENTER" width="56"><a href="plane/b3d">b3d</a>, <a href="plane/b3dDual">b3dDual</a></td>
+			<td align="CENTER" width="84"></td>
+			<td align="CENTER" width="35">279</td>
+			<td align="CENTER" width="100"><a href="gens/b3d">500</a></td>
+			<td align="CENTER" width="164">1<sup>6</sup>,20,25<sup>25</sup></td>
+			<td align="CENTER" width="148">1,5<sup>30</sup>,500</td>
+			<td align="CENTER" width="188"><a href="#b3">b3Dual</a> ; none</td>
+			<td align="CENTER" width="140">2<sup>39758500</sup> 5<sup>1025</sup></td>
+			<td align="CENTER" width="31"><a href="fing25.html#b3d">b3d</a>, <a href="fing25.html#b3dDual">b3dDual</a></td>
+		</tr>
+		<tr>
+			<td align="CENTER" width="28">79 <a name="b3e"></a></td>
+			<td align="CENTER" width="56"><a href="plane/b3e">b3e</a>, <a href="plane/b3eDual">b3eDual</a></td>
+			<td align="CENTER" width="84"></td>
+			<td align="CENTER" width="35">279</td>
+			<td align="CENTER" width="100"><a href="gens/b3e">500</a></td>
+			<td align="CENTER" width="164">1<sup>6</sup>,20,25<sup>25</sup></td>
+			<td align="CENTER" width="148">1,5<sup>30</sup>,500</td>
+			<td align="CENTER" width="188"><a href="#b3">b3Dual</a> ; none</td>
+			<td align="CENTER" width="140">2<sup>39707000</sup> 5<sup>975</sup></td>
+			<td align="CENTER" width="31"><a href="fing25.html#b3e">b3e</a>, <a href="fing25.html#b3eDual">b3eDual</a></td>
+		</tr>
+		<tr>
+			<td align="CENTER" width="28">80 <a name="a7c"></a></td>
+			<td align="CENTER" width="56"><a href="plane/a7c">a7c</a>, <a href="plane/a7cDual">a7cDual</a></td>
+			<td align="CENTER" width="84"></td>
+			<td align="CENTER" width="35">279</td>
+			<td align="CENTER" width="100"><a href="gens/a7c">500</a></td>
+			<td align="CENTER" width="164">1<sup>6</sup>,20,25<sup>25</sup></td>
+			<td align="CENTER" width="148">1,5<sup>30</sup>,500</td>
+			<td align="CENTER" width="188"><a href="#a7">a7Dual</a> ; none</td>
+			<td align="CENTER" width="140">2<sup>38175500</sup> 5<sup>1000</sup></td>
+			<td align="CENTER" width="31"><a href="fing25.html#a7c">a7c</a>, <a href="fing25.html#a7cDual">a7cDual</a></td>
+		</tr>
+		<tr>
+			<td align="CENTER" width="28">81 <a name="b1a"></a></td>
+			<td align="CENTER" width="56"><a href="plane/b1a">b1a</a>, <a href="plane/b1aDual">b1aDual</a></td>
+			<td align="CENTER" width="84"></td>
+			<td align="CENTER" width="35">279</td>
+			<td align="CENTER" width="100"><a href="gens/b1a">500</a></td>
+			<td align="CENTER" width="164">1<sup>6</sup>,20,25<sup>25</sup></td>
+			<td align="CENTER" width="148">1,5<sup>30</sup>,500</td>
+			<td align="CENTER" width="188"><a href="#b1">b1Dual</a> ; none</td>
+			<td align="CENTER" width="140">2<sup>40329500</sup> 5<sup>875</sup></td>
+			<td align="CENTER" width="31"><a href="fing25.html#b1a">b1a</a>, <a href="fing25.html#b1aDual">b1aDual</a></td>
+		</tr>
+		<tr>
+			<td align="CENTER" width="28">82 <a name="b1b"></a></td>
+			<td align="CENTER" width="56"><a href="plane/b1b">b1b</a>, <a href="plane/b1bDual">b1bDual</a></td>
+			<td align="CENTER" width="84"></td>
+			<td align="CENTER" width="35">279</td>
+			<td align="CENTER" width="100"><a href="gens/b1b">500</a></td>
+			<td align="CENTER" width="164">1<sup>6</sup>,20,25<sup>25</sup></td>
+			<td align="CENTER" width="148">1,5<sup>30</sup>,500</td>
+			<td align="CENTER" width="188"><a href="#b1">b1Dual</a> ; none</td>
+			<td align="CENTER" width="140">2<sup>40605500</sup> 5<sup>850</sup></td>
+			<td align="CENTER" width="31"><a href="fing25.html#b1b">b1b</a>, <a href="fing25.html#b1bDual">b1bDual</a></td>
+		</tr>
+		<tr>
+			<td align="CENTER" width="28">83 <a name="b1c"></a></td>
+			<td align="CENTER" width="56"><a href="plane/b1c">b1c</a>, <a href="plane/b1cDual">b1cDual</a></td>
+			<td align="CENTER" width="84"></td>
+			<td align="CENTER" width="35">279</td>
+			<td align="CENTER" width="100"><a href="gens/b1c">500</a></td>
+			<td align="CENTER" width="164">1<sup>6</sup>,20,25<sup>25</sup></td>
+			<td align="CENTER" width="148">1,5<sup>30</sup>,500</td>
+			<td align="CENTER" width="188"><a href="#b1">b1Dual</a> ; none</td>
+			<td align="CENTER" width="140">2<sup>40532500</sup> 5<sup>900</sup></td>
+			<td align="CENTER" width="31"><a href="fing25.html#b1c">b1c</a>, <a href="fing25.html#b1cDual">b1cDual</a></td>
+		</tr>
+		<tr>
+			<td align="CENTER" width="28">84 <a name="b2a"></a></td>
+			<td align="CENTER" width="56"><a href="plane/b2a">b2a</a>, <a href="plane/b2aDual">b2aDual</a></td>
+			<td align="CENTER" width="84"></td>
+			<td align="CENTER" width="35">279</td>
+			<td align="CENTER" width="100"><a href="gens/b2a">500</a></td>
+			<td align="CENTER" width="164">1<sup>6</sup>,20,25<sup>25</sup></td>
+			<td align="CENTER" width="148">1,5<sup>30</sup>,500</td>
+			<td align="CENTER" width="188"><a href="#b2">b2Dual</a> ; none</td>
+			<td align="CENTER" width="140">2<sup>40417000</sup> 5<sup>875</sup></td>
+			<td align="CENTER" width="31"><a href="fing25.html#b2a">b2a</a>, <a href="fing25.html#b2aDual">b2aDual</a></td>
+		</tr>
+		<tr>
+			<td align="CENTER" width="28">85 <a name="b2b"></a></td>
+			<td align="CENTER" width="56"><a href="plane/b2b">b2b</a>, <a href="plane/b2bDual">b2bDual</a></td>
+			<td align="CENTER" width="84"></td>
+			<td align="CENTER" width="35">279</td>
+			<td align="CENTER" width="100"><a href="gens/b2b">500</a></td>
+			<td align="CENTER" width="164">1<sup>6</sup>,20,25<sup>25</sup></td>
+			<td align="CENTER" width="148">1,5<sup>30</sup>,500</td>
+			<td align="CENTER" width="188"><a href="#b2">b2Dual</a> ; none</td>
+			<td align="CENTER" width="140">2<sup>40542500</sup> 5<sup>925</sup></td>
+			<td align="CENTER" width="31"><a href="fing25.html#b2b">b2b</a>, <a href="fing25.html#b2bDual">b2bDual</a></td>
+		</tr>
+		<tr>
+			<td align="CENTER" width="28">86 <a name="b2c"></a></td>
+			<td align="CENTER" width="56"><a href="plane/b2c">b2c</a>, <a href="plane/b2cDual">b2cDual</a></td>
+			<td align="CENTER" width="84"></td>
+			<td align="CENTER" width="35">279</td>
+			<td align="CENTER" width="100"><a href="gens/b2c">500</a></td>
+			<td align="CENTER" width="164">1<sup>6</sup>,20,25<sup>25</sup></td>
+			<td align="CENTER" width="148">1,5<sup>30</sup>,500</td>
+			<td align="CENTER" width="188"><a href="#b2">b2Dual</a> ; none</td>
+			<td align="CENTER" width="140">2<sup>40415000</sup> 5<sup>825</sup></td>
+			<td align="CENTER" width="31"><a href="fing25.html#b2c">b2c</a>, <a href="fing25.html#b2cDual">b2cDual</a></td>
+		</tr>
+		<tr>
+			<td align="CENTER" width="28">87 <a name="b6d"></a></td>
+			<td align="CENTER" width="56"><a href="plane/b6d">b6d</a>, <a href="plane/b6dDual">b6dDual</a></td>
+			<td align="CENTER" width="84"></td>
+			<td align="CENTER" width="35">279</td>
+			<td align="CENTER" width="100"><a href="gens/b6d">500</a></td>
+			<td align="CENTER" width="164">1<sup>6</sup>,20,25<sup>25</sup></td>
+			<td align="CENTER" width="148">1,5<sup>30</sup>,500</td>
+			<td align="CENTER" width="188"><a href="#b6">b6Dual</a> ; none</td>
+			<td align="CENTER" width="140">2<sup>40587000</sup> 5<sup>850</sup></td>
+			<td align="CENTER" width="31"><a href="fing25.html#b6c">b6d</a>, <a href="fing25.html#b6dDual">b6dDual</a></td>
+		</tr>
+		<tr>
+			<td align="CENTER" width="28">88 <a name="b6e"></a></td>
+			<td align="CENTER" width="56"><a href="plane/b6e">b6e</a>, <a href="plane/b6eDual">b6eDual</a></td>
+			<td align="CENTER" width="84"></td>
+			<td align="CENTER" width="35">279</td>
+			<td align="CENTER" width="100"><a href="gens/b6e">500</a></td>
+			<td align="CENTER" width="164">1<sup>6</sup>,20,25<sup>25</sup></td>
+			<td align="CENTER" width="148">1,5<sup>30</sup>,500</td>
+			<td align="CENTER" width="188"><a href="#b6">b6Dual</a> ; none</td>
+			<td align="CENTER" width="140">2<sup>40354500</sup> 5<sup>825</sup></td>
+			<td align="CENTER" width="31"><a href="fing25.html#b6e">b6e</a>, <a href="fing25.html#b6eDual">b6eDual</a></td>
+		</tr>
+		<tr>
+			<td align="CENTER" width="28">89 <a name="b8e"></a></td>
+			<td align="CENTER" width="56"><a href="plane/b8e">b8e</a>, <a href="plane/b8eDual">b8eDual</a></td>
+			<td align="CENTER" width="84"></td>
+			<td align="CENTER" width="35">279</td>
+			<td align="CENTER" width="100"><a href="gens/b8e">500</a></td>
+			<td align="CENTER" width="164">1<sup>6</sup>,20,25<sup>25</sup></td>
+			<td align="CENTER" width="148">1,5<sup>30</sup>,500</td>
+			<td align="CENTER" width="188"><a href="#b8">b8Dual</a> ; none</td>
+			<td align="CENTER" width="140">2<sup>40196000</sup> 5<sup>950</sup></td>
+			<td align="CENTER" width="31"><a href="fing25.html#b8e">b8e</a>, <a href="fing25.html#b8eDual">b8eDual</a></td>
+		</tr>
+		<tr>
+			<td align="CENTER" width="28">90 <a name="b8f"></a></td>
+			<td align="CENTER" width="56"><a href="plane/b8f">b8f</a>, <a href="plane/b8fDual">b8fDual</a></td>
+			<td align="CENTER" width="84"></td>
+			<td align="CENTER" width="35">279</td>
+			<td align="CENTER" width="100"><a href="gens/b8f">500</a></td>
+			<td align="CENTER" width="164">1<sup>6</sup>,20,25<sup>25</sup></td>
+			<td align="CENTER" width="148">1,5<sup>30</sup>,500</td>
+			<td align="CENTER" width="188"><a href="#b8">b8Dual</a> ; none</td>
+			<td align="CENTER" width="140">2<sup>40494000</sup> 5<sup>925</sup></td>
+			<td align="CENTER" width="31"><a href="fing25.html#b8f">b8f</a>, <a href="fing25.html#b8fDual">b8fDual</a></td>
+		</tr>
+		<tr>
+			<td align="CENTER" width="28">91 <a name="b8g"></a></td>
+			<td align="CENTER" width="56"><a href="plane/b8g">b8g</a>, <a href="plane/b8gDual">b8gDual</a></td>
+			<td align="CENTER" width="84"></td>
+			<td align="CENTER" width="35">279</td>
+			<td align="CENTER" width="100"><a href="gens/b8g">500</a></td>
+			<td align="CENTER" width="164">1<sup>6</sup>,20,25<sup>25</sup></td>
+			<td align="CENTER" width="148">1,5<sup>30</sup>,500</td>
+			<td align="CENTER" width="188"><a href="#b8">b8Dual</a> ; none</td>
+			<td align="CENTER" width="140">2<sup>40138000</sup> 5<sup>875</sup></td>
+			<td align="CENTER" width="31"><a href="fing25.html#b8g">b8g</a>, <a href="fing25.html#b8gDual">b8gDual</a></td>
+		</tr>
+		<tr>
+			<td align="CENTER" width="28">92 <a name="s5b"></a></td>
+			<td align="CENTER" width="56"><a href="plane/s5b">s5b</a>, <a href="plane/s5bDual">s5bDual</a></td>
+			<td align="CENTER" width="84"></td>
+			<td align="CENTER" width="35">280</td>
+			<td align="CENTER" width="100"><a href="gens/s5b">3000</a></td>
+			<td align="CENTER" width="164">3<sup>2</sup>,20,25,75<sup>4</sup>,150<sup>2</sup></td>
+			<td align="CENTER" width="148">1,15<sup>6</sup>,30<sup>2</sup>,500</td>
+			<td align="CENTER" width="188"><a href="#s5">s5Dual</a> ; none</td>
+			<td align="CENTER" width="140">2<sup>40216500</sup> 5<sup>1125</sup></td>
+			<td align="CENTER" width="31"><a href="fing25.html#s5b">s5b</a>, <a href="fing25.html#s5bDual">s5bDual</a></td>
+		</tr>
+		<tr>
+			<td align="CENTER" width="28">93 <a name="s5c"></a></td>
+			<td align="CENTER" width="56"><a href="plane/s5c">s5c</a>, <a href="plane/s5cDual">s5cDual</a></td>
+			<td align="CENTER" width="84"></td>
+			<td align="CENTER" width="35">280</td>
+			<td align="CENTER" width="100"><a href="gens/s5c">2000</a></td>
+			<td align="CENTER" width="164">1<sup>2</sup>,2<sup>2</sup>,20,25,50<sup>4</sup>,100<sup>4</sup></td>
+			<td align="CENTER" width="148">1,5<sup>2</sup>,10<sup>6</sup>,20<sup>4</sup>,500</td>
+			<td align="CENTER" width="188"><a href="#s5">s5Dual</a> ; <a href="#s4b">s4bDual</a></td>
+			<td align="CENTER" width="140">2<sup>40359000</sup> 5<sup>1100</sup></td>
+			<td align="CENTER" width="31"><a href="fing25.html#s5c">s5c</a>, <a href="fing25.html#s5cDual">s5cDual</a></td>
+		</tr>
+		<tr>
+			<td align="CENTER" width="28">94 <a name="a5e"></a></td>
+			<td align="CENTER" width="56"><a href="plane/a5e">a5e</a>, <a href="plane/a5eDual">a5eDual</a></td>
+			<td align="CENTER" width="84"></td>
+			<td align="CENTER" width="35">280</td>
+			<td align="CENTER" width="100"><a href="gens/a5e">500</a></td>
+			<td align="CENTER" width="164">1<sup>6</sup>,20,25<sup>25</sup></td>
+			<td align="CENTER" width="148">1,5<sup>30</sup>,500</td>
+			<td align="CENTER" width="188"><a href="#a5">a5Dual</a> ; none</td>
+			<td align="CENTER" width="140">2<sup>39469500</sup> 5<sup>1000</sup></td>
+			<td align="CENTER" width="31"><a href="fing25.html#a5e">a5e</a>, <a href="fing25.html#a5eDual">a5eDual</a></td>
+		</tr>
+		<tr>
+			<td align="CENTER" width="28">95 <a name="a5f"></a></td>
+			<td align="CENTER" width="56"><a href="plane/a5f">a5f</a>, <a href="plane/a5fDual">a5fDual</a></td>
+			<td align="CENTER" width="84"></td>
+			<td align="CENTER" width="35">280</td>
+			<td align="CENTER" width="100"><a href="gens/a5f">500</a></td>
+			<td align="CENTER" width="164">1<sup>6</sup>,20,25<sup>25</sup></td>
+			<td align="CENTER" width="148">1,5<sup>30</sup>,500</td>
+			<td align="CENTER" width="188"><a href="#a5">a5Dual</a> ; none</td>
+			<td align="CENTER" width="140">2<sup>39553000</sup> 5<sup>875</sup></td>
+			<td align="CENTER" width="31"><a href="fing25.html#a5f">a5f</a>, <a href="fing25.html#a5fDual">a5fDual</a></td>
+		</tr>
+		<tr>
+			<td align="CENTER" width="28">96 <a name="a5g"></a></td>
+			<td align="CENTER" width="56"><a href="plane/a5g">a5g</a>, <a href="plane/a5gDual">a5gDual</a></td>
+			<td align="CENTER" width="84"></td>
+			<td align="CENTER" width="35">280</td>
+			<td align="CENTER" width="100"><a href="gens/a5g">500</a></td>
+			<td align="CENTER" width="164">1<sup>6</sup>,20,25<sup>25</sup></td>
+			<td align="CENTER" width="148">1,5<sup>30</sup>,500</td>
+			<td align="CENTER" width="188"><a href="#a5">a5Dual</a> ; <a href="#a1b">a1bDual</a></td>
+			<td align="CENTER" width="140">2<sup>39942000</sup> 5<sup>1000</sup></td>
+			<td align="CENTER" width="31"><a href="fing25.html#a5g">a5g</a>, <a href="fing25.html#a5gDual">a5gDual</a></td>
+		</tr>
+		<tr>
+			<td align="CENTER" width="28">97 <a name="b7d"></a></td>
+			<td align="CENTER" width="56"><a href="plane/b7d">b7d</a>, <a href="plane/b7dDual">b7dDual</a></td>
+			<td align="CENTER" width="84"></td>
+			<td align="CENTER" width="35">280</td>
+			<td align="CENTER" width="100"><a href="gens/b7d">500</a></td>
+			<td align="CENTER" width="164">1<sup>6</sup>,20,25<sup>25</sup></td>
+			<td align="CENTER" width="148">1,5<sup>30</sup>,500</td>
+			<td align="CENTER" width="188"><a href="#b7">b7Dual</a> ; none</td>
+			<td align="CENTER" width="140">2<sup>40349500</sup> 5<sup>975</sup></td>
+			<td align="CENTER" width="31"><a href="fing25.html#b7d">b7d</a>, <a href="fing25.html#b7dDual">b7dDual</a></td>
+		</tr>
+		<tr>
+			<td align="CENTER" width="28">98 <a name="w2"></a></td>
+			<td align="CENTER" width="56"><a href="plane/w2">w2</a>, <a href="plane/w2Dual">w2Dual</a></td>
+			<td align="CENTER" width="84">Wyoming</td>
+			<td align="CENTER" width="35">286</td>
+			<td align="CENTER" width="100"><a href="gens/w2">3200</a></td>
+			<td align="CENTER" width="164">2,4<sup>2</sup>,16,25,200,400</td>
+			<td align="CENTER" width="148">1,10,20,40,80,100,400</td>
+			<td align="CENTER" width="188"><a href="#w1">w1</a> ; none</td>
+			<td align="CENTER" width="140">2<sup>38559200</sup> 5<sup>420</sup></td>
+			<td align="CENTER" width="31"><a href="fing25.html#w2">w2</a>, <a href="fing25.html#w2Dual">w2Dual</a></td>
+		</tr>
+		<tr>
+			<td align="CENTER" width="28">99 <a name="h2b"></a></td>
+			<td align="CENTER" width="56"><a href="plane/h2b">h2b</a>, <a href="plane/h2bDual">h2bDual</a></td>
+			<td align="CENTER" width="84"></td>
+			<td align="CENTER" width="35">300</td>
+			<td align="CENTER" width="100"><a href="gens/h2b">9600</a></td>
+			<td align="CENTER" width="164">4,6,16,25,600</td>
+			<td align="CENTER" width="148">1,30,100,120,400</td>
+			<td align="CENTER" width="188"><a href="#h2a">h2a</a> ; none</td>
+			<td align="CENTER" width="140">2<sup>39224800</sup> 5<sup>420</sup></td>
+			<td align="CENTER" width="31"><a href="fing25.html#h2b">h2b</a>, <a href="fing25.html#h2bDual">h2bDual</a></td>
+		</tr>
+	</tbody>
+</table>
+
+<p><a name="key"></a></p>
+
+<h2>Key to the table</h2>
+
+<p>Only one line is displayed for both a plane and its dual, an asterisk (*) in the first column indicating that the plane is self-dual. Each line includes the following information and isomorphism invariants for each plane.</p>
+
+<ul>
+	<li><b>Plane</b>&nbsp; &nbsp; provides a text file containing the projective plane. The text file has 651 rows, corresponding to the points listed in the order 0,1,2,...,650; each row lists lines incident with the given point, with lines labeled 0,1,2,...,650. For non-self-dual planes, a second file is also given, containing the dual of the first.</li>
+	<li><b>5-rank</b>&nbsp; &nbsp; The rank of the (0,1)-incidence matrix of the projective plane, over a field of characteristic 5.</li>
+	<li><b>|Autgp|</b>&nbsp; &nbsp; The order of the full automorphism group (collineation group) of the projective plane. This table entry is linked to a file providing generators of the automorphism group, listed as permutations of the integer list 0,1,2,...,1301 where 0,1,2,...,650 are labels for the points and 651,...,1301 are labels for the lines. (I&#39;ve added 651 to each of the previously used line labels 0,1,...,650, to distinguish lines from points.) Generators for the automorphism group of the dual plane are not provided since these are trivially obtained from the generators given for the original plane.</li>
+	<li><b>Point Orbits</b>&nbsp; &nbsp; The lengths of the full automorphism group on the points. (These are the lengths of the line orbits for the dual plane.)</li>
+	<li><b>Line Orbits</b>&nbsp; &nbsp; The lengths of the full automorphism group on the lines. (These are the lengths of the point orbits for the dual plane.)</li>
+	<li><b>Derived Planes</b>&nbsp; &nbsp; A list of all planes obtained by derivation from the planes listed in this line. When a line in the table lists a dual pair of planes, I list all the planes derivable from the first plane in the pair, then a colon, followed by all the planes derivable from the second plane in the pair.</li>
+	<li><b>Subplanes</b>&nbsp; &nbsp; The orders of the proper <a href="#subplanes">subplanes</a>, and the total number.</li>
+	<li><b>Fingerprint</b>&nbsp; &nbsp; The fingerprint of each plane is provided through a link to an accompanying table of fingerprints. See this accompanying <a href="fing25.html">document</a> for the definition of this useful isomorphism invariant.</li>
+</ul>
+
+<p><a name="image"></a></p>
+
+<h2>Connections between the planes</h2>
+
+<p>The image below illustrates connections between the planes we have listed. Each circle represents a dual pair of planes (or a self-dual plane), and most of these have not been labeled. Yellow bonds between planes represent the derivability of one plane from another (a symmetric relation). Blue bonds indicate pairs of planes which share a <a href="#constructions">semibiplane</a>.</p>
+
+<p><img src="planes25.jpg" /></p>
+
+<p><a name="constructions"></a></p>
+
+<h2>Constructions</h2>
+
+<p>I&#39;ve included the exhaustive list of all 21 translations planes of order 25 due to T. Czerwinski and D. Oakden, &lsquo;The translation planes of order twenty-five&rsquo; <i>J. Comb. Theory A</i> <b>59</b> (1992), 193-217. Following their notation, I denote these planes <tt>a1-a8</tt>, <tt>b1-b8</tt>, <tt>s1-s5</tt>. Also included are the ordinary Hughes plane <tt>h1</tt> and the exceptional Hughes plane <tt>h2</tt>, constructed using the regular and irregular nearfields of order 25 respectively; see H. Luneburg, &lsquo;Characterizations of the generalized Hughes planes&rsquo; <i>Canad. J. Math.</i> <b>28</b> (1976), 376-402. With the exception of the Wyoming planes <tt>w1</tt> and <tt>w2</tt>, all remaining planes listed are constructed by repeatedly dualising and deriving the translation planes and Hughes planes. This list is closed under the processes of dualisation and derivation.</p>
+
+<p>The Wyoming planes <tt>w1</tt> and <tt>w2</tt> are related to each other by derivation, but not to any other planes. They are produced by lifting a homology semibiplane obtained from <tt>a2</tt>, and a Baer semibiplane obtained from <tt>a2a</tt>, respectively. Our list is also closed under the process of producing and lifting semibiplanes. Another pair of planes related by the sharing of a homology semibiplane is: <tt>s2</tt> and the dual of <tt>h1a</tt>. Further pairs of planes related by the sharing of Baer semibiplanes are: <tt>s1</tt> and <tt>h1</tt> (the Desarguesian and ordinary Hughes planes); and <tt>s2a</tt> and <tt>h1b</tt>. For more information on semibiplanes and their use in constructing new planes from old, see e.g. my preprint <a href="../index.html#semibiplanes">Planes, semibiplanes and related complexes</a>. <a name="subplanes"></a></p>
+
+<h2>Subplanes</h2>
+
+<p>In April-May, 2010 I exhaustively enumerated all subplanes of the planes listed here. Notes:</p>
+
+<ul>
+	<li>All planes of order 25 in this list have subplanes of order 5. Roughly speaking, the lower the 5-rank, the more subplanes of order 5.</li>
+	<li>All, except for the Desarguesian plane <a href="#s1">s1</a>, have large numbers of subplanes of order 2. (It has been conjectured that all finite projective planes, other than Desarguesian planes of odd order, have subplanes of order 2.)</li>
+	<li>Subplanes of order 3 were found in the Hughes plane <a href="#h1">h1</a> and its relatives <a href="#h1a">h1a</a> and <a href="#h1b">h1b</a>, and in the first Wyoming plane <a href="#w1">w1</a> (and in their duals) but in no other planes. It is <a href="../subplane3.pdf">known</a> that Hughes planes of order <i>q</i><sup>2</sup> contain subplanes of order 3 whenever <i>q</i> is 5 mod 6.</li>
+	<li>None of the known planes of order 25 (as listed above) have any subplanes of order 4. In other words, all subplanes of order 2 are maximal.</li>
+	<li>The planes <a href="#b1">b1</a> and <a href="#b2">b2</a> have the same number of subplanes of each order; likewise the planes <a href="#a6b">a6b</a> and <a href="#b3a">b3a</a>. Among the known planes of order 25, these are the only instances of pairs of distinct planes (nonisomorphic and not dual) having the same number of subplanes of each order.</li>
+</ul>
+
+<p></p>
+
+<hr />
+<address><img src="../../images/email.gif" /> / revised April, 2010</address>
+</body>
+</html>

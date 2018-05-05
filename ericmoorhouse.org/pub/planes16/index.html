@@ -1,0 +1,298 @@
+<!DOCTYPE HTML SYSTEM "html.dtd">
+<HTML>
+<HEAD>
+<TITLE>Projective Planes of Order 16</TITLE>
+</HEAD> 
+<BODY BACKGROUND="../../images/pg33.gif">
+<H1>Projective Planes of Order 16</H1>
+
+<!--
+  <P><IMG SRC="../../images/construction.gif"> <I>Under Construction!!!</I>
+-->
+
+<P><HR>
+<P>Currently there are 13 known projective planes of order 16 up to isomorphism/duality. 
+  This list includes 4 self-dual planes plus 9 dual pairs; hence 22 distinct planes 
+  up to isomorphism. Since 1997 these planes have appeared on Gordon Royle's
+  <a href="http://units.maths.uwa.edu.au/%7Egordon/remote/planes16/">website</a>. 
+  I have independently verified all data appearing in the table, while retaining 
+  Royle's names for the planes, and including some additional information of interest 
+  to me concerning subplanes. The list of planes includes
+<UL>
+  <LI> &nbsp; the eight translation planes, as classified by U. Dempwolff and R. Reifart, 
+    &lsquo;The classification of translation planes of order 16, I.&rsquo;, <I>Geometriae 
+    Dedicata </I><B>15</B> (1983), 137-153; 
+  <LI> &nbsp; the Mathon plane; and 
+  <LI> &nbsp; all planes obtained from others by duality and derivation; also by the process 
+    of lifting semibiplanes.
+</UL>
+<p>Some limited attempts have been made to construct new planes of order 16 by 
+  more general net replacement and other techniques, without success. It has been 
+  conjectured that this is in fact the complete list of planes of order 16.</p>
+<P>I have made extensive use of Brendan McKay's celebrated software package
+<A HREF="http://cs.anu.edu.au:80/people/bdm/nauty/">nauty</A> for computing
+graph automorphisms; also the computational algebra package
+<A HREF="http://mirrors.ccs.neu.edu/GAP/NEU/">GAP</A> (Graphs, Algorithms and Programming)
+for some of the group computations (e.g. computing conjugacy classes of involutions in groups).
+
+<P>If you are aware of planes which I have overlooked in my list, I would appreciate 
+  an email message (<img src="../../images/email.gif">) from you. For basic definitions 
+  and results on the subject of projective planes, please refer to P. Dembowski, 
+  <I>Finite Geometries</I>, Springer-Verlag, Berlin, 1968; or D.R. Hughes and 
+  F.C. Piper, <I>Projective Planes</I>, Springer-Verlag, New York, 1973. 
+<P>Following the table is a <A HREF="#key">key to the table</A> and a diagram 
+  showing <a href="#connections">connections between the planes</a>. I have also 
+  tabulated a summary of what's known for <A HREF="../planes/">other small orders</A>.
+  
+<P>I am grateful to Stefan Kranich and Martin von Gagern (TU M&uuml;nchen) for 
+  correcting my fingerprint entries in the table below.
+<P><HR><P>
+<H2>Table of Known Projective Planes of Order 16</H2>
+
+<TABLE BORDER WIDTH="1978">
+  <TR VALIGN="TOP"> 
+    <TH width="29"> No. </TH>
+    <TH width="45"> Plane </TH>
+    <TH width="87"> Description </TH>
+    <TH width="36"> 2-rank </TH>
+    <TH width="95"> |Autgp| </TH>
+    <TH width="117"> Point orbit lengths </TH>
+    <TH width="117"> Line orbit lengths </TH>
+    <TH width="181">Derived Planes</TH>
+    <TH width="68">Subplanes</TH>
+    <TH ALIGN=LEFT width="1500"> Fingerprint </TH>
+  </TR>
+  <TR> 
+    <TD ALIGN=CENTER width="29"> 1* <A NAME="desarg"></A> </TD>
+    <TD ALIGN=CENTER width="45"> <A HREF="planes/desarg"><b>desarg</b></A> </TD>
+    <TD ALIGN=CENTER width="87"> Desarguesian </TD>
+    <TD ALIGN=CENTER width="36"> 82 </TD>
+    <TD ALIGN=CENTER width="95"> <A HREF="gens/desarg">17108582400</A> </TD>
+    <TD ALIGN=CENTER width="117"> 273</TD>
+    <TD ALIGN=CENTER width="117"> 273</TD>
+    <TD ALIGN=CENTER width="181"> <a href="#hall">hall</a> </TD>
+    <TD ALIGN=CENTER width="68"> 2<sup>25459200</sup> 4<sup>70720</sup> </TD>
+    <TD ALIGN=LEFT width="1500"> 240<SUP>74256</SUP>256<SUP>273</SUP> </TD>
+  </TR>
+  <TR> 
+    <TD ALIGN=CENTER width="29"> 2* <A NAME="semi2"></A> </TD>
+    <TD ALIGN=CENTER width="45"> <A HREF="planes/semi2"><b>semi2</b></A></TD>
+    <TD ALIGN=CENTER width="87"> Semifield Plane with kernel GF(2)</TD>
+    <TD ALIGN=CENTER width="36"> 98 </TD>
+    <TD ALIGN=CENTER width="95"> <A HREF="gens/semi2">73728</A> </TD>
+    <TD ALIGN=CENTER width="117"> 1,16,256 </TD>
+    <TD ALIGN=CENTER width="117"> 1,16,256 </TD>
+    <TD ALIGN=CENTER width="181"> <a href="#demp">demp</a> </TD>
+    <TD ALIGN=CENTER width="68"> 2<sup>2701824</sup> 4<sup>1344</sup> </TD>
+    <TD ALIGN=LEFT width="1500"> 16<SUP>2304</SUP>24<SUP>61440</SUP>48<SUP>2048</SUP>60<SUP>8192</SUP>240<SUP>272</SUP>256<SUP>273</SUP> 
+    </TD>
+  </TR>
+  <TR> 
+    <TD ALIGN=CENTER width="29"> 3* <A NAME="semi4"></A> </TD>
+    <TD ALIGN=CENTER width="45"> <a href="planes/semi4"><b>semi4</b></a></TD>
+    <TD ALIGN=CENTER width="87"> Semifield Plane with kernel GF(4)</TD>
+    <TD ALIGN=CENTER width="36"> 98 </TD>
+    <TD ALIGN=CENTER width="95"> <A HREF="gens/semi4">442368</A> </TD>
+    <TD ALIGN=CENTER width="117"> 1,16,256 </TD>
+    <TD ALIGN=CENTER width="117"> 1,16,256 </TD>
+    <TD ALIGN=CENTER width="181"> <a href="#john">john</a>, <a href="#bbs4">bbs4</a>, 
+      <a href="#dsfp">dsfp</a>, <a href="#jowk">jowk</a>, <a href="#lmrh">lmrh</a> 
+    </TD>
+    <TD ALIGN=CENTER width="68"> 2<sup>5110272</sup> 4<sup>10816</sup> </TD>
+    <TD ALIGN=LEFT width="1500"> 16<SUP>2304</SUP>24<SUP>61440</SUP>48<SUP>2048</SUP>60<SUP>8192</SUP>240<SUP>272</SUP>256<SUP>273</SUP> 
+    </TD>
+  </TR>
+  <TR> 
+    <TD ALIGN=CENTER width="29"> 4 <A NAME="hall"></A> </TD>
+    <TD ALIGN=CENTER width="45"> <A HREF="planes/hall"><b>hall</b></A>, <A HREF="planes/dhall">dhall</A> 
+    </TD>
+    <TD ALIGN=CENTER width="87"> Hall </TD>
+    <TD ALIGN=CENTER width="36"> 98 </TD>
+    <TD ALIGN=CENTER width="95"> <A HREF="gens/hall">921600</A> </TD>
+    <TD ALIGN=CENTER width="117"> 5,12,256 </TD>
+    <TD ALIGN=CENTER width="117"> 1,80,192 </TD>
+    <TD ALIGN=CENTER width="181"> <a href="#desarg">desarg</a>, <a href="#hall">hall</a> 
+      &nbsp;;&nbsp; <a href="#bbh1">bbh1</a>, <a href="#bbh2">bbh2</a> </TD>
+    <TD ALIGN=CENTER width="68"> 2<sup>5644800</sup> 4<sup>5440</sup> </TD>
+    <TD ALIGN=LEFT width="1500"> 240<SUP>74256</SUP>256<SUP>273</SUP> &nbsp;;&nbsp; 
+      240<SUP>74256</SUP>256<SUP>273</SUP> </TD>
+  </TR>
+  <tr> 
+    <td align=CENTER width="29"> 5<a name="jowk"></a> </td>
+    <td align=CENTER width="45"> <a href="planes/jowk"><b>jowk</b></a>, <a href="planes/djowk">djowk</a> 
+    </td>
+    <td align=CENTER width="87"> Johnson-Walker</td>
+    <td align=CENTER width="36"> 100 </td>
+    <td align=CENTER width="95"> <a href="gens/jowk">258048</a> </td>
+    <td align=CENTER width="117"> 3,14,256 </td>
+    <td align=CENTER width="117"> 1,48,224 </td>
+    <td align=CENTER width="181"> <a href="#semi4">semi4</a> &nbsp;;&nbsp; none 
+    </td>
+    <td align=CENTER width="68"> 2<sup>5727744</sup> 4<sup>8512</sup> </td>
+    <td align=LEFT width="1500"> 72<SUP>13312</SUP>96<SUP>12288</SUP>120<SUP>43008</SUP>144<SUP>5376</SUP>240<SUP>272</SUP>256<SUP>273</SUP> 
+      &nbsp;;&nbsp; 48<SUP>2688</SUP>96<SUP>46592</SUP>120<SUP>21504</SUP>144<SUP>448</SUP>240<SUP>3024</SUP>256<SUP>273</SUP> 
+    </td>
+  </tr>
+  <tr> 
+    <td align=CENTER width="29"> 6<a name="demp"></a> </td>
+    <td align=CENTER width="45"> <a href="planes/demp"><b>demp</b></a>, <a href="planes/ddemp">ddemp</a></td>
+    <td align=CENTER width="87"> Dempwolff</td>
+    <td align=CENTER width="36"> 102 </td>
+    <td align=CENTER width="95"> <a href="gens/demp">92160</a> </td>
+    <td align=CENTER width="117"> 1<sup>2</sup>,15,256 </td>
+    <td align=CENTER width="117"> 1,16<sup>2</sup>,240 </td>
+    <td align=CENTER width="181"> <a href="#semi2">semi2</a> &nbsp;;&nbsp; none 
+    </td>
+    <td align=CENTER width="68"> 2<sup>3010560</sup> 4<sup>1888</sup> </td>
+    <td align=LEFT width="1500"> 96<SUP>61440</SUP>120<SUP>1024</SUP>144<SUP>11520</SUP>240<SUP>272</SUP>256<SUP>273</SUP> 
+      &nbsp;;&nbsp; 48<SUP>2880</SUP>96<SUP>53760</SUP>120<SUP>15360</SUP>144<SUP>480</SUP>240<SUP>1776</SUP>256<SUP>273</SUP> 
+    </td>
+  </tr>
+  <TR> 
+    <TD ALIGN=CENTER width="29"> 7<A NAME="lmrh"></A> </TD>
+    <TD ALIGN=CENTER width="45"> <a href="planes/lmrh"><b>lmrh</b></a>, <A HREF="planes/dlmrh">dlmrh</A> 
+    </TD>
+    <TD ALIGN=CENTER width="87"> Lorimer-Rahilly</TD>
+    <TD ALIGN=CENTER width="36"> 106 </TD>
+    <TD ALIGN=CENTER width="95"> <A HREF="gens/lmrh">258048</A> </TD>
+    <TD ALIGN=CENTER width="117"> 3,14,256</TD>
+    <TD ALIGN=CENTER width="117"> 1,48,224 </TD>
+    <TD ALIGN=CENTER width="181"> <a href="#semi4">semi4</a> &nbsp;;&nbsp; none 
+    </TD>
+    <TD ALIGN=CENTER width="68"> 2<sup>3211776</sup> 4<sup>3136</sup> </TD>
+    <TD ALIGN=LEFT width="1500"> 240<SUP>74256</SUP>256<SUP>273</SUP> &nbsp;;&nbsp; 
+      240<SUP>74256</SUP>256<SUP>273</SUP> </TD>
+  </TR>
+  <TR> 
+    <TD ALIGN=CENTER width="29"> 8<A NAME="dsfp"></A> </TD>
+    <TD ALIGN=CENTER width="45"> <A HREF="planes/dsfp"><b>dsfp</b></A>, <A HREF="planes/ddsfp">ddsfp</A> 
+    </TD>
+    <TD ALIGN=CENTER width="87"> Derived Semifield Plane</TD>
+    <TD ALIGN=CENTER width="36"> 106 </TD>
+    <TD ALIGN=CENTER width="95"> <A HREF="gens/dsfp">55296</A> </TD>
+    <TD ALIGN=CENTER width="117"> 2,3,12,256 </TD>
+    <TD ALIGN=CENTER width="117"> 1,32,48,192 </TD>
+    <TD ALIGN=CENTER width="181"> <a href="#semi4">semi4</a>, <a href="#dsfp">dsfp</a> 
+      &nbsp;;&nbsp; none </TD>
+    <TD ALIGN=CENTER width="68"> 2<sup>3363840</sup> 4<sup>3040</sup> </TD>
+    <TD ALIGN=LEFT width="1500"> 120<SUP>6144</SUP>144<SUP>2560</SUP>192<SUP>61440</SUP>240<SUP>4112</SUP>256<SUP>273</SUP> 
+      &nbsp;;&nbsp; 48<SUP>960</SUP>96<SUP>5120</SUP>120<SUP>30720</SUP>144<SUP>160</SUP>240<SUP>37296</SUP>256<SUP>273</SUP> 
+    </TD>
+  </TR>
+  <tr> 
+    <td align=CENTER width="29"> 9<a name="math"></a> </td>
+    <td align=CENTER width="45"><a href="planes/math">math</a>, <a href="planes/dmath">dmath</a></td>
+    <td align=CENTER width="87"> Mathon </td>
+    <td align=CENTER width="36"> 109 </td>
+    <td align=CENTER width="95"> <a href="gens/math">12288</a> </td>
+    <td align=CENTER width="117"> 1,16,256 </td>
+    <td align=CENTER width="117"> 1,16,256 </td>
+    <td align=CENTER width="181"> none &nbsp;;&nbsp; none </td>
+    <td align=CENTER width="68"> 2<sup>3442176</sup> 4<sup>2304</sup> </td>
+    <td align=LEFT width="1500"> 24<SUP>6144</SUP>32<SUP>6144</SUP>40<SUP>24576</SUP>48<SUP>8192</SUP>56<SUP>12288</SUP>72<SUP>9216</SUP>96<SUP>3072</SUP>120<SUP>2048</SUP>144<SUP>2304</SUP>240<SUP>272</SUP>256<SUP>273</SUP> 
+      &nbsp;;&nbsp; 24<SUP>6144</SUP>32<SUP>6144</SUP>40<SUP>24576</SUP>48<SUP>8192</SUP>56<SUP>12288</SUP>72<SUP>9216</SUP>96<SUP>3072</SUP>120<SUP>2048</SUP>144<SUP>2304</SUP>240<SUP>272</SUP>256<SUP>273</SUP> 
+    </td>
+  </tr>
+  <tr> 
+    <td align=CENTER width="29"> 10* <a name="bbh1"></a> </td>
+    <td align=CENTER width="45"> <a href="planes/bbh1">bbh1</a> </td>
+    <td align=CENTER width="87">&nbsp;</td>
+    <td align=CENTER width="36"> 110 </td>
+    <td align=CENTER width="95"> <a href="gens/bbh1">9216</a> </td>
+    <td align=CENTER width="117"> 1,4,12,64,192 </td>
+    <td align=CENTER width="117"> 1,4,12,64,192 </td>
+    <td align=CENTER width="181"> <a href="#hall">dhall</a> </td>
+    <td align=CENTER width="68"> 2<sup>3091968</sup> 4<sup>832</sup> </td>
+    <td align=LEFT width="1500"> 0<SUP>1152</SUP>12<SUP>23040</SUP>24<SUP>9216</SUP>32<SUP>23040</SUP>40<SUP>2304</SUP>48<SUP>768</SUP>64<SUP>2304</SUP>72<SUP>6144</SUP>80<SUP>576</SUP>96<SUP>3072</SUP>120<SUP>2048</SUP>144<SUP>128</SUP>240<SUP>464</SUP>256<SUP>273</SUP> 
+    </td>
+  </tr>
+  <TR> 
+    <TD ALIGN=CENTER width="29"> 11<A NAME="john"></A> </TD>
+    <TD ALIGN=CENTER width="45"><a href="planes/john">john</a>, <a href="planes/djohn">djohn</a></TD>
+    <TD ALIGN=CENTER width="87"> Johnson </TD>
+    <TD ALIGN=CENTER width="36"> 114 </TD>
+    <TD ALIGN=CENTER width="95"> <A HREF="gens/john">2304</A> </TD>
+    <TD ALIGN=CENTER width="117"> 2,3,12,16,48,96<sup>2</sup> </TD>
+    <TD ALIGN=CENTER width="117"> 1,8,12<sup>2</sup>,24<sup>2</sup>,192 </TD>
+    <TD ALIGN=CENTER width="181"> <A HREF="#semi4">semi4</A> &nbsp;;&nbsp; none </TD>
+    <TD ALIGN=CENTER width="68"> 2<sup>2976768</sup> 4<sup>784</sup> </TD>
+    <TD ALIGN=LEFT width="1500"> 0<SUP>768</SUP>4<SUP>1152</SUP>8<SUP>4992</SUP>16<SUP>3708</SUP>24<SUP>3904</SUP>32<SUP>9024</SUP>36<SUP>1920</SUP>40<SUP>4608</SUP>44<SUP>9216</SUP>48<SUP>5472</SUP>60<SUP>1536</SUP>64<SUP>9504</SUP>68<SUP>2304</SUP>72<SUP>768</SUP>84<SUP>768</SUP>88<SUP>1152</SUP>96<SUP>864</SUP>104<SUP>192</SUP>112<SUP>336</SUP>120<SUP>1920</SUP>128<SUP>2304</SUP>132<SUP>768</SUP>136<SUP>2304</SUP>144<SUP>2412</SUP>160<SUP>960</SUP>168<SUP>960</SUP>176<SUP>288</SUP>208<SUP>144</SUP>240<SUP>8</SUP>256<SUP>273</SUP> 
+      &nbsp;;&nbsp; 8<SUP>4608</SUP>12<SUP>4608</SUP>16<SUP>2304</SUP>24<SUP>1152</SUP>32<SUP>768</SUP>36<SUP>1152</SUP>40<SUP>2304</SUP>44<SUP>16128</SUP>48<SUP>5088</SUP>52<SUP>11520</SUP>56<SUP>7488</SUP>60<SUP>3456</SUP>64<SUP>1728</SUP>72<SUP>1152</SUP>76<SUP>2304</SUP>96<SUP>800</SUP>112<SUP>576</SUP>120<SUP>2496</SUP>124<SUP>768</SUP>136<SUP>384</SUP>144<SUP>64</SUP>152<SUP>192</SUP>156<SUP>768</SUP>240<SUP>2448</SUP>256<SUP>273</SUP> 
+    </TD>
+  </TR>
+  <TR> 
+    <TD ALIGN=CENTER width="29"> 12<A NAME="bbs4"></A> </TD>
+    <TD ALIGN=CENTER width="45"><a href="planes/bbs4">bbs4</a>, <a href="planes/dbbs4">dbbs4</a></TD>
+    <TD ALIGN=CENTER width="87">&nbsp;</TD>
+    <TD ALIGN=CENTER width="36"> 114 </TD>
+    <TD ALIGN=CENTER width="95"> <A HREF="gens/bbs4">3456</A> </TD>
+    <TD ALIGN=CENTER width="117"> 2,3,12,16,96,144 </TD>
+    <TD ALIGN=CENTER width="117"> 1,8,12,24,36,192 </TD>
+    <TD ALIGN=CENTER width="181"> <A HREF="#semi4">semi4</A> &nbsp;;&nbsp; none </TD>
+    <TD ALIGN=CENTER width="68"> 2<sup>2868480</sup> 4<sup>568</sup> </TD>
+    <TD ALIGN=LEFT width="1500"> 8<SUP>3456</SUP>12<SUP>4992</SUP>20<SUP>6912</SUP>24<SUP>12672</SUP>32<SUP>7920</SUP>36<SUP>3456</SUP>40<SUP>288</SUP>44<SUP>3456</SUP>48<SUP>3312</SUP>56<SUP>9792</SUP>64<SUP>3888</SUP>72<SUP>768</SUP>80<SUP>72</SUP>84<SUP>1152</SUP>96<SUP>2976</SUP>104<SUP>4032</SUP>112<SUP>900</SUP>120<SUP>1152</SUP>144<SUP>1596</SUP>168<SUP>96</SUP>192<SUP>1056</SUP>216<SUP>64</SUP>240<SUP>248</SUP>256<SUP>273</SUP> 
+      &nbsp;;&nbsp; 8<SUP>16128</SUP>12<SUP>9600</SUP>24<SUP>768</SUP>36<SUP>2304</SUP>44<SUP>13824</SUP>48<SUP>11904</SUP>52<SUP>6912</SUP>56<SUP>1728</SUP>64<SUP>1728</SUP>68<SUP>1152</SUP>96<SUP>1376</SUP>112<SUP>288</SUP>120<SUP>2880</SUP>136<SUP>576</SUP>144<SUP>88</SUP>156<SUP>1536</SUP>240<SUP>1464</SUP>256<SUP>273</SUP> 
+    </TD>
+  </TR>
+  <TR> 
+    <TD ALIGN=CENTER width="29"> 13<A NAME="bbh2"></A> </TD>
+    <TD ALIGN=CENTER width="45"><a href="planes/bbh2">bbh2</a>, <a href="planes/dbbh2">dbbh2</a></TD>
+    <TD ALIGN=CENTER width="87">&nbsp;</TD>
+    <TD ALIGN=CENTER width="36"> 114 </TD>
+    <TD ALIGN=CENTER width="95"> <A HREF="gens/bbh2">3840</A> </TD>
+    <TD ALIGN=CENTER width="117"> 5,12,16,80,160 </TD>
+    <TD ALIGN=CENTER width="117"> 1,20<sup>2</sup>,40,192 </TD>
+    <TD ALIGN=CENTER width="181"> <A HREF="#hall">dhall</A> &nbsp;;&nbsp; <A HREF="#bbh2">dbbh2</A> </TD>
+    <TD ALIGN=CENTER width="68"> 2<sup>2866560</sup> 4<sup>800</sup> </TD>
+    <TD ALIGN=LEFT width="1500"> 0<SUP>4800</SUP>8<SUP>640</SUP>16<SUP>960</SUP>24<SUP>640</SUP>36<SUP>1280</SUP>40<SUP>1920</SUP>48<SUP>23040</SUP>52<SUP>15360</SUP>60<SUP>5504</SUP>64<SUP>1120</SUP>68<SUP>3840</SUP>72<SUP>2560</SUP>80<SUP>400</SUP>88<SUP>640</SUP>96<SUP>7360</SUP>100<SUP>1920</SUP>108<SUP>1280</SUP>144<SUP>480</SUP>240<SUP>512</SUP>256<SUP>273</SUP> 
+      &nbsp;;&nbsp; 16<SUP>1920</SUP>20<SUP>9216</SUP>24<SUP>3840</SUP>36<SUP>9600</SUP>40<SUP>3840</SUP>44<SUP>19200</SUP>48<SUP>4000</SUP>60<SUP>15744</SUP>96<SUP>1280</SUP>112<SUP>640</SUP>120<SUP>2944</SUP>144<SUP>80</SUP>240<SUP>1952</SUP>256<SUP>273</SUP> 
+    </TD>
+  </TR>
+</TABLE>
+<P>
+
+<A NAME="key"></A><H2>Key to the table</H2>
+
+<P>Only one line is displayed for both a plane and its dual, an asterisk (*) in
+the first column indicating that the plane is self-dual. Each line includes the
+following information and isomorphism invariants for each plane.
+
+<UL>
+  <LI><B>Plane</B>&nbsp; &nbsp; provides a text file containing the projective 
+    plane. The text file has 273 rows, each row specifying a line of the plane 
+    as a subset of the points 0,1,2,...,272. For non-self-dual planes, a second 
+    file is also given, containing the dual of the first. The names appearing 
+    in <b>bold face</b> are the eight translation planes.</li>
+  <LI><B>2-rank</B>&nbsp; &nbsp; The rank of the (0,1)-incidence matrix of the 
+    projective plane, over a field of characteristic 2.</li>
+  <LI><B>|Autgp|</B>&nbsp; &nbsp; The order of the full automorphism group (collineation 
+    group) of the projective plane. This table entry is linked to a file providing 
+    generators of the automorphism group, listed as permutations of the integer 
+    list 0,1,2,...,545 where 0,1,2,...,272 are labels for the points and 273,...,545 
+    are labels for the lines. Generators for the automorphism group of the dual 
+    plane are not provided since these are trivially obtained from the generators 
+    given for the original plane.</li>
+  <LI><B>Point Orbits</B>&nbsp; &nbsp; The lengths of the full automorphism group 
+    on the points. (These are the lengths of the line orbits for the dual plane.)</li>
+  <LI><B>Line Orbits</B>&nbsp; &nbsp; The lengths of the full automorphism group 
+    on the lines. (These are the lengths of the point orbits for the dual plane.)</li>
+  <li><b>Subplanes</b>&nbsp; &nbsp; The orders of the proper subplanes, and the 
+    total number of each.</li>
+  <LI><B>Fingerprint</B>&nbsp; &nbsp; The fingerprint of each plane (an isomorphism 
+    invariant) is provided. For dual pairs of planes, the fingerprint of the first 
+    plane in the pair is given; then a colon, followed by the fingerprint of the 
+    second plane in the pair. Refer to the accompanying <A HREF="../planes25/fing25.html#def">definition 
+    of the fingerprint</A>.</li>
+</UL>
+
+<A NAME="connections"></A><h2>Connections between the planes</h2>
+<p>The image below illustrates connections between the planes we have listed. 
+  Each circle represents a dual pair of planes (or a self-dual plane). Yellow 
+  bonds between planes represent the derivability of one plane from another (a 
+  symmetric relation). Blue bonds indicate pairs of planes which share a
+  <A HREF="../index.html#semibiplanes">semibiplane</A> (also a symmetric relation).</p>
+<p><img src="planes16.gif" width="606" height="217"></p>
+<P><HR>
+<ADDRESS><img src="../../images/email.gif"> / revised May, 2010</ADDRESS>
+</BODY>
+</HTML>

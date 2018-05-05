@@ -1,0 +1,163 @@
+<!DOCTYPE HTML SYSTEM "html.dtd">
+<html>
+<head>
+	<title>Projective Planes of Order 27</title>
+</head>
+<body background="../../images/pg33.gif">
+<h1>Projective Planes of Order 27</h1>
+<!--
+  <P><IMG SRC="../../images/construction.gif"> <I>Under Construction!!!</I>
+-->
+
+<p></p>
+
+<hr />
+<p>This site is intended to provide a current list of known projective planes of order 27. I have listed the 13 planes of which I am aware (3 self-dual planes plus 5 dual pairs). These include</p>
+
+<ul>
+	<li>the seven translation planes, as classified by U. Dempwolff, &lsquo;Translation planes of order 27&rsquo;, <i>Designs, Codes and Cryptography</i> <b>27</b> (1994), 105-121 (denoted here by I,...,VII following Dempwolff);</li>
+	<li>the duals of translation planes III-VII; and</li>
+	<li>the Figueroa plane; see e.g. A. Beutelspacher, &lsquo;Projective planes&rsquo;, pp.107-136 in <i>Handbook of Incidence Geometry</i>, ed. F. Buekenhout, North-Holland, 1995.</li>
+</ul>
+
+<p>I have made extensive use of Brendan McKay&#39;s celebrated software package <a href="http://cs.anu.edu.au:80/people/bdm/nauty/">nauty</a> for computing graph automorphisms; also the computational algebra package <a href="http://mirrors.ccs.neu.edu/GAP/NEU/">GAP</a> (Graphs, Algorithms and Programming) for some of the group computations (e.g. computing conjugacy classes of involutions in groups).</p>
+
+<p>If you are aware of planes which I have overlooked in my list, I would appreciate an email message (<img src="../../images/email.gif" />) from you. For basic definitions and results on the subject of projective planes, please refer to P. Dembowski, <i>Finite Geometries</i>, Springer-Verlag, Berlin, 1968; or D.R. Hughes and F.C. Piper, <i>Projective Planes</i>, Springer-Verlag, New York, 1973.</p>
+
+<p>I have verified (on October 21, 2008) that all planes in this list, except for the Desarguesian plane <a href="#desarg">desarg</a>, have subplanes of order 2. (It has been conjectured that all finite projective planes, other than Desarguesian planes of odd order, have subplanes of order 2.)</p>
+
+<p>Following the table is a <a href="#key">key to the table</a>. I have also tabulated a summary of what&#39;s known for <a href="../planes/">other small orders</a>.</p>
+
+<p></p>
+
+<hr />
+<p></p>
+
+<h2>Table of Known Projective Planes of Order 27</h2>
+
+<table border="" width="680">
+	<tbody>
+		<tr valign="TOP">
+			<th width="38">No.</th>
+			<th width="51">Plane</th>
+			<th width="84">Description</th>
+			<th width="35">3-rank</th>
+			<th width="100">|Autgp|</th>
+			<th width="76">Point orbit lengths</th>
+			<th width="76">Line orbit lengths</th>
+			<th width="72">Subplanes</th>
+			<th align="LEFT" width="1013">Fingerprint</th>
+		</tr>
+		<tr>
+			<td align="CENTER" width="38">I* <a name="desarg"></a></td>
+			<td align="CENTER" width="51"><a href="planes/desarg">desarg</a></td>
+			<td align="CENTER" width="84">Desarguesian</td>
+			<td align="CENTER" width="35">217</td>
+			<td align="CENTER" width="100"><a href="gens/desarg">846083360304</a></td>
+			<td align="CENTER" width="76">757</td>
+			<td align="CENTER" width="76">757</td>
+			<td align="CENTER" width="72">3<sup>50218623</sup></td>
+			<td align="LEFT" width="1013">0<sup>572292</sup>729<sup>757</sup></td>
+		</tr>
+		<tr>
+			<td align="CENTER" width="38">II* <a name="twisted"></a></td>
+			<td align="CENTER" width="51"><a href="planes/twisted">twisted</a></td>
+			<td align="CENTER" width="84">Generalized twisted field plane</td>
+			<td align="CENTER" width="35">262</td>
+			<td align="CENTER" width="100"><a href="gens/twisted">3070548</a></td>
+			<td align="CENTER" width="76">1,27,729</td>
+			<td align="CENTER" width="76">1,27,729</td>
+			<td align="CENTER" width="72">2<sup>65505024</sup> 3<sup>1601613</sup></td>
+			<td align="LEFT" width="1013">0<sup>572292</sup>729<sup>757</sup></td>
+		</tr>
+		<tr>
+			<td align="CENTER" width="38">III <a name="hering"></a></td>
+			<td align="CENTER" width="51"><a href="planes/hering">hering</a>, <a href="planes/dhering">heringD</a></td>
+			<td align="CENTER" width="84">Hering</td>
+			<td align="CENTER" width="35">274</td>
+			<td align="CENTER" width="100"><a href="gens/hering">1592136</a></td>
+			<td align="CENTER" width="76">28,729</td>
+			<td align="CENTER" width="76">1,756</td>
+			<td align="CENTER" width="72">2<sup>59363928</sup> 3<sup>862407</sup></td>
+			<td align="LEFT" width="1013">0<sup>572292</sup>729<sup>757</sup>; 0<sup>572292</sup>729<sup>757</sup></td>
+		</tr>
+		<tr>
+			<td align="CENTER" width="38">IV <a name="flag4"></a></td>
+			<td align="CENTER" width="51"><a href="planes/flag4">flag4</a>, <a href="planes/dflag4">flag4D</a></td>
+			<td align="CENTER" width="84">Flag-transitive</td>
+			<td align="CENTER" width="35">271</td>
+			<td align="CENTER" width="100"><a href="gens/flag4">122472</a></td>
+			<td align="CENTER" width="76">28,729</td>
+			<td align="CENTER" width="76">1,756</td>
+			<td align="CENTER" width="72">2<sup>68689296</sup> 3<sup>862407</sup></td>
+			<td align="LEFT" width="1013">0<sup>572292</sup>729<sup>757</sup>; 0<sup>572292</sup>729<sup>757</sup></td>
+		</tr>
+		<tr>
+			<td align="CENTER" width="38">V <a name="sherk"></a></td>
+			<td align="CENTER" width="51"><a href="planes/sherk">sherk</a>, <a href="planes/dsherk">sherkD</a></td>
+			<td align="CENTER" width="84">Sherk</td>
+			<td align="CENTER" width="35">273</td>
+			<td align="CENTER" width="100"><a href="gens/sherk">118098</a></td>
+			<td align="CENTER" width="76">1,27,729</td>
+			<td align="CENTER" width="76">1,27,729</td>
+			<td align="CENTER" width="72">2<sup>66174246</sup> 3<sup>862407</sup></td>
+			<td align="LEFT" width="1013">0<sup>60210</sup>16<sup>354294</sup>24<sup>39366</sup>56<sup>118098</sup>108<sup>324</sup>729<sup>757</sup>; 0<sup>326646</sup>4<sup>236196</sup>216<sup>9234</sup>432<sup>162</sup>648<sup>54</sup>729<sup>757</sup></td>
+		</tr>
+		<tr>
+			<td align="CENTER" width="38">VI <a name="flag6"></a></td>
+			<td align="CENTER" width="51"><a href="planes/flag6">flag6</a>, <a href="planes/dflag6">flag6D</a></td>
+			<td align="CENTER" width="84">Flag-transitive</td>
+			<td align="CENTER" width="35">265</td>
+			<td align="CENTER" width="100"><a href="gens/flag6">122472</a></td>
+			<td align="CENTER" width="76">28,729</td>
+			<td align="CENTER" width="76">1,756</td>
+			<td align="CENTER" width="72">2<sup>69587424</sup> 3<sup>862407</sup></td>
+			<td align="LEFT" width="1013">0<sup>41244</sup>8<sup>122472</sup>24<sup>122472</sup>32<sup>244944</sup>48<sup>40824</sup>108<sup>168</sup>216<sup>168</sup>729<sup>757</sup>; 0<sup>318276</sup>4<sup>122472</sup>8<sup>122472</sup>216<sup>9072</sup>729<sup>757</sup></td>
+		</tr>
+		<tr>
+			<td align="CENTER" width="38">VII <a name="andre"></a></td>
+			<td align="CENTER" width="51"><a href="planes/andre">andre</a>, <a href="planes/dandre">andreD</a></td>
+			<td align="CENTER" width="84">Andre</td>
+			<td align="CENTER" width="35">268</td>
+			<td align="CENTER" width="100"><a href="gens/andre">1478412</a></td>
+			<td align="CENTER" width="76">2,26,729</td>
+			<td align="CENTER" width="76">1,54,702</td>
+			<td align="CENTER" width="72">2<sup>51744420</sup> 3<sup>938223</sup></td>
+			<td align="LEFT" width="1013">0<sup>571876</sup>324<sup>260</sup>432<sup>156</sup>729<sup>757</sup>; 0<sup>269028</sup>12<sup>189540</sup>16<sup>113724</sup>729<sup>757</sup></td>
+		</tr>
+		<tr>
+			<td align="CENTER" width="38">VIII* <a name="fig"></a></td>
+			<td align="CENTER" width="51"><a href="planes/fig">fig</a></td>
+			<td align="CENTER" width="84">Figueroa</td>
+			<td align="CENTER" width="35">328</td>
+			<td align="CENTER" width="100"><a href="gens/fig">16848</a></td>
+			<td align="CENTER" width="76">13,312,432</td>
+			<td align="CENTER" width="76">13,312,432</td>
+			<td align="CENTER" width="72">2<sup>58608576</sup> 3<sup>123903</sup></td>
+			<td align="LEFT" width="1013">0<sup>18876</sup>4<sup>101088</sup>16<sup>67392</sup>24<sup>67392</sup>28<sup>33696</sup>32<sup>16848</sup>36<sup>11232</sup>40<sup>89856</sup>44<sup>33696</sup>48<sup>56160</sup>56<sup>33696</sup>60<sup>11232</sup>72<sup>1872</sup>80<sup>16848</sup>144<sup>1872</sup>168<sup>5616</sup>208<sup>864</sup>216<sup>3432</sup>432<sup>624</sup>729<sup>757</sup></td>
+		</tr>
+	</tbody>
+</table>
+
+<p><a name="key"></a></p>
+
+<h2>Key to the table</h2>
+
+<p>Only one line is displayed for both a plane and its dual, an asterisk (*) in the first column indicating that the plane is self-dual. Each line includes the following information and isomorphism invariants for each plane.</p>
+
+<ul>
+	<li><b>Plane</b>&nbsp; &nbsp; provides a text file containing the projective plane. The text file has 757 rows, each row specifying a line of the plane as a subset of the points 0,1,2,...,756. For non-self-dual planes, a second file is also given, containing the dual of the first.</li>
+	<li><b>3-rank</b>&nbsp; &nbsp; The rank of the (0,1)-incidence matrix of the projective plane, over a field of characteristic 3.</li>
+	<li><b>|Autgp|</b>&nbsp; &nbsp; The order of the full automorphism group (collineation group) of the projective plane. This table entry is linked to a file providing generators of the automorphism group, listed as permutations of the integer list 0,1,2,...,1513 where 0,1,2,...,756 are labels for the points and 757,...,1513 are labels for the lines. Generators for the automorphism group of the dual plane are not provided since these are trivially obtained from the generators given for the original plane.</li>
+	<li><b>Point Orbits</b>&nbsp; &nbsp; The lengths of the full automorphism group on the points. (These are the lengths of the line orbits for the dual plane.)</li>
+	<li><b>Line Orbits</b>&nbsp; &nbsp; The lengths of the full automorphism group on the lines. (These are the lengths of the point orbits for the dual plane.)</li>
+	<li><b>Subplanes</b>&nbsp; &nbsp; The orders of the proper subplanes, and the total number of each.</li>
+	<li><b>Fingerprint</b>&nbsp; &nbsp; The fingerprint of each plane (an isomorphism invariant) is provided. For dual pairs of planes, the fingerprint of the first plane in the pair is given; then a colon, followed by the fingerprint of the second plane in the pair. Refer to the accompanying <a href="../planes25/fing25.html#def">definition of the fingerprint</a>.</li>
+</ul>
+
+<p></p>
+
+<hr />
+<address><img src="../../images/email.gif" /> / revised September, 2000</address>
+</body>
+</html>

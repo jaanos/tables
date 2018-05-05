@@ -1,0 +1,2509 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2//EN">
+<HTML>
+<HEAD>
+	<META HTTP-EQUIV="CONTENT-TYPE" CONTENT="text/html; charset=utf-8">
+	<TITLE>Fingerprints of Projective Planes of Order 25</TITLE>
+	<META NAME="GENERATOR" CONTENT="OpenOffice.org 1.0.2  (Linux)">
+	<META NAME="CREATED" CONTENT="20050624;16164300">
+	<META NAME="CHANGED" CONTENT="20050624;16201900">
+</HEAD>
+<BODY LANG="en-US" BGCOLOR="#e0eecc">
+<H1>Fingerprints of Projective Planes of Order 25</H1>
+
+<!--
+  <P><IMG SRC="../../images/construction.gif" NAME="Graphic1" ALIGN=BOTTOM WIDTH=48 HEIGHT=48 BORDER=0><I>Under
+  Construction!!!</I>
+-->
+
+<HR>
+<P><A NAME="def"></A>Here are the fingerprints of the 193 <A HREF="index.html">projective
+planes of order 25</A> which are known to me. This isomorphism
+invariant succeeds in distinguishing all non-isomorphic pairs among
+the <I>known</I> planes of order 25, except for the Foulser planes <A HREF="#b1">b1</A>
+and <A HREF="#b2">b2</A> (and their duals <A HREF="#b1">b1Dual</A>
+and <A HREF="#b2">b2Dual</A>). These pairs of planes are, however,
+distinguished by other invariants, such as the 5-rank. 
+</P>
+<H2>Definition of Fingerprint</H2>
+<P>Given a projective plane of order <I>n</I> (which has <I>N=n<SUP>2</SUP>+n+1</I>
+points and <I>N</I> lines), consider the <I>N</I>-by-<I>N</I> matrix
+<I>A</I> with entries <I>a<SUB>P,L</SUB></I> defined as follows. For
+each point <I>P</I>, choose an arbitrary but fixed ordering of the
+lines through <I>P</I> as 1st, 2nd, 3rd, ..., (<I>n</I>+1)st. For
+each line <I>L</I>, choose an arbitrary but fixed ordering of the
+points on <I>L</I> as 1st, 2nd, 3rd, ..., (<I>n</I>+1)st. Now for
+each non-incident point-line pair (<I>P</I>,<I>L</I>), the incidence
+relation naturally provides a bijection between the <I>n</I>+1 lines
+through <I>P</I> and the <I>n</I>+1 points on <I>L</I>. Relative to
+the chosen orderings, this gives a permutation of degree <I>n</I>+1.
+Define <I>a<SUB>P,L</SUB></I> to be the sign (1 or &minus;1) of this
+permutation. If <I>P</I> lies on <I>L</I>, define <I>a<SUB>P,L</SUB></I>=0.
+</P>
+<P>Note that different choices of orderings for the points and lines
+have the effect of possibly permuting the rows and columns of <I>A</I>,
+and possibly multiplying certain rows and columns by &minus;1. Therefore
+the multiset consisting of the absolute values of the entries of the
+matrix <I>B=AA<SUP>T</SUP></I> is an isomorphism invariant of the
+projective plane. This multiset (i.e. set with multiplicities
+attached to its elements), due to J.H. Conway, is known as the
+<B>(complete) fingerprint</B> of the plane. 
+</P>
+<P>For translation planes one obtains a computationally cheaper
+isomorphism invariant, called the <B>(restricted) fingerprint</B>, by
+replacing <I>A</I> by the (<I>N</I>+1)-by-(<I>N</I>+1) submatrix
+thereof having rows indexed by the points on the translation line,
+and columns indexed by lines through the origin. In the case of
+translation planes of order <I>q<SUP>2</SUP></I> with kernel
+containing <I>GF(q)</I>, this restricted fingerprint is more readily
+computed directly from the corresponding ovoid of the Klein quadric,
+as shown by G.E. Moorhouse, <A HREF="../index.html#twogr">Two-graphs
+and skew two-graphs in finite geometries</A>, Linear Algebra and its
+Applications <B>226-228</B> (1995), 529-551. 
+</P>
+<P>Since I am comparing more planes than just translation planes, I
+have listed only the <I>complete</I> fingerprints. The <I>restricted</I>
+fingerprints of the translation planes of order 25 have been
+published by C. Charnes, <U>Quadratic matrices and the translation
+planes of order 5<SUP>2</SUP></U>, in <I>Coding Theory, Design
+Theory, Group Theory (Proceedings of the Marshall Hall Conference)</I>,
+ed. D. Jungnickel and S. A. Vanstone, J. Wiley &amp; Sons, 1993,
+pp.155-161. Note however that Charnes there uses a slightly different
+nomenclature for the 21 translation planes than that which appears in
+the final corrected and published version of the paper of Czerwinski
+and Oakden. 
+</P>
+<HR>
+<H2>Table of Fingerprints of the Known Planes of Order 25</H2>
+<TABLE WIDTH=680 BORDER=1 CELLPADDING=2 CELLSPACING=2>
+  <TR VALIGN=TOP> 
+    <TH> 
+      <P>No. </P>
+    </TH>
+    <TH> 
+      <P>Plane </P>
+    </TH>
+    <TH> 
+      <P>Description </P>
+    </TH>
+    <TH> 
+      <P ALIGN=LEFT>Fingerprint </P>
+    </TH>
+  </TR>
+  <TR> 
+    <TD> 
+      <P ALIGN=CENTER><A NAME="s1"></A>1* </P>
+    </TD>
+    <TD> 
+      <P ALIGN=CENTER><A HREF="index.html#s1">s1</A> </P>
+    </TD>
+    <TD> 
+      <P ALIGN=CENTER>Desarguesian </P>
+    </TD>
+    <TD>0<sup>423150</sup>625<sup>651</sup> </TD>
+  </TR>
+  <TR> 
+    <TD> 
+      <P ALIGN=CENTER><A NAME="b4"></A>2 </P>
+    </TD>
+    <TD> 
+      <P ALIGN=CENTER><A HREF="index.html#b4">b4</A> </P>
+    </TD>
+    <TD> 
+      <P ALIGN=CENTER>Hering </P>
+    </TD>
+    <TD> 
+      <P ALIGN=LEFT>564<sup>12500</sup>572<sup>150000</sup>580<sup>112500</sup>584<sup>112500</sup>600<sup>35650</sup>625<sup>651</sup> 
+      </P>
+    </TD>
+  </TR>
+  <TR> 
+    <TD><A NAME="b4Dual"></A></TD>
+    <TD> 
+      <P ALIGN=CENTER><A HREF="index.html#b4">b4Dual</A> </P>
+    </TD>
+    <TD> 
+      <P ALIGN=CENTER>Dual Hering </P>
+    </TD>
+    <TD> 
+      <P ALIGN=LEFT>100<sup>420</sup>168<sup>25000</sup>200<sup>180</sup>300<sup>20</sup>360<sup>7500</sup>600<sup>390030</sup>625<sup>651</sup> 
+      </P>
+    </TD>
+  </TR>
+  <TR> 
+    <TD> 
+      <P ALIGN=CENTER><A NAME="s2"></A>3 </P>
+    </TD>
+    <TD> 
+      <P ALIGN=CENTER><A HREF="index.html#s2">s2</A> </P>
+    </TD>
+    <TD> 
+      <P ALIGN=CENTER>Hall </P>
+    </TD>
+    <TD> 
+      <P ALIGN=LEFT>572<sup>150000</sup>576<sup>12500</sup>580<sup>75000</sup>584<sup>150000</sup>592<sup>11250</sup>600<sup>24400</sup>625<sup>651</sup> 
+      </P>
+    </TD>
+  </TR>
+  <TR> 
+    <TD><A NAME="s2Dual"></A></TD>
+    <TD> 
+      <P ALIGN=CENTER><A HREF="index.html#s2">s2Dual</A></P>
+    </TD>
+    <TD> 
+      <P ALIGN=CENTER>Dual Hall </P>
+    </TD>
+    <TD> 
+      <P ALIGN=LEFT>0<sup>20</sup>24<sup>25000</sup>100<sup>360</sup>200<sup>240</sup>400<sup>18</sup>504<sup>7500</sup>600<sup>390012</sup>625<sup>651</sup> 
+      </P>
+    </TD>
+  </TR>
+  <TR> 
+    <TD> 
+      <P ALIGN=CENTER><A NAME="a3"></A>4 </P>
+    </TD>
+    <TD> 
+      <P ALIGN=CENTER><A HREF="index.html#a3">a3</A> </P>
+    </TD>
+    <TD> 
+      <P ALIGN=CENTER>Walker </P>
+    </TD>
+    <TD> 
+      <P ALIGN=LEFT>564<sup>125000</sup>568<sup>31250</sup>576<sup>31250</sup>580<sup>125000</sup>584<sup>31250</sup>592<sup>62500</sup>600<sup>16900</sup>625<sup>651</sup> 
+      </P>
+    </TD>
+  </TR>
+  <TR> 
+    <TD><A NAME="a3Dual"></A></TD>
+    <TD> 
+      <P ALIGN=CENTER><A HREF="index.html#a3">a3Dual</A></P>
+    </TD>
+    <TD> 
+      <P ALIGN=CENTER>Dual Walker </P>
+    </TD>
+    <TD> 
+      <P ALIGN=LEFT>0<sup>50</sup>24<sup>31250</sup>100<sup>200</sup>200<sup>100</sup>300<sup>200</sup>400<sup>100</sup>600<sup>391250</sup>625<sup>651</sup> 
+      </P>
+    </TD>
+  </TR>
+  <TR> 
+    <TD> 
+      <P ALIGN=CENTER><A NAME="a2"></A>5 </P>
+    </TD>
+    <TD> 
+      <P ALIGN=CENTER><A HREF="index.html#a2">a2</A> </P>
+    </TD>
+    <TD> 
+      <P ALIGN=CENTER>Dickson nearfield </P>
+    </TD>
+    <TD> 
+      <P ALIGN=LEFT>568<sup>15000</sup>576<sup>120000</sup>580<sup>270000</sup>600<sup>18150</sup>625<sup>651</sup> 
+      </P>
+    </TD>
+  </TR>
+  <TR> 
+    <TD><A NAME="a2Dual"></A></TD>
+    <TD> 
+      <P ALIGN=CENTER><A HREF="index.html#a2">a2Dual</A> </P>
+    </TD>
+    <TD> 
+      <P ALIGN=CENTER>Dual Dickson nearfield </P>
+    </TD>
+    <TD> 
+      <P ALIGN=LEFT>0<sup>192</sup>100<sup>432</sup>168<sup>30000</sup>200<sup>24</sup>552<sup>2500</sup>600<sup>390002</sup>625<sup>651</sup> 
+      </P>
+    </TD>
+  </TR>
+  <TR> 
+    <TD> 
+      <P ALIGN=CENTER><A NAME="a4"></A>6 </P>
+    </TD>
+    <TD> 
+      <P ALIGN=CENTER><A HREF="index.html#a4">a4</A> </P>
+    </TD>
+    <TD> 
+      <P ALIGN=CENTER>Rao </P>
+    </TD>
+    <TD> 
+      <P ALIGN=LEFT>0<sup>170650</sup>4<sup>202500</sup>8<sup>22500</sup>12<sup>22500</sup>16<sup>3750</sup>24<sup>1250</sup>625<sup>651</sup> 
+      </P>
+    </TD>
+  </TR>
+  <TR> 
+    <TD><A NAME="a4Dual"></A></TD>
+    <TD> 
+      <P ALIGN=CENTER><A HREF="index.html#a4">a4Dual</A> </P>
+    </TD>
+    <TD> 
+      <P ALIGN=CENTER>Dual Rao </P>
+    </TD>
+    <TD> 
+      <P ALIGN=LEFT>0<sup>422746</sup>100<sup>324</sup>200<sup>36</sup>300<sup>36</sup>400<sup>6</sup>600<sup>2</sup>625<sup>651</sup> 
+      </P>
+    </TD>
+  </TR>
+  <TR> 
+    <TD> 
+      <P ALIGN=CENTER><A NAME="a8"></A>7 </P>
+    </TD>
+    <TD> 
+      <P ALIGN=CENTER><A HREF="index.html#a8">a8</A> </P>
+    </TD>
+    <TD> 
+      <P ALIGN=CENTER>Czerwinski &amp; Oakden </P>
+    </TD>
+    <TD> 
+      <P ALIGN=LEFT>0<sup>10000</sup>60<sup>150000</sup>64<sup>90000</sup>68<sup>30000</sup>72<sup>105000</sup>168<sup>1250</sup>196<sup>30000</sup>200<sup>6250</sup>600<sup>650</sup>625<sup>651</sup> 
+      </P>
+    </TD>
+  </TR>
+  <TR> 
+    <TD><A NAME="a8Dual"></A></TD>
+    <TD> 
+      <P ALIGN=CENTER><A HREF="index.html#a8">a8Dual</A> </P>
+    </TD>
+    <TD> 
+      <P ALIGN=CENTER>Dual Czerwinski &amp; Oakden </P>
+    </TD>
+    <TD> 
+      <P ALIGN=LEFT>0<sup>144</sup>8<sup>5000</sup>40<sup>30000</sup>64<sup>120000</sup>88<sup>15000</sup>96<sup>130000</sup>100<sup>336</sup>104<sup>120000</sup>184<sup>1250</sup>200<sup>168</sup>216<sup>1250</sup>600<sup>2</sup>625<sup>651</sup> 
+      </P>
+    </TD>
+  </TR>
+  <TR> 
+    <TD> 
+      <P ALIGN=CENTER><A NAME="s4"></A>8 </P>
+    </TD>
+    <TD> 
+      <P ALIGN=CENTER><A HREF="index.html#s4">s4</A> </P>
+    </TD>
+    <TD> 
+      <P ALIGN=CENTER>subregular </P>
+    </TD>
+    <TD> 
+      <P ALIGN=LEFT>0<sup>258150</sup>8<sup>60000</sup>12<sup>60000</sup>16<sup>45000</sup>625<sup>651</sup> 
+      </P>
+    </TD>
+  </TR>
+  <TR> 
+    <TD><A NAME="s4Dual"></A></TD>
+    <TD> 
+      <P ALIGN=CENTER><A HREF="index.html#s4">s4Dual</A> </P>
+    </TD>
+    <TD> 
+      <P ALIGN=CENTER>Dual subregular </P>
+    </TD>
+    <TD> 
+      <P ALIGN=LEFT>0<sup>422886</sup>200<sup>96</sup>300<sup>96</sup>400<sup>72</sup>625<sup>651</sup> 
+      </P>
+    </TD>
+  </TR>
+  <TR> 
+    <TD> 
+      <P ALIGN=CENTER><A NAME="b1"></A>9 </P>
+    </TD>
+    <TD> 
+      <P ALIGN=CENTER><A HREF="index.html#b1">b1</A> </P>
+    </TD>
+    <TD> 
+      <P ALIGN=CENTER>Foulser </P>
+    </TD>
+    <TD> 
+      <P ALIGN=LEFT>0<sup>65650</sup>4<sup>260000</sup>8<sup>97500</sup>625<sup>651</sup> 
+      </P>
+    </TD>
+  </TR>
+  <TR> 
+    <TD><A NAME="b1Dual"></A></TD>
+    <TD> 
+      <P ALIGN=CENTER><A HREF="index.html#b1">b1Dual</A> </P>
+    </TD>
+    <TD> 
+      <P ALIGN=CENTER>Dual Foulser </P>
+    </TD>
+    <TD> 
+      <P ALIGN=LEFT>0<sup>422578</sup>100<sup>416</sup>200<sup>156</sup>625<sup>651</sup> 
+      </P>
+    </TD>
+  </TR>
+  <TR> 
+    <TD> 
+      <P ALIGN=CENTER><A NAME="b6"></A>10 </P>
+    </TD>
+    <TD> 
+      <P ALIGN=CENTER><A HREF="index.html#b6">b6</A> </P>
+    </TD>
+    <TD> 
+      <P ALIGN=CENTER>Czerwinski &amp; Oakden </P>
+    </TD>
+    <TD> 
+      <P ALIGN=LEFT>0<sup>258150</sup>4<sup>120000</sup>8<sup>15000</sup>12<sup>30000</sup>625<sup>651</sup> 
+      </P>
+    </TD>
+  </TR>
+  <TR> 
+    <TD><A NAME="b6Dual"></A></TD>
+    <TD> 
+      <P ALIGN=CENTER><A HREF="index.html#b6">b6Dual</A> </P>
+    </TD>
+    <TD> 
+      <P ALIGN=CENTER>Dual Czerwinski &amp; Oakden </P>
+    </TD>
+    <TD> 
+      <P ALIGN=LEFT>0<sup>422886</sup>100<sup>192</sup>200<sup>24</sup>300<sup>48</sup>625<sup>651</sup> 
+      </P>
+    </TD>
+  </TR>
+  <TR> 
+    <TD> 
+      <P ALIGN=CENTER><A NAME="s5"></A>11 </P>
+    </TD>
+    <TD> 
+      <P ALIGN=CENTER><A HREF="index.html#s5">s5</A> </P>
+    </TD>
+    <TD> 
+      <P ALIGN=CENTER>subregular </P>
+    </TD>
+    <TD> 
+      <P ALIGN=LEFT>0<sup>7200</sup>64<sup>22500</sup>72<sup>112500</sup>76<sup>45000</sup>80<sup>11250</sup>196<sup>180000</sup>200<sup>4500</sup>588<sup>5000</sup>592<sup>15000</sup>596<sup>15000</sup>600<sup>5200</sup>625<sup>651</sup> 
+      </P>
+    </TD>
+  </TR>
+  <TR> 
+    <TD><A NAME="s5Dual"></A></TD>
+    <TD> 
+      <P ALIGN=CENTER><A HREF="index.html#s5">s5Dual</A> </P>
+    </TD>
+    <TD> 
+      <P ALIGN=CENTER>Dual subregular </P>
+    </TD>
+    <TD> 
+      <P ALIGN=LEFT>0<sup>36</sup>100<sup>288</sup>120<sup>10000</sup>200<sup>180</sup>216<sup>120000</sup>224<sup>180000</sup>232<sup>22500</sup>264<sup>90000</sup>300<sup>80</sup>400<sup>42</sup>500<sup>24</sup>625<sup>651</sup> 
+      </P>
+    </TD>
+  </TR>
+  <TR> 
+    <TD> 
+      <P ALIGN=CENTER><A NAME="a6"></A>12 </P>
+    </TD>
+    <TD> 
+      <P ALIGN=CENTER><A HREF="index.html#a6">a6</A> </P>
+    </TD>
+    <TD> 
+      <P ALIGN=CENTER>Czerwinski &amp; Oakden </P>
+    </TD>
+    <TD> 
+      <P ALIGN=LEFT>568<sup>30000</sup>572<sup>45000</sup>576<sup>127500</sup>580<sup>90000</sup>584<sup>82500</sup>588<sup>5000</sup>592<sup>26250</sup>600<sup>16900</sup>625<sup>651</sup> 
+      </P>
+    </TD>
+  </TR>
+  <TR> 
+    <TD><A NAME="a6Dual"></A></TD>
+    <TD> 
+      <P ALIGN=CENTER><A HREF="index.html#a6">a6Dual</A> </P>
+    </TD>
+    <TD> 
+      <P ALIGN=CENTER>Dual Czerwinski &amp; Oakden </P>
+    </TD>
+    <TD> 
+      <P ALIGN=LEFT>0<sup>204</sup>24<sup>15000</sup>100<sup>216</sup>200<sup>180</sup>300<sup>8</sup>312<sup>17500</sup>400<sup>42</sup>600<sup>390000</sup>625<sup>651</sup> 
+      </P>
+    </TD>
+  </TR>
+  <TR> 
+    <TD> 
+      <P ALIGN=CENTER><A NAME="a5"></A>13 </P>
+    </TD>
+    <TD> 
+      <P ALIGN=CENTER><A HREF="index.html#a5">a5</A> </P>
+    </TD>
+    <TD> 
+      <P ALIGN=CENTER>Rao </P>
+    </TD>
+    <TD> 
+      <P ALIGN=LEFT>0<sup>4800</sup>56<sup>15000</sup>64<sup>30000</sup>68<sup>15000</sup>72<sup>15000</sup>76<sup>7500</sup>192<sup>75000</sup>196<sup>90000</sup>200<sup>33000</sup>204<sup>15000</sup>568<sup>2500</sup>576<sup>43750</sup>580<sup>42500</sup>584<sup>15000</sup>588<sup>10000</sup>600<sup>9100</sup>625<sup>651</sup> 
+      </P>
+    </TD>
+  </TR>
+  <TR> 
+    <TD><A NAME="a5Dual"></A></TD>
+    <TD> 
+      <P ALIGN=CENTER><A HREF="index.html#a5">a5Dual</A> </P>
+    </TD>
+    <TD> 
+      <P ALIGN=CENTER>Dual Rao </P>
+    </TD>
+    <TD> 
+      <P ALIGN=LEFT>0<sup>238</sup>100<sup>236</sup>120<sup>5000</sup>136<sup>15000</sup>200<sup>124</sup>216<sup>5000</sup>248<sup>7500</sup>300<sup>52</sup>344<sup>210000</sup>352<sup>120000</sup>392<sup>60000</sup>625<sup>651</sup> 
+      </P>
+    </TD>
+  </TR>
+  <TR> 
+    <TD> 
+      <P ALIGN=CENTER><A NAME="s3"></A>14 </P>
+    </TD>
+    <TD> 
+      <P ALIGN=CENTER><A HREF="index.html#s3">s3</A> </P>
+    </TD>
+    <TD> 
+      <P ALIGN=CENTER>subregular </P>
+    </TD>
+    <TD> 
+      <P ALIGN=LEFT>0<sup>198150</sup>4<sup>120000</sup>8<sup>15000</sup>12<sup>60000</sup>16<sup>30000</sup>625<sup>651</sup> 
+      </P>
+    </TD>
+  </TR>
+  <TR> 
+    <TD><A NAME="s3Dual"></A></TD>
+    <TD> 
+      <P ALIGN=CENTER><A HREF="index.html#s3">s3Dual</A> </P>
+    </TD>
+    <TD> 
+      <P ALIGN=CENTER>Dual subregular </P>
+    </TD>
+    <TD> 
+      <P ALIGN=LEFT>0<sup>422790</sup>100<sup>192</sup>200<sup>24</sup>300<sup>96</sup>400<sup>48</sup>625<sup>651</sup> 
+      </P>
+    </TD>
+  </TR>
+  <TR> 
+    <TD> 
+      <P ALIGN=CENTER><A NAME="a7"></A>15 </P>
+    </TD>
+    <TD> 
+      <P ALIGN=CENTER><A HREF="index.html#a7">a7</A> </P>
+    </TD>
+    <TD> 
+      <P ALIGN=CENTER>Rao </P>
+    </TD>
+    <TD> 
+      <P ALIGN=LEFT>0<sup>113000</sup>4<sup>150000</sup>8<sup>37500</sup>12<sup>100000</sup>200<sup>3000</sup>240<sup>3750</sup>260<sup>15000</sup>400<sup>300</sup>600<sup>600</sup>625<sup>651</sup> 
+      </P>
+    </TD>
+  </TR>
+  <TR> 
+    <TD><A NAME="a7Dual"></A></TD>
+    <TD> 
+      <P ALIGN=CENTER><A HREF="index.html#a7">a7Dual</A> </P>
+    </TD>
+    <TD> 
+      <P ALIGN=CENTER>Dual Rao </P>
+    </TD>
+    <TD> 
+      <P ALIGN=LEFT>0<sup>25160</sup>40<sup>75000</sup>64<sup>300000</sup>80<sup>7500</sup>100<sup>264</sup>120<sup>15000</sup>200<sup>60</sup>300<sup>160</sup>400<sup>6</sup>625<sup>651</sup> 
+      </P>
+    </TD>
+  </TR>
+  <TR> 
+    <TD> 
+      <P ALIGN=CENTER><A NAME="b5"></A>16 </P>
+    </TD>
+    <TD> 
+      <P ALIGN=CENTER><A HREF="index.html#b5">b5</A> </P>
+    </TD>
+    <TD> 
+      <P ALIGN=CENTER>Walker </P>
+    </TD>
+    <TD> 
+      <P ALIGN=LEFT>564<sup>200000</sup>584<sup>50000</sup>588<sup>100000</sup>596<sup>50000</sup>600<sup>23150</sup>625<sup>651</sup> 
+      </P>
+    </TD>
+  </TR>
+  <TR> 
+    <TD><A NAME="b5Dual"></A></TD>
+    <TD> 
+      <P ALIGN=CENTER><A HREF="index.html#b5">b5Dual</A> </P>
+    </TD>
+    <TD> 
+      <P ALIGN=CENTER>Dual Walker </P>
+    </TD>
+    <TD> 
+      <P ALIGN=LEFT>120<sup>20000</sup>200<sup>80</sup>216<sup>12500</sup>300<sup>480</sup>500<sup>80</sup>600<sup>390010</sup>625<sup>651</sup> 
+      </P>
+    </TD>
+  </TR>
+  <TR> 
+    <TD> 
+      <P ALIGN=CENTER><A NAME="b7"></A>17 </P>
+    </TD>
+    <TD> 
+      <P ALIGN=CENTER><A HREF="index.html#b7">b7</A> </P>
+    </TD>
+    <TD> 
+      <P ALIGN=CENTER>Czerwinski &amp; Oakden </P>
+    </TD>
+    <TD> 
+      <P ALIGN=LEFT>0<sup>2400</sup>56<sup>3750</sup>68<sup>15000</sup>192<sup>60000</sup>196<sup>90000</sup>200<sup>1500</sup>560<sup>20000</sup>568<sup>80000</sup>572<sup>20000</sup>580<sup>45000</sup>584<sup>32500</sup>588<sup>30000</sup>596<sup>10000</sup>600<sup>13000</sup>625<sup>651</sup> 
+      </P>
+    </TD>
+  </TR>
+  <TR> 
+    <TD><A NAME="b7Dual"></A></TD>
+    <TD> 
+      <P ALIGN=CENTER><A HREF="index.html#b7">b7Dual</A> </P>
+    </TD>
+    <TD> 
+      <P ALIGN=CENTER>Dual Czerwinski &amp; Oakden </P>
+    </TD>
+    <TD> 
+      <P ALIGN=LEFT>0<sup>96</sup>24<sup>20000</sup>100<sup>272</sup>120<sup>7500</sup>200<sup>186</sup>264<sup>5000</sup>300<sup>48</sup>400<sup>32</sup>472<sup>300000</sup>480<sup>60000</sup>500<sup>16</sup>520<sup>30000</sup>625<sup>651</sup> 
+      </P>
+    </TD>
+  </TR>
+  <TR> 
+    <TD> 
+      <P ALIGN=CENTER><A NAME="a1"></A>18 </P>
+    </TD>
+    <TD> 
+      <P ALIGN=CENTER><A HREF="index.html#a1">a1</A> </P>
+    </TD>
+    <TD> 
+      <P ALIGN=CENTER>Czerwinski &amp; Oakden </P>
+    </TD>
+    <TD> 
+      <P ALIGN=LEFT>0<sup>16700</sup>4<sup>370650</sup>8<sup>15000</sup>12<sup>10600</sup>16<sup>10200</sup>625<sup>651</sup> 
+      </P>
+    </TD>
+  </TR>
+  <TR> 
+    <TD><A NAME="a1Dual"></A></TD>
+    <TD> 
+      <P ALIGN=CENTER><A HREF="index.html#a1">a1Dual</A> </P>
+    </TD>
+    <TD> 
+      <P ALIGN=CENTER>Dual Czerwinski &amp; Oakden </P>
+    </TD>
+    <TD> 
+      <P ALIGN=LEFT>0<sup>422524</sup>100<sup>552</sup>200<sup>36</sup>300<sup>32</sup>400<sup>6</sup>625<sup>651</sup> 
+      </P>
+    </TD>
+  </TR>
+  <TR> 
+    <TD> 
+      <P ALIGN=CENTER><A NAME="b2"></A>19 </P>
+    </TD>
+    <TD> 
+      <P ALIGN=CENTER><A HREF="index.html#b2">b2</A> </P>
+    </TD>
+    <TD> 
+      <P ALIGN=CENTER>Foulser </P>
+    </TD>
+    <TD> 
+      <P ALIGN=LEFT>0<sup>65650</sup>4<sup>260000</sup>8<sup>97500</sup>625<sup>651</sup> 
+      </P>
+    </TD>
+  </TR>
+  <TR> 
+    <TD><A NAME="b2Dual"></A></TD>
+    <TD> 
+      <P ALIGN=CENTER><A HREF="index.html#b2">b2Dual</A> </P>
+    </TD>
+    <TD> 
+      <P ALIGN=CENTER>Dual Foulser </P>
+    </TD>
+    <TD> 
+      <P ALIGN=LEFT>0<sup>422578</sup>100<sup>416</sup>200<sup>156</sup>625<sup>651</sup> 
+      </P>
+    </TD>
+  </TR>
+  <TR> 
+    <TD> 
+      <P ALIGN=CENTER><A NAME="b8"></A>20 </P>
+    </TD>
+    <TD> 
+      <P ALIGN=CENTER><A HREF="index.html#b8">b8</A> </P>
+    </TD>
+    <TD> 
+      <P ALIGN=CENTER>Czerwinski &amp; Oakden </P>
+    </TD>
+    <TD> 
+      <P ALIGN=LEFT>0<sup>178150</sup>4<sup>130000</sup>8<sup>85000</sup>12<sup>20000</sup>20<sup>10000</sup>625<sup>651</sup> 
+      </P>
+    </TD>
+  </TR>
+  <TR> 
+    <TD><A NAME="b8Dual"></A></TD>
+    <TD> 
+      <P ALIGN=CENTER><A HREF="index.html#b8">b8Dual</A> </P>
+    </TD>
+    <TD> 
+      <P ALIGN=CENTER>Dual Czerwinski &amp; Oakden </P>
+    </TD>
+    <TD> 
+      <P ALIGN=LEFT>0<sup>422758</sup>100<sup>208</sup>200<sup>136</sup>300<sup>32</sup>500<sup>16</sup>625<sup>651</sup> 
+      </P>
+    </TD>
+  </TR>
+  <TR> 
+    <TD> 
+      <P ALIGN=CENTER><A NAME="a3a"></A>21 </P>
+    </TD>
+    <TD> 
+      <P ALIGN=CENTER><A HREF="index.html#a3a">a3a</A> </P>
+    </TD>
+    <TD></TD>
+    <TD> 
+      <P ALIGN=LEFT>0<sup>13250</sup>4<sup>150000</sup>12<sup>125000</sup>20<sup>5000</sup>24<sup>112500</sup>40<sup>13750</sup>160<sup>1250</sup>240<sup>1250</sup>600<sup>1150</sup>625<sup>651</sup> 
+      </P>
+    </TD>
+  </TR>
+  <TR> 
+    <TD><A NAME="a3aDual"></A></TD>
+    <TD> 
+      <P ALIGN=CENTER><A HREF="index.html#a3a">a3aDual</A> </P>
+    </TD>
+    <TD></TD>
+    <TD> 
+      <P ALIGN=LEFT><font size="3">0<sup>1250</sup>8<sup>62500</sup>16<sup>100000</sup>20<sup>5000</sup>24<sup>50000</sup>32<sup>156250</sup>40<sup>1250</sup>48<sup>6250</sup>56<sup>25000</sup>100<sup>240</sup>120<sup>15000</sup>300<sup>200</sup>600<sup>210</sup>625<sup>651</sup> 
+        </font> </P>
+    </TD>
+  </TR>
+  <TR> 
+    <TD> 
+      <P ALIGN=CENTER><A NAME="b4a"></A>22 </P>
+    </TD>
+    <TD> 
+      <P ALIGN=CENTER><A HREF="index.html#b4a">b4a</A> </P>
+    </TD>
+    <TD></TD>
+    <TD> 
+      <P ALIGN=LEFT>40<sup>2500</sup>60<sup>1000</sup>80<sup>500</sup>92<sup>20000</sup>96<sup>10000</sup>100<sup>20700</sup>112<sup>9000</sup>140<sup>1000</sup>164<sup>20000</sup>168<sup>30000</sup>180<sup>5000</sup>188<sup>20000</sup>196<sup>25000</sup>200<sup>250</sup>204<sup>10000</sup>216<sup>20000</sup>220<sup>41500</sup>228<sup>40000</sup>236<sup>20000</sup>240<sup>13000</sup>244<sup>20000</sup>260<sup>15000</sup>268<sup>35000</sup>272<sup>20000</sup>276<sup>10000</sup>280<sup>5500</sup>284<sup>5000</sup>520<sup>250</sup>600<sup>2950</sup>625<sup>651</sup> 
+      </P>
+    </TD>
+  </TR>
+  <TR> 
+    <TD><A NAME="b4aDual"></A></TD>
+    <TD> 
+      <P ALIGN=CENTER><A HREF="index.html#b4a">b4aDual</A> </P>
+    </TD>
+    <TD></TD>
+    <TD> 
+      <P ALIGN=LEFT>8<sup>5000</sup>12<sup>2500</sup>56<sup>10000</sup>60<sup>200</sup>64<sup>36000</sup>72<sup>30500</sup>80<sup>10000</sup>84<sup>20000</sup>96<sup>5000</sup>100<sup>40</sup>104<sup>20000</sup>108<sup>10000</sup>120<sup>3000</sup>140<sup>2000</sup>148<sup>10000</sup>180<sup>2500</sup>188<sup>2500</sup>192<sup>2500</sup>220<sup>26000</sup>224<sup>12500</sup>228<sup>30000</sup>232<sup>2500</sup>244<sup>20000</sup>248<sup>26250</sup>252<sup>5000</sup>260<sup>2500</sup>264<sup>1250</sup>272<sup>5000</sup>276<sup>15000</sup>280<sup>1000</sup>284<sup>25000</sup>288<sup>27500</sup>296<sup>20000</sup>300<sup>200</sup>308<sup>2500</sup>328<sup>5000</sup>332<sup>10000</sup>340<sup>2000</sup>356<sup>500</sup>360<sup>500</sup>376<sup>1000</sup>380<sup>3000</sup>384<sup>4000</sup>400<sup>3000</sup>600<sup>210</sup>625<sup>651</sup> 
+      </P>
+    </TD>
+  </TR>
+  <TR> 
+    <TD> 
+      <P ALIGN=CENTER><A NAME="b3"></A>23 </P>
+    </TD>
+    <TD> 
+      <P ALIGN=CENTER><A HREF="index.html#b3">b3</A> </P>
+    </TD>
+    <TD> 
+      <P ALIGN=CENTER>Czerwinski &amp; Oakden </P>
+    </TD>
+    <TD> 
+      <P ALIGN=LEFT>0<sup>138150</sup>4<sup>120000</sup>8<sup>120000</sup>12<sup>22500</sup>16<sup>22500</sup>625<sup>651</sup> 
+      </P>
+    </TD>
+  </TR>
+  <TR> 
+    <TD><A NAME="b3Dual"></A></TD>
+    <TD> 
+      <P ALIGN=CENTER><A HREF="index.html#b3">b3Dual</A> </P>
+    </TD>
+    <TD> 
+      <P ALIGN=CENTER>Dual Czerwinski &amp; Oakden </P>
+    </TD>
+    <TD> 
+      <P ALIGN=LEFT>0<sup>422694</sup>100<sup>192</sup>200<sup>192</sup>300<sup>36</sup>400<sup>36</sup>625<sup>651</sup> 
+      </P>
+    </TD>
+  </TR>
+  <TR> 
+    <TD> 
+      <P ALIGN=CENTER><A NAME="b4b"></A>24 </P>
+    </TD>
+    <TD> 
+      <P ALIGN=CENTER><A HREF="index.html#b4b">b4b</A> </P>
+    </TD>
+    <TD></TD>
+    <TD> 
+      <P ALIGN=LEFT>4<SUP>24000</SUP>8<SUP>6000</SUP>12<SUP>6000</SUP>16<SUP>15000</SUP>20<SUP>18300</SUP>28<SUP>6000</SUP>36<SUP>1000</SUP>40<SUP>1500</SUP>52<SUP>12000</SUP>56<SUP>6000</SUP>60<SUP>900</SUP>64<SUP>15000</SUP>68<SUP>18000</SUP>72<SUP>7000</SUP>80<SUP>3300</SUP>88<SUP>1500</SUP>96<SUP>12000</SUP>100<SUP>240</SUP>104<SUP>3000</SUP>108<SUP>2000</SUP>112<SUP>3900</SUP>120<SUP>1050</SUP>132<SUP>5600</SUP>136<SUP>12000</SUP>140<SUP>10050</SUP>144<SUP>18000</SUP>148<SUP>27000</SUP>152<SUP>1500</SUP>156<SUP>20500</SUP>160<SUP>21900</SUP>164<SUP>3000</SUP>168<SUP>3000</SUP>172<SUP>21000</SUP>176<SUP>21000</SUP>180<SUP>6000</SUP>184<SUP>24000</SUP>188<SUP>9000</SUP>192<SUP>3000</SUP>196<SUP>7500</SUP>200<SUP>300</SUP>204<SUP>10000</SUP>208<SUP>6000</SUP>212<SUP>9000</SUP>216<SUP>3000</SUP>220<SUP>4050</SUP>228<SUP>5500</SUP>240<SUP>2850</SUP>280<SUP>900</SUP>312<SUP>1000</SUP>340<SUP>900</SUP>348<SUP>500</SUP>600<SUP>1410</SUP>625<SUP>651</SUP> 
+      </P>
+    </TD>
+  </TR>
+  <TR> 
+    <TD><A NAME="b4bDual"></A></TD>
+    <TD> 
+      <P ALIGN=CENTER><A HREF="index.html#b4b">b4bDual</A> </P>
+    </TD>
+    <TD></TD>
+    <TD> 
+      <P ALIGN=LEFT>0<SUP>3000</SUP>8<SUP>3000</SUP>16<SUP>3000</SUP>20<SUP>1500</SUP>24<SUP>6000</SUP>28<SUP>3000</SUP>36<SUP>1500</SUP>40<SUP>13500</SUP>48<SUP>1500</SUP>52<SUP>10500</SUP>56<SUP>30000</SUP>60<SUP>6000</SUP>64<SUP>15000</SUP>68<SUP>15000</SUP>72<SUP>11250</SUP>76<SUP>13500</SUP>80<SUP>9000</SUP>84<SUP>2250</SUP>88<SUP>14250</SUP>92<SUP>13500</SUP>96<SUP>31000</SUP>100<SUP>2340</SUP>104<SUP>1500</SUP>108<SUP>12000</SUP>112<SUP>9750</SUP>124<SUP>24000</SUP>128<SUP>12000</SUP>132<SUP>3000</SUP>136<SUP>2250</SUP>140<SUP>7350</SUP>144<SUP>4500</SUP>148<SUP>6300</SUP>152<SUP>3000</SUP>160<SUP>8100</SUP>164<SUP>6750</SUP>168<SUP>450</SUP>172<SUP>7500</SUP>176<SUP>750</SUP>180<SUP>1200</SUP>188<SUP>8250</SUP>192<SUP>750</SUP>196<SUP>9000</SUP>200<SUP>5250</SUP>204<SUP>750</SUP>208<SUP>3000</SUP>216<SUP>3000</SUP>220<SUP>18000</SUP>224<SUP>17250</SUP>228<SUP>9000</SUP>236<SUP>150</SUP>240<SUP>600</SUP>244<SUP>300</SUP>256<SUP>1050</SUP>260<SUP>4350</SUP>264<SUP>3150</SUP>268<SUP>600</SUP>280<SUP>1500</SUP>284<SUP>6600</SUP>288<SUP>3900</SUP>300<SUP>1250</SUP>304<SUP>150</SUP>312<SUP>300</SUP>316<SUP>900</SUP>340<SUP>2400</SUP>360<SUP>600</SUP>380<SUP>300</SUP>400<SUP>600</SUP>600<SUP>210</SUP>625<SUP>651</SUP> 
+      </P>
+    </TD>
+  </TR>
+  <TR> 
+    <TD> 
+      <P ALIGN=CENTER><A NAME="a8a"></A>25 </P>
+    </TD>
+    <TD> 
+      <P ALIGN=CENTER><A HREF="index.html#a8a">a8a</A> </P>
+    </TD>
+    <TD></TD>
+    <TD> 
+      <P ALIGN=LEFT>12<SUP>2000</SUP>20<SUP>3600</SUP>40<SUP>3600</SUP>56<SUP>4000</SUP>68<SUP>12000</SUP>72<SUP>36000</SUP>76<SUP>24000</SUP>80<SUP>24000</SUP>88<SUP>48000</SUP>96<SUP>12000</SUP>100<SUP>3000</SUP>108<SUP>24000</SUP>116<SUP>36000</SUP>120<SUP>48000</SUP>124<SUP>48000</SUP>128<SUP>48000</SUP>200<SUP>500</SUP>216<SUP>25000</SUP>220<SUP>7200</SUP>240<SUP>1800</SUP>300<SUP>5040</SUP>320<SUP>4800</SUP>420<SUP>1200</SUP>600<SUP>1410</SUP>625<SUP>651</SUP> 
+      </P>
+    </TD>
+  </TR>
+  <TR> 
+    <TD><A NAME="a8aDual"></A></TD>
+    <TD> 
+      <P ALIGN=CENTER><A HREF="index.html#a8a">a8aDual</A> </P>
+    </TD>
+    <TD></TD>
+    <TD> 
+      <P ALIGN=LEFT>36<SUP>6000</SUP>56<SUP>6000</SUP>64<SUP>36000</SUP>72<SUP>24000</SUP>76<SUP>48000</SUP>84<SUP>54000</SUP>88<SUP>12000</SUP>92<SUP>6000</SUP>100<SUP>120</SUP>112<SUP>12000</SUP>116<SUP>6000</SUP>120<SUP>26400</SUP>128<SUP>24000</SUP>132<SUP>24000</SUP>140<SUP>32400</SUP>144<SUP>27000</SUP>152<SUP>24000</SUP>160<SUP>2400</SUP>196<SUP>6000</SUP>200<SUP>4980</SUP>220<SUP>6000</SUP>232<SUP>24000</SUP>236<SUP>6000</SUP>240<SUP>3600</SUP>300<SUP>320</SUP>312<SUP>1000</SUP>600<SUP>930</SUP>625<SUP>651</SUP> 
+      </P>
+    </TD>
+  </TR>
+  <TR> 
+    <TD> 
+      <P ALIGN=CENTER><A NAME="h1"></A>26* </P>
+    </TD>
+    <TD> 
+      <P ALIGN=CENTER><A HREF="index.html#h1">h1</A> </P>
+    </TD>
+    <TD> 
+      <P ALIGN=CENTER>(Ordinary) Hughes </P>
+    </TD>
+    <TD> 
+      <P ALIGN=LEFT>0<SUP>43710</SUP>4<SUP>372000</SUP>40<SUP>7440</SUP>625<SUP>651</SUP> 
+      </P>
+    </TD>
+  </TR>
+  <TR> 
+    <TD> 
+      <P ALIGN=CENTER><A NAME="a2a"></A>27 </P>
+    </TD>
+    <TD> 
+      <P ALIGN=CENTER><A HREF="index.html#a2a">a2a</A> </P>
+    </TD>
+    <TD></TD>
+    <TD> 
+      <P ALIGN=LEFT>8<SUP>216000</SUP>12<SUP>24000</SUP>24<SUP>2000</SUP>28<SUP>12000</SUP>36<SUP>48000</SUP>44<SUP>12000</SUP>52<SUP>48000</SUP>56<SUP>24000</SUP>72<SUP>1000</SUP>84<SUP>7000</SUP>120<SUP>5400</SUP>140<SUP>1200</SUP>180<SUP>4000</SUP>216<SUP>500</SUP>220<SUP>2400</SUP>300<SUP>1440</SUP>312<SUP>6000</SUP>320<SUP>4800</SUP>408<SUP>2000</SUP>600<SUP>1410</SUP>625<SUP>651</SUP> 
+      </P>
+    </TD>
+  </TR>
+  <TR> 
+    <TD><A NAME="a2aDual"></A></TD>
+    <TD> 
+      <P ALIGN=CENTER><A HREF="index.html#a2a">a2aDual</A> </P>
+    </TD>
+    <TD></TD>
+    <TD> 
+      <P ALIGN=LEFT>8<SUP>24000</SUP>20<SUP>30000</SUP>40<SUP>24000</SUP>44<SUP>12000</SUP>48<SUP>96000</SUP>56<SUP>3000</SUP>60<SUP>61200</SUP>64<SUP>24000</SUP>72<SUP>7000</SUP>92<SUP>108000</SUP>96<SUP>24000</SUP>100<SUP>240</SUP>172<SUP>6000</SUP>300<SUP>200</SUP>360<SUP>300</SUP>440<SUP>2400</SUP>600<SUP>810</SUP>625<SUP>651</SUP> 
+      </P>
+    </TD>
+  </TR>
+  <TR> 
+    <TD> 
+      <P ALIGN=CENTER><A NAME="s2a"></A>28* </P>
+    </TD>
+    <TD> 
+      <P ALIGN=CENTER><A HREF="index.html#s2a">s2a</A> </P>
+    </TD>
+    <TD></TD>
+    <TD> 
+      <P ALIGN=LEFT>0<SUP>190</SUP>8<SUP>20000</SUP>16<SUP>35000</SUP>20<SUP>200</SUP>24<SUP>70000</SUP>28<SUP>40000</SUP>32<SUP>8000</SUP>40<SUP>103250</SUP>44<SUP>65000</SUP>48<SUP>20000</SUP>52<SUP>7000</SUP>56<SUP>10000</SUP>64<SUP>1000</SUP>84<SUP>3000</SUP>88<SUP>12500</SUP>96<SUP>5000</SUP>100<SUP>4000</SUP>108<SUP>5000</SUP>120<SUP>2000</SUP>160<SUP>6000</SUP>200<SUP>2250</SUP>220<SUP>1000</SUP>280<SUP>250</SUP>300<SUP>1200</SUP>392<SUP>500</SUP>400<SUP>100</SUP>600<SUP>710</SUP>625<SUP>651</SUP> 
+      </P>
+    </TD>
+  </TR>
+  <TR> 
+    <TD> 
+      <P ALIGN=CENTER><A NAME="a7a"></A>29 </P>
+    </TD>
+    <TD> 
+      <P ALIGN=CENTER><A HREF="index.html#a7a">a7a</A> </P>
+    </TD>
+    <TD></TD>
+    <TD> 
+      <P ALIGN=LEFT>0<SUP>40</SUP>16<SUP>20000</SUP>20<SUP>200</SUP>32<SUP>3000</SUP>40<SUP>6000</SUP>52<SUP>2000</SUP>60<SUP>3000</SUP>80<SUP>4000</SUP>92<SUP>1000</SUP>96<SUP>40000</SUP>100<SUP>30200</SUP>104<SUP>40000</SUP>112<SUP>10000</SUP>116<SUP>25000</SUP>120<SUP>30250</SUP>128<SUP>20000</SUP>132<SUP>45000</SUP>136<SUP>32500</SUP>140<SUP>2000</SUP>144<SUP>20000</SUP>148<SUP>30000</SUP>152<SUP>10000</SUP>160<SUP>1000</SUP>168<SUP>10000</SUP>172<SUP>25000</SUP>192<SUP>250</SUP>200<SUP>7300</SUP>220<SUP>1000</SUP>240<SUP>1500</SUP>320<SUP>1000</SUP>340<SUP>1000</SUP>400<SUP>300</SUP>600<SUP>610</SUP>625<SUP>651</SUP> 
+      </P>
+    </TD>
+  </TR>
+  <TR> 
+    <TD><A NAME="a7aDual"></A></TD>
+    <TD> 
+      <P ALIGN=CENTER><A HREF="index.html#a7a">a7aDual</A> </P>
+    </TD>
+    <TD></TD>
+    <TD> 
+      <P ALIGN=LEFT>0<SUP>20000</SUP>4<SUP>25000</SUP>8<SUP>10000</SUP>16<SUP>25000</SUP>20<SUP>5000</SUP>28<SUP>45000</SUP>32<SUP>60000</SUP>40<SUP>2000</SUP>44<SUP>40000</SUP>56<SUP>5000</SUP>68<SUP>2000</SUP>72<SUP>1000</SUP>80<SUP>110500</SUP>84<SUP>30000</SUP>88<SUP>7000</SUP>92<SUP>4000</SUP>100<SUP>5240</SUP>108<SUP>1000</SUP>140<SUP>2000</SUP>160<SUP>2000</SUP>180<SUP>2000</SUP>200<SUP>2100</SUP>300<SUP>200</SUP>388<SUP>1000</SUP>400<SUP>10</SUP>408<SUP>250</SUP>560<SUP>2500</SUP>580<SUP>10000</SUP>600<SUP>3350</SUP>625<SUP>651</SUP> 
+      </P>
+    </TD>
+  </TR>
+  <TR> 
+    <TD> 
+      <P ALIGN=CENTER><A NAME="s4a"></A>30 </P>
+    </TD>
+    <TD> 
+      <P ALIGN=CENTER><A HREF="index.html#s4a">s4a</A> </P>
+    </TD>
+    <TD></TD>
+    <TD> 
+      <P ALIGN=LEFT>0<SUP>240</SUP>4<SUP>18000</SUP>12<SUP>2400</SUP>16<SUP>48000</SUP>20<SUP>170400</SUP>24<SUP>1000</SUP>28<SUP>36000</SUP>32<SUP>2400</SUP>40<SUP>123600</SUP>60<SUP>2400</SUP>88<SUP>4000</SUP>120<SUP>1200</SUP>140<SUP>1200</SUP>148<SUP>2400</SUP>160<SUP>600</SUP>188<SUP>1000</SUP>232<SUP>2400</SUP>388<SUP>2000</SUP>392<SUP>2000</SUP>576<SUP>500</SUP>592<SUP>450</SUP>600<SUP>960</SUP>625<SUP>651</SUP> 
+      </P>
+    </TD>
+  </TR>
+  <TR> 
+    <TD><A NAME="s4aDual"></A></TD>
+    <TD> 
+      <P ALIGN=CENTER><A HREF="index.html#s4a">s4aDual</A> </P>
+    </TD>
+    <TD></TD>
+    <TD> 
+      <P ALIGN=LEFT>0<SUP>54020</SUP>4<SUP>12000</SUP>8<SUP>24000</SUP>12<SUP>48000</SUP>24<SUP>91000</SUP>28<SUP>26400</SUP>32<SUP>48000</SUP>44<SUP>2400</SUP>48<SUP>12000</SUP>56<SUP>7200</SUP>60<SUP>12000</SUP>64<SUP>1200</SUP>68<SUP>6000</SUP>76<SUP>48000</SUP>80<SUP>24000</SUP>100<SUP>120</SUP>140<SUP>240</SUP>200<SUP>240</SUP>384<SUP>3000</SUP>400<SUP>18</SUP>440<SUP>2400</SUP>456<SUP>300</SUP>600<SUP>612</SUP>625<SUP>651</SUP> 
+      </P>
+    </TD>
+  </TR>
+  <TR> 
+    <TD> 
+      <P ALIGN=CENTER><A NAME="h2"></A>31* </P>
+    </TD>
+    <TD> 
+      <P ALIGN=CENTER><A HREF="index.html#h2">h2</A> </P>
+    </TD>
+    <TD> 
+      <P ALIGN=CENTER>Exceptional Hughes </P>
+    </TD>
+    <TD> 
+      <P ALIGN=LEFT>0<SUP>2480</SUP>28<SUP>372000</SUP>72<SUP>31000</SUP>100<SUP>8680</SUP>200<SUP>5580</SUP>400<SUP>2480</SUP>600<SUP>930</SUP>625<SUP>651</SUP> 
+      </P>
+    </TD>
+  </TR>
+  <TR> 
+    <TD> 
+      <P ALIGN=CENTER><A NAME="s2b"></A>32 </P>
+    </TD>
+    <TD> 
+      <P ALIGN=CENTER><A HREF="index.html#s2b">s2b</A> </P>
+    </TD>
+    <TD></TD>
+    <TD> 
+      <P ALIGN=LEFT>0<SUP>12750</SUP>4<SUP>18000</SUP>8<SUP>12000</SUP>12<SUP>19600</SUP>16<SUP>24000</SUP>20<SUP>32400</SUP>24<SUP>33500</SUP>32<SUP>39000</SUP>36<SUP>34000</SUP>40<SUP>12000</SUP>44<SUP>12000</SUP>48<SUP>25000</SUP>52<SUP>15000</SUP>56<SUP>18000</SUP>60<SUP>30900</SUP>64<SUP>15000</SUP>68<SUP>6000</SUP>72<SUP>2000</SUP>76<SUP>27000</SUP>84<SUP>3000</SUP>88<SUP>6600</SUP>96<SUP>6000</SUP>108<SUP>6000</SUP>112<SUP>3000</SUP>120<SUP>1750</SUP>140<SUP>600</SUP>160<SUP>150</SUP>168<SUP>1300</SUP>240<SUP>600</SUP>300<SUP>300</SUP>320<SUP>150</SUP>400<SUP>1860</SUP>412<SUP>600</SUP>420<SUP>600</SUP>592<SUP>900</SUP>600<SUP>1590</SUP>625<SUP>651</SUP> 
+      </P>
+    </TD>
+  </TR>
+  <TR> 
+    <TD><A NAME="s2bDual"></A></TD>
+    <TD> 
+      <P ALIGN=CENTER><A HREF="index.html#s2b">s2bDual</A> </P>
+    </TD>
+    <TD></TD>
+    <TD> 
+      <P ALIGN=LEFT>0<SUP>15390</SUP>4<SUP>24000</SUP>8<SUP>1500</SUP>12<SUP>27000</SUP>16<SUP>12750</SUP>20<SUP>19500</SUP>24<SUP>19000</SUP>28<SUP>36000</SUP>32<SUP>6000</SUP>36<SUP>22500</SUP>40<SUP>15000</SUP>44<SUP>13500</SUP>48<SUP>300</SUP>56<SUP>51000</SUP>60<SUP>15600</SUP>64<SUP>3000</SUP>68<SUP>25200</SUP>72<SUP>1500</SUP>80<SUP>9450</SUP>84<SUP>3000</SUP>92<SUP>6000</SUP>100<SUP>6000</SUP>104<SUP>300</SUP>108<SUP>24000</SUP>112<SUP>600</SUP>116<SUP>1200</SUP>120<SUP>9600</SUP>124<SUP>7200</SUP>128<SUP>12600</SUP>136<SUP>3150</SUP>140<SUP>1800</SUP>144<SUP>3600</SUP>152<SUP>12000</SUP>156<SUP>3000</SUP>160<SUP>2400</SUP>172<SUP>1500</SUP>180<SUP>2400</SUP>200<SUP>300</SUP>208<SUP>1500</SUP>220<SUP>1200</SUP>280<SUP>1200</SUP>300<SUP>200</SUP>600<SUP>210</SUP>625<SUP>651</SUP> 
+      </P>
+    </TD>
+  </TR>
+  <TR> 
+    <TD> 
+      <P ALIGN=CENTER><A NAME="s3a"></A>33 </P>
+    </TD>
+    <TD> 
+      <P ALIGN=CENTER><A HREF="index.html#s3a">s3a</A> </P>
+    </TD>
+    <TD></TD>
+    <TD> 
+      <P ALIGN=LEFT>0<SUP>12180</SUP>4<SUP>24000</SUP>8<SUP>2000</SUP>16<SUP>24000</SUP>20<SUP>4200</SUP>24<SUP>1000</SUP>32<SUP>1200</SUP>36<SUP>6000</SUP>40<SUP>1500</SUP>60<SUP>12000</SUP>64<SUP>24000</SUP>72<SUP>24000</SUP>76<SUP>90000</SUP>80<SUP>6000</SUP>84<SUP>108000</SUP>88<SUP>24000</SUP>92<SUP>1000</SUP>100<SUP>2000</SUP>104<SUP>6000</SUP>108<SUP>12000</SUP>116<SUP>24000</SUP>120<SUP>300</SUP>132<SUP>1200</SUP>140<SUP>3000</SUP>152<SUP>4000</SUP>168<SUP>600</SUP>192<SUP>300</SUP>300<SUP>600</SUP>320<SUP>2100</SUP>400<SUP>720</SUP>528<SUP>150</SUP>576<SUP>500</SUP>600<SUP>600</SUP>625<SUP>651</SUP> 
+      </P>
+    </TD>
+  </TR>
+  <TR> 
+    <TD><A NAME="s3aDual"></A></TD>
+    <TD> 
+      <P ALIGN=CENTER><A HREF="index.html#s3a">s3aDual</A> </P>
+    </TD>
+    <TD></TD>
+    <TD> 
+      <P ALIGN=LEFT>0<SUP>20</SUP>4<SUP>24000</SUP>16<SUP>30300</SUP>20<SUP>120</SUP>24<SUP>1000</SUP>36<SUP>6000</SUP>40<SUP>3000</SUP>44<SUP>24000</SUP>48<SUP>24000</SUP>52<SUP>24000</SUP>56<SUP>36000</SUP>64<SUP>60000</SUP>68<SUP>6000</SUP>72<SUP>30000</SUP>80<SUP>6000</SUP>88<SUP>30000</SUP>92<SUP>3000</SUP>100<SUP>120</SUP>104<SUP>15000</SUP>116<SUP>36000</SUP>120<SUP>6600</SUP>128<SUP>600</SUP>132<SUP>18000</SUP>140<SUP>7800</SUP>144<SUP>3000</SUP>148<SUP>1200</SUP>156<SUP>6000</SUP>160<SUP>8100</SUP>168<SUP>1500</SUP>180<SUP>3000</SUP>192<SUP>1200</SUP>200<SUP>240</SUP>220<SUP>1320</SUP>240<SUP>3600</SUP>280<SUP>1200</SUP>300<SUP>1200</SUP>400<SUP>18</SUP>600<SUP>12</SUP>625<SUP>651</SUP> 
+      </P>
+    </TD>
+  </TR>
+  <TR> 
+    <TD> 
+      <P ALIGN=CENTER><A NAME="b5a"></A>34 </P>
+    </TD>
+    <TD> 
+      <P ALIGN=CENTER><A HREF="index.html#b5a">b5a</A> </P>
+    </TD>
+    <TD></TD>
+    <TD> 
+      <P ALIGN=LEFT>32<SUP>3200</SUP>40<SUP>61200</SUP>44<SUP>9000</SUP>48<SUP>32000</SUP>52<SUP>52000</SUP>56<SUP>1000</SUP>60<SUP>32000</SUP>64<SUP>8000</SUP>68<SUP>3200</SUP>72<SUP>8000</SUP>76<SUP>34000</SUP>80<SUP>16000</SUP>84<SUP>4000</SUP>88<SUP>32400</SUP>96<SUP>16000</SUP>100<SUP>17440</SUP>112<SUP>16000</SUP>116<SUP>16000</SUP>120<SUP>4800</SUP>140<SUP>36800</SUP>152<SUP>8000</SUP>156<SUP>4000</SUP>180<SUP>400</SUP>200<SUP>200</SUP>216<SUP>2500</SUP>220<SUP>800</SUP>240<SUP>400</SUP>248<SUP>1600</SUP>260<SUP>800</SUP>600<SUP>1410</SUP>625<SUP>651</SUP> 
+      </P>
+    </TD>
+  </TR>
+  <TR> 
+    <TD><A NAME="b5aDual"></A></TD>
+    <TD> 
+      <P ALIGN=CENTER><A HREF="index.html#b5a">b5aDual</A> </P>
+    </TD>
+    <TD></TD>
+    <TD> 
+      <P ALIGN=LEFT>16<SUP>34000</SUP>20<SUP>160</SUP>28<SUP>8000</SUP>32<SUP>64000</SUP>36<SUP>10000</SUP>44<SUP>2000</SUP>56<SUP>1000</SUP>60<SUP>8080</SUP>64<SUP>12000</SUP>72<SUP>41000</SUP>76<SUP>12000</SUP>80<SUP>24000</SUP>84<SUP>48000</SUP>88<SUP>32000</SUP>92<SUP>16000</SUP>104<SUP>8000</SUP>108<SUP>4000</SUP>116<SUP>48000</SUP>120<SUP>21200</SUP>156<SUP>4000</SUP>160<SUP>3200</SUP>172<SUP>4000</SUP>188<SUP>400</SUP>200<SUP>400</SUP>204<SUP>800</SUP>208<SUP>1600</SUP>212<SUP>1600</SUP>220<SUP>4000</SUP>224<SUP>2400</SUP>236<SUP>4000</SUP>240<SUP>1600</SUP>280<SUP>500</SUP>300<SUP>200</SUP>360<SUP>800</SUP>600<SUP>210</SUP>625<SUP>651</SUP> 
+      </P>
+    </TD>
+  </TR>
+  <TR> 
+    <TD> 
+      <P ALIGN=CENTER><A NAME="a8b"></A>35 </P>
+    </TD>
+    <TD> 
+      <P ALIGN=CENTER><A HREF="index.html#a8b">a8b</A> </P>
+    </TD>
+    <TD></TD>
+    <TD> 
+      <P ALIGN=LEFT>0<SUP>500</SUP>4<SUP>12000</SUP>8<SUP>12000</SUP>16<SUP>12000</SUP>20<SUP>24000</SUP>24<SUP>12000</SUP>28<SUP>12000</SUP>32<SUP>16200</SUP>36<SUP>18000</SUP>40<SUP>14400</SUP>44<SUP>24000</SUP>48<SUP>18600</SUP>52<SUP>37600</SUP>56<SUP>48000</SUP>60<SUP>2400</SUP>64<SUP>42000</SUP>68<SUP>26400</SUP>72<SUP>19000</SUP>76<SUP>24000</SUP>80<SUP>1200</SUP>88<SUP>21600</SUP>100<SUP>1240</SUP>104<SUP>1000</SUP>108<SUP>1000</SUP>112<SUP>1200</SUP>120<SUP>3500</SUP>128<SUP>2000</SUP>132<SUP>6600</SUP>140<SUP>2400</SUP>148<SUP>1800</SUP>152<SUP>1000</SUP>160<SUP>600</SUP>168<SUP>1200</SUP>200<SUP>450</SUP>240<SUP>600</SUP>400<SUP>60</SUP>600<SUP>600</SUP>625<SUP>651</SUP> 
+      </P>
+    </TD>
+  </TR>
+  <TR> 
+    <TD><A NAME="a8bDual"></A></TD>
+    <TD> 
+      <P ALIGN=CENTER><A HREF="index.html#a8b">a8bDual</A> </P>
+    </TD>
+    <TD></TD>
+    <TD> 
+      <P ALIGN=LEFT>0<SUP>6100</SUP>4<SUP>42000</SUP>12<SUP>27000</SUP>16<SUP>60000</SUP>20<SUP>33000</SUP>24<SUP>25000</SUP>28<SUP>30000</SUP>32<SUP>4500</SUP>36<SUP>12000</SUP>40<SUP>31200</SUP>44<SUP>18000</SUP>48<SUP>6000</SUP>56<SUP>1500</SUP>60<SUP>12000</SUP>64<SUP>3000</SUP>68<SUP>15000</SUP>80<SUP>7620</SUP>84<SUP>9000</SUP>88<SUP>3000</SUP>92<SUP>12600</SUP>100<SUP>80</SUP>104<SUP>17400</SUP>108<SUP>12000</SUP>112<SUP>600</SUP>120<SUP>720</SUP>124<SUP>3000</SUP>136<SUP>600</SUP>140<SUP>1200</SUP>144<SUP>4200</SUP>148<SUP>12000</SUP>156<SUP>1200</SUP>160<SUP>1200</SUP>164<SUP>600</SUP>180<SUP>6000</SUP>200<SUP>2560</SUP>300<SUP>1240</SUP>600<SUP>30</SUP>625<SUP>651</SUP> 
+      </P>
+    </TD>
+  </TR>
+  <TR> 
+    <TD> 
+      <P ALIGN=CENTER><A NAME="h1b"></A>36* </P>
+    </TD>
+    <TD> 
+      <P ALIGN=CENTER><A HREF="index.html#h1b">h1b</A> </P>
+    </TD>
+    <TD></TD>
+    <TD> 
+      <P ALIGN=LEFT>0<SUP>29510</SUP>4<SUP>20000</SUP>8<SUP>59500</SUP>12<SUP>78000</SUP>16<SUP>36000</SUP>20<SUP>46000</SUP>24<SUP>22500</SUP>28<SUP>20000</SUP>32<SUP>22000</SUP>36<SUP>9000</SUP>40<SUP>9240</SUP>44<SUP>13000</SUP>48<SUP>12000</SUP>52<SUP>4000</SUP>56<SUP>10000</SUP>60<SUP>3040</SUP>64<SUP>8000</SUP>80<SUP>200</SUP>88<SUP>500</SUP>92<SUP>2000</SUP>100<SUP>160</SUP>104<SUP>4500</SUP>108<SUP>8000</SUP>112<SUP>1000</SUP>120<SUP>1050</SUP>140<SUP>2000</SUP>188<SUP>1000</SUP>200<SUP>240</SUP>240<SUP>100</SUP>280<SUP>50</SUP>300<SUP>40</SUP>400<SUP>400</SUP>600<SUP>120</SUP>625<SUP>651</SUP> 
+      </P>
+    </TD>
+  </TR>
+  <TR> 
+    <TD> 
+      <P ALIGN=CENTER><A NAME="h1a"></A>37 </P>
+    </TD>
+    <TD> 
+      <P ALIGN=CENTER><A HREF="index.html#h1a">h1a</A> </P>
+    </TD>
+    <TD></TD>
+    <TD> 
+      <P ALIGN=LEFT>280<SUP>600</SUP>300<SUP>480</SUP>312<SUP>1200</SUP>340<SUP>2400</SUP>348<SUP>2400</SUP>360<SUP>50</SUP>368<SUP>50</SUP>380<SUP>2400</SUP>388<SUP>3400</SUP>396<SUP>24000</SUP>400<SUP>96</SUP>420<SUP>4800</SUP>424<SUP>4800</SUP>436<SUP>24000</SUP>456<SUP>300</SUP>464<SUP>100</SUP>484<SUP>4000</SUP>488<SUP>96000</SUP>496<SUP>300</SUP>504<SUP>100</SUP>552<SUP>1000</SUP>572<SUP>1000</SUP>576<SUP>12500</SUP>580<SUP>75000</SUP>584<SUP>150000</SUP>600<SUP>12174</SUP>625<SUP>651</SUP> 
+      </P>
+    </TD>
+  </TR>
+  <TR> 
+    <TD><A NAME="h1aDual"></A></TD>
+    <TD> 
+      <P ALIGN=CENTER><A HREF="index.html#h1a">h1aDual</A> </P>
+    </TD>
+    <TD></TD>
+    <TD> 
+      <P ALIGN=LEFT>0<SUP>20</SUP>100<SUP>360</SUP>200<SUP>240</SUP>232<SUP>24000</SUP>264<SUP>1000</SUP>400<SUP>18</SUP>456<SUP>300</SUP>460<SUP>4800</SUP>464<SUP>2400</SUP>544<SUP>96000</SUP>548<SUP>192000</SUP>552<SUP>48000</SUP>556<SUP>12000</SUP>568<SUP>24000</SUP>572<SUP>4800</SUP>576<SUP>1200</SUP>584<SUP>6000</SUP>588<SUP>4800</SUP>600<SUP>1212</SUP>625<SUP>651</SUP> 
+      </P>
+    </TD>
+  </TR>
+  <TR> 
+    <TD> 
+      <P ALIGN=CENTER><A NAME="b8a"></A>38 </P>
+    </TD>
+    <TD> 
+      <P ALIGN=CENTER><A HREF="index.html#b8a">b8a</A> </P>
+    </TD>
+    <TD></TD>
+    <TD> 
+      <P ALIGN=LEFT>0<SUP>44780</SUP>4<SUP>70000</SUP>8<SUP>44000</SUP>12<SUP>38800</SUP>16<SUP>20000</SUP>20<SUP>20000</SUP>24<SUP>22000</SUP>28<SUP>20000</SUP>32<SUP>30000</SUP>36<SUP>42000</SUP>40<SUP>13400</SUP>44<SUP>4000</SUP>48<SUP>12800</SUP>52<SUP>6400</SUP>56<SUP>9000</SUP>60<SUP>6400</SUP>68<SUP>5600</SUP>72<SUP>2000</SUP>80<SUP>300</SUP>100<SUP>1000</SUP>112<SUP>400</SUP>120<SUP>300</SUP>128<SUP>200</SUP>132<SUP>1200</SUP>140<SUP>1400</SUP>152<SUP>400</SUP>160<SUP>2200</SUP>168<SUP>600</SUP>192<SUP>100</SUP>200<SUP>320</SUP>220<SUP>800</SUP>232<SUP>400</SUP>240<SUP>400</SUP>248<SUP>400</SUP>260<SUP>200</SUP>312<SUP>400</SUP>320<SUP>200</SUP>528<SUP>150</SUP>600<SUP>600</SUP>625<SUP>651</SUP> 
+      </P>
+    </TD>
+  </TR>
+  <TR> 
+    <TD><A NAME="b8aDual"></A></TD>
+    <TD> 
+      <P ALIGN=CENTER><A HREF="index.html#b8a">b8aDual</A> </P>
+    </TD>
+    <TD></TD>
+    <TD> 
+      <P ALIGN=LEFT>0<SUP>24520</SUP>4<SUP>40000</SUP>8<SUP>17200</SUP>12<SUP>12400</SUP>16<SUP>24600</SUP>20<SUP>27000</SUP>24<SUP>49000</SUP>28<SUP>50400</SUP>32<SUP>19800</SUP>36<SUP>12400</SUP>40<SUP>15600</SUP>44<SUP>32800</SUP>48<SUP>18000</SUP>52<SUP>8200</SUP>56<SUP>12800</SUP>60<SUP>14640</SUP>64<SUP>11400</SUP>68<SUP>200</SUP>76<SUP>4800</SUP>80<SUP>4200</SUP>84<SUP>2000</SUP>88<SUP>4000</SUP>96<SUP>400</SUP>100<SUP>9000</SUP>104<SUP>400</SUP>120<SUP>1400</SUP>140<SUP>880</SUP>160<SUP>1600</SUP>180<SUP>40</SUP>200<SUP>1840</SUP>280<SUP>800</SUP>300<SUP>800</SUP>400<SUP>18</SUP>600<SUP>12</SUP>625<SUP>651</SUP> 
+      </P>
+    </TD>
+  </TR>
+  <TR> 
+    <TD> 
+      <P ALIGN=CENTER><A NAME="a4a"></A>39 </P>
+    </TD>
+    <TD> 
+      <P ALIGN=CENTER><A HREF="index.html#a4a">a4a</A> </P>
+    </TD>
+    <TD></TD>
+    <TD> 
+      <P ALIGN=LEFT>0<SUP>37060</SUP>4<SUP>45000</SUP>8<SUP>67000</SUP>12<SUP>63900</SUP>16<SUP>51000</SUP>20<SUP>9900</SUP>24<SUP>24000</SUP>28<SUP>16000</SUP>32<SUP>10200</SUP>36<SUP>39000</SUP>40<SUP>14200</SUP>48<SUP>13200</SUP>52<SUP>3500</SUP>56<SUP>7000</SUP>60<SUP>2400</SUP>68<SUP>1500</SUP>80<SUP>900</SUP>88<SUP>1300</SUP>100<SUP>60</SUP>104<SUP>1000</SUP>112<SUP>600</SUP>120<SUP>1650</SUP>136<SUP>1000</SUP>140<SUP>2800</SUP>148<SUP>300</SUP>192<SUP>500</SUP>196<SUP>500</SUP>200<SUP>510</SUP>212<SUP>1500</SUP>220<SUP>600</SUP>240<SUP>150</SUP>268<SUP>300</SUP>300<SUP>300</SUP>312<SUP>1200</SUP>320<SUP>150</SUP>392<SUP>300</SUP>400<SUP>30</SUP>420<SUP>300</SUP>432<SUP>150</SUP>440<SUP>150</SUP>500<SUP>1260</SUP>600<SUP>780</SUP>625<SUP>651</SUP> 
+      </P>
+    </TD>
+  </TR>
+  <TR> 
+    <TD><A NAME="a4aDual"></A></TD>
+    <TD> 
+      <P ALIGN=CENTER><A HREF="index.html#a4a">a4aDual</A> </P>
+    </TD>
+    <TD></TD>
+    <TD> 
+      <P ALIGN=LEFT>0<SUP>21020</SUP>4<SUP>9300</SUP>8<SUP>13800</SUP>12<SUP>12300</SUP>16<SUP>24300</SUP>20<SUP>24300</SUP>24<SUP>26500</SUP>28<SUP>27000</SUP>32<SUP>9000</SUP>36<SUP>48300</SUP>40<SUP>24600</SUP>44<SUP>14100</SUP>48<SUP>12300</SUP>52<SUP>24300</SUP>60<SUP>14100</SUP>64<SUP>10050</SUP>68<SUP>1500</SUP>72<SUP>4500</SUP>76<SUP>20700</SUP>80<SUP>20700</SUP>84<SUP>17700</SUP>88<SUP>12000</SUP>96<SUP>1650</SUP>100<SUP>3420</SUP>104<SUP>150</SUP>108<SUP>3000</SUP>112<SUP>1500</SUP>116<SUP>3000</SUP>120<SUP>1590</SUP>132<SUP>1500</SUP>136<SUP>2250</SUP>140<SUP>6300</SUP>160<SUP>600</SUP>164<SUP>1500</SUP>176<SUP>750</SUP>180<SUP>1200</SUP>200<SUP>2340</SUP>400<SUP>18</SUP>600<SUP>12</SUP>625<SUP>651</SUP> 
+      </P>
+    </TD>
+  </TR>
+  <TR> 
+    <TD> 
+      <P ALIGN=CENTER><A NAME="b6a"></A>40 </P>
+    </TD>
+    <TD> 
+      <P ALIGN=CENTER><A HREF="index.html#b6a">b6a</A> </P>
+    </TD>
+    <TD></TD>
+    <TD> 
+      <P ALIGN=LEFT>0<SUP>34080</SUP>4<SUP>29000</SUP>8<SUP>20000</SUP>12<SUP>48200</SUP>16<SUP>36000</SUP>20<SUP>29200</SUP>24<SUP>30000</SUP>28<SUP>33000</SUP>32<SUP>42600</SUP>36<SUP>30000</SUP>40<SUP>19200</SUP>44<SUP>10000</SUP>48<SUP>14600</SUP>52<SUP>2000</SUP>56<SUP>4000</SUP>60<SUP>15800</SUP>68<SUP>600</SUP>76<SUP>2000</SUP>80<SUP>4600</SUP>84<SUP>2000</SUP>104<SUP>2000</SUP>112<SUP>200</SUP>120<SUP>1000</SUP>128<SUP>50</SUP>132<SUP>600</SUP>140<SUP>2800</SUP>148<SUP>1000</SUP>160<SUP>1200</SUP>168<SUP>400</SUP>192<SUP>800</SUP>200<SUP>280</SUP>212<SUP>1400</SUP>220<SUP>1000</SUP>232<SUP>1700</SUP>240<SUP>400</SUP>248<SUP>200</SUP>312<SUP>200</SUP>320<SUP>400</SUP>400<SUP>40</SUP>600<SUP>600</SUP>625<SUP>651</SUP> 
+      </P>
+    </TD>
+  </TR>
+  <TR> 
+    <TD><A NAME="b6aDual"></A></TD>
+    <TD> 
+      <P ALIGN=CENTER><A HREF="index.html#b6a">b6aDual</A> </P>
+    </TD>
+    <TD></TD>
+    <TD> 
+      <P ALIGN=LEFT>0<SUP>10020</SUP>4<SUP>49200</SUP>8<SUP>45000</SUP>12<SUP>36000</SUP>16<SUP>31500</SUP>20<SUP>25000</SUP>24<SUP>30000</SUP>28<SUP>14000</SUP>32<SUP>8000</SUP>36<SUP>22600</SUP>40<SUP>2600</SUP>44<SUP>30200</SUP>48<SUP>20000</SUP>52<SUP>8400</SUP>56<SUP>16000</SUP>60<SUP>5400</SUP>64<SUP>7000</SUP>68<SUP>4400</SUP>72<SUP>11000</SUP>76<SUP>2600</SUP>80<SUP>10200</SUP>84<SUP>9800</SUP>88<SUP>2500</SUP>92<SUP>4600</SUP>100<SUP>600</SUP>108<SUP>1200</SUP>112<SUP>2000</SUP>116<SUP>1400</SUP>120<SUP>2160</SUP>124<SUP>400</SUP>132<SUP>200</SUP>140<SUP>800</SUP>144<SUP>200</SUP>156<SUP>1000</SUP>160<SUP>2800</SUP>168<SUP>500</SUP>180<SUP>400</SUP>184<SUP>100</SUP>200<SUP>240</SUP>220<SUP>400</SUP>240<SUP>1700</SUP>280<SUP>200</SUP>300<SUP>400</SUP>380<SUP>400</SUP>400<SUP>18</SUP>600<SUP>12</SUP>625<SUP>651</SUP> 
+      </P>
+    </TD>
+  </TR>
+  <TR> 
+    <TD> 
+      <P ALIGN=CENTER><A NAME="b7a"></A>41 </P>
+    </TD>
+    <TD> 
+      <P ALIGN=CENTER><A HREF="index.html#b7a">b7a</A> </P>
+    </TD>
+    <TD></TD>
+    <TD> 
+      <P ALIGN=LEFT>8<SUP>2000</SUP>16<SUP>4000</SUP>20<SUP>20000</SUP>24<SUP>36000</SUP>28<SUP>60000</SUP>32<SUP>43200</SUP>36<SUP>37000</SUP>40<SUP>29600</SUP>44<SUP>14000</SUP>48<SUP>8200</SUP>52<SUP>24800</SUP>56<SUP>20000</SUP>60<SUP>9000</SUP>64<SUP>34000</SUP>68<SUP>10600</SUP>72<SUP>10500</SUP>76<SUP>2000</SUP>80<SUP>4000</SUP>84<SUP>5000</SUP>88<SUP>2400</SUP>92<SUP>400</SUP>100<SUP>8200</SUP>104<SUP>10000</SUP>108<SUP>11000</SUP>112<SUP>400</SUP>116<SUP>1000</SUP>120<SUP>6700</SUP>128<SUP>200</SUP>132<SUP>800</SUP>140<SUP>2200</SUP>168<SUP>400</SUP>192<SUP>200</SUP>200<SUP>300</SUP>212<SUP>1600</SUP>220<SUP>1200</SUP>232<SUP>400</SUP>240<SUP>500</SUP>280<SUP>100</SUP>300<SUP>240</SUP>320<SUP>400</SUP>600<SUP>610</SUP>625<SUP>651</SUP> 
+      </P>
+    </TD>
+  </TR>
+  <TR> 
+    <TD><A NAME="b7aDual"></A></TD>
+    <TD> 
+      <P ALIGN=CENTER><A HREF="index.html#b7a">b7aDual</A> </P>
+    </TD>
+    <TD></TD>
+    <TD> 
+      <P ALIGN=LEFT>0<SUP>16000</SUP>4<SUP>10000</SUP>8<SUP>18000</SUP>12<SUP>10000</SUP>16<SUP>37000</SUP>20<SUP>21000</SUP>24<SUP>19200</SUP>28<SUP>16000</SUP>32<SUP>1000</SUP>36<SUP>36000</SUP>40<SUP>34000</SUP>44<SUP>6000</SUP>48<SUP>17000</SUP>52<SUP>18000</SUP>56<SUP>28000</SUP>60<SUP>26000</SUP>64<SUP>12000</SUP>68<SUP>6000</SUP>72<SUP>4100</SUP>76<SUP>14000</SUP>80<SUP>14000</SUP>84<SUP>4000</SUP>88<SUP>6000</SUP>92<SUP>1000</SUP>96<SUP>800</SUP>100<SUP>14520</SUP>104<SUP>3200</SUP>112<SUP>2000</SUP>116<SUP>2000</SUP>120<SUP>3400</SUP>124<SUP>1600</SUP>132<SUP>400</SUP>136<SUP>3000</SUP>140<SUP>7640</SUP>144<SUP>400</SUP>148<SUP>400</SUP>156<SUP>400</SUP>160<SUP>880</SUP>164<SUP>1200</SUP>172<SUP>400</SUP>180<SUP>840</SUP>184<SUP>500</SUP>196<SUP>200</SUP>200<SUP>1860</SUP>208<SUP>500</SUP>216<SUP>200</SUP>240<SUP>1200</SUP>260<SUP>800</SUP>300<SUP>80</SUP>400<SUP>416</SUP>600<SUP>14</SUP>625<SUP>651</SUP> 
+      </P>
+    </TD>
+  </TR>
+  <TR> 
+    <TD> 
+      <P ALIGN=CENTER><A NAME="s5a"></A>42 </P>
+    </TD>
+    <TD> 
+      <P ALIGN=CENTER><A HREF="index.html#s5a">s5a</A> </P>
+    </TD>
+    <TD></TD>
+    <TD> 
+      <P ALIGN=LEFT>0<SUP>70</SUP>4<SUP>8000</SUP>8<SUP>8100</SUP>12<SUP>12800</SUP>16<SUP>15000</SUP>20<SUP>8400</SUP>24<SUP>16000</SUP>28<SUP>24000</SUP>32<SUP>50000</SUP>36<SUP>21000</SUP>40<SUP>27650</SUP>44<SUP>28000</SUP>48<SUP>20800</SUP>52<SUP>16400</SUP>56<SUP>26000</SUP>60<SUP>31000</SUP>68<SUP>7800</SUP>72<SUP>18000</SUP>80<SUP>8200</SUP>84<SUP>8000</SUP>88<SUP>10000</SUP>92<SUP>1000</SUP>96<SUP>1000</SUP>100<SUP>8080</SUP>104<SUP>1000</SUP>108<SUP>2000</SUP>112<SUP>4400</SUP>116<SUP>2000</SUP>120<SUP>4450</SUP>124<SUP>1000</SUP>132<SUP>3200</SUP>136<SUP>500</SUP>140<SUP>5600</SUP>148<SUP>6800</SUP>152<SUP>4000</SUP>160<SUP>1400</SUP>164<SUP>4000</SUP>168<SUP>200</SUP>200<SUP>340</SUP>204<SUP>2000</SUP>212<SUP>1200</SUP>220<SUP>1200</SUP>232<SUP>200</SUP>300<SUP>80</SUP>312<SUP>1200</SUP>400<SUP>220</SUP>440<SUP>200</SUP>520<SUP>50</SUP>600<SUP>610</SUP>625<SUP>651</SUP> 
+      </P>
+    </TD>
+  </TR>
+  <TR> 
+    <TD><A NAME="s5aDual"></A></TD>
+    <TD> 
+      <P ALIGN=CENTER><A HREF="index.html#s5a">s5aDual</A> </P>
+    </TD>
+    <TD></TD>
+    <TD> 
+      <P ALIGN=LEFT>0<SUP>10000</SUP>4<SUP>20000</SUP>8<SUP>31000</SUP>12<SUP>12400</SUP>16<SUP>36200</SUP>20<SUP>24000</SUP>24<SUP>42400</SUP>28<SUP>22800</SUP>32<SUP>33800</SUP>36<SUP>10400</SUP>40<SUP>34900</SUP>48<SUP>14000</SUP>52<SUP>12000</SUP>56<SUP>26200</SUP>60<SUP>10400</SUP>64<SUP>500</SUP>68<SUP>4000</SUP>72<SUP>2100</SUP>76<SUP>400</SUP>80<SUP>2000</SUP>84<SUP>9200</SUP>88<SUP>3000</SUP>92<SUP>1400</SUP>96<SUP>8000</SUP>100<SUP>3320</SUP>104<SUP>6000</SUP>108<SUP>2000</SUP>112<SUP>12100</SUP>120<SUP>100</SUP>124<SUP>2000</SUP>128<SUP>4100</SUP>140<SUP>2440</SUP>144<SUP>1000</SUP>152<SUP>2050</SUP>156<SUP>400</SUP>160<SUP>3040</SUP>164<SUP>4400</SUP>176<SUP>400</SUP>180<SUP>800</SUP>184<SUP>400</SUP>192<SUP>50</SUP>200<SUP>1140</SUP>220<SUP>800</SUP>236<SUP>400</SUP>240<SUP>1600</SUP>244<SUP>400</SUP>300<SUP>80</SUP>400<SUP>16</SUP>448<SUP>1000</SUP>456<SUP>250</SUP>512<SUP>500</SUP>520<SUP>750</SUP>600<SUP>514</SUP>625<SUP>651</SUP> 
+      </P>
+    </TD>
+  </TR>
+  <TR> 
+    <TD> 
+      <P ALIGN=CENTER><A NAME="a2b"></A>43 </P>
+    </TD>
+    <TD> 
+      <P ALIGN=CENTER><A HREF="index.html#a2b">a2b</A> </P>
+    </TD>
+    <TD></TD>
+    <TD> 
+      <P ALIGN=LEFT>0<SUP>24000</SUP>4<SUP>44000</SUP>8<SUP>22000</SUP>12<SUP>28400</SUP>16<SUP>36000</SUP>20<SUP>21400</SUP>24<SUP>8500</SUP>28<SUP>17000</SUP>32<SUP>9600</SUP>36<SUP>32000</SUP>40<SUP>16000</SUP>44<SUP>27000</SUP>48<SUP>50200</SUP>52<SUP>4000</SUP>56<SUP>9000</SUP>60<SUP>21800</SUP>64<SUP>8000</SUP>76<SUP>1000</SUP>84<SUP>12000</SUP>88<SUP>4000</SUP>100<SUP>4080</SUP>108<SUP>2000</SUP>112<SUP>4000</SUP>120<SUP>3350</SUP>132<SUP>1200</SUP>140<SUP>1500</SUP>160<SUP>200</SUP>168<SUP>400</SUP>192<SUP>400</SUP>200<SUP>910</SUP>216<SUP>2000</SUP>220<SUP>1400</SUP>292<SUP>800</SUP>300<SUP>760</SUP>312<SUP>2600</SUP>320<SUP>400</SUP>500<SUP>100</SUP>600<SUP>1150</SUP>625<SUP>651</SUP> 
+      </P>
+    </TD>
+  </TR>
+  <TR> 
+    <TD><A NAME="a2bDual"></A></TD>
+    <TD> 
+      <P ALIGN=CENTER><A HREF="index.html#a2b">a2bDual</A> </P>
+    </TD>
+    <TD></TD>
+    <TD> 
+      <P ALIGN=LEFT>0<SUP>2000</SUP>4<SUP>14400</SUP>8<SUP>7000</SUP>12<SUP>18500</SUP>16<SUP>13400</SUP>20<SUP>5580</SUP>24<SUP>1800</SUP>28<SUP>34000</SUP>32<SUP>14800</SUP>36<SUP>19400</SUP>40<SUP>24160</SUP>44<SUP>40200</SUP>48<SUP>26000</SUP>52<SUP>34000</SUP>56<SUP>18250</SUP>60<SUP>10200</SUP>64<SUP>36000</SUP>68<SUP>36000</SUP>72<SUP>22000</SUP>76<SUP>7000</SUP>80<SUP>5600</SUP>84<SUP>2000</SUP>92<SUP>5500</SUP>100<SUP>4000</SUP>108<SUP>2000</SUP>112<SUP>1400</SUP>116<SUP>2000</SUP>120<SUP>3000</SUP>124<SUP>1000</SUP>132<SUP>100</SUP>136<SUP>500</SUP>160<SUP>200</SUP>164<SUP>500</SUP>176<SUP>2000</SUP>180<SUP>800</SUP>188<SUP>2000</SUP>200<SUP>1150</SUP>220<SUP>2000</SUP>240<SUP>1200</SUP>300<SUP>200</SUP>308<SUP>400</SUP>328<SUP>100</SUP>340<SUP>100</SUP>440<SUP>100</SUP>520<SUP>200</SUP>600<SUP>410</SUP>625<SUP>651</SUP> 
+      </P>
+    </TD>
+  </TR>
+  <TR> 
+    <TD> 
+      <P ALIGN=CENTER><A NAME="a8c"></A>44 </P>
+    </TD>
+    <TD> 
+      <P ALIGN=CENTER><A HREF="index.html#a8c">a8c</A> </P>
+    </TD>
+    <TD></TD>
+    <TD> 
+      <P ALIGN=LEFT>8<SUP>9000</SUP>12<SUP>9200</SUP>16<SUP>18000</SUP>20<SUP>8400</SUP>24<SUP>500</SUP>28<SUP>32000</SUP>32<SUP>34400</SUP>36<SUP>52000</SUP>40<SUP>11200</SUP>44<SUP>24000</SUP>48<SUP>29200</SUP>52<SUP>15000</SUP>56<SUP>24000</SUP>60<SUP>13200</SUP>64<SUP>8000</SUP>68<SUP>11200</SUP>72<SUP>4000</SUP>76<SUP>18000</SUP>80<SUP>25600</SUP>88<SUP>14400</SUP>92<SUP>12000</SUP>100<SUP>160</SUP>104<SUP>12000</SUP>108<SUP>8000</SUP>112<SUP>800</SUP>120<SUP>10600</SUP>136<SUP>2000</SUP>140<SUP>10000</SUP>160<SUP>400</SUP>200<SUP>200</SUP>212<SUP>2000</SUP>220<SUP>400</SUP>240<SUP>400</SUP>248<SUP>400</SUP>280<SUP>100</SUP>300<SUP>480</SUP>312<SUP>400</SUP>320<SUP>400</SUP>392<SUP>400</SUP>400<SUP>40</SUP>600<SUP>670</SUP>625<SUP>651</SUP> 
+      </P>
+    </TD>
+  </TR>
+  <TR> 
+    <TD><A NAME="a8cDual"></A></TD>
+    <TD> 
+      <P ALIGN=CENTER><A HREF="index.html#a8c">a8cDual</A> </P>
+    </TD>
+    <TD></TD>
+    <TD> 
+      <P ALIGN=LEFT>0<SUP>8000</SUP>4<SUP>10000</SUP>8<SUP>16000</SUP>12<SUP>36000</SUP>16<SUP>23000</SUP>20<SUP>16080</SUP>24<SUP>24000</SUP>28<SUP>14000</SUP>32<SUP>10000</SUP>36<SUP>6000</SUP>40<SUP>19080</SUP>44<SUP>4000</SUP>48<SUP>2000</SUP>52<SUP>18000</SUP>56<SUP>25000</SUP>60<SUP>8000</SUP>64<SUP>18200</SUP>68<SUP>20000</SUP>72<SUP>10000</SUP>76<SUP>18000</SUP>80<SUP>2080</SUP>84<SUP>20000</SUP>88<SUP>16000</SUP>96<SUP>8000</SUP>100<SUP>2000</SUP>104<SUP>18400</SUP>108<SUP>4000</SUP>112<SUP>12000</SUP>116<SUP>8000</SUP>120<SUP>5600</SUP>124<SUP>1200</SUP>136<SUP>400</SUP>140<SUP>4000</SUP>144<SUP>3000</SUP>148<SUP>400</SUP>156<SUP>1200</SUP>160<SUP>4400</SUP>168<SUP>1200</SUP>176<SUP>400</SUP>180<SUP>1600</SUP>200<SUP>800</SUP>220<SUP>800</SUP>248<SUP>100</SUP>260<SUP>800</SUP>280<SUP>1000</SUP>300<SUP>200</SUP>400<SUP>16</SUP>600<SUP>194</SUP>625<SUP>651</SUP> 
+      </P>
+    </TD>
+  </TR>
+  <TR> 
+    <TD> 
+      <P ALIGN=CENTER><A NAME="b7b"></A>45 </P>
+    </TD>
+    <TD> 
+      <P ALIGN=CENTER><A HREF="index.html#b7b">b7b</A> </P>
+    </TD>
+    <TD></TD>
+    <TD> 
+      <P ALIGN=LEFT>0<SUP>22060</SUP>4<SUP>20000</SUP>8<SUP>45000</SUP>12<SUP>12800</SUP>16<SUP>15000</SUP>20<SUP>28600</SUP>24<SUP>41500</SUP>28<SUP>22000</SUP>32<SUP>34400</SUP>36<SUP>13000</SUP>40<SUP>19000</SUP>44<SUP>8000</SUP>48<SUP>11800</SUP>52<SUP>16400</SUP>56<SUP>18000</SUP>60<SUP>23100</SUP>64<SUP>14000</SUP>68<SUP>800</SUP>72<SUP>6000</SUP>76<SUP>4000</SUP>80<SUP>11400</SUP>88<SUP>1500</SUP>92<SUP>8500</SUP>96<SUP>4000</SUP>100<SUP>5120</SUP>112<SUP>2400</SUP>120<SUP>1050</SUP>128<SUP>500</SUP>132<SUP>5400</SUP>140<SUP>2600</SUP>148<SUP>200</SUP>152<SUP>200</SUP>160<SUP>400</SUP>168<SUP>600</SUP>200<SUP>180</SUP>212<SUP>800</SUP>220<SUP>200</SUP>232<SUP>200</SUP>240<SUP>1100</SUP>300<SUP>40</SUP>312<SUP>200</SUP>320<SUP>200</SUP>340<SUP>200</SUP>600<SUP>700</SUP>625<SUP>651</SUP> 
+      </P>
+    </TD>
+  </TR>
+  <TR> 
+    <TD><A NAME="b7bDual"></A></TD>
+    <TD> 
+      <P ALIGN=CENTER><A HREF="index.html#b7b">b7bDual</A> </P>
+    </TD>
+    <TD></TD>
+    <TD> 
+      <P ALIGN=LEFT>0<SUP>25140</SUP>4<SUP>48000</SUP>8<SUP>17200</SUP>12<SUP>17000</SUP>16<SUP>24000</SUP>20<SUP>31000</SUP>24<SUP>28000</SUP>28<SUP>29400</SUP>32<SUP>11500</SUP>36<SUP>19000</SUP>40<SUP>19740</SUP>44<SUP>10200</SUP>48<SUP>9200</SUP>52<SUP>5200</SUP>56<SUP>13000</SUP>60<SUP>23000</SUP>64<SUP>9100</SUP>68<SUP>7000</SUP>72<SUP>23000</SUP>76<SUP>5200</SUP>80<SUP>7000</SUP>84<SUP>2400</SUP>88<SUP>7700</SUP>92<SUP>400</SUP>96<SUP>1900</SUP>100<SUP>2360</SUP>104<SUP>1500</SUP>108<SUP>1200</SUP>112<SUP>4000</SUP>116<SUP>2600</SUP>120<SUP>1580</SUP>124<SUP>2000</SUP>136<SUP>1000</SUP>140<SUP>1600</SUP>144<SUP>300</SUP>160<SUP>2000</SUP>164<SUP>1000</SUP>168<SUP>1700</SUP>180<SUP>400</SUP>188<SUP>200</SUP>200<SUP>1560</SUP>216<SUP>500</SUP>220<SUP>400</SUP>232<SUP>200</SUP>240<SUP>1000</SUP>260<SUP>400</SUP>280<SUP>900</SUP>300<SUP>40</SUP>400<SUP>416</SUP>600<SUP>14</SUP>625<SUP>651</SUP> 
+      </P>
+    </TD>
+  </TR>
+  <TR> 
+    <TD> 
+      <P ALIGN=CENTER><A NAME="a5a"></A>46 </P>
+    </TD>
+    <TD> 
+      <P ALIGN=CENTER><A HREF="index.html#a5a">a5a</A> </P>
+    </TD>
+    <TD></TD>
+    <TD> 
+      <P ALIGN=LEFT>0<SUP>26140</SUP>4<SUP>59000</SUP>8<SUP>54050</SUP>12<SUP>48700</SUP>16<SUP>39000</SUP>20<SUP>19600</SUP>24<SUP>22000</SUP>28<SUP>15000</SUP>32<SUP>26200</SUP>36<SUP>15000</SUP>40<SUP>26300</SUP>44<SUP>4000</SUP>48<SUP>11900</SUP>52<SUP>4500</SUP>56<SUP>7000</SUP>60<SUP>8250</SUP>64<SUP>7000</SUP>68<SUP>3400</SUP>72<SUP>2500</SUP>76<SUP>2000</SUP>80<SUP>1000</SUP>84<SUP>1000</SUP>88<SUP>1300</SUP>92<SUP>1000</SUP>96<SUP>1000</SUP>100<SUP>1220</SUP>104<SUP>1000</SUP>108<SUP>2500</SUP>112<SUP>800</SUP>120<SUP>2700</SUP>124<SUP>500</SUP>132<SUP>800</SUP>140<SUP>1700</SUP>148<SUP>600</SUP>160<SUP>350</SUP>168<SUP>400</SUP>180<SUP>150</SUP>200<SUP>160</SUP>212<SUP>400</SUP>220<SUP>350</SUP>232<SUP>500</SUP>240<SUP>950</SUP>248<SUP>200</SUP>300<SUP>100</SUP>320<SUP>50</SUP>332<SUP>100</SUP>340<SUP>50</SUP>392<SUP>50</SUP>400<SUP>20</SUP>440<SUP>50</SUP>600<SUP>610</SUP>625<SUP>651</SUP> 
+      </P>
+    </TD>
+  </TR>
+  <TR> 
+    <TD><A NAME="a5aDual"></A></TD>
+    <TD> 
+      <P ALIGN=CENTER><A HREF="index.html#a5a">a5aDual</A> </P>
+    </TD>
+    <TD></TD>
+    <TD> 
+      <P ALIGN=LEFT>0<SUP>11080</SUP>4<SUP>48500</SUP>8<SUP>40700</SUP>12<SUP>35850</SUP>16<SUP>30300</SUP>20<SUP>37620</SUP>24<SUP>32400</SUP>28<SUP>15750</SUP>32<SUP>33350</SUP>36<SUP>22600</SUP>40<SUP>23490</SUP>44<SUP>17600</SUP>48<SUP>4600</SUP>52<SUP>10950</SUP>56<SUP>9500</SUP>60<SUP>7900</SUP>64<SUP>6300</SUP>68<SUP>4750</SUP>72<SUP>1600</SUP>76<SUP>3700</SUP>80<SUP>2300</SUP>84<SUP>2000</SUP>88<SUP>350</SUP>92<SUP>1000</SUP>96<SUP>1100</SUP>100<SUP>2900</SUP>104<SUP>550</SUP>108<SUP>1800</SUP>116<SUP>1550</SUP>120<SUP>2700</SUP>140<SUP>2250</SUP>152<SUP>550</SUP>160<SUP>850</SUP>168<SUP>100</SUP>172<SUP>200</SUP>176<SUP>100</SUP>180<SUP>600</SUP>188<SUP>100</SUP>196<SUP>300</SUP>200<SUP>300</SUP>220<SUP>800</SUP>240<SUP>600</SUP>260<SUP>200</SUP>280<SUP>200</SUP>300<SUP>600</SUP>320<SUP>200</SUP>340<SUP>200</SUP>600<SUP>210</SUP>625<SUP>651</SUP> 
+      </P>
+    </TD>
+  </TR>
+  <TR> 
+    <TD> 
+      <P ALIGN=CENTER><A NAME="a1a"></A>47 </P>
+    </TD>
+    <TD> 
+      <P ALIGN=CENTER><A HREF="index.html#a1a">a1a</A> </P>
+    </TD>
+    <TD></TD>
+    <TD> 
+      <P ALIGN=LEFT>0<SUP>10000</SUP>4<SUP>38000</SUP>8<SUP>20000</SUP>12<SUP>31200</SUP>16<SUP>32000</SUP>20<SUP>16800</SUP>24<SUP>34000</SUP>28<SUP>33000</SUP>32<SUP>35300</SUP>36<SUP>17000</SUP>40<SUP>18500</SUP>44<SUP>7000</SUP>48<SUP>8600</SUP>52<SUP>18200</SUP>56<SUP>23000</SUP>60<SUP>19000</SUP>64<SUP>20500</SUP>68<SUP>13000</SUP>80<SUP>1000</SUP>84<SUP>4000</SUP>88<SUP>6600</SUP>92<SUP>200</SUP>100<SUP>4080</SUP>104<SUP>2000</SUP>112<SUP>400</SUP>120<SUP>200</SUP>132<SUP>800</SUP>140<SUP>1400</SUP>148<SUP>200</SUP>160<SUP>600</SUP>168<SUP>400</SUP>192<SUP>450</SUP>200<SUP>730</SUP>212<SUP>400</SUP>220<SUP>1200</SUP>240<SUP>400</SUP>300<SUP>40</SUP>312<SUP>400</SUP>320<SUP>500</SUP>340<SUP>200</SUP>392<SUP>200</SUP>400<SUP>20</SUP>420<SUP>600</SUP>440<SUP>200</SUP>592<SUP>100</SUP>600<SUP>730</SUP>625<SUP>651</SUP> 
+      </P>
+    </TD>
+  </TR>
+  <TR> 
+    <TD><A NAME="a1aDual"></A></TD>
+    <TD> 
+      <P ALIGN=CENTER><A HREF="index.html#a1a">a1aDual</A> </P>
+    </TD>
+    <TD></TD>
+    <TD> 
+      <P ALIGN=LEFT>0<SUP>5020</SUP>4<SUP>13400</SUP>8<SUP>27200</SUP>12<SUP>24000</SUP>16<SUP>29000</SUP>20<SUP>35000</SUP>24<SUP>25200</SUP>28<SUP>10000</SUP>32<SUP>4000</SUP>36<SUP>25000</SUP>40<SUP>15000</SUP>44<SUP>11600</SUP>48<SUP>41600</SUP>52<SUP>14200</SUP>56<SUP>11150</SUP>60<SUP>18200</SUP>64<SUP>20600</SUP>68<SUP>14600</SUP>72<SUP>400</SUP>76<SUP>4400</SUP>80<SUP>6580</SUP>84<SUP>5000</SUP>88<SUP>11000</SUP>92<SUP>15000</SUP>96<SUP>1500</SUP>100<SUP>1960</SUP>104<SUP>5050</SUP>112<SUP>6400</SUP>116<SUP>200</SUP>120<SUP>8600</SUP>128<SUP>1000</SUP>136<SUP>900</SUP>140<SUP>2480</SUP>144<SUP>1600</SUP>160<SUP>1600</SUP>164<SUP>200</SUP>176<SUP>400</SUP>180<SUP>1240</SUP>200<SUP>1240</SUP>220<SUP>800</SUP>240<SUP>400</SUP>260<SUP>400</SUP>400<SUP>18</SUP>600<SUP>12</SUP>625<SUP>651</SUP> 
+      </P>
+    </TD>
+  </TR>
+  <TR> 
+    <TD> 
+      <P ALIGN=CENTER><A NAME="a4b"></A>48 </P>
+    </TD>
+    <TD> 
+      <P ALIGN=CENTER><A HREF="index.html#a4b">a4b</A> </P>
+    </TD>
+    <TD></TD>
+    <TD> 
+      <P ALIGN=LEFT>0<SUP>8570</SUP>4<SUP>33000</SUP>8<SUP>44500</SUP>12<SUP>45700</SUP>16<SUP>36000</SUP>20<SUP>44900</SUP>24<SUP>35500</SUP>28<SUP>33000</SUP>32<SUP>35900</SUP>36<SUP>21000</SUP>40<SUP>10800</SUP>44<SUP>10000</SUP>48<SUP>10000</SUP>52<SUP>11900</SUP>56<SUP>8000</SUP>60<SUP>7000</SUP>64<SUP>6000</SUP>68<SUP>600</SUP>72<SUP>2000</SUP>76<SUP>2000</SUP>80<SUP>1200</SUP>84<SUP>2000</SUP>92<SUP>1000</SUP>100<SUP>100</SUP>112<SUP>700</SUP>120<SUP>1600</SUP>124<SUP>1000</SUP>132<SUP>500</SUP>140<SUP>2450</SUP>148<SUP>500</SUP>152<SUP>200</SUP>160<SUP>350</SUP>168<SUP>250</SUP>180<SUP>150</SUP>192<SUP>300</SUP>200<SUP>450</SUP>212<SUP>900</SUP>220<SUP>800</SUP>232<SUP>500</SUP>240<SUP>400</SUP>248<SUP>200</SUP>260<SUP>100</SUP>268<SUP>100</SUP>320<SUP>100</SUP>340<SUP>100</SUP>392<SUP>100</SUP>400<SUP>10</SUP>440<SUP>50</SUP>600<SUP>670</SUP>625<SUP>651</SUP> 
+      </P>
+    </TD>
+  </TR>
+  <TR> 
+    <TD><A NAME="a4bDual"></A></TD>
+    <TD> 
+      <P ALIGN=CENTER><A HREF="index.html#a4b">a4bDual</A> </P>
+    </TD>
+    <TD></TD>
+    <TD> 
+      <P ALIGN=LEFT>0<SUP>19570</SUP>4<SUP>35950</SUP>8<SUP>40750</SUP>12<SUP>27800</SUP>16<SUP>40050</SUP>20<SUP>39850</SUP>24<SUP>38650</SUP>28<SUP>11600</SUP>32<SUP>22550</SUP>36<SUP>19700</SUP>40<SUP>15550</SUP>44<SUP>7750</SUP>48<SUP>4050</SUP>52<SUP>9450</SUP>56<SUP>10300</SUP>60<SUP>12000</SUP>64<SUP>15000</SUP>68<SUP>5600</SUP>72<SUP>4350</SUP>76<SUP>2350</SUP>80<SUP>5140</SUP>84<SUP>7850</SUP>88<SUP>3650</SUP>92<SUP>5900</SUP>96<SUP>200</SUP>100<SUP>2600</SUP>104<SUP>700</SUP>108<SUP>250</SUP>112<SUP>600</SUP>116<SUP>1500</SUP>120<SUP>2300</SUP>128<SUP>750</SUP>132<SUP>150</SUP>136<SUP>600</SUP>140<SUP>1700</SUP>148<SUP>100</SUP>156<SUP>100</SUP>160<SUP>1920</SUP>172<SUP>500</SUP>176<SUP>500</SUP>180<SUP>700</SUP>200<SUP>540</SUP>220<SUP>400</SUP>240<SUP>600</SUP>280<SUP>600</SUP>300<SUP>400</SUP>400<SUP>18</SUP>600<SUP>12</SUP>625<SUP>651</SUP> 
+      </P>
+    </TD>
+  </TR>
+  <TR> 
+    <TD> 
+      <P ALIGN=CENTER><A NAME="a4c"></A>49 </P>
+    </TD>
+    <TD> 
+      <P ALIGN=CENTER><A HREF="index.html#a4c">a4c</A> </P>
+    </TD>
+    <TD></TD>
+    <TD> 
+      <P ALIGN=LEFT>0<SUP>22090</SUP>4<SUP>46000</SUP>8<SUP>41000</SUP>12<SUP>37600</SUP>16<SUP>26000</SUP>20<SUP>34950</SUP>24<SUP>43500</SUP>28<SUP>35000</SUP>32<SUP>28700</SUP>36<SUP>27000</SUP>40<SUP>14400</SUP>44<SUP>5000</SUP>48<SUP>15800</SUP>52<SUP>8400</SUP>56<SUP>6000</SUP>60<SUP>5150</SUP>64<SUP>3000</SUP>68<SUP>4300</SUP>72<SUP>500</SUP>76<SUP>5000</SUP>80<SUP>200</SUP>84<SUP>1000</SUP>88<SUP>1100</SUP>92<SUP>100</SUP>100<SUP>300</SUP>112<SUP>2000</SUP>120<SUP>900</SUP>132<SUP>800</SUP>140<SUP>1450</SUP>160<SUP>300</SUP>168<SUP>100</SUP>192<SUP>250</SUP>200<SUP>290</SUP>212<SUP>1000</SUP>220<SUP>1100</SUP>232<SUP>400</SUP>240<SUP>400</SUP>248<SUP>200</SUP>280<SUP>50</SUP>292<SUP>100</SUP>312<SUP>300</SUP>340<SUP>100</SUP>392<SUP>100</SUP>400<SUP>20</SUP>420<SUP>50</SUP>500<SUP>240</SUP>520<SUP>200</SUP>600<SUP>710</SUP>625<SUP>651</SUP> 
+      </P>
+    </TD>
+  </TR>
+  <TR> 
+    <TD><A NAME="a4cDual"></A></TD>
+    <TD> 
+      <P ALIGN=CENTER><A HREF="index.html#a4c">a4cDual</A> </P>
+    </TD>
+    <TD></TD>
+    <TD> 
+      <P ALIGN=LEFT>0<SUP>9020</SUP>4<SUP>33200</SUP>8<SUP>34750</SUP>12<SUP>31300</SUP>16<SUP>31450</SUP>20<SUP>27250</SUP>24<SUP>26350</SUP>28<SUP>16350</SUP>32<SUP>17000</SUP>36<SUP>25500</SUP>40<SUP>28900</SUP>44<SUP>12550</SUP>48<SUP>12250</SUP>52<SUP>15700</SUP>56<SUP>20350</SUP>60<SUP>5550</SUP>64<SUP>15900</SUP>68<SUP>7100</SUP>72<SUP>7100</SUP>76<SUP>4950</SUP>80<SUP>3990</SUP>84<SUP>7200</SUP>88<SUP>3650</SUP>92<SUP>700</SUP>96<SUP>2400</SUP>100<SUP>4220</SUP>104<SUP>2800</SUP>108<SUP>1200</SUP>112<SUP>100</SUP>116<SUP>900</SUP>120<SUP>3480</SUP>124<SUP>550</SUP>132<SUP>100</SUP>136<SUP>450</SUP>140<SUP>2320</SUP>144<SUP>600</SUP>152<SUP>100</SUP>156<SUP>1000</SUP>160<SUP>800</SUP>180<SUP>1800</SUP>200<SUP>1340</SUP>220<SUP>200</SUP>240<SUP>400</SUP>280<SUP>100</SUP>300<SUP>200</SUP>400<SUP>18</SUP>600<SUP>12</SUP>625<SUP>651</SUP> 
+      </P>
+    </TD>
+  </TR>
+  <TR> 
+    <TD> 
+      <P ALIGN=CENTER><A NAME="b6b"></A>50 </P>
+    </TD>
+    <TD> 
+      <P ALIGN=CENTER><A HREF="index.html#b6b">b6b</A> </P>
+    </TD>
+    <TD></TD>
+    <TD> 
+      <P ALIGN=LEFT>0<SUP>13040</SUP>4<SUP>29000</SUP>8<SUP>24000</SUP>12<SUP>38500</SUP>16<SUP>22000</SUP>20<SUP>17700</SUP>24<SUP>28500</SUP>28<SUP>26500</SUP>32<SUP>23500</SUP>36<SUP>47000</SUP>40<SUP>27650</SUP>44<SUP>25000</SUP>48<SUP>6500</SUP>52<SUP>12100</SUP>56<SUP>8000</SUP>60<SUP>16650</SUP>64<SUP>5000</SUP>68<SUP>7600</SUP>72<SUP>7000</SUP>76<SUP>8000</SUP>80<SUP>3200</SUP>84<SUP>7000</SUP>88<SUP>200</SUP>96<SUP>2000</SUP>100<SUP>1260</SUP>108<SUP>3000</SUP>112<SUP>2300</SUP>116<SUP>500</SUP>120<SUP>1300</SUP>132<SUP>900</SUP>136<SUP>1000</SUP>140<SUP>2100</SUP>148<SUP>300</SUP>160<SUP>500</SUP>168<SUP>450</SUP>192<SUP>100</SUP>200<SUP>70</SUP>212<SUP>1100</SUP>220<SUP>850</SUP>240<SUP>450</SUP>248<SUP>400</SUP>320<SUP>150</SUP>400<SUP>170</SUP>600<SUP>610</SUP>625<SUP>651</SUP> 
+      </P>
+    </TD>
+  </TR>
+  <TR> 
+    <TD><A NAME="b6bDual"></A></TD>
+    <TD> 
+      <P ALIGN=CENTER><A HREF="index.html#b6b">b6bDual</A> </P>
+    </TD>
+    <TD></TD>
+    <TD> 
+      <P ALIGN=LEFT>0<SUP>15020</SUP>4<SUP>45300</SUP>8<SUP>27250</SUP>12<SUP>33100</SUP>16<SUP>27500</SUP>20<SUP>32500</SUP>24<SUP>35250</SUP>28<SUP>14900</SUP>32<SUP>22500</SUP>36<SUP>19950</SUP>40<SUP>17700</SUP>44<SUP>17500</SUP>48<SUP>13550</SUP>52<SUP>14700</SUP>56<SUP>12400</SUP>60<SUP>8150</SUP>64<SUP>11050</SUP>68<SUP>8000</SUP>72<SUP>4000</SUP>76<SUP>2050</SUP>80<SUP>3900</SUP>84<SUP>6100</SUP>88<SUP>3500</SUP>92<SUP>600</SUP>96<SUP>3700</SUP>100<SUP>2520</SUP>104<SUP>300</SUP>108<SUP>150</SUP>112<SUP>1100</SUP>116<SUP>200</SUP>120<SUP>2240</SUP>124<SUP>550</SUP>128<SUP>2350</SUP>132<SUP>200</SUP>136<SUP>500</SUP>140<SUP>1450</SUP>148<SUP>200</SUP>152<SUP>50</SUP>156<SUP>200</SUP>160<SUP>3700</SUP>180<SUP>1700</SUP>184<SUP>500</SUP>192<SUP>200</SUP>200<SUP>790</SUP>216<SUP>500</SUP>220<SUP>1000</SUP>236<SUP>100</SUP>240<SUP>800</SUP>244<SUP>300</SUP>256<SUP>100</SUP>264<SUP>100</SUP>280<SUP>400</SUP>304<SUP>250</SUP>320<SUP>200</SUP>340<SUP>200</SUP>360<SUP>100</SUP>400<SUP>18</SUP>600<SUP>12</SUP>625<SUP>651</SUP> 
+      </P>
+    </TD>
+  </TR>
+  <TR> 
+    <TD> 
+      <P ALIGN=CENTER><A NAME="b8b"></A>51 </P>
+    </TD>
+    <TD> 
+      <P ALIGN=CENTER><A HREF="index.html#b8b">b8b</A> </P>
+    </TD>
+    <TD></TD>
+    <TD> 
+      <P ALIGN=LEFT>0<SUP>15570</SUP>4<SUP>28500</SUP>8<SUP>40000</SUP>12<SUP>37750</SUP>16<SUP>33500</SUP>20<SUP>41300</SUP>24<SUP>40500</SUP>28<SUP>32000</SUP>32<SUP>25100</SUP>36<SUP>22000</SUP>40<SUP>15750</SUP>44<SUP>9500</SUP>48<SUP>11450</SUP>52<SUP>15350</SUP>56<SUP>9500</SUP>60<SUP>11850</SUP>64<SUP>4500</SUP>68<SUP>7650</SUP>72<SUP>1500</SUP>76<SUP>1000</SUP>80<SUP>2100</SUP>84<SUP>1500</SUP>88<SUP>1600</SUP>92<SUP>1000</SUP>96<SUP>1000</SUP>100<SUP>580</SUP>108<SUP>1000</SUP>112<SUP>800</SUP>120<SUP>1250</SUP>132<SUP>650</SUP>140<SUP>2200</SUP>148<SUP>300</SUP>160<SUP>300</SUP>168<SUP>450</SUP>200<SUP>250</SUP>212<SUP>900</SUP>220<SUP>700</SUP>232<SUP>400</SUP>240<SUP>350</SUP>248<SUP>50</SUP>260<SUP>50</SUP>300<SUP>130</SUP>312<SUP>200</SUP>320<SUP>350</SUP>340<SUP>50</SUP>400<SUP>60</SUP>500<SUP>60</SUP>600<SUP>600</SUP>625<SUP>651</SUP> 
+      </P>
+    </TD>
+  </TR>
+  <TR> 
+    <TD><A NAME="b8bDual"></A></TD>
+    <TD> 
+      <P ALIGN=CENTER><A HREF="index.html#b8b">b8bDual</A> </P>
+    </TD>
+    <TD></TD>
+    <TD> 
+      <P ALIGN=LEFT>0<SUP>18520</SUP>4<SUP>32500</SUP>8<SUP>31800</SUP>12<SUP>34150</SUP>16<SUP>25250</SUP>20<SUP>30650</SUP>24<SUP>42450</SUP>28<SUP>22350</SUP>32<SUP>27300</SUP>36<SUP>24300</SUP>40<SUP>18550</SUP>44<SUP>20150</SUP>48<SUP>9000</SUP>52<SUP>7950</SUP>56<SUP>7800</SUP>60<SUP>12300</SUP>64<SUP>11200</SUP>68<SUP>5750</SUP>72<SUP>4500</SUP>76<SUP>5600</SUP>80<SUP>6150</SUP>84<SUP>3300</SUP>88<SUP>1050</SUP>92<SUP>950</SUP>96<SUP>800</SUP>100<SUP>5220</SUP>104<SUP>950</SUP>108<SUP>300</SUP>112<SUP>250</SUP>116<SUP>400</SUP>120<SUP>1210</SUP>124<SUP>700</SUP>128<SUP>100</SUP>132<SUP>300</SUP>136<SUP>350</SUP>140<SUP>1380</SUP>160<SUP>1200</SUP>164<SUP>250</SUP>168<SUP>100</SUP>176<SUP>100</SUP>180<SUP>1100</SUP>184<SUP>50</SUP>196<SUP>200</SUP>200<SUP>1040</SUP>208<SUP>50</SUP>220<SUP>1300</SUP>224<SUP>200</SUP>228<SUP>100</SUP>232<SUP>150</SUP>240<SUP>1000</SUP>252<SUP>50</SUP>260<SUP>250</SUP>280<SUP>100</SUP>300<SUP>300</SUP>340<SUP>100</SUP>400<SUP>18</SUP>600<SUP>12</SUP>625<SUP>651</SUP> 
+      </P>
+    </TD>
+  </TR>
+  <TR> 
+    <TD> 
+      <P ALIGN=CENTER><A NAME="a4d"></A>52 </P>
+    </TD>
+    <TD> 
+      <P ALIGN=CENTER><A HREF="index.html#a4d">a4d</A> </P>
+    </TD>
+    <TD></TD>
+    <TD> 
+      <P ALIGN=LEFT>0<SUP>35030</SUP>4<SUP>69000</SUP>8<SUP>53000</SUP>12<SUP>36700</SUP>16<SUP>27000</SUP>20<SUP>38350</SUP>24<SUP>29000</SUP>28<SUP>22500</SUP>32<SUP>20950</SUP>36<SUP>15000</SUP>40<SUP>13750</SUP>44<SUP>8500</SUP>48<SUP>7850</SUP>52<SUP>7850</SUP>56<SUP>5000</SUP>60<SUP>5200</SUP>64<SUP>2500</SUP>68<SUP>2950</SUP>72<SUP>7000</SUP>76<SUP>500</SUP>80<SUP>1400</SUP>88<SUP>700</SUP>92<SUP>50</SUP>96<SUP>500</SUP>100<SUP>400</SUP>112<SUP>1700</SUP>120<SUP>1650</SUP>132<SUP>800</SUP>140<SUP>1650</SUP>148<SUP>50</SUP>152<SUP>100</SUP>160<SUP>500</SUP>168<SUP>150</SUP>180<SUP>100</SUP>192<SUP>250</SUP>200<SUP>390</SUP>212<SUP>1350</SUP>220<SUP>750</SUP>232<SUP>250</SUP>240<SUP>150</SUP>252<SUP>100</SUP>260<SUP>100</SUP>292<SUP>50</SUP>300<SUP>110</SUP>312<SUP>250</SUP>320<SUP>250</SUP>340<SUP>50</SUP>392<SUP>50</SUP>400<SUP>60</SUP>412<SUP>100</SUP>420<SUP>200</SUP>500<SUP>530</SUP>600<SUP>780</SUP>625<SUP>651</SUP> 
+      </P>
+    </TD>
+  </TR>
+  <TR> 
+    <TD><A NAME="a4dDual"></A></TD>
+    <TD> 
+      <P ALIGN=CENTER><A HREF="index.html#a4d">a4dDual</A> </P>
+    </TD>
+    <TD></TD>
+    <TD> 
+      <P ALIGN=LEFT>0<SUP>13120</SUP>4<SUP>25500</SUP>8<SUP>21300</SUP>12<SUP>18700</SUP>16<SUP>24900</SUP>20<SUP>26500</SUP>24<SUP>29050</SUP>28<SUP>27100</SUP>32<SUP>25600</SUP>36<SUP>25850</SUP>40<SUP>24700</SUP>44<SUP>28300</SUP>48<SUP>10050</SUP>52<SUP>20300</SUP>56<SUP>18250</SUP>60<SUP>12550</SUP>64<SUP>12900</SUP>68<SUP>5500</SUP>72<SUP>6750</SUP>76<SUP>4500</SUP>80<SUP>7150</SUP>84<SUP>8150</SUP>88<SUP>4550</SUP>92<SUP>2600</SUP>96<SUP>1600</SUP>100<SUP>2450</SUP>104<SUP>1350</SUP>108<SUP>1050</SUP>112<SUP>250</SUP>116<SUP>350</SUP>120<SUP>1780</SUP>124<SUP>1250</SUP>128<SUP>250</SUP>132<SUP>250</SUP>136<SUP>500</SUP>140<SUP>2240</SUP>156<SUP>700</SUP>160<SUP>1240</SUP>164<SUP>350</SUP>180<SUP>700</SUP>200<SUP>740</SUP>208<SUP>250</SUP>220<SUP>100</SUP>228<SUP>250</SUP>240<SUP>900</SUP>280<SUP>500</SUP>300<SUP>100</SUP>320<SUP>100</SUP>400<SUP>18</SUP>600<SUP>12</SUP>625<SUP>651</SUP> 
+      </P>
+    </TD>
+  </TR>
+  <TR> 
+    <TD> 
+      <P ALIGN=CENTER><A NAME="b5b"></A>53 </P>
+    </TD>
+    <TD> 
+      <P ALIGN=CENTER><A HREF="index.html#b5b">b5b</A> </P>
+    </TD>
+    <TD></TD>
+    <TD> 
+      <P ALIGN=LEFT>20<SUP>30500</SUP>28<SUP>20000</SUP>32<SUP>3000</SUP>40<SUP>1500</SUP>56<SUP>20000</SUP>60<SUP>6500</SUP>68<SUP>12000</SUP>76<SUP>25000</SUP>88<SUP>46500</SUP>92<SUP>10000</SUP>96<SUP>60000</SUP>100<SUP>40200</SUP>108<SUP>10000</SUP>112<SUP>10000</SUP>116<SUP>10000</SUP>120<SUP>39750</SUP>124<SUP>15000</SUP>128<SUP>5000</SUP>136<SUP>10000</SUP>140<SUP>5500</SUP>144<SUP>20000</SUP>152<SUP>2000</SUP>160<SUP>5750</SUP>164<SUP>10000</SUP>200<SUP>300</SUP>220<SUP>1000</SUP>240<SUP>500</SUP>260<SUP>2000</SUP>600<SUP>1150</SUP>625<SUP>651</SUP> 
+      </P>
+    </TD>
+  </TR>
+  <TR> 
+    <TD><A NAME="b5bDual"></A></TD>
+    <TD> 
+      <P ALIGN=CENTER><A HREF="index.html#b5b">b5bDual</A> </P>
+    </TD>
+    <TD></TD>
+    <TD> 
+      <P ALIGN=LEFT>0<SUP>11290</SUP>8<SUP>10000</SUP>12<SUP>15000</SUP>16<SUP>5000</SUP>20<SUP>25200</SUP>24<SUP>2500</SUP>36<SUP>10000</SUP>40<SUP>20500</SUP>44<SUP>40000</SUP>48<SUP>21000</SUP>52<SUP>5000</SUP>60<SUP>32500</SUP>64<SUP>2500</SUP>68<SUP>4000</SUP>72<SUP>12500</SUP>76<SUP>12500</SUP>80<SUP>22000</SUP>96<SUP>20000</SUP>100<SUP>5000</SUP>112<SUP>15000</SUP>116<SUP>5000</SUP>120<SUP>30000</SUP>124<SUP>20000</SUP>140<SUP>1000</SUP>156<SUP>20000</SUP>160<SUP>2500</SUP>172<SUP>12500</SUP>184<SUP>10000</SUP>188<SUP>5000</SUP>200<SUP>7000</SUP>204<SUP>2500</SUP>208<SUP>5000</SUP>240<SUP>1000</SUP>244<SUP>500</SUP>248<SUP>500</SUP>260<SUP>2000</SUP>264<SUP>1500</SUP>272<SUP>1000</SUP>276<SUP>1000</SUP>280<SUP>1250</SUP>300<SUP>2200</SUP>600<SUP>210</SUP>625<SUP>651</SUP> 
+      </P>
+    </TD>
+  </TR>
+  <TR> 
+    <TD> 
+      <P ALIGN=CENTER><A NAME="b7c"></A>54 </P>
+    </TD>
+    <TD> 
+      <P ALIGN=CENTER><A HREF="index.html#b7c">b7c</A> </P>
+    </TD>
+    <TD></TD>
+    <TD> 
+      <P ALIGN=LEFT>0<SUP>80</SUP>8<SUP>12000</SUP>12<SUP>8800</SUP>20<SUP>600</SUP>28<SUP>12000</SUP>32<SUP>3000</SUP>36<SUP>4000</SUP>40<SUP>19600</SUP>44<SUP>42000</SUP>48<SUP>24200</SUP>52<SUP>12600</SUP>56<SUP>26000</SUP>60<SUP>17000</SUP>64<SUP>20000</SUP>68<SUP>37200</SUP>72<SUP>8000</SUP>76<SUP>20000</SUP>80<SUP>16100</SUP>84<SUP>10000</SUP>88<SUP>6000</SUP>92<SUP>13200</SUP>96<SUP>35000</SUP>100<SUP>14100</SUP>104<SUP>1000</SUP>108<SUP>13000</SUP>112<SUP>14200</SUP>116<SUP>7000</SUP>120<SUP>5100</SUP>124<SUP>2000</SUP>128<SUP>3000</SUP>132<SUP>3600</SUP>140<SUP>3800</SUP>148<SUP>2200</SUP>152<SUP>2200</SUP>160<SUP>350</SUP>168<SUP>400</SUP>192<SUP>200</SUP>200<SUP>140</SUP>204<SUP>1000</SUP>212<SUP>600</SUP>220<SUP>300</SUP>232<SUP>200</SUP>240<SUP>400</SUP>300<SUP>20</SUP>312<SUP>100</SUP>320<SUP>200</SUP>600<SUP>660</SUP>625<SUP>651</SUP> 
+      </P>
+    </TD>
+  </TR>
+  <TR> 
+    <TD><A NAME="b7cDual"></A></TD>
+    <TD> 
+      <P ALIGN=CENTER><A HREF="index.html#b7c">b7cDual</A> </P>
+    </TD>
+    <TD></TD>
+    <TD> 
+      <P ALIGN=LEFT>0<SUP>3000</SUP>4<SUP>23000</SUP>8<SUP>24000</SUP>12<SUP>9200</SUP>16<SUP>16000</SUP>20<SUP>18100</SUP>24<SUP>18000</SUP>28<SUP>2500</SUP>32<SUP>20300</SUP>36<SUP>33000</SUP>40<SUP>17260</SUP>44<SUP>10200</SUP>48<SUP>10000</SUP>52<SUP>17000</SUP>56<SUP>12000</SUP>60<SUP>10240</SUP>64<SUP>9550</SUP>68<SUP>9000</SUP>72<SUP>15300</SUP>76<SUP>27500</SUP>80<SUP>1440</SUP>84<SUP>24100</SUP>88<SUP>8500</SUP>92<SUP>8000</SUP>96<SUP>400</SUP>100<SUP>13000</SUP>104<SUP>4600</SUP>108<SUP>4000</SUP>116<SUP>9400</SUP>120<SUP>5250</SUP>132<SUP>2000</SUP>136<SUP>5400</SUP>140<SUP>4200</SUP>144<SUP>4600</SUP>148<SUP>1400</SUP>156<SUP>800</SUP>160<SUP>800</SUP>168<SUP>5000</SUP>172<SUP>200</SUP>180<SUP>2400</SUP>188<SUP>500</SUP>192<SUP>400</SUP>200<SUP>1000</SUP>208<SUP>1000</SUP>212<SUP>400</SUP>220<SUP>1200</SUP>240<SUP>1800</SUP>248<SUP>1000</SUP>260<SUP>1600</SUP>276<SUP>200</SUP>280<SUP>1100</SUP>284<SUP>200</SUP>296<SUP>400</SUP>300<SUP>200</SUP>304<SUP>200</SUP>320<SUP>400</SUP>324<SUP>200</SUP>360<SUP>100</SUP>380<SUP>400</SUP>600<SUP>210</SUP>625<SUP>651</SUP> 
+      </P>
+    </TD>
+  </TR>
+  <TR> 
+    <TD> 
+      <P ALIGN=CENTER><A NAME="a3b"></A>55 </P>
+    </TD>
+    <TD> 
+      <P ALIGN=CENTER><A HREF="index.html#a3b">a3b</A> </P>
+    </TD>
+    <TD></TD>
+    <TD> 
+      <P ALIGN=LEFT>0<SUP>8370</SUP>4<SUP>12000</SUP>8<SUP>22000</SUP>12<SUP>21600</SUP>16<SUP>22000</SUP>20<SUP>20900</SUP>24<SUP>30000</SUP>28<SUP>18000</SUP>32<SUP>39400</SUP>36<SUP>18000</SUP>40<SUP>17950</SUP>44<SUP>24000</SUP>48<SUP>6400</SUP>52<SUP>11200</SUP>56<SUP>10000</SUP>60<SUP>33500</SUP>64<SUP>4000</SUP>68<SUP>3800</SUP>72<SUP>12000</SUP>76<SUP>11000</SUP>80<SUP>14000</SUP>84<SUP>3000</SUP>88<SUP>10000</SUP>92<SUP>2000</SUP>96<SUP>2000</SUP>100<SUP>8000</SUP>104<SUP>8000</SUP>108<SUP>2000</SUP>112<SUP>2800</SUP>116<SUP>2000</SUP>120<SUP>1150</SUP>128<SUP>4000</SUP>132<SUP>1000</SUP>140<SUP>1800</SUP>148<SUP>200</SUP>152<SUP>4000</SUP>156<SUP>4000</SUP>160<SUP>600</SUP>168<SUP>400</SUP>184<SUP>500</SUP>188<SUP>1000</SUP>192<SUP>200</SUP>200<SUP>430</SUP>212<SUP>600</SUP>220<SUP>800</SUP>232<SUP>600</SUP>240<SUP>1100</SUP>392<SUP>200</SUP>400<SUP>40</SUP>600<SUP>610</SUP>625<SUP>651</SUP> 
+      </P>
+    </TD>
+  </TR>
+  <TR> 
+    <TD><A NAME="a3bDual"></A></TD>
+    <TD> 
+      <P ALIGN=CENTER><A HREF="index.html#a3b">a3bDual</A> </P>
+    </TD>
+    <TD></TD>
+    <TD> 
+      <P ALIGN=LEFT>0<SUP>11160</SUP>4<SUP>42000</SUP>8<SUP>23000</SUP>12<SUP>19000</SUP>16<SUP>38500</SUP>20<SUP>29080</SUP>24<SUP>26400</SUP>28<SUP>14200</SUP>32<SUP>15700</SUP>36<SUP>33000</SUP>40<SUP>29600</SUP>44<SUP>10600</SUP>48<SUP>14800</SUP>52<SUP>3200</SUP>56<SUP>6500</SUP>60<SUP>1400</SUP>64<SUP>15400</SUP>68<SUP>14000</SUP>72<SUP>6200</SUP>76<SUP>4000</SUP>80<SUP>8400</SUP>84<SUP>6200</SUP>88<SUP>9000</SUP>92<SUP>200</SUP>100<SUP>7800</SUP>104<SUP>2500</SUP>116<SUP>1000</SUP>120<SUP>4200</SUP>124<SUP>5200</SUP>128<SUP>1200</SUP>136<SUP>800</SUP>140<SUP>2300</SUP>144<SUP>1100</SUP>156<SUP>1200</SUP>160<SUP>800</SUP>164<SUP>1400</SUP>168<SUP>1200</SUP>180<SUP>4900</SUP>200<SUP>2500</SUP>240<SUP>1600</SUP>300<SUP>800</SUP>480<SUP>50</SUP>500<SUP>200</SUP>520<SUP>50</SUP>600<SUP>810</SUP>625<SUP>651</SUP> 
+      </P>
+    </TD>
+  </TR>
+  <TR> 
+    <TD> 
+      <P ALIGN=CENTER><A NAME="a6a"></A>56 </P>
+    </TD>
+    <TD> 
+      <P ALIGN=CENTER><A HREF="index.html#a6a">a6a</A> </P>
+    </TD>
+    <TD></TD>
+    <TD> 
+      <P ALIGN=LEFT>0<SUP>23070</SUP>4<SUP>28000</SUP>8<SUP>53500</SUP>12<SUP>32600</SUP>16<SUP>14000</SUP>20<SUP>14900</SUP>24<SUP>36000</SUP>28<SUP>16000</SUP>32<SUP>39400</SUP>36<SUP>25000</SUP>40<SUP>29950</SUP>44<SUP>6000</SUP>48<SUP>8200</SUP>52<SUP>4400</SUP>56<SUP>9000</SUP>60<SUP>7400</SUP>64<SUP>21000</SUP>68<SUP>17000</SUP>72<SUP>8000</SUP>76<SUP>3000</SUP>80<SUP>6300</SUP>84<SUP>4000</SUP>100<SUP>40</SUP>112<SUP>600</SUP>120<SUP>1800</SUP>132<SUP>2600</SUP>140<SUP>2000</SUP>148<SUP>200</SUP>156<SUP>2000</SUP>160<SUP>400</SUP>168<SUP>600</SUP>180<SUP>200</SUP>192<SUP>400</SUP>200<SUP>1170</SUP>212<SUP>600</SUP>220<SUP>1000</SUP>232<SUP>200</SUP>240<SUP>650</SUP>292<SUP>200</SUP>312<SUP>200</SUP>320<SUP>400</SUP>392<SUP>300</SUP>400<SUP>60</SUP>420<SUP>200</SUP>600<SUP>610</SUP>625<SUP>651</SUP> 
+      </P>
+    </TD>
+  </TR>
+  <TR> 
+    <TD><A NAME="a6aDual"></A></TD>
+    <TD> 
+      <P ALIGN=CENTER><A HREF="index.html#a6a">a6aDual</A> </P>
+    </TD>
+    <TD></TD>
+    <TD> 
+      <P ALIGN=LEFT>0<SUP>6040</SUP>4<SUP>27800</SUP>8<SUP>38050</SUP>12<SUP>28400</SUP>16<SUP>22200</SUP>20<SUP>30200</SUP>24<SUP>22500</SUP>28<SUP>12000</SUP>32<SUP>10300</SUP>36<SUP>24000</SUP>40<SUP>39250</SUP>44<SUP>4000</SUP>48<SUP>20000</SUP>52<SUP>16000</SUP>56<SUP>31300</SUP>60<SUP>12400</SUP>64<SUP>9500</SUP>68<SUP>6400</SUP>72<SUP>14000</SUP>76<SUP>7200</SUP>80<SUP>8100</SUP>84<SUP>400</SUP>88<SUP>2000</SUP>92<SUP>4700</SUP>96<SUP>200</SUP>100<SUP>4000</SUP>104<SUP>800</SUP>112<SUP>700</SUP>116<SUP>5000</SUP>120<SUP>4200</SUP>132<SUP>1000</SUP>140<SUP>2000</SUP>148<SUP>1500</SUP>156<SUP>200</SUP>160<SUP>1600</SUP>168<SUP>400</SUP>176<SUP>600</SUP>180<SUP>800</SUP>188<SUP>500</SUP>200<SUP>800</SUP>220<SUP>400</SUP>260<SUP>800</SUP>280<SUP>200</SUP>300<SUP>200</SUP>360<SUP>100</SUP>400<SUP>200</SUP>600<SUP>210</SUP>625<SUP>651</SUP> 
+      </P>
+    </TD>
+  </TR>
+  <TR> 
+    <TD> 
+      <P ALIGN=CENTER><A NAME="a6b"></A>57 </P>
+    </TD>
+    <TD> 
+      <P ALIGN=CENTER><A HREF="index.html#a6b">a6b</A> </P>
+    </TD>
+    <TD></TD>
+    <TD> 
+      <P ALIGN=LEFT>0<SUP>34890</SUP>4<SUP>73500</SUP>8<SUP>67500</SUP>12<SUP>26750</SUP>16<SUP>28500</SUP>20<SUP>23100</SUP>24<SUP>30000</SUP>28<SUP>9000</SUP>32<SUP>23250</SUP>36<SUP>13500</SUP>40<SUP>14100</SUP>44<SUP>7500</SUP>48<SUP>15300</SUP>52<SUP>9600</SUP>56<SUP>4500</SUP>60<SUP>9250</SUP>64<SUP>9000</SUP>68<SUP>6750</SUP>72<SUP>2000</SUP>80<SUP>3450</SUP>88<SUP>150</SUP>96<SUP>2500</SUP>100<SUP>60</SUP>112<SUP>300</SUP>120<SUP>2250</SUP>132<SUP>900</SUP>140<SUP>1650</SUP>148<SUP>300</SUP>152<SUP>300</SUP>160<SUP>150</SUP>168<SUP>450</SUP>200<SUP>270</SUP>212<SUP>600</SUP>220<SUP>600</SUP>240<SUP>150</SUP>268<SUP>150</SUP>320<SUP>150</SUP>400<SUP>30</SUP>420<SUP>150</SUP>600<SUP>600</SUP>625<SUP>651</SUP> 
+      </P>
+    </TD>
+  </TR>
+  <TR> 
+    <TD><A NAME="a6bDual"></A></TD>
+    <TD> 
+      <P ALIGN=CENTER><A HREF="index.html#a6b">a6bDual</A> </P>
+    </TD>
+    <TD></TD>
+    <TD> 
+      <P ALIGN=LEFT>0<SUP>31500</SUP>4<SUP>26550</SUP>8<SUP>20550</SUP>12<SUP>48600</SUP>16<SUP>31350</SUP>20<SUP>39000</SUP>24<SUP>44650</SUP>28<SUP>26250</SUP>32<SUP>33750</SUP>36<SUP>20250</SUP>40<SUP>9270</SUP>44<SUP>750</SUP>48<SUP>21900</SUP>52<SUP>10500</SUP>56<SUP>17850</SUP>60<SUP>6270</SUP>64<SUP>6750</SUP>68<SUP>1200</SUP>72<SUP>4800</SUP>76<SUP>2100</SUP>80<SUP>3600</SUP>92<SUP>1950</SUP>100<SUP>2850</SUP>112<SUP>300</SUP>116<SUP>300</SUP>120<SUP>1500</SUP>124<SUP>600</SUP>136<SUP>150</SUP>140<SUP>2700</SUP>144<SUP>300</SUP>160<SUP>900</SUP>164<SUP>150</SUP>180<SUP>1200</SUP>200<SUP>900</SUP>220<SUP>900</SUP>240<SUP>600</SUP>300<SUP>200</SUP>600<SUP>210</SUP>625<SUP>651</SUP> 
+      </P>
+    </TD>
+  </TR>
+  <TR> 
+    <TD> 
+      <P ALIGN=CENTER><A NAME="a6c"></A>58 </P>
+    </TD>
+    <TD> 
+      <P ALIGN=CENTER><A HREF="index.html#a6c">a6c</A> </P>
+    </TD>
+    <TD></TD>
+    <TD> 
+      <P ALIGN=LEFT>0<SUP>39170</SUP>4<SUP>52500</SUP>8<SUP>38500</SUP>12<SUP>44400</SUP>16<SUP>37000</SUP>20<SUP>41150</SUP>24<SUP>23000</SUP>28<SUP>17000</SUP>32<SUP>15000</SUP>36<SUP>5000</SUP>40<SUP>19250</SUP>44<SUP>10000</SUP>48<SUP>15100</SUP>52<SUP>6800</SUP>56<SUP>4000</SUP>60<SUP>9100</SUP>64<SUP>7000</SUP>68<SUP>1600</SUP>72<SUP>4000</SUP>76<SUP>3000</SUP>80<SUP>5200</SUP>84<SUP>5000</SUP>88<SUP>50</SUP>92<SUP>2000</SUP>96<SUP>2000</SUP>100<SUP>30</SUP>108<SUP>1000</SUP>112<SUP>1650</SUP>116<SUP>1000</SUP>120<SUP>2750</SUP>132<SUP>400</SUP>140<SUP>1850</SUP>148<SUP>100</SUP>152<SUP>100</SUP>160<SUP>200</SUP>168<SUP>700</SUP>172<SUP>500</SUP>192<SUP>200</SUP>200<SUP>790</SUP>212<SUP>900</SUP>220<SUP>1300</SUP>232<SUP>500</SUP>240<SUP>200</SUP>260<SUP>100</SUP>268<SUP>100</SUP>292<SUP>100</SUP>300<SUP>210</SUP>312<SUP>300</SUP>320<SUP>200</SUP>340<SUP>100</SUP>400<SUP>200</SUP>412<SUP>100</SUP>420<SUP>100</SUP>440<SUP>50</SUP>600<SUP>600</SUP>625<SUP>651</SUP> 
+      </P>
+    </TD>
+  </TR>
+  <TR> 
+    <TD><A NAME="a6cDual"></A></TD>
+    <TD> 
+      <P ALIGN=CENTER><A HREF="index.html#a6c">a6cDual</A> </P>
+    </TD>
+    <TD></TD>
+    <TD> 
+      <P ALIGN=LEFT>0<SUP>6000</SUP>4<SUP>40400</SUP>8<SUP>40800</SUP>12<SUP>29400</SUP>16<SUP>29200</SUP>20<SUP>22680</SUP>24<SUP>20150</SUP>28<SUP>25200</SUP>32<SUP>33000</SUP>36<SUP>17400</SUP>40<SUP>31060</SUP>44<SUP>16500</SUP>48<SUP>19000</SUP>52<SUP>13250</SUP>56<SUP>14550</SUP>60<SUP>3650</SUP>64<SUP>7500</SUP>68<SUP>2800</SUP>72<SUP>7750</SUP>76<SUP>3500</SUP>80<SUP>5500</SUP>84<SUP>5400</SUP>88<SUP>4500</SUP>92<SUP>750</SUP>96<SUP>2550</SUP>100<SUP>3100</SUP>104<SUP>200</SUP>112<SUP>1100</SUP>116<SUP>1000</SUP>120<SUP>2500</SUP>124<SUP>200</SUP>128<SUP>500</SUP>132<SUP>1050</SUP>140<SUP>2150</SUP>144<SUP>500</SUP>148<SUP>700</SUP>156<SUP>400</SUP>160<SUP>1450</SUP>172<SUP>150</SUP>180<SUP>800</SUP>184<SUP>250</SUP>192<SUP>100</SUP>200<SUP>2400</SUP>220<SUP>400</SUP>240<SUP>200</SUP>256<SUP>500</SUP>260<SUP>200</SUP>280<SUP>200</SUP>300<SUP>200</SUP>320<SUP>200</SUP>600<SUP>210</SUP>625<SUP>651</SUP> 
+      </P>
+    </TD>
+  </TR>
+  <TR> 
+    <TD> 
+      <P ALIGN=CENTER><A NAME="a5b"></A>59 </P>
+    </TD>
+    <TD> 
+      <P ALIGN=CENTER><A HREF="index.html#a5b">a5b</A> </P>
+    </TD>
+    <TD></TD>
+    <TD> 
+      <P ALIGN=LEFT>0<SUP>13640</SUP>4<SUP>31500</SUP>8<SUP>23500</SUP>12<SUP>38600</SUP>16<SUP>35000</SUP>20<SUP>36150</SUP>24<SUP>38500</SUP>28<SUP>38600</SUP>32<SUP>23400</SUP>36<SUP>23000</SUP>40<SUP>20800</SUP>44<SUP>11000</SUP>48<SUP>16500</SUP>52<SUP>13350</SUP>56<SUP>10500</SUP>60<SUP>10300</SUP>64<SUP>8000</SUP>68<SUP>3050</SUP>72<SUP>5000</SUP>76<SUP>3500</SUP>80<SUP>2150</SUP>84<SUP>1500</SUP>88<SUP>1500</SUP>92<SUP>500</SUP>96<SUP>1000</SUP>100<SUP>1140</SUP>104<SUP>1000</SUP>112<SUP>1150</SUP>120<SUP>800</SUP>132<SUP>1450</SUP>140<SUP>2400</SUP>148<SUP>400</SUP>152<SUP>200</SUP>160<SUP>450</SUP>168<SUP>400</SUP>180<SUP>100</SUP>192<SUP>100</SUP>200<SUP>120</SUP>212<SUP>450</SUP>220<SUP>650</SUP>232<SUP>200</SUP>240<SUP>300</SUP>252<SUP>50</SUP>300<SUP>80</SUP>320<SUP>400</SUP>400<SUP>70</SUP>420<SUP>50</SUP>440<SUP>50</SUP>600<SUP>600</SUP>625<SUP>651</SUP> 
+      </P>
+    </TD>
+  </TR>
+  <TR> 
+    <TD><A NAME="a5bDual"></A></TD>
+    <TD> 
+      <P ALIGN=CENTER><A HREF="index.html#a5b">a5bDual</A> </P>
+    </TD>
+    <TD></TD>
+    <TD> 
+      <P ALIGN=LEFT>0<SUP>14100</SUP>4<SUP>26000</SUP>8<SUP>44500</SUP>12<SUP>38200</SUP>16<SUP>38000</SUP>20<SUP>35750</SUP>24<SUP>24600</SUP>28<SUP>26550</SUP>32<SUP>20400</SUP>36<SUP>21450</SUP>40<SUP>16420</SUP>44<SUP>15850</SUP>48<SUP>17800</SUP>52<SUP>12350</SUP>56<SUP>13650</SUP>60<SUP>8440</SUP>64<SUP>2100</SUP>68<SUP>4550</SUP>72<SUP>5050</SUP>76<SUP>7900</SUP>80<SUP>2690</SUP>84<SUP>3600</SUP>88<SUP>2000</SUP>92<SUP>1450</SUP>96<SUP>2350</SUP>100<SUP>2420</SUP>104<SUP>2000</SUP>108<SUP>650</SUP>112<SUP>100</SUP>116<SUP>300</SUP>120<SUP>1150</SUP>128<SUP>100</SUP>140<SUP>2200</SUP>144<SUP>50</SUP>148<SUP>100</SUP>152<SUP>50</SUP>156<SUP>650</SUP>160<SUP>1250</SUP>164<SUP>150</SUP>172<SUP>150</SUP>176<SUP>300</SUP>180<SUP>1100</SUP>184<SUP>50</SUP>188<SUP>50</SUP>192<SUP>250</SUP>196<SUP>100</SUP>200<SUP>960</SUP>216<SUP>50</SUP>220<SUP>1200</SUP>240<SUP>300</SUP>260<SUP>550</SUP>272<SUP>50</SUP>280<SUP>400</SUP>284<SUP>50</SUP>300<SUP>340</SUP>320<SUP>100</SUP>340<SUP>100</SUP>380<SUP>100</SUP>400<SUP>16</SUP>600<SUP>14</SUP>625<SUP>651</SUP> 
+      </P>
+    </TD>
+  </TR>
+  <TR> 
+    <TD> 
+      <P ALIGN=CENTER><A NAME="a5c"></A>60 </P>
+    </TD>
+    <TD> 
+      <P ALIGN=CENTER><A HREF="index.html#a5c">a5c</A> </P>
+    </TD>
+    <TD></TD>
+    <TD> 
+      <P ALIGN=LEFT>0<SUP>16060</SUP>4<SUP>41000</SUP>8<SUP>41000</SUP>12<SUP>36600</SUP>16<SUP>31500</SUP>20<SUP>29400</SUP>24<SUP>33000</SUP>28<SUP>26500</SUP>32<SUP>20600</SUP>36<SUP>16500</SUP>40<SUP>18350</SUP>44<SUP>11500</SUP>48<SUP>15600</SUP>52<SUP>15800</SUP>56<SUP>10000</SUP>60<SUP>11500</SUP>64<SUP>5500</SUP>68<SUP>9650</SUP>72<SUP>4500</SUP>76<SUP>3000</SUP>80<SUP>2850</SUP>84<SUP>500</SUP>88<SUP>4250</SUP>92<SUP>1550</SUP>100<SUP>1140</SUP>104<SUP>1000</SUP>108<SUP>500</SUP>112<SUP>1800</SUP>120<SUP>2350</SUP>128<SUP>1000</SUP>132<SUP>1450</SUP>140<SUP>2050</SUP>148<SUP>250</SUP>152<SUP>100</SUP>160<SUP>400</SUP>168<SUP>350</SUP>180<SUP>100</SUP>192<SUP>50</SUP>200<SUP>170</SUP>212<SUP>900</SUP>220<SUP>650</SUP>232<SUP>150</SUP>240<SUP>250</SUP>248<SUP>150</SUP>260<SUP>50</SUP>292<SUP>50</SUP>300<SUP>190</SUP>312<SUP>150</SUP>320<SUP>250</SUP>340<SUP>50</SUP>348<SUP>50</SUP>400<SUP>130</SUP>420<SUP>100</SUP>500<SUP>10</SUP>600<SUP>600</SUP>625<SUP>651</SUP> 
+      </P>
+    </TD>
+  </TR>
+  <TR> 
+    <TD><A NAME="a5cDual"></A></TD>
+    <TD> 
+      <P ALIGN=CENTER><A HREF="index.html#a5c">a5cDual</A> </P>
+    </TD>
+    <TD></TD>
+    <TD> 
+      <P ALIGN=LEFT>0<SUP>12790</SUP>4<SUP>41200</SUP>8<SUP>32350</SUP>12<SUP>30950</SUP>16<SUP>30200</SUP>20<SUP>24500</SUP>24<SUP>26500</SUP>28<SUP>26050</SUP>32<SUP>21600</SUP>36<SUP>22900</SUP>40<SUP>24200</SUP>44<SUP>18250</SUP>48<SUP>18650</SUP>52<SUP>9850</SUP>56<SUP>19600</SUP>60<SUP>6200</SUP>64<SUP>6700</SUP>68<SUP>7750</SUP>72<SUP>4400</SUP>76<SUP>5600</SUP>80<SUP>3600</SUP>84<SUP>3750</SUP>88<SUP>2100</SUP>92<SUP>2450</SUP>96<SUP>1650</SUP>100<SUP>1900</SUP>104<SUP>1000</SUP>108<SUP>1300</SUP>112<SUP>1000</SUP>116<SUP>900</SUP>120<SUP>1850</SUP>124<SUP>150</SUP>128<SUP>650</SUP>136<SUP>250</SUP>140<SUP>2200</SUP>144<SUP>500</SUP>156<SUP>150</SUP>160<SUP>1300</SUP>164<SUP>400</SUP>168<SUP>250</SUP>172<SUP>200</SUP>180<SUP>1350</SUP>200<SUP>900</SUP>220<SUP>800</SUP>228<SUP>100</SUP>236<SUP>200</SUP>240<SUP>400</SUP>260<SUP>600</SUP>280<SUP>200</SUP>300<SUP>500</SUP>320<SUP>100</SUP>600<SUP>210</SUP>625<SUP>651</SUP> 
+      </P>
+    </TD>
+  </TR>
+  <TR> 
+    <TD> 
+      <P ALIGN=CENTER><A NAME="a5d"></A>61 </P>
+    </TD>
+    <TD> 
+      <P ALIGN=CENTER><A HREF="index.html#a5d">a5d</A> </P>
+    </TD>
+    <TD></TD>
+    <TD> 
+      <P ALIGN=LEFT>0<SUP>24120</SUP>4<SUP>34000</SUP>8<SUP>39500</SUP>12<SUP>34250</SUP>16<SUP>44000</SUP>20<SUP>42350</SUP>24<SUP>36500</SUP>28<SUP>26000</SUP>32<SUP>34600</SUP>36<SUP>15500</SUP>40<SUP>13850</SUP>44<SUP>8000</SUP>48<SUP>15550</SUP>52<SUP>5000</SUP>56<SUP>7500</SUP>60<SUP>8200</SUP>64<SUP>7500</SUP>68<SUP>3600</SUP>72<SUP>550</SUP>76<SUP>3000</SUP>80<SUP>3250</SUP>84<SUP>500</SUP>88<SUP>2200</SUP>92<SUP>1500</SUP>100<SUP>150</SUP>104<SUP>500</SUP>112<SUP>1450</SUP>116<SUP>500</SUP>120<SUP>1100</SUP>132<SUP>1150</SUP>140<SUP>2800</SUP>148<SUP>400</SUP>152<SUP>200</SUP>160<SUP>650</SUP>168<SUP>300</SUP>180<SUP>50</SUP>200<SUP>130</SUP>212<SUP>350</SUP>220<SUP>500</SUP>232<SUP>250</SUP>240<SUP>350</SUP>248<SUP>100</SUP>260<SUP>50</SUP>292<SUP>50</SUP>300<SUP>280</SUP>312<SUP>50</SUP>320<SUP>50</SUP>348<SUP>50</SUP>400<SUP>60</SUP>500<SUP>10</SUP>600<SUP>600</SUP>625<SUP>651</SUP> 
+      </P>
+    </TD>
+  </TR>
+  <TR> 
+    <TD><A NAME="a5dDual"></A></TD>
+    <TD> 
+      <P ALIGN=CENTER><A HREF="index.html#a5d">a5dDual</A> </P>
+    </TD>
+    <TD></TD>
+    <TD> 
+      <P ALIGN=LEFT>0<SUP>21500</SUP>4<SUP>52500</SUP>8<SUP>42300</SUP>12<SUP>31900</SUP>16<SUP>38650</SUP>20<SUP>32880</SUP>24<SUP>37150</SUP>28<SUP>21500</SUP>32<SUP>15350</SUP>36<SUP>17350</SUP>40<SUP>23060</SUP>44<SUP>12300</SUP>48<SUP>6600</SUP>52<SUP>10550</SUP>56<SUP>9450</SUP>60<SUP>5650</SUP>64<SUP>3200</SUP>68<SUP>6250</SUP>72<SUP>5300</SUP>76<SUP>2450</SUP>80<SUP>3250</SUP>84<SUP>1450</SUP>88<SUP>2550</SUP>92<SUP>500</SUP>96<SUP>1850</SUP>100<SUP>3800</SUP>108<SUP>1500</SUP>112<SUP>500</SUP>116<SUP>50</SUP>120<SUP>1700</SUP>124<SUP>500</SUP>128<SUP>500</SUP>136<SUP>500</SUP>140<SUP>2200</SUP>144<SUP>600</SUP>152<SUP>150</SUP>160<SUP>1100</SUP>164<SUP>100</SUP>172<SUP>50</SUP>176<SUP>250</SUP>180<SUP>600</SUP>184<SUP>150</SUP>192<SUP>100</SUP>200<SUP>1100</SUP>220<SUP>700</SUP>240<SUP>100</SUP>260<SUP>400</SUP>280<SUP>100</SUP>300<SUP>500</SUP>340<SUP>200</SUP>600<SUP>210</SUP>625<SUP>651</SUP> 
+      </P>
+    </TD>
+  </TR>
+  <TR> 
+    <TD> 
+      <P ALIGN=CENTER><A NAME="a8d"></A>62 </P>
+    </TD>
+    <TD> 
+      <P ALIGN=CENTER><A HREF="index.html#a8d">a8d</A> </P>
+    </TD>
+    <TD></TD>
+    <TD> 
+      <P ALIGN=LEFT>0<SUP>5070</SUP>4<SUP>9000</SUP>8<SUP>16500</SUP>12<SUP>7700</SUP>16<SUP>9000</SUP>20<SUP>9950</SUP>24<SUP>13000</SUP>28<SUP>13500</SUP>32<SUP>20000</SUP>36<SUP>19000</SUP>40<SUP>16900</SUP>44<SUP>13500</SUP>48<SUP>15600</SUP>52<SUP>13850</SUP>56<SUP>21500</SUP>60<SUP>35200</SUP>64<SUP>18500</SUP>68<SUP>17600</SUP>72<SUP>18500</SUP>76<SUP>16000</SUP>80<SUP>19900</SUP>84<SUP>10500</SUP>88<SUP>13600</SUP>92<SUP>12150</SUP>96<SUP>9000</SUP>100<SUP>10850</SUP>104<SUP>7000</SUP>108<SUP>3500</SUP>112<SUP>4750</SUP>116<SUP>2500</SUP>120<SUP>4500</SUP>124<SUP>1500</SUP>128<SUP>1500</SUP>132<SUP>1650</SUP>136<SUP>500</SUP>140<SUP>2100</SUP>148<SUP>350</SUP>152<SUP>150</SUP>160<SUP>850</SUP>168<SUP>150</SUP>176<SUP>500</SUP>180<SUP>50</SUP>192<SUP>100</SUP>200<SUP>550</SUP>212<SUP>1300</SUP>220<SUP>700</SUP>232<SUP>150</SUP>240<SUP>750</SUP>248<SUP>100</SUP>260<SUP>100</SUP>268<SUP>50</SUP>300<SUP>510</SUP>312<SUP>50</SUP>320<SUP>500</SUP>400<SUP>50</SUP>420<SUP>150</SUP>600<SUP>670</SUP>625<SUP>651</SUP> 
+      </P>
+    </TD>
+  </TR>
+  <TR> 
+    <TD><A NAME="a8dDual"></A></TD>
+    <TD> 
+      <P ALIGN=CENTER><A HREF="index.html#a8d">a8dDual</A> </P>
+    </TD>
+    <TD></TD>
+    <TD> 
+      <P ALIGN=LEFT>0<SUP>16100</SUP>4<SUP>32900</SUP>8<SUP>19700</SUP>12<SUP>18750</SUP>16<SUP>27200</SUP>20<SUP>21000</SUP>24<SUP>15350</SUP>28<SUP>19350</SUP>32<SUP>28450</SUP>36<SUP>20350</SUP>40<SUP>20130</SUP>44<SUP>13000</SUP>48<SUP>23350</SUP>52<SUP>10150</SUP>56<SUP>15750</SUP>60<SUP>12550</SUP>64<SUP>4050</SUP>68<SUP>6450</SUP>72<SUP>7250</SUP>76<SUP>12500</SUP>80<SUP>10240</SUP>84<SUP>5000</SUP>88<SUP>5900</SUP>92<SUP>5000</SUP>96<SUP>3050</SUP>100<SUP>6250</SUP>104<SUP>500</SUP>108<SUP>3000</SUP>112<SUP>1100</SUP>116<SUP>2350</SUP>120<SUP>6950</SUP>124<SUP>1500</SUP>132<SUP>1050</SUP>136<SUP>700</SUP>140<SUP>2000</SUP>144<SUP>1300</SUP>148<SUP>450</SUP>152<SUP>50</SUP>156<SUP>250</SUP>160<SUP>4250</SUP>164<SUP>2050</SUP>168<SUP>300</SUP>172<SUP>2150</SUP>176<SUP>400</SUP>180<SUP>2300</SUP>184<SUP>500</SUP>188<SUP>100</SUP>192<SUP>200</SUP>196<SUP>250</SUP>200<SUP>1760</SUP>204<SUP>200</SUP>212<SUP>100</SUP>216<SUP>1000</SUP>220<SUP>1850</SUP>224<SUP>300</SUP>240<SUP>400</SUP>260<SUP>300</SUP>280<SUP>300</SUP>284<SUP>100</SUP>300<SUP>540</SUP>304<SUP>50</SUP>312<SUP>50</SUP>344<SUP>500</SUP>356<SUP>1000</SUP>360<SUP>100</SUP>400<SUP>66</SUP>420<SUP>50</SUP>440<SUP>200</SUP>540<SUP>100</SUP>560<SUP>100</SUP>600<SUP>614</SUP>625<SUP>651</SUP> 
+      </P>
+    </TD>
+  </TR>
+  <TR> 
+    <TD> 
+      <P ALIGN=CENTER><A NAME="a8e"></A>63 </P>
+    </TD>
+    <TD> 
+      <P ALIGN=CENTER><A HREF="index.html#a8e">a8e</A> </P>
+    </TD>
+    <TD></TD>
+    <TD> 
+      <P ALIGN=LEFT>0<SUP>7530</SUP>4<SUP>18000</SUP>8<SUP>17000</SUP>12<SUP>18200</SUP>16<SUP>20500</SUP>20<SUP>21800</SUP>24<SUP>13000</SUP>28<SUP>15000</SUP>32<SUP>15750</SUP>36<SUP>17500</SUP>40<SUP>18750</SUP>44<SUP>26000</SUP>48<SUP>27250</SUP>52<SUP>32350</SUP>56<SUP>20000</SUP>60<SUP>23550</SUP>64<SUP>8000</SUP>68<SUP>18800</SUP>72<SUP>17000</SUP>76<SUP>11500</SUP>80<SUP>9750</SUP>84<SUP>8000</SUP>88<SUP>8100</SUP>92<SUP>4550</SUP>96<SUP>5000</SUP>100<SUP>1670</SUP>104<SUP>2000</SUP>108<SUP>2500</SUP>112<SUP>2200</SUP>116<SUP>1500</SUP>120<SUP>1700</SUP>128<SUP>500</SUP>132<SUP>900</SUP>140<SUP>1900</SUP>148<SUP>500</SUP>152<SUP>100</SUP>160<SUP>500</SUP>168<SUP>350</SUP>192<SUP>100</SUP>200<SUP>260</SUP>212<SUP>950</SUP>220<SUP>750</SUP>232<SUP>200</SUP>240<SUP>400</SUP>248<SUP>100</SUP>260<SUP>50</SUP>300<SUP>70</SUP>312<SUP>150</SUP>320<SUP>250</SUP>392<SUP>50</SUP>400<SUP>10</SUP>600<SUP>610</SUP>625<SUP>651</SUP> 
+      </P>
+    </TD>
+  </TR>
+  <TR> 
+    <TD><A NAME="a8eDual"></A></TD>
+    <TD> 
+      <P ALIGN=CENTER><A HREF="index.html#a8e">a8eDual</A> </P>
+    </TD>
+    <TD></TD>
+    <TD> 
+      <P ALIGN=LEFT>0<SUP>17550</SUP>4<SUP>31000</SUP>8<SUP>22600</SUP>12<SUP>19300</SUP>16<SUP>25050</SUP>20<SUP>19600</SUP>24<SUP>28050</SUP>28<SUP>18050</SUP>32<SUP>17850</SUP>36<SUP>22250</SUP>40<SUP>20500</SUP>44<SUP>10800</SUP>48<SUP>15100</SUP>52<SUP>17150</SUP>56<SUP>18000</SUP>60<SUP>11850</SUP>64<SUP>11550</SUP>68<SUP>11500</SUP>72<SUP>13800</SUP>76<SUP>4600</SUP>80<SUP>6150</SUP>84<SUP>2500</SUP>88<SUP>9600</SUP>92<SUP>6650</SUP>96<SUP>5600</SUP>100<SUP>5570</SUP>104<SUP>1550</SUP>108<SUP>2000</SUP>112<SUP>1200</SUP>116<SUP>450</SUP>120<SUP>4250</SUP>124<SUP>1600</SUP>128<SUP>2200</SUP>132<SUP>1000</SUP>136<SUP>750</SUP>140<SUP>1990</SUP>144<SUP>1300</SUP>148<SUP>350</SUP>156<SUP>350</SUP>160<SUP>2040</SUP>164<SUP>100</SUP>172<SUP>50</SUP>176<SUP>100</SUP>180<SUP>1500</SUP>184<SUP>800</SUP>188<SUP>250</SUP>192<SUP>600</SUP>196<SUP>150</SUP>200<SUP>2390</SUP>204<SUP>150</SUP>212<SUP>100</SUP>216<SUP>100</SUP>220<SUP>1100</SUP>224<SUP>350</SUP>236<SUP>100</SUP>240<SUP>500</SUP>244<SUP>50</SUP>252<SUP>50</SUP>256<SUP>100</SUP>260<SUP>300</SUP>264<SUP>150</SUP>280<SUP>300</SUP>300<SUP>380</SUP>360<SUP>200</SUP>400<SUP>16</SUP>600<SUP>14</SUP>625<SUP>651</SUP> 
+      </P>
+    </TD>
+  </TR>
+  <TR> 
+    <TD> 
+      <P ALIGN=CENTER><A NAME="a8f"></A>64 </P>
+    </TD>
+    <TD> 
+      <P ALIGN=CENTER><A HREF="index.html#a8f">a8f</A> </P>
+    </TD>
+    <TD></TD>
+    <TD> 
+      <P ALIGN=LEFT>0<SUP>7010</SUP>4<SUP>9500</SUP>8<SUP>26000</SUP>12<SUP>21350</SUP>16<SUP>8500</SUP>20<SUP>11750</SUP>24<SUP>11500</SUP>28<SUP>19000</SUP>32<SUP>18300</SUP>36<SUP>20000</SUP>40<SUP>23600</SUP>44<SUP>13500</SUP>48<SUP>14650</SUP>52<SUP>17950</SUP>56<SUP>21500</SUP>60<SUP>16900</SUP>64<SUP>13500</SUP>68<SUP>18550</SUP>72<SUP>24000</SUP>76<SUP>7500</SUP>80<SUP>13900</SUP>84<SUP>14000</SUP>88<SUP>7550</SUP>92<SUP>10600</SUP>96<SUP>10500</SUP>100<SUP>6660</SUP>104<SUP>6500</SUP>108<SUP>3500</SUP>112<SUP>2850</SUP>116<SUP>3000</SUP>120<SUP>7050</SUP>124<SUP>1500</SUP>132<SUP>1050</SUP>140<SUP>2900</SUP>148<SUP>500</SUP>152<SUP>50</SUP>156<SUP>1000</SUP>160<SUP>600</SUP>168<SUP>150</SUP>176<SUP>500</SUP>180<SUP>50</SUP>192<SUP>50</SUP>200<SUP>190</SUP>212<SUP>650</SUP>220<SUP>650</SUP>232<SUP>350</SUP>240<SUP>950</SUP>248<SUP>50</SUP>268<SUP>50</SUP>300<SUP>70</SUP>312<SUP>50</SUP>320<SUP>300</SUP>340<SUP>50</SUP>392<SUP>50</SUP>400<SUP>60</SUP>420<SUP>50</SUP>600<SUP>610</SUP>625<SUP>651</SUP> 
+      </P>
+    </TD>
+  </TR>
+  <TR> 
+    <TD><A NAME="a8fDual"></A></TD>
+    <TD> 
+      <P ALIGN=CENTER><A HREF="index.html#a8f">a8fDual</A> </P>
+    </TD>
+    <TD></TD>
+    <TD> 
+      <P ALIGN=LEFT>0<SUP>16350</SUP>4<SUP>17650</SUP>8<SUP>20850</SUP>12<SUP>14500</SUP>16<SUP>25250</SUP>20<SUP>19250</SUP>24<SUP>19950</SUP>28<SUP>21000</SUP>32<SUP>15800</SUP>36<SUP>24500</SUP>40<SUP>21030</SUP>44<SUP>20600</SUP>48<SUP>12250</SUP>52<SUP>16100</SUP>56<SUP>10950</SUP>60<SUP>11100</SUP>64<SUP>13650</SUP>68<SUP>11850</SUP>72<SUP>13000</SUP>76<SUP>7850</SUP>80<SUP>11840</SUP>84<SUP>11900</SUP>88<SUP>8200</SUP>92<SUP>3750</SUP>96<SUP>5600</SUP>100<SUP>5300</SUP>104<SUP>700</SUP>108<SUP>3300</SUP>112<SUP>5500</SUP>116<SUP>750</SUP>120<SUP>2900</SUP>124<SUP>2750</SUP>128<SUP>2800</SUP>132<SUP>1050</SUP>136<SUP>1000</SUP>140<SUP>3100</SUP>144<SUP>2650</SUP>148<SUP>1450</SUP>152<SUP>1550</SUP>156<SUP>600</SUP>160<SUP>2350</SUP>164<SUP>350</SUP>168<SUP>400</SUP>172<SUP>100</SUP>176<SUP>50</SUP>180<SUP>2100</SUP>184<SUP>100</SUP>196<SUP>100</SUP>200<SUP>1910</SUP>204<SUP>50</SUP>208<SUP>50</SUP>216<SUP>150</SUP>220<SUP>600</SUP>224<SUP>150</SUP>228<SUP>50</SUP>232<SUP>50</SUP>236<SUP>150</SUP>240<SUP>700</SUP>244<SUP>250</SUP>252<SUP>50</SUP>256<SUP>50</SUP>260<SUP>900</SUP>264<SUP>200</SUP>272<SUP>100</SUP>280<SUP>550</SUP>284<SUP>200</SUP>300<SUP>340</SUP>304<SUP>100</SUP>312<SUP>50</SUP>316<SUP>250</SUP>360<SUP>200</SUP>400<SUP>16</SUP>440<SUP>100</SUP>520<SUP>200</SUP>600<SUP>14</SUP>625<SUP>651</SUP> 
+      </P>
+    </TD>
+  </TR>
+  <TR> 
+    <TD> 
+      <P ALIGN=CENTER><A NAME="h2a"></A>65 </P>
+    </TD>
+    <TD> 
+      <P ALIGN=CENTER><A HREF="index.html#h2a">h2a</A> </P>
+    </TD>
+    <TD></TD>
+    <TD> 
+      <P ALIGN=LEFT>424<SUP>4800</SUP>428<SUP>4800</SUP>456<SUP>400</SUP>468<SUP>4800</SUP>480<SUP>4000</SUP>484<SUP>96000</SUP>500<SUP>624</SUP>504<SUP>400</SUP>508<SUP>4800</SUP>528<SUP>24000</SUP>552<SUP>2300</SUP>576<SUP>76000</SUP>580<SUP>100000</SUP>584<SUP>37500</SUP>592<SUP>50000</SUP>600<SUP>12726</SUP>625<SUP>651</SUP> 
+      </P>
+    </TD>
+  </TR>
+  <TR> 
+    <TD><A NAME="h2aDual"></A></TD>
+    <TD> 
+      <P ALIGN=CENTER><A HREF="index.html#h2a">h2aDual</A> </P>
+    </TD>
+    <TD></TD>
+    <TD> 
+      <P ALIGN=LEFT>0<SUP>320</SUP>100<SUP>160</SUP>200<SUP>60</SUP>244<SUP>24000</SUP>264<SUP>1000</SUP>360<SUP>300</SUP>376<SUP>6000</SUP>380<SUP>1200</SUP>400<SUP>80</SUP>564<SUP>132000</SUP>568<SUP>120000</SUP>572<SUP>96000</SUP>580<SUP>26400</SUP>584<SUP>14400</SUP>600<SUP>1230</SUP>625<SUP>651</SUP> 
+      </P>
+    </TD>
+  </TR>
+  <TR> 
+    <TD> 
+      <P ALIGN=CENTER><A NAME="w1"></A>66 </P>
+    </TD>
+    <TD> 
+      <P ALIGN=CENTER><A HREF="index.html#w1">w1</A> </P>
+    </TD>
+    <TD> 
+      <P ALIGN=CENTER>Wyoming </P>
+    </TD>
+    <TD> 
+      <P ALIGN=LEFT>8<SUP>154800</SUP>24<SUP>9600</SUP>28<SUP>76800</SUP>40<SUP>1200</SUP>44<SUP>19200</SUP>48<SUP>38400</SUP>56<SUP>57600</SUP>64<SUP>9600</SUP>72<SUP>10800</SUP>88<SUP>12600</SUP>100<SUP>432</SUP>128<SUP>19200</SUP>168<SUP>9600</SUP>200<SUP>216</SUP>216<SUP>100</SUP>344<SUP>2400</SUP>600<SUP>602</SUP>625<SUP>651</SUP> 
+      </P>
+    </TD>
+  </TR>
+  <TR> 
+    <TD><A NAME="w1Dual"></A></TD>
+    <TD> 
+      <P ALIGN=CENTER><A HREF="index.html#w1">w1Dual</A> </P>
+    </TD>
+    <TD> 
+      <P ALIGN=CENTER>Dual Wyoming </P>
+    </TD>
+    <TD> 
+      <P ALIGN=LEFT>4<SUP>38400</SUP>8<SUP>76800</SUP>12<SUP>19200</SUP>16<SUP>38400</SUP>20<SUP>38400</SUP>28<SUP>38400</SUP>32<SUP>9600</SUP>36<SUP>19200</SUP>40<SUP>4800</SUP>44<SUP>9600</SUP>52<SUP>19200</SUP>56<SUP>1200</SUP>60<SUP>19200</SUP>64<SUP>28800</SUP>68<SUP>12000</SUP>72<SUP>4800</SUP>88<SUP>5400</SUP>100<SUP>14400</SUP>136<SUP>1200</SUP>140<SUP>19200</SUP>168<SUP>100</SUP>196<SUP>2400</SUP>324<SUP>1200</SUP>568<SUP>600</SUP>600<SUP>650</SUP>625<SUP>651</SUP> 
+      </P>
+    </TD>
+  </TR>
+  <TR> 
+    <TD> 
+      <P ALIGN=CENTER><A NAME="b8c"></A>67 </P>
+    </TD>
+    <TD> 
+      <P ALIGN=CENTER><A HREF="index.html#b8c">b8c</A> </P>
+    </TD>
+    <TD></TD>
+    <TD> 
+      <P ALIGN=LEFT>0<SUP>700</SUP>4<SUP>11000</SUP>8<SUP>12500</SUP>12<SUP>22000</SUP>16<SUP>28000</SUP>20<SUP>26600</SUP>24<SUP>38000</SUP>28<SUP>18200</SUP>32<SUP>37600</SUP>36<SUP>48500</SUP>40<SUP>37100</SUP>44<SUP>20000</SUP>48<SUP>7000</SUP>52<SUP>13000</SUP>56<SUP>10000</SUP>60<SUP>19600</SUP>64<SUP>20000</SUP>68<SUP>8200</SUP>72<SUP>8500</SUP>76<SUP>8000</SUP>80<SUP>10500</SUP>84<SUP>6000</SUP>92<SUP>500</SUP>100<SUP>40</SUP>104<SUP>1000</SUP>112<SUP>400</SUP>120<SUP>1700</SUP>128<SUP>100</SUP>132<SUP>2000</SUP>140<SUP>1800</SUP>148<SUP>600</SUP>160<SUP>600</SUP>168<SUP>200</SUP>180<SUP>200</SUP>200<SUP>120</SUP>212<SUP>200</SUP>220<SUP>800</SUP>232<SUP>200</SUP>240<SUP>600</SUP>248<SUP>200</SUP>272<SUP>100</SUP>300<SUP>40</SUP>400<SUP>100</SUP>528<SUP>50</SUP>600<SUP>600</SUP>625<SUP>651</SUP> 
+      </P>
+    </TD>
+  </TR>
+  <TR> 
+    <TD><A NAME="b8cDual"></A></TD>
+    <TD> 
+      <P ALIGN=CENTER><A HREF="index.html#b8c">b8cDual</A> </P>
+    </TD>
+    <TD></TD>
+    <TD> 
+      <P ALIGN=LEFT>0<SUP>10020</SUP>4<SUP>29400</SUP>8<SUP>39500</SUP>12<SUP>33200</SUP>16<SUP>49500</SUP>20<SUP>14000</SUP>24<SUP>49600</SUP>28<SUP>24200</SUP>32<SUP>21200</SUP>36<SUP>28400</SUP>40<SUP>13600</SUP>44<SUP>16400</SUP>48<SUP>1000</SUP>52<SUP>17000</SUP>56<SUP>4500</SUP>60<SUP>4800</SUP>64<SUP>9700</SUP>68<SUP>5000</SUP>72<SUP>2100</SUP>76<SUP>1000</SUP>80<SUP>9680</SUP>84<SUP>4400</SUP>88<SUP>1000</SUP>96<SUP>500</SUP>100<SUP>4360</SUP>108<SUP>4200</SUP>112<SUP>7500</SUP>120<SUP>1600</SUP>140<SUP>840</SUP>148<SUP>400</SUP>156<SUP>4000</SUP>160<SUP>1280</SUP>180<SUP>800</SUP>188<SUP>1000</SUP>192<SUP>400</SUP>200<SUP>3240</SUP>208<SUP>400</SUP>220<SUP>1200</SUP>240<SUP>800</SUP>252<SUP>200</SUP>260<SUP>400</SUP>272<SUP>400</SUP>300<SUP>400</SUP>400<SUP>18</SUP>600<SUP>12</SUP>625<SUP>651</SUP> 
+      </P>
+    </TD>
+  </TR>
+  <TR> 
+    <TD> 
+      <P ALIGN=CENTER><A NAME="s4b"></A>68 </P>
+    </TD>
+    <TD> 
+      <P ALIGN=CENTER><A HREF="index.html#s4b">s4b</A> </P>
+    </TD>
+    <TD></TD>
+    <TD> 
+      <P ALIGN=LEFT>0<SUP>12200</SUP>4<SUP>35000</SUP>8<SUP>31000</SUP>12<SUP>23600</SUP>16<SUP>21000</SUP>20<SUP>12500</SUP>24<SUP>37000</SUP>28<SUP>38000</SUP>32<SUP>32000</SUP>36<SUP>10000</SUP>40<SUP>14500</SUP>44<SUP>18000</SUP>48<SUP>8400</SUP>52<SUP>1000</SUP>56<SUP>20000</SUP>60<SUP>20500</SUP>64<SUP>12000</SUP>68<SUP>4800</SUP>76<SUP>9000</SUP>80<SUP>6750</SUP>84<SUP>5000</SUP>88<SUP>8000</SUP>92<SUP>12000</SUP>96<SUP>1000</SUP>100<SUP>1000</SUP>108<SUP>1000</SUP>112<SUP>3000</SUP>116<SUP>4000</SUP>120<SUP>2900</SUP>128<SUP>500</SUP>132<SUP>3800</SUP>140<SUP>3300</SUP>144<SUP>1000</SUP>148<SUP>200</SUP>160<SUP>400</SUP>168<SUP>3000</SUP>192<SUP>400</SUP>200<SUP>680</SUP>212<SUP>800</SUP>220<SUP>1300</SUP>232<SUP>400</SUP>240<SUP>800</SUP>252<SUP>200</SUP>320<SUP>50</SUP>340<SUP>100</SUP>392<SUP>100</SUP>412<SUP>200</SUP>420<SUP>100</SUP>592<SUP>50</SUP>600<SUP>620</SUP>625<SUP>651</SUP> 
+      </P>
+    </TD>
+  </TR>
+  <TR> 
+    <TD><A NAME="s4bDual"></A></TD>
+    <TD> 
+      <P ALIGN=CENTER><A HREF="index.html#s4b">s4bDual</A> </P>
+    </TD>
+    <TD></TD>
+    <TD> 
+      <P ALIGN=LEFT>0<SUP>15520</SUP>4<SUP>33000</SUP>8<SUP>29000</SUP>12<SUP>23000</SUP>16<SUP>51750</SUP>20<SUP>33000</SUP>24<SUP>32500</SUP>28<SUP>17000</SUP>32<SUP>8500</SUP>36<SUP>19500</SUP>40<SUP>27200</SUP>44<SUP>6900</SUP>48<SUP>10500</SUP>52<SUP>11500</SUP>56<SUP>12900</SUP>60<SUP>6000</SUP>64<SUP>19500</SUP>68<SUP>2700</SUP>72<SUP>900</SUP>76<SUP>6400</SUP>80<SUP>1000</SUP>84<SUP>2200</SUP>88<SUP>5650</SUP>92<SUP>1500</SUP>96<SUP>12200</SUP>100<SUP>5160</SUP>104<SUP>2000</SUP>108<SUP>2400</SUP>112<SUP>2000</SUP>116<SUP>600</SUP>120<SUP>120</SUP>124<SUP>3200</SUP>132<SUP>4200</SUP>136<SUP>250</SUP>140<SUP>2000</SUP>152<SUP>200</SUP>156<SUP>500</SUP>160<SUP>80</SUP>176<SUP>600</SUP>184<SUP>1000</SUP>192<SUP>500</SUP>200<SUP>2190</SUP>220<SUP>2000</SUP>240<SUP>800</SUP>268<SUP>200</SUP>280<SUP>1200</SUP>284<SUP>200</SUP>296<SUP>250</SUP>304<SUP>100</SUP>320<SUP>800</SUP>400<SUP>18</SUP>440<SUP>100</SUP>464<SUP>250</SUP>520<SUP>200</SUP>600<SUP>212</SUP>625<SUP>651</SUP> 
+      </P>
+    </TD>
+  </TR>
+  <TR> 
+    <TD> 
+      <P ALIGN=CENTER><A NAME="a7b"></A>69 </P>
+    </TD>
+    <TD> 
+      <P ALIGN=CENTER><A HREF="index.html#a7b">a7b</A> </P>
+    </TD>
+    <TD></TD>
+    <TD> 
+      <P ALIGN=LEFT>0<SUP>4120</SUP>4<SUP>20000</SUP>8<SUP>14000</SUP>12<SUP>9600</SUP>16<SUP>6000</SUP>20<SUP>8800</SUP>24<SUP>36000</SUP>28<SUP>14000</SUP>32<SUP>17200</SUP>36<SUP>21000</SUP>40<SUP>16500</SUP>44<SUP>16000</SUP>48<SUP>16400</SUP>52<SUP>21200</SUP>56<SUP>20000</SUP>60<SUP>16400</SUP>64<SUP>10000</SUP>68<SUP>29200</SUP>72<SUP>14000</SUP>76<SUP>23000</SUP>80<SUP>26200</SUP>84<SUP>8000</SUP>88<SUP>10400</SUP>92<SUP>17200</SUP>96<SUP>4000</SUP>100<SUP>4080</SUP>112<SUP>2400</SUP>116<SUP>2000</SUP>120<SUP>900</SUP>132<SUP>3000</SUP>136<SUP>2000</SUP>140<SUP>2000</SUP>148<SUP>800</SUP>160<SUP>500</SUP>168<SUP>1000</SUP>192<SUP>50</SUP>200<SUP>250</SUP>212<SUP>600</SUP>232<SUP>400</SUP>240<SUP>1800</SUP>248<SUP>200</SUP>268<SUP>200</SUP>300<SUP>40</SUP>320<SUP>600</SUP>340<SUP>400</SUP>440<SUP>100</SUP>600<SUP>610</SUP>625<SUP>651</SUP> 
+      </P>
+    </TD>
+  </TR>
+  <TR> 
+    <TD><A NAME="a7bDual"></A></TD>
+    <TD> 
+      <P ALIGN=CENTER><A HREF="index.html#a7b">a7bDual</A> </P>
+    </TD>
+    <TD></TD>
+    <TD> 
+      <P ALIGN=LEFT>0<SUP>6660</SUP>4<SUP>23000</SUP>8<SUP>20000</SUP>12<SUP>24000</SUP>16<SUP>26200</SUP>20<SUP>38080</SUP>24<SUP>11400</SUP>28<SUP>17000</SUP>32<SUP>12500</SUP>36<SUP>10200</SUP>40<SUP>35360</SUP>44<SUP>19200</SUP>48<SUP>11500</SUP>52<SUP>23000</SUP>56<SUP>20200</SUP>60<SUP>10000</SUP>64<SUP>15600</SUP>68<SUP>6000</SUP>72<SUP>8000</SUP>76<SUP>6200</SUP>80<SUP>7400</SUP>84<SUP>4200</SUP>88<SUP>4500</SUP>92<SUP>3000</SUP>96<SUP>1000</SUP>100<SUP>4600</SUP>104<SUP>5200</SUP>108<SUP>6000</SUP>112<SUP>6500</SUP>120<SUP>450</SUP>124<SUP>4200</SUP>132<SUP>4000</SUP>136<SUP>1000</SUP>140<SUP>5200</SUP>148<SUP>6000</SUP>156<SUP>400</SUP>160<SUP>1600</SUP>168<SUP>2600</SUP>176<SUP>200</SUP>180<SUP>2800</SUP>200<SUP>1200</SUP>204<SUP>400</SUP>208<SUP>200</SUP>220<SUP>800</SUP>224<SUP>600</SUP>232<SUP>200</SUP>240<SUP>1300</SUP>248<SUP>50</SUP>260<SUP>400</SUP>276<SUP>400</SUP>280<SUP>1000</SUP>300<SUP>1000</SUP>304<SUP>600</SUP>400<SUP>10</SUP>600<SUP>40</SUP>625<SUP>651</SUP> 
+      </P>
+    </TD>
+  </TR>
+  <TR> 
+    <TD> 
+      <P ALIGN=CENTER><A NAME="b3a"></A>70 </P>
+    </TD>
+    <TD> 
+      <P ALIGN=CENTER><A HREF="index.html#b3a">b3a</A> </P>
+    </TD>
+    <TD></TD>
+    <TD> 
+      <P ALIGN=LEFT>0<SUP>22090</SUP>4<SUP>41500</SUP>8<SUP>48150</SUP>12<SUP>41100</SUP>16<SUP>48000</SUP>20<SUP>37600</SUP>24<SUP>25500</SUP>28<SUP>19500</SUP>32<SUP>21450</SUP>36<SUP>19500</SUP>40<SUP>22300</SUP>44<SUP>3000</SUP>48<SUP>5100</SUP>52<SUP>22100</SUP>56<SUP>15000</SUP>60<SUP>11550</SUP>64<SUP>5500</SUP>68<SUP>900</SUP>72<SUP>500</SUP>80<SUP>1500</SUP>84<SUP>1500</SUP>88<SUP>300</SUP>100<SUP>120</SUP>112<SUP>900</SUP>120<SUP>750</SUP>132<SUP>1500</SUP>140<SUP>1650</SUP>148<SUP>450</SUP>152<SUP>150</SUP>160<SUP>900</SUP>168<SUP>150</SUP>192<SUP>150</SUP>200<SUP>30</SUP>212<SUP>450</SUP>220<SUP>450</SUP>232<SUP>150</SUP>240<SUP>300</SUP>248<SUP>300</SUP>300<SUP>60</SUP>312<SUP>150</SUP>320<SUP>150</SUP>340<SUP>150</SUP>600<SUP>600</SUP>625<SUP>651</SUP> 
+      </P>
+    </TD>
+  </TR>
+  <TR> 
+    <TD><A NAME="b3aDual"></A></TD>
+    <TD> 
+      <P ALIGN=CENTER><A HREF="index.html#b3a">b3aDual</A> </P>
+    </TD>
+    <TD></TD>
+    <TD> 
+      <P ALIGN=LEFT>0<SUP>14270</SUP>4<SUP>47700</SUP>8<SUP>34950</SUP>12<SUP>28650</SUP>16<SUP>44100</SUP>20<SUP>27900</SUP>24<SUP>26350</SUP>28<SUP>37800</SUP>32<SUP>21000</SUP>36<SUP>28200</SUP>40<SUP>22350</SUP>44<SUP>15300</SUP>48<SUP>7500</SUP>52<SUP>6450</SUP>56<SUP>12300</SUP>60<SUP>7050</SUP>64<SUP>6900</SUP>68<SUP>6000</SUP>72<SUP>4650</SUP>76<SUP>3000</SUP>80<SUP>1200</SUP>84<SUP>1050</SUP>92<SUP>1500</SUP>100<SUP>1920</SUP>104<SUP>900</SUP>112<SUP>900</SUP>116<SUP>450</SUP>120<SUP>1140</SUP>124<SUP>150</SUP>132<SUP>150</SUP>136<SUP>150</SUP>140<SUP>3600</SUP>148<SUP>300</SUP>156<SUP>300</SUP>160<SUP>1200</SUP>168<SUP>150</SUP>172<SUP>450</SUP>176<SUP>150</SUP>180<SUP>1500</SUP>200<SUP>2040</SUP>220<SUP>900</SUP>240<SUP>300</SUP>280<SUP>300</SUP>400<SUP>18</SUP>600<SUP>12</SUP>625<SUP>651</SUP> 
+      </P>
+    </TD>
+  </TR>
+  <TR> 
+    <TD> 
+      <P ALIGN=CENTER><A NAME="a1b"></A>71 </P>
+    </TD>
+    <TD> 
+      <P ALIGN=CENTER><A HREF="index.html#a1b">a1b</A> </P>
+    </TD>
+    <TD></TD>
+    <TD> 
+      <P ALIGN=LEFT>0<SUP>19330</SUP>4<SUP>20000</SUP>8<SUP>35500</SUP>12<SUP>36600</SUP>16<SUP>38500</SUP>20<SUP>24950</SUP>24<SUP>31500</SUP>28<SUP>22000</SUP>32<SUP>16650</SUP>36<SUP>39000</SUP>40<SUP>19500</SUP>44<SUP>17000</SUP>48<SUP>14700</SUP>52<SUP>25500</SUP>56<SUP>15500</SUP>60<SUP>10200</SUP>64<SUP>6000</SUP>68<SUP>2350</SUP>72<SUP>6000</SUP>80<SUP>7500</SUP>84<SUP>1500</SUP>88<SUP>1650</SUP>100<SUP>240</SUP>112<SUP>150</SUP>120<SUP>900</SUP>132<SUP>600</SUP>140<SUP>1650</SUP>148<SUP>450</SUP>152<SUP>300</SUP>160<SUP>750</SUP>168<SUP>800</SUP>192<SUP>450</SUP>200<SUP>660</SUP>212<SUP>300</SUP>220<SUP>1200</SUP>240<SUP>450</SUP>260<SUP>150</SUP>300<SUP>540</SUP>312<SUP>450</SUP>320<SUP>450</SUP>340<SUP>150</SUP>420<SUP>300</SUP>600<SUP>780</SUP>625<SUP>651</SUP> 
+      </P>
+    </TD>
+  </TR>
+  <TR> 
+    <TD><A NAME="a1bDual"></A></TD>
+    <TD> 
+      <P ALIGN=CENTER><A HREF="index.html#a1b">a1bDual</A> </P>
+    </TD>
+    <TD></TD>
+    <TD> 
+      <P ALIGN=LEFT>0<SUP>3020</SUP>4<SUP>31050</SUP>8<SUP>35250</SUP>12<SUP>25500</SUP>16<SUP>31050</SUP>20<SUP>38250</SUP>24<SUP>31450</SUP>28<SUP>24000</SUP>32<SUP>21000</SUP>36<SUP>13950</SUP>40<SUP>22350</SUP>44<SUP>16500</SUP>48<SUP>16950</SUP>52<SUP>10500</SUP>56<SUP>8550</SUP>60<SUP>9750</SUP>64<SUP>6900</SUP>68<SUP>3300</SUP>72<SUP>10500</SUP>76<SUP>1650</SUP>80<SUP>3870</SUP>84<SUP>13050</SUP>88<SUP>3150</SUP>92<SUP>9000</SUP>96<SUP>3750</SUP>100<SUP>7320</SUP>104<SUP>3000</SUP>108<SUP>450</SUP>112<SUP>1050</SUP>116<SUP>150</SUP>120<SUP>1800</SUP>124<SUP>750</SUP>128<SUP>1500</SUP>132<SUP>750</SUP>140<SUP>2850</SUP>144<SUP>300</SUP>152<SUP>1500</SUP>160<SUP>1200</SUP>176<SUP>750</SUP>180<SUP>1320</SUP>192<SUP>150</SUP>200<SUP>1740</SUP>212<SUP>450</SUP>220<SUP>600</SUP>232<SUP>300</SUP>260<SUP>300</SUP>280<SUP>300</SUP>320<SUP>300</SUP>400<SUP>18</SUP>600<SUP>12</SUP>625<SUP>651</SUP> 
+      </P>
+    </TD>
+  </TR>
+  <TR> 
+    <TD> 
+      <P ALIGN=CENTER><A NAME="a1c"></A>72 </P>
+    </TD>
+    <TD> 
+      <P ALIGN=CENTER><A HREF="index.html#a1c">a1c</A> </P>
+    </TD>
+    <TD></TD>
+    <TD> 
+      <P ALIGN=LEFT>0<SUP>25040</SUP>4<SUP>47000</SUP>8<SUP>52500</SUP>12<SUP>27900</SUP>16<SUP>45000</SUP>20<SUP>27650</SUP>24<SUP>35000</SUP>28<SUP>32000</SUP>32<SUP>22200</SUP>36<SUP>12000</SUP>40<SUP>26750</SUP>44<SUP>17000</SUP>48<SUP>8600</SUP>52<SUP>4200</SUP>56<SUP>8500</SUP>60<SUP>4350</SUP>64<SUP>3000</SUP>68<SUP>4900</SUP>72<SUP>3000</SUP>80<SUP>2200</SUP>84<SUP>1000</SUP>88<SUP>1250</SUP>92<SUP>100</SUP>96<SUP>500</SUP>100<SUP>280</SUP>112<SUP>450</SUP>120<SUP>900</SUP>132<SUP>800</SUP>140<SUP>1900</SUP>148<SUP>300</SUP>152<SUP>400</SUP>160<SUP>1050</SUP>168<SUP>250</SUP>192<SUP>200</SUP>200<SUP>200</SUP>212<SUP>300</SUP>220<SUP>1600</SUP>240<SUP>500</SUP>248<SUP>400</SUP>260<SUP>100</SUP>292<SUP>100</SUP>300<SUP>50</SUP>320<SUP>550</SUP>340<SUP>350</SUP>400<SUP>20</SUP>420<SUP>150</SUP>440<SUP>50</SUP>500<SUP>10</SUP>600<SUP>600</SUP>625<SUP>651</SUP> 
+      </P>
+    </TD>
+  </TR>
+  <TR> 
+    <TD><A NAME="a1cDual"></A></TD>
+    <TD> 
+      <P ALIGN=CENTER><A HREF="index.html#a1c">a1cDual</A> </P>
+    </TD>
+    <TD></TD>
+    <TD> 
+      <P ALIGN=LEFT>0<SUP>9020</SUP>4<SUP>46800</SUP>8<SUP>25700</SUP>12<SUP>29500</SUP>16<SUP>26450</SUP>20<SUP>25100</SUP>24<SUP>50200</SUP>28<SUP>17250</SUP>32<SUP>25250</SUP>36<SUP>27150</SUP>40<SUP>25750</SUP>44<SUP>8400</SUP>48<SUP>12300</SUP>52<SUP>6350</SUP>56<SUP>17800</SUP>60<SUP>4650</SUP>64<SUP>14750</SUP>68<SUP>6100</SUP>72<SUP>5300</SUP>76<SUP>5250</SUP>80<SUP>4240</SUP>84<SUP>1700</SUP>88<SUP>1600</SUP>92<SUP>1250</SUP>96<SUP>1500</SUP>100<SUP>4700</SUP>104<SUP>1600</SUP>108<SUP>600</SUP>112<SUP>750</SUP>116<SUP>100</SUP>120<SUP>3100</SUP>124<SUP>100</SUP>128<SUP>1000</SUP>132<SUP>100</SUP>136<SUP>1100</SUP>140<SUP>3100</SUP>144<SUP>600</SUP>152<SUP>100</SUP>156<SUP>500</SUP>160<SUP>2520</SUP>164<SUP>100</SUP>172<SUP>100</SUP>180<SUP>1300</SUP>184<SUP>150</SUP>192<SUP>100</SUP>200<SUP>840</SUP>220<SUP>600</SUP>240<SUP>400</SUP>260<SUP>200</SUP>400<SUP>18</SUP>600<SUP>12</SUP>625<SUP>651</SUP> 
+      </P>
+    </TD>
+  </TR>
+  <TR> 
+    <TD> 
+      <P ALIGN=CENTER><A NAME="b6c"></A>73 </P>
+    </TD>
+    <TD> 
+      <P ALIGN=CENTER><A HREF="index.html#b6c">b6c</A> </P>
+    </TD>
+    <TD></TD>
+    <TD> 
+      <P ALIGN=LEFT>0<SUP>10040</SUP>4<SUP>37000</SUP>8<SUP>36000</SUP>12<SUP>34800</SUP>16<SUP>33000</SUP>20<SUP>29900</SUP>24<SUP>24500</SUP>28<SUP>48500</SUP>32<SUP>29000</SUP>36<SUP>29500</SUP>40<SUP>25850</SUP>44<SUP>15000</SUP>48<SUP>11500</SUP>52<SUP>16300</SUP>56<SUP>3000</SUP>60<SUP>5550</SUP>64<SUP>5000</SUP>68<SUP>1600</SUP>72<SUP>5500</SUP>76<SUP>1000</SUP>80<SUP>1100</SUP>84<SUP>3000</SUP>88<SUP>1000</SUP>100<SUP>260</SUP>104<SUP>2000</SUP>108<SUP>2000</SUP>112<SUP>1100</SUP>120<SUP>1400</SUP>132<SUP>1400</SUP>140<SUP>2400</SUP>148<SUP>400</SUP>152<SUP>200</SUP>160<SUP>900</SUP>168<SUP>650</SUP>192<SUP>100</SUP>200<SUP>70</SUP>212<SUP>600</SUP>220<SUP>550</SUP>240<SUP>350</SUP>248<SUP>200</SUP>292<SUP>100</SUP>320<SUP>50</SUP>400<SUP>170</SUP>600<SUP>610</SUP>625<SUP>651</SUP> 
+      </P>
+    </TD>
+  </TR>
+  <TR> 
+    <TD><A NAME="b6cDual"></A></TD>
+    <TD> 
+      <P ALIGN=CENTER><A HREF="index.html#b6c">b6cDual</A> </P>
+    </TD>
+    <TD></TD>
+    <TD> 
+      <P ALIGN=LEFT>0<SUP>24270</SUP>4<SUP>38700</SUP>8<SUP>18000</SUP>12<SUP>47250</SUP>16<SUP>25500</SUP>20<SUP>23250</SUP>24<SUP>51050</SUP>28<SUP>35950</SUP>32<SUP>23300</SUP>36<SUP>26200</SUP>40<SUP>15350</SUP>44<SUP>17800</SUP>48<SUP>3750</SUP>52<SUP>3300</SUP>56<SUP>5300</SUP>60<SUP>13850</SUP>64<SUP>7850</SUP>68<SUP>5250</SUP>72<SUP>4100</SUP>76<SUP>2200</SUP>80<SUP>2950</SUP>84<SUP>2200</SUP>88<SUP>2000</SUP>92<SUP>4100</SUP>96<SUP>800</SUP>100<SUP>3320</SUP>104<SUP>1600</SUP>108<SUP>150</SUP>112<SUP>450</SUP>120<SUP>1840</SUP>124<SUP>200</SUP>128<SUP>1050</SUP>132<SUP>100</SUP>140<SUP>2200</SUP>144<SUP>100</SUP>152<SUP>50</SUP>160<SUP>2800</SUP>180<SUP>800</SUP>200<SUP>1290</SUP>220<SUP>800</SUP>224<SUP>100</SUP>240<SUP>400</SUP>244<SUP>400</SUP>260<SUP>200</SUP>264<SUP>100</SUP>280<SUP>600</SUP>300<SUP>200</SUP>400<SUP>18</SUP>520<SUP>100</SUP>600<SUP>12</SUP>625<SUP>651</SUP> 
+      </P>
+    </TD>
+  </TR>
+  <TR> 
+    <TD> 
+      <P ALIGN=CENTER><A NAME="b8d"></A>74 </P>
+    </TD>
+    <TD> 
+      <P ALIGN=CENTER><A HREF="index.html#b8d">b8d</A> </P>
+    </TD>
+    <TD></TD>
+    <TD> 
+      <P ALIGN=LEFT>0<SUP>25210</SUP>4<SUP>32000</SUP>8<SUP>57000</SUP>12<SUP>48600</SUP>16<SUP>29500</SUP>20<SUP>21550</SUP>24<SUP>32500</SUP>28<SUP>43100</SUP>32<SUP>26100</SUP>36<SUP>13000</SUP>40<SUP>28550</SUP>44<SUP>13000</SUP>48<SUP>4700</SUP>52<SUP>10300</SUP>56<SUP>11000</SUP>60<SUP>4000</SUP>64<SUP>2500</SUP>68<SUP>1600</SUP>72<SUP>3100</SUP>80<SUP>2100</SUP>84<SUP>1000</SUP>88<SUP>100</SUP>92<SUP>200</SUP>100<SUP>200</SUP>108<SUP>1000</SUP>112<SUP>500</SUP>120<SUP>1850</SUP>132<SUP>1100</SUP>140<SUP>2750</SUP>148<SUP>200</SUP>152<SUP>150</SUP>160<SUP>1300</SUP>168<SUP>350</SUP>180<SUP>100</SUP>200<SUP>80</SUP>212<SUP>500</SUP>220<SUP>600</SUP>228<SUP>100</SUP>232<SUP>200</SUP>248<SUP>150</SUP>260<SUP>100</SUP>300<SUP>260</SUP>320<SUP>150</SUP>332<SUP>100</SUP>400<SUP>100</SUP>600<SUP>600</SUP>625<SUP>651</SUP> 
+      </P>
+    </TD>
+  </TR>
+  <TR> 
+    <TD><A NAME="b8dDual"></A></TD>
+    <TD> 
+      <P ALIGN=CENTER><A HREF="index.html#b8d">b8dDual</A> </P>
+    </TD>
+    <TD></TD>
+    <TD> 
+      <P ALIGN=LEFT>0<SUP>25270</SUP>4<SUP>35850</SUP>8<SUP>22750</SUP>12<SUP>32800</SUP>16<SUP>36050</SUP>20<SUP>27400</SUP>24<SUP>42400</SUP>28<SUP>22150</SUP>32<SUP>22200</SUP>36<SUP>36800</SUP>40<SUP>15250</SUP>44<SUP>21350</SUP>48<SUP>7750</SUP>52<SUP>13550</SUP>56<SUP>10450</SUP>60<SUP>5090</SUP>64<SUP>5500</SUP>68<SUP>1150</SUP>72<SUP>5750</SUP>76<SUP>2600</SUP>80<SUP>5080</SUP>84<SUP>3750</SUP>88<SUP>2600</SUP>92<SUP>2250</SUP>96<SUP>200</SUP>100<SUP>3620</SUP>104<SUP>300</SUP>108<SUP>1000</SUP>112<SUP>200</SUP>116<SUP>500</SUP>120<SUP>2600</SUP>124<SUP>600</SUP>132<SUP>200</SUP>136<SUP>100</SUP>140<SUP>300</SUP>144<SUP>300</SUP>148<SUP>100</SUP>152<SUP>150</SUP>156<SUP>300</SUP>160<SUP>2040</SUP>164<SUP>400</SUP>180<SUP>1880</SUP>200<SUP>1140</SUP>220<SUP>600</SUP>240<SUP>400</SUP>260<SUP>200</SUP>300<SUP>200</SUP>400<SUP>18</SUP>600<SUP>12</SUP>625<SUP>651</SUP> 
+      </P>
+    </TD>
+  </TR>
+  <TR> 
+    <TD> 
+      <P ALIGN=CENTER><A NAME="s3b"></A>75 </P>
+    </TD>
+    <TD> 
+      <P ALIGN=CENTER><A HREF="index.html#s3b">s3b</A> </P>
+    </TD>
+    <TD></TD>
+    <TD> 
+      <P ALIGN=LEFT>0<SUP>610</SUP>4<SUP>7000</SUP>8<SUP>12000</SUP>12<SUP>4800</SUP>16<SUP>11000</SUP>20<SUP>14350</SUP>24<SUP>14500</SUP>28<SUP>15000</SUP>32<SUP>11000</SUP>36<SUP>9000</SUP>40<SUP>11550</SUP>44<SUP>12000</SUP>48<SUP>15750</SUP>52<SUP>24100</SUP>56<SUP>12000</SUP>60<SUP>22300</SUP>64<SUP>22000</SUP>68<SUP>24100</SUP>72<SUP>23000</SUP>76<SUP>17000</SUP>80<SUP>19100</SUP>84<SUP>24500</SUP>88<SUP>15300</SUP>92<SUP>20000</SUP>96<SUP>16000</SUP>100<SUP>8220</SUP>104<SUP>6000</SUP>108<SUP>8000</SUP>112<SUP>2800</SUP>116<SUP>4000</SUP>120<SUP>1750</SUP>128<SUP>100</SUP>132<SUP>3500</SUP>136<SUP>1000</SUP>140<SUP>2800</SUP>148<SUP>400</SUP>152<SUP>200</SUP>156<SUP>1000</SUP>160<SUP>450</SUP>168<SUP>250</SUP>192<SUP>200</SUP>212<SUP>500</SUP>220<SUP>550</SUP>232<SUP>200</SUP>240<SUP>700</SUP>260<SUP>50</SUP>292<SUP>100</SUP>300<SUP>710</SUP>312<SUP>400</SUP>320<SUP>100</SUP>392<SUP>200</SUP>400<SUP>250</SUP>412<SUP>100</SUP>512<SUP>50</SUP>600<SUP>610</SUP>625<SUP>651</SUP> 
+      </P>
+    </TD>
+  </TR>
+  <TR> 
+    <TD><A NAME="s3bDual"></A></TD>
+    <TD> 
+      <P ALIGN=CENTER><A HREF="index.html#s3b">s3bDual</A> </P>
+    </TD>
+    <TD></TD>
+    <TD> 
+      <P ALIGN=LEFT>0<SUP>8520</SUP>4<SUP>17250</SUP>8<SUP>6000</SUP>12<SUP>12000</SUP>16<SUP>15250</SUP>20<SUP>10500</SUP>24<SUP>12000</SUP>28<SUP>24000</SUP>32<SUP>19750</SUP>36<SUP>20000</SUP>40<SUP>13500</SUP>44<SUP>13500</SUP>48<SUP>14000</SUP>52<SUP>18000</SUP>56<SUP>11000</SUP>60<SUP>11850</SUP>64<SUP>23500</SUP>68<SUP>9850</SUP>72<SUP>15100</SUP>76<SUP>21500</SUP>80<SUP>16450</SUP>84<SUP>3650</SUP>88<SUP>9300</SUP>92<SUP>1000</SUP>96<SUP>11050</SUP>100<SUP>11290</SUP>104<SUP>17900</SUP>108<SUP>5400</SUP>112<SUP>2250</SUP>116<SUP>4800</SUP>120<SUP>5640</SUP>124<SUP>3800</SUP>128<SUP>4000</SUP>132<SUP>4100</SUP>136<SUP>1450</SUP>140<SUP>4980</SUP>144<SUP>1550</SUP>148<SUP>150</SUP>152<SUP>500</SUP>156<SUP>200</SUP>160<SUP>2650</SUP>164<SUP>500</SUP>168<SUP>700</SUP>172<SUP>600</SUP>176<SUP>200</SUP>180<SUP>1400</SUP>184<SUP>300</SUP>188<SUP>800</SUP>192<SUP>200</SUP>196<SUP>200</SUP>200<SUP>3640</SUP>204<SUP>400</SUP>212<SUP>350</SUP>216<SUP>200</SUP>220<SUP>1250</SUP>224<SUP>200</SUP>236<SUP>400</SUP>240<SUP>1000</SUP>244<SUP>200</SUP>280<SUP>800</SUP>300<SUP>200</SUP>320<SUP>400</SUP>400<SUP>18</SUP>600<SUP>12</SUP>625<SUP>651</SUP> 
+      </P>
+    </TD>
+  </TR>
+  <TR> 
+    <TD> 
+      <P ALIGN=CENTER><A NAME="b3b"></A>76 </P>
+    </TD>
+    <TD> 
+      <P ALIGN=CENTER><A HREF="index.html#b3b">b3b</A> </P>
+    </TD>
+    <TD></TD>
+    <TD> 
+      <P ALIGN=LEFT>0<SUP>26660</SUP>4<SUP>51000</SUP>8<SUP>36000</SUP>12<SUP>29300</SUP>16<SUP>38500</SUP>20<SUP>31150</SUP>24<SUP>24000</SUP>28<SUP>20500</SUP>32<SUP>29050</SUP>36<SUP>22500</SUP>40<SUP>27850</SUP>44<SUP>20500</SUP>48<SUP>9750</SUP>52<SUP>10450</SUP>56<SUP>10000</SUP>60<SUP>7150</SUP>64<SUP>1000</SUP>68<SUP>5550</SUP>72<SUP>2000</SUP>76<SUP>2500</SUP>80<SUP>2050</SUP>84<SUP>500</SUP>88<SUP>1600</SUP>92<SUP>1000</SUP>96<SUP>1000</SUP>100<SUP>100</SUP>108<SUP>500</SUP>112<SUP>600</SUP>116<SUP>500</SUP>120<SUP>1600</SUP>128<SUP>50</SUP>132<SUP>700</SUP>140<SUP>2450</SUP>148<SUP>950</SUP>152<SUP>200</SUP>160<SUP>550</SUP>168<SUP>400</SUP>200<SUP>140</SUP>212<SUP>750</SUP>220<SUP>400</SUP>228<SUP>50</SUP>232<SUP>150</SUP>240<SUP>300</SUP>248<SUP>150</SUP>292<SUP>50</SUP>300<SUP>110</SUP>312<SUP>100</SUP>340<SUP>100</SUP>400<SUP>40</SUP>440<SUP>50</SUP>600<SUP>600</SUP>625<SUP>651</SUP> 
+      </P>
+    </TD>
+  </TR>
+  <TR> 
+    <TD><A NAME="b3bDual"></A></TD>
+    <TD> 
+      <P ALIGN=CENTER><A HREF="index.html#b3b">b3bDual</A> </P>
+    </TD>
+    <TD></TD>
+    <TD> 
+      <P ALIGN=LEFT>0<SUP>22070</SUP>4<SUP>34850</SUP>8<SUP>29150</SUP>12<SUP>42500</SUP>16<SUP>34900</SUP>20<SUP>29150</SUP>24<SUP>32850</SUP>28<SUP>22750</SUP>32<SUP>22500</SUP>36<SUP>23900</SUP>40<SUP>14000</SUP>44<SUP>26350</SUP>48<SUP>10400</SUP>52<SUP>15000</SUP>56<SUP>7800</SUP>60<SUP>6150</SUP>64<SUP>8950</SUP>68<SUP>6500</SUP>72<SUP>2700</SUP>76<SUP>3450</SUP>80<SUP>2590</SUP>84<SUP>2100</SUP>88<SUP>1750</SUP>92<SUP>850</SUP>96<SUP>1400</SUP>100<SUP>3050</SUP>104<SUP>1850</SUP>108<SUP>1000</SUP>112<SUP>150</SUP>116<SUP>450</SUP>120<SUP>900</SUP>124<SUP>350</SUP>128<SUP>550</SUP>132<SUP>150</SUP>136<SUP>150</SUP>140<SUP>2850</SUP>144<SUP>150</SUP>152<SUP>350</SUP>160<SUP>1570</SUP>164<SUP>50</SUP>172<SUP>50</SUP>180<SUP>1800</SUP>192<SUP>50</SUP>196<SUP>250</SUP>200<SUP>1040</SUP>212<SUP>50</SUP>220<SUP>350</SUP>228<SUP>50</SUP>240<SUP>400</SUP>256<SUP>100</SUP>260<SUP>100</SUP>280<SUP>200</SUP>300<SUP>100</SUP>320<SUP>300</SUP>400<SUP>118</SUP>600<SUP>12</SUP>625<SUP>651</SUP> 
+      </P>
+    </TD>
+  </TR>
+  <TR> 
+    <TD> 
+      <P ALIGN=CENTER><A NAME="b3c"></A>77 </P>
+    </TD>
+    <TD> 
+      <P ALIGN=CENTER><A HREF="index.html#b3c">b3c</A> </P>
+    </TD>
+    <TD></TD>
+    <TD> 
+      <P ALIGN=LEFT>0<SUP>15690</SUP>4<SUP>33000</SUP>8<SUP>25000</SUP>12<SUP>30050</SUP>16<SUP>29500</SUP>20<SUP>36600</SUP>24<SUP>38500</SUP>28<SUP>34500</SUP>32<SUP>28100</SUP>36<SUP>16500</SUP>40<SUP>20000</SUP>44<SUP>18500</SUP>48<SUP>20450</SUP>52<SUP>20100</SUP>56<SUP>15500</SUP>60<SUP>8900</SUP>64<SUP>5000</SUP>68<SUP>3550</SUP>72<SUP>4500</SUP>76<SUP>3500</SUP>80<SUP>1150</SUP>84<SUP>1000</SUP>88<SUP>150</SUP>96<SUP>1500</SUP>100<SUP>600</SUP>112<SUP>900</SUP>120<SUP>1350</SUP>124<SUP>500</SUP>132<SUP>850</SUP>140<SUP>2100</SUP>148<SUP>600</SUP>152<SUP>300</SUP>160<SUP>650</SUP>168<SUP>200</SUP>192<SUP>150</SUP>200<SUP>180</SUP>212<SUP>700</SUP>220<SUP>850</SUP>232<SUP>600</SUP>240<SUP>400</SUP>248<SUP>100</SUP>300<SUP>60</SUP>320<SUP>100</SUP>332<SUP>50</SUP>400<SUP>20</SUP>420<SUP>50</SUP>600<SUP>600</SUP>625<SUP>651</SUP> 
+      </P>
+    </TD>
+  </TR>
+  <TR> 
+    <TD><A NAME="b3cDual"></A></TD>
+    <TD> 
+      <P ALIGN=CENTER><A HREF="index.html#b3c">b3cDual</A> </P>
+    </TD>
+    <TD></TD>
+    <TD> 
+      <P ALIGN=LEFT>0<SUP>10320</SUP>4<SUP>31850</SUP>8<SUP>38350</SUP>12<SUP>36300</SUP>16<SUP>33400</SUP>20<SUP>24350</SUP>24<SUP>31650</SUP>28<SUP>22000</SUP>32<SUP>25350</SUP>36<SUP>22100</SUP>40<SUP>21150</SUP>44<SUP>16700</SUP>48<SUP>12550</SUP>52<SUP>13300</SUP>56<SUP>9150</SUP>60<SUP>11450</SUP>64<SUP>9350</SUP>68<SUP>6050</SUP>72<SUP>6200</SUP>76<SUP>7750</SUP>80<SUP>2400</SUP>84<SUP>5650</SUP>88<SUP>700</SUP>92<SUP>2550</SUP>96<SUP>700</SUP>100<SUP>4050</SUP>104<SUP>2500</SUP>108<SUP>2050</SUP>112<SUP>50</SUP>116<SUP>250</SUP>120<SUP>1090</SUP>124<SUP>350</SUP>128<SUP>50</SUP>132<SUP>100</SUP>136<SUP>50</SUP>140<SUP>3770</SUP>144<SUP>1300</SUP>148<SUP>50</SUP>160<SUP>1700</SUP>176<SUP>50</SUP>180<SUP>1500</SUP>184<SUP>50</SUP>188<SUP>50</SUP>192<SUP>250</SUP>196<SUP>50</SUP>200<SUP>1240</SUP>204<SUP>50</SUP>212<SUP>100</SUP>220<SUP>100</SUP>240<SUP>100</SUP>260<SUP>100</SUP>280<SUP>500</SUP>300<SUP>300</SUP>400<SUP>18</SUP>600<SUP>12</SUP>625<SUP>651</SUP> 
+      </P>
+    </TD>
+  </TR>
+  <TR> 
+    <TD> 
+      <P ALIGN=CENTER><A NAME="b3d"></A>78 </P>
+    </TD>
+    <TD> 
+      <P ALIGN=CENTER><A HREF="index.html#b3d">b3d</A> </P>
+    </TD>
+    <TD></TD>
+    <TD> 
+      <P ALIGN=LEFT>0<SUP>22680</SUP>4<SUP>34000</SUP>8<SUP>30500</SUP>12<SUP>32950</SUP>16<SUP>36000</SUP>20<SUP>29850</SUP>24<SUP>29500</SUP>28<SUP>30500</SUP>32<SUP>34550</SUP>36<SUP>35500</SUP>40<SUP>24050</SUP>44<SUP>11500</SUP>48<SUP>17050</SUP>52<SUP>14850</SUP>56<SUP>8500</SUP>60<SUP>3950</SUP>64<SUP>3500</SUP>68<SUP>2050</SUP>72<SUP>1500</SUP>76<SUP>1500</SUP>80<SUP>1350</SUP>84<SUP>1500</SUP>88<SUP>2700</SUP>92<SUP>500</SUP>96<SUP>1000</SUP>100<SUP>120</SUP>104<SUP>500</SUP>112<SUP>700</SUP>120<SUP>1200</SUP>128<SUP>50</SUP>132<SUP>950</SUP>140<SUP>2250</SUP>148<SUP>600</SUP>152<SUP>150</SUP>160<SUP>750</SUP>168<SUP>250</SUP>180<SUP>50</SUP>192<SUP>100</SUP>200<SUP>200</SUP>212<SUP>800</SUP>220<SUP>650</SUP>232<SUP>400</SUP>240<SUP>350</SUP>248<SUP>150</SUP>260<SUP>150</SUP>300<SUP>60</SUP>312<SUP>150</SUP>320<SUP>150</SUP>332<SUP>100</SUP>340<SUP>100</SUP>400<SUP>40</SUP>440<SUP>50</SUP>600<SUP>600</SUP>625<SUP>651</SUP> 
+      </P>
+    </TD>
+  </TR>
+  <TR> 
+    <TD><A NAME="b3dDual"></A></TD>
+    <TD> 
+      <P ALIGN=CENTER><A HREF="index.html#b3d">b3dDual</A> </P>
+    </TD>
+    <TD></TD>
+    <TD> 
+      <P ALIGN=LEFT>0<SUP>12770</SUP>4<SUP>38400</SUP>8<SUP>35850</SUP>12<SUP>34800</SUP>16<SUP>31850</SUP>20<SUP>25700</SUP>24<SUP>27900</SUP>28<SUP>24650</SUP>32<SUP>25650</SUP>36<SUP>21650</SUP>40<SUP>19050</SUP>44<SUP>18650</SUP>48<SUP>15600</SUP>52<SUP>11050</SUP>56<SUP>7450</SUP>60<SUP>11300</SUP>64<SUP>9100</SUP>68<SUP>7950</SUP>72<SUP>4250</SUP>76<SUP>6450</SUP>80<SUP>4800</SUP>84<SUP>5650</SUP>88<SUP>2300</SUP>92<SUP>500</SUP>96<SUP>350</SUP>100<SUP>3260</SUP>104<SUP>900</SUP>108<SUP>1600</SUP>112<SUP>50</SUP>116<SUP>1200</SUP>120<SUP>680</SUP>124<SUP>200</SUP>128<SUP>350</SUP>132<SUP>1000</SUP>136<SUP>200</SUP>140<SUP>2880</SUP>144<SUP>500</SUP>148<SUP>50</SUP>156<SUP>50</SUP>160<SUP>1440</SUP>164<SUP>150</SUP>176<SUP>100</SUP>180<SUP>2200</SUP>184<SUP>100</SUP>200<SUP>1040</SUP>220<SUP>800</SUP>240<SUP>100</SUP>260<SUP>100</SUP>280<SUP>400</SUP>400<SUP>118</SUP>600<SUP>12</SUP>625<SUP>651</SUP> 
+      </P>
+    </TD>
+  </TR>
+  <TR> 
+    <TD> 
+      <P ALIGN=CENTER><A NAME="b3e"></A>79 </P>
+    </TD>
+    <TD> 
+      <P ALIGN=CENTER><A HREF="index.html#b3e">b3e</A> </P>
+    </TD>
+    <TD></TD>
+    <TD> 
+      <P ALIGN=LEFT>0<SUP>25130</SUP>4<SUP>31000</SUP>8<SUP>43500</SUP>12<SUP>42350</SUP>16<SUP>37500</SUP>20<SUP>34850</SUP>24<SUP>35000</SUP>28<SUP>32500</SUP>32<SUP>22600</SUP>36<SUP>22500</SUP>40<SUP>19550</SUP>44<SUP>16500</SUP>48<SUP>8900</SUP>52<SUP>9900</SUP>56<SUP>7500</SUP>60<SUP>6750</SUP>64<SUP>4500</SUP>68<SUP>4000</SUP>72<SUP>3000</SUP>80<SUP>2050</SUP>84<SUP>500</SUP>88<SUP>650</SUP>92<SUP>1050</SUP>100<SUP>590</SUP>112<SUP>750</SUP>116<SUP>500</SUP>120<SUP>850</SUP>132<SUP>1100</SUP>140<SUP>1700</SUP>148<SUP>500</SUP>156<SUP>500</SUP>160<SUP>550</SUP>168<SUP>150</SUP>180<SUP>50</SUP>188<SUP>50</SUP>192<SUP>100</SUP>200<SUP>50</SUP>212<SUP>500</SUP>220<SUP>950</SUP>232<SUP>600</SUP>240<SUP>700</SUP>248<SUP>100</SUP>260<SUP>50</SUP>292<SUP>100</SUP>300<SUP>10</SUP>312<SUP>150</SUP>320<SUP>50</SUP>340<SUP>100</SUP>400<SUP>20</SUP>600<SUP>600</SUP>625<SUP>651</SUP> 
+      </P>
+    </TD>
+  </TR>
+  <TR> 
+    <TD><A NAME="b3eDual"></A></TD>
+    <TD> 
+      <P ALIGN=CENTER><A HREF="index.html#b3e">b3eDual</A> </P>
+    </TD>
+    <TD></TD>
+    <TD> 
+      <P ALIGN=LEFT>0<SUP>10270</SUP>4<SUP>35350</SUP>8<SUP>38600</SUP>12<SUP>27750</SUP>16<SUP>32500</SUP>20<SUP>35800</SUP>24<SUP>36750</SUP>28<SUP>25000</SUP>32<SUP>27400</SUP>36<SUP>25400</SUP>40<SUP>20100</SUP>44<SUP>17900</SUP>48<SUP>14800</SUP>52<SUP>9550</SUP>56<SUP>11350</SUP>60<SUP>9150</SUP>64<SUP>6400</SUP>68<SUP>4200</SUP>72<SUP>3800</SUP>76<SUP>1300</SUP>80<SUP>3650</SUP>84<SUP>4100</SUP>88<SUP>350</SUP>92<SUP>1250</SUP>96<SUP>1800</SUP>100<SUP>2760</SUP>104<SUP>500</SUP>108<SUP>300</SUP>112<SUP>550</SUP>116<SUP>1250</SUP>120<SUP>1480</SUP>124<SUP>450</SUP>128<SUP>50</SUP>132<SUP>550</SUP>136<SUP>400</SUP>140<SUP>3330</SUP>144<SUP>200</SUP>148<SUP>100</SUP>152<SUP>400</SUP>156<SUP>100</SUP>160<SUP>1540</SUP>164<SUP>350</SUP>176<SUP>150</SUP>180<SUP>1900</SUP>200<SUP>1140</SUP>204<SUP>100</SUP>220<SUP>200</SUP>240<SUP>100</SUP>260<SUP>100</SUP>280<SUP>400</SUP>320<SUP>100</SUP>360<SUP>100</SUP>400<SUP>18</SUP>600<SUP>12</SUP>625<SUP>651</SUP> 
+      </P>
+    </TD>
+  </TR>
+  <TR> 
+    <TD> 
+      <P ALIGN=CENTER><A NAME="a7c"></A>80 </P>
+    </TD>
+    <TD> 
+      <P ALIGN=CENTER><A HREF="index.html#a7c">a7c</A> </P>
+    </TD>
+    <TD></TD>
+    <TD> 
+      <P ALIGN=LEFT>0<SUP>6650</SUP>4<SUP>13500</SUP>8<SUP>14500</SUP>12<SUP>11850</SUP>16<SUP>16000</SUP>20<SUP>16550</SUP>24<SUP>10500</SUP>28<SUP>9500</SUP>32<SUP>8500</SUP>36<SUP>7000</SUP>40<SUP>14300</SUP>44<SUP>14500</SUP>48<SUP>14000</SUP>52<SUP>18100</SUP>56<SUP>21500</SUP>60<SUP>16200</SUP>64<SUP>14000</SUP>68<SUP>16350</SUP>72<SUP>21500</SUP>76<SUP>20500</SUP>80<SUP>19650</SUP>84<SUP>20500</SUP>88<SUP>10750</SUP>92<SUP>12650</SUP>96<SUP>22000</SUP>100<SUP>8690</SUP>104<SUP>5000</SUP>108<SUP>7500</SUP>112<SUP>6900</SUP>116<SUP>2500</SUP>120<SUP>3550</SUP>124<SUP>1500</SUP>128<SUP>3000</SUP>132<SUP>1750</SUP>136<SUP>2500</SUP>140<SUP>3200</SUP>148<SUP>750</SUP>160<SUP>850</SUP>168<SUP>250</SUP>192<SUP>200</SUP>200<SUP>180</SUP>212<SUP>250</SUP>220<SUP>450</SUP>232<SUP>400</SUP>240<SUP>800</SUP>248<SUP>150</SUP>268<SUP>50</SUP>300<SUP>200</SUP>320<SUP>650</SUP>332<SUP>50</SUP>340<SUP>100</SUP>400<SUP>10</SUP>420<SUP>50</SUP>500<SUP>20</SUP>600<SUP>600</SUP>625<SUP>651</SUP> 
+      </P>
+    </TD>
+  </TR>
+  <TR> 
+    <TD><A NAME="a7cDual"></A></TD>
+    <TD> 
+      <P ALIGN=CENTER><A HREF="index.html#a7c">a7cDual</A> </P>
+    </TD>
+    <TD></TD>
+    <TD> 
+      <P ALIGN=LEFT>0<SUP>11770</SUP>4<SUP>31550</SUP>8<SUP>19000</SUP>12<SUP>15500</SUP>16<SUP>27650</SUP>20<SUP>27500</SUP>24<SUP>25950</SUP>28<SUP>14000</SUP>32<SUP>24000</SUP>36<SUP>23500</SUP>40<SUP>11800</SUP>44<SUP>17500</SUP>48<SUP>14700</SUP>52<SUP>19550</SUP>56<SUP>13850</SUP>60<SUP>15000</SUP>64<SUP>11500</SUP>68<SUP>7050</SUP>72<SUP>7500</SUP>76<SUP>2850</SUP>80<SUP>7950</SUP>84<SUP>9550</SUP>88<SUP>3650</SUP>92<SUP>4000</SUP>96<SUP>5150</SUP>100<SUP>3920</SUP>104<SUP>3200</SUP>108<SUP>2400</SUP>112<SUP>2050</SUP>116<SUP>3450</SUP>120<SUP>2640</SUP>124<SUP>3800</SUP>132<SUP>2350</SUP>136<SUP>1250</SUP>140<SUP>1800</SUP>144<SUP>350</SUP>148<SUP>1200</SUP>152<SUP>450</SUP>156<SUP>100</SUP>160<SUP>1350</SUP>164<SUP>1250</SUP>168<SUP>1300</SUP>172<SUP>1300</SUP>176<SUP>450</SUP>180<SUP>2600</SUP>184<SUP>300</SUP>188<SUP>50</SUP>192<SUP>1000</SUP>196<SUP>350</SUP>200<SUP>2340</SUP>204<SUP>450</SUP>208<SUP>1150</SUP>216<SUP>250</SUP>220<SUP>1000</SUP>224<SUP>50</SUP>232<SUP>50</SUP>236<SUP>100</SUP>240<SUP>700</SUP>256<SUP>50</SUP>260<SUP>500</SUP>276<SUP>1000</SUP>280<SUP>1000</SUP>284<SUP>350</SUP>296<SUP>100</SUP>300<SUP>200</SUP>304<SUP>350</SUP>316<SUP>1000</SUP>320<SUP>400</SUP>364<SUP>100</SUP>372<SUP>50</SUP>400<SUP>118</SUP>408<SUP>50</SUP>428<SUP>100</SUP>532<SUP>50</SUP>552<SUP>50</SUP>560<SUP>50</SUP>600<SUP>612</SUP>625<SUP>651</SUP> 
+      </P>
+    </TD>
+  </TR>
+  <TR> 
+    <TD> 
+      <P ALIGN=CENTER><A NAME="b1a"></A>81 </P>
+    </TD>
+    <TD> 
+      <P ALIGN=CENTER><A HREF="index.html#b1a">b1a</A> </P>
+    </TD>
+    <TD></TD>
+    <TD> 
+      <P ALIGN=LEFT>0<SUP>14630</SUP>4<SUP>44000</SUP>8<SUP>45000</SUP>12<SUP>40350</SUP>16<SUP>29500</SUP>20<SUP>43600</SUP>24<SUP>34500</SUP>28<SUP>21500</SUP>32<SUP>25050</SUP>36<SUP>20000</SUP>40<SUP>22250</SUP>44<SUP>12500</SUP>48<SUP>14450</SUP>52<SUP>13050</SUP>56<SUP>8500</SUP>60<SUP>6350</SUP>64<SUP>6500</SUP>68<SUP>3900</SUP>72<SUP>3500</SUP>76<SUP>1000</SUP>80<SUP>1050</SUP>84<SUP>1500</SUP>88<SUP>100</SUP>100<SUP>130</SUP>104<SUP>500</SUP>112<SUP>150</SUP>120<SUP>1000</SUP>128<SUP>200</SUP>132<SUP>1200</SUP>140<SUP>2700</SUP>148<SUP>750</SUP>152<SUP>150</SUP>160<SUP>650</SUP>168<SUP>150</SUP>200<SUP>30</SUP>212<SUP>300</SUP>220<SUP>350</SUP>228<SUP>50</SUP>232<SUP>250</SUP>240<SUP>550</SUP>248<SUP>300</SUP>300<SUP>60</SUP>312<SUP>50</SUP>320<SUP>100</SUP>332<SUP>50</SUP>340<SUP>50</SUP>348<SUP>50</SUP>600<SUP>600</SUP>625<SUP>651</SUP> 
+      </P>
+    </TD>
+  </TR>
+  <TR> 
+    <TD><A NAME="b1aDual"></A></TD>
+    <TD> 
+      <P ALIGN=CENTER><A HREF="index.html#b1a">b1aDual</A> </P>
+    </TD>
+    <TD></TD>
+    <TD> 
+      <P ALIGN=LEFT>0<SUP>19820</SUP>4<SUP>46300</SUP>8<SUP>34200</SUP>12<SUP>36850</SUP>16<SUP>34200</SUP>20<SUP>20050</SUP>24<SUP>34950</SUP>28<SUP>27150</SUP>32<SUP>32300</SUP>36<SUP>18800</SUP>40<SUP>11750</SUP>44<SUP>19650</SUP>48<SUP>14600</SUP>52<SUP>8800</SUP>56<SUP>11650</SUP>60<SUP>10550</SUP>64<SUP>2900</SUP>68<SUP>1900</SUP>72<SUP>2650</SUP>76<SUP>5650</SUP>80<SUP>3250</SUP>84<SUP>1550</SUP>88<SUP>2400</SUP>92<SUP>1850</SUP>96<SUP>1400</SUP>100<SUP>3590</SUP>104<SUP>750</SUP>108<SUP>900</SUP>112<SUP>300</SUP>116<SUP>500</SUP>120<SUP>1850</SUP>124<SUP>400</SUP>128<SUP>50</SUP>132<SUP>50</SUP>136<SUP>150</SUP>140<SUP>2950</SUP>144<SUP>50</SUP>148<SUP>100</SUP>156<SUP>100</SUP>160<SUP>2280</SUP>164<SUP>50</SUP>172<SUP>150</SUP>176<SUP>200</SUP>180<SUP>840</SUP>200<SUP>540</SUP>212<SUP>50</SUP>220<SUP>1000</SUP>224<SUP>50</SUP>232<SUP>50</SUP>240<SUP>200</SUP>260<SUP>200</SUP>280<SUP>500</SUP>300<SUP>100</SUP>400<SUP>18</SUP>600<SUP>12</SUP>625<SUP>651</SUP> 
+      </P>
+    </TD>
+  </TR>
+  <TR> 
+    <TD> 
+      <P ALIGN=CENTER><A NAME="b1b"></A>82 </P>
+    </TD>
+    <TD> 
+      <P ALIGN=CENTER><A HREF="index.html#b1b">b1b</A> </P>
+    </TD>
+    <TD></TD>
+    <TD> 
+      <P ALIGN=LEFT>0<SUP>23630</SUP>4<SUP>49000</SUP>8<SUP>47500</SUP>12<SUP>43800</SUP>16<SUP>34000</SUP>20<SUP>22000</SUP>24<SUP>18500</SUP>28<SUP>23000</SUP>32<SUP>23100</SUP>36<SUP>19500</SUP>40<SUP>18750</SUP>44<SUP>17000</SUP>48<SUP>11550</SUP>52<SUP>16050</SUP>56<SUP>11500</SUP>60<SUP>7850</SUP>64<SUP>5500</SUP>68<SUP>6400</SUP>72<SUP>6000</SUP>76<SUP>2000</SUP>80<SUP>2650</SUP>84<SUP>1500</SUP>88<SUP>700</SUP>100<SUP>620</SUP>108<SUP>500</SUP>112<SUP>1200</SUP>120<SUP>900</SUP>128<SUP>50</SUP>132<SUP>1200</SUP>140<SUP>2300</SUP>148<SUP>700</SUP>152<SUP>200</SUP>160<SUP>400</SUP>168<SUP>250</SUP>192<SUP>50</SUP>200<SUP>140</SUP>212<SUP>400</SUP>220<SUP>500</SUP>228<SUP>50</SUP>232<SUP>450</SUP>240<SUP>550</SUP>248<SUP>250</SUP>260<SUP>50</SUP>292<SUP>50</SUP>300<SUP>10</SUP>312<SUP>50</SUP>320<SUP>100</SUP>332<SUP>50</SUP>340<SUP>50</SUP>600<SUP>600</SUP>625<SUP>651</SUP> 
+      </P>
+    </TD>
+  </TR>
+  <TR> 
+    <TD><A NAME="b1bDual"></A></TD>
+    <TD> 
+      <P ALIGN=CENTER><A HREF="index.html#b1b">b1bDual</A> </P>
+    </TD>
+    <TD></TD>
+    <TD> 
+      <P ALIGN=LEFT>0<SUP>21020</SUP>4<SUP>31300</SUP>8<SUP>41450</SUP>12<SUP>25600</SUP>16<SUP>37300</SUP>20<SUP>29550</SUP>24<SUP>36000</SUP>28<SUP>30200</SUP>32<SUP>21050</SUP>36<SUP>17800</SUP>40<SUP>25000</SUP>44<SUP>12100</SUP>48<SUP>9300</SUP>52<SUP>12350</SUP>56<SUP>12700</SUP>60<SUP>5600</SUP>64<SUP>11350</SUP>68<SUP>5900</SUP>72<SUP>5900</SUP>76<SUP>1850</SUP>80<SUP>3750</SUP>84<SUP>3400</SUP>88<SUP>1450</SUP>92<SUP>600</SUP>96<SUP>1000</SUP>100<SUP>2840</SUP>104<SUP>400</SUP>108<SUP>1450</SUP>116<SUP>1100</SUP>120<SUP>2940</SUP>124<SUP>700</SUP>132<SUP>400</SUP>136<SUP>150</SUP>140<SUP>1980</SUP>144<SUP>500</SUP>148<SUP>50</SUP>152<SUP>100</SUP>156<SUP>350</SUP>160<SUP>2100</SUP>164<SUP>400</SUP>176<SUP>50</SUP>180<SUP>1000</SUP>184<SUP>50</SUP>200<SUP>940</SUP>220<SUP>800</SUP>240<SUP>300</SUP>260<SUP>500</SUP>280<SUP>400</SUP>320<SUP>100</SUP>400<SUP>18</SUP>600<SUP>12</SUP>625<SUP>651</SUP> 
+      </P>
+    </TD>
+  </TR>
+  <TR> 
+    <TD> 
+      <P ALIGN=CENTER><A NAME="b1c"></A>83 </P>
+    </TD>
+    <TD> 
+      <P ALIGN=CENTER><A HREF="index.html#b1c">b1c</A> </P>
+    </TD>
+    <TD></TD>
+    <TD> 
+      <P ALIGN=LEFT>0<SUP>11130</SUP>4<SUP>28500</SUP>8<SUP>41500</SUP>12<SUP>45050</SUP>16<SUP>31500</SUP>20<SUP>24450</SUP>24<SUP>27500</SUP>28<SUP>26150</SUP>32<SUP>35150</SUP>36<SUP>31500</SUP>40<SUP>23200</SUP>44<SUP>15500</SUP>48<SUP>16600</SUP>52<SUP>13000</SUP>56<SUP>8000</SUP>60<SUP>6250</SUP>64<SUP>8000</SUP>68<SUP>7600</SUP>72<SUP>1500</SUP>76<SUP>6000</SUP>80<SUP>1200</SUP>84<SUP>2500</SUP>88<SUP>50</SUP>92<SUP>500</SUP>96<SUP>500</SUP>100<SUP>70</SUP>104<SUP>500</SUP>112<SUP>550</SUP>120<SUP>1050</SUP>132<SUP>950</SUP>140<SUP>2300</SUP>148<SUP>750</SUP>152<SUP>150</SUP>160<SUP>500</SUP>168<SUP>350</SUP>192<SUP>50</SUP>200<SUP>90</SUP>212<SUP>300</SUP>220<SUP>650</SUP>232<SUP>250</SUP>240<SUP>550</SUP>248<SUP>200</SUP>252<SUP>50</SUP>260<SUP>50</SUP>292<SUP>50</SUP>300<SUP>60</SUP>320<SUP>200</SUP>340<SUP>50</SUP>600<SUP>600</SUP>625<SUP>651</SUP> 
+      </P>
+    </TD>
+  </TR>
+  <TR> 
+    <TD><A NAME="b1cDual"></A></TD>
+    <TD> 
+      <P ALIGN=CENTER><A HREF="index.html#b1c">b1cDual</A> </P>
+    </TD>
+    <TD></TD>
+    <TD> 
+      <P ALIGN=LEFT>0<SUP>25820</SUP>4<SUP>35650</SUP>8<SUP>33650</SUP>12<SUP>23550</SUP>16<SUP>40500</SUP>20<SUP>29800</SUP>24<SUP>39450</SUP>28<SUP>23150</SUP>32<SUP>16450</SUP>36<SUP>20550</SUP>40<SUP>16850</SUP>44<SUP>18400</SUP>48<SUP>11900</SUP>52<SUP>11300</SUP>56<SUP>11200</SUP>60<SUP>9600</SUP>64<SUP>4200</SUP>68<SUP>8450</SUP>72<SUP>6750</SUP>76<SUP>3650</SUP>80<SUP>3490</SUP>84<SUP>4750</SUP>88<SUP>2800</SUP>92<SUP>1650</SUP>96<SUP>800</SUP>100<SUP>2520</SUP>104<SUP>1700</SUP>108<SUP>200</SUP>112<SUP>1100</SUP>116<SUP>950</SUP>120<SUP>1930</SUP>124<SUP>400</SUP>128<SUP>250</SUP>132<SUP>500</SUP>136<SUP>400</SUP>140<SUP>2070</SUP>144<SUP>200</SUP>148<SUP>300</SUP>152<SUP>100</SUP>156<SUP>200</SUP>160<SUP>2100</SUP>164<SUP>50</SUP>168<SUP>50</SUP>176<SUP>50</SUP>180<SUP>1000</SUP>196<SUP>50</SUP>200<SUP>840</SUP>220<SUP>700</SUP>260<SUP>500</SUP>280<SUP>100</SUP>300<SUP>100</SUP>320<SUP>100</SUP>360<SUP>100</SUP>400<SUP>218</SUP>600<SUP>12</SUP>625<SUP>651</SUP> 
+      </P>
+    </TD>
+  </TR>
+  <TR> 
+    <TD> 
+      <P ALIGN=CENTER><A NAME="b2a"></A>84 </P>
+    </TD>
+    <TD> 
+      <P ALIGN=CENTER><A HREF="index.html#b2a">b2a</A> </P>
+    </TD>
+    <TD></TD>
+    <TD> 
+      <P ALIGN=LEFT>0<SUP>10630</SUP>4<SUP>12000</SUP>8<SUP>20500</SUP>12<SUP>23900</SUP>16<SUP>11500</SUP>20<SUP>13100</SUP>24<SUP>12500</SUP>28<SUP>15600</SUP>32<SUP>27400</SUP>36<SUP>21000</SUP>40<SUP>33550</SUP>44<SUP>14000</SUP>48<SUP>20750</SUP>52<SUP>18750</SUP>56<SUP>24000</SUP>60<SUP>23850</SUP>64<SUP>21000</SUP>68<SUP>14200</SUP>72<SUP>18000</SUP>76<SUP>14500</SUP>80<SUP>11150</SUP>84<SUP>8000</SUP>88<SUP>10500</SUP>92<SUP>3000</SUP>96<SUP>1000</SUP>100<SUP>5610</SUP>104<SUP>1000</SUP>108<SUP>1000</SUP>112<SUP>800</SUP>116<SUP>1000</SUP>120<SUP>850</SUP>128<SUP>600</SUP>132<SUP>1100</SUP>140<SUP>2450</SUP>148<SUP>750</SUP>152<SUP>250</SUP>160<SUP>350</SUP>168<SUP>250</SUP>200<SUP>100</SUP>212<SUP>300</SUP>220<SUP>550</SUP>228<SUP>50</SUP>232<SUP>250</SUP>240<SUP>400</SUP>248<SUP>100</SUP>252<SUP>50</SUP>300<SUP>60</SUP>312<SUP>50</SUP>320<SUP>150</SUP>332<SUP>50</SUP>348<SUP>50</SUP>600<SUP>600</SUP>625<SUP>651</SUP> 
+      </P>
+    </TD>
+  </TR>
+  <TR> 
+    <TD><A NAME="b2aDual"></A></TD>
+    <TD> 
+      <P ALIGN=CENTER><A HREF="index.html#b2a">b2aDual</A> </P>
+    </TD>
+    <TD></TD>
+    <TD> 
+      <P ALIGN=LEFT>0<SUP>9020</SUP>4<SUP>31350</SUP>8<SUP>26150</SUP>12<SUP>22300</SUP>16<SUP>29900</SUP>20<SUP>24550</SUP>24<SUP>19250</SUP>28<SUP>19300</SUP>32<SUP>27500</SUP>36<SUP>19850</SUP>40<SUP>19200</SUP>44<SUP>21150</SUP>48<SUP>12750</SUP>52<SUP>13250</SUP>56<SUP>17450</SUP>60<SUP>12300</SUP>64<SUP>13150</SUP>68<SUP>9250</SUP>72<SUP>9800</SUP>76<SUP>4500</SUP>80<SUP>8500</SUP>84<SUP>6100</SUP>88<SUP>3250</SUP>92<SUP>2550</SUP>96<SUP>3300</SUP>100<SUP>2600</SUP>104<SUP>5550</SUP>108<SUP>1500</SUP>112<SUP>4600</SUP>116<SUP>1600</SUP>120<SUP>3580</SUP>124<SUP>1150</SUP>128<SUP>1300</SUP>132<SUP>150</SUP>136<SUP>500</SUP>140<SUP>3340</SUP>144<SUP>150</SUP>148<SUP>100</SUP>152<SUP>500</SUP>156<SUP>900</SUP>160<SUP>790</SUP>164<SUP>300</SUP>168<SUP>150</SUP>172<SUP>50</SUP>176<SUP>350</SUP>180<SUP>1100</SUP>184<SUP>150</SUP>188<SUP>150</SUP>196<SUP>350</SUP>200<SUP>1440</SUP>204<SUP>350</SUP>208<SUP>100</SUP>212<SUP>150</SUP>216<SUP>50</SUP>220<SUP>1100</SUP>224<SUP>150</SUP>228<SUP>50</SUP>236<SUP>50</SUP>240<SUP>1300</SUP>256<SUP>50</SUP>260<SUP>550</SUP>264<SUP>100</SUP>272<SUP>50</SUP>280<SUP>600</SUP>292<SUP>50</SUP>320<SUP>100</SUP>360<SUP>200</SUP>400<SUP>18</SUP>480<SUP>100</SUP>600<SUP>12</SUP>625<SUP>651</SUP> 
+      </P>
+    </TD>
+  </TR>
+  <TR> 
+    <TD> 
+      <P ALIGN=CENTER><A NAME="b2b"></A>85 </P>
+    </TD>
+    <TD> 
+      <P ALIGN=CENTER><A HREF="index.html#b2b">b2b</A> </P>
+    </TD>
+    <TD></TD>
+    <TD> 
+      <P ALIGN=LEFT>0<SUP>6630</SUP>4<SUP>10500</SUP>8<SUP>17000</SUP>12<SUP>19900</SUP>16<SUP>17000</SUP>20<SUP>6950</SUP>24<SUP>8000</SUP>28<SUP>11500</SUP>32<SUP>27050</SUP>36<SUP>21000</SUP>40<SUP>18950</SUP>44<SUP>28000</SUP>48<SUP>25750</SUP>52<SUP>18950</SUP>56<SUP>20000</SUP>60<SUP>18650</SUP>64<SUP>18000</SUP>68<SUP>22900</SUP>72<SUP>19500</SUP>76<SUP>18000</SUP>80<SUP>12150</SUP>84<SUP>6000</SUP>88<SUP>10250</SUP>92<SUP>4500</SUP>96<SUP>7500</SUP>100<SUP>9610</SUP>104<SUP>3500</SUP>112<SUP>1550</SUP>120<SUP>1950</SUP>124<SUP>1000</SUP>128<SUP>600</SUP>132<SUP>1150</SUP>136<SUP>500</SUP>140<SUP>2900</SUP>148<SUP>850</SUP>152<SUP>550</SUP>160<SUP>550</SUP>168<SUP>300</SUP>172<SUP>500</SUP>200<SUP>50</SUP>212<SUP>300</SUP>220<SUP>450</SUP>228<SUP>50</SUP>232<SUP>550</SUP>240<SUP>400</SUP>248<SUP>350</SUP>260<SUP>50</SUP>300<SUP>10</SUP>320<SUP>100</SUP>340<SUP>100</SUP>600<SUP>600</SUP>625<SUP>651</SUP> 
+      </P>
+    </TD>
+  </TR>
+  <TR> 
+    <TD><A NAME="b2bDual"></A></TD>
+    <TD> 
+      <P ALIGN=CENTER><A HREF="index.html#b2b">b2bDual</A> </P>
+    </TD>
+    <TD></TD>
+    <TD> 
+      <P ALIGN=LEFT>0<SUP>9070</SUP>4<SUP>22650</SUP>8<SUP>23700</SUP>12<SUP>16100</SUP>16<SUP>28400</SUP>20<SUP>23000</SUP>24<SUP>24150</SUP>28<SUP>26100</SUP>32<SUP>19250</SUP>36<SUP>22200</SUP>40<SUP>20050</SUP>44<SUP>15250</SUP>48<SUP>12550</SUP>52<SUP>12600</SUP>56<SUP>7500</SUP>60<SUP>12800</SUP>64<SUP>15350</SUP>68<SUP>10750</SUP>72<SUP>11500</SUP>76<SUP>12100</SUP>80<SUP>6150</SUP>84<SUP>10400</SUP>88<SUP>5750</SUP>92<SUP>3250</SUP>96<SUP>5300</SUP>100<SUP>9260</SUP>104<SUP>5850</SUP>108<SUP>1550</SUP>112<SUP>3750</SUP>116<SUP>800</SUP>120<SUP>4130</SUP>124<SUP>2300</SUP>128<SUP>1550</SUP>132<SUP>1350</SUP>136<SUP>1350</SUP>140<SUP>2080</SUP>144<SUP>200</SUP>148<SUP>350</SUP>152<SUP>50</SUP>156<SUP>300</SUP>160<SUP>1440</SUP>164<SUP>200</SUP>168<SUP>200</SUP>172<SUP>350</SUP>176<SUP>400</SUP>180<SUP>1500</SUP>184<SUP>400</SUP>188<SUP>200</SUP>192<SUP>200</SUP>196<SUP>100</SUP>200<SUP>2340</SUP>204<SUP>100</SUP>208<SUP>200</SUP>212<SUP>50</SUP>216<SUP>450</SUP>220<SUP>850</SUP>224<SUP>50</SUP>228<SUP>100</SUP>232<SUP>50</SUP>236<SUP>100</SUP>240<SUP>1200</SUP>252<SUP>150</SUP>256<SUP>50</SUP>260<SUP>400</SUP>264<SUP>100</SUP>280<SUP>600</SUP>284<SUP>50</SUP>320<SUP>300</SUP>360<SUP>100</SUP>400<SUP>18</SUP>480<SUP>100</SUP>600<SUP>12</SUP>625<SUP>651</SUP> 
+      </P>
+    </TD>
+  </TR>
+  <TR> 
+    <TD> 
+      <P ALIGN=CENTER><A NAME="b2c"></A>86 </P>
+    </TD>
+    <TD> 
+      <P ALIGN=CENTER><A HREF="index.html#b2c">b2c</A> </P>
+    </TD>
+    <TD></TD>
+    <TD> 
+      <P ALIGN=LEFT>0<SUP>12630</SUP>4<SUP>22500</SUP>8<SUP>23500</SUP>12<SUP>21900</SUP>16<SUP>28500</SUP>20<SUP>29000</SUP>24<SUP>23000</SUP>28<SUP>23050</SUP>32<SUP>25850</SUP>36<SUP>17000</SUP>40<SUP>22700</SUP>44<SUP>21500</SUP>48<SUP>17600</SUP>52<SUP>13900</SUP>56<SUP>18500</SUP>60<SUP>23450</SUP>64<SUP>15500</SUP>68<SUP>13300</SUP>72<SUP>7000</SUP>76<SUP>10000</SUP>80<SUP>6100</SUP>84<SUP>5000</SUP>88<SUP>3100</SUP>92<SUP>3000</SUP>96<SUP>2000</SUP>100<SUP>1600</SUP>108<SUP>500</SUP>112<SUP>550</SUP>120<SUP>1650</SUP>124<SUP>500</SUP>128<SUP>50</SUP>132<SUP>1100</SUP>140<SUP>2450</SUP>148<SUP>600</SUP>152<SUP>200</SUP>160<SUP>650</SUP>168<SUP>200</SUP>192<SUP>100</SUP>200<SUP>110</SUP>212<SUP>400</SUP>220<SUP>500</SUP>232<SUP>150</SUP>240<SUP>850</SUP>248<SUP>300</SUP>260<SUP>50</SUP>292<SUP>100</SUP>300<SUP>60</SUP>312<SUP>50</SUP>320<SUP>150</SUP>332<SUP>50</SUP>340<SUP>50</SUP>600<SUP>600</SUP>625<SUP>651</SUP> 
+      </P>
+    </TD>
+  </TR>
+  <TR> 
+    <TD><A NAME="b2cDual"></A></TD>
+    <TD> 
+      <P ALIGN=CENTER><A HREF="index.html#b2c">b2cDual</A> </P>
+    </TD>
+    <TD></TD>
+    <TD> 
+      <P ALIGN=LEFT>0<SUP>19520</SUP>4<SUP>28500</SUP>8<SUP>25500</SUP>12<SUP>25050</SUP>16<SUP>22750</SUP>20<SUP>33500</SUP>24<SUP>25300</SUP>28<SUP>26700</SUP>32<SUP>22200</SUP>36<SUP>25650</SUP>40<SUP>19700</SUP>44<SUP>17100</SUP>48<SUP>13350</SUP>52<SUP>16000</SUP>56<SUP>9800</SUP>60<SUP>6100</SUP>64<SUP>12400</SUP>68<SUP>8250</SUP>72<SUP>6050</SUP>76<SUP>5400</SUP>80<SUP>9930</SUP>84<SUP>4600</SUP>88<SUP>4400</SUP>92<SUP>4500</SUP>96<SUP>2850</SUP>100<SUP>5310</SUP>104<SUP>1550</SUP>108<SUP>1550</SUP>112<SUP>1100</SUP>116<SUP>1350</SUP>120<SUP>1900</SUP>124<SUP>700</SUP>128<SUP>1150</SUP>132<SUP>100</SUP>136<SUP>200</SUP>140<SUP>1940</SUP>144<SUP>500</SUP>148<SUP>100</SUP>152<SUP>350</SUP>156<SUP>100</SUP>160<SUP>2380</SUP>164<SUP>350</SUP>168<SUP>50</SUP>172<SUP>100</SUP>180<SUP>1750</SUP>188<SUP>200</SUP>196<SUP>200</SUP>200<SUP>1890</SUP>204<SUP>200</SUP>208<SUP>50</SUP>212<SUP>100</SUP>220<SUP>800</SUP>240<SUP>1200</SUP>244<SUP>100</SUP>260<SUP>100</SUP>272<SUP>50</SUP>280<SUP>300</SUP>320<SUP>200</SUP>360<SUP>100</SUP>400<SUP>18</SUP>600<SUP>12</SUP>625<SUP>651</SUP> 
+      </P>
+    </TD>
+  </TR>
+  <TR> 
+    <TD> 
+      <P ALIGN=CENTER><A NAME="b6d"></A>87 </P>
+    </TD>
+    <TD> 
+      <P ALIGN=CENTER><A HREF="index.html#b6d">b6d</A> </P>
+    </TD>
+    <TD></TD>
+    <TD> 
+      <P ALIGN=LEFT>0<SUP>25030</SUP>4<SUP>32500</SUP>8<SUP>30500</SUP>12<SUP>36550</SUP>16<SUP>39500</SUP>20<SUP>36100</SUP>24<SUP>29500</SUP>28<SUP>25500</SUP>32<SUP>26000</SUP>36<SUP>21500</SUP>40<SUP>19400</SUP>44<SUP>14000</SUP>48<SUP>19050</SUP>52<SUP>7800</SUP>56<SUP>11000</SUP>60<SUP>9000</SUP>64<SUP>3500</SUP>68<SUP>7050</SUP>72<SUP>5000</SUP>76<SUP>1000</SUP>80<SUP>3650</SUP>84<SUP>1500</SUP>88<SUP>1100</SUP>92<SUP>2100</SUP>96<SUP>1500</SUP>100<SUP>1130</SUP>104<SUP>500</SUP>112<SUP>1150</SUP>120<SUP>2050</SUP>132<SUP>1350</SUP>140<SUP>1800</SUP>148<SUP>300</SUP>152<SUP>50</SUP>156<SUP>500</SUP>160<SUP>600</SUP>168<SUP>400</SUP>180<SUP>50</SUP>192<SUP>50</SUP>200<SUP>100</SUP>212<SUP>600</SUP>220<SUP>800</SUP>232<SUP>300</SUP>240<SUP>500</SUP>248<SUP>50</SUP>260<SUP>50</SUP>268<SUP>50</SUP>292<SUP>50</SUP>300<SUP>100</SUP>312<SUP>150</SUP>320<SUP>300</SUP>340<SUP>50</SUP>400<SUP>80</SUP>420<SUP>100</SUP>500<SUP>10</SUP>600<SUP>600</SUP>625<SUP>651</SUP> 
+      </P>
+    </TD>
+  </TR>
+  <TR> 
+    <TD><A NAME="b6dDual"></A></TD>
+    <TD> 
+      <P ALIGN=CENTER><A HREF="index.html#b6d">b6dDual</A> </P>
+    </TD>
+    <TD></TD>
+    <TD> 
+      <P ALIGN=LEFT>0<SUP>16020</SUP>4<SUP>32400</SUP>8<SUP>34250</SUP>12<SUP>33600</SUP>16<SUP>29650</SUP>20<SUP>30600</SUP>24<SUP>36450</SUP>28<SUP>31700</SUP>32<SUP>15450</SUP>36<SUP>15300</SUP>40<SUP>18550</SUP>44<SUP>21850</SUP>48<SUP>11250</SUP>52<SUP>16350</SUP>56<SUP>8250</SUP>60<SUP>7300</SUP>64<SUP>7750</SUP>68<SUP>11550</SUP>72<SUP>5150</SUP>76<SUP>6950</SUP>80<SUP>4650</SUP>84<SUP>3800</SUP>88<SUP>100</SUP>92<SUP>2000</SUP>96<SUP>1450</SUP>100<SUP>4020</SUP>104<SUP>800</SUP>108<SUP>100</SUP>112<SUP>600</SUP>116<SUP>800</SUP>120<SUP>1710</SUP>124<SUP>2050</SUP>132<SUP>50</SUP>136<SUP>250</SUP>140<SUP>2030</SUP>144<SUP>300</SUP>148<SUP>100</SUP>152<SUP>50</SUP>160<SUP>2200</SUP>168<SUP>250</SUP>172<SUP>150</SUP>176<SUP>50</SUP>180<SUP>800</SUP>184<SUP>100</SUP>192<SUP>250</SUP>196<SUP>100</SUP>200<SUP>1140</SUP>204<SUP>100</SUP>208<SUP>50</SUP>212<SUP>50</SUP>220<SUP>950</SUP>228<SUP>150</SUP>240<SUP>400</SUP>252<SUP>100</SUP>260<SUP>250</SUP>280<SUP>300</SUP>320<SUP>200</SUP>340<SUP>300</SUP>400<SUP>18</SUP>600<SUP>12</SUP>625<SUP>651</SUP> 
+      </P>
+    </TD>
+  </TR>
+  <TR> 
+    <TD> 
+      <P ALIGN=CENTER><A NAME="b6e"></A>88 </P>
+    </TD>
+    <TD> 
+      <P ALIGN=CENTER><A HREF="index.html#b6e">b6e</A> </P>
+    </TD>
+    <TD></TD>
+    <TD> 
+      <P ALIGN=LEFT>0<SUP>29030</SUP>4<SUP>40500</SUP>8<SUP>40500</SUP>12<SUP>41650</SUP>16<SUP>36500</SUP>20<SUP>32500</SUP>24<SUP>21000</SUP>28<SUP>20100</SUP>32<SUP>24450</SUP>36<SUP>21500</SUP>40<SUP>16850</SUP>44<SUP>14500</SUP>48<SUP>11350</SUP>52<SUP>11250</SUP>56<SUP>6500</SUP>60<SUP>6300</SUP>64<SUP>5500</SUP>68<SUP>10100</SUP>72<SUP>2500</SUP>76<SUP>3500</SUP>80<SUP>5100</SUP>84<SUP>500</SUP>88<SUP>3900</SUP>92<SUP>1600</SUP>96<SUP>2000</SUP>100<SUP>130</SUP>104<SUP>1500</SUP>112<SUP>900</SUP>116<SUP>500</SUP>120<SUP>1450</SUP>132<SUP>1950</SUP>140<SUP>1750</SUP>148<SUP>350</SUP>152<SUP>50</SUP>160<SUP>550</SUP>168<SUP>100</SUP>180<SUP>50</SUP>200<SUP>100</SUP>212<SUP>1450</SUP>220<SUP>900</SUP>232<SUP>200</SUP>240<SUP>650</SUP>248<SUP>100</SUP>260<SUP>50</SUP>268<SUP>50</SUP>300<SUP>100</SUP>312<SUP>100</SUP>320<SUP>150</SUP>340<SUP>50</SUP>400<SUP>80</SUP>420<SUP>100</SUP>500<SUP>10</SUP>600<SUP>600</SUP>625<SUP>651</SUP> 
+      </P>
+    </TD>
+  </TR>
+  <TR> 
+    <TD><A NAME="b6eDual"></A></TD>
+    <TD> 
+      <P ALIGN=CENTER><A HREF="index.html#b6e">b6eDual</A> </P>
+    </TD>
+    <TD></TD>
+    <TD> 
+      <P ALIGN=LEFT>0<SUP>17320</SUP>4<SUP>43250</SUP>8<SUP>36000</SUP>12<SUP>31150</SUP>16<SUP>23500</SUP>20<SUP>28950</SUP>24<SUP>35300</SUP>28<SUP>28100</SUP>32<SUP>23700</SUP>36<SUP>27850</SUP>40<SUP>19150</SUP>44<SUP>14300</SUP>48<SUP>18000</SUP>52<SUP>8800</SUP>56<SUP>4900</SUP>60<SUP>6250</SUP>64<SUP>7600</SUP>68<SUP>5750</SUP>72<SUP>2050</SUP>76<SUP>7050</SUP>80<SUP>4600</SUP>84<SUP>3150</SUP>88<SUP>750</SUP>92<SUP>2300</SUP>96<SUP>1400</SUP>100<SUP>3920</SUP>104<SUP>2750</SUP>108<SUP>300</SUP>112<SUP>300</SUP>116<SUP>1200</SUP>120<SUP>2160</SUP>124<SUP>1500</SUP>128<SUP>100</SUP>132<SUP>300</SUP>136<SUP>100</SUP>140<SUP>980</SUP>144<SUP>500</SUP>156<SUP>450</SUP>160<SUP>2000</SUP>164<SUP>200</SUP>180<SUP>500</SUP>188<SUP>50</SUP>196<SUP>100</SUP>200<SUP>640</SUP>204<SUP>350</SUP>212<SUP>300</SUP>220<SUP>1400</SUP>240<SUP>100</SUP>260<SUP>550</SUP>268<SUP>50</SUP>276<SUP>50</SUP>280<SUP>300</SUP>284<SUP>100</SUP>288<SUP>50</SUP>300<SUP>200</SUP>304<SUP>50</SUP>360<SUP>100</SUP>400<SUP>118</SUP>520<SUP>200</SUP>600<SUP>12</SUP>625<SUP>651</SUP> 
+      </P>
+    </TD>
+  </TR>
+  <TR> 
+    <TD> 
+      <P ALIGN=CENTER><A NAME="b8e"></A>89 </P>
+    </TD>
+    <TD> 
+      <P ALIGN=CENTER><A HREF="index.html#b8e">b8e</A> </P>
+    </TD>
+    <TD></TD>
+    <TD> 
+      <P ALIGN=LEFT>0<SUP>24560</SUP>4<SUP>33000</SUP>8<SUP>39000</SUP>12<SUP>36350</SUP>16<SUP>34500</SUP>20<SUP>44950</SUP>24<SUP>27000</SUP>28<SUP>24550</SUP>32<SUP>23450</SUP>36<SUP>19000</SUP>40<SUP>22350</SUP>44<SUP>23000</SUP>48<SUP>16750</SUP>52<SUP>8400</SUP>56<SUP>7500</SUP>60<SUP>10100</SUP>64<SUP>3500</SUP>68<SUP>5850</SUP>72<SUP>3500</SUP>80<SUP>2750</SUP>88<SUP>550</SUP>92<SUP>650</SUP>96<SUP>500</SUP>100<SUP>100</SUP>112<SUP>650</SUP>120<SUP>1250</SUP>132<SUP>1350</SUP>140<SUP>2550</SUP>148<SUP>550</SUP>152<SUP>100</SUP>160<SUP>950</SUP>168<SUP>100</SUP>180<SUP>50</SUP>192<SUP>150</SUP>200<SUP>130</SUP>212<SUP>550</SUP>220<SUP>700</SUP>232<SUP>150</SUP>240<SUP>600</SUP>248<SUP>150</SUP>260<SUP>100</SUP>300<SUP>160</SUP>312<SUP>250</SUP>320<SUP>100</SUP>332<SUP>50</SUP>348<SUP>50</SUP>600<SUP>600</SUP>625<SUP>651</SUP> 
+      </P>
+    </TD>
+  </TR>
+  <TR> 
+    <TD><A NAME="b8eDual"></A></TD>
+    <TD> 
+      <P ALIGN=CENTER><A HREF="index.html#b8e">b8eDual</A> </P>
+    </TD>
+    <TD></TD>
+    <TD> 
+      <P ALIGN=LEFT>0<SUP>16820</SUP>4<SUP>38550</SUP>8<SUP>37200</SUP>12<SUP>35100</SUP>16<SUP>33000</SUP>20<SUP>27550</SUP>24<SUP>34400</SUP>28<SUP>26600</SUP>32<SUP>22400</SUP>36<SUP>21650</SUP>40<SUP>19350</SUP>44<SUP>13550</SUP>48<SUP>9750</SUP>52<SUP>9150</SUP>56<SUP>14150</SUP>60<SUP>11100</SUP>64<SUP>11050</SUP>68<SUP>3700</SUP>72<SUP>4300</SUP>76<SUP>1500</SUP>80<SUP>4850</SUP>84<SUP>3400</SUP>88<SUP>1300</SUP>92<SUP>1250</SUP>96<SUP>1800</SUP>100<SUP>3420</SUP>104<SUP>1950</SUP>108<SUP>100</SUP>112<SUP>450</SUP>116<SUP>1100</SUP>120<SUP>3160</SUP>124<SUP>300</SUP>128<SUP>100</SUP>132<SUP>50</SUP>136<SUP>400</SUP>140<SUP>1480</SUP>144<SUP>50</SUP>148<SUP>50</SUP>152<SUP>250</SUP>156<SUP>50</SUP>160<SUP>1150</SUP>164<SUP>100</SUP>168<SUP>100</SUP>172<SUP>150</SUP>180<SUP>1400</SUP>188<SUP>50</SUP>196<SUP>150</SUP>200<SUP>1740</SUP>204<SUP>50</SUP>208<SUP>50</SUP>212<SUP>100</SUP>216<SUP>50</SUP>220<SUP>500</SUP>236<SUP>50</SUP>240<SUP>400</SUP>260<SUP>100</SUP>280<SUP>200</SUP>300<SUP>300</SUP>340<SUP>100</SUP>400<SUP>18</SUP>600<SUP>12</SUP>625<SUP>651</SUP> 
+      </P>
+    </TD>
+  </TR>
+  <TR> 
+    <TD> 
+      <P ALIGN=CENTER><A NAME="b8f"></A>90 </P>
+    </TD>
+    <TD> 
+      <P ALIGN=CENTER><A HREF="index.html#b8f">b8f</A> </P>
+    </TD>
+    <TD></TD>
+    <TD> 
+      <P ALIGN=LEFT>0<SUP>17620</SUP>4<SUP>28500</SUP>8<SUP>39500</SUP>12<SUP>22850</SUP>16<SUP>34000</SUP>20<SUP>40500</SUP>24<SUP>36500</SUP>28<SUP>32550</SUP>32<SUP>26800</SUP>36<SUP>19000</SUP>40<SUP>21100</SUP>44<SUP>20000</SUP>48<SUP>16550</SUP>52<SUP>10000</SUP>56<SUP>16000</SUP>60<SUP>10550</SUP>64<SUP>5000</SUP>68<SUP>8100</SUP>72<SUP>1550</SUP>76<SUP>1500</SUP>80<SUP>2150</SUP>88<SUP>150</SUP>92<SUP>550</SUP>100<SUP>130</SUP>104<SUP>500</SUP>112<SUP>900</SUP>120<SUP>1500</SUP>128<SUP>500</SUP>132<SUP>650</SUP>136<SUP>500</SUP>140<SUP>1750</SUP>148<SUP>200</SUP>152<SUP>150</SUP>160<SUP>550</SUP>168<SUP>350</SUP>192<SUP>50</SUP>200<SUP>250</SUP>212<SUP>1050</SUP>220<SUP>500</SUP>232<SUP>400</SUP>240<SUP>750</SUP>248<SUP>50</SUP>260<SUP>100</SUP>300<SUP>230</SUP>312<SUP>200</SUP>320<SUP>150</SUP>332<SUP>50</SUP>400<SUP>10</SUP>500<SUP>60</SUP>600<SUP>600</SUP>625<SUP>651</SUP> 
+      </P>
+    </TD>
+  </TR>
+  <TR> 
+    <TD><A NAME="b8fDual"></A></TD>
+    <TD> 
+      <P ALIGN=CENTER><A HREF="index.html#b8f">b8fDual</A> </P>
+    </TD>
+    <TD></TD>
+    <TD> 
+      <P ALIGN=LEFT>0<SUP>17320</SUP>4<SUP>38300</SUP>8<SUP>29750</SUP>12<SUP>32950</SUP>16<SUP>31550</SUP>20<SUP>29350</SUP>24<SUP>38400</SUP>28<SUP>21700</SUP>32<SUP>18800</SUP>36<SUP>27850</SUP>40<SUP>19000</SUP>44<SUP>22450</SUP>48<SUP>8300</SUP>52<SUP>8350</SUP>56<SUP>8400</SUP>60<SUP>7950</SUP>64<SUP>10250</SUP>68<SUP>3900</SUP>72<SUP>3250</SUP>76<SUP>3000</SUP>80<SUP>4800</SUP>84<SUP>4550</SUP>88<SUP>2750</SUP>92<SUP>2950</SUP>96<SUP>4200</SUP>100<SUP>6120</SUP>104<SUP>3750</SUP>108<SUP>300</SUP>116<SUP>200</SUP>120<SUP>1760</SUP>124<SUP>400</SUP>128<SUP>500</SUP>132<SUP>50</SUP>136<SUP>250</SUP>140<SUP>1980</SUP>144<SUP>100</SUP>148<SUP>250</SUP>156<SUP>550</SUP>160<SUP>1200</SUP>164<SUP>500</SUP>168<SUP>50</SUP>176<SUP>100</SUP>180<SUP>1600</SUP>184<SUP>100</SUP>188<SUP>50</SUP>196<SUP>50</SUP>200<SUP>1040</SUP>220<SUP>800</SUP>224<SUP>50</SUP>232<SUP>50</SUP>240<SUP>600</SUP>244<SUP>50</SUP>260<SUP>200</SUP>280<SUP>100</SUP>300<SUP>200</SUP>340<SUP>100</SUP>400<SUP>18</SUP>600<SUP>12</SUP>625<SUP>651</SUP> 
+      </P>
+    </TD>
+  </TR>
+  <TR> 
+    <TD> 
+      <P ALIGN=CENTER><A NAME="b8g"></A>91 </P>
+    </TD>
+    <TD> 
+      <P ALIGN=CENTER><A HREF="index.html#b8g">b8g</A> </P>
+    </TD>
+    <TD></TD>
+    <TD> 
+      <P ALIGN=LEFT>0<SUP>15030</SUP>4<SUP>40000</SUP>8<SUP>25500</SUP>12<SUP>37050</SUP>16<SUP>33000</SUP>20<SUP>27300</SUP>24<SUP>27000</SUP>28<SUP>35500</SUP>32<SUP>35050</SUP>36<SUP>21500</SUP>40<SUP>24950</SUP>44<SUP>20000</SUP>48<SUP>20300</SUP>52<SUP>12550</SUP>56<SUP>11000</SUP>60<SUP>6750</SUP>64<SUP>3000</SUP>68<SUP>5600</SUP>72<SUP>3500</SUP>76<SUP>2500</SUP>80<SUP>3150</SUP>84<SUP>1000</SUP>88<SUP>600</SUP>92<SUP>500</SUP>100<SUP>100</SUP>112<SUP>750</SUP>120<SUP>1400</SUP>132<SUP>750</SUP>140<SUP>2150</SUP>148<SUP>550</SUP>152<SUP>50</SUP>160<SUP>650</SUP>168<SUP>150</SUP>200<SUP>200</SUP>212<SUP>1300</SUP>220<SUP>750</SUP>228<SUP>50</SUP>232<SUP>250</SUP>240<SUP>250</SUP>248<SUP>250</SUP>260<SUP>50</SUP>300<SUP>250</SUP>312<SUP>50</SUP>320<SUP>150</SUP>332<SUP>50</SUP>400<SUP>60</SUP>500<SUP>10</SUP>600<SUP>600</SUP>625<SUP>651</SUP> 
+      </P>
+    </TD>
+  </TR>
+  <TR> 
+    <TD><A NAME="b8gDual"></A></TD>
+    <TD> 
+      <P ALIGN=CENTER><A HREF="index.html#b8g">b8gDual</A> </P>
+    </TD>
+    <TD></TD>
+    <TD> 
+      <P ALIGN=LEFT>0<SUP>8270</SUP>4<SUP>38100</SUP>8<SUP>39850</SUP>12<SUP>32350</SUP>16<SUP>29400</SUP>20<SUP>32800</SUP>24<SUP>33450</SUP>28<SUP>25950</SUP>32<SUP>21000</SUP>36<SUP>27600</SUP>40<SUP>13700</SUP>44<SUP>19950</SUP>48<SUP>6600</SUP>52<SUP>13350</SUP>56<SUP>7500</SUP>60<SUP>12050</SUP>64<SUP>8250</SUP>68<SUP>2600</SUP>72<SUP>4700</SUP>76<SUP>8300</SUP>80<SUP>5400</SUP>84<SUP>7100</SUP>88<SUP>2000</SUP>92<SUP>2500</SUP>96<SUP>800</SUP>100<SUP>3620</SUP>104<SUP>2750</SUP>108<SUP>500</SUP>112<SUP>350</SUP>116<SUP>1000</SUP>120<SUP>1880</SUP>128<SUP>350</SUP>132<SUP>250</SUP>140<SUP>1610</SUP>144<SUP>100</SUP>148<SUP>50</SUP>152<SUP>100</SUP>156<SUP>250</SUP>160<SUP>1450</SUP>164<SUP>500</SUP>168<SUP>50</SUP>172<SUP>100</SUP>176<SUP>50</SUP>180<SUP>1200</SUP>184<SUP>100</SUP>188<SUP>50</SUP>192<SUP>100</SUP>200<SUP>1340</SUP>220<SUP>900</SUP>240<SUP>100</SUP>260<SUP>300</SUP>280<SUP>100</SUP>300<SUP>200</SUP>340<SUP>100</SUP>380<SUP>100</SUP>400<SUP>18</SUP>600<SUP>12</SUP>625<SUP>651</SUP> 
+      </P>
+    </TD>
+  </TR>
+  <TR> 
+    <TD> 
+      <P ALIGN=CENTER><A NAME="s5b"></A>92 </P>
+    </TD>
+    <TD> 
+      <P ALIGN=CENTER><A HREF="index.html#s5b">s5b</A> </P>
+    </TD>
+    <TD></TD>
+    <TD> 
+      <P ALIGN=LEFT>0<SUP>7710</SUP>4<SUP>21000</SUP>8<SUP>12000</SUP>12<SUP>9600</SUP>16<SUP>9000</SUP>20<SUP>27300</SUP>24<SUP>27000</SUP>28<SUP>21000</SUP>32<SUP>26400</SUP>36<SUP>23000</SUP>40<SUP>24000</SUP>44<SUP>19500</SUP>48<SUP>48600</SUP>52<SUP>27300</SUP>56<SUP>18000</SUP>60<SUP>14800</SUP>64<SUP>6000</SUP>68<SUP>10200</SUP>72<SUP>9000</SUP>76<SUP>12000</SUP>80<SUP>150</SUP>84<SUP>8000</SUP>88<SUP>300</SUP>92<SUP>6000</SUP>96<SUP>1000</SUP>100<SUP>60</SUP>104<SUP>3000</SUP>112<SUP>8700</SUP>120<SUP>6550</SUP>132<SUP>4500</SUP>140<SUP>4050</SUP>156<SUP>500</SUP>160<SUP>900</SUP>168<SUP>300</SUP>200<SUP>240</SUP>212<SUP>300</SUP>220<SUP>1950</SUP>240<SUP>750</SUP>252<SUP>300</SUP>260<SUP>300</SUP>300<SUP>360</SUP>312<SUP>300</SUP>320<SUP>300</SUP>340<SUP>300</SUP>400<SUP>30</SUP>600<SUP>600</SUP>625<SUP>651</SUP> 
+      </P>
+    </TD>
+  </TR>
+  <TR> 
+    <TD><A NAME="s5bDual"></A></TD>
+    <TD> 
+      <P ALIGN=CENTER><A HREF="index.html#s5b">s5bDual</A> </P>
+    </TD>
+    <TD></TD>
+    <TD> 
+      <P ALIGN=LEFT>0<SUP>4500</SUP>4<SUP>34500</SUP>8<SUP>46500</SUP>12<SUP>7500</SUP>16<SUP>37500</SUP>20<SUP>17250</SUP>24<SUP>12750</SUP>28<SUP>24000</SUP>32<SUP>38250</SUP>36<SUP>6000</SUP>40<SUP>12870</SUP>44<SUP>12750</SUP>48<SUP>13500</SUP>52<SUP>6300</SUP>56<SUP>19500</SUP>60<SUP>10470</SUP>64<SUP>4500</SUP>68<SUP>21000</SUP>72<SUP>14350</SUP>76<SUP>6000</SUP>80<SUP>13500</SUP>84<SUP>7500</SUP>88<SUP>1500</SUP>92<SUP>6000</SUP>96<SUP>3300</SUP>100<SUP>1800</SUP>104<SUP>2400</SUP>108<SUP>1500</SUP>112<SUP>4200</SUP>116<SUP>4650</SUP>120<SUP>3750</SUP>128<SUP>1350</SUP>132<SUP>750</SUP>136<SUP>900</SUP>140<SUP>3150</SUP>144<SUP>1500</SUP>148<SUP>3000</SUP>156<SUP>450</SUP>160<SUP>6000</SUP>180<SUP>1200</SUP>184<SUP>150</SUP>200<SUP>1500</SUP>220<SUP>600</SUP>240<SUP>600</SUP>244<SUP>150</SUP>264<SUP>450</SUP>272<SUP>300</SUP>300<SUP>200</SUP>360<SUP>300</SUP>440<SUP>300</SUP>600<SUP>210</SUP>625<SUP>651</SUP> 
+      </P>
+    </TD>
+  </TR>
+  <TR> 
+    <TD> 
+      <P ALIGN=CENTER><A NAME="s5c"></A>93 </P>
+    </TD>
+    <TD> 
+      <P ALIGN=CENTER><A HREF="index.html#s5c">s5c</A> </P>
+    </TD>
+    <TD></TD>
+    <TD> 
+      <P ALIGN=LEFT>0<SUP>12040</SUP>4<SUP>15000</SUP>8<SUP>19100</SUP>12<SUP>11200</SUP>16<SUP>5000</SUP>20<SUP>33000</SUP>24<SUP>27000</SUP>28<SUP>24000</SUP>32<SUP>25700</SUP>36<SUP>25000</SUP>40<SUP>28750</SUP>44<SUP>23000</SUP>48<SUP>32600</SUP>52<SUP>6400</SUP>56<SUP>28000</SUP>60<SUP>17300</SUP>64<SUP>27000</SUP>68<SUP>22800</SUP>72<SUP>4000</SUP>76<SUP>3000</SUP>80<SUP>12250</SUP>84<SUP>3000</SUP>88<SUP>1000</SUP>92<SUP>200</SUP>96<SUP>4000</SUP>100<SUP>280</SUP>108<SUP>2000</SUP>112<SUP>800</SUP>120<SUP>1450</SUP>132<SUP>1000</SUP>140<SUP>1400</SUP>148<SUP>200</SUP>160<SUP>1500</SUP>180<SUP>200</SUP>192<SUP>300</SUP>200<SUP>250</SUP>212<SUP>200</SUP>220<SUP>600</SUP>232<SUP>100</SUP>240<SUP>100</SUP>256<SUP>500</SUP>300<SUP>140</SUP>312<SUP>600</SUP>320<SUP>200</SUP>340<SUP>100</SUP>392<SUP>100</SUP>400<SUP>130</SUP>440<SUP>50</SUP>600<SUP>610</SUP>625<SUP>651</SUP> 
+      </P>
+    </TD>
+  </TR>
+  <TR> 
+    <TD><A NAME="s5cDual"></A></TD>
+    <TD> 
+      <P ALIGN=CENTER><A HREF="index.html#s5c">s5cDual</A> </P>
+    </TD>
+    <TD></TD>
+    <TD> 
+      <P ALIGN=LEFT>0<SUP>12100</SUP>4<SUP>6000</SUP>8<SUP>25500</SUP>12<SUP>29000</SUP>16<SUP>21050</SUP>20<SUP>24500</SUP>24<SUP>31150</SUP>28<SUP>19000</SUP>32<SUP>21500</SUP>36<SUP>29700</SUP>40<SUP>15780</SUP>44<SUP>8600</SUP>48<SUP>26500</SUP>52<SUP>24500</SUP>56<SUP>10400</SUP>60<SUP>14400</SUP>64<SUP>4950</SUP>68<SUP>23000</SUP>72<SUP>16900</SUP>76<SUP>9000</SUP>80<SUP>2590</SUP>84<SUP>7700</SUP>88<SUP>8000</SUP>96<SUP>3400</SUP>100<SUP>5800</SUP>104<SUP>1000</SUP>108<SUP>700</SUP>112<SUP>2000</SUP>120<SUP>1700</SUP>128<SUP>1000</SUP>132<SUP>200</SUP>136<SUP>100</SUP>140<SUP>2600</SUP>148<SUP>200</SUP>152<SUP>200</SUP>156<SUP>500</SUP>160<SUP>3200</SUP>164<SUP>1800</SUP>168<SUP>350</SUP>172<SUP>400</SUP>176<SUP>550</SUP>180<SUP>800</SUP>184<SUP>200</SUP>196<SUP>100</SUP>200<SUP>2260</SUP>208<SUP>100</SUP>220<SUP>400</SUP>228<SUP>200</SUP>240<SUP>800</SUP>280<SUP>600</SUP>300<SUP>40</SUP>360<SUP>100</SUP>400<SUP>16</SUP>600<SUP>14</SUP>625<SUP>651</SUP> 
+      </P>
+    </TD>
+  </TR>
+  <TR> 
+    <TD> 
+      <P ALIGN=CENTER><A NAME="a5e"></A>94 </P>
+    </TD>
+    <TD> 
+      <P ALIGN=CENTER><A HREF="index.html#a5e">a5e</A> </P>
+    </TD>
+    <TD></TD>
+    <TD> 
+      <P ALIGN=LEFT>0<SUP>26150</SUP>4<SUP>62000</SUP>8<SUP>50500</SUP>12<SUP>34250</SUP>16<SUP>29500</SUP>20<SUP>29750</SUP>24<SUP>27500</SUP>28<SUP>25000</SUP>32<SUP>21200</SUP>36<SUP>19000</SUP>40<SUP>18950</SUP>44<SUP>16500</SUP>48<SUP>10200</SUP>52<SUP>8700</SUP>56<SUP>5000</SUP>60<SUP>5950</SUP>64<SUP>4500</SUP>68<SUP>5500</SUP>72<SUP>4500</SUP>76<SUP>2000</SUP>80<SUP>100</SUP>84<SUP>2000</SUP>88<SUP>2550</SUP>92<SUP>50</SUP>100<SUP>120</SUP>112<SUP>950</SUP>120<SUP>1000</SUP>132<SUP>2400</SUP>140<SUP>2650</SUP>148<SUP>600</SUP>152<SUP>150</SUP>160<SUP>550</SUP>168<SUP>300</SUP>192<SUP>100</SUP>200<SUP>190</SUP>212<SUP>250</SUP>220<SUP>650</SUP>232<SUP>100</SUP>240<SUP>500</SUP>260<SUP>50</SUP>292<SUP>50</SUP>300<SUP>10</SUP>312<SUP>100</SUP>320<SUP>300</SUP>332<SUP>50</SUP>400<SUP>20</SUP>420<SUP>100</SUP>500<SUP>10</SUP>600<SUP>600</SUP>625<SUP>651</SUP> 
+      </P>
+    </TD>
+  </TR>
+  <TR> 
+    <TD><A NAME="a5eDual"></A></TD>
+    <TD> 
+      <P ALIGN=CENTER><A HREF="index.html#a5e">a5eDual</A> </P>
+    </TD>
+    <TD></TD>
+    <TD> 
+      <P ALIGN=LEFT>0<SUP>15000</SUP>4<SUP>47300</SUP>8<SUP>40850</SUP>12<SUP>25800</SUP>16<SUP>43800</SUP>20<SUP>35500</SUP>24<SUP>31350</SUP>28<SUP>25300</SUP>32<SUP>20450</SUP>36<SUP>18600</SUP>40<SUP>18250</SUP>44<SUP>20800</SUP>48<SUP>5800</SUP>52<SUP>7550</SUP>56<SUP>7650</SUP>60<SUP>12400</SUP>64<SUP>7450</SUP>68<SUP>3300</SUP>72<SUP>6000</SUP>76<SUP>4100</SUP>80<SUP>2650</SUP>84<SUP>800</SUP>88<SUP>1550</SUP>92<SUP>1050</SUP>96<SUP>3050</SUP>100<SUP>3770</SUP>104<SUP>800</SUP>108<SUP>150</SUP>112<SUP>550</SUP>116<SUP>400</SUP>120<SUP>1100</SUP>124<SUP>800</SUP>128<SUP>300</SUP>132<SUP>150</SUP>136<SUP>150</SUP>140<SUP>1340</SUP>152<SUP>200</SUP>160<SUP>1390</SUP>164<SUP>250</SUP>172<SUP>600</SUP>180<SUP>1040</SUP>184<SUP>300</SUP>200<SUP>860</SUP>220<SUP>1140</SUP>240<SUP>200</SUP>260<SUP>500</SUP>280<SUP>300</SUP>300<SUP>180</SUP>340<SUP>200</SUP>380<SUP>100</SUP>400<SUP>16</SUP>600<SUP>14</SUP>625<SUP>651</SUP> 
+      </P>
+    </TD>
+  </TR>
+  <TR> 
+    <TD> 
+      <P ALIGN=CENTER><A NAME="a5f"></A>95 </P>
+    </TD>
+    <TD> 
+      <P ALIGN=CENTER><A HREF="index.html#a5f">a5f</A> </P>
+    </TD>
+    <TD></TD>
+    <TD> 
+      <P ALIGN=LEFT>0<SUP>11110</SUP>4<SUP>29000</SUP>8<SUP>40550</SUP>12<SUP>47050</SUP>16<SUP>31500</SUP>20<SUP>25150</SUP>24<SUP>24000</SUP>28<SUP>28550</SUP>32<SUP>34150</SUP>36<SUP>19500</SUP>40<SUP>27450</SUP>44<SUP>23000</SUP>48<SUP>12500</SUP>52<SUP>10050</SUP>56<SUP>11000</SUP>60<SUP>13050</SUP>64<SUP>7500</SUP>68<SUP>4850</SUP>72<SUP>3000</SUP>76<SUP>1000</SUP>80<SUP>2650</SUP>84<SUP>3000</SUP>88<SUP>50</SUP>92<SUP>1050</SUP>100<SUP>570</SUP>104<SUP>500</SUP>112<SUP>1550</SUP>116<SUP>500</SUP>120<SUP>1050</SUP>132<SUP>1150</SUP>140<SUP>1700</SUP>148<SUP>450</SUP>152<SUP>250</SUP>160<SUP>750</SUP>168<SUP>350</SUP>180<SUP>250</SUP>192<SUP>100</SUP>200<SUP>150</SUP>212<SUP>400</SUP>220<SUP>750</SUP>232<SUP>200</SUP>240<SUP>300</SUP>248<SUP>50</SUP>260<SUP>50</SUP>300<SUP>180</SUP>312<SUP>150</SUP>320<SUP>150</SUP>332<SUP>100</SUP>392<SUP>50</SUP>400<SUP>40</SUP>420<SUP>50</SUP>440<SUP>50</SUP>600<SUP>600</SUP>625<SUP>651</SUP> 
+      </P>
+    </TD>
+  </TR>
+  <TR> 
+    <TD><A NAME="a5fDual"></A></TD>
+    <TD> 
+      <P ALIGN=CENTER><A HREF="index.html#a5f">a5fDual</A> </P>
+    </TD>
+    <TD></TD>
+    <TD> 
+      <P ALIGN=LEFT>0<SUP>15900</SUP>4<SUP>35500</SUP>8<SUP>37550</SUP>12<SUP>37500</SUP>16<SUP>33100</SUP>20<SUP>23050</SUP>24<SUP>27850</SUP>28<SUP>29000</SUP>32<SUP>24850</SUP>36<SUP>20100</SUP>40<SUP>20790</SUP>44<SUP>15300</SUP>48<SUP>15850</SUP>52<SUP>8900</SUP>56<SUP>11200</SUP>60<SUP>11240</SUP>64<SUP>7700</SUP>68<SUP>6300</SUP>72<SUP>4600</SUP>76<SUP>3950</SUP>80<SUP>6100</SUP>84<SUP>1950</SUP>88<SUP>3100</SUP>92<SUP>850</SUP>96<SUP>150</SUP>100<SUP>2140</SUP>104<SUP>1800</SUP>108<SUP>2850</SUP>112<SUP>750</SUP>116<SUP>450</SUP>120<SUP>1900</SUP>124<SUP>150</SUP>128<SUP>500</SUP>132<SUP>400</SUP>140<SUP>1450</SUP>152<SUP>100</SUP>156<SUP>200</SUP>160<SUP>1850</SUP>164<SUP>200</SUP>172<SUP>150</SUP>176<SUP>250</SUP>180<SUP>700</SUP>184<SUP>50</SUP>192<SUP>50</SUP>196<SUP>50</SUP>200<SUP>1060</SUP>204<SUP>50</SUP>216<SUP>50</SUP>220<SUP>1600</SUP>228<SUP>50</SUP>236<SUP>150</SUP>240<SUP>800</SUP>244<SUP>100</SUP>252<SUP>50</SUP>260<SUP>500</SUP>280<SUP>100</SUP>300<SUP>140</SUP>340<SUP>100</SUP>400<SUP>16</SUP>600<SUP>14</SUP>625<SUP>651</SUP> 
+      </P>
+    </TD>
+  </TR>
+  <TR> 
+    <TD> 
+      <P ALIGN=CENTER><A NAME="a5g"></A>96 </P>
+    </TD>
+    <TD> 
+      <P ALIGN=CENTER><A HREF="index.html#a5g">a5g</A> </P>
+    </TD>
+    <TD></TD>
+    <TD> 
+      <P ALIGN=LEFT>0<SUP>19090</SUP>4<SUP>41000</SUP>8<SUP>52550</SUP>12<SUP>31000</SUP>16<SUP>29500</SUP>20<SUP>34950</SUP>24<SUP>36500</SUP>28<SUP>20550</SUP>32<SUP>25450</SUP>36<SUP>11500</SUP>40<SUP>15300</SUP>44<SUP>8500</SUP>48<SUP>14300</SUP>52<SUP>9850</SUP>56<SUP>13000</SUP>60<SUP>8050</SUP>64<SUP>9500</SUP>68<SUP>4500</SUP>72<SUP>6050</SUP>76<SUP>2000</SUP>80<SUP>5550</SUP>84<SUP>2000</SUP>88<SUP>3700</SUP>92<SUP>150</SUP>96<SUP>2000</SUP>100<SUP>150</SUP>104<SUP>1000</SUP>108<SUP>1000</SUP>112<SUP>2900</SUP>120<SUP>1800</SUP>132<SUP>1750</SUP>140<SUP>2750</SUP>148<SUP>300</SUP>152<SUP>100</SUP>160<SUP>250</SUP>168<SUP>500</SUP>200<SUP>270</SUP>212<SUP>650</SUP>220<SUP>750</SUP>228<SUP>50</SUP>232<SUP>350</SUP>240<SUP>600</SUP>248<SUP>100</SUP>252<SUP>50</SUP>260<SUP>50</SUP>292<SUP>100</SUP>300<SUP>70</SUP>312<SUP>50</SUP>320<SUP>250</SUP>348<SUP>50</SUP>400<SUP>10</SUP>412<SUP>50</SUP>440<SUP>50</SUP>600<SUP>610</SUP>625<SUP>651</SUP> 
+      </P>
+    </TD>
+  </TR>
+  <TR> 
+    <TD><A NAME="a5gDual"></A></TD>
+    <TD> 
+      <P ALIGN=CENTER><A HREF="index.html#a5g">a5gDual</A> </P>
+    </TD>
+    <TD></TD>
+    <TD> 
+      <P ALIGN=LEFT>0<SUP>12750</SUP>4<SUP>35350</SUP>8<SUP>33350</SUP>12<SUP>32450</SUP>16<SUP>24850</SUP>20<SUP>31100</SUP>24<SUP>36950</SUP>28<SUP>26000</SUP>32<SUP>28400</SUP>36<SUP>17800</SUP>40<SUP>26900</SUP>44<SUP>19450</SUP>48<SUP>7800</SUP>52<SUP>12600</SUP>56<SUP>11750</SUP>60<SUP>11410</SUP>64<SUP>7750</SUP>68<SUP>3400</SUP>72<SUP>6400</SUP>76<SUP>4400</SUP>80<SUP>4380</SUP>84<SUP>1700</SUP>88<SUP>2750</SUP>92<SUP>3500</SUP>96<SUP>600</SUP>100<SUP>3500</SUP>104<SUP>500</SUP>108<SUP>600</SUP>112<SUP>850</SUP>116<SUP>1600</SUP>120<SUP>2000</SUP>124<SUP>450</SUP>128<SUP>250</SUP>132<SUP>100</SUP>140<SUP>2250</SUP>152<SUP>400</SUP>160<SUP>800</SUP>164<SUP>350</SUP>172<SUP>150</SUP>180<SUP>600</SUP>184<SUP>50</SUP>196<SUP>300</SUP>200<SUP>800</SUP>204<SUP>300</SUP>220<SUP>900</SUP>240<SUP>500</SUP>260<SUP>1000</SUP>280<SUP>300</SUP>300<SUP>500</SUP>340<SUP>100</SUP>600<SUP>210</SUP>625<SUP>651</SUP> 
+      </P>
+    </TD>
+  </TR>
+  <TR> 
+    <TD> 
+      <P ALIGN=CENTER><A NAME="b7d"></A>97 </P>
+    </TD>
+    <TD> 
+      <P ALIGN=CENTER><A HREF="index.html#b7d">b7d</A> </P>
+    </TD>
+    <TD></TD>
+    <TD> 
+      <P ALIGN=LEFT>0<SUP>15580</SUP>4<SUP>24500</SUP>8<SUP>22500</SUP>12<SUP>36100</SUP>16<SUP>33500</SUP>20<SUP>30050</SUP>24<SUP>18000</SUP>28<SUP>23000</SUP>32<SUP>25150</SUP>36<SUP>20500</SUP>40<SUP>17100</SUP>44<SUP>11000</SUP>48<SUP>22750</SUP>52<SUP>13350</SUP>56<SUP>13000</SUP>60<SUP>10850</SUP>64<SUP>10500</SUP>68<SUP>13550</SUP>72<SUP>11000</SUP>76<SUP>7500</SUP>80<SUP>8400</SUP>84<SUP>3000</SUP>88<SUP>4150</SUP>92<SUP>1500</SUP>96<SUP>1500</SUP>100<SUP>2640</SUP>104<SUP>1000</SUP>108<SUP>3000</SUP>112<SUP>2250</SUP>116<SUP>1000</SUP>120<SUP>2100</SUP>124<SUP>1000</SUP>128<SUP>1500</SUP>132<SUP>2500</SUP>140<SUP>2200</SUP>148<SUP>200</SUP>152<SUP>100</SUP>156<SUP>500</SUP>160<SUP>550</SUP>168<SUP>250</SUP>192<SUP>100</SUP>200<SUP>380</SUP>212<SUP>800</SUP>220<SUP>900</SUP>224<SUP>500</SUP>232<SUP>50</SUP>240<SUP>400</SUP>268<SUP>100</SUP>288<SUP>50</SUP>300<SUP>90</SUP>320<SUP>250</SUP>348<SUP>50</SUP>420<SUP>50</SUP>500<SUP>10</SUP>600<SUP>600</SUP>625<SUP>651</SUP> 
+      </P>
+    </TD>
+  </TR>
+  <TR> 
+    <TD><A NAME="b7dDual"></A></TD>
+    <TD> 
+      <P ALIGN=CENTER><A HREF="index.html#b7d">b7dDual</A> </P>
+    </TD>
+    <TD></TD>
+    <TD> 
+      <P ALIGN=LEFT>0<SUP>17190</SUP>4<SUP>34500</SUP>8<SUP>30150</SUP>12<SUP>25750</SUP>16<SUP>27750</SUP>20<SUP>37650</SUP>24<SUP>14500</SUP>28<SUP>14400</SUP>32<SUP>25000</SUP>36<SUP>21000</SUP>40<SUP>26300</SUP>44<SUP>23000</SUP>48<SUP>15700</SUP>52<SUP>12000</SUP>56<SUP>12600</SUP>60<SUP>10500</SUP>64<SUP>8850</SUP>68<SUP>7550</SUP>72<SUP>6800</SUP>76<SUP>3000</SUP>80<SUP>4650</SUP>84<SUP>9050</SUP>88<SUP>1050</SUP>92<SUP>2700</SUP>96<SUP>2700</SUP>100<SUP>4750</SUP>104<SUP>1150</SUP>108<SUP>750</SUP>112<SUP>1150</SUP>116<SUP>1050</SUP>120<SUP>2250</SUP>124<SUP>1900</SUP>128<SUP>750</SUP>132<SUP>550</SUP>136<SUP>2300</SUP>140<SUP>2450</SUP>144<SUP>400</SUP>156<SUP>100</SUP>160<SUP>1500</SUP>164<SUP>100</SUP>168<SUP>100</SUP>172<SUP>500</SUP>180<SUP>700</SUP>188<SUP>250</SUP>196<SUP>350</SUP>200<SUP>1600</SUP>204<SUP>150</SUP>220<SUP>400</SUP>224<SUP>150</SUP>232<SUP>100</SUP>240<SUP>1400</SUP>244<SUP>100</SUP>252<SUP>50</SUP>260<SUP>400</SUP>264<SUP>100</SUP>272<SUP>50</SUP>280<SUP>400</SUP>284<SUP>50</SUP>300<SUP>200</SUP>340<SUP>200</SUP>360<SUP>100</SUP>400<SUP>100</SUP>600<SUP>210</SUP>625<SUP>651</SUP> 
+      </P>
+    </TD>
+  </TR>
+  <TR> 
+    <TD> 
+      <P ALIGN=CENTER><A NAME="w2"></A>98 </P>
+    </TD>
+    <TD> 
+      <P ALIGN=CENTER><A HREF="index.html#w2">w2</A> </P>
+    </TD>
+    <TD> 
+      <P ALIGN=CENTER>Wyoming </P>
+    </TD>
+    <TD> 
+      <P ALIGN=LEFT>0<SUP>9600</SUP>4<SUP>12800</SUP>8<SUP>40000</SUP>12<SUP>8000</SUP>16<SUP>28800</SUP>20<SUP>18400</SUP>24<SUP>18200</SUP>28<SUP>12800</SUP>32<SUP>32000</SUP>36<SUP>28800</SUP>40<SUP>28960</SUP>44<SUP>12600</SUP>48<SUP>19200</SUP>52<SUP>14400</SUP>56<SUP>21000</SUP>60<SUP>25120</SUP>64<SUP>4800</SUP>68<SUP>8000</SUP>72<SUP>8000</SUP>76<SUP>800</SUP>80<SUP>24640</SUP>88<SUP>4100</SUP>92<SUP>6400</SUP>96<SUP>9600</SUP>100<SUP>160</SUP>112<SUP>1600</SUP>116<SUP>8000</SUP>120<SUP>3320</SUP>124<SUP>1600</SUP>136<SUP>3200</SUP>140<SUP>1040</SUP>152<SUP>400</SUP>160<SUP>2400</SUP>180<SUP>480</SUP>184<SUP>400</SUP>200<SUP>440</SUP>208<SUP>1600</SUP>216<SUP>100</SUP>280<SUP>400</SUP>320<SUP>320</SUP>344<SUP>400</SUP>520<SUP>160</SUP>600<SUP>110</SUP>625<SUP>651</SUP> 
+      </P>
+    </TD>
+  </TR>
+  <TR> 
+    <TD><A NAME="w2Dual"></A></TD>
+    <TD> 
+      <P ALIGN=CENTER><A HREF="index.html#w2">w2Dual</A> </P>
+    </TD>
+    <TD> 
+      <P ALIGN=CENTER>Dual Wyoming </P>
+    </TD>
+    <TD> 
+      <P ALIGN=LEFT>0<SUP>14400</SUP>4<SUP>6400</SUP>8<SUP>20800</SUP>12<SUP>42400</SUP>16<SUP>12800</SUP>20<SUP>9696</SUP>24<SUP>32000</SUP>28<SUP>12800</SUP>32<SUP>31200</SUP>36<SUP>28000</SUP>40<SUP>13064</SUP>44<SUP>13600</SUP>48<SUP>1600</SUP>52<SUP>9600</SUP>56<SUP>31800</SUP>60<SUP>14416</SUP>64<SUP>19200</SUP>68<SUP>22400</SUP>72<SUP>16200</SUP>76<SUP>10800</SUP>80<SUP>6464</SUP>84<SUP>9600</SUP>88<SUP>9600</SUP>92<SUP>16000</SUP>96<SUP>3200</SUP>100<SUP>800</SUP>104<SUP>2800</SUP>108<SUP>5200</SUP>112<SUP>1600</SUP>124<SUP>1200</SUP>156<SUP>800</SUP>172<SUP>800</SUP>200<SUP>24</SUP>264<SUP>800</SUP>280<SUP>100</SUP>300<SUP>72</SUP>400<SUP>128</SUP>500<SUP>128</SUP>536<SUP>200</SUP>552<SUP>400</SUP>600<SUP>58</SUP>625<SUP>651</SUP> 
+      </P>
+    </TD>
+  </TR>
+  <TR> 
+    <TD> 
+      <P ALIGN=CENTER><A NAME="h2b"></A>99 </P>
+    </TD>
+    <TD> 
+      <P ALIGN=CENTER><A HREF="index.html#h2b">h2b</A> </P>
+    </TD>
+    <TD></TD>
+    <TD> 
+      <P ALIGN=LEFT>0<SUP>40000</SUP>4<SUP>111600</SUP>8<SUP>20400</SUP>12<SUP>40000</SUP>16<SUP>76800</SUP>20<SUP>24480</SUP>24<SUP>20400</SUP>28<SUP>19200</SUP>32<SUP>38400</SUP>36<SUP>4800</SUP>40<SUP>10560</SUP>44<SUP>4800</SUP>48<SUP>3200</SUP>56<SUP>150</SUP>60<SUP>2400</SUP>72<SUP>600</SUP>76<SUP>2400</SUP>100<SUP>960</SUP>168<SUP>200</SUP>180<SUP>200</SUP>200<SUP>1140</SUP>216<SUP>100</SUP>300<SUP>240</SUP>600<SUP>120</SUP>625<SUP>651</SUP> 
+      </P>
+    </TD>
+  </TR>
+  <TR> 
+    <TD><A NAME="h2bDual"></A></TD>
+    <TD> 
+      <P ALIGN=CENTER><A HREF="index.html#h2b">h2bDual</A> </P>
+    </TD>
+    <TD></TD>
+    <TD> 
+      <P ALIGN=LEFT>0<SUP>39360</SUP>4<SUP>62400</SUP>8<SUP>62400</SUP>12<SUP>111600</SUP>24<SUP>24000</SUP>28<SUP>68400</SUP>32<SUP>19200</SUP>36<SUP>1200</SUP>40<SUP>4800</SUP>44<SUP>4800</SUP>56<SUP>1200</SUP>60<SUP>9792</SUP>68<SUP>4800</SUP>72<SUP>2400</SUP>92<SUP>2400</SUP>100<SUP>192</SUP>120<SUP>200</SUP>136<SUP>3300</SUP>152<SUP>600</SUP>200<SUP>78</SUP>300<SUP>24</SUP>600<SUP>4</SUP>625<SUP>651</SUP> 
+      </P>
+    </TD>
+  </TR>
+</TABLE>
+<HR>
+<ADDRESS><img src="../../images/email.gif">  /
+revised September, 2006</ADDRESS>
+</BODY>
+</HTML>

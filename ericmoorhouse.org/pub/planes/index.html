@@ -1,0 +1,285 @@
+<!DOCTYPE HTML SYSTEM "html.dtd">
+<HTML>
+<HEAD>
+<TITLE>Projective Planes of Small Order</TITLE>
+</HEAD> 
+<BODY BACKGROUND="../../images/pg33.gif">
+<H1><font face="Georgia, Times New Roman, Times, serif">Projective Planes of Small 
+  Order</font></H1>
+
+<!--
+  <P><IMG SRC="../../images/construction.gif"> <I>Under Construction!!!</I>
+-->
+
+<HR><P>
+This site is intended to provide a current list of known projective planes of small order.
+See also my page of other <A HREF="../genpoly/">generalised polygons
+of small order</A>.)
+
+<P>The completeness of this list is known only for planes of order <I>n</I> at most 10
+[C.W.H. Lam, G. Kolesova and L. Thiel (1988); C.W.H. Lam, L. Thiel and S. Swiercz (1988)].
+There is also a substantial literature classifying (or showing nonexistence of) planes
+of certain small orders (such as 11, 12, 15) admitting automorphisms of certain orders,
+or containing certain embedded configurations.
+
+<P>For basic definitions and
+results on the subject of projective planes, please refer to
+
+<UL><LI>P. Dembowski, <I>Finite Geometries</I>, Springer-Verlag, Berlin, 1968
+<LI>D.R. Hughes and F.C. Piper, <I>Projective Planes</I>, Springer-Verlag, New York, 1973
+<LI>A. Beutelspacher, &lsquo;Projective planes&rsquo;, pp.107-136 in
+<I>Handbook of Incidence Geometry</I>, ed. F. Buekenhout, North-Holland, 1995
+</UL>
+
+<P>For each plane listed, I have provided
+<UL><LI>a list of <B>point-line incidences</B>, and
+</LI>
+<LI>a list of <B>generators of the automorphism group</B>.</LI>
+</UL>
+These lists are provided as text files assessible through links found in the columns headed
+&ldquo;Name&rdquo; and &ldquo;|Aut. Gp.|&rdquo; respectively. <I>Format:</I> A projective plane of order <I>n</I>
+has <I>N</I>=<I>n</I><SUP>2</SUP>+<I>n</I>+1 points and the same number of lines.
+The first text file lists, for each point, all <I>n</I>+1 lines (as integers in the
+range 0,1,...,<I>N</I>&minus;1) incident with it. The second text file lists generators of the
+automorphism group as permutations of {0,1,2,...,2<I>N</I>&minus;1}, in which the integers
+0,1,...,<I>N</I>&minus;1 represent points (in the same order as they appear in the first file) and
+the integers <I>N</I>,<I>N</I>+1,...,2<I>N</I>&minus;1 represent lines (in the same order
+as they appear in the first file, but with <I>N</I> added to each index).
+
+<P>I have made extensive use of Brendan McKay's celebrated software package
+<A HREF="http://cs.anu.edu.au:80/people/bdm/nauty/">nauty</A> for computing
+graph automorphisms.
+
+<P>If you are aware of small planes which I have overlooked in my list, I would 
+  appreciate an email message (<img src="../../images/email.gif">) from you. My list below includes all <I>known</I> projective planes of order <I>n</I> < 34 that I am aware of.
+<P>I am also currently working on a list of the thousands of known planes 
+  of order 49, similar to my list in the case of smaller orders. Check back soon!
+<BR>
+<TABLE BORDER WIDTH="717">
+  <TR VALIGN="TOP"> 
+    <TH width="46" ALIGN=CENTER> order <I>n</I> </TH>
+    <TH width="143"> name </TH>
+    <TH width="106"> elementary divisors </TH>
+    <TH width="97"> |Aut. Gp.| </TH>
+    <TH width="87"> Point orbit lengths </TH>
+    <TH width="85"> Line orbit lengths </TH>
+    <TH width="107"> Remarks </TH>
+  </TR>
+  <TR> 
+    <TD ALIGN=CENTER> 2 </TD>
+    <TD ALIGN=CENTER> <A HREF="pg22.txt">PG<SUB>2</SUB>(2)</A> </TD>
+    <TD ALIGN=CENTER> 1<SUP>4</SUP>2<SUP>2</SUP>6<SUP>1</SUP> </TD>
+    <TD ALIGN=CENTER> <A HREF="pg22gens.txt">168</A> </TD>
+    <TD ALIGN=CENTER> 7 </TD>
+    <TD ALIGN=CENTER> 7 </TD>
+    <TD ALIGN=CENTER> self-dual </TD>
+  </TR>
+  <TR> 
+    <TD ALIGN=CENTER> 3 </TD>
+    <TD ALIGN=CENTER> <A HREF="pg23.txt">PG<SUB>2</SUB>(3)</A> </TD>
+    <TD ALIGN=CENTER> 1<SUP>7</SUP>3<SUP>5</SUP>12<SUP>1</SUP> </TD>
+    <TD ALIGN=CENTER> <A HREF="pg23gens.txt">5616</A> </TD>
+    <TD ALIGN=CENTER> 13 </TD>
+    <TD ALIGN=CENTER> 13 </TD>
+    <TD ALIGN=CENTER> self-dual </TD>
+  </TR>
+  <TR> 
+    <TD ALIGN=CENTER> 4 </TD>
+    <TD ALIGN=CENTER> <A HREF="pg24.txt">PG<SUB>2</SUB>(4)</A> </TD>
+    <TD ALIGN=CENTER> 1<SUP>10</SUP>2<SUP>2</SUP>4<SUP>8</SUP>20<SUP>1</SUP> </TD>
+    <TD ALIGN=CENTER> <A HREF="pg24gens.txt">120960</A> </TD>
+    <TD ALIGN=CENTER> 21 </TD>
+    <TD ALIGN=CENTER> 21 </TD>
+    <TD ALIGN=CENTER> self-dual </TD>
+  </TR>
+  <TR> 
+    <TD ALIGN=CENTER> 5 </TD>
+    <TD ALIGN=CENTER> <A HREF="pg25.txt">PG<SUB>2</SUB>(5)</A> </TD>
+    <TD ALIGN=CENTER> 1<SUP>16</SUP>5<SUP>14</SUP>30<SUP>1</SUP> </TD>
+    <TD ALIGN=CENTER> <A HREF="pg25gens.txt">372000</A> </TD>
+    <TD ALIGN=CENTER> 31 </TD>
+    <TD ALIGN=CENTER> 31 </TD>
+    <TD ALIGN=CENTER> self-dual </TD>
+  </TR>
+  <TR> 
+    <TD ALIGN=CENTER> 7 </TD>
+    <TD ALIGN=CENTER> <A HREF="pg27.txt">PG<SUB>2</SUB>(7)</A> </TD>
+    <TD ALIGN=CENTER> 1<SUP>29</SUP>7<SUP>27</SUP>56<SUP>1</SUP> </TD>
+    <TD ALIGN=CENTER> <A HREF="pg27gens.txt">5630688</A> </TD>
+    <TD ALIGN=CENTER> 57 </TD>
+    <TD ALIGN=CENTER> 57 </TD>
+    <TD ALIGN=CENTER> self-dual </TD>
+  </TR>
+  <TR> 
+    <TD ALIGN=CENTER> 8 </TD>
+    <TD ALIGN=CENTER> <A HREF="pg28.txt">PG<SUB>2</SUB>(8)</A> </TD>
+    <TD ALIGN=CENTER> 1<SUP>28</SUP>2<SUP>9</SUP>4<SUP>9</SUP>8<SUP>26</SUP>72<SUP>1</SUP>    </TD>
+    <TD ALIGN=CENTER> <A HREF="pg28gens.txt">49448448</A> </TD>
+    <TD ALIGN=CENTER> 73 </TD>
+    <TD ALIGN=CENTER> 73 </TD>
+    <TD ALIGN=CENTER> self-dual </TD>
+  </TR>
+  <TR> 
+    <TD ALIGN=CENTER> 9 </TD>
+    <TD ALIGN=CENTER> <A HREF="pg29.txt">PG<SUB>2</SUB>(9)</A> </TD>
+    <TD ALIGN=CENTER> 1<SUP>37</SUP>3<SUP>18</SUP>9<SUP>35</SUP>90<SUP>1</SUP>    </TD>
+    <TD ALIGN=CENTER> <A HREF="pg29gens.txt">84913920</A> </TD>
+    <TD ALIGN=CENTER> 91 </TD>
+    <TD ALIGN=CENTER> 91 </TD>
+    <TD ALIGN=CENTER> self-dual </TD>
+  </TR>
+  <TR> 
+    <TD ALIGN=CENTER> 9 </TD>
+    <TD ALIGN=CENTER> <A HREF="hall9.txt">Hall(9)</A> </TD>
+    <TD ALIGN=CENTER> 1<SUP>41</SUP>3<SUP>10</SUP>9<SUP>39</SUP>90<SUP>1</SUP>    </TD>
+    <TD ALIGN=CENTER> <A HREF="hall9gens.txt">311040</A> </TD>
+    <TD ALIGN=CENTER> 10, 81 </TD>
+    <TD ALIGN=CENTER> 1, 90 </TD>
+    <TD ALIGN=CENTER>&nbsp;  </TD>
+  </TR>
+  <TR> 
+    <TD ALIGN=CENTER> 9 </TD>
+    <TD ALIGN=CENTER> <A HREF="dhall9.txt">dual Hall(9)</A> </TD>
+    <TD ALIGN=CENTER> 1<SUP>41</SUP>3<SUP>10</SUP>9<SUP>39</SUP>90<SUP>1</SUP>    </TD>
+    <TD ALIGN=CENTER> <A HREF="dhall9gens.txt">311040</A> </TD>
+    <TD ALIGN=CENTER> 1, 90 </TD>
+    <TD ALIGN=CENTER> 10, 81 </TD>
+    <TD ALIGN=CENTER>&nbsp;  </TD>
+  </TR>
+  <TR> 
+    <TD ALIGN=CENTER> 9 </TD>
+    <TD ALIGN=CENTER> <A HREF="hughes9.txt">Hughes(9)</A> </TD>
+    <TD ALIGN=CENTER> 1<SUP>41</SUP>3<SUP>10</SUP>9<SUP>39</SUP>90<SUP>1</SUP>    </TD>
+    <TD ALIGN=CENTER> <A HREF="hughes9gens.txt">33696</A> </TD>
+    <TD ALIGN=CENTER> 13, 78 </TD>
+    <TD ALIGN=CENTER> 13, 78 </TD>
+    <TD ALIGN=CENTER> self-dual </TD>
+  </TR>
+  <TR> 
+    <TD ALIGN=CENTER> 11 </TD>
+    <TD ALIGN=CENTER> <A HREF="pg211.txt">PG<SUB>2</SUB>(11)</A> </TD>
+    <TD ALIGN=CENTER> 1<SUP>67</SUP>11<SUP>65</SUP>132<SUP>1</SUP> </TD>
+    <TD ALIGN=CENTER> <A HREF="pg211gens.txt">212427600</A> </TD>
+    <TD ALIGN=CENTER> 133 </TD>
+    <TD ALIGN=CENTER> 133 </TD>
+    <TD ALIGN=CENTER> self-dual </TD>
+  </TR>
+  <TR> 
+    <TD ALIGN=CENTER> 13 </TD>
+    <TD ALIGN=CENTER> <A HREF="pg213.txt">PG<SUB>2</SUB>(13)</A> </TD>
+    <TD ALIGN=CENTER> 1<SUP>92</SUP>13<SUP>90</SUP>182<SUP>1</SUP> </TD>
+    <TD ALIGN=CENTER> <A HREF="pg213gens.txt">810534816</A> </TD>
+    <TD ALIGN=CENTER> 183 </TD>
+    <TD ALIGN=CENTER> 183 </TD>
+    <TD ALIGN=CENTER> self-dual </TD>
+  </TR>
+  <TR> 
+    <TD ALIGN=CENTER> <A HREF="../planes16/"><I>16</I></A>    </TD>
+    <TD ALIGN=CENTER> <A HREF="../planes16/"><I>(22 
+      planes)</I></A> </TD>
+    <TD ALIGN=CENTER>&nbsp;  </TD>
+    <TD ALIGN=CENTER>&nbsp;  </TD>
+    <TD ALIGN=CENTER> 273 </TD>
+    <TD ALIGN=CENTER> 273 </TD>
+    <TD ALIGN=CENTER> <A HREF="http://www.cs.uwa.edu.au/~gordon/">G. Royle</A>    </TD>
+  </TR>
+  <TR> 
+    <TD ALIGN=CENTER> 17 </TD>
+    <TD ALIGN=CENTER> <A HREF="pg217.txt">PG<SUB>2</SUB>(17)</A> </TD>
+    <TD ALIGN=CENTER> 1<SUP>154</SUP>17<SUP>152</SUP>306<SUP>1</SUP> </TD>
+    <TD ALIGN=CENTER> <A HREF="pg217gens.txt">6950204928</A> </TD>
+    <TD ALIGN=CENTER> 307 </TD>
+    <TD ALIGN=CENTER> 307 </TD>
+    <TD ALIGN=CENTER> self-dual </TD>
+  </TR>
+  <TR> 
+    <TD ALIGN=CENTER> 19 </TD>
+    <TD ALIGN=CENTER> <A HREF="pg219.txt">PG<SUB>2</SUB>(19)</A> </TD>
+    <TD ALIGN=CENTER> 1<SUP>191</SUP>19<SUP>189</SUP>380<SUP>1</SUP> </TD>
+    <TD ALIGN=CENTER> <A HREF="pg219gens.txt">16934047920</A> </TD>
+    <TD ALIGN=CENTER> 381 </TD>
+    <TD ALIGN=CENTER> 381 </TD>
+    <TD ALIGN=CENTER> self-dual </TD>
+  </TR>
+  <TR> 
+    <TD ALIGN=CENTER> 23 </TD>
+    <TD ALIGN=CENTER> <A HREF="pg223.txt">PG<SUB>2</SUB>(23)</A> </TD>
+    <TD ALIGN=CENTER> 1<SUP>277</SUP>23<SUP>275</SUP>552<SUP>1</SUP> </TD>
+    <TD ALIGN=CENTER> <A HREF="pg223gens.txt">78156525216</A> </TD>
+    <TD ALIGN=CENTER> 553 </TD>
+    <TD ALIGN=CENTER> 553 </TD>
+    <TD ALIGN=CENTER> self-dual </TD>
+  </TR>
+  <TR> 
+    <TD ALIGN=CENTER> <A HREF="../planes25/"><I>25</I></A> </TD>
+    <TD ALIGN=CENTER> <A HREF="../planes25/"> <I>(193 planes)</I> </A> </TD>
+    <TD ALIGN=CENTER>&nbsp;  </TD>
+    <TD ALIGN=CENTER>&nbsp;  </TD>
+    <TD ALIGN=CENTER>&nbsp;  </TD>
+    <TD ALIGN=CENTER>&nbsp;  </TD>
+    <TD ALIGN=CENTER>&nbsp;  </TD>
+  </TR>
+  <TR> 
+    <TD ALIGN=CENTER> <A HREF="../planes27/"><I>27</I></A> </TD>
+    <TD ALIGN=CENTER> <A HREF="../planes27/"> <I>(13 planes)</I> </A> </TD>
+    <TD ALIGN=CENTER>&nbsp;  </TD>
+    <TD ALIGN=CENTER>&nbsp;  </TD>
+    <TD ALIGN=CENTER>&nbsp;  </TD>
+    <TD ALIGN=CENTER>&nbsp;  </TD>
+    <TD ALIGN=CENTER>&nbsp;  </TD>
+  </TR>
+  <TR> 
+    <TD ALIGN=CENTER> 29 </TD>
+    <TD ALIGN=CENTER> <A HREF="pg229.txt">PG<SUB>2</SUB>(29)</A> </TD>
+    <TD ALIGN=CENTER> 1<SUP>436</SUP>29<SUP>434</SUP>870<SUP>1</SUP> </TD>
+    <TD ALIGN=CENTER> <A HREF="pg229gens.txt">499631102880</A> </TD>
+    <TD ALIGN=CENTER> 871 </TD>
+    <TD ALIGN=CENTER> 871 </TD>
+    <TD ALIGN=CENTER> self-dual </TD>
+  </TR>
+  <TR> 
+    <TD ALIGN=CENTER> 31 </TD>
+    <TD ALIGN=CENTER> <A HREF="pg231.txt">PG<SUB>2</SUB>(31)</A> </TD>
+    <TD ALIGN=CENTER> 1<SUP>497</SUP>31<SUP>495</SUP>992<SUP>1</SUP> </TD>
+    <TD ALIGN=CENTER> <A HREF="pg231gens.txt">851974934400</A> </TD>
+    <TD ALIGN=CENTER> 993 </TD>
+    <TD ALIGN=CENTER> 993 </TD>
+    <TD ALIGN=CENTER> self-dual </TD>
+  </TR>
+  <TR>
+    <TD ALIGN=CENTER><A HREF="../planes32/"><I>32</I></A> </TD>
+    <TD ALIGN=CENTER><A HREF="../planes32/"> <I>(12 planes)</I> </A> </TD>
+    <TD ALIGN=CENTER>&nbsp;</TD>
+    <TD ALIGN=CENTER>&nbsp;</TD>
+    <TD ALIGN=CENTER>&nbsp;</TD>
+    <TD ALIGN=CENTER>&nbsp;</TD>
+    <TD ALIGN=CENTER><a href="http://www.mathematik.uni-kl.de/~dempw/dempw_32.html">U. Dempwolff</a></TD>
+  </TR>
+  <TR> 
+    <TD ALIGN=CENTER>...</TD>
+    <TD ALIGN=CENTER>...</TD>
+    <TD ALIGN=CENTER>...</TD>
+    <TD ALIGN=CENTER>...</TD>
+    <TD ALIGN=CENTER>...</TD>
+    <TD ALIGN=CENTER>...</TD>
+    <TD ALIGN=CENTER>...</TD>
+  </TR>
+  <TR> 
+    <TD ALIGN=CENTER><i><a href="../planes49/">49</a></i></TD>
+    <TD ALIGN=CENTER><A HREF="../planes49/"><I>(hundreds of thousands of 
+      planes)</I></A> </TD>
+    <TD ALIGN=CENTER>&nbsp;</TD>
+    <TD ALIGN=CENTER>&nbsp;</TD>
+    <TD ALIGN=CENTER>&nbsp;</TD>
+    <TD ALIGN=CENTER>&nbsp;</TD>
+    <TD ALIGN=CENTER>&nbsp;</TD>
+  </TR>
+</TABLE>
+
+<P><HR>
+<ADDRESS>
+<img src="../../images/email.gif"> /
+revised November, 2017
+</ADDRESS>
+</BODY>
+</HTML>

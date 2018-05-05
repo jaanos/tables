@@ -1,0 +1,507 @@
+<!DOCTYPE HTML SYSTEM "html.dtd">
+<HTML>
+<HEAD>
+<TITLE>Generalised Polygons of Small Order</TITLE>
+</HEAD> 
+<BODY BACKGROUND="../../images/uwmath.gif">
+<H1>Generalised Polygons of Small Order</H1>
+
+<!--
+  <P><IMG SRC="../../images/construction.gif"> <I>Under Construction!!!</I>
+-->
+
+<P><HR><P>
+This site is intended to provide a current list of known generalised <I>n</I>-gons of small order
+for <I>n</I>=4,6,8 (for <I>n</I>=3, see my page of <A HREF="../planes/">projective
+planes of small order</A>.) We assume <I>s</I>,<I>t</I>>1.
+
+<P>For each generalized polygon listed, I have provided
+<UL><LI>a list of <B>point-line incidences</B>, and
+</LI>
+<LI>a list of <B>generators of the automorphism group</B>.</LI>
+</UL>
+These lists are provided as text files assessible through links found in the columns headed
+&ldquo;Name&rdquo; and &ldquo;|Aut. Gp.|&rdquo; respectively. <I>Format:</I> Consider a generalised polygon with
+<I>M</I> points and <I>N</I> lines.
+The first text file lists, for each point, all <I>t</I>+1 lines (as integers in the
+range 0,1,...,<I>N</I>&minus;1) incident with it. The second text file lists generators of the
+automorphism group as permutations of {0,1,2,...,<I>M</I>+<I>N</I>&minus;1}, in which the integers
+0,1,...,<I>M</I>&minus;1 represent points (in the same order as they appear in the first file) and
+the integers <I>M</I>,<I>M</I>+1,...,<I>M</I>+<I>N</I>&minus;1 represent lines (in the same order
+as they appear in the first file, but with <I>M</I> added to each index).
+
+<P>For basic definitions and
+results on the subject of generalised polygons, please refer to
+
+<UL><LI>S.E. Payne, &lsquo;A census of finite generalized quadrangles&rsquo;, pp.29-36 in <I>Finite Geometries,
+Buildings and Related Topics</I>, Oxford, ed. W.M. Kantor et.al., 1990.
+<LI>J.A. Thas, &lsquo;Generalized polygons&rsquo;, pp.383-431 in
+<I>Handbook of Incidence Geometry</I>, ed. F. Buekenhout, North-Holland, 1995.
+<LI>H. Van Maldeghem, <A HREF="http://www.birkhauser.ch/books/math/5864.html">Generalized Polygons</A>,
+Birkh&auml;user, 1998.
+</Ul>
+
+<P>I have made extensive use of Brendan McKay's celebrated software package
+<A HREF="http://cs.anu.edu.au:80/people/bdm/nauty/">nauty</A> for computing
+graph automorphisms.
+
+<P>If you are aware of small polygons which I have overlooked
+in my list, I would appreciate an email
+message (<img src="../../images/email.gif"></img>) from you.
+
+<P><HR><P><H3>Generalised Quadrangles of Small Order</H3>
+
+Here I have listed all <I>known</I> GQ's with parameters (<I>s</I>,<I>t</I>) such that
+<I>st</I><100. The completeness of this list is known only for (<I>s</I>,<I>t</I>) equal to (2,2), (2,4),
+(3,3), (3,5), (3,9), (4,2), (4,4), (5,3) or (9,3). Incomplete results exist towards classifying
+GQ's with other small parameter sets.
+
+<P>I am grateful to Stan Payne for informal discussions which guided me in compiling this list.
+
+<P><TABLE BORDER WIDTH="680">
+<TR VALIGN="TOP">
+  <TH ALIGN=CENTER> &nbsp; (<I>s</I>,<I>t</I>) &nbsp; &nbsp; </TH>
+  <TH> name(s) </TH>
+  <TH> elementary divisors </TH>
+  <TH> |Aut. Gp.| </TH>
+  <TH> Point Orbit Lengths </TH>
+  <TH> Line Orbit Lengths </TH>
+  <TH> Remarks </TH>
+</TR>
+<TR>
+  <TD ALIGN=CENTER> (2,2) </TD>
+  <TD ALIGN=CENTER> <A HREF="w2.txt">W(2)</A>, Sp(4,2), Q(4,2), O<SUB>5</SUB>(2) </TD>
+  <TD ALIGN=CENTER> 1<SUP>10</SUP>0<SUP>5</SUP> </TD>
+  <TD ALIGN=CENTER> <A HREF="w2gens.txt">720</A> </TD>
+  <TD ALIGN=CENTER> 15 </TD>
+  <TD ALIGN=CENTER> 15 </TD>
+  <TD ALIGN=CENTER> self-dual </TD>
+</TR>
+<TR>
+  <TD ALIGN=CENTER> (2,4) </TD>
+  <TD ALIGN=CENTER> <A HREF="h32.txt">H(3,2<SUP>2</SUP>)</A>, U<SUB>4</SUB>(2), AS(3) </TD>
+  <TD ALIGN=CENTER> 1<SUP>21</SUP>0<SUP>6</SUP> </TD>
+  <TD ALIGN=CENTER> <A HREF="h32gens.txt">51840</A> </TD>
+  <TD ALIGN=CENTER> 27 </TD>
+  <TD ALIGN=CENTER> 45 </TD>
+  <TD ALIGN=CENTER> dual of Q(5,2) </TD>
+</TR>
+<TR>
+  <TD ALIGN=CENTER> (3,3) </TD>
+  <TD ALIGN=CENTER> <A HREF="w3.txt">W(3)</A>, Sp(4,3) </TD>
+  <TD ALIGN=CENTER> 1<SUP>25</SUP>0<SUP>15</SUP> </TD>
+  <TD ALIGN=CENTER> <A HREF="w3gens.txt">51840</A> </TD>
+  <TD ALIGN=CENTER> 40 </TD>
+  <TD ALIGN=CENTER> 40 </TD>
+  <TD ALIGN=CENTER> dual of Q(4,3) </TD>
+</TR>
+<TR>
+  <TD ALIGN=CENTER> (3,3) </TD>
+  <TD ALIGN=CENTER> <A HREF="q43.txt">Q(4,3)</A>, O<SUB>5</SUB>(3) </TD>
+  <TD ALIGN=CENTER> 1<SUP>25</SUP>0<SUP>15</SUP> </TD>
+  <TD ALIGN=CENTER> <A HREF="q43gens.txt">51840</A> </TD>
+  <TD ALIGN=CENTER> 40 </TD>
+  <TD ALIGN=CENTER> 40 </TD>
+  <TD ALIGN=CENTER> dual of W(3) </TD>
+</TR>
+<TR>
+  <TD ALIGN=CENTER> (3,5) </TD>
+  <TD ALIGN=CENTER> <A HREF="as4.txt">AS(4)</A> </TD>
+  <TD ALIGN=CENTER> 1<SUP>46</SUP>0<SUP>18</SUP> </TD>
+  <TD ALIGN=CENTER> <A HREF="as4gens.txt">138240</A> </TD>
+  <TD ALIGN=CENTER> 64 </TD>
+  <TD ALIGN=CENTER> 96 </TD>
+  <TD ALIGN=CENTER> </TD>
+</TR>
+<TR>
+  <TD ALIGN=CENTER> (3,9) </TD>
+  <TD ALIGN=CENTER> <A HREF="h33.txt">H(3,3<SUP>2</SUP>)</A>, U<SUB>4</SUB>(3) </TD>
+  <TD ALIGN=CENTER> 1<SUP>90</SUP>3<SUP>1</SUP>0<SUP>21</SUP> </TD>
+  <TD ALIGN=CENTER> <A HREF="h33gens.txt">26127360</A> </TD>
+  <TD ALIGN=CENTER> 112 </TD>
+  <TD ALIGN=CENTER> 280 </TD>
+  <TD ALIGN=CENTER> dual of Q(5,3) </TD>
+</TR>
+<TR>
+  <TD ALIGN=CENTER> (4,2) </TD>
+  <TD ALIGN=CENTER> <A HREF="q52.txt">Q(5,2)</A>, O<SUB>6</SUB><SUP>&minus;</SUP>(2) </TD>
+  <TD ALIGN=CENTER> 1<SUP>21</SUP>0<SUP>6</SUP> </TD>
+  <TD ALIGN=CENTER> <A HREF="q52gens.txt">51840</A> </TD>
+  <TD ALIGN=CENTER> 45 </TD>
+  <TD ALIGN=CENTER> 27 </TD>
+  <TD ALIGN=CENTER> dual of H(3,2<SUP>2</SUP>) </TD>
+</TR>
+<TR>
+  <TD ALIGN=CENTER> (4,4) </TD>
+  <TD ALIGN=CENTER> <A HREF="w4.txt">W(4)</A>, Sp(4,4), Q(5,4), O<SUB>5</SUB>(4) </TD>
+  <TD ALIGN=CENTER> 1<SUP>50</SUP>2<SUP>1</SUP>0<SUP>34</SUP> </TD>
+  <TD ALIGN=CENTER> <A HREF="w4gens.txt">1958400</A> </TD>
+  <TD ALIGN=CENTER> 85 </TD>
+  <TD ALIGN=CENTER> 85 </TD>
+  <TD ALIGN=CENTER> self-dual </TD>
+</TR>
+<TR>
+  <TD ALIGN=CENTER> (4,6) </TD>
+  <TD ALIGN=CENTER> <A HREF="as5.txt">AS(5)</A> </TD>
+  <TD ALIGN=CENTER> 1<SUP>85</SUP>0<SUP>40</SUP> </TD>
+  <TD ALIGN=CENTER> <A HREF="as5gens.txt">60000</A> </TD>
+  <TD ALIGN=CENTER> 125 </TD>
+  <TD ALIGN=CENTER> 25, 150 </TD>
+  <TD ALIGN=CENTER> </TD>
+</TR>
+<TR>
+  <TD ALIGN=CENTER> (4,8) </TD>
+  <TD ALIGN=CENTER> <A HREF="h42.txt">H(4,2<SUP>2</SUP>)</A>, U<SUB>5</SUB>(2) </TD>
+  <TD ALIGN=CENTER> 1<SUP>120</SUP>2<SUP>1</SUP>0<SUP>44</SUP> </TD>
+  <TD ALIGN=CENTER> <A HREF="h42gens.txt">27371520</A> </TD>
+  <TD ALIGN=CENTER> 165 </TD>
+  <TD ALIGN=CENTER> 297 </TD>
+  <TD ALIGN=CENTER> </TD>
+</TR>
+<TR>
+  <TD ALIGN=CENTER> (4,16) </TD>
+  <TD ALIGN=CENTER> <A HREF="h34.txt">H(3,4<SUP>2</SUP>)</A>, U<SUB>4</SUB>(4) </TD>
+  <TD ALIGN=CENTER> 1<SUP>261</SUP>2<SUP>12</SUP>0<SUP>52</SUP> </TD>
+  <TD ALIGN=CENTER> <A HREF="h34gens.txt">4073472000</A> </TD>
+  <TD ALIGN=CENTER> 325 </TD>
+  <TD ALIGN=CENTER> 1105 </TD>
+  <TD ALIGN=CENTER> dual of Q(5,4)</A> </TD>
+</TR>
+<TR>
+  <TD ALIGN=CENTER> (5,3) </TD>
+  <TD ALIGN=CENTER> <A HREF="das4.txt"><I>O</I>(<I>m</I>,<I>n</I>)</A>
+  where <I>O</I> is a hyperoval in PG<SUB>2</SUB>(4) </TD>
+  <TD ALIGN=CENTER> 1<SUP>46</SUP>0<SUP>18</SUP> </TD>
+  <TD ALIGN=CENTER> <A HREF="das4gens.txt">138240</A> </TD>
+  <TD ALIGN=CENTER> 96 </TD>
+  <TD ALIGN=CENTER> 64 </TD>
+  <TD ALIGN=CENTER> dual of AS(4) </TD>
+</TR>
+<TR>
+  <TD ALIGN=CENTER> (5,5) </TD>
+  <TD ALIGN=CENTER> <A HREF="w5.txt">W(5)</A>, Sp(4,5) </TD>
+  <TD ALIGN=CENTER> 1<SUP>91</SUP>0<SUP>65</SUP> </TD>
+  <TD ALIGN=CENTER> <A HREF="w5gens.txt">9360000</A> </TD>
+  <TD ALIGN=CENTER> 156 </TD>
+  <TD ALIGN=CENTER> 156 </TD>
+  <TD ALIGN=CENTER> dual of Q(4,5) </TD>
+</TR>
+<TR>
+  <TD ALIGN=CENTER> (5,5) </TD>
+  <TD ALIGN=CENTER> <A HREF="q45.txt">Q(4,5)</A>, O<SUB>5</SUB>(5) </TD>
+  <TD ALIGN=CENTER> 1<SUP>91</SUP>0<SUP>65</SUP> </TD>
+  <TD ALIGN=CENTER> <A HREF="q45gens.txt">9360000</A> </TD>
+  <TD ALIGN=CENTER> 156 </TD>
+  <TD ALIGN=CENTER> 156 </TD>
+  <TD ALIGN=CENTER> dual of W(5) </TD>
+</TR>
+<TR>
+  <TD ALIGN=CENTER> (6,4) </TD>
+  <TD ALIGN=CENTER> <A HREF="das5.txt">dual AS(5)</A> </TD>
+  <TD ALIGN=CENTER> 1<SUP>85</SUP>0<SUP>40</SUP> </TD>
+  <TD ALIGN=CENTER> <A HREF="das5gens.txt">60000</A> </TD>
+  <TD ALIGN=CENTER> 25, 150 </TD>
+  <TD ALIGN=CENTER> 125 </TD>
+  <TD ALIGN=CENTER> </TD>
+</TR>
+<TR>
+  <TD ALIGN=CENTER> (6,8) </TD>
+  <TD ALIGN=CENTER> <A HREF="as7.txt">AS(7)</A> </TD>
+  <TD ALIGN=CENTER> 1<SUP>217</SUP>0<SUP>126</SUP> </TD>
+  <TD ALIGN=CENTER> <A HREF="as7gens.txt">691488</A> </TD>
+  <TD ALIGN=CENTER> 343 </TD>
+  <TD ALIGN=CENTER> 49, 392 </TD>
+  <TD ALIGN=CENTER> </TD>
+</TR>
+<TR>
+  <TD ALIGN=CENTER> (7,7) </TD>
+  <TD ALIGN=CENTER> <A HREF="w7.txt">W(7)</A>, Sp(4,7) </TD>
+  <TD ALIGN=CENTER> 1<SUP>225</SUP>0<SUP>175</SUP> </TD>
+  <TD ALIGN=CENTER> <A HREF="w7gens.txt">276595200</A> </TD>
+  <TD ALIGN=CENTER> 400 </TD>
+  <TD ALIGN=CENTER> 400 </TD>
+  <TD ALIGN=CENTER> dual of Q(4,7) </TD>
+</TR>
+<TR>
+  <TD ALIGN=CENTER> (7,7) </TD>
+  <TD ALIGN=CENTER> <A HREF="q47.txt">Q(4,7)</A>, O<SUB>5</SUB>(7) </TD>
+  <TD ALIGN=CENTER> 1<SUP>225</SUP>0<SUP>175</SUP> </TD>
+  <TD ALIGN=CENTER> <A HREF="q47gens.txt">276595200</A> </TD>
+  <TD ALIGN=CENTER> 400 </TD>
+  <TD ALIGN=CENTER> 400 </TD>
+  <TD ALIGN=CENTER> dual of W(7) </TD>
+</TR>
+<TR>
+  <TD ALIGN=CENTER> (7,9) </TD>
+  <TD ALIGN=CENTER> <A HREF="as8.txt">AS(8)</A> </TD>
+  <TD ALIGN=CENTER> 1<SUP>299</SUP>2<SUP>17</SUP>0<SUP>196</SUP> </TD>
+  <TD ALIGN=CENTER> <A HREF="as8gens.txt">5419008</A> </TD>
+  <TD ALIGN=CENTER> 512 </TD>
+  <TD ALIGN=CENTER> 64, 576 </TD>
+  <TD ALIGN=CENTER> dual of <I>O</I>(<I>m</I>,<I>n</I>)
+  where <I>O</I> is a hyperoval in PG<SUB>2</SUB>(8) with nucleus <I>n</I> </TD>
+</TR>
+<TR>
+  <TD ALIGN=CENTER> (7,9) </TD>
+  <TD ALIGN=CENTER> <A HREF="domn9.txt">dual <I>O</I>(<I>m</I>,<I>n</I>)</A>
+  where <I>O</I> is a hyperoval
+  in PG<SUB>2</SUB>(8) with nucleus <I>not</I> equal to <I>m</I> or <I>n</I> </TD>
+  <TD ALIGN=CENTER> 1<SUP>308</SUP>2<SUP>8</SUP>0<SUP>196</SUP> </TD>
+  <TD ALIGN=CENTER> <A HREF="domn9gens.txt">150528</A> </TD>
+  <TD ALIGN=CENTER> 64, 448 </TD>
+  <TD ALIGN=CENTER> 16, 112, 512 </TD>
+  <TD ALIGN=CENTER> </TD>
+</TR>
+<TR>
+  <TD ALIGN=CENTER> (8,4) </TD>
+  <TD ALIGN=CENTER> <A HREF="dh42.txt">dual H(4,2<SUP>2</SUP>)</A>, dual U<SUB>5</SUB>(2) </TD>
+  <TD ALIGN=CENTER> 1<SUP>120</SUP>2<SUP>1</SUP>0<SUP>44</SUP> </TD>
+  <TD ALIGN=CENTER> <A HREF="dh42gens.txt">27371520</A> </TD>
+  <TD ALIGN=CENTER> 297 </TD>
+  <TD ALIGN=CENTER> 165 </TD>
+  <TD ALIGN=CENTER> </TD>
+</TR>
+<TR>
+  <TD ALIGN=CENTER> (8,6) </TD>
+  <TD ALIGN=CENTER> <A HREF="das7.txt">dual AS(7)</A> </TD>
+  <TD ALIGN=CENTER> 1<SUP>217</SUP>0<SUP>126</SUP> </TD>
+  <TD ALIGN=CENTER> <A HREF="das7gens.txt">691488</A> </TD>
+  <TD ALIGN=CENTER> 49, 392 </TD>
+  <TD ALIGN=CENTER> 343 </TD>
+  <TD ALIGN=CENTER> </TD>
+</TR>
+<TR>
+  <TD ALIGN=CENTER> (8,8) </TD>
+  <TD ALIGN=CENTER> <A HREF="w8.txt">W(8)</A>, Sp(4,8), Q(4,8), O<SUB>5</SUB>(8) </TD>
+  <TD ALIGN=CENTER> 1<SUP>298</SUP>2<SUP>26</SUP>4<SUP>1</SUP>0<SUP>260</SUP> </TD>
+  <TD ALIGN=CENTER> <A HREF="w8gens.txt">3170119680</A> </TD>
+  <TD ALIGN=CENTER> 585 </TD>
+  <TD ALIGN=CENTER> 585 </TD>
+  <TD ALIGN=CENTER> self-dual </TD>
+</TR>
+<TR>
+  <TD ALIGN=CENTER> (8,8) </TD>
+  <TD ALIGN=CENTER> <A HREF="t2o8.txt">T<SUB>2</SUB>(<I>O</I>)</A>
+  where <I>O</I> is a nonclassical oval in PG<SUB>2</SUB>(8) </TD>
+  <TD ALIGN=CENTER> 1<SUP>310</SUP>2<SUP>14</SUP>4<SUP>1</SUP>0<SUP>260</SUP> </TD>
+  <TD ALIGN=CENTER> <A HREF="t2o8gens.txt">602112</A> </TD>
+  <TD ALIGN=CENTER> 1, 8, 64, 512 </TD>
+  <TD ALIGN=CENTER> 1, 8, 64, 512 </TD>
+  <TD ALIGN=CENTER> self-dual </TD>
+</TR>
+<TR>
+  <TD ALIGN=CENTER> (8,10) </TD>
+  <TD ALIGN=CENTER> <A HREF="as9.txt">AS(9)</A> </TD>
+  <TD ALIGN=CENTER> 1<SUP>424</SUP>3<SUP>17</SUP>0<SUP>288</SUP> </TD>
+  <TD ALIGN=CENTER> <A HREF="as9gens.txt">8398080</A> </TD>
+  <TD ALIGN=CENTER> 729 </TD>
+  <TD ALIGN=CENTER> 81, 810 </TD>
+  <TD ALIGN=CENTER> ? </TD>
+</TR>
+<TR>
+  <TD ALIGN=CENTER> (9,3) </TD>
+  <TD ALIGN=CENTER> <A HREF="q53.txt">Q(5,3)</A>, O<SUB>6</SUB><SUP>&minus;</SUP>(3) </TD>
+  <TD ALIGN=CENTER> 1<SUP>90</SUP>3<SUP>1</SUP>0<SUP>21</SUP> </TD>
+  <TD ALIGN=CENTER> <A HREF="q53gens.txt">26127360</A> </TD>
+  <TD ALIGN=CENTER> 280 </TD>
+  <TD ALIGN=CENTER> 112 </TD>
+  <TD ALIGN=CENTER> dual of H(3,3<SUP>2</SUP>) </TD>
+</TR>
+<TR>
+  <TD ALIGN=CENTER> (9,7) </TD>
+  <TD ALIGN=CENTER> <A HREF="das8.txt"><I>O</I>(<I>m</I>,<I>n</I>)</A>
+  where <I>O</I> is a hyperoval
+  in PG<SUB>2</SUB>(8) with nucleus <I>n</I> </TD>
+  <TD ALIGN=CENTER> 1<SUP>299</SUP>2<SUP>17</SUP>0<SUP>196</SUP> </TD>
+  <TD ALIGN=CENTER> <A HREF="das8gens.txt">5419008</A> </TD>
+  <TD ALIGN=CENTER> 64, 576 </TD>
+  <TD ALIGN=CENTER> 512 </TD>
+  <TD ALIGN=CENTER> dual of AS(8) </TD>
+</TR>
+<TR>
+  <TD ALIGN=CENTER> (9,7) </TD>
+  <TD ALIGN=CENTER> <A HREF="omn9.txt"><I>O</I>(<I>m</I>,<I>n</I>)</A>
+  where <I>O</I> is a hyperoval
+  in PG<SUB>2</SUB>(8) with nucleus <I>not</I> equal to <I>m</I> or <I>n</I> </TD>
+  <TD ALIGN=CENTER> 1<SUP>308</SUP>2<SUP>8</SUP>0<SUP>196</SUP> </TD>
+  <TD ALIGN=CENTER> <A HREF="omn9gens.txt">150528</A> </TD>
+  <TD ALIGN=CENTER> 16, 112, 512 </TD>
+  <TD ALIGN=CENTER> 64, 448 </TD>
+  <TD ALIGN=CENTER> </TD>
+</TR>
+<TR>
+  <TD ALIGN=CENTER> (9,9) </TD>
+  <TD ALIGN=CENTER> <A HREF="w9.txt">W(9)</A>, Sp(4,9) </TD>
+  <TD ALIGN=CENTER> 1<SUP>425</SUP>3<SUP>26</SUP>0<SUP>369</SUP> </TD>
+  <TD ALIGN=CENTER> <A HREF="w9gens.txt">6886425600</A> </TD>
+  <TD ALIGN=CENTER> 820 </TD>
+  <TD ALIGN=CENTER> 820 </TD>
+  <TD ALIGN=CENTER> dual of Q(4,9) </TD>
+</TR>
+<TR>
+  <TD ALIGN=CENTER> (9,9) </TD>
+  <TD ALIGN=CENTER> <A HREF="q49.txt">Q(4,9)</A>, O<SUB>5</SUB>(9) </TD>
+  <TD ALIGN=CENTER> 1<SUP>425</SUP>3<SUP>26</SUP>0<SUP>369</SUP> </TD>
+  <TD ALIGN=CENTER> <A HREF="q49gens.txt">6886425600</A> </TD>
+  <TD ALIGN=CENTER> 820 </TD>
+  <TD ALIGN=CENTER> 820 </TD>
+  <TD ALIGN=CENTER> dual of W(9) </TD>
+</TR>
+<TR>
+  <TD ALIGN=CENTER> (10,8) </TD>
+  <TD ALIGN=CENTER> <A HREF="das9.txt">dual AS(9)</A> </TD>
+  <TD ALIGN=CENTER> 1<SUP>424</SUP>3<SUP>17</SUP>0<SUP>288</SUP> </TD>
+  <TD ALIGN=CENTER> <A HREF="das9gens.txt">8398080</A> </TD>
+  <TD ALIGN=CENTER> 81, 810 </TD>
+  <TD ALIGN=CENTER> 729 </TD>
+  <TD ALIGN=CENTER> </TD>
+</TR>
+<TR>
+  <TD ALIGN=CENTER> (16,4) </TD>
+  <TD ALIGN=CENTER> <A HREF="q54.txt">Q(5,4)</A>, O<SUB>6</SUB><SUP>&minus;</SUP>(4) </TD>
+  <TD ALIGN=CENTER> 1<SUP>261</SUP>2<SUP>12</SUP>0<SUP>52</SUP> </TD>
+  <TD ALIGN=CENTER> <A HREF="q54gens.txt">4073472000</A> </TD>
+  <TD ALIGN=CENTER> 1105 </TD>
+  <TD ALIGN=CENTER> 325 </TD>
+  <TD ALIGN=CENTER> dual of H(3,4<SUP>2</SUP>) </TD>
+</TR>
+</TABLE>
+
+<P><HR><P><H3>Generalised Hexagons of Small Order</H3>
+
+Here I have listed all <I>known</I> GH's with parameters (<I>s</I>,<I>t</I>) such that
+<I>st</I><40.
+
+<P><TABLE BORDER WIDTH="680">
+<TR VALIGN="TOP">
+  <TH ALIGN=CENTER> &nbsp; <I>(s,t)</I> &nbsp; &nbsp; </TH>
+  <TH> name(s) </TH>
+  <TH> elementary divisors </TH>
+  <TH> |Aut. Gp.| </TH>
+  <TH> Point orbit lengths </TH>
+  <TH> Line orbit lengths </TH>
+  <TH> Remarks </TH>
+</TR>
+<TR>
+  <TD ALIGN=CENTER> (2,2) </TD>
+  <TD ALIGN=CENTER> <A HREF="h2.txt">H(2)</A>, G<SUB>2</SUB>(2) </TD>
+  <TD ALIGN=CENTER> 1<SUP>49</SUP>0<SUP>14</SUP> </TD>
+  <TD ALIGN=CENTER> <A HREF="h2gens.txt">12096</A> </TD>
+  <TD ALIGN=CENTER> 63 </TD>
+  <TD ALIGN=CENTER> 63 </TD>
+  <TD ALIGN=CENTER> </TD>
+</TR>
+<TR>
+  <TD ALIGN=CENTER> (2,2) </TD>
+  <TD ALIGN=CENTER> <A HREF="dh2.txt">dual H(2)</A> </TD>
+  <TD ALIGN=CENTER> 1<SUP>49</SUP>0<SUP>14</SUP> </TD>
+  <TD ALIGN=CENTER> <A HREF="dh2gens.txt">12096</A> </TD>
+  <TD ALIGN=CENTER> 63 </TD>
+  <TD ALIGN=CENTER> 63 </TD>
+  <TD ALIGN=CENTER> </TD>
+</TR>
+<TR>
+  <TD ALIGN=CENTER> (2,8) </TD>
+  <TD ALIGN=CENTER> <A HREF="3d42.txt"><SUP>3</SUP>D<SUB>4</SUB>(2)</A> </TD>
+  <TD ALIGN=CENTER> 1<SUP>791</SUP>2<SUP>2</SUP>0<SUP>26</SUP> </TD>
+  <TD ALIGN=CENTER> <A HREF="3d42gens.txt">634023936</A> </TD>
+  <TD ALIGN=CENTER> 819 </TD>
+  <TD ALIGN=CENTER> 2457 </TD>
+  <TD ALIGN=CENTER> </TD>
+</TR>
+<TR>
+  <TD ALIGN=CENTER> (3,3) </TD>
+  <TD ALIGN=CENTER> <A HREF="h3.txt">H(3)</A>, G<SUB>2</SUB>(3) </TD>
+  <TD ALIGN=CENTER> 1<SUP>272</SUP>3<SUP>1</SUP>0<SUP>91</SUP> </TD>
+  <TD ALIGN=CENTER> <A HREF="h3gens.txt">4245696</A> </TD>
+  <TD ALIGN=CENTER> 364 </TD>
+  <TD ALIGN=CENTER> 364 </TD>
+  <TD ALIGN=CENTER> self-dual </TD>
+</TR>
+<TR>
+  <TD ALIGN=CENTER> (4,4) </TD>
+  <TD ALIGN=CENTER> <A HREF="h4.txt">H(4)</A>, G<SUB>2</SUB>(4) </TD>
+  <TD ALIGN=CENTER> 1<SUP>987</SUP>2<SUP>14</SUP>0<SUP>364</SUP> </TD>
+  <TD ALIGN=CENTER> <A HREF="h4gens.txt">503193600</A> </TD>
+  <TD ALIGN=CENTER> 1365 </TD>
+  <TD ALIGN=CENTER> 1365 </TD>
+  <TD ALIGN=CENTER> </TD>
+</TR>
+<TR>
+  <TD ALIGN=CENTER> (4,4) </TD>
+  <TD ALIGN=CENTER> <A HREF="dh4.txt">dual H(4)</A> </TD>
+  <TD ALIGN=CENTER> 1<SUP>987</SUP>2<SUP>14</SUP>0<SUP>364</SUP> </TD>
+  <TD ALIGN=CENTER> <A HREF="dh4gens.txt">503193600</A> </TD>
+  <TD ALIGN=CENTER> 1365 </TD>
+  <TD ALIGN=CENTER> 1365 </TD>
+  <TD ALIGN=CENTER> </TD>
+</TR>
+<TR>
+  <TD ALIGN=CENTER> (5,5) </TD>
+  <TD ALIGN=CENTER> <A HREF="h5.txt">H(5)</A>, G<SUB>2</SUB>(5) </TD>
+  <TD ALIGN=CENTER> 1<SUP>2794</SUP>5<SUP>27</SUP>0<SUP>1085</SUP> </TD>
+  <TD ALIGN=CENTER> <A HREF="h5gens.txt">5859000000</A> </TD>
+  <TD ALIGN=CENTER> 3906 </TD>
+  <TD ALIGN=CENTER> 3906 </TD>
+  <TD ALIGN=CENTER> </TD>
+</TR>
+<TR>
+  <TD ALIGN=CENTER> (5,5) </TD>
+  <TD ALIGN=CENTER> <A HREF="dh5.txt">dual H(5)</A> </TD>
+  <TD ALIGN=CENTER> 1<SUP>2794</SUP>5<SUP>27</SUP>0<SUP>1085</SUP> </TD>
+  <TD ALIGN=CENTER> <A HREF="dh5gens.txt">5859000000</A> </TD>
+  <TD ALIGN=CENTER> 3906 </TD>
+  <TD ALIGN=CENTER> 3906 </TD>
+  <TD ALIGN=CENTER> </TD>
+</TR>
+<TR>
+  <TD ALIGN=CENTER> (8,2) </TD>
+  <TD ALIGN=CENTER> <A HREF="d3d42.txt">dual <SUP>3</SUP>D<SUB>4</SUB>(2)</A> </TD>
+  <TD ALIGN=CENTER> 1<SUP>791</SUP>2<SUP>2</SUP>0<SUP>26</SUP> </TD>
+  <TD ALIGN=CENTER> <A HREF="d3d42gens.txt">634023936</A> </TD>
+  <TD ALIGN=CENTER> 2457 </TD>
+  <TD ALIGN=CENTER> 819 </TD>
+  <TD ALIGN=CENTER> </TD>
+</TR>
+</TABLE>
+
+<P><HR><P><H3>Generalised Octagons of Small Order</H3>
+
+Here I have listed the only <I>known</I> GO's with parameters (<I>s</I>,<I>t</I>) such that
+<I>st</I><20.
+
+<P><TABLE BORDER WIDTH="680">
+<TR VALIGN="TOP">
+  <TH ALIGN=CENTER> &nbsp; <I>(s,t)</I> &nbsp; &nbsp; </TH>
+  <TH> name(s) </TH>
+  <TH> elementary divisors </TH>
+  <TH> |Aut. Gp.| </TH>
+  <TH> Point Orbit Lengths </TH>
+  <TH> Line Orbit Lengths </TH>
+  <TH> Remarks </TH>
+</TR>
+<TR>
+  <TD ALIGN=CENTER> (2,4) </TD>
+  <TD ALIGN=CENTER> <A HREF="2f4.txt"><SUP>2</SUP>F<SUB>4</SUB>(2) </TD>
+  <TD ALIGN=CENTER> 1<SUP>1675</SUP>2<SUP>2</SUP>0<SUP>78</SUP> </TD>
+  <TD ALIGN=CENTER> <A HREF="2f4gens.txt">35942400</A> </TD>
+  <TD ALIGN=CENTER> 1755 </TD>
+  <TD ALIGN=CENTER> 2925 </TD>
+  <TD ALIGN=CENTER> </TD>
+</TR>
+<TR>
+  <TD ALIGN=CENTER> (4,2) </TD>
+  <TD ALIGN=CENTER> <A HREF="d2f4.txt">dual <SUP>2</SUP>F<SUB>4</SUB>(2) </TD>
+  <TD ALIGN=CENTER> 1<SUP>1675</SUP>2<SUP>2</SUP>0<SUP>78</SUP> </TD>
+  <TD ALIGN=CENTER> <A HREF="d2f4gens.txt">35942400</A> </TD>
+  <TD ALIGN=CENTER> 2925 </TD>
+  <TD ALIGN=CENTER> 1755 </TD>
+  <TD ALIGN=CENTER> </TD>
+</TR>
+</TABLE>
+
+<P><HR>
+<ADDRESS><img src="../../images/email.gif"></img> /
+revised August, 2003</ADDRESS>
+</BODY>
+</HTML>

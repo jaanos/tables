@@ -12,6 +12,11 @@ git add www.uwyo.edu
 git commit -m "Update $(date "+%Y-%m-%d")" --author "Jason S. Williford <jwillif1@uwyo.edu>"
 
 wget -N -r --no-parent http://ericmoorhouse.org/pub/planes/
+wget -N -r --no-parent http://ericmoorhouse.org/pub/planes16/
+wget -N -r --no-parent http://ericmoorhouse.org/pub/planes25/
+wget -N -r --no-parent http://ericmoorhouse.org/pub/planes27/
+wget -N -r --no-parent http://ericmoorhouse.org/pub/planes32/
+wget -N -r --no-parent http://ericmoorhouse.org/pub/planes49/
 wget -N -r --no-parent http://ericmoorhouse.org/pub/genpoly/
 git add ericmoorhouse.org
 git commit -m "Update $(date "+%Y-%m-%d")" --author "G. Eric Moorhouse <moorhous@uwyo.edu>"

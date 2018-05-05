@@ -11,4 +11,9 @@ wget -N -r --no-parent http://www.uwyo.edu/jwilliford/data/qbip5_table.html
 git add www.uwyo.edu
 git commit -m "Update $(date "+%Y-%m-%d")" --author "Jason S. Williford <jwillif1@uwyo.edu>"
 
+wget -N -r --no-parent http://ericmoorhouse.org/pub/planes/
+wget -N -r --no-parent http://ericmoorhouse.org/pub/genpoly/
+git add ericmoorhouse.org
+git commit -m "Update $(date "+%Y-%m-%d")" --author "G. Eric Moorhouse <moorhous@uwyo.edu>"
+
 git push

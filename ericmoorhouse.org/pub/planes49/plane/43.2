@@ -1,0 +1,101 @@
+<!DOCTYPE HTML SYSTEM "html.dtd">
+<HTML>
+<HEAD>
+<TITLE>Projective Planes of Order 49 Related to t43</TITLE>
+</HEAD> 
+<BODY BACKGROUND="../../../../images/pg33.gif">
+<H1>Projective Planes of Order 49 Related to t43</H1>
+
+<P><HR><P>
+I am currently compiling a list of known <a href="../../index.html">projective planes of order 49</a>.
+As part of this enumeration, here are listed the plane <a href="../../index.html#43">t43</a>
+and all known planes of order 49 obtained from it by dualizing and deriving. Coming soon: also
+planes related by the method of lifting quotients. This list is currently incomplete; check back later
+for a complete enumeration.
+ 
+<P>Following the table is a <A HREF="#key">key to the table</A>.
+
+<P><HR><P><H2>Known Projective Planes of Order 49 Related to t43</H2>
+
+<table border width="741">
+<tr valign="top">
+ <th align="center"> Entry </th>
+ <th align="center"> Plane </th>
+ <th align="center"> |Autgp| </th>
+ <th> Point Orbits </th>
+ <th> Line Orbits </th>
+ <th align="center"> 7-rank </th>
+</tr>
+<tr valign="top">
+ <td align="center"> <a name="1">1</a> </td>
+ <td align="center"> Translation Plane <a href="t43.pz">t43</a>, dual <a href="dt43.pz">dt43</a> </td>
+ <td align="center"> <a href="../../autgp/43/t43.gz">4840416</a> </td>
+ <td> 8,42,2401 </td>
+ <td> 1,392,2058 </td>
+ <td align="center"> 921 </td>
+</tr>
+<tr valign="top">
+ <td align="center"> <a name="2">2</a> </td>
+ <td align="center"> <a href="t43_0_0.pz">t43_0_0</a>, <a href="dt43_0_0.pz">dt43_0_0</a> </td>
+ <td align="center"> <a href="../../autgp/43/t43_0_0.gz">2058</a> </td>
+ <td> 1,7<sup>56</sup>,2058 </td>
+ <td> 1<sup>8</sup>,42,49<sup>49</sup> </td>
+ <td align="center"> 983 </td>
+</tr>
+<tr valign="top">
+ <td align="center"> <a name="3">3</a> </td>
+ <td align="center"> <a href="t43_1_0.pz">t43_1_0</a>, <a href="dt43_1_0.pz">dt43_1_0</a> </td>
+ <td align="center"> <a href="../../autgp/43/t43_1_0.gz">86436</a> </td>
+ <td> 1,7,42,49,147<sup>2</sup>,2058 </td>
+ <td> 1,7,42,49,147<sup>2</sup>,2058 </td>
+ <td align="center"> 955 </td>
+</tr>
+<tr valign="top">
+ <td align="center"> <a name="4">4</a> </td>
+ <td align="center"> <a href="t43_1_1.pz">t43_1_1</a>, <a href="dt43_1_1.pz">dt43_1_1</a> </td>
+ <td align="center"> <a href="../../autgp/43/t43_1_1.gz">12348</a> </td>
+ <td> 1,7<sup>2</sup>,14<sup>3</sup>,21<sup>2</sup>,42<sup>7</sup>,2058 </td>
+ <td> 1<sup>2</sup>,2<sup>3</sup>,42,49,147<sup>2</sup>,294<sup>7</sup> </td>
+ <td align="center"> 981 </td>
+</tr>
+</table>
+<P>
+
+<A NAME="key"></A><H2>Key to the table</H2>
+
+<P>Only one line is displayed for both a plane and its dual, an asterisk (*) in
+the first column indicating that the plane is self-dual. Each line includes the
+following information and isomorphism invariants for each plane.
+
+<UL>
+  <LI><B>Plane</B>&nbsp; &nbsp; provides a <a href="../../../../pzip.html">pzip</a>
+    file containing the projective plane. I assume you have installed <a href="../../../../pzip.html">pzip</a> under linux,
+    which compresses each plane to about 6 KB. Right-click to save as <font face="Courier New, Courier, mono"><i>plane</i>.pz</font>,
+    then type the command <font face="Courier New, Courier, mono">punzip <i>plane</i>.pz</font>
+    to recover <font face="Courier New, Courier, mono">plane</font> as a text file. This text file has 2451 rows, each
+    row specifying a line of the plane as a subset of the points 0,1,2,...,2450.
+    For non-self-dual planes, a second file is also given, containing the dual
+    of the first.</li>
+  <LI><B>|Autgp|</B>&nbsp; &nbsp; The order of the full collineation group of 
+    the projective plane. This table entry is linked to a gzip file providing 
+    generators of the automorphism group. Right-click to save as <font face="Courier New, Courier, mono"><i>plane</i>.gz</font>, 
+    then type the command <font face="Courier New, Courier, mono">gunzip <i>plane</i>.gz</font> 
+    to recover <font face="Courier New, Courier, mono">plane</font> as a text 
+    file. This text file lists generators of the full collineation group as permutations 
+    of the integers 0,1,2,...,4901 where 0,1,2,...,2450 are labels for the points 
+    and 2451,...,4901 are labels for the lines. Generators for the automorphism 
+    group of the dual plane are not provided since these are trivially obtained 
+    from the generators given for the original plane.</li>
+  <LI><B>Point Orbits</B>&nbsp; &nbsp; The lengths of the full automorphism group
+    on the points. (These are the lengths of the line orbits for the dual plane.)</li>
+  <LI><B>Line Orbits</B>&nbsp; &nbsp; The lengths of the full automorphism group
+    on the lines. (These are the lengths of the point orbits for the dual plane.)</li>
+  <LI><B>7-rank</B>&nbsp; &nbsp; The rank of the (0,1)-incidence matrix of the
+    projective plane, over a field of characteristic 7.</li>
+</UL>
+
+<P><HR>
+<ADDRESS><img src="../../../../images/email.gif">  /
+revised February, 2011</ADDRESS>
+</BODY>
+</HTML>

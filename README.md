@@ -9,7 +9,7 @@ Currently, the following pages are mirrored:
 * [Tables of known projective planes of small order](moorhouse/pub/planes/) by G. E. Moorhouse
 * [Tables of known generalised polygons of small order](moorhouse/pub/genpoly/) by G. E. Moorhouse
 
-You can track changes on the [GitHub repository](https://github.com/jaanos/tables/) (commits containing changes to the website are attributed to A. E. Brouwer or J. S. Williford), or you can view the pages as a [GitHub Pages site](https://jaanos.github.io/tables/).
+You can track changes on the [GitHub repository](https://github.com/jaanos/tables/) (commits containing changes to the website are attributed to A. E. Brouwer, J. S. Williford or G. E. Moorhouse), or you can view the pages as a [GitHub Pages site](https://jaanos.github.io/tables/).
 
 ## Changelog
 

@@ -18,7 +18,7 @@ wget -N -r --no-parent http://ericmoorhouse.org/pub/planes27/
 wget -N -r --no-parent http://ericmoorhouse.org/pub/planes32/
 wget -N -r --no-parent http://ericmoorhouse.org/pub/planes49/
 wget -N -r --no-parent http://ericmoorhouse.org/pub/genpoly/
-ls ericmoorhouse.org/pub/planes49/plane/*.1 | sed -r "s|^(.*)\.1|\0 \1/index.html|" | xargs -n 2 mv
+ls ericmoorhouse.org/pub/planes49/plane/*.* | sed -r "s|^(.*)\..*|\0 \1/index.html|" | xargs -n 2 mv
 git add ericmoorhouse.org
 git commit -m "Update $(date "+%Y-%m-%d")" --author "G. Eric Moorhouse <moorhous@uwyo.edu>"
 

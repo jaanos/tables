@@ -1,30 +1,56 @@
 User-agent: *
 Disallow: /portaladmin/
+
 Disallow: /photoadmin/
+
 Disallow: /altadmin/
+
 Disallow: /artmuseumadmin/
+
 Disallow: /askitadmin/
+
 Disallow: /astecadmin/
+
 Disallow: /athleticsadmin/
+
 Disallow: /businessadmin/
+
 Disallow: /cacadmin/
+
 Disallow: /comdisadmin/
+
 Disallow: /cvsadmin/
+
 Disallow: /econfinadmin/
+
 Disallow: /facultyresources/
+
 Disallow: /gradadmin/
+
 Disallow: /greeklifeadmin/
+
 Disallow: /hradmin/
+
 Disallow: /kandhadmin/
+
 Disallow: /neuroscienceadmin/
+
 Disallow: /newsadmin/
+
 Disallow: /socialworkadmin/
+
 Disallow: /sociologyadmin/
+
 Disallow: /testbedadmin/
+
 Disallow: /testbed/
+
 Disallow: /thdadmin/
+
 Disallow: /web_statistics/
+
 Disallow: /includes/shared/ratings08.asp
+
 Disallow: /WebResource.axd
 Disallow: /4hjudging/
 Disallow: /ag_council/
@@ -54,9 +80,13 @@ Disallow: /uwlivestock/
 Disallow: /water/
 Disallow: /bwilliams/
 Disallow: /wrrc-symposium/
+
 Disallow: /*info.asp
+
 Disallow: /*showdivisionnews.asp
+
 Disallow: /*showevent.asp
+
 Disallow: /*showrelease.asp
 
 Sitemap: http://www.uwyo.edu/_files/sitemap/index.xml

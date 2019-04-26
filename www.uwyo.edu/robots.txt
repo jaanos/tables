@@ -1,12 +1,4 @@
 User-agent: *
-Disallow: /portaladmin/
-
-Disallow: /photoadmin/
-
-Disallow: /altadmin/
-
-Disallow: /artmuseumadmin/
-
 Disallow: /askitadmin/
 
 Disallow: /astecadmin/

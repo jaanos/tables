@@ -1,4 +1,0 @@
-User-agent: *
-Disallow: ./WilsonFest/*
-Disallow: ./DCG/*
-Disallow: ./kocomohouse.pdf

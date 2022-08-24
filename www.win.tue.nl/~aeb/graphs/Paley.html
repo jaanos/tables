@@ -50,39 +50,7 @@ The independence numbers of the Paley graphs of
 <a href="https://web.archive.org/web/20000815214259/http://www.research.ibm.com/people/s/shearer/indpal.html">prime order less than 7000</a>
 were computed by James Shearer. Geoffrey Exoo extended that table
 <!-- up to <a href="https://web.archive.org/web/20150404213642/http://ginger.indstate.edu/ge/PALEY/">order 10000</a>.-->
-beyond <a href="http://cs.indstate.edu/ge/Paley/cliques.html">order 16000</a>.
-<p>
-In I. Broere, D. Döman, J. N. Ridley,
-<i>The clique numbers and chromatic numbers of certain Paley graphs</i>,
-Quaestiones Math. <b>11</b> (1988) 91-93,
-it is shown that when <i>q</i> is an even power of a prime, the clique and
-chromatic number are both sqrt(<i>q</i>).
-(Indeed, this is trivial: the subfield gives a clique, and its
-translates give a partitions into cliques. No larger cliques exist by the
-Hoffman bound. But the graph is self-complementary.)
-<p>
-A much stronger result is found in
-A. Blokhuis,
-<i>On subsets of GF(q<sup>2</sup>) with square differences</i>,
-Indag. Math. <b>46</b> (1984) 369-372.
-This paper shows that if a subset of GF(<i>q</i>) has size sqrt(<i>q</i>)
-and all differences are squares, or all differences are nonsquares,
-then the subset is the affine image of a subfield.
-In particular, this determines all cliques and all cocliques
-of size sqrt(<i>q</i>) in the Paley graph of order <i>q</i>.
-<p>
-Smaller maximal cliques are constructed in
-R. D. Baker, G. L. Ebert, J. Hemmeter, A. J. Woldar,
-<i>Maximal cliques in the Paley graph of square order</i>,
-J. Statist. Plann. Inference <b>56</b> (1996) 33-38,
-and in
-S. Goryainov, V. V. Kabanov, L. Shalaginov & A. Valyuzhenich,
-<i>On eigenfunctions and maximal cliques of Paley graphs of square order</i>,
-Finite Fields Appl. <b>52</b> (2018) 361–369.
-<p>
-For prime <i>q</i>, Hanson and Petridis improved the upper bound
-sqrt(<i>q</i>) to roughly sqrt(<i>q/2</i>), more precisely
-(1+sqrt(2<i>q</i>−1))/2. Equality holds for <i>q</i>=5, 13, 41.
+<a href="http://cs.indstate.edu/ge/Paley/cliques.html">beyond order 16000</a>.
 <p>
 A small table with independence numbers and chromatic numbers:
 <p>
@@ -108,6 +76,49 @@ A small table with independence numbers and chromatic numbers:
 </table></center>
 <p>
 The chromatic numbers for q=125,173,197 are due to Geoffrey Exoo (pers. comm.).
+<p>
+Since the Paley graphs are self-complementary, their clique numbers
+equal their independence numbers.
+By the Hoffman bound, the independence number is at most sqrt(<i>q</i>).
+For prime <i>q</i>, Hanson and Petridis improved this upper bound
+to roughly sqrt(<i>q/2</i>), more precisely
+(1+sqrt(2<i>q</i>−1))/2. Equality holds for <i>q</i>=5, 13, 41.
+<p>
+<H3>The case of square q</H3>
+In I. Broere, D. Döman, J. N. Ridley,
+<i>The clique numbers and chromatic numbers of certain Paley graphs</i>,
+Quaestiones Math. <b>11</b> (1988) 91-93,
+it is shown that when <i>q</i> is an even power of a prime, the clique and
+chromatic number are both sqrt(<i>q</i>).
+(Indeed, this is trivial: the subfield gives a clique, and its
+translates give a partitions into cliques. No larger cliques exist by the
+Hoffman bound.)
+<p>
+A much stronger result is found in
+A. Blokhuis,
+<i>On subsets of GF(q<sup>2</sup>) with square differences</i>,
+Indag. Math. <b>46</b> (1984) 369-372.
+This paper shows that if a subset of GF(<i>q</i>) has size sqrt(<i>q</i>)
+and all differences are squares, or all differences are nonsquares,
+then the subset is the affine image of a subfield.
+In particular, this determines all cliques and all cocliques
+of size sqrt(<i>q</i>) in the Paley graph of order <i>q</i>.
+<p>
+For <i>q</i> = <i>r</i><sup>2</sup> with <i>r</i> = 4<i>t</i>±1,
+smaller maximal cliques (of size 2<i>t</i>+1) are constructed in
+R. D. Baker, G. L. Ebert, J. Hemmeter, A. J. Woldar,
+<i>Maximal cliques in the Paley graph of square order</i>,
+J. Statist. Plann. Inference <b>56</b> (1996) 33-38.
+They conjecture that no maximal clique in the Paley graph of order
+<i>r</i><sup>2</sup> has size strictly between 2<i>t</i>+1 and <i>r</i>.
+<p>
+See also
+M. Kiermaier & S. Kurz,
+<i>Maximal integral point sets in affine planes over finite fields</i>,
+Discr. Math. <b>309</b> (2009) 4564-4575, and
+S. Goryainov, V. V. Kabanov, L. Shalaginov & A. Valyuzhenich,
+<i>On eigenfunctions and maximal cliques of Paley graphs of square order</i>,
+Finite Fields Appl. <b>52</b> (2018) 361–369.
 
 <H2>Dominating sets</H2>
 The size of the smallest dominating set in the Paley graph P(<i>q</i>)
@@ -141,8 +152,7 @@ Similarly, for Paley tournaments P(<i>q</i>) one has:
 </table></center>
 <p>
 
-
-<H2>Reference</H2>
+See
 <!--
 András Gács & Tamás Szőnyi, <i>Random constructions and density results</i>,
 Designs, Codes and Cryptography <b>47</b> (2008) 267-287.

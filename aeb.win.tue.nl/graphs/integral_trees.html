@@ -12,8 +12,9 @@ There are 0, 1, 1, 1, 2, 3, 6, 11, 23, 47, 106, 235, 551,
 279793450, 751065460,</font>
 <font size="-3">2023443032, 5469566585, 14830871802, 40330829030,
 109972410221, 300628862480, 823779631721,</font>
-<font size="-4">2262366343746</font>
-trees on 0–35 vertices, respectively.
+<font size="-4">2262366343746, 6226306037178, 17169677490714,
+47436313524262, 131290543779126, 363990257783343</font>
+trees on 0–40 vertices, respectively.
 This is <a href="http://oeis.org/A000055">Sequence A000055</a>
 in Sloane's On-Line Encyclopedia of Integer Sequences.
 <font size="-2">(Except that he starts with 1, but there are no trees
@@ -21,10 +22,11 @@ on 0 vertices: just like 1 is not a prime number but a product of zero primes,
 the empty graph is not connected, but a forest with zero trees.)</font>
 <p>
 Only very few of all these trees have only integral eigenvalues.
-Examples are known of diameters 0–8 and 10. It is unknown
+Examples are known of diameters 0–8 and 10. It <s>&nbsp;is&nbsp;</s> was unknown
 whether integral trees of arbitrary diameter exist.
-(Added 2009: now Péter Csikvári has constructed integral trees
-with arbitrary even diameter, see below.)
+(Péter Csikvári (2010) has constructed integral trees
+with arbitrary even diameter, see below.
+Ebrahim Ghorbani et al. (2011) settled the odd-diameter case.)
 <p>
 There are many papers on integral trees, but I have not seen
 tables with a complete enumeration of all small integral trees.
@@ -711,6 +713,11 @@ This forces the structure, and T must be SK<sub>1,m</sub>.
 <b>Remark</b> The trees SK<sub>1,m</sub> are determined by
 their spectrum as trees, not as graphs. For example,
 SK<sub>1,3</sub> is cospectral with C<sub>6</sub>+K<sub>1</sub>.
+<p>
+<b>Remark</b> Ghorbani et al. (2016) show that only finitely many
+integral trees have a given nullity larger than 1.
+The unique integral tree with nullity 2 is K<sub>1,2</sub>~K<sub>1,2</sub>.
+The unique integral tree with nullity 3 is K<sub>1,4</tt>.
 
 <h2>Small spectral radius</h2>
 It is immediately clear that the only integral trees with spectral
@@ -760,7 +767,7 @@ For the first case Graham (1980) gives an explicit expression of A,B,C in
 terms of Chebyshev polynomials.
 <p>
 <h2><a name="csikvari">Large diameter</a></h2>
-Csikvári (2009) constructs trees somewhat similar to the trees
+Csikvári (2010) constructs trees somewhat similar to the trees
 T(n<sub>k</sub>,...,n<sub>1</sub>), let us call them
 T'(r<sub>1</sub>,...,r<sub>m</sub>). These are defined by induction
 as follows: T'() is the tree with a single vertex x<sub>0</sub>.
@@ -790,6 +797,8 @@ the trees T(t)*T(r,m,t) studied by Wang & Li (2000).
 <p>
 This yields integral trees of arbitrary even diameter. For example,
 an integral tree of diameter 12 on 27007 vertices.
+The case of large odd diameter was settled by Ghorbani et al. (2010)
+using a variation on this construction.
 
 <h2>References</h2>
 A. E. Brouwer,
@@ -814,7 +823,18 @@ preprint, Jan 2022.
 <p>
 Péter Csikvári,
 <i>Integral trees of arbitrarily large diameters</i>,
-preprint, Sept. 2009.
+J. Algebr. Combin. <b>32</b> (2010) 371-377.
+<!-- preprint, Sept. 2009. -->
+<p>
+E. Ghorbani, A. Mohammadian & B. Tayfeh-Rezaie,
+<i>Integral trees of odd diameters</i>,
+J. Graph Th. <b>70</b> (2011) 332-338.
+<!-- preprint, Nov. 2010. -->
+<p>
+E. Ghorbani, A. Mohammadian & B. Tayfeh-Rezaie,
+<i>Integral trees with given nullity</i>,
+Discrete Math. <b>339</b> (2016) 157-164.
+<!-- preprint, Jul. 2014. -->
 <p>
 R. L. Graham,
 <i>On a Diophantine Equation Arising in Graph Theory</i>,

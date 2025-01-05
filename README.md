@@ -1,6 +1,6 @@
 # Tables of parameters for graphs, association schemes and finite geometries
 
-This repository contains mirror images of the data on graphs, association schemes and finite geometries from the homepages of [Andries E. Brouwer](http://www.win.tue.nl/~aeb/), [Jason S. Williford](http://www.uwyo.edu/jwilliford/), and [G. Eric Moorhouse](http://ericmoorhouse.org/). The webpages are downloaded daily, with git providing the ability to track changes.
+This repository contains mirror images of the data on graphs, association schemes and finite geometries from the homepages of [Andries E. Brouwer](http://aeb.win.tue.nl/), [Jason S. Williford](http://www.uwyo.edu/jwilliford/), and [G. Eric Moorhouse](http://ericmoorhouse.org/). The webpages are downloaded daily, with git providing the ability to track changes.
 
 Currently, the following pages are mirrored:
 * [Descriptions of various graphs](graphs/), containing also the [tables of feasible parameters for strongly regular graphs](graphs/srg/srgtab.html), by A. E. Brouwer

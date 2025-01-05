@@ -22,7 +22,7 @@ wget -N -r --no-parent --no-if-modified-since http://ericmoorhouse.org/pub/plane
 wget -N -r --no-parent --no-if-modified-since http://ericmoorhouse.org/pub/planes49/
 wget -N -r --no-parent --no-if-modified-since http://ericmoorhouse.org/pub/genpoly/
 ls ericmoorhouse.org/pub/planes49/plane/*.* | sed -r "s|^(.*)\..*|\0 \1/index.html|" | xargs -n 2 mv
-mv "ericmoorhouse.org/pub/planes49/nsrvpz.asp?filename=%5Csample.txt" ericmoorhouse.org/pub/planes49/nsrvpz.asp
+mv "ericmoorhouse.org/pub/planes49/nsrvpz.asp?filename=\\sample.txt" ericmoorhouse.org/pub/planes49/nsrvpz.asp
 git add ericmoorhouse.org
 git commit -m "Update $(date "+%Y-%m-%d")" --author "G. Eric Moorhouse <moorhous@uwyo.edu>"
 

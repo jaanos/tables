@@ -5,14 +5,14 @@ wget -N -r --no-parent http://aeb.win.tue.nl/drg/drgtables.html
 git add aeb.win.tue.nl
 git commit -m "Update $(date "+%Y-%m-%d")" --author "Andries E. Brouwer <aeb@cwi.nl>"
 
-wget -N -r --no-parent http://www.uwyo.edu/jwilliford/files/data/qprim3table.html
-wget -N -r --no-parent http://www.uwyo.edu/jwilliford/files/data/tableqbip4.html
-wget -N -r --no-parent http://www.uwyo.edu/jwilliford/files/data/tableqbip5.html
-sed -r -i -e "s/\r//" qpoly/qprim3table.html
-sed -r -i -e "s/\r//" qpoly/tableqbip4.html
-sed -r -i -e "s/\r//" qpoly/tableqbip5.html
-git add www.uwyo.edu
-git commit -m "Update $(date "+%Y-%m-%d")" --author "Jason S. Williford <jwillif1@uwyo.edu>"
+#wget -N -r --no-parent http://www.uwyo.edu/jwilliford/files/data/qprim3table.html
+#wget -N -r --no-parent http://www.uwyo.edu/jwilliford/files/data/tableqbip4.html
+#wget -N -r --no-parent http://www.uwyo.edu/jwilliford/files/data/tableqbip5.html
+#sed -r -i -e "s/\r//" qpoly/qprim3table.html
+#sed -r -i -e "s/\r//" qpoly/tableqbip4.html
+#sed -r -i -e "s/\r//" qpoly/tableqbip5.html
+#git add www.uwyo.edu
+#git commit -m "Update $(date "+%Y-%m-%d")" --author "Jason S. Williford <jwillif1@uwyo.edu>"
 
 wget -N -r --no-parent --no-if-modified-since http://ericmoorhouse.org/pub/planes/
 wget -N -r --no-parent --no-if-modified-since http://ericmoorhouse.org/pub/planes16/
